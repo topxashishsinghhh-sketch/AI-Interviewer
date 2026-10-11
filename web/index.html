@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Interviewer</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">AI Interviewer</div>
+  <nav class="nav" id="nav">
+    <button data-view="login" class="navbtn">Sign in</button>
+  </nav>
+  <div class="who" id="who"></div>
+</header>
+
+<main class="wrap">
+
+  <!-- ---------- auth ---------- -->
+  <section id="view-login" class="view card">
+    <h2 id="authTitle">Sign in</h2>
+    <div class="row">
+      <button id="authMode" class="ghost">Need an account? Register</button>
+    </div>
+    <form id="authForm" class="form">
+      <label>Email <input name="email" type="email" required autocomplete="username"></label>
+      <label>Password <input name="password" type="password" required autocomplete="current-password"></label>
+      <div id="registerFields" hidden>
+        <label>Name <input name="name" autocomplete="name"></label>
+        <label>College <input name="college"></label>
+        <label>Branch <input name="branch"></label>
+      </div>
+      <button type="submit" class="primary" id="authSubmit">Sign in</button>
+    </form>
+    <p id="authMsg" class="msg"></p>
+  </section>
+
+  <!-- ---------- dashboard ---------- -->
+  <section id="view-dashboard" class="view" hidden>
+    <div class="grid">
+      <button class="tile" data-view="start">Start interview</button>
+      <button class="tile" data-view="daily">Daily challenge</button>
+      <button class="tile" data-view="profile">Profile &amp; streak</button>
+      <button class="tile" data-view="board">Leaderboard</button>
+      <button class="tile" data-view="admin" id="adminTile" hidden>Admin</button>
+    </div>
+  </section>
+
+  <!-- ---------- interview setup ---------- -->
+  <section id="view-start" class="view" hidden>
+    <h2>Start an interview</h2>
+    <div class="form">
+      <label>Course
+        <select id="courseSelect"></select>
+      </label>
+      <label>Subject
+        <select id="subjectSelect"></select>
+      </label>
+      <label>Mode
+        <select id="modeSelect">
+          <option value="Practice">Practice (linear ramp)</option>
+          <option value="Mock">Mock interview (linear ramp)</option>
+          <option value="Daily">Daily challenge (adaptive)</option>
+        </select>
+      </label>
+      <button id="beginBtn" class="primary">Begin</button>
+    </div>
+    <p id="startMsg" class="msg"></p>
+  </section>
+
+  <!-- ---------- interview run ---------- -->
+  <section id="view-interview" class="view" hidden>
+    <h2 id="interviewTitle">Interview</h2>
+    <progress id="progress" max="100" value="0"></progress>
+    <div id="questionBox" class="card question">
+      <p id="questionMeta" class="meta"></p>
+      <p id="questionText" class="qtext"></p>
+    </div>
+    <form id="answerForm" class="form">
+      <label>Your answer
+        <input id="answerInput" autocomplete="off">
+      </label>
+      <div class="row">
+        <button type="submit" class="primary">Submit</button>
+        <button type="button" id="skipBtn" class="ghost">Skip</button>
+        <button type="button" id="finishEarlyBtn" class="ghost">Finish early</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ---------- report ---------- -->
+  <section id="view-report" class="view" hidden>
+    <h2>Report</h2>
+    <div id="reportBox" class="card"></div>
+    <div class="row">
+      <button id="againBtn" class="primary">Another interview</button>
+      <button id="reportHomeBtn" class="ghost">Dashboard</button>
+    </div>
+  </section>
+
+  <!-- ---------- daily challenge ---------- -->
+  <section id="view-daily" class="view" hidden>
+    <h2>Daily challenge</h2>
+    <p id="dailyMeta" class="meta"></p>
+    <div id="dailyQuestion" class="card question"></div>
+    <form id="dailyForm" class="form">
+      <label>Your answer <input id="dailyAnswer" autocomplete="off"></label>
+      <button class="primary">Submit</button>
+    </form>
+    <div id="dailyResult" class="msg"></div>
+  </section>
+
+  <!-- ---------- profile ---------- -->
+  <section id="view-profile" class="view" hidden>
+    <h2>Profile</h2>
+    <div id="profileBox" class="card"></div>
+  </section>
+
+  <!-- ---------- leaderboard ---------- -->
+  <section id="view-board" class="view" hidden>
+    <h2>Leaderboard</h2>
+    <div class="row filters">
+      <label>Scope
+        <select id="boardScope">
+          <option value="global">Global</option>
+          <option value="college">My college</option>
+          <option value="branch">My branch</option>
+        </select>
+      </label>
+      <label>Window
+        <select id="boardWindow">
+          <option value="alltime">All time</option>
+          <option value="week">Week</option>
+          <option value="month">Month</option>
+        </select>
+      </label>
+      <label>Ranking
+        <select id="boardRanking">
+          <option value="score">Score</option>
+          <option value="solved">Solved</option>
+          <option value="streak">Streak</option>
+        </select>
+      </label>
+      <button id="boardRefresh" class="ghost">Refresh</button>
+    </div>
+    <table class="table" id="boardTable">
+      <thead><tr><th>#</th><th>Name</th><th>Score</th><th>Solved</th><th>Streak</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- ---------- admin ---------- -->
+  <section id="view-admin" class="view" hidden>
+    <h2>Administration</h2>
+    <div id="adminStats" class="card"></div>
+    <h3>Users</h3>
+    <table class="table" id="usersTable">
+      <thead><tr><th>Email</th><th>Name</th><th>Role</th><th>Solved</th><th>Attempts</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <h3>Question bank</h3>
+    <table class="table" id="questionStatsTable">
+      <thead><tr><th>Subject</th><th>Easy</th><th>Medium</th><th>Hard</th><th>Total</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span id="backendNote"></span>
+</footer>
+
+<script src="/app.js"></script>
+</body>
+</html>

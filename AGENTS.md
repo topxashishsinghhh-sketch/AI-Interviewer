@@ -24,6 +24,10 @@ Phases: 1 core console (JSON), 2 MongoDB, 3 admin/daily/streak/leaderboard,
   `cmake --preset gui && cmake --build --preset build-gui`. Qt 6.11 is prebuilt
   with MinGW GCC 13.1, which is why the GUI uses `cmake/qt-mingw.cmake` and its
   own build directory; do not try to build it with GCC 6.3.
+- Run the browser web app with `scripts\run_web.ps1` (builds
+  `ai_interviewer_web` if needed and serves `http://127.0.0.1:8080`). It lives in
+  `build-gui` because cpp-httplib/Qt are 64-bit only, and takes `-Storage mongo`
+  to use MongoDB instead of JSON.
 - Before claiming work is done, run both:
   `scripts\smoke_test.ps1` (console) and `scripts\run_gui_tests.ps1` (Qt).
   Both must print a clean pass, and neither build may emit warnings.

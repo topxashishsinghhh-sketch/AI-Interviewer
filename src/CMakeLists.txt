@@ -149,3 +149,36 @@ if(BUILD_GUI AND Qt6_FOUND)
         endforeach()
     endif()
 endif()
+
+# HTTP server (browser front-end over the same services)
+if(BUILD_WEB)
+    # cpp-httplib is header-only. OpenSSL is opt-in via
+    # CPPHTTPLIB_OPENSSL_SUPPORT, which is deliberately left undefined here so
+    # the server builds without OpenSSL (the project uses its own SHA-256).
+    find_package(Threads REQUIRED)
+
+    add_executable(ai_interviewer_web
+        web/main_web.cpp
+        web/HttpServer.cpp
+        web/JsonApi.cpp
+        web/SessionStore.cpp
+    )
+
+    target_include_directories(ai_interviewer_web PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/../include
+        ${CMAKE_CURRENT_SOURCE_DIR}/../third_party
+    )
+    # nlohmann/json comes through ai_interviewer_core's PUBLIC include dirs when
+    # found by find_package, but the vendored fallback in third_party needs the
+    # explicit path above; both are covered so either layout works.
+
+
+
+    target_link_libraries(ai_interviewer_web PRIVATE
+        ai_interviewer_core
+        Threads::Threads
+    )
+    if(WIN32)
+        target_link_libraries(ai_interviewer_web PRIVATE ws2_32)
+    endif()
+endif()

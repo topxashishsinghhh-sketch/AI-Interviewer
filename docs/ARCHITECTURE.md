@@ -11,7 +11,7 @@ higher one, and no UI class contains business logic.
 
 ```
 +-------------------------------------------------------------+
-| ui/ConsoleUI.cpp            gui/*  (Qt 6 Widgets screens)   |  presentation
+| ui/ConsoleUI.cpp     gui/* (Qt)      web/HttpServer.cpp      |  presentation
 +-------------------------------------------------------------+
 | auth/AuthService           admin/AdminService               |
 | interview/*                course/CourseService             |  services
@@ -62,7 +62,8 @@ higher one, and no UI class contains business logic.
 
 ## Data flow: a 10-question interview
 
-1. GUI/console picks course → subject → mode.
+### Console and Qt
+1. Course → subject → mode selection in the front-end.
 2. `SessionFactory::createPractice/Mock/Daily` builds an `InterviewService`
    wired with `LinearRampStrategy` or `AdaptiveStrategy`.
 3. `InterviewService::startSession` selects 10 questions via the strategy.
@@ -73,6 +74,22 @@ higher one, and no UI class contains business logic.
    attempts through `IAttemptRepository`.
 6. `ProgressService::finalizeSession` updates the streak, cumulative counters and
    badges, persists the user, and upserts the leaderboard entry.
+
+### Web (same steps, different transport)
+HTTP is stateless, so the only extra piece is where the in-flight session lives:
+
+1. `POST /api/interviews` authenticates the bearer token, calls `startSession`,
+   and stores the returned `InterviewSession` in `web::SessionStore` under a
+   generated id.
+2. `POST /api/interviews/{id}/answers` looks the session up, then calls the same
+   `submitAnswer` / `skipQuestion` the console uses.
+3. `POST /api/interviews/{id}/finish` calls `finishSession`, then the same
+   `ProgressService::finalizeSession`, and drops the session.
+4. `web::JsonApi` is the only place domain objects are serialised, so the wire
+   format cannot drift between endpoints.
+
+`SessionStore` is the sole in-memory state (browser tokens and in-progress
+interviews); every durable read and write goes through a repository interface.
 
 ## Configuration
 
@@ -92,9 +109,14 @@ committed, and the app works with no database at all via the JSON fallback.
 
 | Target | Compiler | Notes |
 | --- | --- | --- |
-| `ai_interviewer_console` | MinGW GCC 6.3 | console front-end |
-| `ai_interviewer_gui` | Qt's MinGW GCC 13.1 | Qt 6.11 prebuilt with this compiler, so the GUI uses `cmake/qt-mingw.cmake` |
-| `gui_smoke_test` | Qt's MinGW GCC 13.1 | QtTest suite, runs headless with `QT_QPA_PLATFORM=offscreen` |
+| `ai_interviewer_console` | MinGW GCC 6.3 | console front-end, JSON storage only |
+| `ai_interviewer_gui` | Qt's MinGW GCC 13.1 | Qt 6.11 is prebuilt with this compiler, so the GUI uses `cmake/qt-mingw.cmake` |
+| `gui_smoke_test` | Qt's MinGW GCC 13.1 | QtTest suite, headless via `QT_QPA_PLATFORM=offscreen` |
+| `ai_interviewer_web` | Qt's MinGW GCC 13.1 | HTTP server + browser front-end, JSON or Mongo |
+
+The console is 32-bit and the GUI/web targets are 64-bit, because Qt 6 and
+cpp-httplib are only available for the 64-bit toolchain here. That is why the
+MongoDB backend and the web server live in `build-gui`.
 
 The console and GUI are configured in separate build directories because of the
 compiler difference; `scripts/run_gui_tests.ps1` automates the GUI side.

@@ -50,6 +50,19 @@ build-gui\src\ai_interviewer_gui.exe --storage mongo --db ai_interviewer
 ```
 Adjust `cmake/qt-mingw.cmake` if Qt is installed to a different prefix.
 
+### Run the web app (browser UI + JSON API)
+```powershell
+# Builds ai_interviewer_web if needed, then serves http://127.0.0.1:8080
+powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1
+
+# Options
+powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1 -Port 3000
+powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1 -Storage mongo
+```
+The browser UI is plain HTML/CSS/JS, so there is no front-end build step and no
+Node dependency. The server binds to `127.0.0.1` by default; pass
+`--host 0.0.0.0` to reach it from another device on the same network.
+
 ### Run (console)
 ```bash
 ./build/debug/ai_interviewer_console
@@ -86,6 +99,8 @@ include/           # Headers (one class per .h)
   gui/             # Qt 6 Widgets screens
 src/               # Implementations (one class per .cpp)
   gui/             # Qt screens (linked into ai_interviewer_gui)
+  web/             # HTTP server (linked into ai_interviewer_web)
+web/               # Browser front-end (static files, no build step)
 data/questions/    # Question JSON files
 challenges/        # Coding challenge templates
 tests/             # Google Test suite
@@ -109,6 +124,7 @@ for the question-bank schema and current coverage (105 questions across
 | 4. Qt 6 GUI | Done |
 | 5. Polish + docs | Done |
 | 6. MongoDB backend verification | Done - driver built from source, live `mongod` end-to-end run |
+| 7. Web UI + HTTP API | Done - browser front-end over the same services, JSON or Mongo |
 
 Both builds compile with no warnings under `-Wall -Wextra -Wshadow -Wconversion`.
 
@@ -185,6 +201,21 @@ path exercised end to end against a live `mongod`:
 See `docs/MONGODB.md` for the build steps, schema, tools, and the five bugs the
 live verification uncovered.
 
+## Features (Phase 7 - Web UI + HTTP API)
+
+The service layer is reusable, so a browser front-end shares all the C++:
+
+- `include/web/`, `src/web/` — HTTP server over the existing services
+  (`auth`, `admin`, `course`, `progress`, `interview`) via cpp-httplib
+- `web/` — front-end: `index.html`, `app.js`, `style.css` (no build step, no Node)
+- One class per concern: `HttpServer` (facade), `SessionStore` (in-memory
+  tokens and in-progress interviews), `JsonApi` (domain <-> wire mapping)
+- Endpoints: register/login/logout, me, courses and subjects, interviews
+  (start / answer / skip / finish), daily challenge, leaderboard, admin stats,
+  admin users, admin questions, health
+- Bearer-token auth; admin endpoints reject non-admins with 403
+- Storage follows the selected backend (JSON or MongoDB); no duplicated logic
+
 ## OOP Patterns Used
 - **Abstraction**: Question, User, Repository interfaces
 - **Inheritance**: MCQQuestion, TextQuestion, CodingQuestion; Student, Admin
@@ -199,6 +230,8 @@ live verification uncovered.
 - **Facade**: ConsoleUI, AuthService, InterviewService, CourseService, AdminService
 - **Dependency Injection**: gui::SessionContext (screens receive services, never construct them)
 - **Observer**: Qt signals/slots between GUI screens (sessionFinished, challengeCompleted)
+- **Mapper**: web::JsonApi (domain <-> API payloads), db::BSONMappers (domain <-> BSON)
+- **Repository (in-memory)**: web::SessionStore (browser tokens, in-progress interviews)
 
 ## Testing
 ```bash
