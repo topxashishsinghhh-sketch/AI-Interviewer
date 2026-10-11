@@ -387,8 +387,10 @@ function renderSidebar() {
 // Auth
 // ---------------------------------------------------------------------------
 
-function toggleAuthMode() {
-  state.registerMode = !state.registerMode;
+// Sets the mode explicitly. `toggleAuthMode` flips it, which is why the login
+// form used to open in register mode: init flipped a false default into true.
+function setAuthMode(registering) {
+  state.registerMode = Boolean(registering);
   $("authTitle").textContent = state.registerMode ? "Create your account" : "Sign in";
   $("authSub").textContent = state.registerMode
     ? "Track solved problems, streaks and rankings."
@@ -399,11 +401,18 @@ function toggleAuthMode() {
   setMessage("authMsg", "");
 }
 
+function toggleAuthMode() {
+  setAuthMode(!state.registerMode);
+}
+
 $("authMode").addEventListener("click", toggleAuthMode);
 
 $("authForm").addEventListener("submit", async (event) => {
   event.preventDefault();
-  const form = event.target;
+  // form.elements rather than form.email, so the lookup cannot be shadowed by
+  // an inherited property of HTMLFormElement.
+  const formEl = event.target;
+  const form = formEl.elements;
   const body = { email: form.email.value.trim(), password: form.password.value };
   if (state.registerMode) {
     body.name = form.name.value.trim() || body.email.split("@")[0];
@@ -423,9 +432,10 @@ $("authForm").addEventListener("submit", async (event) => {
     state.token = payload.token;
     state.user = payload.user;
     sessionStorage.setItem(TOKEN_KEY, state.token);
-    form.reset();
-    state.registerMode = false;
-    toggleAuthMode();
+    formEl.reset();
+    // Land back on the sign-in form so the next visit is not stuck in
+    // register mode.
+    setAuthMode(false);
     await loadStats();
     show("dashboard");
   } catch (error) {
@@ -1290,7 +1300,9 @@ async function loadAdmin() {
   $("backendNote").textContent =
     "C++17 core · " + (window.location.protocol === "https:" ? "TLS" : "local HTTP") +
     " · JSON or MongoDB storage";
-  toggleAuthMode();
+  // Land on the sign-in form. This used to call toggleAuthMode(), which flipped
+  // the false default into register mode.
+  setAuthMode(false);
   renderTopbar();
   if (state.token) {
     try {
