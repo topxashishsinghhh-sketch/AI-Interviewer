@@ -1,0 +1,1792 @@
+﻿[
+    {
+        "id":  "accounting_easy_1",
+        "subject":  "accounting",
+        "topic":  "basics",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "The fundamental accounting equation is:",
+        "options":  [
+                        "Assets = Liabilities + Equity",
+                        "Assets + Liabilities = Equity",
+                        "Revenue - Expenses = Assets",
+                        "Equity = Assets + Expenses"
+                    ],
+        "answer":  0,
+        "explanation":  "Everything the business owns is funded either by creditors or by the owners."
+    },
+    {
+        "id":  "accounting_easy_2",
+        "subject":  "accounting",
+        "topic":  "books",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which account is increased by a credit entry?",
+        "options":  [
+                        "An asset",
+                        "A liability",
+                        "An expense",
+                        "A drawing"
+                    ],
+        "answer":  1,
+        "explanation":  "Credits increase liabilities, equity and revenue, and decrease assets and expenses."
+    },
+    {
+        "id":  "accounting_easy_3",
+        "subject":  "accounting",
+        "topic":  "statements",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Profit for a period equals:",
+        "options":  [
+                        "Revenue - Expenses",
+                        "Assets - Liabilities",
+                        "Cash received - Cash paid",
+                        "Revenue + Expenses"
+                    ],
+        "answer":  0,
+        "explanation":  "The income statement reports revenue less expenses recognised in the period."
+    },
+    {
+        "id":  "accounting_easy_4",
+        "subject":  "accounting",
+        "topic":  "basics",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What does the accrual basis of accounting require?",
+        "keywords":  [
+                         "earned",
+                         "incurred",
+                         "revenue",
+                         "expense",
+                         "recognise"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Revenue is recognised when earned and expenses when incurred, regardless of when cash moves."
+    },
+    {
+        "id":  "accounting_med_1",
+        "subject":  "accounting",
+        "topic":  "ratios",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "The current ratio is calculated as:",
+        "options":  [
+                        "Current assets / Current liabilities",
+                        "Current liabilities / Current assets",
+                        "Total assets / Total liabilities",
+                        "Net profit / Revenue"
+                    ],
+        "answer":  0,
+        "explanation":  "It measures short-term liquidity by comparing short-term resources with short-term obligations."
+    },
+    {
+        "id":  "accounting_med_2",
+        "subject":  "accounting",
+        "topic":  "depreciation",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why does depreciation reduce net profit without using cash?",
+        "keywords":  [
+                         "non-cash",
+                         "allocation",
+                         "cost",
+                         "useful life",
+                         "expense"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought."
+    },
+    {
+        "id":  "accounting_med_3",
+        "subject":  "accounting",
+        "topic":  "cash_flow",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Dividends paid to shareholders appear in which section of the cash flow statement?",
+        "options":  [
+                        "Operating",
+                        "Investing",
+                        "Financing",
+                        "They do not appear"
+                    ],
+        "answer":  2,
+        "explanation":  "Distributions to owners are financing activities, along with borrowings and share issues."
+    },
+    {
+        "id":  "accounting_med_4",
+        "subject":  "accounting",
+        "topic":  "ratios",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "A debt-to-equity ratio of 0.8:1 means what?",
+        "keywords":  [
+                         "for every unit",
+                         "equity",
+                         "debt",
+                         "borrowed",
+                         "0.8"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It compares total debt with shareholders\u0027 funds, so the company finances 0.8 currency units of debt for each unit of equity."
+    },
+    {
+        "id":  "accounting_hard_1",
+        "subject":  "accounting",
+        "topic":  "revenue",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "Under IFRS 15, revenue from a contract is recognised:",
+        "options":  [
+                        "When cash is received",
+                        "As performance obligations are satisfied",
+                        "When the invoice is issued",
+                        "Only at year end"
+                    ],
+        "answer":  1,
+        "explanation":  "Revenue follows the transfer of control of goods or services to the customer."
+    },
+    {
+        "id":  "accounting_hard_2",
+        "subject":  "accounting",
+        "topic":  "inventory",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "How do FIFO and weighted-average cost differ in their effect on closing inventory during rising prices?",
+        "keywords":  [
+                         "FIFO",
+                         "older",
+                         "cheaper",
+                         "closing inventory higher",
+                         "average",
+                         "smoothed"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO."
+    },
+    {
+        "id":  "accounting_hard_3",
+        "subject":  "accounting",
+        "topic":  "analysis",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Compute gross profit margin percentage from revenue and cost of goods sold, rounded to one decimal place.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003ciomanip\u003e\n\nint main() {\n    double revenue, cogs;\n    std::cin \u003e\u003e revenue \u003e\u003e cogs;\n    double margin = 0.0;\n    // TODO: margin = (revenue - cogs) / revenue * 100\n    std::cout \u003c\u003c std::fixed \u003c\u003c std::setprecision(1) \u003c\u003c margin \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "500000 300000",
+                              "expectedOutput":  "40.0",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "250000 250000",
+                              "expectedOutput":  "0.0",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Gross margin shows how much of each revenue unit survives direct production costs."
+    },
+    {
+        "id":  "accounting_hard_4",
+        "subject":  "accounting",
+        "topic":  "ratios",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why can two profitable companies show very different return on equity?",
+        "keywords":  [
+                         "leverage",
+                         "equity",
+                         "asset turnover",
+                         "margin",
+                         "DuPont"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE."
+    },
+    {
+        "id":  "algo_easy_1",
+        "subject":  "algo",
+        "topic":  "sorting",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the worst-case time complexity of quicksort?",
+        "options":  [
+                        "O(n log n)",
+                        "O(n^2)",
+                        "O(n)",
+                        "O(log n)"
+                    ],
+        "answer":  1,
+        "explanation":  "With an unlucky pivot choice the partitions stay unbalanced, degrading to O(n^2)."
+    },
+    {
+        "id":  "algo_easy_2",
+        "subject":  "algo",
+        "topic":  "complexity",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which of these is NOT a stable sorting algorithm?",
+        "options":  [
+                        "Merge sort",
+                        "Bubble sort",
+                        "Insertion sort",
+                        "Heapsort"
+                    ],
+        "answer":  3,
+        "explanation":  "Heapsort swaps elements across the array, destroying the relative order of equal keys."
+    },
+    {
+        "id":  "algo_easy_3",
+        "subject":  "algo",
+        "topic":  "searching",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the time complexity of binary search on a sorted array of n elements?",
+        "options":  [
+                        "O(1)",
+                        "O(log n)",
+                        "O(n)",
+                        "O(n log n)"
+                    ],
+        "answer":  1,
+        "explanation":  "Each comparison halves the search space, giving O(log n)."
+    },
+    {
+        "id":  "algo_easy_4",
+        "subject":  "algo",
+        "topic":  "complexity",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What does Big-O notation describe?",
+        "keywords":  [
+                         "upper bound",
+                         "worst case",
+                         "growth",
+                         "asymptotic"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Big-O bounds the growth rate of a function from above as the input size tends to infinity."
+    },
+    {
+        "id":  "algo_med_1",
+        "subject":  "algo",
+        "topic":  "dp",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What are the two essential properties required for dynamic programming to be applicable?",
+        "options":  [
+                        "Optimal substructure and overlapping subproblems",
+                        "Sorting and searching",
+                        "Recursion and iteration",
+                        "Divide and conquer and pruning"
+                    ],
+        "answer":  0,
+        "explanation":  "Optimal solutions must contain optimal sub-solutions, and the same subproblems must recur."
+    },
+    {
+        "id":  "algo_med_2",
+        "subject":  "algo",
+        "topic":  "graphs",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the time complexity of Dijkstra\u0027s algorithm using a binary heap?",
+        "keywords":  [
+                         "(v+e)",
+                         "log",
+                         "e log v",
+                         "heap"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "With a binary heap each edge relaxation costs O(log V), giving O((V + E) log V)."
+    },
+    {
+        "id":  "algo_med_3",
+        "subject":  "algo",
+        "topic":  "greedy",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "The greedy fractional knapsack algorithm achieves what approximation ratio?",
+        "options":  [
+                        "Exact optimum",
+                        "At most 2x optimum",
+                        "No bound",
+                        "At most n x optimum"
+                    ],
+        "answer":  0,
+        "explanation":  "Fractional knapsack has the greedy-choice property, so sorting by value/weight yields the exact optimum."
+    },
+    {
+        "id":  "algo_med_4",
+        "subject":  "algo",
+        "topic":  "amortized",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the amortized time complexity of a single push operation on a dynamic array that doubles when full?",
+        "keywords":  [
+                         "amortized",
+                         "o(1)",
+                         "constant",
+                         "doubling"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "Rare O(n) resizes are averaged over n insertions, so the amortized cost is O(1)."
+    },
+    {
+        "id":  "algo_hard_1",
+        "subject":  "algo",
+        "topic":  "graphs",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "What is the time complexity of the Bellman-Ford algorithm on a graph with V vertices and E edges?",
+        "options":  [
+                        "O(V + E)",
+                        "O(V E)",
+                        "O(V^2)",
+                        "O(E log V)"
+                    ],
+        "answer":  1,
+        "explanation":  "It relaxes all E edges V-1 times, so the cost is O(V E)."
+    },
+    {
+        "id":  "algo_hard_2",
+        "subject":  "algo",
+        "topic":  "np",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain the difference between a decision problem being in NP and being NP-hard.",
+        "keywords":  [
+                         "verify",
+                         "certificate",
+                         "polynomial",
+                         "reduce",
+                         "at least as hard"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "NP means a proposed solution can be verified in polynomial time; NP-hard means every problem in NP reduces to it, which does not require it to be in NP or even be a decision problem."
+    },
+    {
+        "id":  "algo_hard_3",
+        "subject":  "algo",
+        "topic":  "sorting",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Given n integers, find the k largest elements and return them sorted ascending. Use a heap-based approach.",
+        "templateCode":  "#include \u003cvector\u003e\n#include \u003ciostream\u003e\n#include \u003cqueue\u003e\n\nstd::vector\u003cint\u003e kLargest(std::vector\u003cint\u003e nums, int k) {\n    // TODO: maintain a min-heap of size k\n    return {};\n}\n\nint main() {\n    int n, k;\n    std::cin \u003e\u003e n \u003e\u003e k;\n    std::vector\u003cint\u003e nums(n);\n    for (int\u0026 x : nums) std::cin \u003e\u003e x;\n    auto out = kLargest(nums, k);\n    for (int x : out) std::cout \u003c\u003c x \u003c\u003c \u0027 \u0027;\n    std::cout \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "5 2\n3 1 5 2 4",
+                              "expectedOutput":  "4 5",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "6 3\n10 9 8 7 6 5",
+                              "expectedOutput":  "8 9 10",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "A min-heap of size k costs O(n log k) time and O(k) space, beating a full sort when k is much smaller than n."
+    },
+    {
+        "id":  "algo_hard_4",
+        "subject":  "algo",
+        "topic":  "dp",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "What is the space-optimised tabulation for the 0/1 knapsack recurrence, and why does collapsing the second dimension work?",
+        "keywords":  [
+                         "one-dimensional",
+                         "iterate weights descending",
+                         "in place",
+                         "avoid reusing item twice"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A single array of capacities works if you iterate the capacity downwards: the value at w - weight must still refer to the previous item, and descending order guarantees that."
+    },
+    {
+        "id":  "analog_easy_1",
+        "subject":  "analog",
+        "topic":  "diodes",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "A silicon diode conducts appreciably when forward biased at approximately:",
+        "options":  [
+                        "0.2 V",
+                        "0.7 V",
+                        "1.4 V",
+                        "5 V"
+                    ],
+        "answer":  1,
+        "explanation":  "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that."
+    },
+    {
+        "id":  "analog_easy_2",
+        "subject":  "analog",
+        "topic":  "transistors",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "In a BJT, which current is the largest?",
+        "options":  [
+                        "Base",
+                        "Collector",
+                        "Emitter",
+                        "Leakage"
+                    ],
+        "answer":  2,
+        "explanation":  "The emitter current is the sum of the collector and base currents, so it is the largest."
+    },
+    {
+        "id":  "analog_easy_3",
+        "subject":  "analog",
+        "topic":  "opamps",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the input resistance of an ideal op-amp?",
+        "options":  [
+                        "Zero",
+                        "Finite and small",
+                        "Infinite",
+                        "Equal to the feedback resistor"
+                    ],
+        "answer":  2,
+        "explanation":  "An ideal op-amp draws no input current, which is modelled as infinite input resistance."
+    },
+    {
+        "id":  "analog_easy_4",
+        "subject":  "analog",
+        "topic":  "capacitors",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What determines the capacitive reactance of a capacitor at a given frequency?",
+        "keywords":  [
+                         "1/(2 pi f c)",
+                         "inversely proportional",
+                         "frequency",
+                         "capacitance"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises."
+    },
+    {
+        "id":  "analog_med_1",
+        "subject":  "analog",
+        "topic":  "opamps",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "A voltage follower (buffer) configuration has a voltage gain of:",
+        "options":  [
+                        "Zero",
+                        "Unity",
+                        "Infinite",
+                        "Set by the feedback network"
+                    ],
+        "answer":  1,
+        "explanation":  "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching."
+    },
+    {
+        "id":  "analog_med_2",
+        "subject":  "analog",
+        "topic":  "transistors",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the input resistance seen at the base of a common-emitter amplifier with an emitter degeneration resistor?",
+        "keywords":  [
+                         "beta",
+                         "re",
+                         "emitter resistor",
+                         "amplified"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger."
+    },
+    {
+        "id":  "analog_med_3",
+        "subject":  "analog",
+        "topic":  "amplifiers",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Thermal noise voltage per square root of bandwidth increases with:",
+        "options":  [
+                        "Temperature",
+                        "Lower temperature",
+                        "Frequency only",
+                        "Supply voltage"
+                    ],
+        "answer":  0,
+        "explanation":  "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature."
+    },
+    {
+        "id":  "analog_med_4",
+        "subject":  "analog",
+        "topic":  "filters",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What are the two defining characteristics of a Butterworth filter?",
+        "keywords":  [
+                         "maximally flat",
+                         "passband",
+                         "no ripple",
+                         "monotonic"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs."
+    },
+    {
+        "id":  "analog_hard_1",
+        "subject":  "analog",
+        "topic":  "stability",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "A phase margin of zero degrees in a closed-loop amplifier indicates:",
+        "options":  [
+                        "Stable with fast response",
+                        "Marginal stability with sustained oscillation",
+                        "No feedback",
+                        "Infinite gain"
+                    ],
+        "answer":  1,
+        "explanation":  "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation."
+    },
+    {
+        "id":  "analog_hard_2",
+        "subject":  "analog",
+        "topic":  "feedback",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain why negative feedback reduces harmonic distortion in an amplifier.",
+        "keywords":  [
+                         "loop gain",
+                         "error",
+                         "inverse",
+                         "suppress",
+                         "1+ab"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta)."
+    },
+    {
+        "id":  "analog_hard_3",
+        "subject":  "analog",
+        "topic":  "opamps",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Simulate an inverting op-amp amplifier and print the clipped output for each input sample. Gain is -Rf/Rin and the supply rails clip at Vcc.",
+        "templateCode":  "#include \u003cvector\u003e\n#include \u003ciostream\u003e\n\nint main() {\n    double rf, rin, vcc;\n    int n;\n    std::cin \u003e\u003e rf \u003e\u003e rin \u003e\u003e vcc \u003e\u003e n;\n    double gain = -rf / rin;\n    std::vector\u003cdouble\u003e out(n);\n    for (int i = 0; i \u003c n; ++i) {\n        double v;\n        std::cin \u003e\u003e v;\n        // TODO: apply gain and clip to [-vcc, vcc]\n    }\n    for (double v : out) std::cout \u003c\u003c v \u003c\u003c \u0027 \u0027;\n    std::cout \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "10000 1000 12 3\n0.5 -2 10",
+                              "expectedOutput":  "-5 12 -12",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "2000 1000 5 3\n1 -1 0.25",
+                              "expectedOutput":  "-2 2 -0.5",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp."
+    },
+    {
+        "id":  "analog_hard_4",
+        "subject":  "analog",
+        "topic":  "diodes",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why does a diode\u0027s dynamic resistance fall as the DC bias current increases?",
+        "keywords":  [
+                         "shockley",
+                         "vt",
+                         "id",
+                         "slope",
+                         "exponential"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely."
+    },
+    {
+        "id":  "apt_easy_1",
+        "subject":  "aptitude",
+        "topic":  "numbers",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the HCF of 24 and 36?",
+        "options":  [
+                        "6",
+                        "12",
+                        "18",
+                        "24"
+                    ],
+        "answer":  1,
+        "explanation":  "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12."
+    },
+    {
+        "id":  "apt_easy_2",
+        "subject":  "aptitude",
+        "topic":  "percentages",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "If 20% of a number is 40, what is the number?",
+        "options":  [
+                        "100",
+                        "200",
+                        "80",
+                        "160"
+                    ],
+        "answer":  1,
+        "explanation":  "20% of x = 40 =\u003e 0.2x = 40 =\u003e x = 40/0.2 = 200."
+    },
+    {
+        "id":  "apt_easy_3",
+        "subject":  "aptitude",
+        "topic":  "time_work",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "A can do a work in 10 days, B in 15 days. Together they complete it in:",
+        "options":  [
+                        "5 days",
+                        "6 days",
+                        "7 days",
+                        "8 days"
+                    ],
+        "answer":  1,
+        "explanation":  "A\u0027s 1 day work = 1/10, B\u0027s = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days."
+    },
+    {
+        "id":  "apt_easy_4",
+        "subject":  "aptitude",
+        "topic":  "numbers",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "Find the LCM of 12, 15, and 20.",
+        "keywords":  [
+                         "60",
+                         "lcm",
+                         "least common multiple"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "LCM(12, 15, 20) = 60. Prime factors: 12=2Â²Ã—3, 15=3Ã—5, 20=2Â²Ã—5. LCM = 2Â²Ã—3Ã—5 = 60."
+    },
+    {
+        "id":  "apt_medium_1",
+        "subject":  "aptitude",
+        "topic":  "percentages",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "A shopkeeper marks up price by 40% and gives 10% discount. Profit %?",
+        "options":  [
+                        "26%",
+                        "30%",
+                        "20%",
+                        "36%"
+                    ],
+        "answer":  0,
+        "explanation":  "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%."
+    },
+    {
+        "id":  "apt_medium_2",
+        "subject":  "aptitude",
+        "topic":  "time_work",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Pipe A fills tank in 4 hrs, B in 6 hrs, C empties in 8 hrs. All three open, time to fill?",
+        "keywords":  [
+                         "24/7",
+                         "3.43",
+                         "3 hours",
+                         "fraction"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours â‰ˆ 3.43 hours."
+    },
+    {
+        "id":  "apt_medium_3",
+        "subject":  "aptitude",
+        "topic":  "numbers",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Sum of first 50 even numbers?",
+        "options":  [
+                        "2500",
+                        "2550",
+                        "2600",
+                        "2450"
+                    ],
+        "answer":  1,
+        "explanation":  "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 Ã— 102 = 2550."
+    },
+    {
+        "id":  "apt_medium_4",
+        "subject":  "aptitude",
+        "topic":  "percentages",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Population increases 10% annually. After 2 years it\u0027s 12100. Present population?",
+        "keywords":  [
+                         "10000",
+                         "ten thousand"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "P Ã— 1.1 Ã— 1.1 = 12100 =\u003e P Ã— 1.21 = 12100 =\u003e P = 10000."
+    },
+    {
+        "id":  "apt_hard_1",
+        "subject":  "aptitude",
+        "topic":  "time_work",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Given n pipes with fill/empty rates (positive=fills, negative=empties), find time to fill tank. Return -1 if never fills.",
+        "templateCode":  "#include \u003cvector\u003e\n#include \u003ciostream\u003e\n\ndouble timeToFill(const std::vector\u003cdouble\u003e\u0026 rates) {\n    // rates in tanks per hour\n    // TODO: return hours to fill, or -1 if net rate \u003c= 0\n    return -1.0;\n}\n\nint main() {\n    int n; std::cin \u003e\u003e n;\n    std::vector\u003cdouble\u003e rates(n);\n    for (int i = 0; i \u003c n; ++i) std::cin \u003e\u003e rates[i];\n    double result = timeToFill(rates);\n    if (result \u003c 0) std::cout \u003c\u003c \"Never fills\\n\";\n    else std::cout \u003c\u003c result \u003c\u003c \" hours\\n\";\n    return 0;\n}",
+        "testCases":  [
+                          {
+                              "input":  "3\n0.25 0.1667 -0.125",
+                              "expectedOutput":  "3.42857 hours",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "2\n0.1 -0.2",
+                              "expectedOutput":  "Never fills",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "1\n0.5",
+                              "expectedOutput":  "2 hours",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Net rate = sum of all rates. If net \u003e 0, time = 1/net. If net \u003c= 0, never fills."
+    },
+    {
+        "id":  "apt_hard_2",
+        "subject":  "aptitude",
+        "topic":  "numbers",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Find the smallest number divisible by all numbers from 1 to n (LCM of 1..n).",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003cnumeric\u003e\n\nlong long lcm1toN(int n) {\n    // TODO: return LCM of 1,2,...,n\n    return 1;\n}\n\nint main() {\n    int n; std::cin \u003e\u003e n;\n    std::cout \u003c\u003c lcm1toN(n) \u003c\u003c \"\\n\";\n    return 0;\n}",
+        "testCases":  [
+                          {
+                              "input":  "5",
+                              "expectedOutput":  "60",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "10",
+                              "expectedOutput":  "2520",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "20",
+                              "expectedOutput":  "232792560",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from \u003cnumeric\u003e."
+    },
+    {
+        "id":  "apt_hard_3",
+        "subject":  "aptitude",
+        "topic":  "percentages",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "A product\u0027s price is increased by x% then decreased by x%. Net change?",
+        "keywords":  [
+                         "decrease",
+                         "loss",
+                         "x^2/100",
+                         "negative"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-xÂ²/10000). Net change = -xÂ²/100%. Always a decrease."
+    },
+    {
+        "id":  "cpp_oop_easy_1",
+        "subject":  "oop",
+        "topic":  "encapsulation",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is encapsulation in OOP?",
+        "options":  [
+                        "Hiding data and methods within a class",
+                        "Inheriting from multiple classes",
+                        "Overriding virtual functions",
+                        "Creating objects from classes"
+                    ],
+        "answer":  0,
+        "explanation":  "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components."
+    },
+    {
+        "id":  "cpp_oop_easy_2",
+        "subject":  "oop",
+        "topic":  "encapsulation",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which access specifier makes members accessible only within the class?",
+        "options":  [
+                        "public",
+                        "protected",
+                        "private",
+                        "friend"
+                    ],
+        "answer":  2,
+        "explanation":  "Private members are only accessible within the class they are declared in."
+    },
+    {
+        "id":  "cpp_oop_easy_3",
+        "subject":  "oop",
+        "topic":  "inheritance",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is single inheritance?",
+        "options":  [
+                        "A class inheriting from one base class",
+                        "A class inheriting from multiple base classes",
+                        "A class inheriting from a derived class",
+                        "A class with no inheritance"
+                    ],
+        "answer":  0,
+        "explanation":  "Single inheritance is when a derived class inherits from exactly one base class."
+    },
+    {
+        "id":  "cpp_oop_easy_4",
+        "subject":  "oop",
+        "topic":  "polymorphism",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What enables runtime polymorphism in C++?",
+        "options":  [
+                        "Function overloading",
+                        "Virtual functions",
+                        "Templates",
+                        "Inline functions"
+                    ],
+        "answer":  1,
+        "explanation":  "Virtual functions allow derived class methods to be called through base class pointers/references at runtime."
+    },
+    {
+        "id":  "cpp_oop_medium_1",
+        "subject":  "oop",
+        "topic":  "inheritance",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Explain the difference between public, protected, and private inheritance in C++.",
+        "keywords":  [
+                         "public",
+                         "protected",
+                         "private",
+                         "access",
+                         "is-a",
+                         "implemented-in-terms-of"
+                     ],
+        "minKeywords":  3,
+        "explanation":  "Public inheritance models \u0027is-a\u0027, protected/private model \u0027implemented-in-terms-of\u0027. Access levels affect derived class access to base members."
+    },
+    {
+        "id":  "cpp_oop_medium_2",
+        "subject":  "oop",
+        "topic":  "polymorphism",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Describe the difference between static and dynamic polymorphism with examples.",
+        "keywords":  [
+                         "compile-time",
+                         "runtime",
+                         "templates",
+                         "virtual",
+                         "overloading",
+                         "overriding"
+                     ],
+        "minKeywords":  3,
+        "explanation":  "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable."
+    },
+    {
+        "id":  "cpp_oop_medium_3",
+        "subject":  "oop",
+        "topic":  "patterns",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Which pattern ensures a class has only one instance?",
+        "options":  [
+                        "Factory",
+                        "Singleton",
+                        "Builder",
+                        "Prototype"
+                    ],
+        "answer":  1,
+        "explanation":  "Singleton pattern restricts instantiation to a single object and provides global access to it."
+    },
+    {
+        "id":  "cpp_oop_medium_4",
+        "subject":  "oop",
+        "topic":  "patterns",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What pattern defines a family of algorithms and makes them interchangeable?",
+        "options":  [
+                        "Strategy",
+                        "Observer",
+                        "Decorator",
+                        "Adapter"
+                    ],
+        "answer":  0,
+        "explanation":  "Strategy pattern encapsulates algorithms and allows switching between them at runtime."
+    },
+    {
+        "id":  "cpp_oop_hard_1",
+        "subject":  "oop",
+        "topic":  "patterns",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a Strategy pattern for sorting algorithms. Create an interface SortStrategy with execute(vector\u003cint\u003e\u0026) and concrete strategies for BubbleSort, QuickSort, and MergeSort.",
+        "templateCode":  "#include \u003cvector\u003e\n#include \u003calgorithm\u003e\n\nclass SortStrategy {\npublic:\n    virtual void execute(std::vector\u003cint\u003e\u0026 data) = 0;\n    virtual ~SortStrategy() = default;\n};\n\nclass BubbleSort : public SortStrategy {\npublic:\n    void execute(std::vector\u003cint\u003e\u0026 data) override {\n        // TODO\n    }\n};\n\nclass QuickSort : public SortStrategy {\npublic:\n    void execute(std::vector\u003cint\u003e\u0026 data) override {\n        // TODO\n    }\n};\n\nclass MergeSort : public SortStrategy {\npublic:\n    void execute(std::vector\u003cint\u003e\u0026 data) override {\n        // TODO\n    }\n};",
+        "testCases":  [
+                          {
+                              "input":  "5 4 3 2 1",
+                              "expectedOutput":  "1 2 3 4 5",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "3 1 4 1 5 9 2 6",
+                              "expectedOutput":  "1 1 2 3 4 5 6 9",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "1",
+                              "expectedOutput":  "1",
+                              "isHidden":  true
+                          },
+                          {
+                              "input":  "",
+                              "expectedOutput":  "",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Strategy pattern allows switching sorting algorithms at runtime without changing client code."
+    },
+    {
+        "id":  "cpp_oop_hard_2",
+        "subject":  "oop",
+        "topic":  "polymorphism",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a simple Observer pattern. Create Subject interface with attach, detach, notify. Create ConcreteSubject with state. Create Observer interface with update(). Create ConcreteObserver that prints state changes.",
+        "templateCode":  "#include \u003cvector\u003e\n#include \u003cmemory\u003e\n#include \u003ciostream\u003e\n\nclass Observer {\npublic:\n    virtual void update(int state) = 0;\n    virtual ~Observer() = default;\n};\n\nclass Subject {\npublic:\n    virtual void attach(std::shared_ptr\u003cObserver\u003e obs) = 0;\n    virtual void detach(std::shared_ptr\u003cObserver\u003e obs) = 0;\n    virtual void notify() = 0;\n    virtual ~Subject() = default;\n};\n\nclass ConcreteSubject : public Subject {\n    int state_ = 0;\n    std::vector\u003cstd::shared_ptr\u003cObserver\u003e\u003e observers_;\npublic:\n    void attach(std::shared_ptr\u003cObserver\u003e obs) override {\n        // TODO\n    }\n    void detach(std::shared_ptr\u003cObserver\u003e obs) override {\n        // TODO\n    }\n    void notify() override {\n        // TODO\n    }\n    void setState(int state) { state_ = state; notify(); }\n    int getState() const { return state_; }\n};\n\nclass ConcreteObserver : public Observer {\n    std::string name_;\npublic:\n    ConcreteObserver(const std::string\u0026 name) : name_(name) {}\n    void update(int state) override {\n        // TODO\n    }\n};",
+        "testCases":  [
+                          {
+                              "input":  "test1 10 test2 20",
+                              "expectedOutput":  "Observer test1: 10\nObserver test2: 10\nObserver test1: 20\nObserver test2: 20",
+                              "isHidden":  false
+                          }
+                      ],
+        "explanation":  "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified."
+    },
+    {
+        "id":  "cpp_oop_hard_3",
+        "subject":  "oop",
+        "topic":  "inheritance",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain the diamond problem in multiple inheritance and how virtual inheritance solves it. Provide a code example.",
+        "keywords":  [
+                         "diamond",
+                         "virtual",
+                         "inheritance",
+                         "ambiguity",
+                         "vptr",
+                         "shared",
+                         "base"
+                     ],
+        "minKeywords":  4,
+        "explanation":  "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base class exists."
+    },
+    {
+        "id":  "ds_easy_1",
+        "subject":  "ds",
+        "topic":  "arrays",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the time complexity of accessing an element by index in an array?",
+        "options":  [
+                        "O(1)",
+                        "O(log n)",
+                        "O(n)",
+                        "O(n log n)"
+                    ],
+        "answer":  0,
+        "explanation":  "Arrays support random access: the address is base + index * elementSize, so it is constant time."
+    },
+    {
+        "id":  "ds_easy_2",
+        "subject":  "ds",
+        "topic":  "linked_lists",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the time complexity of searching for an element in a singly linked list?",
+        "options":  [
+                        "O(1)",
+                        "O(log n)",
+                        "O(n)",
+                        "O(n^2)"
+                    ],
+        "answer":  2,
+        "explanation":  "You must traverse from the head because there is no random access, so the worst case visits every node."
+    },
+    {
+        "id":  "ds_easy_3",
+        "subject":  "ds",
+        "topic":  "stacks",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which principle does a stack follow?",
+        "options":  [
+                        "FIFO",
+                        "LIFO",
+                        "Priority order",
+                        "Random order"
+                    ],
+        "answer":  1,
+        "explanation":  "A stack is Last In First Out: the most recently pushed element is the first one popped."
+    },
+    {
+        "id":  "ds_easy_4",
+        "subject":  "ds",
+        "topic":  "queues",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "Which data structure serves elements in First In First Out order?",
+        "keywords":  [
+                         "queue",
+                         "FIFO",
+                         "front",
+                         "rear"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A queue inserts at the rear and removes from the front, preserving arrival order."
+    },
+    {
+        "id":  "ds_med_1",
+        "subject":  "ds",
+        "topic":  "trees",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "In a binary search tree, where is the maximum element found?",
+        "options":  [
+                        "Root",
+                        "Right-most node",
+                        "Left-most node",
+                        "Any leaf"
+                    ],
+        "answer":  1,
+        "explanation":  "Keep going right until there is no right child; that node holds the largest key."
+    },
+    {
+        "id":  "ds_med_2",
+        "subject":  "ds",
+        "topic":  "trees",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the maximum number of nodes at level L (root at level 0) of a binary tree?",
+        "keywords":  [
+                         "2^l",
+                         "2",
+                         "level",
+                         "power of two"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Each level can hold at most twice the previous level, so level L holds 2^L nodes."
+    },
+    {
+        "id":  "ds_med_3",
+        "subject":  "ds",
+        "topic":  "hashing",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What is the average-case time complexity of a hash table lookup with a good hash function?",
+        "options":  [
+                        "O(1)",
+                        "O(log n)",
+                        "O(n)",
+                        "O(log log n)"
+                    ],
+        "answer":  0,
+        "explanation":  "With a uniform hash and low load factor, the expected chain length is constant."
+    },
+    {
+        "id":  "ds_med_4",
+        "subject":  "ds",
+        "topic":  "heaps",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the time complexity of inserting an element into a binary min-heap of n elements?",
+        "keywords":  [
+                         "log",
+                         "height",
+                         "bubble up",
+                         "o(log"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "The new element bubbles up at most the height of the heap, which is O(log n)."
+    },
+    {
+        "id":  "ds_hard_1",
+        "subject":  "ds",
+        "topic":  "balanced_trees",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "What is the height of an AVL tree with n nodes?",
+        "options":  [
+                        "O(log n)",
+                        "O(n)",
+                        "O(1)",
+                        "O(sqrt(n))"
+                    ],
+        "answer":  0,
+        "explanation":  "AVL rotations keep the height balanced within a constant factor of log n."
+    },
+    {
+        "id":  "ds_hard_2",
+        "subject":  "ds",
+        "topic":  "graphs",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "State the time complexity of a breadth-first search on a graph with V vertices and E edges represented by adjacency lists.",
+        "keywords":  [
+                         "v+e",
+                         "o(v",
+                         "linear",
+                         "each edge once"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "Each vertex and each edge is visited a constant number of times, giving O(V + E)."
+    },
+    {
+        "id":  "ds_hard_3",
+        "subject":  "ds",
+        "topic":  "disjoint_sets",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a union-find (disjoint set) structure with path compression and union by rank. It must report whether two elements are already connected.",
+        "templateCode":  "#include \u003cvector\u003e\n\nclass UnionFind {\npublic:\n    explicit UnionFind(int n) { /* TODO: initialise parent and rank */ }\n    int find(int x) { /* TODO: recursive find with path compression */ return x; }\n    bool unite(int a, int b) { /* TODO: union by rank, return false if already united */ return false; }\n    bool connected(int a, int b) { return find(a) == find(b); }\n};\n",
+        "testCases":  [
+                          {
+                              "input":  "5\nunite 0 1\nunite 2 3\nconnected 0 1\nconnected 0 2\nunite 1 2\nconnected 0 3",
+                              "expectedOutput":  "Yes\nNo\nYes",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "4\nunite 0 3\nunite 1 2\nconnected 0 3\nconnected 1 3\nconnected 0 2",
+                              "expectedOutput":  "Yes\nNo\nNo",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function."
+    },
+    {
+        "id":  "ds_hard_4",
+        "subject":  "ds",
+        "topic":  "graphs",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why does Dijkstra\u0027s algorithm fail with negative edge weights while Bellman-Ford does not?",
+        "keywords":  [
+                         "greedy",
+                         "settled",
+                         "final",
+                         "shortest path",
+                         "relaxation"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates negative weights (barring negative cycles)."
+    },
+    {
+        "id":  "hr_easy_1",
+        "subject":  "hr",
+        "topic":  "behavioral",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What does STAR method stand for in behavioral interviews?",
+        "options":  [
+                        "Situation, Task, Action, Result",
+                        "Strength, Talent, Ability, Result",
+                        "Solution, Team, Analysis, Review",
+                        "Strategy, Tactics, Approach, Result"
+                    ],
+        "answer":  0,
+        "explanation":  "STAR = Situation, Task, Action, Result. A framework for answering behavioral questions."
+    },
+    {
+        "id":  "hr_easy_2",
+        "subject":  "hr",
+        "topic":  "behavioral",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which is a good response to \u0027Tell me about yourself\u0027?",
+        "options":  [
+                        "Personal life story from childhood",
+                        "Professional summary relevant to role",
+                        "Detailed list of all past jobs",
+                        "Hobbies and interests only"
+                    ],
+        "answer":  1,
+        "explanation":  "Keep it professional, relevant to the role, and concise (1-2 minutes)."
+    },
+    {
+        "id":  "hr_easy_3",
+        "subject":  "hr",
+        "topic":  "situational",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "You disagree with your manager\u0027s decision. Best approach?",
+        "options":  [
+                        "Ignore and do it your way",
+                        "Discuss privately with data/concerns",
+                        "Complain to colleagues",
+                        "Quit immediately"
+                    ],
+        "answer":  1,
+        "explanation":  "Professional disagreement: schedule private meeting, present concerns with data, seek alignment."
+    },
+    {
+        "id":  "hr_easy_4",
+        "subject":  "hr",
+        "topic":  "behavioral",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "Describe a time you worked in a team. What was your role?",
+        "keywords":  [
+                         "team",
+                         "collaborate",
+                         "role",
+                         "contribute",
+                         "communicate"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Use STAR: Situation (project), Task (goal), Action (your contribution), Result (outcome)."
+    },
+    {
+        "id":  "hr_medium_1",
+        "subject":  "hr",
+        "topic":  "behavioral",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Tell me about a conflict with a colleague and how you resolved it.",
+        "keywords":  [
+                         "conflict",
+                         "resolve",
+                         "communicate",
+                         "listen",
+                         "compromise",
+                         "outcome"
+                     ],
+        "minKeywords":  3,
+        "explanation":  "Show emotional intelligence: listen, understand perspective, find common ground, positive outcome."
+    },
+    {
+        "id":  "hr_medium_2",
+        "subject":  "hr",
+        "topic":  "situational",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Project deadline at risk. Team member not delivering. What do you do?",
+        "options":  [
+                        "Do their work yourself silently",
+                        "Discuss blockers, offer support, escalate if needed",
+                        "Blame them in team meeting",
+                        "Report to manager immediately without talking"
+                    ],
+        "answer":  1,
+        "explanation":  "Collaborative approach: understand root cause, support, then escalate if unresolved."
+    },
+    {
+        "id":  "hr_medium_3",
+        "subject":  "hr",
+        "topic":  "behavioral",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Describe a time you failed. What did you learn?",
+        "keywords":  [
+                         "failed",
+                         "learn",
+                         "mistake",
+                         "improve",
+                         "feedback",
+                         "growth"
+                     ],
+        "minKeywords":  3,
+        "explanation":  "Own the failure, explain lessons learned, show growth mindset with concrete improvements."
+    },
+    {
+        "id":  "hr_medium_4",
+        "subject":  "hr",
+        "topic":  "situational",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "You receive negative feedback you disagree with. Best response?",
+        "options":  [
+                        "Argue and defend immediately",
+                        "Thank them, ask clarifying questions, reflect",
+                        "Ignore the feedback",
+                        "Complain to HR"
+                    ],
+        "answer":  1,
+        "explanation":  "Receive feedback gracefully: listen, clarify, reflect, then decide on action."
+    },
+    {
+        "id":  "hr_hard_1",
+        "subject":  "hr",
+        "topic":  "behavioral",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a simple feedback tracker. Store feedback entries (giver, receiver, rating, comment). Support add, list by receiver, average rating.",
+        "templateCode":  "#include \u003cvector\u003e\n#include \u003cstring\u003e\n#include \u003ciostream\u003e\n\nstruct Feedback {\n    std::string giver;\n    std::string receiver;\n    int rating; // 1-5\n    std::string comment;\n};\n\nclass FeedbackTracker {\n    std::vector\u003cFeedback\u003e entries_;\npublic:\n    void add(const Feedback\u0026 f) { /* TODO */ }\n    std::vector\u003cFeedback\u003e byReceiver(const std::string\u0026 name) { /* TODO */ return {}; }\n    double avgRating(const std::string\u0026 name) { /* TODO */ return 0.0; }\n};\n\nint main() {\n    FeedbackTracker ft;\n    // Test: add, list, average\n    return 0;\n}",
+        "testCases":  [
+                          {
+                              "input":  "add Alice Bob 5 Great work\nadd Charlie Bob 4 Good\nlist Bob\navg Bob",
+                              "expectedOutput":  "Bob: 2 feedbacks\nAverage: 4.5",
+                              "isHidden":  false
+                          }
+                      ],
+        "explanation":  "Simple data structure practice. Use vector for storage, filter by receiver, compute average."
+    },
+    {
+        "id":  "hr_hard_2",
+        "subject":  "hr",
+        "topic":  "situational",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "You\u0027re leading a project. Two senior developers strongly disagree on architecture. How do you resolve?",
+        "keywords":  [
+                         "mediate",
+                         "data",
+                         "pros",
+                         "cons",
+                         "decide",
+                         "align",
+                         "team",
+                         "consensus"
+                     ],
+        "minKeywords":  4,
+        "explanation":  "Facilitate structured discussion: gather data, list pros/cons, seek consensus, make decision if needed, ensure team alignment."
+    },
+    {
+        "id":  "hr_hard_3",
+        "subject":  "hr",
+        "topic":  "behavioral",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Design a class hierarchy for interview questions (MCQ, Text, Coding) with common interface. Implement factory to create questions from JSON.",
+        "templateCode":  "#include \u003cmemory\u003e\n#include \u003cstring\u003e\n#include \u003cvector\u003e\n#include \u003cnlohmann/json.hpp\u003e\n\nusing json = nlohmann::json;\n\nclass Question {\npublic:\n    virtual std::string type() const = 0;\n    virtual ~Question() = default;\n};\n\nclass MCQQuestion : public Question { /* TODO */ };\nclass TextQuestion : public Question { /* TODO */ };\nclass CodingQuestion : public Question { /* TODO */ };\n\nclass QuestionFactory {\npublic:\n    static std::unique_ptr\u003cQuestion\u003e create(const json\u0026 j) { /* TODO */ return nullptr; }\n};",
+        "testCases":  [
+                          {
+                              "input":  "{\"type\":\"MCQ\",\"text\":\"Q?\",\"options\":[\"A\",\"B\"],\"answer\":0}",
+                              "expectedOutput":  "MCQ",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "{\"type\":\"Text\",\"text\":\"Q?\",\"keywords\":[\"key\"]}",
+                              "expectedOutput":  "Text",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class."
+    },
+    {
+        "id":  "reasoning_easy_1",
+        "subject":  "reasoning",
+        "topic":  "series",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Complete the series: 2, 6, 12, 20, 30, ?",
+        "options":  [
+                        "36",
+                        "40",
+                        "42",
+                        "44"
+                    ],
+        "answer":  2,
+        "explanation":  "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42."
+    },
+    {
+        "id":  "reasoning_easy_2",
+        "subject":  "reasoning",
+        "topic":  "series",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Complete the series: A, C, F, J, O, ?",
+        "options":  [
+                        "T",
+                        "U",
+                        "S",
+                        "V"
+                    ],
+        "answer":  1,
+        "explanation":  "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U."
+    },
+    {
+        "id":  "reasoning_easy_3",
+        "subject":  "reasoning",
+        "topic":  "blood_relations",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Pointing to a photo, Rahul said, \"She is the daughter of my grandfather\u0027s only son.\" Who is she?",
+        "options":  [
+                        "His cousin",
+                        "His sister",
+                        "His aunt",
+                        "His niece"
+                    ],
+        "answer":  1,
+        "explanation":  "The grandfather\u0027s only son is Rahul\u0027s father, so his daughter is Rahul\u0027s sister."
+    },
+    {
+        "id":  "reasoning_easy_4",
+        "subject":  "reasoning",
+        "topic":  "coding",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "If \u0027CAT\u0027 is written as \u0027DBU\u0027, how is \u0027DOG\u0027 written?",
+        "keywords":  [
+                         "eph",
+                         "each letter",
+                         "next",
+                         "shifted one",
+                         "forward"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Every letter moves one position forward, so D-O-G becomes E-P-H."
+    },
+    {
+        "id":  "reasoning_med_1",
+        "subject":  "reasoning",
+        "topic":  "syllogism",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "All roses are flowers. Some flowers fade quickly. Which conclusion must be true?",
+        "options":  [
+                        "Some roses fade quickly",
+                        "All flowers are roses",
+                        "No roses fade quickly",
+                        "None of these necessarily follow"
+                    ],
+        "answer":  3,
+        "explanation":  "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced."
+    },
+    {
+        "id":  "reasoning_med_2",
+        "subject":  "reasoning",
+        "topic":  "directions",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "A man walks 5 km north, turns right and walks 3 km, turns right again and walks 5 km. How far is he from the start and in which direction?",
+        "keywords":  [
+                         "3",
+                         "east",
+                         "south",
+                         "rectangle",
+                         "straight"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The path forms a rectangle: he ends 3 km east of the starting point."
+    },
+    {
+        "id":  "reasoning_med_3",
+        "subject":  "reasoning",
+        "topic":  "seating",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Six people sit in a circle facing the centre. If A is opposite D and B sits to the immediate right of A, who sits to the immediate left of A?",
+        "options":  [
+                        "C",
+                        "D",
+                        "Cannot be determined",
+                        "F"
+                    ],
+        "answer":  2,
+        "explanation":  "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed."
+    },
+    {
+        "id":  "reasoning_med_4",
+        "subject":  "reasoning",
+        "topic":  "series",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Find the next term: 3, 7, 16, 35, 74, ?",
+        "keywords":  [
+                         "153",
+                         "double",
+                         "plus one",
+                         "x2"
+                     ],
+        "minKeywords":  1,
+        "explanation":  "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153."
+    },
+    {
+        "id":  "reasoning_hard_1",
+        "subject":  "reasoning",
+        "topic":  "syllogism",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "Some engineers are musicians. All musicians are artists. Which conclusion follows?",
+        "options":  [
+                        "All engineers are artists",
+                        "Some engineers are artists",
+                        "No artist is an engineer",
+                        "All artists are engineers"
+                    ],
+        "answer":  1,
+        "explanation":  "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists."
+    },
+    {
+        "id":  "reasoning_hard_2",
+        "subject":  "reasoning",
+        "topic":  "puzzles",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Three switches outside a room control three bulbs inside, but you may enter the room only once. How do you identify each switch?",
+        "keywords":  [
+                         "heat",
+                         "on for a while",
+                         "warm",
+                         "off",
+                         "bulb"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify the three switches."
+    },
+    {
+        "id":  "reasoning_hard_3",
+        "subject":  "reasoning",
+        "topic":  "analogies",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain the relation in the analogy \u0027Thermometer : Temperature\u0027 and apply it to \u0027Anemometer : ?\u0027.",
+        "keywords":  [
+                         "instrument",
+                         "measures",
+                         "wind speed",
+                         "quantity"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed."
+    },
+    {
+        "id":  "reasoning_hard_4",
+        "subject":  "reasoning",
+        "topic":  "directions",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Trace a path of moves (N/S/E/W, one unit each) and print the Manhattan distance from the origin and the final facing direction starting from North.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003cstring\u003e\n\nint main() {\n    std::string moves;\n    std::getline(std::cin, moves);\n    int x = 0, y = 0;\n    char facing = \u0027N\u0027;\n    // TODO: apply each move and track the facing direction\n    std::cout \u003c\u003c (std::abs(x) + std::abs(y)) \u003c\u003c \u0027 \u0027 \u003c\u003c facing \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "NNEE",
+                              "expectedOutput":  "4 E",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "NESW",
+                              "expectedOutput":  "0 N",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step."
+    },
+    {
+        "id":  "signals_easy_1",
+        "subject":  "signals",
+        "topic":  "signal_types",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "A signal that is defined only at discrete instants of time is called:",
+        "options":  [
+                        "Continuous-time",
+                        "Discrete-time",
+                        "Analogue",
+                        "Random"
+                    ],
+        "answer":  1,
+        "explanation":  "Discrete-time signals are defined at integer indices n; continuous-time signals are defined for all t."
+    },
+    {
+        "id":  "signals_easy_2",
+        "subject":  "signals",
+        "topic":  "convolution",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What does convolution of a signal with the unit impulse delta(n) produce?",
+        "options":  [
+                        "The signal itself",
+                        "A shifted-and-scaled version",
+                        "Zero",
+                        "The signal reversed"
+                    ],
+        "answer":  1,
+        "explanation":  "delta(n - k) picks out x(n - k), so convolving with a shifted impulse shifts and scales the signal."
+    },
+    {
+        "id":  "signals_easy_3",
+        "subject":  "signals",
+        "topic":  "fourier",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "The Fourier transform converts a signal from the time domain to the:",
+        "options":  [
+                        "Frequency domain",
+                        "Spatial domain",
+                        "Probability domain",
+                        "Laplace domain"
+                    ],
+        "answer":  0,
+        "explanation":  "It expresses the signal as a sum of sinusoids, so the horizontal axis becomes frequency."
+    },
+    {
+        "id":  "signals_easy_4",
+        "subject":  "signals",
+        "topic":  "sampling",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What must the sampling rate be relative to the bandwidth of a bandlimited signal to allow perfect reconstruction?",
+        "keywords":  [
+                         "nyquist",
+                         "twice",
+                         "2x",
+                         "greater than",
+                         "bandwidth"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The Nyquist rate: sample strictly above twice the highest frequency so the shifted spectra do not overlap."
+    },
+    {
+        "id":  "signals_med_1",
+        "subject":  "signals",
+        "topic":  "z_transform",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "The region of convergence of the z-transform of a finite-length sequence is:",
+        "options":  [
+                        "The entire z-plane except possibly z=0 and infinity",
+                        "An annulus",
+                        "Only the unit circle",
+                        "Outside a circle"
+                    ],
+        "answer":  0,
+        "explanation":  "Finite sums always converge except where poles at zero or infinity make the transform undefined."
+    },
+    {
+        "id":  "signals_med_2",
+        "subject":  "signals",
+        "topic":  "lti",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Which two properties must an LTI system satisfy?",
+        "keywords":  [
+                         "linearity",
+                         "time invariance",
+                         "superposition",
+                         "shift"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Linearity gives superposition and scaling; time invariance means a shifted input yields the same shifted output."
+    },
+    {
+        "id":  "signals_med_3",
+        "subject":  "signals",
+        "topic":  "filters",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "An ideal low-pass filter with cutoff W passes frequencies:",
+        "options":  [
+                        "|omega| \u003c W",
+                        "|omega| \u003e W",
+                        "|omega| = W only",
+                        "All frequencies attenuated"
+                    ],
+        "answer":  0,
+        "explanation":  "Its magnitude response is 1 inside the passband |omega| \u003c= W and 0 elsewhere."
+    },
+    {
+        "id":  "signals_med_4",
+        "subject":  "signals",
+        "topic":  "stability",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "State the condition for a discrete-time LTI system to be BIBO stable in terms of its impulse response.",
+        "keywords":  [
+                         "absolutely summable",
+                         "sum of",
+                         "finite",
+                         "magnitudes"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The impulse response must be absolutely summable: the sum of |h[n]| over all n must be finite."
+    },
+    {
+        "id":  "signals_hard_1",
+        "subject":  "signals",
+        "topic":  "fourier",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "Aliasing in a sampled signal is caused by:",
+        "options":  [
+                        "Spectra replicas overlapping because the sampling rate is too low",
+                        "Quantisation noise",
+                        "Phase distortion",
+                        "Filter roll-off"
+                    ],
+        "answer":  0,
+        "explanation":  "If fs is below the Nyquist rate, the replicas centred at multiples of fs overlap and high frequencies masquerade as low ones."
+    },
+    {
+        "id":  "signals_hard_2",
+        "subject":  "signals",
+        "topic":  "dtft_properties",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain the time-frequency duality implied by multiplication in one domain.",
+        "keywords":  [
+                         "convolution",
+                         "other domain",
+                         "modulation",
+                         "duality"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Multiplication in the time domain equals convolution in the frequency domain, and vice versa; a time shift only adds a linear phase term."
+    },
+    {
+        "id":  "signals_hard_3",
+        "subject":  "signals",
+        "topic":  "fft",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement an iterative radix-2 Cooley-Tukey FFT. Print the magnitude spectrum of the given length-4 real sequence.",
+        "templateCode":  "#include \u003cvector\u003e\n#include \u003ccomplex\u003e\n#include \u003ccmath\u003e\n#include \u003ciostream\u003e\n\nusing cd = std::complex\u003cdouble\u003e;\nconst double PI = std::acos(-1.0);\n\nvoid fft(std::vector\u003ccd\u003e\u0026 a) {\n    // TODO: bit-reverse then butterfly with twiddle factors\n}\n\nint main() {\n    std::vector\u003ccd\u003e a = {{1, 0}, {1, 0}, {0, 0}, {0, 0}};\n    fft(a);\n    for (auto\u0026 v : a) std::cout \u003c\u003c std::abs(v) \u003c\u003c \u0027 \u0027;\n    std::cout \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "1 1 0 0",
+                              "expectedOutput":  "2 1.41421 0 1.41421",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "1 0 1 0",
+                              "expectedOutput":  "2 0 2 0",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "The FFT computes the DFT in O(n log n) by splitting into even/odd subsequences and combining with twiddle factors."
+    },
+    {
+        "id":  "signals_hard_4",
+        "subject":  "signals",
+        "topic":  "sampling",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Describe how the sinc reconstruction formula recovers a continuous signal from its samples.",
+        "keywords":  [
+                         "sinc",
+                         "interpolate",
+                         "low-pass",
+                         "ideal",
+                         "shannon"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass filtering."
+    }
+]

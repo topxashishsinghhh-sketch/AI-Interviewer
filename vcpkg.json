@@ -1,0 +1,10 @@
+{
+  "name": "ai-interviewer",
+  "version": "1.0.0",
+  "dependencies": [
+    "nlohmann-json",
+    "gtest",
+    "fmt"
+  ],
+  "builtin-baseline": "2024-01-15"
+}

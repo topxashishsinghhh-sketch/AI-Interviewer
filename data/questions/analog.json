@@ -1,0 +1,145 @@
+[
+  {
+    "id": "analog_easy_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "A silicon diode conducts appreciably when forward biased at approximately:",
+    "options": ["0.2 V", "0.7 V", "1.4 V", "5 V"],
+    "answer": 1,
+    "explanation": "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that."
+  },
+  {
+    "id": "analog_easy_2",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "In a BJT, which current is the largest?",
+    "options": ["Base", "Collector", "Emitter", "Leakage"],
+    "answer": 2,
+    "explanation": "The emitter current is the sum of the collector and base currents, so it is the largest."
+  },
+  {
+    "id": "analog_easy_3",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the input resistance of an ideal op-amp?",
+    "options": ["Zero", "Finite and small", "Infinite", "Equal to the feedback resistor"],
+    "answer": 2,
+    "explanation": "An ideal op-amp draws no input current, which is modelled as infinite input resistance."
+  },
+  {
+    "id": "analog_easy_4",
+    "subject": "analog",
+    "topic": "capacitors",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What determines the capacitive reactance of a capacitor at a given frequency?",
+    "keywords": ["1/(2 pi f c)", "inversely proportional", "frequency", "capacitance"],
+    "minKeywords": 2,
+    "explanation": "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises."
+  },
+  {
+    "id": "analog_med_1",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "A voltage follower (buffer) configuration has a voltage gain of:",
+    "options": ["Zero", "Unity", "Infinite", "Set by the feedback network"],
+    "answer": 1,
+    "explanation": "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching."
+  },
+  {
+    "id": "analog_med_2",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is the input resistance seen at the base of a common-emitter amplifier with an emitter degeneration resistor?",
+    "keywords": ["beta", "re", "emitter resistor", "amplified"],
+    "minKeywords": 2,
+    "explanation": "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger."
+  },
+  {
+    "id": "analog_med_3",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Thermal noise voltage per square root of bandwidth increases with:",
+    "options": ["Temperature", "Lower temperature", "Frequency only", "Supply voltage"],
+    "answer": 0,
+    "explanation": "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature."
+  },
+  {
+    "id": "analog_med_4",
+    "subject": "analog",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What are the two defining characteristics of a Butterworth filter?",
+    "keywords": ["maximally flat", "passband", "no ripple", "monotonic"],
+    "minKeywords": 2,
+    "explanation": "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs."
+  },
+  {
+    "id": "analog_hard_1",
+    "subject": "analog",
+    "topic": "stability",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "A phase margin of zero degrees in a closed-loop amplifier indicates:",
+    "options": ["Stable with fast response", "Marginal stability with sustained oscillation", "No feedback", "Infinite gain"],
+    "answer": 1,
+    "explanation": "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation."
+  },
+  {
+    "id": "analog_hard_2",
+    "subject": "analog",
+    "topic": "feedback",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain why negative feedback reduces harmonic distortion in an amplifier.",
+    "keywords": ["loop gain", "error", "inverse", "suppress", "1+ab"],
+    "minKeywords": 2,
+    "explanation": "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta)."
+  },
+  {
+    "id": "analog_hard_3",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Simulate an inverting op-amp amplifier and print the clipped output for each input sample. Gain is -Rf/Rin and the supply rails clip at Vcc.",
+    "templateCode": "#include <vector>\n#include <iostream>\n\nint main() {\n    double rf, rin, vcc;\n    int n;\n    std::cin >> rf >> rin >> vcc >> n;\n    double gain = -rf / rin;\n    std::vector<double> out(n);\n    for (int i = 0; i < n; ++i) {\n        double v;\n        std::cin >> v;\n        // TODO: apply gain and clip to [-vcc, vcc]\n    }\n    for (double v : out) std::cout << v << ' ';\n    std::cout << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "10000 1000 12 3\n0.5 -2 10",
+        "expectedOutput": "-5 12 -12",
+        "isHidden": false
+      },
+      {
+        "input": "2000 1000 5 3\n1 -1 0.25",
+        "expectedOutput": "-2 2 -0.5",
+        "isHidden": true
+      }
+    ],
+    "explanation": "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp."
+  },
+  {
+    "id": "analog_hard_4",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Why does a diode's dynamic resistance fall as the DC bias current increases?",
+    "keywords": ["shockley", "vt", "id", "slope", "exponential"],
+    "minKeywords": 2,
+    "explanation": "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely."
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "id": "algo_easy_1",
+    "subject": "algo",
+    "topic": "sorting",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the worst-case time complexity of quicksort?",
+    "options": ["O(n log n)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": 1,
+    "explanation": "With an unlucky pivot choice the partitions stay unbalanced, degrading to O(n^2)."
+  },
+  {
+    "id": "algo_easy_2",
+    "subject": "algo",
+    "topic": "complexity",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which of these is NOT a stable sorting algorithm?",
+    "options": ["Merge sort", "Bubble sort", "Insertion sort", "Heapsort"],
+    "answer": 3,
+    "explanation": "Heapsort swaps elements across the array, destroying the relative order of equal keys."
+  },
+  {
+    "id": "algo_easy_3",
+    "subject": "algo",
+    "topic": "searching",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the time complexity of binary search on a sorted array of n elements?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answer": 1,
+    "explanation": "Each comparison halves the search space, giving O(log n)."
+  },
+  {
+    "id": "algo_easy_4",
+    "subject": "algo",
+    "topic": "complexity",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What does Big-O notation describe?",
+    "keywords": ["upper bound", "worst case", "growth", "asymptotic"],
+    "minKeywords": 2,
+    "explanation": "Big-O bounds the growth rate of a function from above as the input size tends to infinity."
+  },
+  {
+    "id": "algo_med_1",
+    "subject": "algo",
+    "topic": "dp",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What are the two essential properties required for dynamic programming to be applicable?",
+    "options": ["Optimal substructure and overlapping subproblems", "Sorting and searching", "Recursion and iteration", "Divide and conquer and pruning"],
+    "answer": 0,
+    "explanation": "Optimal solutions must contain optimal sub-solutions, and the same subproblems must recur."
+  },
+  {
+    "id": "algo_med_2",
+    "subject": "algo",
+    "topic": "graphs",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is the time complexity of Dijkstra's algorithm using a binary heap?",
+    "keywords": ["(v+e)", "log", "e log v", "heap"],
+    "minKeywords": 1,
+    "explanation": "With a binary heap each edge relaxation costs O(log V), giving O((V + E) log V)."
+  },
+  {
+    "id": "algo_med_3",
+    "subject": "algo",
+    "topic": "greedy",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "The greedy fractional knapsack algorithm achieves what approximation ratio?",
+    "options": ["Exact optimum", "At most 2x optimum", "No bound", "At most n x optimum"],
+    "answer": 0,
+    "explanation": "Fractional knapsack has the greedy-choice property, so sorting by value/weight yields the exact optimum."
+  },
+  {
+    "id": "algo_med_4",
+    "subject": "algo",
+    "topic": "amortized",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is the amortized time complexity of a single push operation on a dynamic array that doubles when full?",
+    "keywords": ["amortized", "o(1)", "constant", "doubling"],
+    "minKeywords": 1,
+    "explanation": "Rare O(n) resizes are averaged over n insertions, so the amortized cost is O(1)."
+  },
+  {
+    "id": "algo_hard_1",
+    "subject": "algo",
+    "topic": "graphs",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "What is the time complexity of the Bellman-Ford algorithm on a graph with V vertices and E edges?",
+    "options": ["O(V + E)", "O(V E)", "O(V^2)", "O(E log V)"],
+    "answer": 1,
+    "explanation": "It relaxes all E edges V-1 times, so the cost is O(V E)."
+  },
+  {
+    "id": "algo_hard_2",
+    "subject": "algo",
+    "topic": "np",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain the difference between a decision problem being in NP and being NP-hard.",
+    "keywords": ["verify", "certificate", "polynomial", "reduce", "at least as hard"],
+    "minKeywords": 2,
+    "explanation": "NP means a proposed solution can be verified in polynomial time; NP-hard means every problem in NP reduces to it, which does not require it to be in NP or even be a decision problem."
+  },
+  {
+    "id": "algo_hard_3",
+    "subject": "algo",
+    "topic": "sorting",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Given n integers, find the k largest elements and return them sorted ascending. Use a heap-based approach.",
+    "templateCode": "#include <vector>\n#include <iostream>\n#include <queue>\n\nstd::vector<int> kLargest(std::vector<int> nums, int k) {\n    // TODO: maintain a min-heap of size k\n    return {};\n}\n\nint main() {\n    int n, k;\n    std::cin >> n >> k;\n    std::vector<int> nums(n);\n    for (int& x : nums) std::cin >> x;\n    auto out = kLargest(nums, k);\n    for (int x : out) std::cout << x << ' ';\n    std::cout << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "5 2\n3 1 5 2 4",
+        "expectedOutput": "4 5",
+        "isHidden": false
+      },
+      {
+        "input": "6 3\n10 9 8 7 6 5",
+        "expectedOutput": "8 9 10",
+        "isHidden": true
+      }
+    ],
+    "explanation": "A min-heap of size k costs O(n log k) time and O(k) space, beating a full sort when k is much smaller than n."
+  },
+  {
+    "id": "algo_hard_4",
+    "subject": "algo",
+    "topic": "dp",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "What is the space-optimised tabulation for the 0/1 knapsack recurrence, and why does collapsing the second dimension work?",
+    "keywords": ["one-dimensional", "iterate weights descending", "in place", "avoid reusing item twice"],
+    "minKeywords": 2,
+    "explanation": "A single array of capacities works if you iterate the capacity downwards: the value at w - weight must still refer to the previous item, and descending order guarantees that."
+  }
+]

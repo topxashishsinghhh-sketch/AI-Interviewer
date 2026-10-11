@@ -1,0 +1,160 @@
+[
+  {
+    "id": "cpp_oop_easy_1",
+    "subject": "oop",
+    "topic": "encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is encapsulation in OOP?",
+    "options": [
+      "Hiding data and methods within a class",
+      "Inheriting from multiple classes",
+      "Overriding virtual functions",
+      "Creating objects from classes"
+    ],
+    "answer": 0,
+    "explanation": "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components."
+  },
+  {
+    "id": "cpp_oop_easy_2",
+    "subject": "oop",
+    "topic": "encapsulation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which access specifier makes members accessible only within the class?",
+    "options": ["public", "protected", "private", "friend"],
+    "answer": 2,
+    "explanation": "Private members are only accessible within the class they are declared in."
+  },
+  {
+    "id": "cpp_oop_easy_3",
+    "subject": "oop",
+    "topic": "inheritance",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is single inheritance?",
+    "options": [
+      "A class inheriting from one base class",
+      "A class inheriting from multiple base classes",
+      "A class inheriting from a derived class",
+      "A class with no inheritance"
+    ],
+    "answer": 0,
+    "explanation": "Single inheritance is when a derived class inherits from exactly one base class."
+  },
+  {
+    "id": "cpp_oop_easy_4",
+    "subject": "oop",
+    "topic": "polymorphism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What enables runtime polymorphism in C++?",
+    "options": ["Function overloading", "Virtual functions", "Templates", "Inline functions"],
+    "answer": 1,
+    "explanation": "Virtual functions allow derived class methods to be called through base class pointers/references at runtime."
+  },
+  {
+    "id": "cpp_oop_medium_1",
+    "subject": "oop",
+    "topic": "inheritance",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Explain the difference between public, protected, and private inheritance in C++.",
+    "keywords": ["public", "protected", "private", "access", "is-a", "implemented-in-terms-of"],
+    "minKeywords": 3,
+    "explanation": "Public inheritance models 'is-a', protected/private model 'implemented-in-terms-of'. Access levels affect derived class access to base members."
+  },
+  {
+    "id": "cpp_oop_medium_2",
+    "subject": "oop",
+    "topic": "polymorphism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Describe the difference between static and dynamic polymorphism with examples.",
+    "keywords": ["compile-time", "runtime", "templates", "virtual", "overloading", "overriding"],
+    "minKeywords": 3,
+    "explanation": "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable."
+  },
+  {
+    "id": "cpp_oop_medium_3",
+    "subject": "oop",
+    "topic": "patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which pattern ensures a class has only one instance?",
+    "options": ["Factory", "Singleton", "Builder", "Prototype"],
+    "answer": 1,
+    "explanation": "Singleton pattern restricts instantiation to a single object and provides global access to it."
+  },
+  {
+    "id": "cpp_oop_medium_4",
+    "subject": "oop",
+    "topic": "patterns",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What pattern defines a family of algorithms and makes them interchangeable?",
+    "options": ["Strategy", "Observer", "Decorator", "Adapter"],
+    "answer": 0,
+    "explanation": "Strategy pattern encapsulates algorithms and allows switching between them at runtime."
+  },
+  {
+    "id": "cpp_oop_hard_1",
+    "subject": "oop",
+    "topic": "patterns",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Implement a Strategy pattern for sorting algorithms. Create an interface SortStrategy with execute(vector<int>&) and concrete strategies for BubbleSort, QuickSort, and MergeSort.",
+    "templateCode": "#include <vector>\n#include <algorithm>\n\nclass SortStrategy {\npublic:\n    virtual void execute(std::vector<int>& data) = 0;\n    virtual ~SortStrategy() = default;\n};\n\nclass BubbleSort : public SortStrategy {\npublic:\n    void execute(std::vector<int>& data) override {\n        // TODO\n    }\n};\n\nclass QuickSort : public SortStrategy {\npublic:\n    void execute(std::vector<int>& data) override {\n        // TODO\n    }\n};\n\nclass MergeSort : public SortStrategy {\npublic:\n    void execute(std::vector<int>& data) override {\n        // TODO\n    }\n};",
+    "testCases": [
+      {
+        "input": "5 4 3 2 1",
+        "expectedOutput": "1 2 3 4 5",
+        "isHidden": false
+      },
+      {
+        "input": "3 1 4 1 5 9 2 6",
+        "expectedOutput": "1 1 2 3 4 5 6 9",
+        "isHidden": false
+      },
+      {
+        "input": "1",
+        "expectedOutput": "1",
+        "isHidden": true
+      },
+      {
+        "input": "",
+        "expectedOutput": "",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Strategy pattern allows switching sorting algorithms at runtime without changing client code."
+  },
+  {
+    "id": "cpp_oop_hard_2",
+    "subject": "oop",
+    "topic": "polymorphism",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Implement a simple Observer pattern. Create Subject interface with attach, detach, notify. Create ConcreteSubject with state. Create Observer interface with update(). Create ConcreteObserver that prints state changes.",
+    "templateCode": "#include <vector>\n#include <memory>\n#include <iostream>\n\nclass Observer {\npublic:\n    virtual void update(int state) = 0;\n    virtual ~Observer() = default;\n};\n\nclass Subject {\npublic:\n    virtual void attach(std::shared_ptr<Observer> obs) = 0;\n    virtual void detach(std::shared_ptr<Observer> obs) = 0;\n    virtual void notify() = 0;\n    virtual ~Subject() = default;\n};\n\nclass ConcreteSubject : public Subject {\n    int state_ = 0;\n    std::vector<std::shared_ptr<Observer>> observers_;\npublic:\n    void attach(std::shared_ptr<Observer> obs) override {\n        // TODO\n    }\n    void detach(std::shared_ptr<Observer> obs) override {\n        // TODO\n    }\n    void notify() override {\n        // TODO\n    }\n    void setState(int state) { state_ = state; notify(); }\n    int getState() const { return state_; }\n};\n\nclass ConcreteObserver : public Observer {\n    std::string name_;\npublic:\n    ConcreteObserver(const std::string& name) : name_(name) {}\n    void update(int state) override {\n        // TODO\n    }\n};",
+    "testCases": [
+      {
+        "input": "test1 10 test2 20",
+        "expectedOutput": "Observer test1: 10\nObserver test2: 10\nObserver test1: 20\nObserver test2: 20",
+        "isHidden": false
+      }
+    ],
+    "explanation": "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified."
+  },
+  {
+    "id": "cpp_oop_hard_3",
+    "subject": "oop",
+    "topic": "inheritance",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain the diamond problem in multiple inheritance and how virtual inheritance solves it. Provide a code example.",
+    "keywords": ["diamond", "virtual", "inheritance", "ambiguity", "vptr", "shared", "base"],
+    "minKeywords": 4,
+    "explanation": "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base class exists."
+  }
+]

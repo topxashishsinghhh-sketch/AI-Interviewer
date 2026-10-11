@@ -1,0 +1,155 @@
+[
+  {
+    "id": "apt_easy_1",
+    "subject": "aptitude",
+    "topic": "numbers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the HCF of 24 and 36?",
+    "options": ["6", "12", "18", "24"],
+    "answer": 1,
+    "explanation": "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12."
+  },
+  {
+    "id": "apt_easy_2",
+    "subject": "aptitude",
+    "topic": "percentages",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "If 20% of a number is 40, what is the number?",
+    "options": ["100", "200", "80", "160"],
+    "answer": 1,
+    "explanation": "20% of x = 40 => 0.2x = 40 => x = 40/0.2 = 200."
+  },
+  {
+    "id": "apt_easy_3",
+    "subject": "aptitude",
+    "topic": "time_work",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "A can do a work in 10 days, B in 15 days. Together they complete it in:",
+    "options": ["5 days", "6 days", "7 days", "8 days"],
+    "answer": 1,
+    "explanation": "A's 1 day work = 1/10, B's = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days."
+  },
+  {
+    "id": "apt_easy_4",
+    "subject": "aptitude",
+    "topic": "numbers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Find the LCM of 12, 15, and 20.",
+    "keywords": ["60", "lcm", "least common multiple"],
+    "minKeywords": 1,
+    "explanation": "LCM(12, 15, 20) = 60. Prime factors: 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60."
+  },
+  {
+    "id": "apt_medium_1",
+    "subject": "aptitude",
+    "topic": "percentages",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "A shopkeeper marks up price by 40% and gives 10% discount. Profit %?",
+    "options": ["26%", "30%", "20%", "36%"],
+    "answer": 0,
+    "explanation": "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%."
+  },
+  {
+    "id": "apt_medium_2",
+    "subject": "aptitude",
+    "topic": "time_work",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Pipe A fills tank in 4 hrs, B in 6 hrs, C empties in 8 hrs. All three open, time to fill?",
+    "keywords": ["24/7", "3.43", "3 hours", "fraction"],
+    "minKeywords": 1,
+    "explanation": "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours ≈ 3.43 hours."
+  },
+  {
+    "id": "apt_medium_3",
+    "subject": "aptitude",
+    "topic": "numbers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Sum of first 50 even numbers?",
+    "options": ["2500", "2550", "2600", "2450"],
+    "answer": 1,
+    "explanation": "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 × 102 = 2550."
+  },
+  {
+    "id": "apt_medium_4",
+    "subject": "aptitude",
+    "topic": "percentages",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Population increases 10% annually. After 2 years it's 12100. Present population?",
+    "keywords": ["10000", "ten thousand"],
+    "minKeywords": 1,
+    "explanation": "P × 1.1 × 1.1 = 12100 => P × 1.21 = 12100 => P = 10000."
+  },
+  {
+    "id": "apt_hard_1",
+    "subject": "aptitude",
+    "topic": "time_work",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Given n pipes with fill/empty rates (positive=fills, negative=empties), find time to fill tank. Return -1 if never fills.",
+    "templateCode": "#include <vector>\n#include <iostream>\n\ndouble timeToFill(const std::vector<double>& rates) {\n    // rates in tanks per hour\n    // TODO: return hours to fill, or -1 if net rate <= 0\n    return -1.0;\n}\n\nint main() {\n    int n; std::cin >> n;\n    std::vector<double> rates(n);\n    for (int i = 0; i < n; ++i) std::cin >> rates[i];\n    double result = timeToFill(rates);\n    if (result < 0) std::cout << \"Never fills\\n\";\n    else std::cout << result << \" hours\\n\";\n    return 0;\n}",
+    "testCases": [
+      {
+        "input": "3\n0.25 0.1667 -0.125",
+        "expectedOutput": "3.42857 hours",
+        "isHidden": false
+      },
+      {
+        "input": "2\n0.1 -0.2",
+        "expectedOutput": "Never fills",
+        "isHidden": false
+      },
+      {
+        "input": "1\n0.5",
+        "expectedOutput": "2 hours",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Net rate = sum of all rates. If net > 0, time = 1/net. If net <= 0, never fills."
+  },
+  {
+    "id": "apt_hard_2",
+    "subject": "aptitude",
+    "topic": "numbers",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Find the smallest number divisible by all numbers from 1 to n (LCM of 1..n).",
+    "templateCode": "#include <iostream>\n#include <numeric>\n\nlong long lcm1toN(int n) {\n    // TODO: return LCM of 1,2,...,n\n    return 1;\n}\n\nint main() {\n    int n; std::cin >> n;\n    std::cout << lcm1toN(n) << \"\\n\";\n    return 0;\n}",
+    "testCases": [
+      {
+        "input": "5",
+        "expectedOutput": "60",
+        "isHidden": false
+      },
+      {
+        "input": "10",
+        "expectedOutput": "2520",
+        "isHidden": false
+      },
+      {
+        "input": "20",
+        "expectedOutput": "232792560",
+        "isHidden": true
+      }
+    ],
+    "explanation": "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from <numeric>."
+  },
+  {
+    "id": "apt_hard_3",
+    "subject": "aptitude",
+    "topic": "percentages",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "A product's price is increased by x% then decreased by x%. Net change?",
+    "keywords": ["decrease", "loss", "x^2/100", "negative"],
+    "minKeywords": 2,
+    "explanation": "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-x²/10000). Net change = -x²/100%. Always a decrease."
+  }
+]

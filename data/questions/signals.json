@@ -1,0 +1,145 @@
+[
+  {
+    "id": "signals_easy_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "A signal that is defined only at discrete instants of time is called:",
+    "options": ["Continuous-time", "Discrete-time", "Analogue", "Random"],
+    "answer": 1,
+    "explanation": "Discrete-time signals are defined at integer indices n; continuous-time signals are defined for all t."
+  },
+  {
+    "id": "signals_easy_2",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What does convolution of a signal with the unit impulse delta(n) produce?",
+    "options": ["The signal itself", "A shifted-and-scaled version", "Zero", "The signal reversed"],
+    "answer": 1,
+    "explanation": "delta(n - k) picks out x(n - k), so convolving with a shifted impulse shifts and scales the signal."
+  },
+  {
+    "id": "signals_easy_3",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "The Fourier transform converts a signal from the time domain to the:",
+    "options": ["Frequency domain", "Spatial domain", "Probability domain", "Laplace domain"],
+    "answer": 0,
+    "explanation": "It expresses the signal as a sum of sinusoids, so the horizontal axis becomes frequency."
+  },
+  {
+    "id": "signals_easy_4",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What must the sampling rate be relative to the bandwidth of a bandlimited signal to allow perfect reconstruction?",
+    "keywords": ["nyquist", "twice", "2x", "greater than", "bandwidth"],
+    "minKeywords": 2,
+    "explanation": "The Nyquist rate: sample strictly above twice the highest frequency so the shifted spectra do not overlap."
+  },
+  {
+    "id": "signals_med_1",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "The region of convergence of the z-transform of a finite-length sequence is:",
+    "options": ["The entire z-plane except possibly z=0 and infinity", "An annulus", "Only the unit circle", "Outside a circle"],
+    "answer": 0,
+    "explanation": "Finite sums always converge except where poles at zero or infinity make the transform undefined."
+  },
+  {
+    "id": "signals_med_2",
+    "subject": "signals",
+    "topic": "lti",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Which two properties must an LTI system satisfy?",
+    "keywords": ["linearity", "time invariance", "superposition", "shift"],
+    "minKeywords": 2,
+    "explanation": "Linearity gives superposition and scaling; time invariance means a shifted input yields the same shifted output."
+  },
+  {
+    "id": "signals_med_3",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "An ideal low-pass filter with cutoff W passes frequencies:",
+    "options": ["|omega| < W", "|omega| > W", "|omega| = W only", "All frequencies attenuated"],
+    "answer": 0,
+    "explanation": "Its magnitude response is 1 inside the passband |omega| <= W and 0 elsewhere."
+  },
+  {
+    "id": "signals_med_4",
+    "subject": "signals",
+    "topic": "stability",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "State the condition for a discrete-time LTI system to be BIBO stable in terms of its impulse response.",
+    "keywords": ["absolutely summable", "sum of", "finite", "magnitudes"],
+    "minKeywords": 2,
+    "explanation": "The impulse response must be absolutely summable: the sum of |h[n]| over all n must be finite."
+  },
+  {
+    "id": "signals_hard_1",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Aliasing in a sampled signal is caused by:",
+    "options": ["Spectra replicas overlapping because the sampling rate is too low", "Quantisation noise", "Phase distortion", "Filter roll-off"],
+    "answer": 0,
+    "explanation": "If fs is below the Nyquist rate, the replicas centred at multiples of fs overlap and high frequencies masquerade as low ones."
+  },
+  {
+    "id": "signals_hard_2",
+    "subject": "signals",
+    "topic": "dtft_properties",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain the time-frequency duality implied by multiplication in one domain.",
+    "keywords": ["convolution", "other domain", "modulation", "duality"],
+    "minKeywords": 2,
+    "explanation": "Multiplication in the time domain equals convolution in the frequency domain, and vice versa; a time shift only adds a linear phase term."
+  },
+  {
+    "id": "signals_hard_3",
+    "subject": "signals",
+    "topic": "fft",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Implement an iterative radix-2 Cooley-Tukey FFT. Print the magnitude spectrum of the given length-4 real sequence.",
+    "templateCode": "#include <vector>\n#include <complex>\n#include <cmath>\n#include <iostream>\n\nusing cd = std::complex<double>;\nconst double PI = std::acos(-1.0);\n\nvoid fft(std::vector<cd>& a) {\n    // TODO: bit-reverse then butterfly with twiddle factors\n}\n\nint main() {\n    std::vector<cd> a = {{1, 0}, {1, 0}, {0, 0}, {0, 0}};\n    fft(a);\n    for (auto& v : a) std::cout << std::abs(v) << ' ';\n    std::cout << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "1 1 0 0",
+        "expectedOutput": "2 1.41421 0 1.41421",
+        "isHidden": false
+      },
+      {
+        "input": "1 0 1 0",
+        "expectedOutput": "2 0 2 0",
+        "isHidden": true
+      }
+    ],
+    "explanation": "The FFT computes the DFT in O(n log n) by splitting into even/odd subsequences and combining with twiddle factors."
+  },
+  {
+    "id": "signals_hard_4",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Describe how the sinc reconstruction formula recovers a continuous signal from its samples.",
+    "keywords": ["sinc", "interpolate", "low-pass", "ideal", "shannon"],
+    "minKeywords": 2,
+    "explanation": "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass filtering."
+  }
+]

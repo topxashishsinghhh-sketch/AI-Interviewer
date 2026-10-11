@@ -1,0 +1,37 @@
+# Build outputs
+build/
+build-*/
+out/
+cmake-build-*/
+
+# Qt generated artifacts (mostly inside the build dir, but be explicit)
+*_autogen/
+moc_*.cpp
+moc_*.h
+ui_*.h
+qrc_*.cpp
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+CMakeSettings.json
+
+# Runtime data (created by the app; never commit user data)
+data/users.json
+data/attempts.json
+data/scoreboard.json
+data/daily_challenges.json
+
+# Backups produced by mongo_backup
+backups/
+
+# Local config
+.env
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store

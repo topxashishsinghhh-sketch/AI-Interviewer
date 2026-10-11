@@ -1,0 +1,145 @@
+[
+  {
+    "id": "reasoning_easy_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Complete the series: 2, 6, 12, 20, 30, ?",
+    "options": ["36", "40", "42", "44"],
+    "answer": 2,
+    "explanation": "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42."
+  },
+  {
+    "id": "reasoning_easy_2",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Complete the series: A, C, F, J, O, ?",
+    "options": ["T", "U", "S", "V"],
+    "answer": 1,
+    "explanation": "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U."
+  },
+  {
+    "id": "reasoning_easy_3",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Pointing to a photo, Rahul said, \"She is the daughter of my grandfather's only son.\" Who is she?",
+    "options": ["His cousin", "His sister", "His aunt", "His niece"],
+    "answer": 1,
+    "explanation": "The grandfather's only son is Rahul's father, so his daughter is Rahul's sister."
+  },
+  {
+    "id": "reasoning_easy_4",
+    "subject": "reasoning",
+    "topic": "coding",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "If 'CAT' is written as 'DBU', how is 'DOG' written?",
+    "keywords": ["eph", "each letter", "next", "shifted one", "forward"],
+    "minKeywords": 2,
+    "explanation": "Every letter moves one position forward, so D-O-G becomes E-P-H."
+  },
+  {
+    "id": "reasoning_med_1",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "All roses are flowers. Some flowers fade quickly. Which conclusion must be true?",
+    "options": ["Some roses fade quickly", "All flowers are roses", "No roses fade quickly", "None of these necessarily follow"],
+    "answer": 3,
+    "explanation": "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced."
+  },
+  {
+    "id": "reasoning_med_2",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "A man walks 5 km north, turns right and walks 3 km, turns right again and walks 5 km. How far is he from the start and in which direction?",
+    "keywords": ["3", "east", "south", "rectangle", "straight"],
+    "minKeywords": 2,
+    "explanation": "The path forms a rectangle: he ends 3 km east of the starting point."
+  },
+  {
+    "id": "reasoning_med_3",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Six people sit in a circle facing the centre. If A is opposite D and B sits to the immediate right of A, who sits to the immediate left of A?",
+    "options": ["C", "D", "Cannot be determined", "F"],
+    "answer": 2,
+    "explanation": "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed."
+  },
+  {
+    "id": "reasoning_med_4",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Find the next term: 3, 7, 16, 35, 74, ?",
+    "keywords": ["153", "double", "plus one", "x2"],
+    "minKeywords": 1,
+    "explanation": "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153."
+  },
+  {
+    "id": "reasoning_hard_1",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Some engineers are musicians. All musicians are artists. Which conclusion follows?",
+    "options": ["All engineers are artists", "Some engineers are artists", "No artist is an engineer", "All artists are engineers"],
+    "answer": 1,
+    "explanation": "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists."
+  },
+  {
+    "id": "reasoning_hard_2",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Three switches outside a room control three bulbs inside, but you may enter the room only once. How do you identify each switch?",
+    "keywords": ["heat", "on for a while", "warm", "off", "bulb"],
+    "minKeywords": 2,
+    "explanation": "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify the three switches."
+  },
+  {
+    "id": "reasoning_hard_3",
+    "subject": "reasoning",
+    "topic": "analogies",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain the relation in the analogy 'Thermometer : Temperature' and apply it to 'Anemometer : ?'.",
+    "keywords": ["instrument", "measures", "wind speed", "quantity"],
+    "minKeywords": 2,
+    "explanation": "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed."
+  },
+  {
+    "id": "reasoning_hard_4",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Trace a path of moves (N/S/E/W, one unit each) and print the Manhattan distance from the origin and the final facing direction starting from North.",
+    "templateCode": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string moves;\n    std::getline(std::cin, moves);\n    int x = 0, y = 0;\n    char facing = 'N';\n    // TODO: apply each move and track the facing direction\n    std::cout << (std::abs(x) + std::abs(y)) << ' ' << facing << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "NNEE",
+        "expectedOutput": "4 E",
+        "isHidden": false
+      },
+      {
+        "input": "NESW",
+        "expectedOutput": "0 N",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step."
+  }
+]
