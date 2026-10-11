@@ -916,6 +916,22 @@ void HttpServer::registerRoutes() {
     });
 
     // ---- static front-end ----
+    // Revalidate on every load. The front-end is edited in place, and without
+    // this a browser keeps serving a cached copy after the files change, which
+    // looks like the app failed to load.
+    server_->set_pre_routing_handler([](const httplib::Request& request,
+                                        httplib::Response& response) -> httplib::Server::HandlerResponse {
+        const std::string& path = request.path;
+        // "/" is size 1, so the length check must allow it through.
+        const bool isAsset = !path.empty() && path != "/api/healthz"
+            && (path == "/app.js" || path == "/style.css" || path == "/"
+                || path == "/index.html");
+        if (isAsset) {
+            response.set_header("Cache-Control", "no-cache, must-revalidate");
+        }
+        return httplib::Server::HandlerResponse::Unhandled;
+    });
+
     server_->set_mount_point("/", config_.staticDir);
 }
 

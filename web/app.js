@@ -497,7 +497,7 @@ async function loadDashboard() {
   const overall = pct(solved.total || 0, available.total || 0);
   const acceptance = stats.acceptancePermille
     ? (stats.acceptancePermille / 10).toFixed(1) + "%"
-    : "—";
+    : "â€”";
 
   // Bento: one wide hero card with the rings, then a row of metrics, then the
   // recommendation and activity cards.
@@ -532,7 +532,7 @@ async function loadDashboard() {
   bento.id = "dashCards";
 
   $("dashStreak").textContent =
-    (stats.streak || 0) + " day streak · longest " + (stats.longestStreak || 0);
+    (stats.streak || 0) + " day streak Â· longest " + (stats.longestStreak || 0);
 
   // Recommended: unsolved, easiest first.
   const problems = await request("/api/problems?status=unsolved&sort=difficulty&limit=6");
@@ -1165,8 +1165,11 @@ async function loadLeaderboard() {
       // A short completion strip: one tick per roughly a tenth of the bank.
       const cells = Math.min(20, Math.max(1, total > 0 ? Math.ceil(total / 6) : 1));
       let filled = total > 0 ? Math.round((row.solved / total) * cells) : 0;
+      // CSS blocks, same component the profile uses, so the two views match.
       let grid = "";
-      for (let i = 0; i < cells; i++) grid += i < filled ? "âœ…" : "â¬œ";
+      for (let i = 0; i < cells; i++) {
+        grid += '<span class="block ' + (i < filled ? "on" : "") + '"></span>';
+      }
       return (
         "<tr><td class='muted'>" + (index + 1) + "</td>" +
         "<td>" + escapeHtml(row.name) + '</td>' +
@@ -1226,13 +1229,17 @@ async function loadProfile() {
   $("subjectProgress").innerHTML = rows.map(row => {
     const done = solvedBySubject[row.subject] || 0;
     const pct = row.total > 0 ? Math.round((done / row.total) * 100) : 0;
+    // Ten CSS blocks rather than emoji: no encoding hazards, and they scale
+    // with the type size.
     const cells = 10;
     const filled = Math.round((done / Math.max(1, row.total)) * cells);
     let grid = "";
-    for (let i = 0; i < cells; i++) grid += i < filled ? "??" : "?";
+    for (let i = 0; i < cells; i++) {
+      grid += '<span class="block ' + (i < filled ? "on" : "") + '"></span>';
+    }
     return '<div class="bar-row"><span>' + escapeHtml(row.subject) + '</span>' +
       '<span class="block-grid">' + grid + '</span>' +
-      '<span class="bar-num">' + pct + "% · " + done + "/" + row.total + '</span></div>';
+      '<span class="bar-num">' + pct + '% Â· ' + done + '/' + row.total + '</span></div>';
   }).join("") || '<p class="muted">No subjects yet.</p>';
 
   renderCalendar($("profileCalendar"), stats.activeDates || []);
@@ -1281,8 +1288,8 @@ async function loadAdmin() {
 
   // Reads as: what the browser is talking to, so the storage choice is visible.
   $("backendNote").textContent =
-    "C++17 core · " + (window.location.protocol === "https:" ? "TLS" : "local HTTP") +
-    " · JSON or MongoDB storage";
+    "C++17 core Â· " + (window.location.protocol === "https:" ? "TLS" : "local HTTP") +
+    " Â· JSON or MongoDB storage";
   toggleAuthMode();
   renderTopbar();
   if (state.token) {
