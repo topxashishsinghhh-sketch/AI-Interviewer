@@ -39,11 +39,18 @@ if ($needsClean) {
 }
 
 Write-Host "[gui] configuring with Qt toolchain..."
+# -DBUILD_WEB=ON is deliberate: this script shares build-gui with run_web.ps1.
+# Omitting it reconfigures the tree without the web target, which deletes
+# ai_interviewer_web.exe and breaks a running site plus the next run_web call.
+# -UCMAKE_PROJECT_INCLUDE_BEFORE clears a debug hook left in the cache by an
+# earlier session.
 & cmake -G "MinGW Makefiles" `
     -DCMAKE_TOOLCHAIN_FILE="$root\cmake\qt-mingw.cmake" `
     -DCMAKE_PREFIX_PATH="$qtPrefix" `
     -DBUILD_GUI=ON `
     -DBUILD_GUI_TESTS=ON `
+    -DBUILD_WEB=ON `
+    -UCMAKE_PROJECT_INCLUDE_BEFORE `
     -DUSE_MONGO=OFF `
     -S $root -B $buildDir
 if ($LASTEXITCODE -ne 0) { Write-Host "[gui] configure failed" -ForegroundColor Red; exit 1 }
