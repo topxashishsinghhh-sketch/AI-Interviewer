@@ -107,6 +107,37 @@ function show(view) {
   if (view === "start") { loadCourses(); loadSubjects(); }
 }
 
+// ---------------------------------------------------------------------------
+// Keyboard shortcuts. "/" jumps to problem search and Ctrl+Enter submits the
+// current answer, which are the two actions taken most often while practising.
+// ---------------------------------------------------------------------------
+
+document.addEventListener("keydown", (event) => {
+  const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
+
+  // "/" focuses search unless the user is already typing somewhere.
+  if (event.key === "/" && !typing && state.view === "problems") {
+    event.preventDefault();
+    $("problemSearch").focus();
+    return;
+  }
+
+  // Ctrl/Cmd+Enter submits the problem answer from anywhere on the page.
+  if (event.key === "Enter" && (event.ctrlKey || event.metaKey)
+      && state.view === "problem" && state.currentProblem) {
+    event.preventDefault();
+    $("pSubmit").click();
+    return;
+  }
+
+  // Ctrl/Cmd+Enter also submits the in-progress interview answer.
+  if (event.key === "Enter" && (event.ctrlKey || event.metaKey)
+      && state.view === "interview" && state.interviewId) {
+    event.preventDefault();
+    $("answerSubmit").click();
+  }
+});
+
 document.addEventListener("click", (event) => {
   const trigger = event.target.closest("[data-nav]");
   if (!trigger) return;
@@ -1037,6 +1068,10 @@ async function loadAdmin() {
 // ---------------------------------------------------------------------------
 
 (async function init() {
+  // Reads as: what the browser is talking to, so the storage choice is visible.
+  $("backendNote").textContent =
+    "C++17 core · " + (window.location.protocol === "https:" ? "TLS" : "local HTTP") +
+    " · JSON or MongoDB storage";
   toggleAuthMode();
   renderTopbar();
   if (state.token) {
