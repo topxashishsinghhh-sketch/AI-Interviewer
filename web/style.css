@@ -110,6 +110,12 @@
    -------------------------------------------------------------------------- */
 
 *, *::before, *::after { box-sizing: border-box; }
+
+/* The [hidden] attribute only wins against the UA stylesheet. Any rule here
+   that sets display would silently keep a hidden element on screen, so restore
+   it explicitly. The command palette was covering the login screen this way. */
+[hidden] { display: none !important; }
+
 html { -webkit-text-size-adjust: 100%; }
 
 body {
