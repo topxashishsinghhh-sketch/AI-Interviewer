@@ -1,0 +1,5150 @@
+[
+  {
+    "id": "gen_reasoning_mt_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does series rely on jumping series? Give a concrete reason.",
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "minKeywords": 1,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "State jumping series correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'jumping series' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "Identify the correct definition of jumping series.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about facing inward is correct?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a seated person looks toward the centre of a circle",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "Identify the correct definition of facing inward.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain prime number to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a number with exactly two distinct divisors"
+    ],
+    "answer": 3,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "Identify the correct definition of prime number.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_m_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about maternal line is correct?",
+    "options": [
+      "relatives through the mother's side",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 0,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "Identify the correct definition of maternal line.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast opposite seats with letter series. Which would you choose and why?",
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "minKeywords": 1,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "State opposite seats correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'paternal line' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "relatives through the father's side"
+    ],
+    "answer": 3,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "Identify the correct definition of paternal line.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain opposite seats to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "seats half a circle apart",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "Identify the correct definition of opposite seats.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_st_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of sibling suitable for a project update.",
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "minKeywords": 1,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "State sibling correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define opposite seats in seating, in your own words.",
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "minKeywords": 1,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "State opposite seats correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about jumping series is correct?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "the single member that fails to share the group's property"
+    ],
+    "answer": 2,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "Identify the correct definition of jumping series.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'compass turn' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a one-quarter turn changes the facing by ninety degrees"
+    ],
+    "answer": 3,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "Identify the correct definition of compass turn.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain letter series to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property"
+    ],
+    "answer": 1,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "Identify the correct definition of letter series.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_h_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'substitution code' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "replacing each letter by another letter according to a rule"
+    ],
+    "answer": 3,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "Identify the correct definition of substitution code.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain constraint puzzle to a teammate who has not seen it?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a puzzle where pieces must satisfy fixed conditions",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "Identify the correct definition of constraint puzzle.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_ht_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast syllogism with letter series. Which would you choose and why?",
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "minKeywords": 1,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "State syllogism correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is case-based coding in the context of coding_decoding?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "encoding two or more words to reveal the pattern, then applying it",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "Identify the correct definition of case-based coding.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'valid deduction' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a conclusion that follows necessarily from the premises",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last"
+    ],
+    "answer": 0,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "Identify the correct definition of valid deduction.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is compass turn in the context of directions?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a one-quarter turn changes the facing by ninety degrees",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "Identify the correct definition of compass turn.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of odd one out suitable for a project update.",
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "State odd one out correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_ht_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast grid puzzle with letter series. Which would you choose and why?",
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "minKeywords": 1,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "State grid puzzle correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'reversal coding' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "writing letters of a word in the opposite order",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last"
+    ],
+    "answer": 1,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "Identify the correct definition of reversal coding.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about prime number is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a number with exactly two distinct divisors",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "Identify the correct definition of prime number.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain maternal line to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "relatives through the mother's side"
+    ],
+    "answer": 3,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "Identify the correct definition of maternal line.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_st_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of case-based coding suitable for a project update.",
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "minKeywords": 1,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "State case-based coding correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define circular seating in seating, in your own words.",
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "minKeywords": 1,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "State circular seating correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'syllogism' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "an argument deriving a conclusion from two premises and a middle term",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last"
+    ],
+    "answer": 1,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "Identify the correct definition of syllogism.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain compass turn to a teammate who has not seen it?",
+    "options": [
+      "the value excluding the first and last",
+      "a one-quarter turn changes the facing by ninety degrees",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "Identify the correct definition of compass turn.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_e_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is sibling in the context of blood_relations?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a brother or sister sharing the same parents",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "Identify the correct definition of sibling.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain reversal coding to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "writing letters of a word in the opposite order",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 2,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "Identify the correct definition of reversal coding.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define odd one out in odd_one_out, in your own words.",
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "State odd one out correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does coding_decoding rely on letter shifting? Give a concrete reason.",
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "State letter shifting correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'cardinal directions' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "north, east, south and west on a compass"
+    ],
+    "answer": 3,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "Identify the correct definition of cardinal directions.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define process of elimination in puzzles, in your own words.",
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "minKeywords": 1,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "State process of elimination correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about compass turn is correct?",
+    "options": [
+      "the value excluding the first and last",
+      "a one-quarter turn changes the facing by ninety degrees",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "Identify the correct definition of compass turn.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast constraint puzzle with letter series. Which would you choose and why?",
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "minKeywords": 1,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "State constraint puzzle correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Manhattan distance in the context of directions?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the sum of absolute displacements on axes"
+    ],
+    "answer": 3,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "Identify the correct definition of Manhattan distance.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about constraint puzzle is correct?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a puzzle where pieces must satisfy fixed conditions",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "Identify the correct definition of constraint puzzle.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does series rely on letter series? Give a concrete reason.",
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "State letter series correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is direct inference in the context of syllogism?",
+    "options": [
+      "a conclusion that restates a premise exactly",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 0,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "Identify the correct definition of direct inference.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain odd one out to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the single member that fails to share the group's property",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "Identify the correct definition of odd one out.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_m_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about composite number is correct?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "a number with more than two distinct divisors"
+    ],
+    "answer": 3,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "Identify the correct definition of composite number.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is letter series in the context of series?",
+    "options": [
+      "the single member that fails to share the group's property",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "Identify the correct definition of letter series.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of compass turn suitable for a project update.",
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "State compass turn correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_st_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of composite number suitable for a project update.",
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "minKeywords": 1,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "State composite number correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_h_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'opposite seats' is involved, what is the most likely diagnosis?",
+    "options": [
+      "seats half a circle apart",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 0,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "Identify the correct definition of opposite seats.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about paternal line is correct?",
+    "options": [
+      "relatives through the father's side",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 0,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "Identify the correct definition of paternal line.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does syllogism rely on valid deduction? Give a concrete reason.",
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "minKeywords": 1,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "State valid deduction correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain jumping series to a teammate who has not seen it?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the single member that fails to share the group's property"
+    ],
+    "answer": 2,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "Identify the correct definition of jumping series.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_ht_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast letter shifting with letter series. Which would you choose and why?",
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "State letter shifting correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define facing inward in seating, in your own words.",
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "minKeywords": 1,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "State facing inward correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of syllogism suitable for a project update.",
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "minKeywords": 1,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "State syllogism correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_mt_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does coding_decoding rely on reversal coding? Give a concrete reason.",
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "minKeywords": 1,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "State reversal coding correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast middle term with letter series. Which would you choose and why?",
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "minKeywords": 1,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "State middle term correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain grid puzzle to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "solving by annotating a table of fixed cells",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 2,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "Identify the correct definition of grid puzzle.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_mt_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does blood_relations rely on family chart? Give a concrete reason.",
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "minKeywords": 1,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "State family chart correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain circular seating to a teammate who has not seen it?",
+    "options": [
+      "placing people around a ring with fixed relationships",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 0,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "Identify the correct definition of circular seating.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_s_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain cardinal directions to a teammate who has not seen it?",
+    "options": [
+      "north, east, south and west on a compass",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 0,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "Identify the correct definition of cardinal directions.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_h_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'process of elimination' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "removing impossible options until only one remains"
+    ],
+    "answer": 3,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "Identify the correct definition of process of elimination.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of middle term suitable for a project update.",
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "minKeywords": 1,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "State middle term correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_m_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about opposite seats is correct?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "seats half a circle apart",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "Identify the correct definition of opposite seats.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast direct inference with letter series. Which would you choose and why?",
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "minKeywords": 1,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "State direct inference correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain paternal line to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "relatives through the father's side",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "Identify the correct definition of paternal line.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_s_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain syllogism to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "an argument deriving a conclusion from two premises and a middle term",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "Identify the correct definition of syllogism.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_h_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'prime number' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "a number with exactly two distinct divisors"
+    ],
+    "answer": 3,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "Identify the correct definition of prime number.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define letter series in series, in your own words.",
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "State letter series correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain sibling to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a brother or sister sharing the same parents"
+    ],
+    "answer": 3,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "Identify the correct definition of sibling.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_e_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is prime number in the context of odd_one_out?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a number with exactly two distinct divisors"
+    ],
+    "answer": 3,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "Identify the correct definition of prime number.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about valid deduction is correct?",
+    "options": [
+      "the value excluding the first and last",
+      "a conclusion that follows necessarily from the premises",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "Identify the correct definition of valid deduction.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is syllogism in the context of syllogism?",
+    "options": [
+      "the value excluding the first and last",
+      "an argument deriving a conclusion from two premises and a middle term",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "Identify the correct definition of syllogism.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is circular seating in the context of seating?",
+    "options": [
+      "placing people around a ring with fixed relationships",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last"
+    ],
+    "answer": 0,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "Identify the correct definition of circular seating.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define paternal line in blood_relations, in your own words.",
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "minKeywords": 1,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "State paternal line correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain direct inference to a teammate who has not seen it?",
+    "options": [
+      "a conclusion that restates a premise exactly",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 0,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "Identify the correct definition of direct inference.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_e_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is composite number in the context of odd_one_out?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "a number with more than two distinct divisors",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "Identify the correct definition of composite number.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about reversal coding is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "writing letters of a word in the opposite order",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "Identify the correct definition of reversal coding.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is jumping series in the context of series?",
+    "options": [
+      "the single member that fails to share the group's property",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "Identify the correct definition of jumping series.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of letter shifting suitable for a project update.",
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "State letter shifting correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_mt_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does seating rely on opposite seats? Give a concrete reason.",
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "minKeywords": 1,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "State opposite seats correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of substitution code suitable for a project update.",
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "minKeywords": 1,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "State substitution code correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_h_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'letter shifting' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "moving each letter by a fixed amount in the alphabet",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "Identify the correct definition of letter shifting.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast valid deduction with letter series. Which would you choose and why?",
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "minKeywords": 1,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "State valid deduction correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does blood_relations rely on maternal line? Give a concrete reason.",
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "minKeywords": 1,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "State maternal line correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of facing inward suitable for a project update.",
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "minKeywords": 1,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "State facing inward correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_s_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain facing inward to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a seated person looks toward the centre of a circle",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "Identify the correct definition of facing inward.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_e_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is middle term in the context of series?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "Identify the correct definition of middle term.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of maternal line suitable for a project update.",
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "minKeywords": 1,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "State maternal line correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_st_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of paternal line suitable for a project update.",
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "minKeywords": 1,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "State paternal line correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define maternal line in blood_relations, in your own words.",
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "minKeywords": 1,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "State maternal line correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Manhattan distance with letter series. Which would you choose and why?",
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "minKeywords": 1,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "State Manhattan distance correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'circular seating' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "placing people around a ring with fixed relationships"
+    ],
+    "answer": 3,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "Identify the correct definition of circular seating.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain middle term to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property"
+    ],
+    "answer": 2,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "Identify the correct definition of middle term.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_ht_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast odd one out with letter series. Which would you choose and why?",
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "State odd one out correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does series rely on middle term? Give a concrete reason.",
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "minKeywords": 1,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "State middle term correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define valid deduction in syllogism, in your own words.",
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "minKeywords": 1,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "State valid deduction correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define syllogism in syllogism, in your own words.",
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "minKeywords": 1,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "State syllogism correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast letter series with jumping series. Which would you choose and why?",
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "State letter series correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast circular seating with letter series. Which would you choose and why?",
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "minKeywords": 1,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "State circular seating correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Manhattan distance' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "the sum of absolute displacements on axes",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "Identify the correct definition of Manhattan distance.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of direct inference suitable for a project update.",
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "minKeywords": 1,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "State direct inference correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_mt_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does puzzles rely on process of elimination? Give a concrete reason.",
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "minKeywords": 1,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "State process of elimination correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of constraint puzzle suitable for a project update.",
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "minKeywords": 1,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "State constraint puzzle correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define compass turn in directions, in your own words.",
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "State compass turn correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'facing inward' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a seated person looks toward the centre of a circle"
+    ],
+    "answer": 3,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "Identify the correct definition of facing inward.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain composite number to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a number with more than two distinct divisors",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "Identify the correct definition of composite number.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_ht_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast process of elimination with letter series. Which would you choose and why?",
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "minKeywords": 1,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "State process of elimination correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define case-based coding in coding_decoding, in your own words.",
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "minKeywords": 1,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "State case-based coding correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does puzzles rely on constraint puzzle? Give a concrete reason.",
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "minKeywords": 1,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "State constraint puzzle correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of family chart suitable for a project update.",
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "minKeywords": 1,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "State family chart correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_s_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain family chart to a teammate who has not seen it?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a chart mapping bonds between relatives",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "Identify the correct definition of family chart.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_mt_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does seating rely on circular seating? Give a concrete reason.",
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "minKeywords": 1,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "State circular seating correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about circular seating is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "placing people around a ring with fixed relationships",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "Identify the correct definition of circular seating.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast paternal line with letter series. Which would you choose and why?",
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "minKeywords": 1,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "State paternal line correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is constraint puzzle in the context of puzzles?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a puzzle where pieces must satisfy fixed conditions",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 2,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "Identify the correct definition of constraint puzzle.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is reversal coding in the context of coding_decoding?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "writing letters of a word in the opposite order",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "Identify the correct definition of reversal coding.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about substitution code is correct?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "replacing each letter by another letter according to a rule",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last"
+    ],
+    "answer": 1,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "Identify the correct definition of substitution code.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast jumping series with letter series. Which would you choose and why?",
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "minKeywords": 1,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "State jumping series correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does odd_one_out rely on composite number? Give a concrete reason.",
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "minKeywords": 1,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "State composite number correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain letter shifting to a teammate who has not seen it?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "moving each letter by a fixed amount in the alphabet"
+    ],
+    "answer": 3,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "Identify the correct definition of letter shifting.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_m_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about grid puzzle is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "solving by annotating a table of fixed cells"
+    ],
+    "answer": 3,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "Identify the correct definition of grid puzzle.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is process of elimination in the context of puzzles?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "removing impossible options until only one remains",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "Identify the correct definition of process of elimination.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'family chart' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a chart mapping bonds between relatives",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "Identify the correct definition of family chart.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define substitution code in coding_decoding, in your own words.",
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "minKeywords": 1,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "State substitution code correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_137",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of circular seating suitable for a project update.",
+    "keywords": [
+      "ring",
+      "circle",
+      "fixed",
+      "around"
+    ],
+    "minKeywords": 1,
+    "explanation": "circular seating: placing people around a ring with fixed relationships",
+    "objective": "State circular seating correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_ht_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast family chart with letter series. Which would you choose and why?",
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "minKeywords": 1,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "State family chart correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast sibling with letter series. Which would you choose and why?",
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "minKeywords": 1,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "State sibling correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain case-based coding to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "encoding two or more words to reveal the pattern, then applying it"
+    ],
+    "answer": 3,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "Identify the correct definition of case-based coding.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define composite number in odd_one_out, in your own words.",
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "minKeywords": 1,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "State composite number correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define prime number in odd_one_out, in your own words.",
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "minKeywords": 1,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "State prime number correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of valid deduction suitable for a project update.",
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "minKeywords": 1,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "State valid deduction correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_e_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is substitution code in the context of coding_decoding?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "replacing each letter by another letter according to a rule"
+    ],
+    "answer": 3,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "Identify the correct definition of substitution code.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about cardinal directions is correct?",
+    "options": [
+      "the value excluding the first and last",
+      "north, east, south and west on a compass",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "Identify the correct definition of cardinal directions.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define direct inference in syllogism, in your own words.",
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "minKeywords": 1,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "State direct inference correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast maternal line with letter series. Which would you choose and why?",
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "minKeywords": 1,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "State maternal line correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does coding_decoding rely on substitution code? Give a concrete reason.",
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "minKeywords": 1,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "State substitution code correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does coding_decoding rely on case-based coding? Give a concrete reason.",
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "minKeywords": 1,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "State case-based coding correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define letter shifting in coding_decoding, in your own words.",
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "State letter shifting correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does blood_relations rely on sibling? Give a concrete reason.",
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "minKeywords": 1,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "State sibling correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about process of elimination is correct?",
+    "options": [
+      "removing impossible options until only one remains",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 0,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "Identify the correct definition of process of elimination.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define grid puzzle in puzzles, in your own words.",
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "minKeywords": 1,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "State grid puzzle correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast reversal coding with letter series. Which would you choose and why?",
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "minKeywords": 1,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "State reversal coding correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about direct inference is correct?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a conclusion that restates a premise exactly"
+    ],
+    "answer": 3,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "Identify the correct definition of direct inference.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of reversal coding suitable for a project update.",
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "minKeywords": 1,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "State reversal coding correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_h_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'letter series' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 2,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "Identify the correct definition of letter series.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about letter shifting is correct?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "moving each letter by a fixed amount in the alphabet"
+    ],
+    "answer": 3,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "Identify the correct definition of letter shifting.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_57",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define reversal coding in coding_decoding, in your own words.",
+    "keywords": [
+      "reversed",
+      "opposite order",
+      "letters",
+      "word"
+    ],
+    "minKeywords": 1,
+    "explanation": "reversal coding: writing letters of a word in the opposite order",
+    "objective": "State reversal coding correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Manhattan distance in directions, in your own words.",
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "minKeywords": 1,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "State Manhattan distance correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast substitution code with letter series. Which would you choose and why?",
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "minKeywords": 1,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "State substitution code correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast compass turn with letter series. Which would you choose and why?",
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "State compass turn correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about odd one out is correct?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the single member that fails to share the group's property"
+    ],
+    "answer": 3,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "Identify the correct definition of odd one out.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'grid puzzle' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "solving by annotating a table of fixed cells",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "Identify the correct definition of grid puzzle.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast prime number with letter series. Which would you choose and why?",
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "minKeywords": 1,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "State prime number correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does seating rely on facing inward? Give a concrete reason.",
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "minKeywords": 1,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "State facing inward correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does puzzles rely on grid puzzle? Give a concrete reason.",
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "minKeywords": 1,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "State grid puzzle correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is grid puzzle in the context of puzzles?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "solving by annotating a table of fixed cells",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "Identify the correct definition of grid puzzle.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does blood_relations rely on paternal line? Give a concrete reason.",
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "minKeywords": 1,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "State paternal line correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of process of elimination suitable for a project update.",
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "minKeywords": 1,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "State process of elimination correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_h_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'case-based coding' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "encoding two or more words to reveal the pattern, then applying it"
+    ],
+    "answer": 3,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "Identify the correct definition of case-based coding.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast facing inward with letter series. Which would you choose and why?",
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "minKeywords": 1,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "State facing inward correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_145",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is facing inward in the context of seating?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a seated person looks toward the centre of a circle",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "facing inward: a seated person looks toward the centre of a circle",
+    "objective": "Identify the correct definition of facing inward.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "centre",
+      "towards",
+      "inward",
+      "look at centre"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does syllogism rely on syllogism? Give a concrete reason.",
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "minKeywords": 1,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "State syllogism correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is valid deduction in the context of syllogism?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a conclusion that follows necessarily from the premises"
+    ],
+    "answer": 3,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "Identify the correct definition of valid deduction.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define sibling in blood_relations, in your own words.",
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "minKeywords": 1,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "State sibling correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define cardinal directions in directions, in your own words.",
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "minKeywords": 1,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "State cardinal directions correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of letter series suitable for a project update.",
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "minKeywords": 1,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "State letter series correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_s_169",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain valid deduction to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a conclusion that follows necessarily from the premises",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last"
+    ],
+    "answer": 1,
+    "explanation": "valid deduction: a conclusion that follows necessarily from the premises",
+    "objective": "Identify the correct definition of valid deduction.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "necessarily",
+      "if premises",
+      "logically",
+      "must follow"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_s_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Manhattan distance to a teammate who has not seen it?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "the sum of absolute displacements on axes",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "Identify the correct definition of Manhattan distance.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_st_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of opposite seats suitable for a project update.",
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "minKeywords": 1,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "State opposite seats correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_ht_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast cardinal directions with letter series. Which would you choose and why?",
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "minKeywords": 1,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "State cardinal directions correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about middle term is correct?",
+    "options": [
+      "the single member that fails to share the group's property",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "Identify the correct definition of middle term.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Manhattan distance is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the sum of absolute displacements on axes",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "Identify the correct definition of Manhattan distance.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'odd one out' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 2,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "Identify the correct definition of odd one out.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is maternal line in the context of blood_relations?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "relatives through the mother's side"
+    ],
+    "answer": 3,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "Identify the correct definition of maternal line.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is odd one out in the context of odd_one_out?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 2,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "Identify the correct definition of odd one out.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define family chart in blood_relations, in your own words.",
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "minKeywords": 1,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "State family chart correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of jumping series suitable for a project update.",
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "minKeywords": 1,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "State jumping series correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_mt_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does syllogism rely on direct inference? Give a concrete reason.",
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "minKeywords": 1,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "State direct inference correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of cardinal directions suitable for a project update.",
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "minKeywords": 1,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "State cardinal directions correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_mt_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does directions rely on cardinal directions? Give a concrete reason.",
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "minKeywords": 1,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "State cardinal directions correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_25",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does odd_one_out rely on odd one out? Give a concrete reason.",
+    "keywords": [
+      "single",
+      "property",
+      "fails",
+      "the odd"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd one out: the single member that fails to share the group's property",
+    "objective": "State odd one out correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'constraint puzzle' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "a puzzle where pieces must satisfy fixed conditions"
+    ],
+    "answer": 3,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "Identify the correct definition of constraint puzzle.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast case-based coding with letter series. Which would you choose and why?",
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "minKeywords": 1,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "State case-based coding correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_153",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is opposite seats in the context of seating?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "seats half a circle apart",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "opposite seats: seats half a circle apart",
+    "objective": "Identify the correct definition of opposite seats.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Seating"
+    ],
+    "keywords": [
+      "half circle",
+      "apart",
+      "diametrically opposite",
+      "across"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_177",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'direct inference' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a conclusion that restates a premise exactly",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "direct inference: a conclusion that restates a premise exactly",
+    "objective": "Identify the correct definition of direct inference.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "restate",
+      "same meaning",
+      "directly true",
+      "rephrase"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_89",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'maternal line' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "relatives through the mother's side"
+    ],
+    "answer": 3,
+    "explanation": "maternal line: relatives through the mother's side",
+    "objective": "Identify the correct definition of maternal line.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "mother",
+      "maternal",
+      "side",
+      "mother side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_1",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about letter series is correct?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the single member that fails to share the group's property",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last"
+    ],
+    "answer": 0,
+    "explanation": "letter series: a sequence of letters following a pattern",
+    "objective": "Identify the correct definition of letter series.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "letters",
+      "pattern",
+      "sequence",
+      "alphabet"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_ht_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast composite number with letter series. Which would you choose and why?",
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "minKeywords": 1,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "State composite number correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_s_65",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain substitution code to a teammate who has not seen it?",
+    "options": [
+      "the value excluding the first and last",
+      "replacing each letter by another letter according to a rule",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "substitution code: replacing each letter by another letter according to a rule",
+    "objective": "Identify the correct definition of substitution code.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "replacing",
+      "substituting",
+      "according to",
+      "cipher"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_m_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about family chart is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "a chart mapping bonds between relatives",
+      "the value excluding the first and last"
+    ],
+    "answer": 2,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "Identify the correct definition of family chart.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_et_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define middle term in series, in your own words.",
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "minKeywords": 1,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "State middle term correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_97",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is paternal line in the context of blood_relations?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "relatives through the father's side"
+    ],
+    "answer": 3,
+    "explanation": "paternal line: relatives through the father's side",
+    "objective": "Identify the correct definition of paternal line.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "father",
+      "paternal",
+      "side",
+      "father side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_73",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about case-based coding is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "encoding two or more words to reveal the pattern, then applying it",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "case-based coding: encoding two or more words to reveal the pattern, then applying it",
+    "objective": "Identify the correct definition of case-based coding.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "two",
+      "pattern",
+      "apply",
+      "same rule"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_17",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'middle term' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "the single member that fails to share the group's property",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 0,
+    "explanation": "middle term: the value excluding the first and last",
+    "objective": "Identify the correct definition of middle term.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "keywords": [
+      "excluding",
+      "average",
+      "sum of ends",
+      "middle term"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of prime number suitable for a project update.",
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "minKeywords": 1,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "State prime number correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_s_201",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain process of elimination to a teammate who has not seen it?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "removing impossible options until only one remains",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals"
+    ],
+    "answer": 1,
+    "explanation": "process of elimination: removing impossible options until only one remains",
+    "objective": "Identify the correct definition of process of elimination.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "eliminate",
+      "impossible",
+      "only one",
+      "narrowing"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_185",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define constraint puzzle in puzzles, in your own words.",
+    "keywords": [
+      "constraint",
+      "satisfy",
+      "conditions",
+      "logic puzzle"
+    ],
+    "minKeywords": 1,
+    "explanation": "constraint puzzle: a puzzle where pieces must satisfy fixed conditions",
+    "objective": "State constraint puzzle correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Puzzles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Manhattan distance suitable for a project update.",
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "minKeywords": 1,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "State Manhattan distance correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_et_9",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define jumping series in series, in your own words.",
+    "keywords": [
+      "regular",
+      "interval",
+      "pick",
+      "jump"
+    ],
+    "minKeywords": 1,
+    "explanation": "jumping series: a sequence of items picked at regular intervals",
+    "objective": "State jumping series correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Series"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_m_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about sibling is correct?",
+    "options": [
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a brother or sister sharing the same parents"
+    ],
+    "answer": 3,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "Identify the correct definition of sibling.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_33",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does odd_one_out rely on prime number? Give a concrete reason.",
+    "keywords": [
+      "two divisors",
+      "prime",
+      "itself and one",
+      "divisor"
+    ],
+    "minKeywords": 1,
+    "explanation": "prime number: a number with exactly two distinct divisors",
+    "objective": "State prime number correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_49",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is letter shifting in the context of coding_decoding?",
+    "options": [
+      "moving each letter by a fixed amount in the alphabet",
+      "a sequence of items picked at regular intervals",
+      "a sequence of letters following a pattern",
+      "the value excluding the first and last"
+    ],
+    "answer": 0,
+    "explanation": "letter shifting: moving each letter by a fixed amount in the alphabet",
+    "objective": "Identify the correct definition of letter shifting.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Coding and Decoding"
+    ],
+    "keywords": [
+      "fixed",
+      "shift",
+      "each letter",
+      "offset"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_129",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does directions rely on Manhattan distance? Give a concrete reason.",
+    "keywords": [
+      "absolute",
+      "sum",
+      "axes",
+      "grid distance"
+    ],
+    "minKeywords": 1,
+    "explanation": "Manhattan distance: the sum of absolute displacements on axes",
+    "objective": "State Manhattan distance correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_105",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'sibling' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern",
+      "a sequence of items picked at regular intervals",
+      "a brother or sister sharing the same parents"
+    ],
+    "answer": 3,
+    "explanation": "sibling: a brother or sister sharing the same parents",
+    "objective": "Identify the correct definition of sibling.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "brother",
+      "sister",
+      "same parents",
+      "siblings"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_h_41",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'composite number' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a number with more than two distinct divisors",
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 0,
+    "explanation": "composite number: a number with more than two distinct divisors",
+    "objective": "Identify the correct definition of composite number.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Odd One Out"
+    ],
+    "keywords": [
+      "not prime",
+      "more than two",
+      "divisor",
+      "factorable"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_113",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is cardinal directions in the context of directions?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "the value excluding the first and last",
+      "north, east, south and west on a compass",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "cardinal directions: north, east, south and west on a compass",
+    "objective": "Identify the correct definition of cardinal directions.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "keywords": [
+      "north",
+      "east",
+      "compass",
+      "south"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_mt_121",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does directions rely on compass turn? Give a concrete reason.",
+    "keywords": [
+      "quarter",
+      "ninety",
+      "turn",
+      "right angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "compass turn: a one-quarter turn changes the facing by ninety degrees",
+    "objective": "State compass turn correctly in your own words.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Directions"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_st_193",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of grid puzzle suitable for a project update.",
+    "keywords": [
+      "table",
+      "cell",
+      "constraint",
+      "grid"
+    ],
+    "minKeywords": 1,
+    "explanation": "grid puzzle: solving by annotating a table of fixed cells",
+    "objective": "State grid puzzle correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_reasoning_m_161",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about syllogism is correct?",
+    "options": [
+      "a sequence of items picked at regular intervals",
+      "an argument deriving a conclusion from two premises and a middle term",
+      "the value excluding the first and last",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 1,
+    "explanation": "syllogism: an argument deriving a conclusion from two premises and a middle term",
+    "objective": "Identify the correct definition of syllogism.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Syllogism"
+    ],
+    "keywords": [
+      "two premises",
+      "conclusion",
+      "middle",
+      "implies"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_reasoning_e_81",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is family chart in the context of blood_relations?",
+    "options": [
+      "the value excluding the first and last",
+      "a sequence of items picked at regular intervals",
+      "a chart mapping bonds between relatives",
+      "a sequence of letters following a pattern"
+    ],
+    "answer": 2,
+    "explanation": "family chart: a chart mapping bonds between relatives",
+    "objective": "Identify the correct definition of family chart.",
+    "skillTags": [
+      "Logical Reasoning",
+      "Blood Relations"
+    ],
+    "keywords": [
+      "chart",
+      "bonds",
+      "relatives",
+      "tree"
+    ],
+    "softSkill": false
+  }
+]

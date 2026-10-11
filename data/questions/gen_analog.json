@@ -1,0 +1,4358 @@
+[
+  {
+    "id": "gen_analog_st_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of coupling capacitor suitable for a project update.",
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "minKeywords": 1,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "State coupling capacitor correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_s_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain reverse leakage to a teammate who has not seen it?",
+    "options": [
+      "the reverse voltage where a diode conducts heavily",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 2,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "Identify the correct definition of reverse leakage.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_mt_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does amplifiers rely on coupling capacitor? Give a concrete reason.",
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "minKeywords": 1,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "State coupling capacitor correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define saturation region in transistors, in your own words.",
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "minKeywords": 1,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "State saturation region correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'offset voltage' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small input difference needed to null the output",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "Identify the correct definition of offset voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about thermal noise is correct?",
+    "options": [
+      "noise arising from random carrier motion in a resistor",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 0,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "Identify the correct definition of thermal noise.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of cutoff region suitable for a project update.",
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "minKeywords": 1,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "State cutoff region correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_ht_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast reverse leakage with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "minKeywords": 1,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "State reverse leakage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define breakdown voltage in diodes, in your own words.",
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "minKeywords": 1,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "State breakdown voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'dynamic resistance' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the reverse voltage where a diode conducts heavily",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 0,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "Identify the correct definition of dynamic resistance.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define thermal noise in noise, in your own words.",
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "minKeywords": 1,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "State thermal noise correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain slew rate to a teammate who has not seen it?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the maximum rate of change of an op-amp output",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "Identify the correct definition of slew rate.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_h_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'current gain' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the ratio of collector current to base current",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "Identify the correct definition of current gain.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'coupling capacitor' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a capacitor passing a signal while blocking bias at DC",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "Identify the correct definition of coupling capacitor.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does amplifiers rely on negative feedback? Give a concrete reason.",
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "minKeywords": 1,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "State negative feedback correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does amplifiers rely on cascode? Give a concrete reason.",
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "State cascode correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does noise rely on thermal noise? Give a concrete reason.",
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "minKeywords": 1,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "State thermal noise correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain flicker noise to a teammate who has not seen it?",
+    "options": [
+      "noise that rises as frequency falls",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 0,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "Identify the correct definition of flicker noise.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_m_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about reverse leakage is correct?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "the reverse voltage where a diode conducts heavily"
+    ],
+    "answer": 1,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "Identify the correct definition of reverse leakage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'input resistance' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the very high resistance at which an op-amp draws signal",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 0,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "Identify the correct definition of input resistance.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is flicker noise in the context of noise?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "noise that rises as frequency falls"
+    ],
+    "answer": 3,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "Identify the correct definition of flicker noise.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of voltage follower suitable for a project update.",
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "minKeywords": 1,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "State voltage follower correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_st_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of saturation region suitable for a project update.",
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "minKeywords": 1,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "State saturation region correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_ht_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast thermal noise with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "minKeywords": 1,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "State thermal noise correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define flicker noise in noise, in your own words.",
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "minKeywords": 1,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "State flicker noise correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of common-emitter suitable for a project update.",
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "minKeywords": 1,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "State common-emitter correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_ht_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast biasing with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "minKeywords": 1,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "State biasing correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain offset voltage to a teammate who has not seen it?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the small input difference needed to null the output",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 1,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "Identify the correct definition of offset voltage.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_s_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain coupling capacitor to a teammate who has not seen it?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "a capacitor passing a signal while blocking bias at DC",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "Identify the correct definition of coupling capacitor.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_st_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of gain-bandwidth product suitable for a project update.",
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "State gain-bandwidth product correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_m_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about biasing is correct?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "setting an operating point with resistor networks",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 1,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "Identify the correct definition of biasing.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is voltage follower in the context of opamps?",
+    "options": [
+      "a buffer whose gain is one, isolating stages",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 0,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "Identify the correct definition of voltage follower.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain breakdown voltage to a teammate who has not seen it?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the reverse voltage where a diode conducts heavily",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "Identify the correct definition of breakdown voltage.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_st_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Miller effect suitable for a project update.",
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "minKeywords": 1,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "State Miller effect correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_et_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define current gain in transistors, in your own words.",
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "minKeywords": 1,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "State current gain correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is coupling capacitor in the context of amplifiers?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "a capacitor passing a signal while blocking bias at DC",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 1,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "Identify the correct definition of coupling capacitor.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain thermal noise to a teammate who has not seen it?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "noise arising from random carrier motion in a resistor"
+    ],
+    "answer": 3,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "Identify the correct definition of thermal noise.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_e_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is gain-bandwidth product in the context of opamps?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the roughly constant product of closed-loop gain and bandwidth"
+    ],
+    "answer": 3,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "Identify the correct definition of gain-bandwidth product.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast breakdown voltage with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "minKeywords": 1,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "State breakdown voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast negative feedback with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "minKeywords": 1,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "State negative feedback correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about current gain is correct?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the ratio of collector current to base current",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 1,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "Identify the correct definition of current gain.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'saturation region' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the low-output-voltage operating mode of a transistor acting as a switch",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "Identify the correct definition of saturation region.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is reverse leakage in the context of diodes?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the reverse voltage where a diode conducts heavily",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 0,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "Identify the correct definition of reverse leakage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain virtual short to a teammate who has not seen it?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the approximation that input terminals sit at equal potential with negative feedback",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "Identify the correct definition of virtual short.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_st_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of offset voltage suitable for a project update.",
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "minKeywords": 1,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "State offset voltage correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_e_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is saturation region in the context of transistors?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the low-output-voltage operating mode of a transistor acting as a switch",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 2,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "Identify the correct definition of saturation region.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of current gain suitable for a project update.",
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "minKeywords": 1,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "State current gain correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_mt_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does opamps rely on virtual short? Give a concrete reason.",
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "State virtual short correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'signal-to-noise ratio' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the ratio of signal power to noise power",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "Identify the correct definition of signal-to-noise ratio.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transistors rely on common-emitter? Give a concrete reason.",
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "minKeywords": 1,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "State common-emitter correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is signal-to-noise ratio in the context of noise?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the ratio of signal power to noise power",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 1,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "Identify the correct definition of signal-to-noise ratio.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define knee voltage in diodes, in your own words.",
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "minKeywords": 1,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "State knee voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast virtual short with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "State virtual short correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Miller effect in the context of amplifiers?",
+    "options": [
+      "multiplying an internal capacitor by the amplifier gain at the input",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "Identify the correct definition of Miller effect.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is input resistance in the context of opamps?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the very high resistance at which an op-amp draws signal",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 1,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "Identify the correct definition of input resistance.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define cascode in amplifiers, in your own words.",
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "State cascode correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about signal-to-noise ratio is correct?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the ratio of signal power to noise power"
+    ],
+    "answer": 3,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "Identify the correct definition of signal-to-noise ratio.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain input resistance to a teammate who has not seen it?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the very high resistance at which an op-amp draws signal",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "Identify the correct definition of input resistance.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_e_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is current gain in the context of transistors?",
+    "options": [
+      "the ratio of collector current to base current",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "Identify the correct definition of current gain.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define offset voltage in opamps, in your own words.",
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "minKeywords": 1,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "State offset voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is biasing in the context of transistors?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "setting an operating point with resistor networks",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 1,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "Identify the correct definition of biasing.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is knee voltage in the context of diodes?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the reverse voltage where a diode conducts heavily",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 0,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "Identify the correct definition of knee voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast slew rate with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "minKeywords": 1,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "State slew rate correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'cascode' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "a two-stage arrangement reducing the Miller capacitance"
+    ],
+    "answer": 3,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "Identify the correct definition of cascode.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast common-emitter with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "minKeywords": 1,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "State common-emitter correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of flicker noise suitable for a project update.",
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "minKeywords": 1,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "State flicker noise correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_et_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define negative feedback in amplifiers, in your own words.",
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "minKeywords": 1,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "State negative feedback correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transistors rely on current gain? Give a concrete reason.",
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "minKeywords": 1,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "State current gain correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is negative feedback in the context of amplifiers?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "feeding back a fraction of the output to lower gain and distortion"
+    ],
+    "answer": 3,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "Identify the correct definition of negative feedback.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of input resistance suitable for a project update.",
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "minKeywords": 1,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "State input resistance correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_st_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of signal-to-noise ratio suitable for a project update.",
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "minKeywords": 1,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "State signal-to-noise ratio correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_e_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is cutoff region in the context of transistors?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the ideally-off mode of a transistor acting as an open switch",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "Identify the correct definition of cutoff region.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define common-emitter in transistors, in your own words.",
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "minKeywords": 1,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "State common-emitter correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transistors rely on saturation region? Give a concrete reason.",
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "minKeywords": 1,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "State saturation region correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'flicker noise' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "noise that rises as frequency falls",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "Identify the correct definition of flicker noise.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does opamps rely on slew rate? Give a concrete reason.",
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "minKeywords": 1,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "State slew rate correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define coupling capacitor in amplifiers, in your own words.",
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "minKeywords": 1,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "State coupling capacitor correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about input resistance is correct?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the very high resistance at which an op-amp draws signal",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "Identify the correct definition of input resistance.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain knee voltage to a teammate who has not seen it?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the reverse voltage where a diode conducts heavily",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 3,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "Identify the correct definition of knee voltage.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_s_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain common-emitter to a teammate who has not seen it?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "a configuration with the emitter shared by input and output"
+    ],
+    "answer": 3,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "Identify the correct definition of common-emitter.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_h_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'voltage follower' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "a buffer whose gain is one, isolating stages",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "Identify the correct definition of voltage follower.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is cascode in the context of amplifiers?",
+    "options": [
+      "a two-stage arrangement reducing the Miller capacitance",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "Identify the correct definition of cascode.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast offset voltage with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "minKeywords": 1,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "State offset voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does diodes rely on reverse leakage? Give a concrete reason.",
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "minKeywords": 1,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "State reverse leakage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define voltage follower in opamps, in your own words.",
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "minKeywords": 1,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "State voltage follower correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about knee voltage is correct?",
+    "options": [
+      "the reverse voltage where a diode conducts heavily",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 2,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "Identify the correct definition of knee voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of virtual short suitable for a project update.",
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "State virtual short correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_et_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define gain-bandwidth product in opamps, in your own words.",
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "State gain-bandwidth product correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast knee voltage with reverse leakage. Which would you choose and why?",
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "minKeywords": 1,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "State knee voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about saturation region is correct?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the low-output-voltage operating mode of a transistor acting as a switch"
+    ],
+    "answer": 3,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "Identify the correct definition of saturation region.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'negative feedback' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "feeding back a fraction of the output to lower gain and distortion",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "Identify the correct definition of negative feedback.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does opamps rely on voltage follower? Give a concrete reason.",
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "minKeywords": 1,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "State voltage follower correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of negative feedback suitable for a project update.",
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "minKeywords": 1,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "State negative feedback correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_et_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define signal-to-noise ratio in noise, in your own words.",
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "minKeywords": 1,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "State signal-to-noise ratio correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain cascode to a teammate who has not seen it?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "a two-stage arrangement reducing the Miller capacitance",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 1,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "Identify the correct definition of cascode.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_mt_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does diodes rely on dynamic resistance? Give a concrete reason.",
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "minKeywords": 1,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "State dynamic resistance correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define slew rate in opamps, in your own words.",
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "minKeywords": 1,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "State slew rate correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain current gain to a teammate who has not seen it?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the ratio of collector current to base current",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 2,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "Identify the correct definition of current gain.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_mt_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does opamps rely on input resistance? Give a concrete reason.",
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "minKeywords": 1,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "State input resistance correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain voltage follower to a teammate who has not seen it?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "a buffer whose gain is one, isolating stages"
+    ],
+    "answer": 3,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "Identify the correct definition of voltage follower.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_ht_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast voltage follower with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "minKeywords": 1,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "State voltage follower correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'thermal noise' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "noise arising from random carrier motion in a resistor"
+    ],
+    "answer": 3,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "Identify the correct definition of thermal noise.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of cascode suitable for a project update.",
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "State cascode correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_h_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'reverse leakage' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the reverse voltage where a diode conducts heavily",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 3,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "Identify the correct definition of reverse leakage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is thermal noise in the context of noise?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "noise arising from random carrier motion in a resistor"
+    ],
+    "answer": 3,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "Identify the correct definition of thermal noise.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'slew rate' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the maximum rate of change of an op-amp output",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "Identify the correct definition of slew rate.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast flicker noise with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "minKeywords": 1,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "State flicker noise correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is dynamic resistance in the context of diodes?",
+    "options": [
+      "the reverse voltage where a diode conducts heavily",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 3,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "Identify the correct definition of dynamic resistance.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does noise rely on signal-to-noise ratio? Give a concrete reason.",
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "minKeywords": 1,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "State signal-to-noise ratio correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define cutoff region in transistors, in your own words.",
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "minKeywords": 1,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "State cutoff region correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast coupling capacitor with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "minKeywords": 1,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "State coupling capacitor correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does opamps rely on gain-bandwidth product? Give a concrete reason.",
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "State gain-bandwidth product correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of dynamic resistance suitable for a project update.",
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "minKeywords": 1,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "State dynamic resistance correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_m_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about slew rate is correct?",
+    "options": [
+      "the maximum rate of change of an op-amp output",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 0,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "Identify the correct definition of slew rate.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_97",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about voltage follower is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "a buffer whose gain is one, isolating stages",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 2,
+    "explanation": "voltage follower: a buffer whose gain is one, isolating stages",
+    "objective": "Identify the correct definition of voltage follower.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "one",
+      "buffer",
+      "isolate",
+      "unity"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast cutoff region with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "minKeywords": 1,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "State cutoff region correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about common-emitter is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "a configuration with the emitter shared by input and output"
+    ],
+    "answer": 3,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "Identify the correct definition of common-emitter.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast gain-bandwidth product with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "State gain-bandwidth product correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Miller effect' is involved, what is the most likely diagnosis?",
+    "options": [
+      "multiplying an internal capacitor by the amplifier gain at the input",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 0,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "Identify the correct definition of Miller effect.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about gain-bandwidth product is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "the roughly constant product of closed-loop gain and bandwidth",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 2,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "Identify the correct definition of gain-bandwidth product.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain gain-bandwidth product to a teammate who has not seen it?",
+    "options": [
+      "the roughly constant product of closed-loop gain and bandwidth",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "Identify the correct definition of gain-bandwidth product.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_ht_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Miller effect with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "minKeywords": 1,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "State Miller effect correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does noise rely on flicker noise? Give a concrete reason.",
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "minKeywords": 1,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "State flicker noise correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Miller effect to a teammate who has not seen it?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "multiplying an internal capacitor by the amplifier gain at the input",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 2,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "Identify the correct definition of Miller effect.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_s_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain dynamic resistance to a teammate who has not seen it?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the reverse voltage where a diode conducts heavily"
+    ],
+    "answer": 0,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "Identify the correct definition of dynamic resistance.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_e_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is virtual short in the context of opamps?",
+    "options": [
+      "the approximation that input terminals sit at equal potential with negative feedback",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "Identify the correct definition of virtual short.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'knee voltage' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the reverse voltage where a diode conducts heavily"
+    ],
+    "answer": 2,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "Identify the correct definition of knee voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_161",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about flicker noise is correct?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "noise that rises as frequency falls",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "flicker noise: noise that rises as frequency falls",
+    "objective": "Identify the correct definition of flicker noise.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "keywords": [
+      "low frequency",
+      "one over f",
+      "rise",
+      "carries"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does opamps rely on offset voltage? Give a concrete reason.",
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "minKeywords": 1,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "State offset voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about cascode is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "a two-stage arrangement reducing the Miller capacitance",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "Identify the correct definition of cascode.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transistors rely on cutoff region? Give a concrete reason.",
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "minKeywords": 1,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "State cutoff region correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about dynamic resistance is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the reverse voltage where a diode conducts heavily",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 2,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "Identify the correct definition of dynamic resistance.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast saturation region with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "minKeywords": 1,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "State saturation region correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is slew rate in the context of opamps?",
+    "options": [
+      "the maximum rate of change of an op-amp output",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 0,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "Identify the correct definition of slew rate.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transistors rely on biasing? Give a concrete reason.",
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "minKeywords": 1,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "State biasing correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'breakdown voltage' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the reverse voltage where a diode conducts heavily"
+    ],
+    "answer": 3,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "Identify the correct definition of breakdown voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define virtual short in opamps, in your own words.",
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "State virtual short correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of knee voltage suitable for a project update.",
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "minKeywords": 1,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "State knee voltage correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_h_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'biasing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "setting an operating point with resistor networks"
+    ],
+    "answer": 3,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "Identify the correct definition of biasing.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_57",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain saturation region to a teammate who has not seen it?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the low-output-voltage operating mode of a transistor acting as a switch",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 2,
+    "explanation": "saturation region: the low-output-voltage operating mode of a transistor acting as a switch",
+    "objective": "Identify the correct definition of saturation region.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "switch",
+      "both junctions",
+      "on state",
+      "low voltage"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_st_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of biasing suitable for a project update.",
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "minKeywords": 1,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "State biasing correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_m_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about breakdown voltage is correct?",
+    "options": [
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the reverse voltage where a diode conducts heavily",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "Identify the correct definition of breakdown voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does diodes rely on knee voltage? Give a concrete reason.",
+    "keywords": [
+      "conduct",
+      "threshold",
+      "forward bias",
+      "turns on"
+    ],
+    "minKeywords": 1,
+    "explanation": "knee voltage: the forward bias above which a diode conducts strongly",
+    "objective": "State knee voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about virtual short is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the approximation that input terminals sit at equal potential with negative feedback",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "Identify the correct definition of virtual short.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define reverse leakage in diodes, in your own words.",
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "minKeywords": 1,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "State reverse leakage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_9",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of reverse leakage suitable for a project update.",
+    "keywords": [
+      "reverse",
+      "leakage",
+      "tiny",
+      "saturation"
+    ],
+    "minKeywords": 1,
+    "explanation": "reverse leakage: the small current that flows in reverse bias",
+    "objective": "State reverse leakage correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_mt_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does amplifiers rely on Miller effect? Give a concrete reason.",
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "minKeywords": 1,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "State Miller effect correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define biasing in transistors, in your own words.",
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "minKeywords": 1,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "State biasing correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_129",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast cascode with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "cascade",
+      "reduce",
+      "capacitor",
+      "bandwidth"
+    ],
+    "minKeywords": 1,
+    "explanation": "cascode: a two-stage arrangement reducing the Miller capacitance",
+    "objective": "State cascode correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_41",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain biasing to a teammate who has not seen it?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "setting an operating point with resistor networks"
+    ],
+    "answer": 3,
+    "explanation": "biasing: setting an operating point with resistor networks",
+    "objective": "Identify the correct definition of biasing.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "operating point",
+      "resistors",
+      "steady",
+      "q point"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_h_105",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'gain-bandwidth product' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the roughly constant product of closed-loop gain and bandwidth",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "gain-bandwidth product: the roughly constant product of closed-loop gain and bandwidth",
+    "objective": "Identify the correct definition of gain-bandwidth product.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "approximately constant",
+      "compensation",
+      "gain",
+      "bandwidth"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_145",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about coupling capacitor is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "a capacitor passing a signal while blocking bias at DC"
+    ],
+    "answer": 3,
+    "explanation": "coupling capacitor: a capacitor passing a signal while blocking bias at DC",
+    "objective": "Identify the correct definition of coupling capacitor.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "block",
+      "couple",
+      "bias",
+      "high pass"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is common-emitter in the context of transistors?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "a configuration with the emitter shared by input and output"
+    ],
+    "answer": 3,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "Identify the correct definition of common-emitter.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about cutoff region is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the ideally-off mode of a transistor acting as an open switch",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 2,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "Identify the correct definition of cutoff region.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_e_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is offset voltage in the context of opamps?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the small input difference needed to null the output",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 1,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "Identify the correct definition of offset voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain signal-to-noise ratio to a teammate who has not seen it?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the ratio of signal power to noise power",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 2,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "Identify the correct definition of signal-to-noise ratio.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_h_89",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'virtual short' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the approximation that input terminals sit at equal potential with negative feedback",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "virtual short: the approximation that input terminals sit at equal potential with negative feedback",
+    "objective": "Identify the correct definition of virtual short.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "no current",
+      "feedback",
+      "zero difference",
+      "virtual ground"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_73",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of slew rate suitable for a project update.",
+    "keywords": [
+      "rate",
+      "volts per microsecond",
+      "limit",
+      "fastest"
+    ],
+    "minKeywords": 1,
+    "explanation": "slew rate: the maximum rate of change of an op-amp output",
+    "objective": "State slew rate correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_h_33",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'common-emitter' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a configuration with the emitter shared by input and output",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias"
+    ],
+    "answer": 0,
+    "explanation": "common-emitter: a configuration with the emitter shared by input and output",
+    "objective": "Identify the correct definition of common-emitter.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "shared",
+      "emitter",
+      "gain",
+      "inverting"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_113",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about offset voltage is correct?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the small input difference needed to null the output",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "offset voltage: the small input difference needed to null the output",
+    "objective": "Identify the correct definition of offset voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "keywords": [
+      "input difference",
+      "null",
+      "mismatch",
+      "output zero"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Miller effect in amplifiers, in your own words.",
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "minKeywords": 1,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "State Miller effect correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_169",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast signal-to-noise ratio with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "power",
+      "ratio",
+      "quality",
+      "power ratio"
+    ],
+    "minKeywords": 1,
+    "explanation": "signal-to-noise ratio: the ratio of signal power to noise power",
+    "objective": "State signal-to-noise ratio correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Noise"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast input resistance with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "minKeywords": 1,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "State input resistance correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_m_121",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Miller effect is correct?",
+    "options": [
+      "the effective slope resistance of a diode at its bias point",
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "multiplying an internal capacitor by the amplifier gain at the input"
+    ],
+    "answer": 3,
+    "explanation": "Miller effect: multiplying an internal capacitor by the amplifier gain at the input",
+    "objective": "Identify the correct definition of Miller effect.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "multiplication",
+      "input",
+      "capacitor",
+      "gain times"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_h_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'cutoff region' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the ideally-off mode of a transistor acting as an open switch",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "Identify the correct definition of cutoff region.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of breakdown voltage suitable for a project update.",
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "minKeywords": 1,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "State breakdown voltage correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_m_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about negative feedback is correct?",
+    "options": [
+      "feeding back a fraction of the output to lower gain and distortion",
+      "the forward bias above which a diode conducts strongly",
+      "the small current that flows in reverse bias",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 0,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "Identify the correct definition of negative feedback.",
+    "skillTags": [
+      "Circuit Design",
+      "Amplifiers"
+    ],
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_st_153",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of thermal noise suitable for a project update.",
+    "keywords": [
+      "resistor",
+      "random",
+      "temperature",
+      "white"
+    ],
+    "minKeywords": 1,
+    "explanation": "thermal noise: noise arising from random carrier motion in a resistor",
+    "objective": "State thermal noise correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_ht_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast dynamic resistance with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "minKeywords": 1,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "State dynamic resistance correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_81",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define input resistance in opamps, in your own words.",
+    "keywords": [
+      "high",
+      "input",
+      "draw",
+      "negligible current"
+    ],
+    "minKeywords": 1,
+    "explanation": "input resistance: the very high resistance at which an op-amp draws signal",
+    "objective": "State input resistance correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Opamps"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_137",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain negative feedback to a teammate who has not seen it?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "feeding back a fraction of the output to lower gain and distortion",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point"
+    ],
+    "answer": 1,
+    "explanation": "negative feedback: feeding back a fraction of the output to lower gain and distortion",
+    "objective": "Identify the correct definition of negative feedback.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "fraction",
+      "stable",
+      "lower gain",
+      "distortion"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_analog_e_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is breakdown voltage in the context of diodes?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the forward bias above which a diode conducts strongly",
+      "the effective slope resistance of a diode at its bias point",
+      "the reverse voltage where a diode conducts heavily"
+    ],
+    "answer": 3,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "Identify the correct definition of breakdown voltage.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_mt_25",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does diodes rely on breakdown voltage? Give a concrete reason.",
+    "keywords": [
+      "reverse",
+      "breakdown",
+      "zener",
+      "heavy current"
+    ],
+    "minKeywords": 1,
+    "explanation": "breakdown voltage: the reverse voltage where a diode conducts heavily",
+    "objective": "State breakdown voltage correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_et_17",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define dynamic resistance in diodes, in your own words.",
+    "keywords": [
+      "slope",
+      "resistance",
+      "bias point",
+      "small-signal"
+    ],
+    "minKeywords": 1,
+    "explanation": "dynamic resistance: the effective slope resistance of a diode at its bias point",
+    "objective": "State dynamic resistance correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Diodes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_ht_49",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast current gain with knee voltage. Which would you choose and why?",
+    "keywords": [
+      "ratio",
+      "collector",
+      "base",
+      "amplification"
+    ],
+    "minKeywords": 1,
+    "explanation": "current gain: the ratio of collector current to base current",
+    "objective": "State current gain correctly in your own words.",
+    "skillTags": [
+      "Circuit Design",
+      "Transistors"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_analog_s_65",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain cutoff region to a teammate who has not seen it?",
+    "options": [
+      "the small current that flows in reverse bias",
+      "the ideally-off mode of a transistor acting as an open switch",
+      "the effective slope resistance of a diode at its bias point",
+      "the forward bias above which a diode conducts strongly"
+    ],
+    "answer": 1,
+    "explanation": "cutoff region: the ideally-off mode of a transistor acting as an open switch",
+    "objective": "Identify the correct definition of cutoff region.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "open",
+      "off",
+      "no current",
+      "switch off"
+    ],
+    "softSkill": true
+  }
+]

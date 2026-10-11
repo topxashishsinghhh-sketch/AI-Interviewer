@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "gen_placement_sx_E_139",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define technical preparation in interview_readiness, in your own words.",
+    "keywords": [
+      "revisit",
+      "core",
+      "concepts",
+      "data structures"
+    ],
+    "minKeywords": 1,
+    "explanation": "technical preparation: revisiting core data-structure and language concepts",
+    "objective": "State technical preparation correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_61",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does conflict_resolution rely on third option? Give a concrete reason.",
+    "keywords": [
+      "extra options",
+      "creative",
+      "third",
+      "new idea"
+    ],
+    "minKeywords": 1,
+    "explanation": "third option: finding an answer beyond the two proposed positions",
+    "objective": "State third option correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_121",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is company research in the context of interview_readiness?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "knowing the company's products, market and teams",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 1,
+    "explanation": "company research: knowing the company's products, market and teams",
+    "objective": "Identify the correct definition of company research.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "products",
+      "market",
+      "research",
+      "teams"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_209",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is concise introduction in the context of communication?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "posture and eye contact affecting credibility"
+    ],
+    "answer": 1,
+    "explanation": "concise introduction: a thirty-second summary of who you are",
+    "objective": "Identify the correct definition of concise introduction.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "summary",
+      "brief",
+      "who you are",
+      "short"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_49",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does conflict_resolution rely on win-win framing? Give a concrete reason.",
+    "keywords": [
+      "framing",
+      "both sides",
+      "goal",
+      "together"
+    ],
+    "minKeywords": 1,
+    "explanation": "win-win framing: reframing disagreement as goals to satisfy together",
+    "objective": "State win-win framing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_13",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does communication rely on avoiding jargon? Give a concrete reason.",
+    "keywords": [
+      "audience",
+      "plain",
+      "jargon-free",
+      "simple"
+    ],
+    "minKeywords": 1,
+    "explanation": "avoiding jargon: explaining in words the audience already uses",
+    "objective": "State avoiding jargon correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_103",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is proactive communication in the context of ownership?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "surfacing blockers and issues early",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "proactive communication: surfacing blockers and issues early",
+    "objective": "Identify the correct definition of proactive communication.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "blocker",
+      "early",
+      "raise",
+      "before too late"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_43",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast debriefing with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "retrospective",
+      "went well",
+      "did not",
+      "lessons"
+    ],
+    "minKeywords": 1,
+    "explanation": "debriefing: a retrospective on what worked and what did not",
+    "objective": "State debriefing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_127",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'resume framing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "stating outcomes and impact rather than only tasks",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 0,
+    "explanation": "resume framing: stating outcomes and impact rather than only tasks",
+    "objective": "Identify the correct definition of resume framing.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "outcome",
+      "impact",
+      "achievement",
+      "results"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_115",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is no hand-offs in the context of ownership?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "carrying a task through the remaining people involved"
+    ],
+    "answer": 3,
+    "explanation": "no hand-offs: carrying a task through the remaining people involved",
+    "objective": "Identify the correct definition of no hand-offs.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "whole",
+      "carried",
+      "through",
+      "alone"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_91",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'rebound from failure' is involved, what is the most likely diagnosis?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "owning a failure and applying the lesson",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 2,
+    "explanation": "rebound from failure: owning a failure and applying the lesson",
+    "objective": "Identify the correct definition of rebound from failure.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "failure",
+      "own",
+      "lesson",
+      "recover"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_43",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define debriefing in teamwork, in your own words.",
+    "keywords": [
+      "retrospective",
+      "went well",
+      "did not",
+      "lessons"
+    ],
+    "minKeywords": 1,
+    "explanation": "debriefing: a retrospective on what worked and what did not",
+    "objective": "State debriefing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_127",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define resume framing in interview_readiness, in your own words.",
+    "keywords": [
+      "outcome",
+      "impact",
+      "achievement",
+      "results"
+    ],
+    "minKeywords": 1,
+    "explanation": "resume framing: stating outcomes and impact rather than only tasks",
+    "objective": "State resume framing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_49",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about win-win framing is correct?",
+    "options": [
+      "reframing disagreement as goals to satisfy together",
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 0,
+    "explanation": "win-win framing: reframing disagreement as goals to satisfy together",
+    "objective": "Identify the correct definition of win-win framing.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "framing",
+      "both sides",
+      "goal",
+      "together"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_121",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about company research is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "knowing the company's products, market and teams",
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 1,
+    "explanation": "company research: knowing the company's products, market and teams",
+    "objective": "Identify the correct definition of company research.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "products",
+      "market",
+      "research",
+      "teams"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_97",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define end-to-end ownership in ownership, in your own words.",
+    "keywords": [
+      "from",
+      "start",
+      "end",
+      "delivered"
+    ],
+    "minKeywords": 1,
+    "explanation": "end-to-end ownership: taking a task from start through delivered outcome",
+    "objective": "State end-to-end ownership correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_85",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does adaptability rely on constructive feedback? Give a concrete reason.",
+    "keywords": [
+      "critical",
+      "comment",
+      "use",
+      "information"
+    ],
+    "minKeywords": 1,
+    "explanation": "constructive feedback: receiving critical comments as information to use",
+    "objective": "State constructive feedback correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_127",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does interview_readiness rely on resume framing? Give a concrete reason.",
+    "keywords": [
+      "outcome",
+      "impact",
+      "achievement",
+      "results"
+    ],
+    "minKeywords": 1,
+    "explanation": "resume framing: stating outcomes and impact rather than only tasks",
+    "objective": "State resume framing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_91",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define rebound from failure in adaptability, in your own words.",
+    "keywords": [
+      "failure",
+      "own",
+      "lesson",
+      "recover"
+    ],
+    "minKeywords": 1,
+    "explanation": "rebound from failure: owning a failure and applying the lesson",
+    "objective": "State rebound from failure correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_103",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define proactive communication in ownership, in your own words.",
+    "keywords": [
+      "blocker",
+      "early",
+      "raise",
+      "before too late"
+    ],
+    "minKeywords": 1,
+    "explanation": "proactive communication: surfacing blockers and issues early",
+    "objective": "State proactive communication correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_97",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'end-to-end ownership' is involved, what is the most likely diagnosis?",
+    "options": [
+      "taking a task from start through delivered outcome",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 0,
+    "explanation": "end-to-end ownership: taking a task from start through delivered outcome",
+    "objective": "Identify the correct definition of end-to-end ownership.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "from",
+      "start",
+      "end",
+      "delivered"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_85",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about constructive feedback is correct?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "receiving critical comments as information to use",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 1,
+    "explanation": "constructive feedback: receiving critical comments as information to use",
+    "objective": "Identify the correct definition of constructive feedback.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "critical",
+      "comment",
+      "use",
+      "information"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_67",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is compromise in the context of conflict_resolution?",
+    "options": [
+      "explaining in words the audience already uses",
+      "each side accepting a workable middle position",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 1,
+    "explanation": "compromise: each side accepting a workable middle position",
+    "objective": "Identify the correct definition of compromise.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "middle",
+      "meet halfway",
+      "both give",
+      "acceptable"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_61",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is third option in the context of conflict_resolution?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "finding an answer beyond the two proposed positions"
+    ],
+    "answer": 3,
+    "explanation": "third option: finding an answer beyond the two proposed positions",
+    "objective": "Identify the correct definition of third option.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "extra options",
+      "creative",
+      "third",
+      "new idea"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_133",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'aptitude practice' is involved, what is the most likely diagnosis?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "practising timed problems before the assessment"
+    ],
+    "answer": 3,
+    "explanation": "aptitude practice: practising timed problems before the assessment",
+    "objective": "Identify the correct definition of aptitude practice.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "timed",
+      "practice",
+      "assessment",
+      "speed"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_7",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast active listening with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "listener",
+      "concentrating",
+      "respond",
+      "focus"
+    ],
+    "minKeywords": 1,
+    "explanation": "active listening: concentrating fully on the speaker and responding",
+    "objective": "State active listening correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_25",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast shared goal with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "align",
+      "same",
+      "goal",
+      "objective"
+    ],
+    "minKeywords": 1,
+    "explanation": "shared goal: aligning personal and team objectives",
+    "objective": "State shared goal correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_61",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define third option in conflict_resolution, in your own words.",
+    "keywords": [
+      "extra options",
+      "creative",
+      "third",
+      "new idea"
+    ],
+    "minKeywords": 1,
+    "explanation": "third option: finding an answer beyond the two proposed positions",
+    "objective": "State third option correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_25",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about shared goal is correct?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "aligning personal and team objectives"
+    ],
+    "answer": 3,
+    "explanation": "shared goal: aligning personal and team objectives",
+    "objective": "Identify the correct definition of shared goal.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "align",
+      "same",
+      "goal",
+      "objective"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_133",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast aptitude practice with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "timed",
+      "practice",
+      "assessment",
+      "speed"
+    ],
+    "minKeywords": 1,
+    "explanation": "aptitude practice: practising timed problems before the assessment",
+    "objective": "State aptitude practice correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_209",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast concise introduction with active listening. Which would you choose and why?",
+    "keywords": [
+      "summary",
+      "brief",
+      "who you are",
+      "short"
+    ],
+    "minKeywords": 1,
+    "explanation": "concise introduction: a thirty-second summary of who you are",
+    "objective": "State concise introduction correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_133",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does interview_readiness rely on aptitude practice? Give a concrete reason.",
+    "keywords": [
+      "timed",
+      "practice",
+      "assessment",
+      "speed"
+    ],
+    "minKeywords": 1,
+    "explanation": "aptitude practice: practising timed problems before the assessment",
+    "objective": "State aptitude practice correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_91",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast rebound from failure with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "failure",
+      "own",
+      "lesson",
+      "recover"
+    ],
+    "minKeywords": 1,
+    "explanation": "rebound from failure: owning a failure and applying the lesson",
+    "objective": "State rebound from failure correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_91",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about rebound from failure is correct?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "owning a failure and applying the lesson",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 1,
+    "explanation": "rebound from failure: owning a failure and applying the lesson",
+    "objective": "Identify the correct definition of rebound from failure.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "failure",
+      "own",
+      "lesson",
+      "recover"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_73",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast learning quickly with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "new tools",
+      "fast",
+      "practice",
+      "upscale"
+    ],
+    "minKeywords": 1,
+    "explanation": "learning quickly: learning new tools on the job by practising",
+    "objective": "State learning quickly correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_43",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does teamwork rely on debriefing? Give a concrete reason.",
+    "keywords": [
+      "retrospective",
+      "went well",
+      "did not",
+      "lessons"
+    ],
+    "minKeywords": 1,
+    "explanation": "debriefing: a retrospective on what worked and what did not",
+    "objective": "State debriefing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_7",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'active listening' is involved, what is the most likely diagnosis?",
+    "options": [
+      "explaining in words the audience already uses",
+      "posture and eye contact affecting credibility",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 2,
+    "explanation": "active listening: concentrating fully on the speaker and responding",
+    "objective": "Identify the correct definition of active listening.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "listener",
+      "concentrating",
+      "respond",
+      "focus"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_67",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about compromise is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "each side accepting a workable middle position",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "compromise: each side accepting a workable middle position",
+    "objective": "Identify the correct definition of compromise.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "middle",
+      "meet halfway",
+      "both give",
+      "acceptable"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_91",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does adaptability rely on rebound from failure? Give a concrete reason.",
+    "keywords": [
+      "failure",
+      "own",
+      "lesson",
+      "recover"
+    ],
+    "minKeywords": 1,
+    "explanation": "rebound from failure: owning a failure and applying the lesson",
+    "objective": "State rebound from failure correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_19",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast non-verbal cues with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "posture",
+      "eye contact",
+      "body",
+      "non-verbal"
+    ],
+    "minKeywords": 1,
+    "explanation": "non-verbal cues: posture and eye contact affecting credibility",
+    "objective": "State non-verbal cues correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_85",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define constructive feedback in adaptability, in your own words.",
+    "keywords": [
+      "critical",
+      "comment",
+      "use",
+      "information"
+    ],
+    "minKeywords": 1,
+    "explanation": "constructive feedback: receiving critical comments as information to use",
+    "objective": "State constructive feedback correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_37",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is hand-offs in the context of teamwork?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "making sure the receiver has context, not just files",
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "hand-offs: making sure the receiver has context, not just files",
+    "objective": "Identify the correct definition of hand-offs.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "receiver",
+      "context",
+      "pass over",
+      "handover"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_37",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast hand-offs with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "receiver",
+      "context",
+      "pass over",
+      "handover"
+    ],
+    "minKeywords": 1,
+    "explanation": "hand-offs: making sure the receiver has context, not just files",
+    "objective": "State hand-offs correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_67",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast compromise with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "middle",
+      "meet halfway",
+      "both give",
+      "acceptable"
+    ],
+    "minKeywords": 1,
+    "explanation": "compromise: each side accepting a workable middle position",
+    "objective": "State compromise correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_79",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is comfort with change in the context of adaptability?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "adjusting when priorities change dynamically",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "comfort with change: adjusting when priorities change dynamically",
+    "objective": "Identify the correct definition of comfort with change.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "reordering",
+      "priorities",
+      "rolling",
+      "adjust"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_121",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast company research with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "products",
+      "market",
+      "research",
+      "teams"
+    ],
+    "minKeywords": 1,
+    "explanation": "company research: knowing the company's products, market and teams",
+    "objective": "State company research correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_109",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ownership rely on no surprises? Give a concrete reason.",
+    "keywords": [
+      "status",
+      "on time",
+      "shift",
+      "earlier"
+    ],
+    "minKeywords": 1,
+    "explanation": "no surprises: communicating status on time rather than late",
+    "objective": "State no surprises correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_103",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ownership rely on proactive communication? Give a concrete reason.",
+    "keywords": [
+      "blocker",
+      "early",
+      "raise",
+      "before too late"
+    ],
+    "minKeywords": 1,
+    "explanation": "proactive communication: surfacing blockers and issues early",
+    "objective": "State proactive communication correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_7",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is active listening in the context of communication?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "posture and eye contact affecting credibility"
+    ],
+    "answer": 1,
+    "explanation": "active listening: concentrating fully on the speaker and responding",
+    "objective": "Identify the correct definition of active listening.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "listener",
+      "concentrating",
+      "respond",
+      "focus"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_19",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does communication rely on non-verbal cues? Give a concrete reason.",
+    "keywords": [
+      "posture",
+      "eye contact",
+      "body",
+      "non-verbal"
+    ],
+    "minKeywords": 1,
+    "explanation": "non-verbal cues: posture and eye contact affecting credibility",
+    "objective": "State non-verbal cues correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_25",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does teamwork rely on shared goal? Give a concrete reason.",
+    "keywords": [
+      "align",
+      "same",
+      "goal",
+      "objective"
+    ],
+    "minKeywords": 1,
+    "explanation": "shared goal: aligning personal and team objectives",
+    "objective": "State shared goal correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_67",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does conflict_resolution rely on compromise? Give a concrete reason.",
+    "keywords": [
+      "middle",
+      "meet halfway",
+      "both give",
+      "acceptable"
+    ],
+    "minKeywords": 1,
+    "explanation": "compromise: each side accepting a workable middle position",
+    "objective": "State compromise correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_55",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define separating people in conflict_resolution, in your own words.",
+    "keywords": [
+      "not the person",
+      "issue",
+      "blame-free",
+      "both perspectives"
+    ],
+    "minKeywords": 1,
+    "explanation": "separating people: solving the issue without blaming individuals",
+    "objective": "State separating people correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_31",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about responsibility split is correct?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "agreeing on the pieces each member owns",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 1,
+    "explanation": "responsibility split: agreeing on the pieces each member owns",
+    "objective": "Identify the correct definition of responsibility split.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "who owns what",
+      "split",
+      "r&r",
+      "assignment"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_73",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does adaptability rely on learning quickly? Give a concrete reason.",
+    "keywords": [
+      "new tools",
+      "fast",
+      "practice",
+      "upscale"
+    ],
+    "minKeywords": 1,
+    "explanation": "learning quickly: learning new tools on the job by practising",
+    "objective": "State learning quickly correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_43",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is debriefing in the context of teamwork?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "a retrospective on what worked and what did not"
+    ],
+    "answer": 3,
+    "explanation": "debriefing: a retrospective on what worked and what did not",
+    "objective": "Identify the correct definition of debriefing.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "retrospective",
+      "went well",
+      "did not",
+      "lessons"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_55",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is separating people in the context of conflict_resolution?",
+    "options": [
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "solving the issue without blaming individuals",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "separating people: solving the issue without blaming individuals",
+    "objective": "Identify the correct definition of separating people.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "not the person",
+      "issue",
+      "blame-free",
+      "both perspectives"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_133",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define aptitude practice in interview_readiness, in your own words.",
+    "keywords": [
+      "timed",
+      "practice",
+      "assessment",
+      "speed"
+    ],
+    "minKeywords": 1,
+    "explanation": "aptitude practice: practising timed problems before the assessment",
+    "objective": "State aptitude practice correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_133",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is aptitude practice in the context of interview_readiness?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "practising timed problems before the assessment",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 2,
+    "explanation": "aptitude practice: practising timed problems before the assessment",
+    "objective": "Identify the correct definition of aptitude practice.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "timed",
+      "practice",
+      "assessment",
+      "speed"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_139",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does interview_readiness rely on technical preparation? Give a concrete reason.",
+    "keywords": [
+      "revisit",
+      "core",
+      "concepts",
+      "data structures"
+    ],
+    "minKeywords": 1,
+    "explanation": "technical preparation: revisiting core data-structure and language concepts",
+    "objective": "State technical preparation correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_127",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about resume framing is correct?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "stating outcomes and impact rather than only tasks"
+    ],
+    "answer": 3,
+    "explanation": "resume framing: stating outcomes and impact rather than only tasks",
+    "objective": "Identify the correct definition of resume framing.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "outcome",
+      "impact",
+      "achievement",
+      "results"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_13",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'avoiding jargon' is involved, what is the most likely diagnosis?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "posture and eye contact affecting credibility"
+    ],
+    "answer": 1,
+    "explanation": "avoiding jargon: explaining in words the audience already uses",
+    "objective": "Identify the correct definition of avoiding jargon.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "audience",
+      "plain",
+      "jargon-free",
+      "simple"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_121",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define company research in interview_readiness, in your own words.",
+    "keywords": [
+      "products",
+      "market",
+      "research",
+      "teams"
+    ],
+    "minKeywords": 1,
+    "explanation": "company research: knowing the company's products, market and teams",
+    "objective": "State company research correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_121",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'company research' is involved, what is the most likely diagnosis?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "knowing the company's products, market and teams",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 2,
+    "explanation": "company research: knowing the company's products, market and teams",
+    "objective": "Identify the correct definition of company research.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "products",
+      "market",
+      "research",
+      "teams"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_139",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'technical preparation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "revisiting core data-structure and language concepts"
+    ],
+    "answer": 3,
+    "explanation": "technical preparation: revisiting core data-structure and language concepts",
+    "objective": "Identify the correct definition of technical preparation.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "revisit",
+      "core",
+      "concepts",
+      "data structures"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_31",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does teamwork rely on responsibility split? Give a concrete reason.",
+    "keywords": [
+      "who owns what",
+      "split",
+      "r&r",
+      "assignment"
+    ],
+    "minKeywords": 1,
+    "explanation": "responsibility split: agreeing on the pieces each member owns",
+    "objective": "State responsibility split correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_37",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define hand-offs in teamwork, in your own words.",
+    "keywords": [
+      "receiver",
+      "context",
+      "pass over",
+      "handover"
+    ],
+    "minKeywords": 1,
+    "explanation": "hand-offs: making sure the receiver has context, not just files",
+    "objective": "State hand-offs correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_25",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is shared goal in the context of teamwork?",
+    "options": [
+      "aligning personal and team objectives",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 0,
+    "explanation": "shared goal: aligning personal and team objectives",
+    "objective": "Identify the correct definition of shared goal.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "align",
+      "same",
+      "goal",
+      "objective"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_49",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast win-win framing with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "framing",
+      "both sides",
+      "goal",
+      "together"
+    ],
+    "minKeywords": 1,
+    "explanation": "win-win framing: reframing disagreement as goals to satisfy together",
+    "objective": "State win-win framing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_127",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is resume framing in the context of interview_readiness?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "stating outcomes and impact rather than only tasks",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 2,
+    "explanation": "resume framing: stating outcomes and impact rather than only tasks",
+    "objective": "Identify the correct definition of resume framing.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "outcome",
+      "impact",
+      "achievement",
+      "results"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_97",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about end-to-end ownership is correct?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "taking a task from start through delivered outcome"
+    ],
+    "answer": 3,
+    "explanation": "end-to-end ownership: taking a task from start through delivered outcome",
+    "objective": "Identify the correct definition of end-to-end ownership.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "from",
+      "start",
+      "end",
+      "delivered"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_31",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is responsibility split in the context of teamwork?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "agreeing on the pieces each member owns"
+    ],
+    "answer": 3,
+    "explanation": "responsibility split: agreeing on the pieces each member owns",
+    "objective": "Identify the correct definition of responsibility split.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "who owns what",
+      "split",
+      "r&r",
+      "assignment"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_79",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does adaptability rely on comfort with change? Give a concrete reason.",
+    "keywords": [
+      "reordering",
+      "priorities",
+      "rolling",
+      "adjust"
+    ],
+    "minKeywords": 1,
+    "explanation": "comfort with change: adjusting when priorities change dynamically",
+    "objective": "State comfort with change correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_31",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define responsibility split in teamwork, in your own words.",
+    "keywords": [
+      "who owns what",
+      "split",
+      "r&r",
+      "assignment"
+    ],
+    "minKeywords": 1,
+    "explanation": "responsibility split: agreeing on the pieces each member owns",
+    "objective": "State responsibility split correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_209",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about concise introduction is correct?",
+    "options": [
+      "posture and eye contact affecting credibility",
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "concise introduction: a thirty-second summary of who you are",
+    "objective": "Identify the correct definition of concise introduction.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "summary",
+      "brief",
+      "who you are",
+      "short"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_25",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define shared goal in teamwork, in your own words.",
+    "keywords": [
+      "align",
+      "same",
+      "goal",
+      "objective"
+    ],
+    "minKeywords": 1,
+    "explanation": "shared goal: aligning personal and team objectives",
+    "objective": "State shared goal correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_25",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'shared goal' is involved, what is the most likely diagnosis?",
+    "options": [
+      "aligning personal and team objectives",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 0,
+    "explanation": "shared goal: aligning personal and team objectives",
+    "objective": "Identify the correct definition of shared goal.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "align",
+      "same",
+      "goal",
+      "objective"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_85",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is constructive feedback in the context of adaptability?",
+    "options": [
+      "explaining in words the audience already uses",
+      "receiving critical comments as information to use",
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 1,
+    "explanation": "constructive feedback: receiving critical comments as information to use",
+    "objective": "Identify the correct definition of constructive feedback.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "critical",
+      "comment",
+      "use",
+      "information"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_61",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'third option' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "finding an answer beyond the two proposed positions"
+    ],
+    "answer": 3,
+    "explanation": "third option: finding an answer beyond the two proposed positions",
+    "objective": "Identify the correct definition of third option.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "extra options",
+      "creative",
+      "third",
+      "new idea"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_31",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'responsibility split' is involved, what is the most likely diagnosis?",
+    "options": [
+      "agreeing on the pieces each member owns",
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 0,
+    "explanation": "responsibility split: agreeing on the pieces each member owns",
+    "objective": "Identify the correct definition of responsibility split.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "who owns what",
+      "split",
+      "r&r",
+      "assignment"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_61",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about third option is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "finding an answer beyond the two proposed positions"
+    ],
+    "answer": 3,
+    "explanation": "third option: finding an answer beyond the two proposed positions",
+    "objective": "Identify the correct definition of third option.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "extra options",
+      "creative",
+      "third",
+      "new idea"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_115",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast no hand-offs with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "whole",
+      "carried",
+      "through",
+      "alone"
+    ],
+    "minKeywords": 1,
+    "explanation": "no hand-offs: carrying a task through the remaining people involved",
+    "objective": "State no hand-offs correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_209",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'concise introduction' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "posture and eye contact affecting credibility",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 0,
+    "explanation": "concise introduction: a thirty-second summary of who you are",
+    "objective": "Identify the correct definition of concise introduction.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "summary",
+      "brief",
+      "who you are",
+      "short"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_19",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is non-verbal cues in the context of communication?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "posture and eye contact affecting credibility"
+    ],
+    "answer": 3,
+    "explanation": "non-verbal cues: posture and eye contact affecting credibility",
+    "objective": "Identify the correct definition of non-verbal cues.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "posture",
+      "eye contact",
+      "body",
+      "non-verbal"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_73",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define learning quickly in adaptability, in your own words.",
+    "keywords": [
+      "new tools",
+      "fast",
+      "practice",
+      "upscale"
+    ],
+    "minKeywords": 1,
+    "explanation": "learning quickly: learning new tools on the job by practising",
+    "objective": "State learning quickly correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_97",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast end-to-end ownership with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "from",
+      "start",
+      "end",
+      "delivered"
+    ],
+    "minKeywords": 1,
+    "explanation": "end-to-end ownership: taking a task from start through delivered outcome",
+    "objective": "State end-to-end ownership correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_19",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define non-verbal cues in communication, in your own words.",
+    "keywords": [
+      "posture",
+      "eye contact",
+      "body",
+      "non-verbal"
+    ],
+    "minKeywords": 1,
+    "explanation": "non-verbal cues: posture and eye contact affecting credibility",
+    "objective": "State non-verbal cues correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_49",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define win-win framing in conflict_resolution, in your own words.",
+    "keywords": [
+      "framing",
+      "both sides",
+      "goal",
+      "together"
+    ],
+    "minKeywords": 1,
+    "explanation": "win-win framing: reframing disagreement as goals to satisfy together",
+    "objective": "State win-win framing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_139",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast technical preparation with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "revisit",
+      "core",
+      "concepts",
+      "data structures"
+    ],
+    "minKeywords": 1,
+    "explanation": "technical preparation: revisiting core data-structure and language concepts",
+    "objective": "State technical preparation correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_109",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define no surprises in ownership, in your own words.",
+    "keywords": [
+      "status",
+      "on time",
+      "shift",
+      "earlier"
+    ],
+    "minKeywords": 1,
+    "explanation": "no surprises: communicating status on time rather than late",
+    "objective": "State no surprises correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_85",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast constructive feedback with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "critical",
+      "comment",
+      "use",
+      "information"
+    ],
+    "minKeywords": 1,
+    "explanation": "constructive feedback: receiving critical comments as information to use",
+    "objective": "State constructive feedback correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_115",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'no hand-offs' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "carrying a task through the remaining people involved"
+    ],
+    "answer": 3,
+    "explanation": "no hand-offs: carrying a task through the remaining people involved",
+    "objective": "Identify the correct definition of no hand-offs.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "whole",
+      "carried",
+      "through",
+      "alone"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_139",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is technical preparation in the context of interview_readiness?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "revisiting core data-structure and language concepts",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "technical preparation: revisiting core data-structure and language concepts",
+    "objective": "Identify the correct definition of technical preparation.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "revisit",
+      "core",
+      "concepts",
+      "data structures"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_73",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is learning quickly in the context of adaptability?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "learning new tools on the job by practising",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 2,
+    "explanation": "learning quickly: learning new tools on the job by practising",
+    "objective": "Identify the correct definition of learning quickly.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "new tools",
+      "fast",
+      "practice",
+      "upscale"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_97",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ownership rely on end-to-end ownership? Give a concrete reason.",
+    "keywords": [
+      "from",
+      "start",
+      "end",
+      "delivered"
+    ],
+    "minKeywords": 1,
+    "explanation": "end-to-end ownership: taking a task from start through delivered outcome",
+    "objective": "State end-to-end ownership correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_103",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about proactive communication is correct?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "surfacing blockers and issues early",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "proactive communication: surfacing blockers and issues early",
+    "objective": "Identify the correct definition of proactive communication.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "blocker",
+      "early",
+      "raise",
+      "before too late"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_49",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'win-win framing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "reframing disagreement as goals to satisfy together"
+    ],
+    "answer": 3,
+    "explanation": "win-win framing: reframing disagreement as goals to satisfy together",
+    "objective": "Identify the correct definition of win-win framing.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "framing",
+      "both sides",
+      "goal",
+      "together"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_79",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast comfort with change with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "reordering",
+      "priorities",
+      "rolling",
+      "adjust"
+    ],
+    "minKeywords": 1,
+    "explanation": "comfort with change: adjusting when priorities change dynamically",
+    "objective": "State comfort with change correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_55",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about separating people is correct?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "solving the issue without blaming individuals",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "separating people: solving the issue without blaming individuals",
+    "objective": "Identify the correct definition of separating people.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "not the person",
+      "issue",
+      "blame-free",
+      "both perspectives"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_209",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does communication rely on concise introduction? Give a concrete reason.",
+    "keywords": [
+      "summary",
+      "brief",
+      "who you are",
+      "short"
+    ],
+    "minKeywords": 1,
+    "explanation": "concise introduction: a thirty-second summary of who you are",
+    "objective": "State concise introduction correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_109",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about no surprises is correct?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "communicating status on time rather than late"
+    ],
+    "answer": 3,
+    "explanation": "no surprises: communicating status on time rather than late",
+    "objective": "Identify the correct definition of no surprises.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "status",
+      "on time",
+      "shift",
+      "earlier"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_67",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define compromise in conflict_resolution, in your own words.",
+    "keywords": [
+      "middle",
+      "meet halfway",
+      "both give",
+      "acceptable"
+    ],
+    "minKeywords": 1,
+    "explanation": "compromise: each side accepting a workable middle position",
+    "objective": "State compromise correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_79",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define comfort with change in adaptability, in your own words.",
+    "keywords": [
+      "reordering",
+      "priorities",
+      "rolling",
+      "adjust"
+    ],
+    "minKeywords": 1,
+    "explanation": "comfort with change: adjusting when priorities change dynamically",
+    "objective": "State comfort with change correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_55",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'separating people' is involved, what is the most likely diagnosis?",
+    "options": [
+      "explaining in words the audience already uses",
+      "solving the issue without blaming individuals",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 1,
+    "explanation": "separating people: solving the issue without blaming individuals",
+    "objective": "Identify the correct definition of separating people.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "not the person",
+      "issue",
+      "blame-free",
+      "both perspectives"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_133",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about aptitude practice is correct?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "practising timed problems before the assessment",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 1,
+    "explanation": "aptitude practice: practising timed problems before the assessment",
+    "objective": "Identify the correct definition of aptitude practice.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "timed",
+      "practice",
+      "assessment",
+      "speed"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_61",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast third option with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "extra options",
+      "creative",
+      "third",
+      "new idea"
+    ],
+    "minKeywords": 1,
+    "explanation": "third option: finding an answer beyond the two proposed positions",
+    "objective": "State third option correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_13",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about avoiding jargon is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "posture and eye contact affecting credibility"
+    ],
+    "answer": 0,
+    "explanation": "avoiding jargon: explaining in words the audience already uses",
+    "objective": "Identify the correct definition of avoiding jargon.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "audience",
+      "plain",
+      "jargon-free",
+      "simple"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_139",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about technical preparation is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "revisiting core data-structure and language concepts"
+    ],
+    "answer": 3,
+    "explanation": "technical preparation: revisiting core data-structure and language concepts",
+    "objective": "Identify the correct definition of technical preparation.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "keywords": [
+      "revisit",
+      "core",
+      "concepts",
+      "data structures"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_13",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is avoiding jargon in the context of communication?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "posture and eye contact affecting credibility",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 3,
+    "explanation": "avoiding jargon: explaining in words the audience already uses",
+    "objective": "Identify the correct definition of avoiding jargon.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "audience",
+      "plain",
+      "jargon-free",
+      "simple"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_37",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'hand-offs' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "making sure the receiver has context, not just files",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 1,
+    "explanation": "hand-offs: making sure the receiver has context, not just files",
+    "objective": "Identify the correct definition of hand-offs.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "receiver",
+      "context",
+      "pass over",
+      "handover"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_7",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define active listening in communication, in your own words.",
+    "keywords": [
+      "listener",
+      "concentrating",
+      "respond",
+      "focus"
+    ],
+    "minKeywords": 1,
+    "explanation": "active listening: concentrating fully on the speaker and responding",
+    "objective": "State active listening correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_85",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'constructive feedback' is involved, what is the most likely diagnosis?",
+    "options": [
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "receiving critical comments as information to use",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "constructive feedback: receiving critical comments as information to use",
+    "objective": "Identify the correct definition of constructive feedback.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "critical",
+      "comment",
+      "use",
+      "information"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_115",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ownership rely on no hand-offs? Give a concrete reason.",
+    "keywords": [
+      "whole",
+      "carried",
+      "through",
+      "alone"
+    ],
+    "minKeywords": 1,
+    "explanation": "no hand-offs: carrying a task through the remaining people involved",
+    "objective": "State no hand-offs correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_109",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast no surprises with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "status",
+      "on time",
+      "shift",
+      "earlier"
+    ],
+    "minKeywords": 1,
+    "explanation": "no surprises: communicating status on time rather than late",
+    "objective": "State no surprises correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_55",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast separating people with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "not the person",
+      "issue",
+      "blame-free",
+      "both perspectives"
+    ],
+    "minKeywords": 1,
+    "explanation": "separating people: solving the issue without blaming individuals",
+    "objective": "State separating people correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_55",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does conflict_resolution rely on separating people? Give a concrete reason.",
+    "keywords": [
+      "not the person",
+      "issue",
+      "blame-free",
+      "both perspectives"
+    ],
+    "minKeywords": 1,
+    "explanation": "separating people: solving the issue without blaming individuals",
+    "objective": "State separating people correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_13",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define avoiding jargon in communication, in your own words.",
+    "keywords": [
+      "audience",
+      "plain",
+      "jargon-free",
+      "simple"
+    ],
+    "minKeywords": 1,
+    "explanation": "avoiding jargon: explaining in words the audience already uses",
+    "objective": "State avoiding jargon correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_7",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about active listening is correct?",
+    "options": [
+      "posture and eye contact affecting credibility",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "active listening: concentrating fully on the speaker and responding",
+    "objective": "Identify the correct definition of active listening.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "listener",
+      "concentrating",
+      "respond",
+      "focus"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_37",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about hand-offs is correct?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "making sure the receiver has context, not just files"
+    ],
+    "answer": 3,
+    "explanation": "hand-offs: making sure the receiver has context, not just files",
+    "objective": "Identify the correct definition of hand-offs.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "receiver",
+      "context",
+      "pass over",
+      "handover"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_115",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about no hand-offs is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "carrying a task through the remaining people involved",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 1,
+    "explanation": "no hand-offs: carrying a task through the remaining people involved",
+    "objective": "Identify the correct definition of no hand-offs.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "whole",
+      "carried",
+      "through",
+      "alone"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_103",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast proactive communication with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "blocker",
+      "early",
+      "raise",
+      "before too late"
+    ],
+    "minKeywords": 1,
+    "explanation": "proactive communication: surfacing blockers and issues early",
+    "objective": "State proactive communication correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_73",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'learning quickly' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "learning new tools on the job by practising"
+    ],
+    "answer": 3,
+    "explanation": "learning quickly: learning new tools on the job by practising",
+    "objective": "Identify the correct definition of learning quickly.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "new tools",
+      "fast",
+      "practice",
+      "upscale"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_91",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is rebound from failure in the context of adaptability?",
+    "options": [
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "owning a failure and applying the lesson",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "rebound from failure: owning a failure and applying the lesson",
+    "objective": "Identify the correct definition of rebound from failure.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "failure",
+      "own",
+      "lesson",
+      "recover"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_43",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'debriefing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a retrospective on what worked and what did not",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "debriefing: a retrospective on what worked and what did not",
+    "objective": "Identify the correct definition of debriefing.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "retrospective",
+      "went well",
+      "did not",
+      "lessons"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_115",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define no hand-offs in ownership, in your own words.",
+    "keywords": [
+      "whole",
+      "carried",
+      "through",
+      "alone"
+    ],
+    "minKeywords": 1,
+    "explanation": "no hand-offs: carrying a task through the remaining people involved",
+    "objective": "State no hand-offs correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_E_209",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define concise introduction in communication, in your own words.",
+    "keywords": [
+      "summary",
+      "brief",
+      "who you are",
+      "short"
+    ],
+    "minKeywords": 1,
+    "explanation": "concise introduction: a thirty-second summary of who you are",
+    "objective": "State concise introduction correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_19",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'non-verbal cues' is involved, what is the most likely diagnosis?",
+    "options": [
+      "posture and eye contact affecting credibility",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 0,
+    "explanation": "non-verbal cues: posture and eye contact affecting credibility",
+    "objective": "Identify the correct definition of non-verbal cues.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "posture",
+      "eye contact",
+      "body",
+      "non-verbal"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_67",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'compromise' is involved, what is the most likely diagnosis?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "each side accepting a workable middle position",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "compromise: each side accepting a workable middle position",
+    "objective": "Identify the correct definition of compromise.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "middle",
+      "meet halfway",
+      "both give",
+      "acceptable"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_79",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'comfort with change' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "adjusting when priorities change dynamically",
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 1,
+    "explanation": "comfort with change: adjusting when priorities change dynamically",
+    "objective": "Identify the correct definition of comfort with change.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "reordering",
+      "priorities",
+      "rolling",
+      "adjust"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_13",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast avoiding jargon with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "audience",
+      "plain",
+      "jargon-free",
+      "simple"
+    ],
+    "minKeywords": 1,
+    "explanation": "avoiding jargon: explaining in words the audience already uses",
+    "objective": "State avoiding jargon correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_97",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is end-to-end ownership in the context of ownership?",
+    "options": [
+      "explaining in words the audience already uses",
+      "taking a task from start through delivered outcome",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 1,
+    "explanation": "end-to-end ownership: taking a task from start through delivered outcome",
+    "objective": "Identify the correct definition of end-to-end ownership.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "from",
+      "start",
+      "end",
+      "delivered"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_73",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about learning quickly is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "learning new tools on the job by practising"
+    ],
+    "answer": 3,
+    "explanation": "learning quickly: learning new tools on the job by practising",
+    "objective": "Identify the correct definition of learning quickly.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "new tools",
+      "fast",
+      "practice",
+      "upscale"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_19",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about non-verbal cues is correct?",
+    "options": [
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "posture and eye contact affecting credibility",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "non-verbal cues: posture and eye contact affecting credibility",
+    "objective": "Identify the correct definition of non-verbal cues.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "keywords": [
+      "posture",
+      "eye contact",
+      "body",
+      "non-verbal"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_37",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does teamwork rely on hand-offs? Give a concrete reason.",
+    "keywords": [
+      "receiver",
+      "context",
+      "pass over",
+      "handover"
+    ],
+    "minKeywords": 1,
+    "explanation": "hand-offs: making sure the receiver has context, not just files",
+    "objective": "State hand-offs correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_7",
+    "subject": "placement",
+    "topic": "communication",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does communication rely on active listening? Give a concrete reason.",
+    "keywords": [
+      "listener",
+      "concentrating",
+      "respond",
+      "focus"
+    ],
+    "minKeywords": 1,
+    "explanation": "active listening: concentrating fully on the speaker and responding",
+    "objective": "State active listening correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_103",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'proactive communication' is involved, what is the most likely diagnosis?",
+    "options": [
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "surfacing blockers and issues early"
+    ],
+    "answer": 3,
+    "explanation": "proactive communication: surfacing blockers and issues early",
+    "objective": "Identify the correct definition of proactive communication.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "blocker",
+      "early",
+      "raise",
+      "before too late"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_31",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast responsibility split with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "who owns what",
+      "split",
+      "r&r",
+      "assignment"
+    ],
+    "minKeywords": 1,
+    "explanation": "responsibility split: agreeing on the pieces each member owns",
+    "objective": "State responsibility split correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_49",
+    "subject": "placement",
+    "topic": "conflict_resolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is win-win framing in the context of conflict_resolution?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "reframing disagreement as goals to satisfy together",
+      "concentrating fully on the speaker and responding"
+    ],
+    "answer": 2,
+    "explanation": "win-win framing: reframing disagreement as goals to satisfy together",
+    "objective": "Identify the correct definition of win-win framing.",
+    "skillTags": [
+      "Soft Skills",
+      "Conflict Resolution"
+    ],
+    "keywords": [
+      "framing",
+      "both sides",
+      "goal",
+      "together"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_H_127",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast resume framing with concise introduction. Which would you choose and why?",
+    "keywords": [
+      "outcome",
+      "impact",
+      "achievement",
+      "results"
+    ],
+    "minKeywords": 1,
+    "explanation": "resume framing: stating outcomes and impact rather than only tasks",
+    "objective": "State resume framing correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_E_109",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is no surprises in the context of ownership?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are",
+      "explaining in words the audience already uses",
+      "communicating status on time rather than late"
+    ],
+    "answer": 3,
+    "explanation": "no surprises: communicating status on time rather than late",
+    "objective": "Identify the correct definition of no surprises.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "status",
+      "on time",
+      "shift",
+      "earlier"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_43",
+    "subject": "placement",
+    "topic": "teamwork",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about debriefing is correct?",
+    "options": [
+      "a thirty-second summary of who you are",
+      "concentrating fully on the speaker and responding",
+      "a retrospective on what worked and what did not",
+      "explaining in words the audience already uses"
+    ],
+    "answer": 2,
+    "explanation": "debriefing: a retrospective on what worked and what did not",
+    "objective": "Identify the correct definition of debriefing.",
+    "skillTags": [
+      "Soft Skills",
+      "Teamwork"
+    ],
+    "keywords": [
+      "retrospective",
+      "went well",
+      "did not",
+      "lessons"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_H_109",
+    "subject": "placement",
+    "topic": "ownership",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'no surprises' is involved, what is the most likely diagnosis?",
+    "options": [
+      "communicating status on time rather than late",
+      "explaining in words the audience already uses",
+      "concentrating fully on the speaker and responding",
+      "a thirty-second summary of who you are"
+    ],
+    "answer": 0,
+    "explanation": "no surprises: communicating status on time rather than late",
+    "objective": "Identify the correct definition of no surprises.",
+    "skillTags": [
+      "Soft Skills",
+      "Ownership"
+    ],
+    "keywords": [
+      "status",
+      "on time",
+      "shift",
+      "earlier"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sx_M_121",
+    "subject": "placement",
+    "topic": "interview_readiness",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does interview_readiness rely on company research? Give a concrete reason.",
+    "keywords": [
+      "products",
+      "market",
+      "research",
+      "teams"
+    ],
+    "minKeywords": 1,
+    "explanation": "company research: knowing the company's products, market and teams",
+    "objective": "State company research correctly in your own words.",
+    "skillTags": [
+      "Soft Skills",
+      "Interview Readiness"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_placement_sm_M_79",
+    "subject": "placement",
+    "topic": "adaptability",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about comfort with change is correct?",
+    "options": [
+      "concentrating fully on the speaker and responding",
+      "explaining in words the audience already uses",
+      "a thirty-second summary of who you are",
+      "adjusting when priorities change dynamically"
+    ],
+    "answer": 3,
+    "explanation": "comfort with change: adjusting when priorities change dynamically",
+    "objective": "Identify the correct definition of comfort with change.",
+    "skillTags": [
+      "Soft Skills",
+      "Adaptability"
+    ],
+    "keywords": [
+      "reordering",
+      "priorities",
+      "rolling",
+      "adjust"
+    ],
+    "softSkill": true
+  }
+]

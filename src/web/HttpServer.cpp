@@ -67,6 +67,19 @@ std::string paramOr(const httplib::Request& request, const std::string& name,
     return value.empty() ? fallback : value;
 }
 
+// Reads a non-negative "limit" query parameter. Anything unparseable or
+// negative falls back to the caller's default so a typo cannot return an empty
+// page or every row.
+int parseLimit(const httplib::Request& request, int fallback) {
+    if (!request.has_param("limit")) return fallback;
+    const std::string raw = request.get_param_value("limit");
+    if (raw.empty()) return fallback;
+    std::istringstream iss(raw);
+    int value = 0;
+    if (!(iss >> value) || value < 0) return fallback;
+    return value;
+}
+
 // ---- problem API payload helpers ----
 
 json problemToJson(const core::QuestionPtr& question) {
@@ -634,6 +647,8 @@ void HttpServer::registerRoutes() {
         filter.status = paramOr(request, "status", "");
         filter.search = paramOr(request, "q", "");
         filter.bookmarkedOnly = paramOr(request, "bookmarked", "") == "1";
+        // limit=0 means "everything"; the default keeps responses small.
+        filter.limit = parseLimit(request, 200);
 
         const std::string sort = paramOr(request, "sort", "difficulty");
         if (sort == "title") filter.sort = problem::ProblemFilter::Sort::Title;

@@ -863,8 +863,9 @@ function renderVerdict(r) {
 
 function loadDashboard() {
   loadStats().then(function (s) {
-    // solved-per-subject comes from the problem list so the bars are real
-    return api.problems({ limit: 300 }).then(function (list) {
+    // limit=0 asks for every row: the dashboard needs the full set to compute
+    // per-subject solved counts. The problem list itself stays paged.
+    return api.problems({ limit: 0 }).then(function (list) {
       var perSubject = {};
       for (var i = 0; i < list.length; i++) {
         if (!list[i].solved) continue;
@@ -1267,7 +1268,7 @@ window.addEventListener('unhandledrejection', function (event) {
         setHidden('login-view', true);
         setHidden('app', false);
         setText('who', user.name + ' (' + user.role + ')');
-        return api.problems({ limit: 300 }).then(function (list) {
+        return api.problems({ limit: 0 }).then(function (list) {
           state.problems = list || [];
           state.problemsLoaded = state.problems.length;
           navigate('dashboard');

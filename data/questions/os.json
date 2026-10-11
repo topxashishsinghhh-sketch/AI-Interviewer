@@ -70,7 +70,9 @@
     "skillTags": [
       "Operating Systems"
     ],
-    "keywords": [],
+    "keywords": [
+      "concept"
+    ],
     "softSkill": false
   },
   {
@@ -123,7 +125,7 @@
       "solution",
       "critical"
     ],
-    "softSkill": false
+    "softSkill": true
   },
   {
     "id": "os_med_2",
@@ -219,7 +221,7 @@
       "problem",
       "priority"
     ],
-    "softSkill": false
+    "softSkill": true
   },
   {
     "id": "os_hard_2",

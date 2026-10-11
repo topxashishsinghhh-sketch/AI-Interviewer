@@ -100,8 +100,10 @@ def tags_for(entry):
 
     is_soft = subject in SOFT_SUBJECTS
     if is_soft:
-        # Soft subjects keep their hard tag too, so the chart is not empty.
-        return hard_tags, list(soft_tags) or ["Behavioural"], True
+        # Soft subjects keep their own topic tags so the chart is not empty,
+        # but every question is marked soft so the tag is classified soft in
+        # the skills profile.
+        return hard_tags, list(hard_tags), True
     return hard_tags, soft_tags, False
 
 
@@ -127,13 +129,16 @@ def enrich(path):
         if "objective" not in entry:
             entry["objective"] = entry.get("explanation", "")[:160] or "Apply the concept correctly."
             changed += 1
-        entry.setdefault("skillTags", hard_tags)
+        # Enrichment only fills gaps. Generated banks already carry curated
+        # skillTags, and overwriting them here replaced those with the subject
+        # name (e.g. "placement"), which polluted the skills profile.
+        if not entry.get("skillTags"):
+            entry["skillTags"] = hard_tags + soft_tags if soft_tags else hard_tags
         entry.setdefault("keywords", keywords_for(entry))
-        entry.setdefault("softSkill", is_soft)
-        if not is_soft:
-            entry.setdefault("softSkill", len(soft_tags) > 0)
-            if soft_tags:
-                entry["skillTags"] = hard_tags + soft_tags
+        if not entry.get("softSkill"):
+            entry["softSkill"] = is_soft or bool(soft_tags)
+        elif not is_soft and not entry.get("softSkill"):
+            entry["softSkill"] = bool(soft_tags)
 
     with io.open(path, "w", encoding="utf-8") as fh:
         json.dump(data, fh, indent=2, ensure_ascii=False)

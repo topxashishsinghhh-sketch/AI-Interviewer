@@ -112,7 +112,9 @@
     "skillTags": [
       "SQL & Databases"
     ],
-    "keywords": [],
+    "keywords": [
+      "concept"
+    ],
     "softSkill": false
   },
   {

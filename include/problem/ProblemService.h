@@ -27,6 +27,10 @@ struct ProblemFilter {
     std::string type;         // "MCQ" | "Text" | "Coding" | "" for any
     std::string status;       // "solved" | "attempted" | "unsolved" | "" for any
     bool bookmarkedOnly = false;
+    // Caps how many rows are returned. 0 means "no limit". The full bank is
+    // ~3300 questions and takes well over a second to serialise, so callers get
+    // a page unless they explicitly ask for everything.
+    int limit = 200;
 
     enum class Sort { Newest, Difficulty, Title } sort = Sort::Newest;
     enum class Order { Ascending, Descending } order = Order::Ascending;

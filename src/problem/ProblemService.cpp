@@ -143,6 +143,12 @@ std::vector<ProblemSummary> ProblemService::listProblems(
                                  : a.question->id().get() > b.question->id().get();
             });
     }
+
+    // Trim to the requested page size after ordering, so a limit changes which
+    // rows appear rather than truncating before the sort is applied.
+    if (filter.limit > 0 && static_cast<int>(summaries.size()) > filter.limit) {
+        summaries.resize(static_cast<std::size_t>(filter.limit));
+    }
     return summaries;
 }
 

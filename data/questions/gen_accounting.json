@@ -1,0 +1,6734 @@
+[
+  {
+    "id": "gen_accounting_et_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define DuPont identity in analysis, in your own words.",
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "minKeywords": 1,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "State DuPont identity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast weighted average with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "minKeywords": 1,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "State weighted average correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'written-down value' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a depreciation calculation applied to a declining carrying amount",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "Identify the correct definition of written-down value.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'gross profit margin' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "gross profit divided by revenue",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 2,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "Identify the correct definition of gross profit margin.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define FIFO in inventory, in your own words.",
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "State FIFO correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'financing cash flow' is involved, what is the most likely diagnosis?",
+    "options": [
+      "cash from borrowing, repaying or dividend payments",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "Identify the correct definition of financing cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about written-down value is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "a depreciation calculation applied to a declining carrying amount"
+    ],
+    "answer": 3,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "Identify the correct definition of written-down value.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain liability increase to a teammate who has not seen it?",
+    "options": [
+      "a liability account is increased by a credit",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "Identify the correct definition of liability increase.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does depreciation rely on written-down value? Give a concrete reason.",
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "minKeywords": 1,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "State written-down value correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain DuPont identity to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "splitting return on equity into margin, turnover and leverage"
+    ],
+    "answer": 3,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "Identify the correct definition of DuPont identity.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does statements rely on cash flow statement? Give a concrete reason.",
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "minKeywords": 1,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "State cash flow statement correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast gross profit margin with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "minKeywords": 1,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "State gross profit margin correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is unearned revenue in the context of revenue?",
+    "options": [
+      "same as deferred revenue: cash received before earning",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "Identify the correct definition of unearned revenue.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is trial balance in the context of basics?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "the book recording transactions chronologically"
+    ],
+    "answer": 2,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "Identify the correct definition of trial balance.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain credit to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "the right-hand entry in a ledger account",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "Identify the correct definition of credit.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_m_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about asset increase is correct?",
+    "options": [
+      "an asset account is increased by a debit",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "Identify the correct definition of asset increase.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of return on equity suitable for a project update.",
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "minKeywords": 1,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "State return on equity correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast investing cash flow with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "minKeywords": 1,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "State investing cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does depreciation rely on depreciation? Give a concrete reason.",
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "minKeywords": 1,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "State depreciation correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'cash flow statement' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "the statement of cash movements over a period",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "Identify the correct definition of cash flow statement.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does basics rely on trial balance? Give a concrete reason.",
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "minKeywords": 1,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "State trial balance correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does cash_flow rely on add back depreciation? Give a concrete reason.",
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "minKeywords": 1,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "State add back depreciation correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'asset increase' is involved, what is the most likely diagnosis?",
+    "options": [
+      "an asset account is increased by a debit",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "Identify the correct definition of asset increase.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of revenue recognition suitable for a project update.",
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "minKeywords": 1,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "State revenue recognition correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does basics rely on double-entry? Give a concrete reason.",
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "minKeywords": 1,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "State double-entry correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast liability increase with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "minKeywords": 1,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "State liability increase correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast add back depreciation with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "minKeywords": 1,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "State add back depreciation correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of closing inventory suitable for a project update.",
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "minKeywords": 1,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "State closing inventory correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast revenue recognition with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "minKeywords": 1,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "State revenue recognition correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of LIFO suitable for a project update.",
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "minKeywords": 1,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "State LIFO correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define journal in basics, in your own words.",
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "minKeywords": 1,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "State journal correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain financing cash flow to a teammate who has not seen it?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "cash from borrowing, repaying or dividend payments"
+    ],
+    "answer": 3,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "Identify the correct definition of financing cash flow.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_s_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain FIFO to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "assuming the earliest purchases are sold first",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "Identify the correct definition of FIFO.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define gross profit margin in analysis, in your own words.",
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "minKeywords": 1,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "State gross profit margin correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of gross profit margin suitable for a project update.",
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "minKeywords": 1,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "State gross profit margin correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast income statement with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "minKeywords": 1,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "State income statement correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does inventory rely on LIFO? Give a concrete reason.",
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "minKeywords": 1,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "State LIFO correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about debt-to-equity is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "the ratio of total debt to shareholders' funds",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "Identify the correct definition of debt-to-equity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast debt-to-equity with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "minKeywords": 1,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "State debt-to-equity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast cash flow statement with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "minKeywords": 1,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "State cash flow statement correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast LIFO with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "minKeywords": 1,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "State LIFO correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is quick ratio in the context of ratios?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a tighter current ratio excluding stock",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "Identify the correct definition of quick ratio.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain revenue recognition to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording revenue when the performance obligation is satisfied",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "Identify the correct definition of revenue recognition.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is straight-line method in the context of depreciation?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "equal depreciation expense in each period"
+    ],
+    "answer": 3,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "Identify the correct definition of straight-line method.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define income statement in statements, in your own words.",
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "minKeywords": 1,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "State income statement correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about LIFO is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "assuming the latest purchases are sold first"
+    ],
+    "answer": 3,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "Identify the correct definition of LIFO.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of current ratio suitable for a project update.",
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "minKeywords": 1,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "State current ratio correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is investing cash flow in the context of cash_flow?",
+    "options": [
+      "a check that total debits equal total credits",
+      "cash used for or gained from long-term assets",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 1,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "Identify the correct definition of investing cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about revenue recognition is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "recording revenue when the performance obligation is satisfied"
+    ],
+    "answer": 3,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "Identify the correct definition of revenue recognition.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain drawing to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "amounts withdrawn by the owner, reducing equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "Identify the correct definition of drawing.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast journal with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "minKeywords": 1,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "State journal correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of income statement suitable for a project update.",
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "minKeywords": 1,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "State income statement correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define weighted average in inventory, in your own words.",
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "minKeywords": 1,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "State weighted average correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of asset increase suitable for a project update.",
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "minKeywords": 1,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "State asset increase correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'investing cash flow' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "cash used for or gained from long-term assets",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "Identify the correct definition of investing cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about DuPont identity is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "splitting return on equity into margin, turnover and leverage",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "Identify the correct definition of DuPont identity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ratios rely on inventory turnover? Give a concrete reason.",
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "minKeywords": 1,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "State inventory turnover correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is closing inventory in the context of inventory?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "the value of stock remaining at period end",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "Identify the correct definition of closing inventory.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define return on equity in analysis, in your own words.",
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "minKeywords": 1,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "State return on equity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain accrual basis to a teammate who has not seen it?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "revenue recognised when earned rather than when received"
+    ],
+    "answer": 3,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "Identify the correct definition of accrual basis.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is double-entry in the context of basics?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "the book recording transactions chronologically",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 1,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "Identify the correct definition of double-entry.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about cash flow statement is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "the statement of cash movements over a period",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "Identify the correct definition of cash flow statement.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of accounting equation suitable for a project update.",
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "minKeywords": 1,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "State accounting equation correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is return on equity in the context of analysis?",
+    "options": [
+      "profit divided by shareholders' equity",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "Identify the correct definition of return on equity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'accrual basis' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "revenue recognised when earned rather than when received",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "Identify the correct definition of accrual basis.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ratios rely on quick ratio? Give a concrete reason.",
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "minKeywords": 1,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "State quick ratio correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of weighted average suitable for a project update.",
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "minKeywords": 1,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "State weighted average correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'depreciation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a check that total debits equal total credits",
+      "allocating an asset's cost across its useful life",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "Identify the correct definition of depreciation.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast debit with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "State debit correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define trial balance in basics, in your own words.",
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "minKeywords": 1,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "State trial balance correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain closing inventory to a teammate who has not seen it?",
+    "options": [
+      "the value of stock remaining at period end",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "Identify the correct definition of closing inventory.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_st_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of depreciation suitable for a project update.",
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "minKeywords": 1,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "State depreciation correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define current ratio in ratios, in your own words.",
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "minKeywords": 1,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "State current ratio correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does statements rely on income statement? Give a concrete reason.",
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "minKeywords": 1,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "State income statement correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does books rely on debit? Give a concrete reason.",
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "State debit correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about accounting equation is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "the book recording transactions chronologically",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "Identify the correct definition of accounting equation.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain accounting equation to a teammate who has not seen it?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "the book recording transactions chronologically"
+    ],
+    "answer": 1,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "Identify the correct definition of accounting equation.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does statements rely on balance sheet? Give a concrete reason.",
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "minKeywords": 1,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "State balance sheet correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain deferred revenue to a teammate who has not seen it?",
+    "options": [
+      "cash received before the obligation is met",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "Identify the correct definition of deferred revenue.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is financing cash flow in the context of cash_flow?",
+    "options": [
+      "cash from borrowing, repaying or dividend payments",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "Identify the correct definition of financing cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ratios rely on debt-to-equity? Give a concrete reason.",
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "minKeywords": 1,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "State debt-to-equity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does inventory rely on weighted average? Give a concrete reason.",
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "minKeywords": 1,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "State weighted average correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'drawing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "amounts withdrawn by the owner, reducing equity"
+    ],
+    "answer": 3,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "Identify the correct definition of drawing.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does cash_flow rely on financing cash flow? Give a concrete reason.",
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "minKeywords": 1,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "State financing cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'double-entry' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a check that total debits equal total credits",
+      "the book recording transactions chronologically",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "Identify the correct definition of double-entry.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain current ratio to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "current assets divided by current liabilities",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "Identify the correct definition of current ratio.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast unearned revenue with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "minKeywords": 1,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "State unearned revenue correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of balance sheet suitable for a project update.",
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "minKeywords": 1,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "State balance sheet correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does revenue rely on revenue recognition? Give a concrete reason.",
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "minKeywords": 1,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "State revenue recognition correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does analysis rely on gross profit margin? Give a concrete reason.",
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "minKeywords": 1,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "State gross profit margin correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about journal is correct?",
+    "options": [
+      "the book recording transactions chronologically",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "Identify the correct definition of journal.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of written-down value suitable for a project update.",
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "minKeywords": 1,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "State written-down value correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_m_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about weighted average is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "costing inventory using the average of purchases"
+    ],
+    "answer": 3,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "Identify the correct definition of weighted average.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does books rely on asset increase? Give a concrete reason.",
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "minKeywords": 1,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "State asset increase correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of debit suitable for a project update.",
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "State debit correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is FIFO in the context of inventory?",
+    "options": [
+      "assuming the earliest purchases are sold first",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "Identify the correct definition of FIFO.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast deferred revenue with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "minKeywords": 1,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "State deferred revenue correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of FIFO suitable for a project update.",
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "State FIFO correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is credit in the context of books?",
+    "options": [
+      "a check that total debits equal total credits",
+      "the right-hand entry in a ledger account",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 1,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "Identify the correct definition of credit.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of credit suitable for a project update.",
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "State credit correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is gross profit margin in the context of analysis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "gross profit divided by revenue",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "Identify the correct definition of gross profit margin.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does cash_flow rely on investing cash flow? Give a concrete reason.",
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "minKeywords": 1,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "State investing cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define closing inventory in inventory, in your own words.",
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "minKeywords": 1,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "State closing inventory correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about gross profit margin is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "gross profit divided by revenue",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "Identify the correct definition of gross profit margin.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast closing inventory with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "minKeywords": 1,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "State closing inventory correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'journal' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "the book recording transactions chronologically",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 1,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "Identify the correct definition of journal.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast depreciation with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "minKeywords": 1,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "State depreciation correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define investing cash flow in cash_flow, in your own words.",
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "minKeywords": 1,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "State investing cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does ratios rely on current ratio? Give a concrete reason.",
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "minKeywords": 1,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "State current ratio correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain quick ratio to a teammate who has not seen it?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "a tighter current ratio excluding stock",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "Identify the correct definition of quick ratio.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is balance sheet in the context of statements?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "the statement of position at a point in time"
+    ],
+    "answer": 3,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "Identify the correct definition of balance sheet.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'DuPont identity' is involved, what is the most likely diagnosis?",
+    "options": [
+      "splitting return on equity into margin, turnover and leverage",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "Identify the correct definition of DuPont identity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define written-down value in depreciation, in your own words.",
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "minKeywords": 1,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "State written-down value correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does books rely on credit? Give a concrete reason.",
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "State credit correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does statements rely on accrual basis? Give a concrete reason.",
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "minKeywords": 1,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "State accrual basis correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast inventory turnover with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "minKeywords": 1,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "State inventory turnover correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain unearned revenue to a teammate who has not seen it?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "same as deferred revenue: cash received before earning",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "Identify the correct definition of unearned revenue.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does cash_flow rely on operating cash flow? Give a concrete reason.",
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "minKeywords": 1,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "State operating cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define revenue recognition in revenue, in your own words.",
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "minKeywords": 1,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "State revenue recognition correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is written-down value in the context of depreciation?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "a depreciation calculation applied to a declining carrying amount"
+    ],
+    "answer": 3,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "Identify the correct definition of written-down value.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is DuPont identity in the context of analysis?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "splitting return on equity into margin, turnover and leverage",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "Identify the correct definition of DuPont identity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does revenue rely on unearned revenue? Give a concrete reason.",
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "minKeywords": 1,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "State unearned revenue correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain trial balance to a teammate who has not seen it?",
+    "options": [
+      "a check that total debits equal total credits",
+      "the book recording transactions chronologically",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "Identify the correct definition of trial balance.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define cash flow statement in statements, in your own words.",
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "minKeywords": 1,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "State cash flow statement correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define LIFO in inventory, in your own words.",
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "minKeywords": 1,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "State LIFO correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about trial balance is correct?",
+    "options": [
+      "the book recording transactions chronologically",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 3,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "Identify the correct definition of trial balance.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'operating cash flow' is involved, what is the most likely diagnosis?",
+    "options": [
+      "cash generated by the normal business activity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "Identify the correct definition of operating cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define double-entry in basics, in your own words.",
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "minKeywords": 1,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "State double-entry correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about add back depreciation is correct?",
+    "options": [
+      "restoring depreciation to profit in the cash flow statement",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "Identify the correct definition of add back depreciation.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about accrual basis is correct?",
+    "options": [
+      "revenue recognised when earned rather than when received",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "Identify the correct definition of accrual basis.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define straight-line method in depreciation, in your own words.",
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "minKeywords": 1,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "State straight-line method correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about financing cash flow is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "cash from borrowing, repaying or dividend payments",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "Identify the correct definition of financing cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast trial balance with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "minKeywords": 1,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "State trial balance correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define depreciation in depreciation, in your own words.",
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "minKeywords": 1,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "State depreciation correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain asset increase to a teammate who has not seen it?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "an asset account is increased by a debit",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 2,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "Identify the correct definition of asset increase.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_st_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of DuPont identity suitable for a project update.",
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "minKeywords": 1,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "State DuPont identity correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_s_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain written-down value to a teammate who has not seen it?",
+    "options": [
+      "a depreciation calculation applied to a declining carrying amount",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "Identify the correct definition of written-down value.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does analysis rely on return on equity? Give a concrete reason.",
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "minKeywords": 1,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "State return on equity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of cash flow statement suitable for a project update.",
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "minKeywords": 1,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "State cash flow statement correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does revenue rely on deferred revenue? Give a concrete reason.",
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "minKeywords": 1,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "State deferred revenue correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of quick ratio suitable for a project update.",
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "minKeywords": 1,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "State quick ratio correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_s_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain inventory turnover to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "cost of sales divided by average inventory",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "Identify the correct definition of inventory turnover.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast financing cash flow with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "minKeywords": 1,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "State financing cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of liability increase suitable for a project update.",
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "minKeywords": 1,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "State liability increase correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is operating cash flow in the context of cash_flow?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "cash generated by the normal business activity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "Identify the correct definition of operating cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast asset increase with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "minKeywords": 1,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "State asset increase correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain income statement to a teammate who has not seen it?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "the statement of revenue less expenses for a period"
+    ],
+    "answer": 3,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "Identify the correct definition of income statement.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does inventory rely on FIFO? Give a concrete reason.",
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "State FIFO correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define debit in books, in your own words.",
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "State debit correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define inventory turnover in ratios, in your own words.",
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "minKeywords": 1,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "State inventory turnover correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is revenue recognition in the context of revenue?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "recording revenue when the performance obligation is satisfied",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "Identify the correct definition of revenue recognition.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is weighted average in the context of inventory?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "costing inventory using the average of purchases"
+    ],
+    "answer": 3,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "Identify the correct definition of weighted average.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'debt-to-equity' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "the ratio of total debt to shareholders' funds",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "Identify the correct definition of debt-to-equity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of straight-line method suitable for a project update.",
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "minKeywords": 1,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "State straight-line method correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'straight-line method' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "equal depreciation expense in each period",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "Identify the correct definition of straight-line method.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is drawing in the context of books?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "amounts withdrawn by the owner, reducing equity"
+    ],
+    "answer": 3,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "Identify the correct definition of drawing.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain weighted average to a teammate who has not seen it?",
+    "options": [
+      "costing inventory using the average of purchases",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "Identify the correct definition of weighted average.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast double-entry with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "minKeywords": 1,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "State double-entry correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is LIFO in the context of inventory?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "assuming the latest purchases are sold first"
+    ],
+    "answer": 3,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "Identify the correct definition of LIFO.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is accrual basis in the context of statements?",
+    "options": [
+      "revenue recognised when earned rather than when received",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "Identify the correct definition of accrual basis.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain add back depreciation to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "restoring depreciation to profit in the cash flow statement"
+    ],
+    "answer": 3,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "Identify the correct definition of add back depreciation.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is debit in the context of books?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "the left-hand entry in a ledger account",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "Identify the correct definition of debit.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define financing cash flow in cash_flow, in your own words.",
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "minKeywords": 1,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "State financing cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast DuPont identity with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "minKeywords": 1,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "State DuPont identity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain balance sheet to a teammate who has not seen it?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "the statement of position at a point in time",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 1,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "Identify the correct definition of balance sheet.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define accounting equation in basics, in your own words.",
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "minKeywords": 1,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "State accounting equation correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is inventory turnover in the context of ratios?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "cost of sales divided by average inventory"
+    ],
+    "answer": 3,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "Identify the correct definition of inventory turnover.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define asset increase in books, in your own words.",
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "minKeywords": 1,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "State asset increase correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast operating cash flow with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "minKeywords": 1,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "State operating cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of inventory turnover suitable for a project update.",
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "minKeywords": 1,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "State inventory turnover correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_mt_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does basics rely on journal? Give a concrete reason.",
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "minKeywords": 1,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "State journal correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about liability increase is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "a liability account is increased by a credit",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "Identify the correct definition of liability increase.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does books rely on drawing? Give a concrete reason.",
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "minKeywords": 1,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "State drawing correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain cash flow statement to a teammate who has not seen it?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "the statement of cash movements over a period",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "Identify the correct definition of cash flow statement.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast balance sheet with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "minKeywords": 1,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "State balance sheet correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is accounting equation in the context of basics?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "the book recording transactions chronologically",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "Identify the correct definition of accounting equation.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of investing cash flow suitable for a project update.",
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "minKeywords": 1,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "State investing cash flow correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'liability increase' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a liability account is increased by a credit",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "Identify the correct definition of liability increase.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about closing inventory is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "the value of stock remaining at period end",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "Identify the correct definition of closing inventory.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is depreciation in the context of depreciation?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "allocating an asset's cost across its useful life",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "Identify the correct definition of depreciation.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of add back depreciation suitable for a project update.",
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "minKeywords": 1,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "State add back depreciation correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'income statement' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "the statement of revenue less expenses for a period"
+    ],
+    "answer": 3,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "Identify the correct definition of income statement.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_257",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does analysis rely on DuPont identity? Give a concrete reason.",
+    "keywords": [
+      "split",
+      "margin",
+      "leverage",
+      "identify"
+    ],
+    "minKeywords": 1,
+    "explanation": "DuPont identity: splitting return on equity into margin, turnover and leverage",
+    "objective": "State DuPont identity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'quick ratio' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a tighter current ratio excluding stock"
+    ],
+    "answer": 3,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "Identify the correct definition of quick ratio.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast quick ratio with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "minKeywords": 1,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "State quick ratio correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of accrual basis suitable for a project update.",
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "minKeywords": 1,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "State accrual basis correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast drawing with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "minKeywords": 1,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "State drawing correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define balance sheet in statements, in your own words.",
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "minKeywords": 1,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "State balance sheet correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is add back depreciation in the context of cash_flow?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "restoring depreciation to profit in the cash flow statement",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "Identify the correct definition of add back depreciation.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define deferred revenue in revenue, in your own words.",
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "minKeywords": 1,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "State deferred revenue correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain debit to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "the left-hand entry in a ledger account",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 2,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "Identify the correct definition of debit.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_s_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain depreciation to a teammate who has not seen it?",
+    "options": [
+      "allocating an asset's cost across its useful life",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "Identify the correct definition of depreciation.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_st_113",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of financing cash flow suitable for a project update.",
+    "keywords": [
+      "borrowing",
+      "financing",
+      "dividend",
+      "issue shares"
+    ],
+    "minKeywords": 1,
+    "explanation": "financing cash flow: cash from borrowing, repaying or dividend payments",
+    "objective": "State financing cash flow correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is income statement in the context of statements?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "the statement of revenue less expenses for a period",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 2,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "Identify the correct definition of income statement.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'closing inventory' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the value of stock remaining at period end",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "Identify the correct definition of closing inventory.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does books rely on liability increase? Give a concrete reason.",
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "minKeywords": 1,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "State liability increase correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does basics rely on accounting equation? Give a concrete reason.",
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "minKeywords": 1,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "State accounting equation correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast FIFO with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "State FIFO correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'inventory turnover' is involved, what is the most likely diagnosis?",
+    "options": [
+      "cost of sales divided by average inventory",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "Identify the correct definition of inventory turnover.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'accounting equation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "the book recording transactions chronologically",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "Identify the correct definition of accounting equation.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_185",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast written-down value with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "declining",
+      "carrying",
+      "reducing",
+      "wbv"
+    ],
+    "minKeywords": 1,
+    "explanation": "written-down value: a depreciation calculation applied to a declining carrying amount",
+    "objective": "State written-down value correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of double-entry suitable for a project update.",
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "minKeywords": 1,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "State double-entry correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'balance sheet' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "the statement of position at a point in time"
+    ],
+    "answer": 3,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "Identify the correct definition of balance sheet.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about current ratio is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "current assets divided by current liabilities"
+    ],
+    "answer": 3,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "Identify the correct definition of current ratio.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of drawing suitable for a project update.",
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "minKeywords": 1,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "State drawing correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'FIFO' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assuming the earliest purchases are sold first",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "Identify the correct definition of FIFO.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_217",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does inventory rely on closing inventory? Give a concrete reason.",
+    "keywords": [
+      "remaining",
+      "value",
+      "stock",
+      "close"
+    ],
+    "minKeywords": 1,
+    "explanation": "closing inventory: the value of stock remaining at period end",
+    "objective": "State closing inventory correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about unearned revenue is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "same as deferred revenue: cash received before earning"
+    ],
+    "answer": 3,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "Identify the correct definition of unearned revenue.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'current ratio' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "current assets divided by current liabilities",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "Identify the correct definition of current ratio.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'deferred revenue' is involved, what is the most likely diagnosis?",
+    "options": [
+      "cash received before the obligation is met",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "Identify the correct definition of deferred revenue.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain operating cash flow to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "cash generated by the normal business activity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "Identify the correct definition of operating cash flow.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is debt-to-equity in the context of ratios?",
+    "options": [
+      "a check that total debits equal total credits",
+      "the ratio of total debt to shareholders' funds",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "Identify the correct definition of debt-to-equity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_49",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is asset increase in the context of books?",
+    "options": [
+      "a check that total debits equal total credits",
+      "an asset account is increased by a debit",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 1,
+    "explanation": "asset increase: an asset account is increased by a debit",
+    "objective": "Identify the correct definition of asset increase.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "debit",
+      "increase",
+      "asset",
+      "left side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_169",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about depreciation is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "allocating an asset's cost across its useful life",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 1,
+    "explanation": "depreciation: allocating an asset's cost across its useful life",
+    "objective": "Identify the correct definition of depreciation.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "useful life",
+      "cost",
+      "allocation",
+      "expense"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define debt-to-equity in ratios, in your own words.",
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "minKeywords": 1,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "State debt-to-equity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about quick ratio is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "a tighter current ratio excluding stock"
+    ],
+    "answer": 3,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "Identify the correct definition of quick ratio.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define drawing in books, in your own words.",
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "minKeywords": 1,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "State drawing correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is journal in the context of basics?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "the book recording transactions chronologically",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "Identify the correct definition of journal.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain return on equity to a teammate who has not seen it?",
+    "options": [
+      "profit divided by shareholders' equity",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "Identify the correct definition of return on equity.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_st_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of trial balance suitable for a project update.",
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "minKeywords": 1,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "State trial balance correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define operating cash flow in cash_flow, in your own words.",
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "minKeywords": 1,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "State operating cash flow correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_mt_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does depreciation rely on straight-line method? Give a concrete reason.",
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "minKeywords": 1,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "State straight-line method correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_89",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is cash flow statement in the context of statements?",
+    "options": [
+      "the statement of cash movements over a period",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "cash flow statement: the statement of cash movements over a period",
+    "objective": "Identify the correct definition of cash flow statement.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "cash",
+      "movement",
+      "period",
+      "source"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define add back depreciation in cash_flow, in your own words.",
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "minKeywords": 1,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "State add back depreciation correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'return on equity' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "profit divided by shareholders' equity"
+    ],
+    "answer": 3,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "Identify the correct definition of return on equity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is deferred revenue in the context of revenue?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "cash received before the obligation is met"
+    ],
+    "answer": 3,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "Identify the correct definition of deferred revenue.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define liability increase in books, in your own words.",
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "minKeywords": 1,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "State liability increase correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about deferred revenue is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "cash received before the obligation is met"
+    ],
+    "answer": 3,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "Identify the correct definition of deferred revenue.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of debt-to-equity suitable for a project update.",
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "minKeywords": 1,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "State debt-to-equity correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'debit' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the left-hand entry in a ledger account",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "Identify the correct definition of debit.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast straight-line method with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "minKeywords": 1,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "State straight-line method correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_265",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain gross profit margin to a teammate who has not seen it?",
+    "options": [
+      "gross profit divided by revenue",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "gross profit margin: gross profit divided by revenue",
+    "objective": "Identify the correct definition of gross profit margin.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "revenue",
+      "gross",
+      "margin",
+      "above costs"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_e_57",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is liability increase in the context of books?",
+    "options": [
+      "a liability account is increased by a credit",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "liability increase: a liability account is increased by a credit",
+    "objective": "Identify the correct definition of liability increase.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "credit",
+      "increase",
+      "liability",
+      "right side"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain straight-line method to a teammate who has not seen it?",
+    "options": [
+      "equal depreciation expense in each period",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "Identify the correct definition of straight-line method.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast credit with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "State credit correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_9",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'trial balance' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "the book recording transactions chronologically",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 3,
+    "explanation": "trial balance: a check that total debits equal total credits",
+    "objective": "Identify the correct definition of trial balance.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "debits",
+      "credits",
+      "equal",
+      "check"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about investing cash flow is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "cash used for or gained from long-term assets"
+    ],
+    "answer": 3,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "Identify the correct definition of investing cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_161",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about inventory turnover is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "cost of sales divided by average inventory",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "inventory turnover: cost of sales divided by average inventory",
+    "objective": "Identify the correct definition of inventory turnover.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "cost of sales",
+      "average",
+      "times",
+      "turnover"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about return on equity is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "profit divided by shareholders' equity"
+    ],
+    "answer": 3,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "Identify the correct definition of return on equity.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_33",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about debit is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "the left-hand entry in a ledger account"
+    ],
+    "answer": 3,
+    "explanation": "debit: the left-hand entry in a ledger account",
+    "objective": "Identify the correct definition of debit.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "left",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_65",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about drawing is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "amounts withdrawn by the owner, reducing equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "drawing: amounts withdrawn by the owner, reducing equity",
+    "objective": "Identify the correct definition of drawing.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "withdraw",
+      "owner",
+      "equity",
+      "reduce"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_145",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define quick ratio in ratios, in your own words.",
+    "keywords": [
+      "stock",
+      "exclude",
+      "liquid",
+      "tight"
+    ],
+    "minKeywords": 1,
+    "explanation": "quick ratio: a tighter current ratio excluding stock",
+    "objective": "State quick ratio correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of operating cash flow suitable for a project update.",
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "minKeywords": 1,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "State operating cash flow correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'LIFO' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assuming the latest purchases are sold first",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "Identify the correct definition of LIFO.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_249",
+    "subject": "accounting",
+    "topic": "analysis",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast return on equity with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "equity",
+      "profit",
+      "return",
+      "residual"
+    ],
+    "minKeywords": 1,
+    "explanation": "return on equity: profit divided by shareholders' equity",
+    "objective": "State return on equity correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Analysis"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain journal to a teammate who has not seen it?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "the book recording transactions chronologically"
+    ],
+    "answer": 3,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "Identify the correct definition of journal.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_233",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'revenue recognition' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "recording revenue when the performance obligation is satisfied",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "revenue recognition: recording revenue when the performance obligation is satisfied",
+    "objective": "Identify the correct definition of revenue recognition.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "satisfy",
+      "when",
+      "obligation",
+      "revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast current ratio with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "minKeywords": 1,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "State current ratio correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_225",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of deferred revenue suitable for a project update.",
+    "keywords": [
+      "advance",
+      "liability",
+      "not yet earned",
+      "later"
+    ],
+    "minKeywords": 1,
+    "explanation": "deferred revenue: cash received before the obligation is met",
+    "objective": "State deferred revenue correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_st_25",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of journal suitable for a project update.",
+    "keywords": [
+      "chronological",
+      "record",
+      "first entry",
+      "day one"
+    ],
+    "minKeywords": 1,
+    "explanation": "journal: the book recording transactions chronologically",
+    "objective": "State journal correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'unearned revenue' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "same as deferred revenue: cash received before earning"
+    ],
+    "answer": 3,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "Identify the correct definition of unearned revenue.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_st_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of unearned revenue suitable for a project update.",
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "minKeywords": 1,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "State unearned revenue correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_ht_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast accrual basis with accounting equation. Which would you choose and why?",
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "minKeywords": 1,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "State accrual basis correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_153",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain debt-to-equity to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "the ratio of total debt to shareholders' funds",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "debt-to-equity: the ratio of total debt to shareholders' funds",
+    "objective": "Identify the correct definition of debt-to-equity.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "debt",
+      "equity",
+      "leverage",
+      "funds"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_m_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about credit is correct?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "the right-hand entry in a ledger account",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 1,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "Identify the correct definition of credit.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_ht_1",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast accounting equation with trial balance. Which would you choose and why?",
+    "keywords": [
+      "assets",
+      "liabilities",
+      "equity",
+      "balance"
+    ],
+    "minKeywords": 1,
+    "explanation": "accounting equation: assets equal liabilities plus equity",
+    "objective": "State accounting equation correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_177",
+    "subject": "accounting",
+    "topic": "depreciation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about straight-line method is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "equal depreciation expense in each period"
+    ],
+    "answer": 3,
+    "explanation": "straight-line method: equal depreciation expense in each period",
+    "objective": "Identify the correct definition of straight-line method.",
+    "skillTags": [
+      "Accounting",
+      "Depreciation"
+    ],
+    "keywords": [
+      "equal",
+      "period",
+      "equal amount",
+      "constant"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain double-entry to a teammate who has not seen it?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "the book recording transactions chronologically",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 0,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "Identify the correct definition of double-entry.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_et_97",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define accrual basis in statements, in your own words.",
+    "keywords": [
+      "earned",
+      "recognised",
+      "received",
+      "match"
+    ],
+    "minKeywords": 1,
+    "explanation": "accrual basis: revenue recognised when earned rather than when received",
+    "objective": "State accrual basis correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_e_137",
+    "subject": "accounting",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is current ratio in the context of ratios?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "current assets divided by current liabilities",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 1,
+    "explanation": "current ratio: current assets divided by current liabilities",
+    "objective": "Identify the correct definition of current ratio.",
+    "skillTags": [
+      "Financial Analysis",
+      "Ratios"
+    ],
+    "keywords": [
+      "current",
+      "ratio",
+      "short term",
+      "liquidity"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_129",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'add back depreciation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "restoring depreciation to profit in the cash flow statement"
+    ],
+    "answer": 3,
+    "explanation": "add back depreciation: restoring depreciation to profit in the cash flow statement",
+    "objective": "Identify the correct definition of add back depreciation.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "non-cash",
+      "add back",
+      "profit",
+      "restore"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_h_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'credit' is involved, what is the most likely diagnosis?",
+    "options": [
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "the right-hand entry in a ledger account"
+    ],
+    "answer": 3,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "Identify the correct definition of credit.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_105",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about operating cash flow is correct?",
+    "options": [
+      "cash generated by the normal business activity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assets equal liabilities plus equity"
+    ],
+    "answer": 0,
+    "explanation": "operating cash flow: cash generated by the normal business activity",
+    "objective": "Identify the correct definition of operating cash flow.",
+    "skillTags": [
+      "Financial Analysis",
+      "Cash Flow"
+    ],
+    "keywords": [
+      "operations",
+      "business",
+      "generated",
+      "normal"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_201",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain LIFO to a teammate who has not seen it?",
+    "options": [
+      "assuming the latest purchases are sold first",
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 0,
+    "explanation": "LIFO: assuming the latest purchases are sold first",
+    "objective": "Identify the correct definition of LIFO.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "latest",
+      "last",
+      "stack",
+      "recent"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_h_209",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'weighted average' is involved, what is the most likely diagnosis?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "costing inventory using the average of purchases",
+      "a check that total debits equal total credits"
+    ],
+    "answer": 2,
+    "explanation": "weighted average: costing inventory using the average of purchases",
+    "objective": "Identify the correct definition of weighted average.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "average",
+      "blend",
+      "purchases",
+      "pool"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_73",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about balance sheet is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "the statement of position at a point in time",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 2,
+    "explanation": "balance sheet: the statement of position at a point in time",
+    "objective": "Identify the correct definition of balance sheet.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "position",
+      "date",
+      "point in time",
+      "moment"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_41",
+    "subject": "accounting",
+    "topic": "books",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define credit in books, in your own words.",
+    "keywords": [
+      "right",
+      "entry",
+      "side",
+      "ledger"
+    ],
+    "minKeywords": 1,
+    "explanation": "credit: the right-hand entry in a ledger account",
+    "objective": "State credit correctly in your own words.",
+    "skillTags": [
+      "Accounting",
+      "Books"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_81",
+    "subject": "accounting",
+    "topic": "statements",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about income statement is correct?",
+    "options": [
+      "a check that total debits equal total credits",
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "the statement of revenue less expenses for a period"
+    ],
+    "answer": 3,
+    "explanation": "income statement: the statement of revenue less expenses for a period",
+    "objective": "Identify the correct definition of income statement.",
+    "skillTags": [
+      "Accounting",
+      "Statements"
+    ],
+    "keywords": [
+      "period",
+      "revenue",
+      "expenses",
+      "profit"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_s_121",
+    "subject": "accounting",
+    "topic": "cash_flow",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain investing cash flow to a teammate who has not seen it?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "recording each transaction as a balanced entry on both sides",
+      "a check that total debits equal total credits",
+      "cash used for or gained from long-term assets"
+    ],
+    "answer": 3,
+    "explanation": "investing cash flow: cash used for or gained from long-term assets",
+    "objective": "Identify the correct definition of investing cash flow.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "long-term",
+      "assets",
+      "purchase",
+      "investing"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_accounting_m_193",
+    "subject": "accounting",
+    "topic": "inventory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about FIFO is correct?",
+    "options": [
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides",
+      "assuming the earliest purchases are sold first"
+    ],
+    "answer": 3,
+    "explanation": "FIFO: assuming the earliest purchases are sold first",
+    "objective": "Identify the correct definition of FIFO.",
+    "skillTags": [
+      "Accounting",
+      "Inventory"
+    ],
+    "keywords": [
+      "earliest",
+      "first",
+      "sold first",
+      "stock remaining"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_et_241",
+    "subject": "accounting",
+    "topic": "revenue",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define unearned revenue in revenue, in your own words.",
+    "keywords": [
+      "not earned",
+      "advance",
+      "liability",
+      "future"
+    ],
+    "minKeywords": 1,
+    "explanation": "unearned revenue: same as deferred revenue: cash received before earning",
+    "objective": "State unearned revenue correctly in your own words.",
+    "skillTags": [
+      "Financial Analysis",
+      "Revenue"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_accounting_m_17",
+    "subject": "accounting",
+    "topic": "basics",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about double-entry is correct?",
+    "options": [
+      "the book recording transactions chronologically",
+      "assets equal liabilities plus equity",
+      "a check that total debits equal total credits",
+      "recording each transaction as a balanced entry on both sides"
+    ],
+    "answer": 3,
+    "explanation": "double-entry: recording each transaction as a balanced entry on both sides",
+    "objective": "Identify the correct definition of double-entry.",
+    "skillTags": [
+      "Accounting",
+      "Basics"
+    ],
+    "keywords": [
+      "balanced",
+      "entry",
+      "debit",
+      "credit"
+    ],
+    "softSkill": false
+  }
+]

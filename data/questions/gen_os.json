@@ -1,0 +1,5348 @@
+[
+  {
+    "id": "gen_os_ht_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast journaling with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "minKeywords": 1,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "State journaling correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of context switch suitable for a project update.",
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "minKeywords": 1,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "State context switch correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_h_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'mutual exclusion' is involved, what is the most likely diagnosis?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "only one process at a time in a critical section",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "Identify the correct definition of mutual exclusion.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain convoy effect to a teammate who has not seen it?",
+    "options": [
+      "short jobs waiting behind one long job",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "Identify the correct definition of convoy effect.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_m_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about first come first served is correct?",
+    "options": [
+      "serving processes in arrival order",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "Identify the correct definition of first come first served.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'thread' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "an execution stream sharing an address space with others",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "Identify the correct definition of thread.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'convoy effect' is involved, what is the most likely diagnosis?",
+    "options": [
+      "short jobs waiting behind one long job",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "Identify the correct definition of convoy effect.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is semaphore in the context of concurrency?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "a counter controlling access to shared resources"
+    ],
+    "answer": 3,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "Identify the correct definition of semaphore.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast demand paging with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "minKeywords": 1,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "State demand paging correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of demand paging suitable for a project update.",
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "minKeywords": 1,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "State demand paging correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_st_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of FIFO page replacement suitable for a project update.",
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "State FIFO page replacement correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_e_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is segmentation in the context of memory?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "splitting a process's address space into logical segments",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 2,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "Identify the correct definition of segmentation.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does memory rely on thrashing? Give a concrete reason.",
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "minKeywords": 1,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "State thrashing correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'page fault' is involved, what is the most likely diagnosis?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "an access to a page that must be fetched from storage",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "Identify the correct definition of page fault.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'journaling' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "recording changes in a log before applying them",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "Identify the correct definition of journaling.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define priority inheritance in concurrency, in your own words.",
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "State priority inheritance correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of round robin suitable for a project update.",
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "minKeywords": 1,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "State round robin correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_h_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'semaphore' is involved, what is the most likely diagnosis?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "a counter controlling access to shared resources"
+    ],
+    "answer": 3,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "Identify the correct definition of semaphore.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'multilevel feedback queue' is involved, what is the most likely diagnosis?",
+    "options": [
+      "demoting long jobs and promoting interactive ones",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "Identify the correct definition of multilevel feedback queue.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast paging with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "minKeywords": 1,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "State paging correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about starvation is correct?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "a process never being scheduled despite being ready"
+    ],
+    "answer": 3,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "Identify the correct definition of starvation.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast race condition with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "minKeywords": 1,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "State race condition correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain process state to a teammate who has not seen it?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "an execution stream sharing an address space with others",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 3,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "Identify the correct definition of process state.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does processes rely on thread? Give a concrete reason.",
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "minKeywords": 1,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "State thread correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about disk scheduling is correct?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "ordering disk requests to reduce seek movement"
+    ],
+    "answer": 3,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "Identify the correct definition of disk scheduling.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is priority inheritance in the context of concurrency?",
+    "options": [
+      "a blocking low task temporarily inheriting a higher priority",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "Identify the correct definition of priority inheritance.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about TLB is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "a cache of recent translations, avoiding a page-table walk",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 1,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "Identify the correct definition of TLB.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about priority inheritance is correct?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "a blocking low task temporarily inheriting a higher priority",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 1,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "Identify the correct definition of priority inheritance.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Process Control Block suitable for a project update.",
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "minKeywords": 1,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "State Process Control Block correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does memory rely on virtual memory? Give a concrete reason.",
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "State virtual memory correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of priority inversion suitable for a project update.",
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "State priority inversion correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_m_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about thrashing is correct?",
+    "options": [
+      "excessive page-replacement traffic",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "Identify the correct definition of thrashing.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is race condition in the context of concurrency?",
+    "options": [
+      "an outcome depending on the relative timing of accesses",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "Identify the correct definition of race condition.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about priority inversion is correct?",
+    "options": [
+      "a high-priority task waiting behind a lower one",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "Identify the correct definition of priority inversion.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is demand paging in the context of memory?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "loading a page only when it is first accessed"
+    ],
+    "answer": 3,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "Identify the correct definition of demand paging.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of critical section suitable for a project update.",
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "minKeywords": 1,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "State critical section correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_st_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of virtual memory suitable for a project update.",
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "State virtual memory correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_st_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of thread suitable for a project update.",
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "minKeywords": 1,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "State thread correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_s_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain priority inversion to a teammate who has not seen it?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "a high-priority task waiting behind a lower one"
+    ],
+    "answer": 3,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "Identify the correct definition of priority inversion.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does scheduling rely on first come first served? Give a concrete reason.",
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "minKeywords": 1,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "State first come first served correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'paging' is involved, what is the most likely diagnosis?",
+    "options": [
+      "splitting a process's address space into fixed pages",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "Identify the correct definition of paging.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain TLB to a teammate who has not seen it?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "a cache of recent translations, avoiding a page-table walk"
+    ],
+    "answer": 3,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "Identify the correct definition of TLB.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_h_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'critical section' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the code region accessing shared state",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "Identify the correct definition of critical section.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast process state with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "minKeywords": 1,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "State process state correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is convoy effect in the context of scheduling?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "short jobs waiting behind one long job",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 1,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "Identify the correct definition of convoy effect.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define context switch in processes, in your own words.",
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "minKeywords": 1,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "State context switch correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'demand paging' is involved, what is the most likely diagnosis?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "loading a page only when it is first accessed",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "Identify the correct definition of demand paging.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast page fault with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "minKeywords": 1,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "State page fault correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'starvation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "a process never being scheduled despite being ready",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "Identify the correct definition of starvation.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast mutual exclusion with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "minKeywords": 1,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "State mutual exclusion correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about process state is correct?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "an execution stream sharing an address space with others",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 3,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "Identify the correct definition of process state.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast critical section with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "minKeywords": 1,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "State critical section correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'virtual memory' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "an address space per process mapped by the OS",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 2,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "Identify the correct definition of virtual memory.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of multilevel feedback queue suitable for a project update.",
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "minKeywords": 1,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "State multilevel feedback queue correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_et_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define demand paging in memory, in your own words.",
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "minKeywords": 1,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "State demand paging correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain virtual memory to a teammate who has not seen it?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "an address space per process mapped by the OS",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "Identify the correct definition of virtual memory.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_et_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define multilevel feedback queue in scheduling, in your own words.",
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "minKeywords": 1,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "State multilevel feedback queue correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about context switch is correct?",
+    "options": [
+      "an execution stream sharing an address space with others",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 3,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "Identify the correct definition of context switch.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does memory rely on paging? Give a concrete reason.",
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "minKeywords": 1,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "State paging correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does scheduling rely on convoy effect? Give a concrete reason.",
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "minKeywords": 1,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "State convoy effect correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of TLB suitable for a project update.",
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "State TLB correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_et_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define paging in memory, in your own words.",
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "minKeywords": 1,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "State paging correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is round robin in the context of scheduling?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "giving each process a small time slice in turn"
+    ],
+    "answer": 3,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "Identify the correct definition of round robin.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does memory rely on page fault? Give a concrete reason.",
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "minKeywords": 1,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "State page fault correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'race condition' is involved, what is the most likely diagnosis?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "an outcome depending on the relative timing of accesses",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "Identify the correct definition of race condition.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast starvation with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "minKeywords": 1,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "State starvation correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is multilevel feedback queue in the context of scheduling?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "demoting long jobs and promoting interactive ones",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "Identify the correct definition of multilevel feedback queue.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'priority inheritance' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a blocking low task temporarily inheriting a higher priority",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "Identify the correct definition of priority inheritance.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define virtual memory in memory, in your own words.",
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "State virtual memory correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about race condition is correct?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "an outcome depending on the relative timing of accesses",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "Identify the correct definition of race condition.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about mutual exclusion is correct?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "only one process at a time in a critical section"
+    ],
+    "answer": 3,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "Identify the correct definition of mutual exclusion.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define segmentation in memory, in your own words.",
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "minKeywords": 1,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "State segmentation correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'deadlock' is involved, what is the most likely diagnosis?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "processes waiting forever on each other"
+    ],
+    "answer": 3,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "Identify the correct definition of deadlock.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define round robin in scheduling, in your own words.",
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "minKeywords": 1,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "State round robin correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Process Control Block with process state. Which would you choose and why?",
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "minKeywords": 1,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "State Process Control Block correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does processes rely on Process Control Block? Give a concrete reason.",
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "minKeywords": 1,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "State Process Control Block correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain page fault to a teammate who has not seen it?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "an access to a page that must be fetched from storage"
+    ],
+    "answer": 3,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "Identify the correct definition of page fault.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_m_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about critical section is correct?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "the code region accessing shared state",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "Identify the correct definition of critical section.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Process Control Block in the context of processes?",
+    "options": [
+      "an execution stream sharing an address space with others",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 3,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "Identify the correct definition of Process Control Block.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast multilevel feedback queue with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "minKeywords": 1,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "State multilevel feedback queue correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of page fault suitable for a project update.",
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "minKeywords": 1,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "State page fault correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_e_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is page fault in the context of memory?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "an access to a page that must be fetched from storage"
+    ],
+    "answer": 3,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "Identify the correct definition of page fault.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of shortest job first suitable for a project update.",
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "minKeywords": 1,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "State shortest job first correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_et_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define semaphore in concurrency, in your own words.",
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "minKeywords": 1,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "State semaphore correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Process Control Block' is involved, what is the most likely diagnosis?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "an execution stream sharing an address space with others"
+    ],
+    "answer": 0,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "Identify the correct definition of Process Control Block.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is critical section in the context of concurrency?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the code region accessing shared state"
+    ],
+    "answer": 3,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "Identify the correct definition of critical section.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define FIFO page replacement in storage, in your own words.",
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "State FIFO page replacement correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'disk scheduling' is involved, what is the most likely diagnosis?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "ordering disk requests to reduce seek movement"
+    ],
+    "answer": 3,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "Identify the correct definition of disk scheduling.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast thrashing with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "minKeywords": 1,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "State thrashing correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of race condition suitable for a project update.",
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "minKeywords": 1,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "State race condition correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_h_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'round robin' is involved, what is the most likely diagnosis?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "giving each process a small time slice in turn",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 1,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "Identify the correct definition of round robin.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about paging is correct?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "splitting a process's address space into fixed pages"
+    ],
+    "answer": 3,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "Identify the correct definition of paging.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define mutual exclusion in concurrency, in your own words.",
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "minKeywords": 1,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "State mutual exclusion correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about deadlock is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "processes waiting forever on each other",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 1,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "Identify the correct definition of deadlock.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define priority inversion in concurrency, in your own words.",
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "State priority inversion correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain mutual exclusion to a teammate who has not seen it?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "only one process at a time in a critical section"
+    ],
+    "answer": 3,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "Identify the correct definition of mutual exclusion.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_h_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'context switch' is involved, what is the most likely diagnosis?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "an execution stream sharing an address space with others"
+    ],
+    "answer": 2,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "Identify the correct definition of context switch.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast disk scheduling with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "minKeywords": 1,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "State disk scheduling correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about thread is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "an execution stream sharing an address space with others",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "Identify the correct definition of thread.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define deadlock in concurrency, in your own words.",
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "minKeywords": 1,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "State deadlock correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define race condition in concurrency, in your own words.",
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "minKeywords": 1,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "State race condition correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define TLB in memory, in your own words.",
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "State TLB correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define disk scheduling in storage, in your own words.",
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "minKeywords": 1,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "State disk scheduling correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does concurrency rely on priority inheritance? Give a concrete reason.",
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "State priority inheritance correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define process state in processes, in your own words.",
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "minKeywords": 1,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "State process state correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does processes rely on context switch? Give a concrete reason.",
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "minKeywords": 1,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "State context switch correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast priority inheritance with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "State priority inheritance correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast virtual memory with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "minKeywords": 1,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "State virtual memory correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast semaphore with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "minKeywords": 1,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "State semaphore correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of paging suitable for a project update.",
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "minKeywords": 1,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "State paging correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_s_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain paging to a teammate who has not seen it?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "splitting a process's address space into fixed pages",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 2,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "Identify the correct definition of paging.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_e_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is context switch in the context of processes?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "an execution stream sharing an address space with others"
+    ],
+    "answer": 1,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "Identify the correct definition of context switch.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is process state in the context of processes?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "an execution stream sharing an address space with others",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "Identify the correct definition of process state.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does scheduling rely on multilevel feedback queue? Give a concrete reason.",
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "minKeywords": 1,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "State multilevel feedback queue correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about journaling is correct?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "recording changes in a log before applying them",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "Identify the correct definition of journaling.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about FIFO page replacement is correct?",
+    "options": [
+      "evicting whichever page was loaded first",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "Identify the correct definition of FIFO page replacement.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is disk scheduling in the context of storage?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "ordering disk requests to reduce seek movement",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 2,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "Identify the correct definition of disk scheduling.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'FIFO page replacement' is involved, what is the most likely diagnosis?",
+    "options": [
+      "evicting whichever page was loaded first",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "Identify the correct definition of FIFO page replacement.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is TLB in the context of memory?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "a cache of recent translations, avoiding a page-table walk"
+    ],
+    "answer": 3,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "Identify the correct definition of TLB.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about demand paging is correct?",
+    "options": [
+      "loading a page only when it is first accessed",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "Identify the correct definition of demand paging.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does concurrency rely on race condition? Give a concrete reason.",
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "minKeywords": 1,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "State race condition correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Process Control Block is correct?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "an execution stream sharing an address space with others",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "Identify the correct definition of Process Control Block.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define first come first served in scheduling, in your own words.",
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "minKeywords": 1,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "State first come first served correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is mutual exclusion in the context of concurrency?",
+    "options": [
+      "only one process at a time in a critical section",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "Identify the correct definition of mutual exclusion.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast FIFO page replacement with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "State FIFO page replacement correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain disk scheduling to a teammate who has not seen it?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "ordering disk requests to reduce seek movement",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "Identify the correct definition of disk scheduling.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_et_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define shortest job first in scheduling, in your own words.",
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "minKeywords": 1,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "State shortest job first correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'shortest job first' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "scheduling the shortest CPU burst next",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 2,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "Identify the correct definition of shortest job first.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast segmentation with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "minKeywords": 1,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "State segmentation correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does storage rely on disk scheduling? Give a concrete reason.",
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "minKeywords": 1,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "State disk scheduling correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does memory rely on demand paging? Give a concrete reason.",
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "minKeywords": 1,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "State demand paging correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain thrashing to a teammate who has not seen it?",
+    "options": [
+      "excessive page-replacement traffic",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "Identify the correct definition of thrashing.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_h_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'thrashing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "excessive page-replacement traffic",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "Identify the correct definition of thrashing.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does storage rely on journaling? Give a concrete reason.",
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "minKeywords": 1,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "State journaling correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast TLB with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "State TLB correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain critical section to a teammate who has not seen it?",
+    "options": [
+      "the code region accessing shared state",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "Identify the correct definition of critical section.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does concurrency rely on semaphore? Give a concrete reason.",
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "minKeywords": 1,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "State semaphore correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does scheduling rely on shortest job first? Give a concrete reason.",
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "minKeywords": 1,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "State shortest job first correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of mutual exclusion suitable for a project update.",
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "minKeywords": 1,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "State mutual exclusion correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does memory rely on segmentation? Give a concrete reason.",
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "minKeywords": 1,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "State segmentation correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is first come first served in the context of scheduling?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "serving processes in arrival order"
+    ],
+    "answer": 3,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "Identify the correct definition of first come first served.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'segmentation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "splitting a process's address space into logical segments"
+    ],
+    "answer": 3,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "Identify the correct definition of segmentation.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is FIFO page replacement in the context of storage?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "evicting whichever page was loaded first",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 2,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "Identify the correct definition of FIFO page replacement.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of first come first served suitable for a project update.",
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "minKeywords": 1,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "State first come first served correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_s_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain priority inheritance to a teammate who has not seen it?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "a blocking low task temporarily inheriting a higher priority",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "Identify the correct definition of priority inheritance.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_e_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is shortest job first in the context of scheduling?",
+    "options": [
+      "scheduling the shortest CPU burst next",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "Identify the correct definition of shortest job first.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about convoy effect is correct?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "short jobs waiting behind one long job",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "Identify the correct definition of convoy effect.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain semaphore to a teammate who has not seen it?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "a counter controlling access to shared resources",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 2,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "Identify the correct definition of semaphore.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_st_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of process state suitable for a project update.",
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "minKeywords": 1,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "State process state correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_et_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define thread in processes, in your own words.",
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "minKeywords": 1,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "State thread correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define starvation in scheduling, in your own words.",
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "minKeywords": 1,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "State starvation correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_177",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain demand paging to a teammate who has not seen it?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "loading a page only when it is first accessed",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "demand paging: loading a page only when it is first accessed",
+    "objective": "Identify the correct definition of demand paging.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "on demand",
+      "first access",
+      "load",
+      "lazy"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does concurrency rely on priority inversion? Give a concrete reason.",
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "State priority inversion correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'process state' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "an execution stream sharing an address space with others",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "Identify the correct definition of process state.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast thread with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "minKeywords": 1,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "State thread correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast shortest job first with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "minKeywords": 1,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "State shortest job first correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does scheduling rely on starvation? Give a concrete reason.",
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "minKeywords": 1,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "State starvation correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_129",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of priority inheritance suitable for a project update.",
+    "keywords": [
+      "inherit",
+      "temporary",
+      "blocked",
+      "higher"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inheritance: a blocking low task temporarily inheriting a higher priority",
+    "objective": "State priority inheritance correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_st_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of deadlock suitable for a project update.",
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "minKeywords": 1,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "State deadlock correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_st_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of thrashing suitable for a project update.",
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "minKeywords": 1,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "State thrashing correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_ht_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast deadlock with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "minKeywords": 1,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "State deadlock correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast context switch with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "minKeywords": 1,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "State context switch correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain round robin to a teammate who has not seen it?",
+    "options": [
+      "giving each process a small time slice in turn",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "Identify the correct definition of round robin.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_9",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does processes rely on process state? Give a concrete reason.",
+    "keywords": [
+      "stage",
+      "lifecycle",
+      "transition",
+      "ready"
+    ],
+    "minKeywords": 1,
+    "explanation": "process state: the lifecycle stage: new, ready, running, waiting or terminated",
+    "objective": "State process state correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain multilevel feedback queue to a teammate who has not seen it?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "demoting long jobs and promoting interactive ones",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 2,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "Identify the correct definition of multilevel feedback queue.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_h_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'TLB' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a cache of recent translations, avoiding a page-table walk",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "Identify the correct definition of TLB.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain segmentation to a teammate who has not seen it?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "splitting a process's address space into logical segments",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 2,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "Identify the correct definition of segmentation.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_m_57",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about multilevel feedback queue is correct?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "demoting long jobs and promoting interactive ones",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "multilevel feedback queue: demoting long jobs and promoting interactive ones",
+    "objective": "Identify the correct definition of multilevel feedback queue.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "demote",
+      "promote",
+      "queue",
+      "interactive"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain deadlock to a teammate who has not seen it?",
+    "options": [
+      "processes waiting forever on each other",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "Identify the correct definition of deadlock.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_ht_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast convoy effect with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "minKeywords": 1,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "State convoy effect correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of journaling suitable for a project update.",
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "minKeywords": 1,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "State journaling correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_ht_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast first come first served with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "minKeywords": 1,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "State first come first served correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of starvation suitable for a project update.",
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "minKeywords": 1,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "State starvation correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_s_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Process Control Block to a teammate who has not seen it?",
+    "options": [
+      "an execution stream sharing an address space with others",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 3,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "Identify the correct definition of Process Control Block.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_s_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain starvation to a teammate who has not seen it?",
+    "options": [
+      "a process never being scheduled despite being ready",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "Identify the correct definition of starvation.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_e_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is deadlock in the context of concurrency?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "processes waiting forever on each other",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "Identify the correct definition of deadlock.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of segmentation suitable for a project update.",
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "minKeywords": 1,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "State segmentation correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_m_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about page fault is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "an access to a page that must be fetched from storage"
+    ],
+    "answer": 3,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "Identify the correct definition of page fault.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define thrashing in memory, in your own words.",
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "minKeywords": 1,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "State thrashing correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about shortest job first is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "scheduling the shortest CPU burst next"
+    ],
+    "answer": 3,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "Identify the correct definition of shortest job first.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain FIFO page replacement to a teammate who has not seen it?",
+    "options": [
+      "evicting whichever page was loaded first",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "Identify the correct definition of FIFO page replacement.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_201",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does storage rely on FIFO page replacement? Give a concrete reason.",
+    "keywords": [
+      "first loaded",
+      "evict",
+      "oldest",
+      "queue order"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIFO page replacement: evicting whichever page was loaded first",
+    "objective": "State FIFO page replacement correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define convoy effect in scheduling, in your own words.",
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "minKeywords": 1,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "State convoy effect correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about virtual memory is correct?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "an address space per process mapped by the OS",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 1,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "Identify the correct definition of virtual memory.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define journaling in storage, in your own words.",
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "minKeywords": 1,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "State journaling correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'priority inversion' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a high-priority task waiting behind a lower one",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "Identify the correct definition of priority inversion.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Process Control Block in processes, in your own words.",
+    "keywords": [
+      "kernel",
+      "data",
+      "registers",
+      "saved state"
+    ],
+    "minKeywords": 1,
+    "explanation": "Process Control Block: kernel data describing one process including its saved registers",
+    "objective": "State Process Control Block correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_209",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of disk scheduling suitable for a project update.",
+    "keywords": [
+      "seek",
+      "movement",
+      "throughput",
+      "doorstep"
+    ],
+    "minKeywords": 1,
+    "explanation": "disk scheduling: ordering disk requests to reduce seek movement",
+    "objective": "State disk scheduling correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_m_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about semaphore is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "a counter controlling access to shared resources",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 2,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "Identify the correct definition of semaphore.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is thread in the context of processes?",
+    "options": [
+      "an execution stream sharing an address space with others",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "Identify the correct definition of thread.",
+    "skillTags": [
+      "Operating Systems",
+      "Processes"
+    ],
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_m_153",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about segmentation is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "splitting a process's address space into logical segments",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 2,
+    "explanation": "segmentation: splitting a process's address space into logical segments",
+    "objective": "Identify the correct definition of segmentation.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "logical",
+      "segment",
+      "grow",
+      "variable"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does concurrency rely on critical section? Give a concrete reason.",
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "minKeywords": 1,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "State critical section correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does scheduling rely on round robin? Give a concrete reason.",
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "minKeywords": 1,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "State round robin correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_161",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does memory rely on TLB? Give a concrete reason.",
+    "keywords": [
+      "cache",
+      "translation",
+      "avoid",
+      "fast"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLB: a cache of recent translations, avoiding a page-table walk",
+    "objective": "State TLB correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_105",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain race condition to a teammate who has not seen it?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "an outcome depending on the relative timing of accesses"
+    ],
+    "answer": 3,
+    "explanation": "race condition: an outcome depending on the relative timing of accesses",
+    "objective": "Identify the correct definition of race condition.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "timing",
+      "timing-dependent",
+      "shared",
+      "ordering"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_et_89",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define critical section in concurrency, in your own words.",
+    "keywords": [
+      "code",
+      "shared",
+      "region",
+      "accessing"
+    ],
+    "minKeywords": 1,
+    "explanation": "critical section: the code region accessing shared state",
+    "objective": "State critical section correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast priority inversion with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "minKeywords": 1,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "State priority inversion correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is journaling in the context of storage?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "recording changes in a log before applying them"
+    ],
+    "answer": 3,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "Identify the correct definition of journaling.",
+    "skillTags": [
+      "Operating Systems",
+      "Storage"
+    ],
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_ht_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast round robin with Process Control Block. Which would you choose and why?",
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "minKeywords": 1,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "State round robin correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_41",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain shortest job first to a teammate who has not seen it?",
+    "options": [
+      "scheduling the shortest CPU burst next",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated"
+    ],
+    "answer": 0,
+    "explanation": "shortest job first: scheduling the shortest CPU burst next",
+    "objective": "Identify the correct definition of shortest job first.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "shortest",
+      "burst",
+      "next",
+      "priority based on length"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_s_193",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain journaling to a teammate who has not seen it?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "recording changes in a log before applying them",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 1,
+    "explanation": "journaling: recording changes in a log before applying them",
+    "objective": "Identify the correct definition of journaling.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "log",
+      "before",
+      "recovery",
+      "consistent"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_mt_81",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does concurrency rely on mutual exclusion? Give a concrete reason.",
+    "keywords": [
+      "critical section",
+      "only one",
+      "exclusive",
+      "guarantee"
+    ],
+    "minKeywords": 1,
+    "explanation": "mutual exclusion: only one process at a time in a critical section",
+    "objective": "State mutual exclusion correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_st_97",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of semaphore suitable for a project update.",
+    "keywords": [
+      "counter",
+      "wait",
+      "signal",
+      "resource"
+    ],
+    "minKeywords": 1,
+    "explanation": "semaphore: a counter controlling access to shared resources",
+    "objective": "State semaphore correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_st_73",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of convoy effect suitable for a project update.",
+    "keywords": [
+      "waiting",
+      "long job",
+      "behind",
+      "throughput"
+    ],
+    "minKeywords": 1,
+    "explanation": "convoy effect: short jobs waiting behind one long job",
+    "objective": "State convoy effect correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_e_121",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is priority inversion in the context of concurrency?",
+    "options": [
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "a high-priority task waiting behind a lower one",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 2,
+    "explanation": "priority inversion: a high-priority task waiting behind a lower one",
+    "objective": "Identify the correct definition of priority inversion.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "high priority",
+      "waiting behind",
+      "lower",
+      "inversion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_h_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'first come first served' is involved, what is the most likely diagnosis?",
+    "options": [
+      "serving processes in arrival order",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "Identify the correct definition of first come first served.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_145",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is paging in the context of memory?",
+    "options": [
+      "splitting a process's address space into fixed pages",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 0,
+    "explanation": "paging: splitting a process's address space into fixed pages",
+    "objective": "Identify the correct definition of paging.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "page",
+      "frame",
+      "fixed",
+      "fixed size"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_17",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain context switch to a teammate who has not seen it?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "an execution stream sharing an address space with others",
+      "kernel data describing one process including its saved registers"
+    ],
+    "answer": 1,
+    "explanation": "context switch: saving one process's state and restoring another's",
+    "objective": "Identify the correct definition of context switch.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "save",
+      "restore",
+      "switch",
+      "overhead"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_e_185",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is thrashing in the context of memory?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "excessive page-replacement traffic"
+    ],
+    "answer": 3,
+    "explanation": "thrashing: excessive page-replacement traffic",
+    "objective": "Identify the correct definition of thrashing.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "excessive",
+      "replacement",
+      "traffic",
+      "paging storm"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_mt_113",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does concurrency rely on deadlock? Give a concrete reason.",
+    "keywords": [
+      "waiting",
+      "forever",
+      "cycle",
+      "cannot proceed"
+    ],
+    "minKeywords": 1,
+    "explanation": "deadlock: processes waiting forever on each other",
+    "objective": "State deadlock correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_et_169",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define page fault in memory, in your own words.",
+    "keywords": [
+      "not resident",
+      "fetch",
+      "storage",
+      "miss"
+    ],
+    "minKeywords": 1,
+    "explanation": "page fault: an access to a page that must be fetched from storage",
+    "objective": "State page fault correctly in your own words.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_25",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain thread to a teammate who has not seen it?",
+    "options": [
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "an execution stream sharing an address space with others"
+    ],
+    "answer": 3,
+    "explanation": "thread: an execution stream sharing an address space with others",
+    "objective": "Identify the correct definition of thread.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "execution",
+      "address space",
+      "shared",
+      "lightweight"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_os_m_49",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about round robin is correct?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "giving each process a small time slice in turn",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 1,
+    "explanation": "round robin: giving each process a small time slice in turn",
+    "objective": "Identify the correct definition of round robin.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "time slice",
+      "quantum",
+      "turn",
+      "preempt"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_137",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is virtual memory in the context of memory?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "kernel data describing one process including its saved registers",
+      "saving one process's state and restoring another's",
+      "an address space per process mapped by the OS"
+    ],
+    "answer": 3,
+    "explanation": "virtual memory: an address space per process mapped by the OS",
+    "objective": "Identify the correct definition of virtual memory.",
+    "skillTags": [
+      "Operating Systems",
+      "Memory"
+    ],
+    "keywords": [
+      "address space",
+      "per process",
+      "mapped",
+      "isolated"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_e_65",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is starvation in the context of scheduling?",
+    "options": [
+      "a process never being scheduled despite being ready",
+      "kernel data describing one process including its saved registers",
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's"
+    ],
+    "answer": 0,
+    "explanation": "starvation: a process never being scheduled despite being ready",
+    "objective": "Identify the correct definition of starvation.",
+    "skillTags": [
+      "Operating Systems",
+      "Scheduling"
+    ],
+    "keywords": [
+      "never scheduled",
+      "ready",
+      "indefinite",
+      "unfair"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_os_s_33",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain first come first served to a teammate who has not seen it?",
+    "options": [
+      "the lifecycle stage: new, ready, running, waiting or terminated",
+      "saving one process's state and restoring another's",
+      "kernel data describing one process including its saved registers",
+      "serving processes in arrival order"
+    ],
+    "answer": 3,
+    "explanation": "first come first served: serving processes in arrival order",
+    "objective": "Identify the correct definition of first come first served.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "arrival",
+      "order",
+      "queue",
+      "convoy"
+    ],
+    "softSkill": true
+  }
+]

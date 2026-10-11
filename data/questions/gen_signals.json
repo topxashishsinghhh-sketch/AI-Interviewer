@@ -1,0 +1,4952 @@
+[
+  {
+    "id": "gen_signals_e_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Fourier transform pair in the context of convolution?",
+    "options": [
+      "a signal and its transform linked by linearity and convolution theorems",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "Identify the correct definition of Fourier transform pair.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define odd signal in signal_types, in your own words.",
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "State odd signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast convergent series with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "State convergent series correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain z-plane to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a complex plane mapping discrete system behaviour",
+      "a signal defined at every instant",
+      "a signal defined at integer instants"
+    ],
+    "answer": 1,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "Identify the correct definition of z-plane.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_m_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about odd signal is correct?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal whose graph is antisymmetric about the origin"
+    ],
+    "answer": 3,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "Identify the correct definition of odd signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Fourier transform pair in convolution, in your own words.",
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "State Fourier transform pair correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is quantisation error in the context of sampling?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "the gap between an amplitude and its nearest level",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "Identify the correct definition of quantisation error.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does sampling rely on quantisation? Give a concrete reason.",
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "State quantisation correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does signal_types rely on continuous-time signal? Give a concrete reason.",
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "minKeywords": 1,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "State continuous-time signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does filters rely on FIR filter? Give a concrete reason.",
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "State FIR filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain convolution to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant",
+      "the integral combining two signals into a third, weighted overlap"
+    ],
+    "answer": 3,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "Identify the correct definition of convolution.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_mt_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does filters rely on FIR stability? Give a concrete reason.",
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "State FIR stability correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of magnitude spectrum suitable for a project update.",
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "minKeywords": 1,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "State magnitude spectrum correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_mt_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does fourier rely on phase spectrum? Give a concrete reason.",
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "State phase spectrum correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about FIR filter is correct?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a filter with feed-forward terms, always stable",
+      "a signal defined at every instant",
+      "a signal defined at integer instants"
+    ],
+    "answer": 1,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "Identify the correct definition of FIR filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'region of convergence' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at integer instants",
+      "the set where a transform's series converges",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant"
+    ],
+    "answer": 1,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "Identify the correct definition of region of convergence.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain quantisation to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "mapping an amplitude to a discrete level"
+    ],
+    "answer": 3,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "Identify the correct definition of quantisation.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of frequency domain suitable for a project update.",
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "minKeywords": 1,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "State frequency domain correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_e_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is quantisation in the context of sampling?",
+    "options": [
+      "a signal defined at integer instants",
+      "mapping an amplitude to a discrete level",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "Identify the correct definition of quantisation.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does convolution rely on Fourier transform pair? Give a concrete reason.",
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "State Fourier transform pair correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Gibbs phenomenon in sampling, in your own words.",
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "State Gibbs phenomenon correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of convolution suitable for a project update.",
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "minKeywords": 1,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "State convolution correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_ht_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast magnitude spectrum with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "minKeywords": 1,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "State magnitude spectrum correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain phase spectrum to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "the phase shift of each frequency component",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 1,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "Identify the correct definition of phase spectrum.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'FIR stability' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "FIR filters being always stable since they lack feedback",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "Identify the correct definition of FIR stability.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does signal_types rely on odd signal? Give a concrete reason.",
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "State odd signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does sampling rely on sinc reconstruction? Give a concrete reason.",
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "State sinc reconstruction correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'sinc reconstruction' is involved, what is the most likely diagnosis?",
+    "options": [
+      "reconstructing a signal by summing shifted sinusoids",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants"
+    ],
+    "answer": 0,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "Identify the correct definition of sinc reconstruction.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast FIR filter with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "State FIR filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast phase spectrum with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "State phase spectrum correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define discrete-time signal in signal_types, in your own words.",
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "minKeywords": 1,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "State discrete-time signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is region of convergence in the context of z_transform?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "the set where a transform's series converges",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "Identify the correct definition of region of convergence.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is aliasing in the context of sampling?",
+    "options": [
+      "a signal defined at integer instants",
+      "distortion when a signal is sampled too slowly",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "Identify the correct definition of aliasing.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does sampling rely on aliasing? Give a concrete reason.",
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "minKeywords": 1,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "State aliasing correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define convergent series in signal_types, in your own words.",
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "State convergent series correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is discrete-time signal in the context of signal_types?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal whose graph is antisymmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "Identify the correct definition of discrete-time signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define FIR filter in filters, in your own words.",
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "State FIR filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does convolution rely on shifted impulse? Give a concrete reason.",
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "minKeywords": 1,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "State shifted impulse correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Butterworth filter with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "minKeywords": 1,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "State Butterworth filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Nyquist rate is correct?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "twice the bandwidth, the minimum rate for perfect reconstruction",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 1,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "Identify the correct definition of Nyquist rate.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Fourier transform with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "State Fourier transform correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast frequency domain with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "minKeywords": 1,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "State frequency domain correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is frequency domain in the context of fourier?",
+    "options": [
+      "the representation listing a signal's frequency components",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants"
+    ],
+    "answer": 0,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "Identify the correct definition of frequency domain.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast convolution with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "minKeywords": 1,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "State convolution correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does fourier rely on magnitude spectrum? Give a concrete reason.",
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "minKeywords": 1,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "State magnitude spectrum correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is unit impulse in the context of convolution?",
+    "options": [
+      "a signal that acts as the identity for convolution",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "Identify the correct definition of unit impulse.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does filters rely on low-pass filter? Give a concrete reason.",
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "minKeywords": 1,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "State low-pass filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of sinc reconstruction suitable for a project update.",
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "State sinc reconstruction correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_ht_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast shifted impulse with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "minKeywords": 1,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "State shifted impulse correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'z-plane' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant",
+      "a complex plane mapping discrete system behaviour"
+    ],
+    "answer": 3,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "Identify the correct definition of z-plane.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about shifted impulse is correct?",
+    "options": [
+      "an impulse at a non-zero position, used to sample a signal",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "Identify the correct definition of shifted impulse.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about magnitude spectrum is correct?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "the amplitudes of each frequency component"
+    ],
+    "answer": 3,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "Identify the correct definition of magnitude spectrum.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define convolution in convolution, in your own words.",
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "minKeywords": 1,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "State convolution correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about low-pass filter is correct?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a filter that passes frequencies below a cutoff",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "Identify the correct definition of low-pass filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about quantisation is correct?",
+    "options": [
+      "mapping an amplitude to a discrete level",
+      "a signal defined at integer instants",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 0,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "Identify the correct definition of quantisation.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Nyquist rate suitable for a project update.",
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "minKeywords": 1,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "State Nyquist rate correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_m_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about quantisation error is correct?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "the gap between an amplitude and its nearest level"
+    ],
+    "answer": 3,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "Identify the correct definition of quantisation error.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast z-plane with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "minKeywords": 1,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "State z-plane correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is even signal in the context of signal_types?",
+    "options": [
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 3,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "Identify the correct definition of even signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does signal_types rely on even signal? Give a concrete reason.",
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "State even signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Fourier transform in fourier, in your own words.",
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "State Fourier transform correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define frequency domain in fourier, in your own words.",
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "minKeywords": 1,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "State frequency domain correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Gibbs phenomenon is correct?",
+    "options": [
+      "a signal defined at integer instants",
+      "overshoot from truncating a signal's harmonic series",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "Identify the correct definition of Gibbs phenomenon.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Butterworth filter in filters, in your own words.",
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "minKeywords": 1,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "State Butterworth filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'even signal' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal whose graph is antisymmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "Identify the correct definition of even signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define Nyquist rate in sampling, in your own words.",
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "minKeywords": 1,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "State Nyquist rate correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of FIR filter suitable for a project update.",
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "State FIR filter correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of region of convergence suitable for a project update.",
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "minKeywords": 1,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "State region of convergence correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'unit impulse' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal that acts as the identity for convolution",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "Identify the correct definition of unit impulse.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is phase spectrum in the context of fourier?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "the phase shift of each frequency component"
+    ],
+    "answer": 3,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "Identify the correct definition of phase spectrum.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast odd signal with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "State odd signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of quantisation suitable for a project update.",
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "State quantisation correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_et_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define even signal in signal_types, in your own words.",
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "State even signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of low-pass filter suitable for a project update.",
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "minKeywords": 1,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "State low-pass filter correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Butterworth filter to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a filter with a maximally flat passband response",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "Identify the correct definition of Butterworth filter.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain aliasing to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at integer instants",
+      "distortion when a signal is sampled too slowly",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant"
+    ],
+    "answer": 1,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "Identify the correct definition of aliasing.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_et_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define FIR stability in filters, in your own words.",
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "State FIR stability correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain frequency domain to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "the representation listing a signal's frequency components",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "Identify the correct definition of frequency domain.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_ht_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Fourier transform pair with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "State Fourier transform pair correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain sinc reconstruction to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "reconstructing a signal by summing shifted sinusoids",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "Identify the correct definition of sinc reconstruction.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_mt_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does signal_types rely on convergent series? Give a concrete reason.",
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "State convergent series correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of aliasing suitable for a project update.",
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "minKeywords": 1,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "State aliasing correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Fourier transform suitable for a project update.",
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "State Fourier transform correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Fourier transform pair suitable for a project update.",
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "State Fourier transform pair correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_m_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Fourier transform pair is correct?",
+    "options": [
+      "a signal and its transform linked by linearity and convolution theorems",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants"
+    ],
+    "answer": 0,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "Identify the correct definition of Fourier transform pair.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is shifted impulse in the context of convolution?",
+    "options": [
+      "an impulse at a non-zero position, used to sample a signal",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "Identify the correct definition of shifted impulse.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define z-plane in z_transform, in your own words.",
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "minKeywords": 1,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "State z-plane correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about phase spectrum is correct?",
+    "options": [
+      "a signal defined at every instant",
+      "the phase shift of each frequency component",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants"
+    ],
+    "answer": 1,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "Identify the correct definition of phase spectrum.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does fourier rely on frequency domain? Give a concrete reason.",
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "minKeywords": 1,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "State frequency domain correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of shifted impulse suitable for a project update.",
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "minKeywords": 1,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "State shifted impulse correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Fourier transform pair to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal and its transform linked by linearity and convolution theorems",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "Identify the correct definition of Fourier transform pair.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of quantisation error suitable for a project update.",
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "State quantisation error correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain odd signal to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants"
+    ],
+    "answer": 0,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "Identify the correct definition of odd signal.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_e_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Nyquist rate in the context of sampling?",
+    "options": [
+      "a signal defined at every instant",
+      "twice the bandwidth, the minimum rate for perfect reconstruction",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "Identify the correct definition of Nyquist rate.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain magnitude spectrum to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "the amplitudes of each frequency component",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "Identify the correct definition of magnitude spectrum.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Gibbs phenomenon' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "overshoot from truncating a signal's harmonic series",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "Identify the correct definition of Gibbs phenomenon.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about even signal is correct?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "Identify the correct definition of even signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of z-plane suitable for a project update.",
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "minKeywords": 1,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "State z-plane correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_m_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about FIR stability is correct?",
+    "options": [
+      "FIR filters being always stable since they lack feedback",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "Identify the correct definition of FIR stability.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain region of convergence to a teammate who has not seen it?",
+    "options": [
+      "the set where a transform's series converges",
+      "a signal defined at integer instants",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 0,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "Identify the correct definition of region of convergence.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain unit impulse to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal that acts as the identity for convolution",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "Identify the correct definition of unit impulse.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_ht_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast sinc reconstruction with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "State sinc reconstruction correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'FIR filter' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a filter with feed-forward terms, always stable",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "Identify the correct definition of FIR filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain FIR stability to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "FIR filters being always stable since they lack feedback",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "Identify the correct definition of FIR stability.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain continuous-time signal to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants"
+    ],
+    "answer": 0,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "Identify the correct definition of continuous-time signal.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of unit impulse suitable for a project update.",
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "State unit impulse correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Fourier transform' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at integer instants",
+      "a decomposition of a signal into sinusoidal components",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "Identify the correct definition of Fourier transform.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Gibbs phenomenon in the context of sampling?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "overshoot from truncating a signal's harmonic series",
+      "a signal defined at every instant",
+      "a signal defined at integer instants"
+    ],
+    "answer": 1,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "Identify the correct definition of Gibbs phenomenon.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is convolution in the context of convolution?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "the integral combining two signals into a third, weighted overlap"
+    ],
+    "answer": 3,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "Identify the correct definition of convolution.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about z-plane is correct?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a complex plane mapping discrete system behaviour"
+    ],
+    "answer": 3,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "Identify the correct definition of z-plane.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'quantisation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "mapping an amplitude to a discrete level",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "Identify the correct definition of quantisation.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Fourier transform is correct?",
+    "options": [
+      "a decomposition of a signal into sinusoidal components",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "Identify the correct definition of Fourier transform.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of convergent series suitable for a project update.",
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "State convergent series correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_mt_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does sampling rely on Gibbs phenomenon? Give a concrete reason.",
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "State Gibbs phenomenon correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast low-pass filter with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "minKeywords": 1,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "State low-pass filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast aliasing with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "minKeywords": 1,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "State aliasing correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast continuous-time signal with discrete-time signal. Which would you choose and why?",
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "minKeywords": 1,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "State continuous-time signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Fourier transform in the context of fourier?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a decomposition of a signal into sinusoidal components",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 1,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "Identify the correct definition of Fourier transform.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define shifted impulse in convolution, in your own words.",
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "minKeywords": 1,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "State shifted impulse correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define quantisation error in sampling, in your own words.",
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "State quantisation error correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define continuous-time signal in signal_types, in your own words.",
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "minKeywords": 1,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "State continuous-time signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about discrete-time signal is correct?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "Identify the correct definition of discrete-time signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about aliasing is correct?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "distortion when a signal is sampled too slowly"
+    ],
+    "answer": 3,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "Identify the correct definition of aliasing.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast unit impulse with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "State unit impulse correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Fourier transform to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a decomposition of a signal into sinusoidal components"
+    ],
+    "answer": 3,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "Identify the correct definition of Fourier transform.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Butterworth filter' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a filter with a maximally flat passband response",
+      "a signal defined at every instant",
+      "a signal defined at integer instants"
+    ],
+    "answer": 1,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "Identify the correct definition of Butterworth filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define sinc reconstruction in sampling, in your own words.",
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "State sinc reconstruction correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of odd signal suitable for a project update.",
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "State odd signal correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Nyquist rate to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "twice the bandwidth, the minimum rate for perfect reconstruction",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "Identify the correct definition of Nyquist rate.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Nyquist rate' is involved, what is the most likely diagnosis?",
+    "options": [
+      "twice the bandwidth, the minimum rate for perfect reconstruction",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants"
+    ],
+    "answer": 0,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "Identify the correct definition of Nyquist rate.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about frequency domain is correct?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "the representation listing a signal's frequency components"
+    ],
+    "answer": 3,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "Identify the correct definition of frequency domain.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is magnitude spectrum in the context of fourier?",
+    "options": [
+      "the amplitudes of each frequency component",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "Identify the correct definition of magnitude spectrum.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of phase spectrum suitable for a project update.",
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "State phase spectrum correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain FIR filter to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a filter with feed-forward terms, always stable",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "Identify the correct definition of FIR filter.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_65",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'Fourier transform pair' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal and its transform linked by linearity and convolution theorems"
+    ],
+    "answer": 3,
+    "explanation": "Fourier transform pair: a signal and its transform linked by linearity and convolution theorems",
+    "objective": "Identify the correct definition of Fourier transform pair.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "linked",
+      "theorems",
+      "duality",
+      "convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain convergent series to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal that is either even or odd",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "Identify the correct definition of convergent series.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'aliasing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "distortion when a signal is sampled too slowly"
+    ],
+    "answer": 3,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "Identify the correct definition of aliasing.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'low-pass filter' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a filter that passes frequencies below a cutoff",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 1,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "Identify the correct definition of low-pass filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Gibbs phenomenon suitable for a project update.",
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "State Gibbs phenomenon correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_et_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define unit impulse in convolution, in your own words.",
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "State unit impulse correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain quantisation error to a teammate who has not seen it?",
+    "options": [
+      "the gap between an amplitude and its nearest level",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "Identify the correct definition of quantisation error.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_ht_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Nyquist rate with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "minKeywords": 1,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "State Nyquist rate correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does z_transform rely on region of convergence? Give a concrete reason.",
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "minKeywords": 1,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "State region of convergence correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about continuous-time signal is correct?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal whose graph is antisymmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "Identify the correct definition of continuous-time signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_113",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define aliasing in sampling, in your own words.",
+    "keywords": [
+      "too slow",
+      "overlap",
+      "spectra",
+      "alias"
+    ],
+    "minKeywords": 1,
+    "explanation": "aliasing: distortion when a signal is sampled too slowly",
+    "objective": "State aliasing correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about region of convergence is correct?",
+    "options": [
+      "a signal defined at integer instants",
+      "the set where a transform's series converges",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "Identify the correct definition of region of convergence.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is continuous-time signal in the context of signal_types?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is antisymmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "Identify the correct definition of continuous-time signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is Butterworth filter in the context of filters?",
+    "options": [
+      "a signal defined at integer instants",
+      "a filter with a maximally flat passband response",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "Identify the correct definition of Butterworth filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is low-pass filter in the context of filters?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a filter that passes frequencies below a cutoff",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "Identify the correct definition of low-pass filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_81",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'frequency domain' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "the representation listing a signal's frequency components",
+      "a signal defined at every instant",
+      "a signal defined at integer instants"
+    ],
+    "answer": 1,
+    "explanation": "frequency domain: the representation listing a signal's frequency components",
+    "objective": "Identify the correct definition of frequency domain.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "frequencies",
+      "component",
+      "amplitude",
+      "representation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does signal_types rely on discrete-time signal? Give a concrete reason.",
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "minKeywords": 1,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "State discrete-time signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast Gibbs phenomenon with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "minKeywords": 1,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "State Gibbs phenomenon correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'continuous-time signal' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 0,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "Identify the correct definition of continuous-time signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of Butterworth filter suitable for a project update.",
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "minKeywords": 1,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "State Butterworth filter correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_e_161",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is FIR filter in the context of filters?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a filter with feed-forward terms, always stable",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "FIR filter: a filter with feed-forward terms, always stable",
+    "objective": "Identify the correct definition of FIR filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "no feedback",
+      "stable",
+      "linear phase",
+      "finite impulse"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of even signal suitable for a project update.",
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "State even signal correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'phase spectrum' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "the phase shift of each frequency component"
+    ],
+    "answer": 3,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "Identify the correct definition of phase spectrum.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'convergent series' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal that is either even or odd"
+    ],
+    "answer": 3,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "Identify the correct definition of convergent series.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is FIR stability in the context of filters?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "FIR filters being always stable since they lack feedback"
+    ],
+    "answer": 3,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "Identify the correct definition of FIR stability.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about unit impulse is correct?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal that acts as the identity for convolution",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "Identify the correct definition of unit impulse.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about convergent series is correct?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal that is either even or odd",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "Identify the correct definition of convergent series.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define magnitude spectrum in fourier, in your own words.",
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "minKeywords": 1,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "State magnitude spectrum correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain discrete-time signal to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "Identify the correct definition of discrete-time signal.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_s_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain shifted impulse to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "an impulse at a non-zero position, used to sample a signal",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants"
+    ],
+    "answer": 1,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "Identify the correct definition of shifted impulse.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_ht_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast quantisation error with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "State quantisation error correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about convolution is correct?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "the integral combining two signals into a third, weighted overlap",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "Identify the correct definition of convolution.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is sinc reconstruction in the context of sampling?",
+    "options": [
+      "reconstructing a signal by summing shifted sinusoids",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal defined at every instant"
+    ],
+    "answer": 0,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "Identify the correct definition of sinc reconstruction.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_st_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of FIR stability suitable for a project update.",
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "State FIR stability correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of discrete-time signal suitable for a project update.",
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "minKeywords": 1,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "State discrete-time signal correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_mt_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does convolution rely on convolution? Give a concrete reason.",
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "minKeywords": 1,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "State convolution correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_49",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does convolution rely on unit impulse? Give a concrete reason.",
+    "keywords": [
+      "identity",
+      "delta",
+      "identity element",
+      "identity under convolution"
+    ],
+    "minKeywords": 1,
+    "explanation": "unit impulse: a signal that acts as the identity for convolution",
+    "objective": "State unit impulse correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast region of convergence with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "minKeywords": 1,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "State region of convergence correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'odd signal' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at every instant"
+    ],
+    "answer": 2,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "Identify the correct definition of odd signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_97",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define phase spectrum in fourier, in your own words.",
+    "keywords": [
+      "phase",
+      "shift",
+      "component",
+      "angle"
+    ],
+    "minKeywords": 1,
+    "explanation": "phase spectrum: the phase shift of each frequency component",
+    "objective": "State phase spectrum correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does z_transform rely on z-plane? Give a concrete reason.",
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "minKeywords": 1,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "State z-plane correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_145",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain Gibbs phenomenon to a teammate who has not seen it?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "overshoot from truncating a signal's harmonic series"
+    ],
+    "answer": 3,
+    "explanation": "Gibbs phenomenon: overshoot from truncating a signal's harmonic series",
+    "objective": "Identify the correct definition of Gibbs phenomenon.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "overshoot",
+      "truncate",
+      "harmonic",
+      "partial sum"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'discrete-time signal' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is antisymmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "Identify the correct definition of discrete-time signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_121",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about sinc reconstruction is correct?",
+    "options": [
+      "reconstructing a signal by summing shifted sinusoids",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 0,
+    "explanation": "sinc reconstruction: reconstructing a signal by summing shifted sinusoids",
+    "objective": "Identify the correct definition of sinc reconstruction.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "sin",
+      "shift",
+      "reconstruct",
+      "sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_25",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is odd signal in the context of signal_types?",
+    "options": [
+      "a signal whose graph is antisymmetric about the origin",
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants"
+    ],
+    "answer": 0,
+    "explanation": "odd signal: a signal whose graph is antisymmetric about the origin",
+    "objective": "Identify the correct definition of odd signal.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "antisymmetric",
+      "origin",
+      "odd",
+      "negative mirror"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_57",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'shifted impulse' is involved, what is the most likely diagnosis?",
+    "options": [
+      "an impulse at a non-zero position, used to sample a signal",
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 0,
+    "explanation": "shifted impulse: an impulse at a non-zero position, used to sample a signal",
+    "objective": "Identify the correct definition of shifted impulse.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "position",
+      "sample",
+      "offset",
+      "extract"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_33",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is convergent series in the context of signal_types?",
+    "options": [
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "a signal that is either even or odd",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "convergent series: a signal that is either even or odd",
+    "objective": "Identify the correct definition of convergent series.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "keywords": [
+      "even",
+      "odd",
+      "decompose",
+      "sum"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define low-pass filter in filters, in your own words.",
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "minKeywords": 1,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "State low-pass filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast even signal with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "minKeywords": 1,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "State even signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_73",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does fourier rely on Fourier transform? Give a concrete reason.",
+    "keywords": [
+      "sinusoidal",
+      "component",
+      "frequencies",
+      "decompose"
+    ],
+    "minKeywords": 1,
+    "explanation": "Fourier transform: a decomposition of a signal into sinusoidal components",
+    "objective": "State Fourier transform correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_153",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain low-pass filter to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "a filter that passes frequencies below a cutoff",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "low-pass filter: a filter that passes frequencies below a cutoff",
+    "objective": "Identify the correct definition of low-pass filter.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "cutoff",
+      "passes",
+      "below",
+      "low"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_st_1",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of continuous-time signal suitable for a project update.",
+    "keywords": [
+      "every instant",
+      "definition",
+      "continuous",
+      "real-valued"
+    ],
+    "minKeywords": 1,
+    "explanation": "continuous-time signal: a signal defined at every instant",
+    "objective": "State continuous-time signal correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_h_41",
+    "subject": "signals",
+    "topic": "convolution",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'convolution' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal defined at integer instants",
+      "the integral combining two signals into a third, weighted overlap",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "convolution: the integral combining two signals into a third, weighted overlap",
+    "objective": "Identify the correct definition of convolution.",
+    "skillTags": [
+      "Signal Processing",
+      "Convolution"
+    ],
+    "keywords": [
+      "integral",
+      "overlap",
+      "combine",
+      "weighted"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_e_193",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is z-plane in the context of z_transform?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal defined at every instant",
+      "a complex plane mapping discrete system behaviour",
+      "a signal whose graph is symmetric about the origin"
+    ],
+    "answer": 2,
+    "explanation": "z-plane: a complex plane mapping discrete system behaviour",
+    "objective": "Identify the correct definition of z-plane.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "keywords": [
+      "unit circle",
+      "z",
+      "complex",
+      "poles"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_s_17",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain even signal to a teammate who has not seen it?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "a signal whose graph is antisymmetric about the origin"
+    ],
+    "answer": 1,
+    "explanation": "even signal: a signal whose graph is symmetric about the origin",
+    "objective": "Identify the correct definition of even signal.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "symmetric",
+      "origin",
+      "even",
+      "mirror"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_signals_ht_177",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast FIR stability with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "always stable",
+      "no poles",
+      "feedback",
+      "bounded input"
+    ],
+    "minKeywords": 1,
+    "explanation": "FIR stability: FIR filters being always stable since they lack feedback",
+    "objective": "State FIR stability correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_9",
+    "subject": "signals",
+    "topic": "signal_types",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast discrete-time signal with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "integer",
+      "sequence",
+      "index",
+      "discrete"
+    ],
+    "minKeywords": 1,
+    "explanation": "discrete-time signal: a signal defined at integer instants",
+    "objective": "State discrete-time signal correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Signals"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_185",
+    "subject": "signals",
+    "topic": "z_transform",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define region of convergence in z_transform, in your own words.",
+    "keywords": [
+      "converges",
+      "z-domain",
+      "z-plane",
+      "stability"
+    ],
+    "minKeywords": 1,
+    "explanation": "region of convergence: the set where a transform's series converges",
+    "objective": "State region of convergence correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Z Transform"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_m_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about Butterworth filter is correct?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a filter with a maximally flat passband response",
+      "a signal defined at integer instants"
+    ],
+    "answer": 2,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "Identify the correct definition of Butterworth filter.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_89",
+    "subject": "signals",
+    "topic": "fourier",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'magnitude spectrum' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at every instant",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at integer instants",
+      "the amplitudes of each frequency component"
+    ],
+    "answer": 3,
+    "explanation": "magnitude spectrum: the amplitudes of each frequency component",
+    "objective": "Identify the correct definition of magnitude spectrum.",
+    "skillTags": [
+      "Signal Processing",
+      "Fourier"
+    ],
+    "keywords": [
+      "amplitude",
+      "component",
+      "frequency",
+      "size"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_ht_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast quantisation with continuous-time signal. Which would you choose and why?",
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "State quantisation correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_169",
+    "subject": "signals",
+    "topic": "filters",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does filters rely on Butterworth filter? Give a concrete reason.",
+    "keywords": [
+      "flat",
+      "passband",
+      "no ripple",
+      "maximally flat"
+    ],
+    "minKeywords": 1,
+    "explanation": "Butterworth filter: a filter with a maximally flat passband response",
+    "objective": "State Butterworth filter correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Filters"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_et_129",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define quantisation in sampling, in your own words.",
+    "keywords": [
+      "level",
+      "round",
+      "quantise",
+      "amplitude"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation: mapping an amplitude to a discrete level",
+    "objective": "State quantisation correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does sampling rely on quantisation error? Give a concrete reason.",
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "minKeywords": 1,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "State quantisation error correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_h_137",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'quantisation error' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a signal defined at integer instants",
+      "a signal whose graph is symmetric about the origin",
+      "a signal defined at every instant",
+      "the gap between an amplitude and its nearest level"
+    ],
+    "answer": 3,
+    "explanation": "quantisation error: the gap between an amplitude and its nearest level",
+    "objective": "Identify the correct definition of quantisation error.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "keywords": [
+      "gap",
+      "nearest",
+      "amplitude",
+      "error"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_signals_mt_105",
+    "subject": "signals",
+    "topic": "sampling",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does sampling rely on Nyquist rate? Give a concrete reason.",
+    "keywords": [
+      "two times",
+      "reconstruct",
+      "limit",
+      "sampling"
+    ],
+    "minKeywords": 1,
+    "explanation": "Nyquist rate: twice the bandwidth, the minimum rate for perfect reconstruction",
+    "objective": "State Nyquist rate correctly in your own words.",
+    "skillTags": [
+      "Signal Processing",
+      "Sampling"
+    ],
+    "softSkill": false
+  }
+]

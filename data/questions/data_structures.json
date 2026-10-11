@@ -208,7 +208,9 @@
     "skillTags": [
       "Data Structures"
     ],
-    "keywords": [],
+    "keywords": [
+      "concept"
+    ],
     "softSkill": false
   },
   {

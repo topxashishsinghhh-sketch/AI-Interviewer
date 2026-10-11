@@ -69,7 +69,9 @@
     "skillTags": [
       "Accounting"
     ],
-    "keywords": [],
+    "keywords": [
+      "concept"
+    ],
     "softSkill": false
   },
   {

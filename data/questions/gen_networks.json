@@ -1,0 +1,5744 @@
+[
+  {
+    "id": "gen_networks_e_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is router in the context of layers?",
+    "options": [
+      "a seven-layer description of network functions",
+      "a device forwarding packets between networks by IP address",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "Identify the correct definition of router.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of TLS suitable for a project update.",
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "State TLS correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_e_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is additive increase in the context of congestion?",
+    "options": [
+      "increasing the congestion window by one per round trip",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "Identify the correct definition of additive increase.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain flow control to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "preventing a sender from outrunning the receiver, using the receiver's buffer"
+    ],
+    "answer": 3,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "Identify the correct definition of flow control.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_e_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is flow control in the context of transport?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "preventing a sender from outrunning the receiver, using the receiver's buffer",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 2,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "Identify the correct definition of flow control.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does congestion rely on additive increase? Give a concrete reason.",
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "minKeywords": 1,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "State additive increase correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does security rely on perfect forward secrecy? Give a concrete reason.",
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "minKeywords": 1,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "State perfect forward secrecy correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is symmetric encryption in the context of security?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "encryption where the same key encrypts and decrypts",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 2,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "Identify the correct definition of symmetric encryption.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'silly window syndrome' is involved, what is the most likely diagnosis?",
+    "options": [
+      "transmitting tiny segments because of small advertised windows",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "Identify the correct definition of silly window syndrome.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast distance-vector routing with OSI model. Which would you choose and why?",
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "minKeywords": 1,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "State distance-vector routing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of flow control suitable for a project update.",
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "minKeywords": 1,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "State flow control correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_h_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'ARP' is involved, what is the most likely diagnosis?",
+    "options": [
+      "resolving an IP address to a MAC address on a link",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "Identify the correct definition of ARP.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is OSI model in the context of layers?",
+    "options": [
+      "a device forwarding frames by MAC address",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "Identify the correct definition of OSI model.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'slow start' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a seven-layer description of network functions",
+      "doubling the congestion window at the beginning of a transfer",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "Identify the correct definition of slow start.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of OSI model suitable for a project update.",
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "State OSI model correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_h_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'distance-vector routing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "routing where neighbours share their distance estimates",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 2,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "Identify the correct definition of distance-vector routing.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain multiplicative decrease to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "halving the congestion window after a loss"
+    ],
+    "answer": 3,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "Identify the correct definition of multiplicative decrease.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_h_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'CIDR' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "variable-length prefixes that allow route aggregation",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "Identify the correct definition of CIDR.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is switch in the context of layers?",
+    "options": [
+      "a device forwarding frames by MAC address",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "Identify the correct definition of switch.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is OSPF in the context of routing?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "a link-state interior gateway protocol",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "Identify the correct definition of OSPF.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of IPv4 addressing suitable for a project update.",
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "minKeywords": 1,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "State IPv4 addressing correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_h_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'perfect forward secrecy' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "compromising one session key does not expose earlier ones",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "Identify the correct definition of perfect forward secrecy.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does congestion rely on fast retransmit? Give a concrete reason.",
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "minKeywords": 1,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "State fast retransmit correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain switch to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "a device forwarding frames by MAC address",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "Identify the correct definition of switch.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does routing rely on link-state routing? Give a concrete reason.",
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "minKeywords": 1,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "State link-state routing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is UDP in the context of transport?",
+    "options": [
+      "a connectionless datagram transport",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "Identify the correct definition of UDP.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast additive increase with OSI model. Which would you choose and why?",
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "minKeywords": 1,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "State additive increase correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain silly window syndrome to a teammate who has not seen it?",
+    "options": [
+      "transmitting tiny segments because of small advertised windows",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "Identify the correct definition of silly window syndrome.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_s_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain OSPF to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a link-state interior gateway protocol"
+    ],
+    "answer": 3,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "Identify the correct definition of OSPF.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define multiplicative decrease in congestion, in your own words.",
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "minKeywords": 1,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "State multiplicative decrease correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'UDP' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "a connectionless datagram transport"
+    ],
+    "answer": 3,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "Identify the correct definition of UDP.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain ARP to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "resolving an IP address to a MAC address on a link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 2,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "Identify the correct definition of ARP.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_h_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'fast retransmit' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "resending on repeated acknowledgements before the timer expires",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "Identify the correct definition of fast retransmit.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is piggybacking in the context of transport?",
+    "options": [
+      "carrying an acknowledge on a data packet",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "Identify the correct definition of piggybacking.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of encapsulation suitable for a project update.",
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "minKeywords": 1,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "State encapsulation correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define congestion window in transport, in your own words.",
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "minKeywords": 1,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "State congestion window correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define BGP in routing, in your own words.",
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "minKeywords": 1,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "State BGP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define TCP/IP model in layers, in your own words.",
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "State TCP/IP model correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is TLS in the context of security?",
+    "options": [
+      "a protocol giving confidentiality and integrity on top of a transport",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "Identify the correct definition of TLS.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast multiplicative decrease with OSI model. Which would you choose and why?",
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "minKeywords": 1,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "State multiplicative decrease correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'subnet mask' is involved, what is the most likely diagnosis?",
+    "options": [
+      "bit pattern separating a network portion from a host portion",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "Identify the correct definition of subnet mask.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain TCP to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "a connection-oriented reliable byte stream transport",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "Identify the correct definition of TCP.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does addressing rely on subnet mask? Give a concrete reason.",
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "minKeywords": 1,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "State subnet mask correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of data link layer suitable for a project update.",
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "minKeywords": 1,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "State data link layer correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define slow start in transport, in your own words.",
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "minKeywords": 1,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "State slow start correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain encapsulation to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "adding a header at each layer as data travels down",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "Identify the correct definition of encapsulation.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about IPv4 addressing is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "32-bit addresses written as four dotted decimal octets",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "Identify the correct definition of IPv4 addressing.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of OSPF suitable for a project update.",
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "State OSPF correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does layers rely on switch? Give a concrete reason.",
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "minKeywords": 1,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "State switch correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about slow start is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "doubling the congestion window at the beginning of a transfer",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 2,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "Identify the correct definition of slow start.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transport rely on UDP? Give a concrete reason.",
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "minKeywords": 1,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "State UDP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define distance-vector routing in routing, in your own words.",
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "minKeywords": 1,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "State distance-vector routing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'data link layer' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a device forwarding frames by MAC address",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "Identify the correct definition of data link layer.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'piggybacking' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "carrying an acknowledge on a data packet",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 2,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "Identify the correct definition of piggybacking.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about router is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a device forwarding packets between networks by IP address"
+    ],
+    "answer": 3,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "Identify the correct definition of router.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of congestion window suitable for a project update.",
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "minKeywords": 1,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "State congestion window correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about OSI model is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a device forwarding frames by MAC address",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 2,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "Identify the correct definition of OSI model.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast symmetric encryption with OSI model. Which would you choose and why?",
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "minKeywords": 1,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "State symmetric encryption correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is TCP in the context of transport?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a connection-oriented reliable byte stream transport",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 1,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "Identify the correct definition of TCP.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is subnet mask in the context of addressing?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "bit pattern separating a network portion from a host portion"
+    ],
+    "answer": 3,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "Identify the correct definition of subnet mask.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast CIDR with OSI model. Which would you choose and why?",
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "minKeywords": 1,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "State CIDR correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain slow start to a teammate who has not seen it?",
+    "options": [
+      "doubling the congestion window at the beginning of a transfer",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "Identify the correct definition of slow start.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define TCP in transport, in your own words.",
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "State TCP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is silly window syndrome in the context of congestion?",
+    "options": [
+      "a seven-layer description of network functions",
+      "transmitting tiny segments because of small advertised windows",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "Identify the correct definition of silly window syndrome.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast TLS with OSI model. Which would you choose and why?",
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "State TLS correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does routing rely on distance-vector routing? Give a concrete reason.",
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "minKeywords": 1,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "State distance-vector routing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is distance-vector routing in the context of routing?",
+    "options": [
+      "routing where neighbours share their distance estimates",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "Identify the correct definition of distance-vector routing.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain three-way handshake to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the SYN, SYN-ACK, ACK exchange that opens a connection",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 2,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "Identify the correct definition of three-way handshake.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_ht_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast router with OSI model. Which would you choose and why?",
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "minKeywords": 1,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "State router correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does layers rely on encapsulation? Give a concrete reason.",
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "minKeywords": 1,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "State encapsulation correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does addressing rely on IPv4 addressing? Give a concrete reason.",
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "minKeywords": 1,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "State IPv4 addressing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of additive increase suitable for a project update.",
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "minKeywords": 1,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "State additive increase correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does routing rely on OSPF? Give a concrete reason.",
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "State OSPF correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'encapsulation' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "adding a header at each layer as data travels down",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 1,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "Identify the correct definition of encapsulation.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast IPv4 addressing with OSI model. Which would you choose and why?",
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "minKeywords": 1,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "State IPv4 addressing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of TCP/IP model suitable for a project update.",
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "State TCP/IP model correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define link-state routing in routing, in your own words.",
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "minKeywords": 1,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "State link-state routing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain symmetric encryption to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "encryption where the same key encrypts and decrypts",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "Identify the correct definition of symmetric encryption.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_st_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of switch suitable for a project update.",
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "minKeywords": 1,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "State switch correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_st_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of UDP suitable for a project update.",
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "minKeywords": 1,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "State UDP correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_s_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain RIP to a teammate who has not seen it?",
+    "options": [
+      "a distance-vector interior gateway protocol",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "Identify the correct definition of RIP.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transport rely on congestion window? Give a concrete reason.",
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "minKeywords": 1,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "State congestion window correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast three-way handshake with OSI model. Which would you choose and why?",
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "minKeywords": 1,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "State three-way handshake correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'BGP' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the path-vector protocol used between autonomous systems",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "Identify the correct definition of BGP.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define flow control in transport, in your own words.",
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "minKeywords": 1,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "State flow control correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of silly window syndrome suitable for a project update.",
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "minKeywords": 1,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "State silly window syndrome correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define UDP in transport, in your own words.",
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "minKeywords": 1,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "State UDP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about CIDR is correct?",
+    "options": [
+      "variable-length prefixes that allow route aggregation",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "Identify the correct definition of CIDR.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is TCP/IP model in the context of layers?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "a device forwarding frames by MAC address"
+    ],
+    "answer": 0,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "Identify the correct definition of TCP/IP model.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'IPv4 addressing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "32-bit addresses written as four dotted decimal octets",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 1,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "Identify the correct definition of IPv4 addressing.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'link-state routing' is involved, what is the most likely diagnosis?",
+    "options": [
+      "routing where each node floods its own topology view",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "Identify the correct definition of link-state routing.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of subnet mask suitable for a project update.",
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "minKeywords": 1,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "State subnet mask correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about symmetric encryption is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "encryption where the same key encrypts and decrypts",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 1,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "Identify the correct definition of symmetric encryption.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does layers rely on data link layer? Give a concrete reason.",
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "minKeywords": 1,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "State data link layer correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast subnet mask with OSI model. Which would you choose and why?",
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "minKeywords": 1,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "State subnet mask correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about fast retransmit is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "resending on repeated acknowledgements before the timer expires"
+    ],
+    "answer": 3,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "Identify the correct definition of fast retransmit.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain subnet mask to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "bit pattern separating a network portion from a host portion"
+    ],
+    "answer": 3,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "Identify the correct definition of subnet mask.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_h_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'flow control' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a seven-layer description of network functions",
+      "preventing a sender from outrunning the receiver, using the receiver's buffer",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "Identify the correct definition of flow control.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about multiplicative decrease is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "halving the congestion window after a loss",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "Identify the correct definition of multiplicative decrease.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain TCP/IP model to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "a device forwarding frames by MAC address"
+    ],
+    "answer": 0,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "Identify the correct definition of TCP/IP model.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about TLS is correct?",
+    "options": [
+      "a protocol giving confidentiality and integrity on top of a transport",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "Identify the correct definition of TLS.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transport rely on piggybacking? Give a concrete reason.",
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "minKeywords": 1,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "State piggybacking correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of fast retransmit suitable for a project update.",
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "minKeywords": 1,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "State fast retransmit correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about subnet mask is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "bit pattern separating a network portion from a host portion",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "Identify the correct definition of subnet mask.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transport rely on three-way handshake? Give a concrete reason.",
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "minKeywords": 1,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "State three-way handshake correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'TCP' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "a connection-oriented reliable byte stream transport",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "Identify the correct definition of TCP.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does routing rely on RIP? Give a concrete reason.",
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "minKeywords": 1,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "State RIP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define perfect forward secrecy in security, in your own words.",
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "minKeywords": 1,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "State perfect forward secrecy correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define OSI model in layers, in your own words.",
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "State OSI model correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain router to a teammate who has not seen it?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a device forwarding packets between networks by IP address",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "Identify the correct definition of router.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_s_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain additive increase to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "increasing the congestion window by one per round trip"
+    ],
+    "answer": 3,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "Identify the correct definition of additive increase.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_s_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain perfect forward secrecy to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "compromising one session key does not expose earlier ones"
+    ],
+    "answer": 3,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "Identify the correct definition of perfect forward secrecy.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_st_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of router suitable for a project update.",
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "minKeywords": 1,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "State router correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about OSPF is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "a link-state interior gateway protocol",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "Identify the correct definition of OSPF.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain CIDR to a teammate who has not seen it?",
+    "options": [
+      "variable-length prefixes that allow route aggregation",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "Identify the correct definition of CIDR.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_st_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of ARP suitable for a project update.",
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "minKeywords": 1,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "State ARP correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about TCP is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a connection-oriented reliable byte stream transport"
+    ],
+    "answer": 3,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "Identify the correct definition of TCP.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast piggybacking with OSI model. Which would you choose and why?",
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "minKeywords": 1,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "State piggybacking correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast OSPF with OSI model. Which would you choose and why?",
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "State OSPF correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain congestion window to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "the sender's estimate of what the network can carry"
+    ],
+    "answer": 3,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "Identify the correct definition of congestion window.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about ARP is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "resolving an IP address to a MAC address on a link",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "Identify the correct definition of ARP.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast switch with OSI model. Which would you choose and why?",
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "minKeywords": 1,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "State switch correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about congestion window is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the sender's estimate of what the network can carry",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "Identify the correct definition of congestion window.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'symmetric encryption' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "encryption where the same key encrypts and decrypts"
+    ],
+    "answer": 3,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "Identify the correct definition of symmetric encryption.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define RIP in routing, in your own words.",
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "minKeywords": 1,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "State RIP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast UDP with OSI model. Which would you choose and why?",
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "minKeywords": 1,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "State UDP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast slow start with OSI model. Which would you choose and why?",
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "minKeywords": 1,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "State slow start correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is fast retransmit in the context of congestion?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "resending on repeated acknowledgements before the timer expires"
+    ],
+    "answer": 3,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "Identify the correct definition of fast retransmit.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about link-state routing is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "routing where each node floods its own topology view",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 2,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "Identify the correct definition of link-state routing.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast link-state routing with OSI model. Which would you choose and why?",
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "minKeywords": 1,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "State link-state routing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'TLS' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a protocol giving confidentiality and integrity on top of a transport",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "Identify the correct definition of TLS.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain TLS to a teammate who has not seen it?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "a protocol giving confidentiality and integrity on top of a transport",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 2,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "Identify the correct definition of TLS.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_e_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is RIP in the context of routing?",
+    "options": [
+      "a seven-layer description of network functions",
+      "a distance-vector interior gateway protocol",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "Identify the correct definition of RIP.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of slow start suitable for a project update.",
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "minKeywords": 1,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "State slow start correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does routing rely on BGP? Give a concrete reason.",
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "minKeywords": 1,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "State BGP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define three-way handshake in transport, in your own words.",
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "minKeywords": 1,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "State three-way handshake correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast flow control with OSI model. Which would you choose and why?",
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "minKeywords": 1,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "State flow control correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast perfect forward secrecy with OSI model. Which would you choose and why?",
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "minKeywords": 1,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "State perfect forward secrecy correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain distance-vector routing to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "routing where neighbours share their distance estimates",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 1,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "Identify the correct definition of distance-vector routing.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_ht_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast TCP/IP model with OSI model. Which would you choose and why?",
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "State TCP/IP model correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about additive increase is correct?",
+    "options": [
+      "increasing the congestion window by one per round trip",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "Identify the correct definition of additive increase.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define encapsulation in layers, in your own words.",
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "minKeywords": 1,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "State encapsulation correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about BGP is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the path-vector protocol used between autonomous systems",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "Identify the correct definition of BGP.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does addressing rely on ARP? Give a concrete reason.",
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "minKeywords": 1,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "State ARP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'switch' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a device forwarding frames by MAC address",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "Identify the correct definition of switch.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'OSPF' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a link-state interior gateway protocol",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "Identify the correct definition of OSPF.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of perfect forward secrecy suitable for a project update.",
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "minKeywords": 1,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "State perfect forward secrecy correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define data link layer in layers, in your own words.",
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "minKeywords": 1,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "State data link layer correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about flow control is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "preventing a sender from outrunning the receiver, using the receiver's buffer",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 2,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "Identify the correct definition of flow control.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is BGP in the context of routing?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the path-vector protocol used between autonomous systems"
+    ],
+    "answer": 3,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "Identify the correct definition of BGP.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of distance-vector routing suitable for a project update.",
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "minKeywords": 1,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "State distance-vector routing correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does congestion rely on multiplicative decrease? Give a concrete reason.",
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "minKeywords": 1,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "State multiplicative decrease correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of RIP suitable for a project update.",
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "minKeywords": 1,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "State RIP correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_st_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of TCP suitable for a project update.",
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "State TCP correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_e_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is link-state routing in the context of routing?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "routing where each node floods its own topology view"
+    ],
+    "answer": 3,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "Identify the correct definition of link-state routing.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'additive increase' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "increasing the congestion window by one per round trip"
+    ],
+    "answer": 3,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "Identify the correct definition of additive increase.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is slow start in the context of transport?",
+    "options": [
+      "doubling the congestion window at the beginning of a transfer",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 0,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "Identify the correct definition of slow start.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is data link layer in the context of layers?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a device forwarding frames by MAC address",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 3,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "Identify the correct definition of data link layer.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about UDP is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "a connectionless datagram transport",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "Identify the correct definition of UDP.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain fast retransmit to a teammate who has not seen it?",
+    "options": [
+      "resending on repeated acknowledgements before the timer expires",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "Identify the correct definition of fast retransmit.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_s_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain data link layer to a teammate who has not seen it?",
+    "options": [
+      "a device forwarding frames by MAC address",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "Identify the correct definition of data link layer.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_129",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transport rely on flow control? Give a concrete reason.",
+    "keywords": [
+      "receiver",
+      "buffer",
+      "window",
+      "sender pacing"
+    ],
+    "minKeywords": 1,
+    "explanation": "flow control: preventing a sender from outrunning the receiver, using the receiver's buffer",
+    "objective": "State flow control correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of symmetric encryption suitable for a project update.",
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "minKeywords": 1,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "State symmetric encryption correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_e_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is CIDR in the context of addressing?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "variable-length prefixes that allow route aggregation"
+    ],
+    "answer": 3,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "Identify the correct definition of CIDR.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does layers rely on router? Give a concrete reason.",
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "minKeywords": 1,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "State router correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does security rely on TLS? Give a concrete reason.",
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "State TLS correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define piggybacking in transport, in your own words.",
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "minKeywords": 1,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "State piggybacking correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_193",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about distance-vector routing is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "routing where neighbours share their distance estimates"
+    ],
+    "answer": 3,
+    "explanation": "distance-vector routing: routing where neighbours share their distance estimates",
+    "objective": "Identify the correct definition of distance-vector routing.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "share",
+      "distance",
+      "neighbour",
+      "estimate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast ARP with OSI model. Which would you choose and why?",
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "minKeywords": 1,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "State ARP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is three-way handshake in the context of transport?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the SYN, SYN-ACK, ACK exchange that opens a connection",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "Identify the correct definition of three-way handshake.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast fast retransmit with OSI model. Which would you choose and why?",
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "minKeywords": 1,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "State fast retransmit correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_65",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define subnet mask in addressing, in your own words.",
+    "keywords": [
+      "network",
+      "host",
+      "separate",
+      "pattern"
+    ],
+    "minKeywords": 1,
+    "explanation": "subnet mask: bit pattern separating a network portion from a host portion",
+    "objective": "State subnet mask correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define IPv4 addressing in addressing, in your own words.",
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "minKeywords": 1,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "State IPv4 addressing correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of CIDR suitable for a project update.",
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "minKeywords": 1,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "State CIDR correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define router in layers, in your own words.",
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "minKeywords": 1,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "State router correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does layers rely on TCP/IP model? Give a concrete reason.",
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "State TCP/IP model correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'TCP/IP model' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a device forwarding frames by MAC address",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "Identify the correct definition of TCP/IP model.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast TCP with OSI model. Which would you choose and why?",
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "State TCP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is congestion window in the context of transport?",
+    "options": [
+      "the sender's estimate of what the network can carry",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "Identify the correct definition of congestion window.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain OSI model to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a device forwarding frames by MAC address",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "Identify the correct definition of OSI model.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_e_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is encapsulation in the context of layers?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "adding a header at each layer as data travels down",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "Identify the correct definition of encapsulation.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast BGP with OSI model. Which would you choose and why?",
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "minKeywords": 1,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "State BGP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast encapsulation with OSI model. Which would you choose and why?",
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "minKeywords": 1,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "State encapsulation correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about three-way handshake is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the SYN, SYN-ACK, ACK exchange that opens a connection"
+    ],
+    "answer": 3,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "Identify the correct definition of three-way handshake.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'three-way handshake' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the SYN, SYN-ACK, ACK exchange that opens a connection"
+    ],
+    "answer": 3,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "Identify the correct definition of three-way handshake.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does security rely on symmetric encryption? Give a concrete reason.",
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "minKeywords": 1,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "State symmetric encryption correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast congestion window with OSI model. Which would you choose and why?",
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "minKeywords": 1,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "State congestion window correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define CIDR in addressing, in your own words.",
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "minKeywords": 1,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "State CIDR correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'multiplicative decrease' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "halving the congestion window after a loss",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 1,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "Identify the correct definition of multiplicative decrease.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain BGP to a teammate who has not seen it?",
+    "options": [
+      "the path-vector protocol used between autonomous systems",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "Identify the correct definition of BGP.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_9",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about TCP/IP model is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "a device forwarding frames by MAC address"
+    ],
+    "answer": 2,
+    "explanation": "TCP/IP model: the four-layer suite underlying the internet",
+    "objective": "Identify the correct definition of TCP/IP model.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "internet",
+      "four",
+      "layers",
+      "suite"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define switch in layers, in your own words.",
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "minKeywords": 1,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "State switch correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about perfect forward secrecy is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "compromising one session key does not expose earlier ones",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 2,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "Identify the correct definition of perfect forward secrecy.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define silly window syndrome in congestion, in your own words.",
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "minKeywords": 1,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "State silly window syndrome correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_25",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about switch is correct?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "a device forwarding frames by MAC address",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "switch: a device forwarding frames by MAC address",
+    "objective": "Identify the correct definition of switch.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "MAC",
+      "forward",
+      "frame",
+      "link"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain piggybacking to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "carrying an acknowledge on a data packet",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "Identify the correct definition of piggybacking.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_161",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define fast retransmit in congestion, in your own words.",
+    "keywords": [
+      "repeated",
+      "acknowledge",
+      "before timeout",
+      "resend quickly"
+    ],
+    "minKeywords": 1,
+    "explanation": "fast retransmit: resending on repeated acknowledgements before the timer expires",
+    "objective": "State fast retransmit correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of link-state routing suitable for a project update.",
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "minKeywords": 1,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "State link-state routing correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_137",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define additive increase in congestion, in your own words.",
+    "keywords": [
+      "one per round",
+      "linear",
+      "increase",
+      "avoidance"
+    ],
+    "minKeywords": 1,
+    "explanation": "additive increase: increasing the congestion window by one per round trip",
+    "objective": "State additive increase correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_89",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain UDP to a teammate who has not seen it?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a connectionless datagram transport",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 1,
+    "explanation": "UDP: a connectionless datagram transport",
+    "objective": "Identify the correct definition of UDP.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "connectionless",
+      "datagram",
+      "unreliable",
+      "simple"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_m_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about RIP is correct?",
+    "options": [
+      "a distance-vector interior gateway protocol",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 0,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "Identify the correct definition of RIP.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_209",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define TLS in security, in your own words.",
+    "keywords": [
+      "confidential",
+      "integrity",
+      "handshake",
+      "certificate"
+    ],
+    "minKeywords": 1,
+    "explanation": "TLS: a protocol giving confidentiality and integrity on top of a transport",
+    "objective": "State TLS correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_41",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about encapsulation is correct?",
+    "options": [
+      "adding a header at each layer as data travels down",
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "encapsulation: adding a header at each layer as data travels down",
+    "objective": "Identify the correct definition of encapsulation.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "header",
+      "layer",
+      "down",
+      "encapsulate"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_33",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'router' is involved, what is the most likely diagnosis?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "a device forwarding packets between networks by IP address"
+    ],
+    "answer": 3,
+    "explanation": "router: a device forwarding packets between networks by IP address",
+    "objective": "Identify the correct definition of router.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "IP",
+      "forward",
+      "packet",
+      "between"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_97",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of three-way handshake suitable for a project update.",
+    "keywords": [
+      "SYN",
+      "handshake",
+      "ACK",
+      "connection open"
+    ],
+    "minKeywords": 1,
+    "explanation": "three-way handshake: the SYN, SYN-ACK, ACK exchange that opens a connection",
+    "objective": "State three-way handshake correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_mt_57",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does addressing rely on CIDR? Give a concrete reason.",
+    "keywords": [
+      "prefix",
+      "varlength",
+      "aggregate",
+      "subnet mask"
+    ],
+    "minKeywords": 1,
+    "explanation": "CIDR: variable-length prefixes that allow route aggregation",
+    "objective": "State CIDR correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about piggybacking is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "carrying an acknowledge on a data packet",
+      "a seven-layer description of network functions"
+    ],
+    "answer": 2,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "Identify the correct definition of piggybacking.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'RIP' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "a distance-vector interior gateway protocol"
+    ],
+    "answer": 3,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "Identify the correct definition of RIP.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast data link layer with OSI model. Which would you choose and why?",
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "minKeywords": 1,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "State data link layer correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of multiplicative decrease suitable for a project update.",
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "minKeywords": 1,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "State multiplicative decrease correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_st_185",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of BGP suitable for a project update.",
+    "keywords": [
+      "path vector",
+      "autonomous",
+      "inter-domain",
+      "policy"
+    ],
+    "minKeywords": 1,
+    "explanation": "BGP: the path-vector protocol used between autonomous systems",
+    "objective": "State BGP correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_e_145",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is multiplicative decrease in the context of congestion?",
+    "options": [
+      "halving the congestion window after a loss",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet"
+    ],
+    "answer": 0,
+    "explanation": "multiplicative decrease: halving the congestion window after a loss",
+    "objective": "Identify the correct definition of multiplicative decrease.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "halve",
+      "loss",
+      "wieder",
+      "back off"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast OSI model with TCP/IP model. Which would you choose and why?",
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "State OSI model correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_169",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define OSPF in routing, in your own words.",
+    "keywords": [
+      "link state",
+      "interior",
+      "gateway",
+      "flooding"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSPF: a link-state interior gateway protocol",
+    "objective": "State OSPF correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does layers rely on OSI model? Give a concrete reason.",
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "minKeywords": 1,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "State OSI model correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_81",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transport rely on TCP? Give a concrete reason.",
+    "keywords": [
+      "reliable",
+      "connection",
+      "stream",
+      "ordered"
+    ],
+    "minKeywords": 1,
+    "explanation": "TCP: a connection-oriented reliable byte stream transport",
+    "objective": "State TCP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'OSI model' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a device forwarding frames by MAC address",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "OSI model: a seven-layer description of network functions",
+    "objective": "Identify the correct definition of OSI model.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "seven",
+      "layers",
+      "functions",
+      "model"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_h_121",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Given 'congestion window' is involved, what is the most likely diagnosis?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "the layer that transfers frames on a shared link",
+      "the sender's estimate of what the network can carry"
+    ],
+    "answer": 3,
+    "explanation": "congestion window: the sender's estimate of what the network can carry",
+    "objective": "Identify the correct definition of congestion window.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "keywords": [
+      "estimate",
+      "sender",
+      "capacity",
+      "window"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_st_105",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Write a one-sentence explanation of piggybacking suitable for a project update.",
+    "keywords": [
+      "with data",
+      "packet",
+      "acknowledge",
+      "efficiency"
+    ],
+    "minKeywords": 1,
+    "explanation": "piggybacking: carrying an acknowledge on a data packet",
+    "objective": "State piggybacking correctly in your own words.",
+    "skillTags": [
+      "Communication"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_ht_177",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast RIP with OSI model. Which would you choose and why?",
+    "keywords": [
+      "distance vector",
+      "interior",
+      "hops",
+      "gateway"
+    ],
+    "minKeywords": 1,
+    "explanation": "RIP: a distance-vector interior gateway protocol",
+    "objective": "State RIP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Routing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_ht_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Contrast silly window syndrome with OSI model. Which would you choose and why?",
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "minKeywords": 1,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "State silly window syndrome correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_225",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is perfect forward secrecy in the context of security?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "compromising one session key does not expose earlier ones"
+    ],
+    "answer": 3,
+    "explanation": "perfect forward secrecy: compromising one session key does not expose earlier ones",
+    "objective": "Identify the correct definition of perfect forward secrecy.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "keywords": [
+      "session",
+      "earlier",
+      "compromise",
+      "independent"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_s_201",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain link-state routing to a teammate who has not seen it?",
+    "options": [
+      "a seven-layer description of network functions",
+      "routing where each node floods its own topology view",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "link-state routing: routing where each node floods its own topology view",
+    "objective": "Identify the correct definition of link-state routing.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "flood",
+      "topology",
+      "own view",
+      "link state"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_s_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "How would you explain IPv4 addressing to a teammate who has not seen it?",
+    "options": [
+      "the four-layer suite underlying the internet",
+      "a seven-layer description of network functions",
+      "32-bit addresses written as four dotted decimal octets",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 2,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "Identify the correct definition of IPv4 addressing.",
+    "skillTags": [
+      "Communication"
+    ],
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "gen_networks_et_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define ARP in addressing, in your own words.",
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "minKeywords": 1,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "State ARP correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_et_217",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Define symmetric encryption in security, in your own words.",
+    "keywords": [
+      "same key",
+      "encrypt",
+      "decrypt",
+      "shared secret"
+    ],
+    "minKeywords": 1,
+    "explanation": "symmetric encryption: encryption where the same key encrypts and decrypts",
+    "objective": "State symmetric encryption correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Security"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about silly window syndrome is correct?",
+    "options": [
+      "a seven-layer description of network functions",
+      "transmitting tiny segments because of small advertised windows",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link"
+    ],
+    "answer": 1,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "Identify the correct definition of silly window syndrome.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_49",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is IPv4 addressing in the context of addressing?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "32-bit addresses written as four dotted decimal octets"
+    ],
+    "answer": 3,
+    "explanation": "IPv4 addressing: 32-bit addresses written as four dotted decimal octets",
+    "objective": "Identify the correct definition of IPv4 addressing.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "32 bit",
+      "octet",
+      "decimal",
+      "dotted"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_153",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does congestion rely on silly window syndrome? Give a concrete reason.",
+    "keywords": [
+      "tiny",
+      "segment",
+      "small",
+      "advertised"
+    ],
+    "minKeywords": 1,
+    "explanation": "silly window syndrome: transmitting tiny segments because of small advertised windows",
+    "objective": "State silly window syndrome correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Congestion"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_m_17",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which statement about data link layer is correct?",
+    "options": [
+      "the layer that transfers frames on a shared link",
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "a device forwarding frames by MAC address"
+    ],
+    "answer": 0,
+    "explanation": "data link layer: the layer that transfers frames on a shared link",
+    "objective": "Identify the correct definition of data link layer.",
+    "skillTags": [
+      "Computer Networks",
+      "Layers"
+    ],
+    "keywords": [
+      "frame",
+      "link",
+      "frame",
+      "second"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_mt_113",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does transport rely on slow start? Give a concrete reason.",
+    "keywords": [
+      "double",
+      "start",
+      "window",
+      "congestion"
+    ],
+    "minKeywords": 1,
+    "explanation": "slow start: doubling the congestion window at the beginning of a transfer",
+    "objective": "State slow start correctly in your own words.",
+    "skillTags": [
+      "Computer Networks",
+      "Transport"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "gen_networks_e_73",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is ARP in the context of addressing?",
+    "options": [
+      "a seven-layer description of network functions",
+      "the four-layer suite underlying the internet",
+      "the layer that transfers frames on a shared link",
+      "resolving an IP address to a MAC address on a link"
+    ],
+    "answer": 3,
+    "explanation": "ARP: resolving an IP address to a MAC address on a link",
+    "objective": "Identify the correct definition of ARP.",
+    "skillTags": [
+      "Computer Networks",
+      "Addressing"
+    ],
+    "keywords": [
+      "IP to MAC",
+      "link",
+      "resolve",
+      "broadcast"
+    ],
+    "softSkill": false
+  }
+]
