@@ -5,6 +5,20 @@
 // ---------------------------------------------------------------------------
 
 const TOKEN_KEY = "ai_interviewer.token";
+const THEME_KEY = "ai_interviewer.theme";
+
+// Icon set. Stroke-based so a single color drives both themes.
+const ICONS = {
+  problems: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>',
+  study: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>',
+  interview: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>',
+  daily: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+  dashboard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>',
+  profile: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',
+  submissions: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>',
+  board: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg>',
+  admin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>'
+};
 
 const state = {
   token: sessionStorage.getItem(TOKEN_KEY) || "",
@@ -18,8 +32,26 @@ const state = {
   interviewId: null,
   interviewTotal: 0,
   lastRunResult: null,
-  stats: null
+  stats: null,
+  theme: localStorage.getItem(THEME_KEY) || "light"
 };
+
+// ---------------------------------------------------------------------------
+// Theme. The palette lives entirely in CSS tokens, so switching is one
+// attribute on <html> plus persistence.
+// ---------------------------------------------------------------------------
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem(THEME_KEY, theme);
+  state.theme = theme;
+}
+
+function toggleTheme() {
+  applyTheme(state.theme === "light" ? "dark" : "light");
+}
+
+$("themeToggle").addEventListener("click", toggleTheme);
 
 async function request(path, options = {}) {
   const headers = Object.assign({}, options.headers);
@@ -53,17 +85,16 @@ const $ = (id) => document.getElementById(id);
 
 const NAV_ITEMS = [
   { group: "Practice" },
-  { id: "problems",  label: "Problems",     ico: "#" },
-  { id: "collections", label: "Study list", ico: "*" },
-  { id: "start",     label: "Interview",    ico: ">" },
-  { id: "daily",     label: "Daily",        ico: "!" },
+  { id: "problems",  label: "Problems",    icon: "problems" },
+  { id: "start",     label: "Interview",   icon: "interview" },
+  { id: "daily",     label: "Daily",       icon: "daily" },
   { group: "Progress" },
-  { id: "dashboard", label: "Dashboard",    ico: "~" },
-  { id: "profile",   label: "Profile",      ico: "@" },
-  { id: "submissions", label: "Submissions", ico: "=" },
-  { id: "board",     label: "Leaderboard",  ico: "^" },
+  { id: "dashboard", label: "Dashboard",   icon: "dashboard" },
+  { id: "profile",   label: "Profile",     icon: "profile" },
+  { id: "submissions", label: "Submissions", icon: "submissions" },
+  { id: "board",     label: "Leaderboard", icon: "board" },
   { group: "Admin" },
-  { id: "admin",     label: "Admin",        ico: "+" }
+  { id: "admin",     label: "Admin",       icon: "admin" }
 ];
 
 function escapeHtml(text) {
@@ -108,12 +139,141 @@ function show(view) {
 }
 
 // ---------------------------------------------------------------------------
-// Keyboard shortcuts. "/" jumps to problem search and Ctrl+Enter submits the
-// current answer, which are the two actions taken most often while practising.
+// Command palette. Navigation plus problem search in one surface, driven
+// entirely by data the API already returns.
+// ---------------------------------------------------------------------------
+
+const cmdkState = { open: false, query: "", results: [], selected: 0 };
+
+function cmdkNavItems() {
+  return NAV_ITEMS.filter((item) => item.id)
+    .filter((item) => item.id !== "admin" || (state.user && state.user.role === "Admin"));
+}
+
+function cmdkRender() {
+  const list = $("cmdkList");
+  const query = cmdkState.query.toLowerCase();
+
+  // Navigation entries match on label; problems match on id, topic or text.
+  const navMatches = cmdkNavItems()
+    .filter((item) => item.label.toLowerCase().includes(query))
+    .slice(0, 5)
+    .map((item) => ({
+      kind: "nav",
+      icon: item.icon,
+      label: item.label,
+      hint: "Go to",
+      run: () => show(item.id)
+    }));
+
+  let problemMatches = [];
+  if (query.length > 0) {
+    problemMatches = state.problems
+      .filter((p) => p.id.toLowerCase().includes(query)
+        || (p.topic || "").toLowerCase().includes(query)
+        || (p.text || "").toLowerCase().includes(query))
+      .slice(0, 8)
+      .map((p) => ({
+        kind: "problem",
+        icon: "problems",
+        label: p.text,
+        hint: p.difficulty,
+        run: () => openProblem(p.id)
+      }));
+  }
+
+  cmdkState.results = navMatches.concat(problemMatches);
+  if (cmdkState.selected >= cmdkState.results.length) {
+    cmdkState.selected = Math.max(0, cmdkState.results.length - 1);
+  }
+
+  if (cmdkState.results.length === 0) {
+    list.innerHTML = '<div class="cmdk-empty">No matches for "' + escapeHtml(cmdkState.query) + '"</div>';
+    return;
+  }
+
+  list.innerHTML = cmdkState.results.map((item, index) =>
+    '<div class="cmdk-item' + (index === cmdkState.selected ? " selected" : "") +
+    '" data-index="' + index + '">' +
+      '<span class="ico">' + (ICONS[item.icon] || "") + '</span>' +
+      '<span>' + escapeHtml(item.label) + '</span>' +
+      '<span class="hint">' + escapeHtml(item.hint) + '</span>' +
+    '</div>'
+  ).join("");
+}
+
+function cmdkOpen() {
+  cmdkState.open = true;
+  cmdkState.query = "";
+  cmdkState.selected = 0;
+  $("cmdk").hidden = false;
+  $("cmdkInput").value = "";
+  $("cmdkInput").focus();
+  cmdkRender();
+}
+
+function cmdkClose() {
+  cmdkState.open = false;
+  $("cmdk").hidden = true;
+}
+
+function cmdkCommit() {
+  const item = cmdkState.results[cmdkState.selected];
+  if (!item) return;
+  cmdkClose();
+  item.run();
+}
+
+$("cmdkTrigger").addEventListener("click", cmdkOpen);
+$("cmdk").addEventListener("click", (event) => {
+  if (event.target === $("cmdk")) cmdkClose();
+});
+$("cmdkInput").addEventListener("input", (event) => {
+  cmdkState.query = event.target.value;
+  cmdkState.selected = 0;
+  cmdkRender();
+});
+$("cmdkList").addEventListener("click", (event) => {
+  const item = event.target.closest("[data-index]");
+  if (!item) return;
+  cmdkState.selected = parseInt(item.dataset.index, 10);
+  cmdkCommit();
+});
+$("cmdkInput").addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    cmdkClose();
+  } else if (event.key === "ArrowDown") {
+    event.preventDefault();
+    cmdkState.selected = Math.min(cmdkState.selected + 1, cmdkState.results.length - 1);
+    cmdkRender();
+  } else if (event.key === "ArrowUp") {
+    event.preventDefault();
+    cmdkState.selected = Math.max(cmdkState.selected - 1, 0);
+    cmdkRender();
+  } else if (event.key === "Enter") {
+    event.preventDefault();
+    cmdkCommit();
+  }
+});
+
+// ---------------------------------------------------------------------------
+// Keyboard shortcuts. "/" jumps to problem search, Ctrl+K opens the command
+// palette and Ctrl+Enter submits the current answer.
 // ---------------------------------------------------------------------------
 
 document.addEventListener("keydown", (event) => {
   const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
+
+  // Ctrl/Cmd+K toggles the palette from anywhere.
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+    event.preventDefault();
+    if (cmdkState.open) cmdkClose(); else cmdkOpen();
+    return;
+  }
+  if (event.key === "Escape" && cmdkState.open) {
+    cmdkClose();
+    return;
+  }
 
   // "/" focuses search unless the user is already typing somewhere.
   if (event.key === "/" && !typing && state.view === "problems") {
@@ -153,16 +313,16 @@ function renderTopbar() {
   nav.innerHTML = "";
   if (state.user) {
     const items = [
-      { id: "problems", label: "Problems" },
-      { id: "start", label: "Interview" },
-      { id: "daily", label: "Daily" },
-      { id: "board", label: "Leaderboard" }
+      { id: "problems", label: "Problems", icon: "problems" },
+      { id: "start", label: "Interview", icon: "interview" },
+      { id: "daily", label: "Daily", icon: "daily" },
+      { id: "board", label: "Leaderboard", icon: "board" }
     ];
     for (const item of items) {
       const button = document.createElement("button");
       button.className = "navbtn" + (state.view === item.id ? " active" : "");
       button.dataset.nav = item.id;
-      button.textContent = item.label;
+      button.innerHTML = (ICONS[item.icon] || "") + "<span>" + escapeHtml(item.label) + "</span>";
       nav.appendChild(button);
     }
   } else {
@@ -216,7 +376,8 @@ function renderSidebar() {
     } else if (item.id === "problems" && state.stats) {
       suffix = "<span class='count'>" + state.problemsLoaded + "</span>";
     }
-    button.innerHTML = "<span class='ico'>" + item.ico + "</span>" + escapeHtml(item.label) + suffix;
+    button.innerHTML = "<span class='ico'>" + (ICONS[item.icon] || "") + "</span>" +
+      escapeHtml(item.label) + suffix;
     sidebar.appendChild(button);
   }
   renderTopbar();
@@ -304,6 +465,26 @@ async function loadCatalog() {
 // Dashboard
 // ---------------------------------------------------------------------------
 
+// Radial progress ring. SVG so it scales cleanly; the dash offset is animated
+// in CSS when the value changes.
+function ring(pct, label, color) {
+  const stroke = color || "var(--accent)";
+  const r = 46;
+  const c = 2 * Math.PI * r;
+  const clamped = Math.max(0, Math.min(100, pct));
+  return (
+    '<div class="ring">' +
+      '<svg viewBox="0 0 108 108" aria-hidden="true">' +
+        '<circle class="track" cx="54" cy="54" r="' + r + '"></circle>' +
+        '<circle class="bar" cx="54" cy="54" r="' + r + '" stroke="' + stroke + '"' +
+          ' stroke-dasharray="' + c.toFixed(1) + '"' +
+          ' stroke-dashoffset="' + (c * (1 - clamped / 100)).toFixed(1) + '"></circle>' +
+      '</svg>' +
+      '<div class="value">' + clamped + '%<small>' + escapeHtml(label) + '</small></div>' +
+    '</div>'
+  );
+}
+
 async function loadDashboard() {
   await loadStats();
   const stats = state.stats || { solved: { total: 0 }, available: { total: 0 } };
@@ -313,21 +494,45 @@ async function loadDashboard() {
   const solvedTotals = [solved.easy || 0, solved.medium || 0, solved.hard || 0];
   const availTotals = [available.easy || 0, available.medium || 0, available.hard || 0];
   const pct = (a, b) => (b > 0 ? Math.round((a / b) * 100) : 0);
+  const overall = pct(solved.total || 0, available.total || 0);
   const acceptance = stats.acceptancePermille
     ? (stats.acceptancePermille / 10).toFixed(1) + "%"
-    : "â€”";
+    : "—";
 
-  $("dashCards").innerHTML = [
-    statCard(solvedTotals[0] + "/" + availTotals[0], "Easy solved"),
-    statCard(solvedTotals[1] + "/" + availTotals[1], "Medium solved"),
-    statCard(solvedTotals[2] + "/" + availTotals[2], "Hard solved"),
-    statCard(solved.total || 0, "Total solved"),
-    statCard(stats.attempts || 0, "Submissions"),
-    statCard(acceptance, "Acceptance"),
-    statCard(stats.streak || 0, "Current streak")
-  ].join("");
+  // Bento: one wide hero card with the rings, then a row of metrics, then the
+  // recommendation and activity cards.
+  const bento = document.createElement("div");
+  bento.className = "bento";
+  bento.innerHTML =
+    '<div class="card span-2">' +
+      '<div class="bento-title"><h2>Progress</h2>' +
+      '<span class="muted">' + (solved.total || 0) + ' of ' + (available.total || 0) + ' solved</span></div>' +
+      '<div class="ring-row">' +
+        ring(overall, "solved") +
+        '<div class="bars" style="flex:1">' +
+          '<div class="bar-row"><span>Easy</span>' +
+            '<div class="bar-track"><div class="bar-fill" style="width:' + pct(solvedTotals[0], availTotals[0]) + '%"></div></div>' +
+            '<span class="bar-num">' + solvedTotals[0] + '/' + availTotals[0] + '</span></div>' +
+          '<div class="bar-row"><span>Medium</span>' +
+            '<div class="bar-track"><div class="bar-fill" style="width:' + pct(solvedTotals[1], availTotals[1]) + '%"></div></div>' +
+            '<span class="bar-num">' + solvedTotals[1] + '/' + availTotals[1] + '</span></div>' +
+          '<div class="bar-row"><span>Hard</span>' +
+            '<div class="bar-track"><div class="bar-fill" style="width:' + pct(solvedTotals[2], availTotals[2]) + '%"></div></div>' +
+            '<span class="bar-num">' + solvedTotals[2] + '/' + availTotals[2] + '</span></div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+    statCard(stats.streak || 0, "Current streak", "warn") +
+    statCard(acceptance, "Acceptance", "ok") +
+    statCard(stats.attempts || 0, "Submissions");
 
-  $("dashStreak").textContent = (stats.streak || 0) + " day streak Â· longest " + (stats.longestStreak || 0);
+  const cards = $("dashCards");
+  cards.className = "bento";
+  cards.replaceWith(bento);
+  bento.id = "dashCards";
+
+  $("dashStreak").textContent =
+    (stats.streak || 0) + " day streak · longest " + (stats.longestStreak || 0);
 
   // Recommended: unsolved, easiest first.
   const problems = await request("/api/problems?status=unsolved&sort=difficulty&limit=6");
@@ -342,8 +547,11 @@ async function loadDashboard() {
   renderCalendar($("dashCalendar"), stats.activeDates || []);
 }
 
-function statCard(value, label) {
-  return '<div class="stat"><b>' + escapeHtml(value) + "</b><span>" + escapeHtml(label) + "</span></div>";
+function statCard(value, label, variant) {
+  // variant adds a coloured rail to the card edge: "ok", "warn" or "bad".
+  const rail = variant ? " accent-" + variant : "";
+  return '<div class="stat' + rail + '"><span>' + escapeHtml(label) + '</span><b>' +
+    escapeHtml(value) + '</b></div>';
 }
 
 function renderCalendar(element, activeDates) {
@@ -1068,6 +1276,9 @@ async function loadAdmin() {
 // ---------------------------------------------------------------------------
 
 (async function init() {
+  // Restore the saved theme before first paint so there is no flash.
+  applyTheme(state.theme);
+
   // Reads as: what the browser is talking to, so the storage choice is visible.
   $("backendNote").textContent =
     "C++17 core · " + (window.location.protocol === "https:" ? "TLS" : "local HTTP") +
@@ -1078,6 +1289,8 @@ async function loadAdmin() {
     try {
       state.user = await request("/api/me");
       await loadStats();
+      // Warm the palette's problem index so Ctrl+K can search immediately.
+      state.problems = await request("/api/problems?limit=200").catch(() => []);
       renderTopbar();
       show("dashboard");
       return;

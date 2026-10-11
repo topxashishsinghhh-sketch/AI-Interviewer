@@ -1,17 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>AI Interviewer · Practice Platform</title>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <header class="topbar">
   <a class="brand" href="#" data-nav="dashboard">
-    <span class="logo">&lt;/&gt;</span> AI Interviewer
+    <span class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+           stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16 18 22 12 16 6"></polyline>
+        <polyline points="8 6 2 12 8 18"></polyline>
+      </svg>
+    </span>
+    AI Interviewer
   </a>
   <nav class="nav" id="nav"></nav>
+  <button class="icon-btn" id="cmdkTrigger" type="button" title="Command palette (Ctrl+K)" aria-label="Open command palette">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="7"></circle>
+      <line x1="21" y1="21" x2="16.5" y2="16.5"></line>
+    </svg>
+  </button>
+  <button class="icon-btn" id="themeToggle" type="button" title="Toggle theme" aria-label="Toggle colour theme">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+    </svg>
+  </button>
   <div class="who" id="who"></div>
 </header>
 
@@ -303,8 +324,20 @@
 
 <footer class="foot">
   <span id="backendNote"></span>
-  <span class="foot-hint">Press <kbd>/</kbd> to search problems · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to submit</span>
+  <span class="foot-hint">Press <kbd>/</kbd> to search problems · <kbd>Ctrl</kbd>+<kbd>K</kbd> for commands · <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to submit</span>
 </footer>
+
+<div id="cmdk" class="cmdk-backdrop" hidden>
+  <div class="cmdk" role="dialog" aria-label="Command palette">
+    <input id="cmdkInput" type="text" placeholder="Search problems, jump to a page…" autocomplete="off" spellcheck="false">
+    <div class="cmdk-list" id="cmdkList"></div>
+    <div class="cmdk-footer">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+      <span><kbd>↵</kbd> open</span>
+      <span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
 
 <script src="/app.js"></script>
 </body>
