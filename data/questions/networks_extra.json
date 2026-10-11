@@ -1,0 +1,123 @@
+[
+  {
+    "id": "net_extra_easy_1",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which protocol maps IP addresses to MAC addresses on a LAN?",
+    "options": ["ARP", "DNS", "DHCP", "ICMP"],
+    "answer": 0,
+    "explanation": "ARP broadcasts a request to resolve an IP to the hardware address on the local segment."
+  },
+  {
+    "id": "net_extra_easy_2",
+    "subject": "networks",
+    "topic": "protocols",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the default port for HTTP?",
+    "options": ["80", "443", "21", "8080"],
+    "answer": 0,
+    "explanation": "HTTP uses port 80 by convention; HTTPS uses 443."
+  },
+  {
+    "id": "net_extra_easy_3",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "At which OSI layer does a switch operate?",
+    "options": ["Data link", "Network", "Transport", "Session"],
+    "answer": 0,
+    "explanation": "Switches forward frames using MAC addresses, which is layer 2."
+  },
+  {
+    "id": "net_extra_easy_4",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Why is UDP suitable for live video streaming?",
+    "keywords": ["connectionless", "no retransmit", "latency", "loss", "fast"],
+    "minKeywords": 2,
+    "explanation": "UDP skips connection setup and retransmission, trading reliability for low latency."
+  },
+  {
+    "id": "net_extra_med_1",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "How does TCP flow control differ from congestion control?",
+    "keywords": ["receiver", "window", "network", "cwnd", "sliding"],
+    "minKeywords": 2,
+    "explanation": "Flow control respects the receiver's advertised window; congestion control infers network capacity with cwnd."
+  },
+  {
+    "id": "net_extra_med_2",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is a routing table used for?",
+    "keywords": ["destination", "next hop", "prefix", "longest match", "forward"],
+    "minKeywords": 2,
+    "explanation": "It maps destination prefixes to outgoing interfaces, choosing the longest matching prefix."
+  },
+  {
+    "id": "net_extra_med_3",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What does TLS primarily provide?",
+    "options": ["Confidentiality and integrity", "Faster routing", "DNS resolution", "IP addressing"],
+    "answer": 0,
+    "explanation": "TLS encrypts the payload and authenticates the server, giving confidentiality and integrity."
+  },
+  {
+    "id": "net_extra_hard_1",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Simulate TCP congestion control growth: print cwnd per RTT from 1 MSS until ssthresh, then linearly.",
+    "templateCode": "#include <iostream>\n\nint main() {\n    // ssthresh in MSS, rounds to print\n    int ssthresh, rounds;\n    std::cin >> ssthresh >> rounds;\n    // TODO: slow start (double) below ssthresh, then +1 per RTT\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "8 5",
+        "expectedOutput": "1 2 4 8 9",
+        "isHidden": false
+      },
+      {
+        "input": "2 4",
+        "expectedOutput": "1 2 3 4",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Slow start doubles cwnd each RTT until it reaches ssthresh, then congestion avoidance adds one MSS per RTT."
+  },
+  {
+    "id": "net_extra_hard_2",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain BGP's path-vector approach and why it scales where distance-vector does not.",
+    "keywords": ["as path", "policy", "loop prevention", "attribute", "autonomous system"],
+    "minKeywords": 2,
+    "explanation": "BGP advertises the full AS path, which prevents loops by inspection and carries policy attributes for inter-domain routing."
+  },
+  {
+    "id": "net_extra_hard_3",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Trace what happens at each layer when a browser sends a TCP segment to a remote server.",
+    "keywords": ["application", "segment", "packet", "frame", "encapsulation", "header"],
+    "minKeywords": 3,
+    "explanation": "Each layer adds its own header and passes the payload down: data, segment, packet, frame, then bits on the wire."
+  }
+]

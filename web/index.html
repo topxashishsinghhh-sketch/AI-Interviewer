@@ -116,7 +116,6 @@
       </div>
       <p class="muted center" id="problemCount"></p>
     </section>
-
     <!-- ====================== PROBLEM DETAIL ====================== -->
     <section id="view-problem" class="view" hidden>
       <button class="ghost back" data-nav="problems">← All problems</button>
@@ -246,18 +245,27 @@
 
     <!-- ====================== LEADERBOARD ====================== -->
     <section id="view-board" class="view" hidden>
-      <div class="page-head"><h1>Leaderboard</h1></div>
+      <div class="page-head">
+        <h1>Leaderboard</h1>
+        <div class="search">
+          <span class="muted" id="boardSummary"></span>
+        </div>
+      </div>
       <div class="filters">
         <select id="boardScope"><option value="global">Global</option><option value="college">My college</option><option value="branch">My branch</option></select>
         <select id="boardWindow"><option value="alltime">All time</option><option value="week">Week</option><option value="month">Month</option></select>
         <select id="boardRanking"><option value="score">By score</option><option value="solved">By solved</option><option value="streak">By streak</option></select>
       </div>
+
+      <div class="podium" id="boardPodium"></div>
+
       <div class="table-wrap">
         <table class="table" id="boardTable">
-          <thead><tr><th>#</th><th>Name</th><th>Score</th><th>Solved</th><th>Streak</th></tr></thead>
+          <thead><tr><th>#</th><th>Developer</th><th>Solved</th><th>Rate</th><th>Achievement</th><th>Progress</th></tr></thead>
           <tbody></tbody>
         </table>
       </div>
+      <p class="muted center" id="boardEmpty"></p>
     </section>
 
     <!-- ======================= PROFILE ======================= -->

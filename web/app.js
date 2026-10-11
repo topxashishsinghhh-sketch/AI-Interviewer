@@ -363,6 +363,14 @@ async function fillFilters() {
     ).join("");
 }
 
+// Difficulty groups mirror the reference platform: problems are presented as
+// sections rather than a flat table, so a learner sees the suggested path.
+const DIFFICULTY_SECTIONS = [
+  { key: "Easy",   label: "Beginner",     blurb: "Fundamentals and warm-ups" },
+  { key: "Medium", label: "Intermediate", blurb: "Core concepts applied" },
+  { key: "Hard",   label: "Advanced",     blurb: "Mastery and edge cases" }
+];
+
 async function loadProblems() {
   await fillFilters();
   const params = new URLSearchParams();
@@ -384,27 +392,66 @@ async function loadProblems() {
   }
   state.problems = problems;
   state.problemsLoaded = problems.length;
+  renderProblemSections(problems);
+  renderSidebar();
+}
 
-  const body = $("problemTable").querySelector("tbody");
-  body.innerHTML = problems.map((problem) =>
-    "<tr>" +
-      '<td class="col-status">' + (problem.solved ? '<span class="tick">✓</span>' : '<span class="tick pending">○</span>') + "</td>" +
-      '<td><span class="link" data-problem="' + escapeHtml(problem.id) + '">' + escapeHtml(problem.text) + "</span>" +
-        (problem.bookmarked ? ' <span style="color:var(--medium)">★</span>' : "") + "</td>" +
-      '<td class="col-subject muted">' + escapeHtml(problem.subject) + "</td>" +
-      '<td class="col-topic muted">' + escapeHtml(problem.topic) + "</td>" +
-      '<td class="col-diff">' + difficultyPill(problem.difficulty) + "</td>" +
-      '<td class="col-act muted">' + (problem.attempts > 0 ? problem.attempts + "×" : "") + "</td>" +
-    "</tr>"
-  ).join("") || '<tr><td colspan="6" class="muted">No problems match those filters.</td></tr>';
+function renderProblemSections(problems) {
+  const host = document.createElement("div");
+  host.id = "problemSections";
+
+  DIFFICULTY_SECTIONS.forEach((section) => {
+    const group = problems.filter((p) => p.difficulty === section.key);
+    if (group.length === 0) return;
+
+    const solvedInGroup = group.filter((p) => p.solved).length;
+    const block = document.createElement("div");
+    block.className = "difficulty-section";
+    block.innerHTML =
+      '<div class="section-head">' +
+        difficultyPill(section.key) +
+        '<div><b>' + escapeHtml(section.label) + '</b>' +
+        '<span class="muted"> · ' + escapeHtml(section.blurb) + '</span></div>' +
+        '<span class="section-count">' + solvedInGroup + "/" + group.length + '</span>' +
+      '</div>';
+
+    const list = document.createElement("div");
+    list.className = "challenge-list";
+    group.forEach((problem) => {
+      const row = document.createElement("div");
+      row.className = "challenge" + (problem.solved ? " solved" : "");
+      row.dataset.problem = problem.id;
+      row.innerHTML =
+        '<span class="challenge-state">' +
+          (problem.solved ? '<span class="tick">✓</span>' : '<span class="tick pending">○</span>') +
+        '</span>' +
+        '<span class="challenge-title">' + escapeHtml(problem.text) + '</span>' +
+        '<span class="challenge-tag">' + escapeHtml(problem.subject) + '</span>' +
+        '<span class="challenge-tag muted">' + escapeHtml(problem.topic) + '</span>' +
+        (problem.bookmarked ? '<span class="challenge-star">★</span>' : '') +
+        (problem.attempts > 0
+          ? '<span class="challenge-attempts">' + problem.attempts + '×</span>'
+          : '');
+      list.appendChild(row);
+    });
+    block.appendChild(list);
+    host.appendChild(block);
+  });
+
+  if (host.children.length === 0) {
+    host.innerHTML = '<p class="muted center">No problems match those filters.</p>';
+  }
 
   const counts = { Easy: 0, Medium: 0, Hard: 0 };
   problems.forEach((p) => { if (counts[p.difficulty] !== undefined) counts[p.difficulty]++; });
   $("problemCount").textContent =
-    problems.length + " problems · " + counts.Easy + " easy / " + counts.Medium +
-    " medium / " + counts.Hard + " hard";
+    problems.length + " problems · " + counts.Easy + " beginner / " + counts.Medium +
+    " intermediate / " + counts.Hard + " advanced";
 
-  renderSidebar();
+  // Replace the table with the grouped sections.
+  const old = document.getElementById("problemSections");
+  const table = $("problemTable");
+  if (old) old.replaceWith(host); else table.replaceWith(host);
 }
 
 for (const id of ["filterSubject", "filterDifficulty", "filterStatus", "filterType",
@@ -832,6 +879,18 @@ $("dailySubmit").addEventListener("click", async () => {
 // Leaderboard
 // ---------------------------------------------------------------------------
 
+// Achievement tiers, matching the reference platform's thresholds.
+function achievementFor(solved, total) {
+  if (total <= 0) return "Newcomer";
+  const pct = solved / total;
+  if (pct >= 1.0) return "Master";
+  if (pct >= 0.8) return "Expert";
+  if (pct >= 0.5) return "Advanced";
+  if (pct >= 0.25) return "Intermediate";
+  if (pct > 0) return "Beginner";
+  return "Newcomer";
+}
+
 async function loadLeaderboard() {
   const params = new URLSearchParams({
     scope: $("boardScope").value,
@@ -839,12 +898,51 @@ async function loadLeaderboard() {
     ranking: $("boardRanking").value
   });
   try {
-    const rows = await request("/api/leaderboard?" + params.toString());
+    const [rows, stats] = await Promise.all([
+      request("/api/leaderboard?" + params.toString()),
+      request("/api/stats/me").catch(() => null)
+    ]);
+    const total = stats && stats.available ? stats.available.total : 0;
+
+    // Podium for the top three.
+    const podium = $("boardPodium");
+    podium.innerHTML = rows.slice(0, 3).map((row, index) => {
+      const medal = ["🥇", "🥈", "🥉"][index];
+      const rate = total > 0 ? ((row.solved / total) * 100).toFixed(1) : "0.0";
+      return (
+        '<div class="podium-card rank-' + (index + 1) + '">' +
+          '<div class="podium-medal">' + medal + '</div>' +
+          '<div class="podium-name">' + escapeHtml(row.name) + '</div>' +
+          '<div class="podium-solved"><b>' + row.solved + '</b>/' + total + '</div>' +
+          '<div class="podium-rate">' + rate + '%</div>' +
+          '<div class="podium-badge">' + achievementFor(row.solved, total) + '</div>' +
+        '</div>'
+      );
+    }).join("");
+
     const body = $("boardTable").querySelector("tbody");
-    body.innerHTML = rows.map(row =>
-      "<tr><td class='muted'>" + row.rank + "</td><td>" + escapeHtml(row.name) + "</td><td>" +
-      row.score.toFixed(2) + "</td><td>" + row.solved + "</td><td>" + row.streak + "</td></tr>"
-    ).join("") || '<tr><td colspan="5" class="muted">No scores yet.</td></tr>';
+    body.innerHTML = rows.map((row, index) => {
+      const rate = total > 0 ? ((row.solved / total) * 100).toFixed(1) : "0.0";
+      // A short completion strip: one tick per roughly a tenth of the bank.
+      const cells = Math.min(20, Math.max(1, total > 0 ? Math.ceil(total / 6) : 1));
+      let filled = total > 0 ? Math.round((row.solved / total) * cells) : 0;
+      let grid = "";
+      for (let i = 0; i < cells; i++) grid += i < filled ? "✅" : "⬜";
+      return (
+        "<tr><td class='muted'>" + (index + 1) + "</td>" +
+        "<td>" + escapeHtml(row.name) + '</td>' +
+        '<td class="muted">' + row.solved + '/' + total + '</td>' +
+        '<td class="muted">' + rate + '%</td>' +
+        '<td>' + achievementFor(row.solved, total) + '</td>' +
+        '<td class="progress-grid">' + grid + '</td></tr>'
+      );
+    }).join("") || '<tr><td colspan="6" class="muted">No scores yet.</td></tr>';
+
+    $("boardSummary").textContent =
+      total > 0 ? total + " problems available" : "";
+    $("boardEmpty").textContent = rows.length === 0
+      ? "Complete an interview to appear on the board."
+      : "";
   } catch (error) {
     setMessage("problemCount", error.message, "error");
   }
@@ -889,9 +987,13 @@ async function loadProfile() {
   $("subjectProgress").innerHTML = rows.map(row => {
     const done = solvedBySubject[row.subject] || 0;
     const pct = row.total > 0 ? Math.round((done / row.total) * 100) : 0;
-    return '<div class="bar-row"><span>' + escapeHtml(row.subject) + "</span>" +
-      '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
-      '<span class="bar-num">' + done + "/" + row.total + "</span></div>";
+    const cells = 10;
+    const filled = Math.round((done / Math.max(1, row.total)) * cells);
+    let grid = "";
+    for (let i = 0; i < cells; i++) grid += i < filled ? "??" : "?";
+    return '<div class="bar-row"><span>' + escapeHtml(row.subject) + '</span>' +
+      '<span class="block-grid">' + grid + '</span>' +
+      '<span class="bar-num">' + pct + "% � " + done + "/" + row.total + '</span></div>';
   }).join("") || '<p class="muted">No subjects yet.</p>';
 
   renderCalendar($("profileCalendar"), stats.activeDates || []);

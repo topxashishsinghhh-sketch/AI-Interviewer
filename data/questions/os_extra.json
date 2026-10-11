@@ -1,0 +1,123 @@
+[
+  {
+    "id": "os_extra_easy_1",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is a Process Control Block?",
+    "options": ["A kernel data structure holding process state", "A CPU register set", "A disk sector", "A user-level stack"],
+    "answer": 0,
+    "explanation": "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed."
+  },
+  {
+    "id": "os_extra_easy_2",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the main purpose of virtual memory?",
+    "options": ["To give each process its own address space", "To speed up the disk", "To cache DNS", "To encrypt RAM"],
+    "answer": 0,
+    "explanation": "Virtual memory isolates address spaces and lets processes use more memory than is physically present."
+  },
+  {
+    "id": "os_extra_easy_3",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is a deadlock?",
+    "options": ["Processes waiting forever for each other", "A CPU stall", "A memory leak", "Disk failure"],
+    "answer": 0,
+    "explanation": "Deadlock is a cycle of waiting where no process can proceed."
+  },
+  {
+    "id": "os_extra_easy_4",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What is context switching?",
+    "keywords": ["save", "restore", "state", "switch", "overhead"],
+    "minKeywords": 2,
+    "explanation": "The OS saves the running process's state and restores another's so the CPU can be shared."
+  },
+  {
+    "id": "os_extra_med_1",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What does a Translation Lookaside Buffer cache?",
+    "options": ["Virtual to physical page mappings", "Open file handles", "DNS records", "Process IDs"],
+    "answer": 0,
+    "explanation": "The TLB holds recent page-table entries so most translations skip the memory walk."
+  },
+  {
+    "id": "os_extra_med_2",
+    "subject": "os",
+    "topic": "storage",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why do file systems use journaling?",
+    "keywords": ["crash", "consistency", "log", "replay", "metadata"],
+    "minKeywords": 2,
+    "explanation": "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent."
+  },
+  {
+    "id": "os_extra_med_3",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which of these is not a deadlock prevention technique?",
+    "options": ["Starvation", "Resource ordering", "No hold and wait", "Preemption"],
+    "answer": 0,
+    "explanation": "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions."
+  },
+  {
+    "id": "os_extra_hard_1",
+    "subject": "os",
+    "topic": "memory",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Simulate FIFO page replacement and report the number of page faults.",
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <queue>\n\nint main() {\n    int frames, n;\n    std::cin >> frames >> n;\n    std::vector<int> refs(n);\n    for (int& r : refs) std::cin >> r;\n    // TODO: FIFO with a queue of resident pages\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "3 12\n7 0 1 2 0 3 0 4 2 3 0 3",
+        "expectedOutput": "6",
+        "isHidden": false
+      },
+      {
+        "input": "1 5\n1 2 3 4 1",
+        "expectedOutput": "5",
+        "isHidden": true
+      }
+    ],
+    "explanation": "FIFO evicts the page that has been resident longest, which can suffer Belady's anomaly: more frames, more faults."
+  },
+  {
+    "id": "os_extra_hard_2",
+    "subject": "os",
+    "topic": "synchronization",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain priority inversion and how priority inheritance fixes it.",
+    "keywords": ["low", "high", "medium", "inherits", "blocked", "unbounded"],
+    "minKeywords": 2,
+    "explanation": "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner."
+  },
+  {
+    "id": "os_extra_hard_3",
+    "subject": "os",
+    "topic": "io",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Compare polling, interrupts and DMA for device I/O.",
+    "keywords": ["cpu", "busy wait", "bus", "direct memory access", "overhead"],
+    "minKeywords": 2,
+    "explanation": "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved."
+  }
+]

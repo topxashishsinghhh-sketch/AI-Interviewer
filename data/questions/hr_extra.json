@@ -1,0 +1,112 @@
+[
+  {
+    "id": "hr_extra_easy_1",
+    "subject": "hr",
+    "topic": "behavioural",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What does the STAR method stand for in interviews?",
+    "options": ["Situation, Task, Action, Result", "Strength, Target, Action, Review", "Skill, Task, Analysis, Rating", "Summary, Topic, Answer, Response"],
+    "answer": 0,
+    "explanation": "STAR structures a behavioural answer as situation, task, action and result."
+  },
+  {
+    "id": "hr_extra_easy_2",
+    "subject": "hr",
+    "topic": "communication",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What is active listening in an interview?",
+    "keywords": ["full attention", "clarify", "reflect", "interrupt", "respond"],
+    "minKeywords": 2,
+    "explanation": "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering."
+  },
+  {
+    "id": "hr_extra_easy_3",
+    "subject": "hr",
+    "topic": "career",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which question best shows self-awareness?",
+    "options": ["What is an area you want to improve?", "What is your salary expectation?", "When can you join?", "Where do you see the company in 10 years?"],
+    "answer": 0,
+    "explanation": "Naming a genuine growth area shows reflection rather than a rehearsed strength."
+  },
+  {
+    "id": "hr_extra_easy_4",
+    "subject": "hr",
+    "topic": "teamwork",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What makes a good answer to \"tell me about a conflict with a teammate\"?",
+    "keywords": ["specific", "assume good", "focus on outcome", "own part", "blame"],
+    "minKeywords": 2,
+    "explanation": "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally."
+  },
+  {
+    "id": "hr_extra_med_1",
+    "subject": "hr",
+    "topic": "behavioural",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "How should you answer \"what is your greatest weakness\"?",
+    "keywords": ["real", "not critical", "steps", "improvement", "progress"],
+    "minKeywords": 2,
+    "explanation": "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress."
+  },
+  {
+    "id": "hr_extra_med_2",
+    "subject": "hr",
+    "topic": "career",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "How do you answer \"why do you want to leave your current job\"?",
+    "keywords": ["positive", "growth", "forward", "no complaint", "role"],
+    "minKeywords": 2,
+    "explanation": "Focus on what you want next and the fit with this role, without criticising the current employer."
+  },
+  {
+    "id": "hr_extra_med_3",
+    "subject": "hr",
+    "topic": "negotiation",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "When asked for a salary expectation, what is usually the best approach?",
+    "options": ["Give a researched range first", "Say \"whatever you offer\"", "Refuse to answer", "State your current salary only"],
+    "answer": 0,
+    "explanation": "A researched range keeps negotiation grounded and shows market awareness."
+  },
+  {
+    "id": "hr_extra_hard_1",
+    "subject": "hr",
+    "topic": "behavioural",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "How do you answer \"describe a time you failed\" without hurting your case?",
+    "keywords": ["owned", "specific", "lesson", "changed", "behaviour", "outcome"],
+    "minKeywords": 2,
+    "explanation": "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it."
+  },
+  {
+    "id": "hr_extra_hard_2",
+    "subject": "hr",
+    "topic": "leadership",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "How do you demonstrate leadership when you have no formal authority?",
+    "keywords": ["influence", "ownership", "coordinate", "mentor", "credibility"],
+    "minKeywords": 2,
+    "explanation": "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring."
+  },
+  {
+    "id": "hr_extra_hard_3",
+    "subject": "hr",
+    "topic": "scenario",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "How would you respond if asked to deliver a feature you believe is wrong?",
+    "keywords": ["clarify", "data", "escalate", "commit", "disagree"],
+    "minKeywords": 2,
+    "explanation": "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided."
+  }
+]

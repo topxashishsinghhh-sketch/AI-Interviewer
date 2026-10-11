@@ -127,6 +127,7 @@ for the question-bank schema and current coverage (105 questions across
 | 7. Web UI + HTTP API | Done - browser front-end over the same services, JSON or Mongo |
 | 8. LeetCode-style practice platform | Done - problem catalogue, solve, submissions, stats, calendar, 12 subjects |
 | 9. Real code execution | Done - sandboxed compile + run with test cases, Run/Submit, verdicts |
+| 10. Reference-style UI + expanded bank | Done - difficulty sections, podium leaderboard, 261 questions |
 
 Both builds compile with no warnings under `-Wall -Wextra -Wshadow -Wconversion`.
 
@@ -261,6 +262,23 @@ Coding problems are compiled and run, not text-matched:
   test-results table
 - The problem API also returns `template` (starter code) and `samples` (visible
   cases), so the editor and Run button work without extra round trips
+
+## Features (Phase 10 - Reference-style UI and expanded bank)
+
+The web interface now follows the layout of a dedicated practice platform,
+and the question bank is three times larger:
+
+- **Problems page** presents difficulty sections (Beginner / Intermediate /
+  Advanced) with a solved-per-section counter, instead of a flat table
+- **Leaderboard** shows a podium for the top three (🥇🥈🥉 with solved/total,
+  completion rate and achievement tier) and a per-row ✅/⬜ completion strip
+- **Achievement tiers** from solved percentage: Newcomer, Beginner,
+  Intermediate, Advanced, Expert, Master
+- **Per-subject progress** uses 🟩/⬜ blocks with a percentage, matching the
+  reference's package-progress style
+- Question bank grown from 141 to **261 questions across 12 subjects**
+  (21-22 per subject, 8 Easy / 7 Medium / 7 Hard), including 26 coding
+  problems with runnable test cases
 
 ## OOP Patterns Used
 - **Abstraction**: Question, User, Repository interfaces

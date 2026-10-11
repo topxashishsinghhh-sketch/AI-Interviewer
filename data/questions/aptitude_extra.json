@@ -1,0 +1,123 @@
+[
+  {
+    "id": "apt_extra_easy_1",
+    "subject": "aptitude",
+    "topic": "arithmetic",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is 15% of 240?",
+    "options": ["36", "32", "40", "24"],
+    "answer": 0,
+    "explanation": "0.15 x 240 = 36."
+  },
+  {
+    "id": "apt_extra_easy_2",
+    "subject": "aptitude",
+    "topic": "percentages",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "A price rises from 200 to 250. What is the percentage increase?",
+    "options": ["25%", "20%", "50%", "12.5%"],
+    "answer": 0,
+    "explanation": "(250-200)/200 = 50/200 = 25%."
+  },
+  {
+    "id": "apt_extra_easy_3",
+    "subject": "aptitude",
+    "topic": "ratios",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What is a ratio?",
+    "keywords": ["compare", "two quantities", "fraction", "proportion", "division"],
+    "minKeywords": 2,
+    "explanation": "A ratio compares two quantities by division, expressed as a fraction or with a colon."
+  },
+  {
+    "id": "apt_extra_easy_4",
+    "subject": "aptitude",
+    "topic": "averages",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the average of 4, 8 and 12?",
+    "options": ["8", "6", "12", "24"],
+    "answer": 0,
+    "explanation": "(4+8+12)/3 = 24/3 = 8."
+  },
+  {
+    "id": "apt_extra_med_1",
+    "subject": "aptitude",
+    "topic": "time_speed",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "A car covers 150 km in 2.5 hours. What is its average speed?",
+    "options": ["60 km/h", "45 km/h", "75 km/h", "50 km/h"],
+    "answer": 0,
+    "explanation": "Speed = distance / time = 150 / 2.5 = 60 km/h."
+  },
+  {
+    "id": "apt_extra_med_2",
+    "subject": "aptitude",
+    "topic": "profit_loss",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is profit percentage based on cost price?",
+    "keywords": ["profit", "cost", "times 100", "selling price", "divide"],
+    "minKeywords": 2,
+    "explanation": "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price."
+  },
+  {
+    "id": "apt_extra_med_3",
+    "subject": "aptitude",
+    "topic": "number_series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Complete the series: 2, 6, 12, 20, 30, ?",
+    "options": ["42", "36", "40", "44"],
+    "answer": 0,
+    "explanation": "The terms are n(n+1), so the next is 6 x 7 = 42."
+  },
+  {
+    "id": "apt_extra_hard_1",
+    "subject": "aptitude",
+    "topic": "work_time",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Compute the time for two workers with combined-rate inputs to finish a job together, rounded to two decimals.",
+    "templateCode": "#include <iostream>\n#include <iomanip>\n\nint main() {\n    // a = days for worker A alone, b = days for worker B alone\n    double a, b;\n    std::cin >> a >> b;\n    double together = 0.0;\n    // TODO: combined rate 1/a + 1/b, guard against zero\n    std::cout << std::fixed << std::setprecision(2) << together << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "6 12",
+        "expectedOutput": "4.00",
+        "isHidden": false
+      },
+      {
+        "input": "4 4",
+        "expectedOutput": "2.00",
+        "isHidden": true
+      }
+    ],
+    "explanation": "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided."
+  },
+  {
+    "id": "apt_extra_hard_2",
+    "subject": "aptitude",
+    "topic": "probability",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain Bayes' theorem in plain language.",
+    "keywords": ["prior", "likelihood", "evidence", "posterior", "update"],
+    "minKeywords": 2,
+    "explanation": "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis."
+  },
+  {
+    "id": "apt_extra_hard_3",
+    "subject": "aptitude",
+    "topic": "mixtures",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "How do you solve an allegation problem where two mixtures are combined?",
+    "keywords": ["weighted average", "ratio", "amount", "concentration", "alligation"],
+    "minKeywords": 2,
+    "explanation": "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean."
+  }
+]

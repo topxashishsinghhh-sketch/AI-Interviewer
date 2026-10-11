@@ -241,9 +241,66 @@ button:disabled { opacity: .5; cursor: default; }
 .verdict.bad { border-color: rgba(242,84,91,.4); background: rgba(242,84,91,.08); }
 .verdict b { display: block; margin-bottom: 4px; }
 
+/* ---------------------------------------------------------------- challenge list */
+.difficulty-section { margin-bottom: 26px; }
+.section-head {
+  display: flex; align-items: center; gap: 10px;
+  padding-bottom: 9px; margin-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+.section-head b { font-size: 14px; }
+.section-count { margin-left: auto; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.challenge-list { display: grid; }
+.challenge {
+  display: flex; align-items: center; gap: 12px;
+  padding: 11px 12px; border-bottom: 1px solid var(--line);
+  cursor: pointer; font-size: 13.5px;
+}
+.challenge:last-child { border-bottom: 0; }
+.challenge:hover { background: rgba(255,255,255,.03); }
+.challenge-state { width: 18px; text-align: center; flex: 0 0 18px; }
+.challenge-title { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.challenge:hover .challenge-title { color: var(--accent); }
+.challenge.solved .challenge-title { color: var(--text); }
+.challenge-tag {
+  font-size: 11.5px; color: var(--muted);
+  padding: 2px 8px; border: 1px solid var(--line);
+  border-radius: 999px; white-space: nowrap;
+}
+.challenge-star { color: var(--medium); flex: 0 0 auto; }
+.challenge-attempts { font-size: 11.5px; color: var(--muted-2); flex: 0 0 auto; }
+
+/* ---------------------------------------------------------------- podium */
+.podium {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px; margin-bottom: 18px;
+}
+.podium-card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 18px 16px; text-align: center;
+}
+.podium-card.rank-1 { border-color: rgba(240, 200, 60, .45); background: linear-gradient(180deg, rgba(240,200,60,.09), var(--panel)); }
+.podium-card.rank-2 { border-color: rgba(200, 208, 220, .35); }
+.podium-card.rank-3 { border-color: rgba(205, 140, 80, .35); }
+.podium-medal { font-size: 26px; line-height: 1.1; }
+.podium-name { font-weight: 650; font-size: 14px; margin-top: 6px; }
+.podium-solved { font-size: 13px; color: var(--muted); margin-top: 3px; }
+.podium-solved b { color: var(--text); font-size: 16px; }
+.podium-rate { font-size: 12px; color: var(--accent); margin-top: 2px; }
+.podium-badge {
+  display: inline-block; margin-top: 9px; font-size: 11px; font-weight: 600;
+  padding: 2.5px 10px; border-radius: 999px;
+  color: var(--medium); background: rgba(240,169,46,.12);
+  border: 1px solid rgba(240,169,46,.3);
+}
+
+.progress-grid { letter-spacing: 1px; font-size: 11px; line-height: 1.3; }
+.block-grid { letter-spacing: 1px; font-size: 11px; }
+
 /* ---------------------------------------------------------------- progress bars */
 .bars { display: grid; gap: 10px; }
-.bar-row { display: grid; grid-template-columns: 150px 1fr 70px; align-items: center; gap: 12px; font-size: 12.5px; }
+.bar-row { display: grid; grid-template-columns: 110px 1fr 130px; align-items: center; gap: 12px; font-size: 12.5px; }
 .bar-track { height: 7px; background: var(--panel-2); border-radius: 99px; overflow: hidden; }
 .bar-fill { height: 100%; border-radius: 99px; background: var(--accent); }
 .bar-num { color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }

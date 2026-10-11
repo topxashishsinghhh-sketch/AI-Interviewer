@@ -1,0 +1,123 @@
+[
+  {
+    "id": "oop_extra_easy_1",
+    "subject": "oop",
+    "topic": "constructors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which constructor is called first for a derived class object?",
+    "options": ["Base class constructor", "Derived class constructor", "Both simultaneously", "Neither"],
+    "answer": 0,
+    "explanation": "Base construction happens first so the derived part builds on an initialised base."
+  },
+  {
+    "id": "oop_extra_easy_2",
+    "subject": "oop",
+    "topic": "access_specifiers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which access specifier makes members visible to derived classes but not outside the class?",
+    "options": ["private", "protected", "public", "internal"],
+    "answer": 1,
+    "explanation": "protected allows derived-class access while still hiding members from unrelated code."
+  },
+  {
+    "id": "oop_extra_easy_3",
+    "subject": "oop",
+    "topic": "encapsulation",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What is a friend function and why does it weaken encapsulation?",
+    "keywords": ["access", "private", "trusted", "not a member", "breaks"],
+    "minKeywords": 2,
+    "explanation": "A friend is granted access to private and protected members, which bypasses the public interface."
+  },
+  {
+    "id": "oop_extra_easy_4",
+    "subject": "oop",
+    "topic": "polymorphism",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What does the `override` keyword tell the compiler?",
+    "options": ["This function overrides a virtual base function", "This function is final", "This function is abstract", "This function is inline"],
+    "answer": 0,
+    "explanation": "override makes the compiler verify a base virtual with the same signature exists."
+  },
+  {
+    "id": "oop_extra_med_1",
+    "subject": "oop",
+    "topic": "memory",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why must a base class destructor be virtual when deleting through a base pointer?",
+    "keywords": ["undefined behaviour", "derived", "destructor", "not called", "virtual"],
+    "minKeywords": 2,
+    "explanation": "Without a virtual destructor only the base destructor runs, leaking derived resources."
+  },
+  {
+    "id": "oop_extra_med_2",
+    "subject": "oop",
+    "topic": "patterns",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What problem does the Observer pattern solve?",
+    "keywords": ["one to many", "notify", "depend", "state change", "loose coupling"],
+    "minKeywords": 2,
+    "explanation": "It defines a one-to-many dependency so dependents are notified without the subject knowing them."
+  },
+  {
+    "id": "oop_extra_med_3",
+    "subject": "oop",
+    "topic": "inheritance",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What is the diamond problem?",
+    "options": ["Two base classes sharing a common ancestor", "Multiple inheritance being illegal", "A class inheriting itself", "Virtual tables conflicting"],
+    "answer": 0,
+    "explanation": "A derived class inherits the same base twice, duplicating members unless virtual inheritance is used."
+  },
+  {
+    "id": "oop_extra_hard_1",
+    "subject": "oop",
+    "topic": "patterns",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Implement a thread-safe Singleton using a Meyers singleton (function-local static) and a getInstance() accessor.",
+    "templateCode": "#include <iostream>\n\nclass Singleton {\npublic:\n    static Singleton& getInstance();\n    Singleton(const Singleton&) = delete;\n    Singleton& operator=(const Singleton&) = delete;\n    int value() const { return value_; }\n    void setValue(int v) { value_ = v; }\nprivate:\n    Singleton() = default;\n    int value_ = 0;\n};\n",
+    "testCases": [
+      {
+        "input": "get_instance_twice\nsame_address\n",
+        "expectedOutput": "same",
+        "isHidden": false
+      },
+      {
+        "input": "get_instance\nset_value_41\nread_value\n",
+        "expectedOutput": "41",
+        "isHidden": true
+      }
+    ],
+    "explanation": "A function-local static is initialised on first use and guaranteed thread-safe since C++11."
+  },
+  {
+    "id": "oop_extra_hard_2",
+    "subject": "oop",
+    "topic": "design",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain how the Strategy pattern removes conditionals from shape area calculation.",
+    "keywords": ["encapsulate", "algorithm", "interface", "composition", "replace conditional"],
+    "minKeywords": 2,
+    "explanation": "Each area algorithm becomes a class behind a common interface selected by composition, so adding a shape adds a class instead of a branch."
+  },
+  {
+    "id": "oop_extra_hard_3",
+    "subject": "oop",
+    "topic": "contracts",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain Liskov Substitution and give a violation.",
+    "keywords": ["subtype", "substitute", "base", "behaviour", "exception", "strengthen precondition"],
+    "minKeywords": 2,
+    "explanation": "Subtypes must be usable wherever the base is expected; a subtype that throws on inputs the base accepts violates it."
+  }
+]

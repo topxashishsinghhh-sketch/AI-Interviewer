@@ -59,20 +59,25 @@ submitted program and compare stdout against `expectedOutput`.
 
 A subject needs at least 4 Easy, 4 Medium and 3 Hard questions so the linear
 ramp (3 Easy, 4 Medium, 3 Hard) and the adaptive strategy both have material to
-work with. Current coverage:
+work with. Current coverage (261 questions, 12 subjects):
 
 | Subject | Easy | Medium | Hard | Total |
 | --- | --- | --- | --- | --- |
-| accounting | 4 | 4 | 4 | 12 |
-| algo | 4 | 4 | 4 | 12 |
-| analog | 4 | 4 | 4 | 12 |
-| aptitude | 4 | 4 | 3 | 11 |
-| ds | 4 | 4 | 4 | 12 |
-| hr | 4 | 4 | 3 | 11 |
-| oop | 4 | 4 | 3 | 11 |
-| reasoning | 4 | 4 | 4 | 12 |
-| signals | 4 | 4 | 4 | 12 |
-| **Total** | **36** | **36** | **33** | **105** |
+| accounting | 8 | 7 | 7 | 22 |
+| algo | 8 | 7 | 7 | 22 |
+| analog | 8 | 7 | 7 | 22 |
+| aptitude | 8 | 7 | 6 | 21 |
+| dbms | 8 | 7 | 7 | 22 |
+| ds | 8 | 7 | 7 | 22 |
+| hr | 8 | 7 | 6 | 21 |
+| networks | 8 | 7 | 7 | 22 |
+| oop | 8 | 7 | 6 | 21 |
+| os | 8 | 7 | 7 | 22 |
+| reasoning | 8 | 7 | 7 | 22 |
+| signals | 8 | 7 | 7 | 22 |
+| **Total** | **96** | **84** | **81** | **261** |
+
+Question types: 96 MCQ, 139 Text, 26 Coding (each with runnable test cases).
 
 ## Weighting
 

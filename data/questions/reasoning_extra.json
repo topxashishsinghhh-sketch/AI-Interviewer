@@ -1,0 +1,123 @@
+[
+  {
+    "id": "reasoning_extra_easy_1",
+    "subject": "reasoning",
+    "topic": "coding_decoding",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "If 'CAT' is written as 'DBU', how is 'DOG' written?",
+    "options": ["EPH", "ENC", "DPH", "EOL"],
+    "answer": 0,
+    "explanation": "Each letter moves one position forward, so D-O-G becomes E-P-H."
+  },
+  {
+    "id": "reasoning_extra_easy_2",
+    "subject": "reasoning",
+    "topic": "odd_one_out",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which is the odd one out: 3, 5, 7, 11, 14?",
+    "options": ["14", "5", "7", "11"],
+    "answer": 0,
+    "explanation": "The others are prime; 14 is composite."
+  },
+  {
+    "id": "reasoning_extra_easy_3",
+    "subject": "reasoning",
+    "topic": "blood_relations",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Pointing to a photo, Neha said, \"He is the son of my grandmother's only child.\" Who is he?",
+    "options": ["Her brother", "Her cousin", "Her uncle", "Her nephew"],
+    "answer": 0,
+    "explanation": "The grandmother's only child is Neha's parent, so his son is her brother."
+  },
+  {
+    "id": "reasoning_extra_easy_4",
+    "subject": "reasoning",
+    "topic": "directions",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Facing north and turning 90 degrees right leaves you facing which direction?",
+    "keywords": ["east", "right", "clockwise", "north"],
+    "minKeywords": 2,
+    "explanation": "A clockwise quarter turn from north faces east."
+  },
+  {
+    "id": "reasoning_extra_med_1",
+    "subject": "reasoning",
+    "topic": "seating",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Six people sit in a circle. A is between B and C, and D is opposite A. Who sits between E and F?",
+    "options": ["Cannot be determined", "A", "B", "D"],
+    "answer": 0,
+    "explanation": "The remaining constraints do not fix the order of E and F, so it is undetermined."
+  },
+  {
+    "id": "reasoning_extra_med_2",
+    "subject": "reasoning",
+    "topic": "syllogism",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "All cats are animals. Some animals are wild. What follows?",
+    "keywords": ["does not follow", "may or may not", "not necessarily", "cannot conclude", "wild cats"],
+    "minKeywords": 2,
+    "explanation": "The wild animals might not include cats, so no affirmative conclusion is forced."
+  },
+  {
+    "id": "reasoning_extra_med_3",
+    "subject": "reasoning",
+    "topic": "series",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Complete the series: A1, C4, F9, J16, ?",
+    "options": ["O25", "O20", "N25", "P25"],
+    "answer": 0,
+    "explanation": "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25."
+  },
+  {
+    "id": "reasoning_extra_hard_1",
+    "subject": "reasoning",
+    "topic": "puzzles",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Three boxes are mislabeled Apples, Oranges and Mixed. How many fruits must you draw to relabel all correctly?",
+    "keywords": ["one", "mislabeled", "the mixed", "deduce", "swap"],
+    "minKeywords": 2,
+    "explanation": "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination."
+  },
+  {
+    "id": "reasoning_extra_hard_2",
+    "subject": "reasoning",
+    "topic": "logical_deduction",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain why modus tollens is valid.",
+    "keywords": ["if p then q", "not q", "not p", "contrapositive", "valid"],
+    "minKeywords": 2,
+    "explanation": "If P implies Q and Q is false, then P must be false, because Q true whenever P true."
+  },
+  {
+    "id": "reasoning_extra_hard_3",
+    "subject": "reasoning",
+    "topic": "chess",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Given a number, print the row index (1-8) of a knight's square numbered 1-64.",
+    "templateCode": "#include <iostream>\n\nint main() {\n    int square;\n    std::cin >> square;\n    int row = 0;\n    // TODO: rows of 8, 1-indexed from the top\n    std::cout << row << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "17",
+        "expectedOutput": "3",
+        "isHidden": false
+      },
+      {
+        "input": "64",
+        "expectedOutput": "8",
+        "isHidden": true
+      }
+    ],
+    "explanation": "With 8 files per rank, square s is on rank (s-1)/8 + 1."
+  }
+]

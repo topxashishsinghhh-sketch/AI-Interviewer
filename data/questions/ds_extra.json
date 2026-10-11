@@ -1,0 +1,123 @@
+[
+  {
+    "id": "ds_extra_easy_1",
+    "subject": "ds",
+    "topic": "stacks",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which expression does a stack help evaluate?",
+    "options": ["Infix to postfix conversion", "Binary search", "Shortest path", "Message queue routing"],
+    "answer": 0,
+    "explanation": "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead."
+  },
+  {
+    "id": "ds_extra_easy_2",
+    "subject": "ds",
+    "topic": "linked_lists",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the advantage of a doubly linked list over a singly linked one?",
+    "options": ["Traversal in both directions", "Lower memory use", "Faster random access", "Better cache behaviour"],
+    "answer": 0,
+    "explanation": "The extra prev pointer allows backward traversal and O(1) deletion given a node."
+  },
+  {
+    "id": "ds_extra_easy_3",
+    "subject": "ds",
+    "topic": "hashing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which technique resolves hash collisions by placing a key in the next free slot?",
+    "options": ["Open addressing / linear probing", "Separate chaining", "Universal hashing", "Perfect hashing"],
+    "answer": 0,
+    "explanation": "Linear probing scans forward from the collision until an empty slot is found."
+  },
+  {
+    "id": "ds_extra_easy_4",
+    "subject": "ds",
+    "topic": "arrays",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "Why is binary search impossible on an unsorted array?",
+    "keywords": ["order", "half", "discard", "guarantee", "sorted"],
+    "minKeywords": 2,
+    "explanation": "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot."
+  },
+  {
+    "id": "ds_extra_med_1",
+    "subject": "ds",
+    "topic": "binary_trees",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What is the time complexity of an in-order traversal of a binary search tree?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "answer": 0,
+    "explanation": "Every node is visited exactly once, so traversal is linear in the number of nodes."
+  },
+  {
+    "id": "ds_extra_med_2",
+    "subject": "ds",
+    "topic": "binary_trees",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is the height of a balanced binary tree with n nodes?",
+    "keywords": ["log", "height", "balanced", "depth"],
+    "minKeywords": 2,
+    "explanation": "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic."
+  },
+  {
+    "id": "ds_extra_med_3",
+    "subject": "ds",
+    "topic": "heaps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which structure gives the fastest access to the minimum of a stream?",
+    "options": ["Min-heap", "Sorted array", "Linked list", "Hash table"],
+    "answer": 0,
+    "explanation": "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n)."
+  },
+  {
+    "id": "ds_extra_hard_1",
+    "subject": "ds",
+    "topic": "graphs",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Given an adjacency list and a start node, print the BFS visitation order.",
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <queue>\n\nvoid bfs(const std::vector<std::vector<int>>& adj, int start) {\n    // TODO: mark visited, use a queue, print in visitation order\n}\n\nint main() {\n    std::vector<std::vector<int>> adj = {{1, 2}, {0, 3, 4}, {0, 4}, {1}, {1, 2}};\n    bfs(adj, 0);\n    std::cout << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "5\n0\n1 2\n0 3 4\n0 4\n1\n1 2",
+        "expectedOutput": "0 1 2 3 4",
+        "isHidden": false
+      },
+      {
+        "input": "5\n2\n0\n0 4\n\n1",
+        "expectedOutput": "2 0 4 1",
+        "isHidden": true
+      }
+    ],
+    "explanation": "BFS explores by levels using a queue, visiting each vertex and edge once."
+  },
+  {
+    "id": "ds_extra_hard_2",
+    "subject": "ds",
+    "topic": "balanced_trees",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Compare B-trees and red-black trees for index storage.",
+    "keywords": ["disk", "page", "fanout", "height", "memory"],
+    "minKeywords": 2,
+    "explanation": "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance."
+  },
+  {
+    "id": "ds_extra_hard_3",
+    "subject": "ds",
+    "topic": "complexity",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Why is quicksort often faster than mergesort in practice despite equal average complexity?",
+    "keywords": ["cache", "in place", "locality", "constant", "auxiliary"],
+    "minKeywords": 2,
+    "explanation": "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer."
+  }
+]

@@ -204,6 +204,349 @@
         "explanation":  "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE."
     },
     {
+        "id":  "acc_extra_easy_1",
+        "subject":  "accounting",
+        "topic":  "statements",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which statement shows the financial position at a point in time?",
+        "options":  [
+                        "Balance sheet",
+                        "Income statement",
+                        "Cash flow statement",
+                        "Notes to accounts"
+                    ],
+        "answer":  0,
+        "explanation":  "The balance sheet reports assets, liabilities and equity at a single date."
+    },
+    {
+        "id":  "acc_extra_easy_2",
+        "subject":  "accounting",
+        "topic":  "books",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which account is increased by a debit entry?",
+        "options":  [
+                        "An asset",
+                        "A liability",
+                        "Revenue",
+                        "Owner\u0027s equity"
+                    ],
+        "answer":  0,
+        "explanation":  "Debits increase assets and expenses; credits increase liabilities, equity and revenue."
+    },
+    {
+        "id":  "acc_extra_easy_3",
+        "subject":  "accounting",
+        "topic":  "basics",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is a trial balance used to check?",
+        "options":  [
+                        "That debits equal credits",
+                        "That profit is positive",
+                        "Cash on hand",
+                        "Tax payable"
+                    ],
+        "answer":  0,
+        "explanation":  "It verifies the ledger is arithmetically balanced before preparing statements."
+    },
+    {
+        "id":  "acc_extra_easy_4",
+        "subject":  "accounting",
+        "topic":  "books",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is double-entry bookkeeping?",
+        "keywords":  [
+                         "two sides",
+                         "debit",
+                         "credit",
+                         "equal",
+                         "transaction"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Every transaction records equal and opposite entries so the accounting equation stays balanced."
+    },
+    {
+        "id":  "acc_extra_med_1",
+        "subject":  "accounting",
+        "topic":  "cash_flow",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why is depreciation added back in the operating cash flow?",
+        "keywords":  [
+                         "non cash",
+                         "reduced profit",
+                         "no cash outflow",
+                         "add back",
+                         "expense"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Depreciation lowered net profit without any cash leaving, so it is added back to reconcile to cash."
+    },
+    {
+        "id":  "acc_extra_med_2",
+        "subject":  "accounting",
+        "topic":  "ratios",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What does the current ratio measure?",
+        "options":  [
+                        "Short-term liquidity",
+                        "Profitability",
+                        "Asset turnover",
+                        "Solvency"
+                    ],
+        "answer":  0,
+        "explanation":  "Current assets over current liabilities shows whether short-term obligations can be met."
+    },
+    {
+        "id":  "acc_extra_med_3",
+        "subject":  "accounting",
+        "topic":  "inventory",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "How does FIFO affect closing inventory during rising prices?",
+        "keywords":  [
+                         "older",
+                         "cheaper",
+                         "remaining",
+                         "newer",
+                         "costlier",
+                         "higher"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The oldest (cheapest) purchases are sold first, so the newer costlier stock stays in closing inventory."
+    },
+    {
+        "id":  "acc_extra_hard_1",
+        "subject":  "accounting",
+        "topic":  "analysis",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Compute the inventory turnover ratio for a given period, rounded to two decimals.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003ciomanip\u003e\n\nint main() {\n    double cogs, opening, closing;\n    std::cin \u003e\u003e cogs \u003e\u003e opening \u003e\u003e closing;\n    double avg = (opening + closing) / 2.0;\n    double turnover = 0.0;\n    // TODO: turnover = cogs / average inventory, guard against zero\n    std::cout \u003c\u003c std::fixed \u003c\u003c std::setprecision(2) \u003c\u003c turnover \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "500000 40000 60000",
+                              "expectedOutput":  "10.00",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "300000 0 0",
+                              "expectedOutput":  "0.00",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Turnover divided by 365 or 365 days gives days-in-inventory; a zero denominator must not divide by zero."
+    },
+    {
+        "id":  "acc_extra_hard_2",
+        "subject":  "accounting",
+        "topic":  "revenue",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain deferred revenue and when it is recognised.",
+        "keywords":  [
+                         "advance",
+                         "liability",
+                         "unearned",
+                         "performance obligation",
+                         "future"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Cash received before delivery is a liability, released to revenue as the performance obligation is satisfied."
+    },
+    {
+        "id":  "acc_extra_hard_3",
+        "subject":  "accounting",
+        "topic":  "ratios",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why can a very high return on equity be a warning sign?",
+        "keywords":  [
+                         "leverage",
+                         "debt",
+                         "amplif",
+                         "risk",
+                         "equity small"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "ROE rises when equity shrinks, so heavy borrowing can inflate the ratio without improved performance."
+    },
+    {
+        "id":  "algo_extra_easy_1",
+        "subject":  "algo",
+        "topic":  "sorting",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which sorting algorithm is stable and guarantees O(n log n) worst case?",
+        "options":  [
+                        "Merge sort",
+                        "Quicksort",
+                        "Heapsort",
+                        "Selection sort"
+                    ],
+        "answer":  0,
+        "explanation":  "Mergesort keeps equal keys in order and its worst case stays O(n log n)."
+    },
+    {
+        "id":  "algo_extra_easy_2",
+        "subject":  "algo",
+        "topic":  "searching",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the worst case of linear search?",
+        "options":  [
+                        "O(n)",
+                        "O(log n)",
+                        "O(1)",
+                        "O(n^2)"
+                    ],
+        "answer":  0,
+        "explanation":  "Every element may have to be inspected, so the worst case is linear."
+    },
+    {
+        "id":  "algo_extra_easy_3",
+        "subject":  "algo",
+        "topic":  "complexity",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What does Big-O notation describe?",
+        "keywords":  [
+                         "upper bound",
+                         "worst case",
+                         "growth",
+                         "rate",
+                         "asymptotic"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Big-O bounds growth from above as input size tends to infinity."
+    },
+    {
+        "id":  "algo_extra_easy_4",
+        "subject":  "algo",
+        "topic":  "recursion",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What does a recursive function need to terminate?",
+        "options":  [
+                        "A base case",
+                        "A loop",
+                        "A global variable",
+                        "Heap allocation"
+                    ],
+        "answer":  0,
+        "explanation":  "Without a base case the recursion never stops and the stack overflows."
+    },
+    {
+        "id":  "algo_extra_med_1",
+        "subject":  "algo",
+        "topic":  "two_pointers",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "How does the two-pointer technique speed up pair search in a sorted array?",
+        "keywords":  [
+                         "sorted",
+                         "ends",
+                         "move",
+                         "sum",
+                         "linear"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n)."
+    },
+    {
+        "id":  "algo_extra_med_2",
+        "subject":  "algo",
+        "topic":  "greedy",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why does greedy fail for the 0/1 knapsack?",
+        "keywords":  [
+                         "fraction",
+                         "whole",
+                         "local optimum",
+                         "global",
+                         "not optimal"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version."
+    },
+    {
+        "id":  "algo_extra_med_3",
+        "subject":  "algo",
+        "topic":  "dp",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Which is the space-optimised DP for Fibonacci?",
+        "options":  [
+                        "Two variables",
+                        "Full table",
+                        "Recursion without memoisation",
+                        "A queue"
+                    ],
+        "answer":  0,
+        "explanation":  "Only the previous two values are needed, so O(1) space replaces an O(n) table."
+    },
+    {
+        "id":  "algo_extra_hard_1",
+        "subject":  "algo",
+        "topic":  "graphs",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement Dijkstra shortest paths from node 0 and print the distance to every node, infinity for unreachable.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003cvector\u003e\n#include \u003cqueue\u003e\n#include \u003cutility\u003e\n\nint main() {\n    // Node count, edge count, then each edge as u v w\n    int n, m; std::cin \u003e\u003e n \u003e\u003e m;\n    std::vector\u003cstd::vector\u003cstd::pair\u003cint,int\u003e\u003e\u003e adj(n);\n    for (int i = 0; i \u003c m; ++i) { int u, v, w; std::cin \u003e\u003e u \u003e\u003e v \u003e\u003e w; adj[u].push_back({v, w}); }\n    // TODO: Dijkstra from 0, print distances\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "3 3\n0 1 4\n1 2 3\n0 2 10",
+                              "expectedOutput":  "0 4 7",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "4 2\n0 1 1\n2 3 5",
+                              "expectedOutput":  "0 1 INF INF",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex."
+    },
+    {
+        "id":  "algo_extra_hard_2",
+        "subject":  "algo",
+        "topic":  "dp",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why is a greedy interval-scheduling solution optimal but activity selection with weights is not?",
+        "keywords":  [
+                         "earliest finish",
+                         "weight",
+                         "counterexample",
+                         "optimal",
+                         "dynamic"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required."
+    },
+    {
+        "id":  "algo_extra_hard_3",
+        "subject":  "algo",
+        "topic":  "strings",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain why KMP avoids rescanning after a mismatch.",
+        "keywords":  [
+                         "prefix",
+                         "failure function",
+                         "automaton",
+                         "shift",
+                         "linear"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting."
+    },
+    {
         "id":  "algo_easy_1",
         "subject":  "algo",
         "topic":  "sorting",
@@ -603,6 +946,178 @@
         "explanation":  "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely."
     },
     {
+        "id":  "analog_extra_easy_1",
+        "subject":  "analog",
+        "topic":  "diodes",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the knee voltage of a germanium diode?",
+        "options":  [
+                        "0.3 V",
+                        "0.7 V",
+                        "1.4 V",
+                        "2 V"
+                    ],
+        "answer":  0,
+        "explanation":  "Germanium begins conducting around 0.2-0.3 V, lower than silicon\u0027s 0.7 V."
+    },
+    {
+        "id":  "analog_extra_easy_2",
+        "subject":  "analog",
+        "topic":  "opamps",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is slew rate?",
+        "options":  [
+                        "Maximum rate of output voltage change",
+                        "Maximum gain",
+                        "Input bias current",
+                        "Offset voltage"
+                    ],
+        "answer":  0,
+        "explanation":  "Slew rate limits how fast the output can swing, in V per microsecond."
+    },
+    {
+        "id":  "analog_extra_easy_3",
+        "subject":  "analog",
+        "topic":  "transistors",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "In a common-emitter amplifier the output is:",
+        "options":  [
+                        "Inverted and amplified",
+                        "In-phase and amplified",
+                        "Unchanged",
+                        "Only shifted"
+                    ],
+        "answer":  0,
+        "explanation":  "A base current increase raises collector current, dropping the collector voltage, so the output inverts."
+    },
+    {
+        "id":  "analog_extra_easy_4",
+        "subject":  "analog",
+        "topic":  "capacitors",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is the RC time constant?",
+        "keywords":  [
+                         "tau",
+                         "r times c",
+                         "63",
+                         "seconds",
+                         "charging"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "tau = RC is the time to reach about 63% of the final voltage in an RC circuit."
+    },
+    {
+        "id":  "analog_extra_med_1",
+        "subject":  "analog",
+        "topic":  "amplifiers",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why does a cascode stage widen bandwidth?",
+        "keywords":  [
+                         "miller",
+                         "capacitance",
+                         "reduce",
+                         "gain per stage",
+                         "shunt"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor\u0027s swing small."
+    },
+    {
+        "id":  "analog_extra_med_2",
+        "subject":  "analog",
+        "topic":  "feedback",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "How does negative feedback improve bandwidth?",
+        "keywords":  [
+                         "gain bandwidth",
+                         "trade",
+                         "lower gain",
+                         "wider",
+                         "product"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response."
+    },
+    {
+        "id":  "analog_extra_med_3",
+        "subject":  "analog",
+        "topic":  "opamps",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What causes offset voltage in an op-amp?",
+        "options":  [
+                        "Mismatch in the input differential pair",
+                        "Thermal noise alone",
+                        "Power supply ripple",
+                        "Feedback resistor tolerance"
+                    ],
+        "answer":  0,
+        "explanation":  "Device mismatch in the input pair means zero output needs a small nonzero differential input."
+    },
+    {
+        "id":  "analog_extra_hard_1",
+        "subject":  "analog",
+        "topic":  "amplifiers",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Compute the output voltage of an inverting op-amp with rail clipping at +/-Vcc for each input sample.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003ciomanip\u003e\n#include \u003cvector\u003e\n\nint main() {\n    double rf, vin_ref, vcc;\n    int n;\n    std::cin \u003e\u003e rf \u003e\u003e vin_ref \u003e\u003e vcc \u003e\u003e n;\n    double gain = -rf / vin_ref;\n    std::vector\u003cdouble\u003e out(n);\n    for (int i = 0; i \u003c n; ++i) {\n        double v; std::cin \u003e\u003e v;\n        // TODO: apply gain and clamp to [-vcc, vcc]\n    }\n    for (double v : out) std::cout \u003c\u003c std::fixed \u003c\u003c std::setprecision(1) \u003c\u003c v \u003c\u003c \u0027 \u0027;\n    std::cout \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "10000 1000 12 3\n0.5 -2 10",
+                              "expectedOutput":  "-5.0 12.0 -12.0",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "2000 1000 5 2\n1 -1",
+                              "expectedOutput":  "-2.0 2.0",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "The output is gain times input limited to the rails; clipping models a real op-amp\u0027s finite supply."
+    },
+    {
+        "id":  "analog_extra_hard_2",
+        "subject":  "analog",
+        "topic":  "oscillators",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "State the Barkhausen criterion for oscillation.",
+        "keywords":  [
+                         "loop gain",
+                         "unity magnitude",
+                         "phase",
+                         "360",
+                         "0 degrees",
+                         "condition"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation."
+    },
+    {
+        "id":  "analog_extra_hard_3",
+        "subject":  "analog",
+        "topic":  "noise",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Compare flicker and white noise in terms of frequency dependence.",
+        "keywords":  [
+                         "1/f",
+                         "low frequency",
+                         "flat",
+                         "thermal",
+                         "spectral density"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency."
+    },
+    {
         "id":  "apt_easy_1",
         "subject":  "aptitude",
         "topic":  "numbers",
@@ -796,6 +1311,176 @@
                      ],
         "minKeywords":  2,
         "explanation":  "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-xÂ²/10000). Net change = -xÂ²/100%. Always a decrease."
+    },
+    {
+        "id":  "apt_extra_easy_1",
+        "subject":  "aptitude",
+        "topic":  "arithmetic",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is 15% of 240?",
+        "options":  [
+                        "36",
+                        "32",
+                        "40",
+                        "24"
+                    ],
+        "answer":  0,
+        "explanation":  "0.15 x 240 = 36."
+    },
+    {
+        "id":  "apt_extra_easy_2",
+        "subject":  "aptitude",
+        "topic":  "percentages",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "A price rises from 200 to 250. What is the percentage increase?",
+        "options":  [
+                        "25%",
+                        "20%",
+                        "50%",
+                        "12.5%"
+                    ],
+        "answer":  0,
+        "explanation":  "(250-200)/200 = 50/200 = 25%."
+    },
+    {
+        "id":  "apt_extra_easy_3",
+        "subject":  "aptitude",
+        "topic":  "ratios",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is a ratio?",
+        "keywords":  [
+                         "compare",
+                         "two quantities",
+                         "fraction",
+                         "proportion",
+                         "division"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A ratio compares two quantities by division, expressed as a fraction or with a colon."
+    },
+    {
+        "id":  "apt_extra_easy_4",
+        "subject":  "aptitude",
+        "topic":  "averages",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the average of 4, 8 and 12?",
+        "options":  [
+                        "8",
+                        "6",
+                        "12",
+                        "24"
+                    ],
+        "answer":  0,
+        "explanation":  "(4+8+12)/3 = 24/3 = 8."
+    },
+    {
+        "id":  "apt_extra_med_1",
+        "subject":  "aptitude",
+        "topic":  "time_speed",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "A car covers 150 km in 2.5 hours. What is its average speed?",
+        "options":  [
+                        "60 km/h",
+                        "45 km/h",
+                        "75 km/h",
+                        "50 km/h"
+                    ],
+        "answer":  0,
+        "explanation":  "Speed = distance / time = 150 / 2.5 = 60 km/h."
+    },
+    {
+        "id":  "apt_extra_med_2",
+        "subject":  "aptitude",
+        "topic":  "profit_loss",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is profit percentage based on cost price?",
+        "keywords":  [
+                         "profit",
+                         "cost",
+                         "times 100",
+                         "selling price",
+                         "divide"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price."
+    },
+    {
+        "id":  "apt_extra_med_3",
+        "subject":  "aptitude",
+        "topic":  "number_series",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Complete the series: 2, 6, 12, 20, 30, ?",
+        "options":  [
+                        "42",
+                        "36",
+                        "40",
+                        "44"
+                    ],
+        "answer":  0,
+        "explanation":  "The terms are n(n+1), so the next is 6 x 7 = 42."
+    },
+    {
+        "id":  "apt_extra_hard_1",
+        "subject":  "aptitude",
+        "topic":  "work_time",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Compute the time for two workers with combined-rate inputs to finish a job together, rounded to two decimals.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003ciomanip\u003e\n\nint main() {\n    // a = days for worker A alone, b = days for worker B alone\n    double a, b;\n    std::cin \u003e\u003e a \u003e\u003e b;\n    double together = 0.0;\n    // TODO: combined rate 1/a + 1/b, guard against zero\n    std::cout \u003c\u003c std::fixed \u003c\u003c std::setprecision(2) \u003c\u003c together \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "6 12",
+                              "expectedOutput":  "4.00",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "4 4",
+                              "expectedOutput":  "2.00",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided."
+    },
+    {
+        "id":  "apt_extra_hard_2",
+        "subject":  "aptitude",
+        "topic":  "probability",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain Bayes\u0027 theorem in plain language.",
+        "keywords":  [
+                         "prior",
+                         "likelihood",
+                         "evidence",
+                         "posterior",
+                         "update"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis."
+    },
+    {
+        "id":  "apt_extra_hard_3",
+        "subject":  "aptitude",
+        "topic":  "mixtures",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "How do you solve an allegation problem where two mixtures are combined?",
+        "keywords":  [
+                         "weighted average",
+                         "ratio",
+                         "amount",
+                         "concentration",
+                         "alligation"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean."
     },
     {
         "id":  "cpp_oop_easy_1",
@@ -1401,6 +2086,347 @@
         "explanation":  "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime."
     },
     {
+        "id":  "dbms_extra_easy_1",
+        "subject":  "dbms",
+        "topic":  "sql",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which JOIN returns rows matching in both tables?",
+        "options":  [
+                        "INNER JOIN",
+                        "LEFT JOIN",
+                        "RIGHT JOIN",
+                        "CROSS JOIN"
+                    ],
+        "answer":  0,
+        "explanation":  "An inner join keeps only rows whose join predicate matches on both sides."
+    },
+    {
+        "id":  "dbms_extra_easy_2",
+        "subject":  "dbms",
+        "topic":  "sql",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which clause removes duplicate rows from a result set?",
+        "options":  [
+                        "DISTINCT",
+                        "UNIQUE",
+                        "GROUP",
+                        "FILTER"
+                    ],
+        "answer":  0,
+        "explanation":  "SELECT DISTINCT deduplicates the projected rows."
+    },
+    {
+        "id":  "dbms_extra_easy_3",
+        "subject":  "dbms",
+        "topic":  "keys",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is a foreign key?",
+        "options":  [
+                        "A column referencing a primary key in another table",
+                        "A unique index on the same table",
+                        "Any non-null column",
+                        "A computed column"
+                    ],
+        "answer":  0,
+        "explanation":  "A foreign key enforces referential integrity between two relations."
+    },
+    {
+        "id":  "dbms_extra_easy_4",
+        "subject":  "dbms",
+        "topic":  "relational",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is relational algebra?",
+        "keywords":  [
+                         "operations",
+                         "relations",
+                         "select",
+                         "project",
+                         "join",
+                         "formal"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It is the formal query language of operations over relations that SQL is built on."
+    },
+    {
+        "id":  "dbms_extra_med_1",
+        "subject":  "dbms",
+        "topic":  "sql",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the difference between WHERE and HAVING?",
+        "keywords":  [
+                         "before grouping",
+                         "after grouping",
+                         "rows",
+                         "aggregate",
+                         "filter"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates."
+    },
+    {
+        "id":  "dbms_extra_med_2",
+        "subject":  "dbms",
+        "topic":  "indexing",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Which index type is best for range queries?",
+        "options":  [
+                        "B+ tree",
+                        "Hash",
+                        "Bitmap",
+                        "Bloom filter"
+                    ],
+        "answer":  0,
+        "explanation":  "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential."
+    },
+    {
+        "id":  "dbms_extra_med_3",
+        "subject":  "dbms",
+        "topic":  "transactions",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is a phantom read?",
+        "keywords":  [
+                         "range",
+                         "new rows",
+                         "repeat",
+                         "transaction",
+                         "insert"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Re-running a range predicate returns newly inserted rows that another transaction committed in between."
+    },
+    {
+        "id":  "dbms_extra_hard_1",
+        "subject":  "dbms",
+        "topic":  "query",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Write SQL to rank employees by salary within each department, highest first.",
+        "templateCode":  "-- Employees: id, name, dept, salary\n-- Output: dept, name, salary, rank\nSELECT dept, name, salary FROM employees;\n",
+        "testCases":  [
+                          {
+                              "input":  "eng Alice 90\neng Bob 80\nsales Cara 95",
+                              "expectedOutput":  "eng Alice 90 1\neng Bob 80 2\nsales Cara 95 1",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "eng Alice 90\neng Bob 90",
+                              "expectedOutput":  "eng Alice 90 1\neng Bob 90 1",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next."
+    },
+    {
+        "id":  "dbms_extra_hard_2",
+        "subject":  "dbms",
+        "topic":  "transactions",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain how MVCC avoids readers blocking writers.",
+        "keywords":  [
+                         "version",
+                         "snapshot",
+                         "writer",
+                         "copy",
+                         "no read lock"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers."
+    },
+    {
+        "id":  "dbms_extra_hard_3",
+        "subject":  "dbms",
+        "topic":  "optimization",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "How does a cost-based optimiser choose a join order?",
+        "keywords":  [
+                         "cardinality",
+                         "statistics",
+                         "selectivity",
+                         "plan",
+                         "cost model"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost."
+    },
+    {
+        "id":  "ds_extra_easy_1",
+        "subject":  "ds",
+        "topic":  "stacks",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which expression does a stack help evaluate?",
+        "options":  [
+                        "Infix to postfix conversion",
+                        "Binary search",
+                        "Shortest path",
+                        "Message queue routing"
+                    ],
+        "answer":  0,
+        "explanation":  "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead."
+    },
+    {
+        "id":  "ds_extra_easy_2",
+        "subject":  "ds",
+        "topic":  "linked_lists",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the advantage of a doubly linked list over a singly linked one?",
+        "options":  [
+                        "Traversal in both directions",
+                        "Lower memory use",
+                        "Faster random access",
+                        "Better cache behaviour"
+                    ],
+        "answer":  0,
+        "explanation":  "The extra prev pointer allows backward traversal and O(1) deletion given a node."
+    },
+    {
+        "id":  "ds_extra_easy_3",
+        "subject":  "ds",
+        "topic":  "hashing",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which technique resolves hash collisions by placing a key in the next free slot?",
+        "options":  [
+                        "Open addressing / linear probing",
+                        "Separate chaining",
+                        "Universal hashing",
+                        "Perfect hashing"
+                    ],
+        "answer":  0,
+        "explanation":  "Linear probing scans forward from the collision until an empty slot is found."
+    },
+    {
+        "id":  "ds_extra_easy_4",
+        "subject":  "ds",
+        "topic":  "arrays",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "Why is binary search impossible on an unsorted array?",
+        "keywords":  [
+                         "order",
+                         "half",
+                         "discard",
+                         "guarantee",
+                         "sorted"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot."
+    },
+    {
+        "id":  "ds_extra_med_1",
+        "subject":  "ds",
+        "topic":  "binary_trees",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What is the time complexity of an in-order traversal of a binary search tree?",
+        "options":  [
+                        "O(n)",
+                        "O(log n)",
+                        "O(n log n)",
+                        "O(1)"
+                    ],
+        "answer":  0,
+        "explanation":  "Every node is visited exactly once, so traversal is linear in the number of nodes."
+    },
+    {
+        "id":  "ds_extra_med_2",
+        "subject":  "ds",
+        "topic":  "binary_trees",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the height of a balanced binary tree with n nodes?",
+        "keywords":  [
+                         "log",
+                         "height",
+                         "balanced",
+                         "depth"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic."
+    },
+    {
+        "id":  "ds_extra_med_3",
+        "subject":  "ds",
+        "topic":  "heaps",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Which structure gives the fastest access to the minimum of a stream?",
+        "options":  [
+                        "Min-heap",
+                        "Sorted array",
+                        "Linked list",
+                        "Hash table"
+                    ],
+        "answer":  0,
+        "explanation":  "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n)."
+    },
+    {
+        "id":  "ds_extra_hard_1",
+        "subject":  "ds",
+        "topic":  "graphs",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Given an adjacency list and a start node, print the BFS visitation order.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003cvector\u003e\n#include \u003cqueue\u003e\n\nvoid bfs(const std::vector\u003cstd::vector\u003cint\u003e\u003e\u0026 adj, int start) {\n    // TODO: mark visited, use a queue, print in visitation order\n}\n\nint main() {\n    std::vector\u003cstd::vector\u003cint\u003e\u003e adj = {{1, 2}, {0, 3, 4}, {0, 4}, {1}, {1, 2}};\n    bfs(adj, 0);\n    std::cout \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "5\n0\n1 2\n0 3 4\n0 4\n1\n1 2",
+                              "expectedOutput":  "0 1 2 3 4",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "5\n2\n0\n0 4\n\n1",
+                              "expectedOutput":  "2 0 4 1",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "BFS explores by levels using a queue, visiting each vertex and edge once."
+    },
+    {
+        "id":  "ds_extra_hard_2",
+        "subject":  "ds",
+        "topic":  "balanced_trees",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Compare B-trees and red-black trees for index storage.",
+        "keywords":  [
+                         "disk",
+                         "page",
+                         "fanout",
+                         "height",
+                         "memory"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance."
+    },
+    {
+        "id":  "ds_extra_hard_3",
+        "subject":  "ds",
+        "topic":  "complexity",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why is quicksort often faster than mergesort in practice despite equal average complexity?",
+        "keywords":  [
+                         "cache",
+                         "in place",
+                         "locality",
+                         "constant",
+                         "auxiliary"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer."
+    },
+    {
         "id":  "hr_easy_1",
         "subject":  "hr",
         "topic":  "behavioral",
@@ -1591,6 +2617,174 @@
                           }
                       ],
         "explanation":  "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class."
+    },
+    {
+        "id":  "hr_extra_easy_1",
+        "subject":  "hr",
+        "topic":  "behavioural",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What does the STAR method stand for in interviews?",
+        "options":  [
+                        "Situation, Task, Action, Result",
+                        "Strength, Target, Action, Review",
+                        "Skill, Task, Analysis, Rating",
+                        "Summary, Topic, Answer, Response"
+                    ],
+        "answer":  0,
+        "explanation":  "STAR structures a behavioural answer as situation, task, action and result."
+    },
+    {
+        "id":  "hr_extra_easy_2",
+        "subject":  "hr",
+        "topic":  "communication",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is active listening in an interview?",
+        "keywords":  [
+                         "full attention",
+                         "clarify",
+                         "reflect",
+                         "interrupt",
+                         "respond"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering."
+    },
+    {
+        "id":  "hr_extra_easy_3",
+        "subject":  "hr",
+        "topic":  "career",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which question best shows self-awareness?",
+        "options":  [
+                        "What is an area you want to improve?",
+                        "What is your salary expectation?",
+                        "When can you join?",
+                        "Where do you see the company in 10 years?"
+                    ],
+        "answer":  0,
+        "explanation":  "Naming a genuine growth area shows reflection rather than a rehearsed strength."
+    },
+    {
+        "id":  "hr_extra_easy_4",
+        "subject":  "hr",
+        "topic":  "teamwork",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What makes a good answer to \"tell me about a conflict with a teammate\"?",
+        "keywords":  [
+                         "specific",
+                         "assume good",
+                         "focus on outcome",
+                         "own part",
+                         "blame"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally."
+    },
+    {
+        "id":  "hr_extra_med_1",
+        "subject":  "hr",
+        "topic":  "behavioural",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "How should you answer \"what is your greatest weakness\"?",
+        "keywords":  [
+                         "real",
+                         "not critical",
+                         "steps",
+                         "improvement",
+                         "progress"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress."
+    },
+    {
+        "id":  "hr_extra_med_2",
+        "subject":  "hr",
+        "topic":  "career",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "How do you answer \"why do you want to leave your current job\"?",
+        "keywords":  [
+                         "positive",
+                         "growth",
+                         "forward",
+                         "no complaint",
+                         "role"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Focus on what you want next and the fit with this role, without criticising the current employer."
+    },
+    {
+        "id":  "hr_extra_med_3",
+        "subject":  "hr",
+        "topic":  "negotiation",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "When asked for a salary expectation, what is usually the best approach?",
+        "options":  [
+                        "Give a researched range first",
+                        "Say \"whatever you offer\"",
+                        "Refuse to answer",
+                        "State your current salary only"
+                    ],
+        "answer":  0,
+        "explanation":  "A researched range keeps negotiation grounded and shows market awareness."
+    },
+    {
+        "id":  "hr_extra_hard_1",
+        "subject":  "hr",
+        "topic":  "behavioural",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "How do you answer \"describe a time you failed\" without hurting your case?",
+        "keywords":  [
+                         "owned",
+                         "specific",
+                         "lesson",
+                         "changed",
+                         "behaviour",
+                         "outcome"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it."
+    },
+    {
+        "id":  "hr_extra_hard_2",
+        "subject":  "hr",
+        "topic":  "leadership",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "How do you demonstrate leadership when you have no formal authority?",
+        "keywords":  [
+                         "influence",
+                         "ownership",
+                         "coordinate",
+                         "mentor",
+                         "credibility"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring."
+    },
+    {
+        "id":  "hr_extra_hard_3",
+        "subject":  "hr",
+        "topic":  "scenario",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "How would you respond if asked to deliver a feature you believe is wrong?",
+        "keywords":  [
+                         "clarify",
+                         "data",
+                         "escalate",
+                         "commit",
+                         "disagree"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided."
     },
     {
         "id":  "net_easy_1",
@@ -1799,6 +2993,350 @@
         "explanation":  "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table."
     },
     {
+        "id":  "net_extra_easy_1",
+        "subject":  "networks",
+        "topic":  "addressing",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which protocol maps IP addresses to MAC addresses on a LAN?",
+        "options":  [
+                        "ARP",
+                        "DNS",
+                        "DHCP",
+                        "ICMP"
+                    ],
+        "answer":  0,
+        "explanation":  "ARP broadcasts a request to resolve an IP to the hardware address on the local segment."
+    },
+    {
+        "id":  "net_extra_easy_2",
+        "subject":  "networks",
+        "topic":  "protocols",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the default port for HTTP?",
+        "options":  [
+                        "80",
+                        "443",
+                        "21",
+                        "8080"
+                    ],
+        "answer":  0,
+        "explanation":  "HTTP uses port 80 by convention; HTTPS uses 443."
+    },
+    {
+        "id":  "net_extra_easy_3",
+        "subject":  "networks",
+        "topic":  "layers",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "At which OSI layer does a switch operate?",
+        "options":  [
+                        "Data link",
+                        "Network",
+                        "Transport",
+                        "Session"
+                    ],
+        "answer":  0,
+        "explanation":  "Switches forward frames using MAC addresses, which is layer 2."
+    },
+    {
+        "id":  "net_extra_easy_4",
+        "subject":  "networks",
+        "topic":  "transport",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "Why is UDP suitable for live video streaming?",
+        "keywords":  [
+                         "connectionless",
+                         "no retransmit",
+                         "latency",
+                         "loss",
+                         "fast"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "UDP skips connection setup and retransmission, trading reliability for low latency."
+    },
+    {
+        "id":  "net_extra_med_1",
+        "subject":  "networks",
+        "topic":  "transport",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "How does TCP flow control differ from congestion control?",
+        "keywords":  [
+                         "receiver",
+                         "window",
+                         "network",
+                         "cwnd",
+                         "sliding"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Flow control respects the receiver\u0027s advertised window; congestion control infers network capacity with cwnd."
+    },
+    {
+        "id":  "net_extra_med_2",
+        "subject":  "networks",
+        "topic":  "routing",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is a routing table used for?",
+        "keywords":  [
+                         "destination",
+                         "next hop",
+                         "prefix",
+                         "longest match",
+                         "forward"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It maps destination prefixes to outgoing interfaces, choosing the longest matching prefix."
+    },
+    {
+        "id":  "net_extra_med_3",
+        "subject":  "networks",
+        "topic":  "security",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What does TLS primarily provide?",
+        "options":  [
+                        "Confidentiality and integrity",
+                        "Faster routing",
+                        "DNS resolution",
+                        "IP addressing"
+                    ],
+        "answer":  0,
+        "explanation":  "TLS encrypts the payload and authenticates the server, giving confidentiality and integrity."
+    },
+    {
+        "id":  "net_extra_hard_1",
+        "subject":  "networks",
+        "topic":  "congestion",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Simulate TCP congestion control growth: print cwnd per RTT from 1 MSS until ssthresh, then linearly.",
+        "templateCode":  "#include \u003ciostream\u003e\n\nint main() {\n    // ssthresh in MSS, rounds to print\n    int ssthresh, rounds;\n    std::cin \u003e\u003e ssthresh \u003e\u003e rounds;\n    // TODO: slow start (double) below ssthresh, then +1 per RTT\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "8 5",
+                              "expectedOutput":  "1 2 4 8 9",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "2 4",
+                              "expectedOutput":  "1 2 3 4",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "Slow start doubles cwnd each RTT until it reaches ssthresh, then congestion avoidance adds one MSS per RTT."
+    },
+    {
+        "id":  "net_extra_hard_2",
+        "subject":  "networks",
+        "topic":  "routing",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain BGP\u0027s path-vector approach and why it scales where distance-vector does not.",
+        "keywords":  [
+                         "as path",
+                         "policy",
+                         "loop prevention",
+                         "attribute",
+                         "autonomous system"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "BGP advertises the full AS path, which prevents loops by inspection and carries policy attributes for inter-domain routing."
+    },
+    {
+        "id":  "net_extra_hard_3",
+        "subject":  "networks",
+        "topic":  "layers",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Trace what happens at each layer when a browser sends a TCP segment to a remote server.",
+        "keywords":  [
+                         "application",
+                         "segment",
+                         "packet",
+                         "frame",
+                         "encapsulation",
+                         "header"
+                     ],
+        "minKeywords":  3,
+        "explanation":  "Each layer adds its own header and passes the payload down: data, segment, packet, frame, then bits on the wire."
+    },
+    {
+        "id":  "oop_extra_easy_1",
+        "subject":  "oop",
+        "topic":  "constructors",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which constructor is called first for a derived class object?",
+        "options":  [
+                        "Base class constructor",
+                        "Derived class constructor",
+                        "Both simultaneously",
+                        "Neither"
+                    ],
+        "answer":  0,
+        "explanation":  "Base construction happens first so the derived part builds on an initialised base."
+    },
+    {
+        "id":  "oop_extra_easy_2",
+        "subject":  "oop",
+        "topic":  "access_specifiers",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which access specifier makes members visible to derived classes but not outside the class?",
+        "options":  [
+                        "private",
+                        "protected",
+                        "public",
+                        "internal"
+                    ],
+        "answer":  1,
+        "explanation":  "protected allows derived-class access while still hiding members from unrelated code."
+    },
+    {
+        "id":  "oop_extra_easy_3",
+        "subject":  "oop",
+        "topic":  "encapsulation",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is a friend function and why does it weaken encapsulation?",
+        "keywords":  [
+                         "access",
+                         "private",
+                         "trusted",
+                         "not a member",
+                         "breaks"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A friend is granted access to private and protected members, which bypasses the public interface."
+    },
+    {
+        "id":  "oop_extra_easy_4",
+        "subject":  "oop",
+        "topic":  "polymorphism",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What does the `override` keyword tell the compiler?",
+        "options":  [
+                        "This function overrides a virtual base function",
+                        "This function is final",
+                        "This function is abstract",
+                        "This function is inline"
+                    ],
+        "answer":  0,
+        "explanation":  "override makes the compiler verify a base virtual with the same signature exists."
+    },
+    {
+        "id":  "oop_extra_med_1",
+        "subject":  "oop",
+        "topic":  "memory",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why must a base class destructor be virtual when deleting through a base pointer?",
+        "keywords":  [
+                         "undefined behaviour",
+                         "derived",
+                         "destructor",
+                         "not called",
+                         "virtual"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Without a virtual destructor only the base destructor runs, leaking derived resources."
+    },
+    {
+        "id":  "oop_extra_med_2",
+        "subject":  "oop",
+        "topic":  "patterns",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What problem does the Observer pattern solve?",
+        "keywords":  [
+                         "one to many",
+                         "notify",
+                         "depend",
+                         "state change",
+                         "loose coupling"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It defines a one-to-many dependency so dependents are notified without the subject knowing them."
+    },
+    {
+        "id":  "oop_extra_med_3",
+        "subject":  "oop",
+        "topic":  "inheritance",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What is the diamond problem?",
+        "options":  [
+                        "Two base classes sharing a common ancestor",
+                        "Multiple inheritance being illegal",
+                        "A class inheriting itself",
+                        "Virtual tables conflicting"
+                    ],
+        "answer":  0,
+        "explanation":  "A derived class inherits the same base twice, duplicating members unless virtual inheritance is used."
+    },
+    {
+        "id":  "oop_extra_hard_1",
+        "subject":  "oop",
+        "topic":  "patterns",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a thread-safe Singleton using a Meyers singleton (function-local static) and a getInstance() accessor.",
+        "templateCode":  "#include \u003ciostream\u003e\n\nclass Singleton {\npublic:\n    static Singleton\u0026 getInstance();\n    Singleton(const Singleton\u0026) = delete;\n    Singleton\u0026 operator=(const Singleton\u0026) = delete;\n    int value() const { return value_; }\n    void setValue(int v) { value_ = v; }\nprivate:\n    Singleton() = default;\n    int value_ = 0;\n};\n",
+        "testCases":  [
+                          {
+                              "input":  "get_instance_twice\nsame_address\n",
+                              "expectedOutput":  "same",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "get_instance\nset_value_41\nread_value\n",
+                              "expectedOutput":  "41",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "A function-local static is initialised on first use and guaranteed thread-safe since C++11."
+    },
+    {
+        "id":  "oop_extra_hard_2",
+        "subject":  "oop",
+        "topic":  "design",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain how the Strategy pattern removes conditionals from shape area calculation.",
+        "keywords":  [
+                         "encapsulate",
+                         "algorithm",
+                         "interface",
+                         "composition",
+                         "replace conditional"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Each area algorithm becomes a class behind a common interface selected by composition, so adding a shape adds a class instead of a branch."
+    },
+    {
+        "id":  "oop_extra_hard_3",
+        "subject":  "oop",
+        "topic":  "contracts",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain Liskov Substitution and give a violation.",
+        "keywords":  [
+                         "subtype",
+                         "substitute",
+                         "base",
+                         "behaviour",
+                         "exception",
+                         "strengthen precondition"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Subtypes must be usable wherever the base is expected; a subtype that throws on inputs the base accepts violates it."
+    },
+    {
         "id":  "os_easy_1",
         "subject":  "os",
         "topic":  "processes",
@@ -1999,6 +3537,177 @@
                      ],
         "minKeywords":  2,
         "explanation":  "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour."
+    },
+    {
+        "id":  "os_extra_easy_1",
+        "subject":  "os",
+        "topic":  "processes",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is a Process Control Block?",
+        "options":  [
+                        "A kernel data structure holding process state",
+                        "A CPU register set",
+                        "A disk sector",
+                        "A user-level stack"
+                    ],
+        "answer":  0,
+        "explanation":  "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed."
+    },
+    {
+        "id":  "os_extra_easy_2",
+        "subject":  "os",
+        "topic":  "memory",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the main purpose of virtual memory?",
+        "options":  [
+                        "To give each process its own address space",
+                        "To speed up the disk",
+                        "To cache DNS",
+                        "To encrypt RAM"
+                    ],
+        "answer":  0,
+        "explanation":  "Virtual memory isolates address spaces and lets processes use more memory than is physically present."
+    },
+    {
+        "id":  "os_extra_easy_3",
+        "subject":  "os",
+        "topic":  "concurrency",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is a deadlock?",
+        "options":  [
+                        "Processes waiting forever for each other",
+                        "A CPU stall",
+                        "A memory leak",
+                        "Disk failure"
+                    ],
+        "answer":  0,
+        "explanation":  "Deadlock is a cycle of waiting where no process can proceed."
+    },
+    {
+        "id":  "os_extra_easy_4",
+        "subject":  "os",
+        "topic":  "scheduling",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is context switching?",
+        "keywords":  [
+                         "save",
+                         "restore",
+                         "state",
+                         "switch",
+                         "overhead"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The OS saves the running process\u0027s state and restores another\u0027s so the CPU can be shared."
+    },
+    {
+        "id":  "os_extra_med_1",
+        "subject":  "os",
+        "topic":  "memory",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What does a Translation Lookaside Buffer cache?",
+        "options":  [
+                        "Virtual to physical page mappings",
+                        "Open file handles",
+                        "DNS records",
+                        "Process IDs"
+                    ],
+        "answer":  0,
+        "explanation":  "The TLB holds recent page-table entries so most translations skip the memory walk."
+    },
+    {
+        "id":  "os_extra_med_2",
+        "subject":  "os",
+        "topic":  "storage",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why do file systems use journaling?",
+        "keywords":  [
+                         "crash",
+                         "consistency",
+                         "log",
+                         "replay",
+                         "metadata"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent."
+    },
+    {
+        "id":  "os_extra_med_3",
+        "subject":  "os",
+        "topic":  "concurrency",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Which of these is not a deadlock prevention technique?",
+        "options":  [
+                        "Starvation",
+                        "Resource ordering",
+                        "No hold and wait",
+                        "Preemption"
+                    ],
+        "answer":  0,
+        "explanation":  "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions."
+    },
+    {
+        "id":  "os_extra_hard_1",
+        "subject":  "os",
+        "topic":  "memory",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Simulate FIFO page replacement and report the number of page faults.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003cvector\u003e\n#include \u003cqueue\u003e\n\nint main() {\n    int frames, n;\n    std::cin \u003e\u003e frames \u003e\u003e n;\n    std::vector\u003cint\u003e refs(n);\n    for (int\u0026 r : refs) std::cin \u003e\u003e r;\n    // TODO: FIFO with a queue of resident pages\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "3 12\n7 0 1 2 0 3 0 4 2 3 0 3",
+                              "expectedOutput":  "6",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "1 5\n1 2 3 4 1",
+                              "expectedOutput":  "5",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "FIFO evicts the page that has been resident longest, which can suffer Belady\u0027s anomaly: more frames, more faults."
+    },
+    {
+        "id":  "os_extra_hard_2",
+        "subject":  "os",
+        "topic":  "synchronization",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain priority inversion and how priority inheritance fixes it.",
+        "keywords":  [
+                         "low",
+                         "high",
+                         "medium",
+                         "inherits",
+                         "blocked",
+                         "unbounded"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner."
+    },
+    {
+        "id":  "os_extra_hard_3",
+        "subject":  "os",
+        "topic":  "io",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Compare polling, interrupts and DMA for device I/O.",
+        "keywords":  [
+                         "cpu",
+                         "busy wait",
+                         "bus",
+                         "direct memory access",
+                         "overhead"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved."
     },
     {
         "id":  "reasoning_easy_1",
@@ -2202,6 +3911,175 @@
         "explanation":  "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step."
     },
     {
+        "id":  "reasoning_extra_easy_1",
+        "subject":  "reasoning",
+        "topic":  "coding_decoding",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "If \u0027CAT\u0027 is written as \u0027DBU\u0027, how is \u0027DOG\u0027 written?",
+        "options":  [
+                        "EPH",
+                        "ENC",
+                        "DPH",
+                        "EOL"
+                    ],
+        "answer":  0,
+        "explanation":  "Each letter moves one position forward, so D-O-G becomes E-P-H."
+    },
+    {
+        "id":  "reasoning_extra_easy_2",
+        "subject":  "reasoning",
+        "topic":  "odd_one_out",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which is the odd one out: 3, 5, 7, 11, 14?",
+        "options":  [
+                        "14",
+                        "5",
+                        "7",
+                        "11"
+                    ],
+        "answer":  0,
+        "explanation":  "The others are prime; 14 is composite."
+    },
+    {
+        "id":  "reasoning_extra_easy_3",
+        "subject":  "reasoning",
+        "topic":  "blood_relations",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Pointing to a photo, Neha said, \"He is the son of my grandmother\u0027s only child.\" Who is he?",
+        "options":  [
+                        "Her brother",
+                        "Her cousin",
+                        "Her uncle",
+                        "Her nephew"
+                    ],
+        "answer":  0,
+        "explanation":  "The grandmother\u0027s only child is Neha\u0027s parent, so his son is her brother."
+    },
+    {
+        "id":  "reasoning_extra_easy_4",
+        "subject":  "reasoning",
+        "topic":  "directions",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "Facing north and turning 90 degrees right leaves you facing which direction?",
+        "keywords":  [
+                         "east",
+                         "right",
+                         "clockwise",
+                         "north"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A clockwise quarter turn from north faces east."
+    },
+    {
+        "id":  "reasoning_extra_med_1",
+        "subject":  "reasoning",
+        "topic":  "seating",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Six people sit in a circle. A is between B and C, and D is opposite A. Who sits between E and F?",
+        "options":  [
+                        "Cannot be determined",
+                        "A",
+                        "B",
+                        "D"
+                    ],
+        "answer":  0,
+        "explanation":  "The remaining constraints do not fix the order of E and F, so it is undetermined."
+    },
+    {
+        "id":  "reasoning_extra_med_2",
+        "subject":  "reasoning",
+        "topic":  "syllogism",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "All cats are animals. Some animals are wild. What follows?",
+        "keywords":  [
+                         "does not follow",
+                         "may or may not",
+                         "not necessarily",
+                         "cannot conclude",
+                         "wild cats"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The wild animals might not include cats, so no affirmative conclusion is forced."
+    },
+    {
+        "id":  "reasoning_extra_med_3",
+        "subject":  "reasoning",
+        "topic":  "series",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Complete the series: A1, C4, F9, J16, ?",
+        "options":  [
+                        "O25",
+                        "O20",
+                        "N25",
+                        "P25"
+                    ],
+        "answer":  0,
+        "explanation":  "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25."
+    },
+    {
+        "id":  "reasoning_extra_hard_1",
+        "subject":  "reasoning",
+        "topic":  "puzzles",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Three boxes are mislabeled Apples, Oranges and Mixed. How many fruits must you draw to relabel all correctly?",
+        "keywords":  [
+                         "one",
+                         "mislabeled",
+                         "the mixed",
+                         "deduce",
+                         "swap"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination."
+    },
+    {
+        "id":  "reasoning_extra_hard_2",
+        "subject":  "reasoning",
+        "topic":  "logical_deduction",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain why modus tollens is valid.",
+        "keywords":  [
+                         "if p then q",
+                         "not q",
+                         "not p",
+                         "contrapositive",
+                         "valid"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "If P implies Q and Q is false, then P must be false, because Q true whenever P true."
+    },
+    {
+        "id":  "reasoning_extra_hard_3",
+        "subject":  "reasoning",
+        "topic":  "chess",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Given a number, print the row index (1-8) of a knight\u0027s square numbered 1-64.",
+        "templateCode":  "#include \u003ciostream\u003e\n\nint main() {\n    int square;\n    std::cin \u003e\u003e square;\n    int row = 0;\n    // TODO: rows of 8, 1-indexed from the top\n    std::cout \u003c\u003c row \u003c\u003c \u0027\\n\u0027;\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "17",
+                              "expectedOutput":  "3",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "64",
+                              "expectedOutput":  "8",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "With 8 files per rank, square s is on rank (s-1)/8 + 1."
+    },
+    {
         "id":  "signals_easy_1",
         "subject":  "signals",
         "topic":  "signal_types",
@@ -2400,5 +4278,176 @@
                      ],
         "minKeywords":  2,
         "explanation":  "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass filtering."
+    },
+    {
+        "id":  "signals_extra_easy_1",
+        "subject":  "signals",
+        "topic":  "signal_types",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which of these is an even signal?",
+        "options":  [
+                        "x(t) = x(-t)",
+                        "x(t) = -x(-t)",
+                        "x(t) = t",
+                        "x(t) = e^t"
+                    ],
+        "answer":  0,
+        "explanation":  "Even signals are symmetric about the origin; odd ones satisfy x(t) = -x(-t)."
+    },
+    {
+        "id":  "signals_extra_easy_2",
+        "subject":  "signals",
+        "topic":  "convolution",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What is the convolution of a signal with a unit impulse?",
+        "options":  [
+                        "The same signal",
+                        "A scaled version",
+                        "Zero everywhere",
+                        "The derivative"
+                    ],
+        "answer":  0,
+        "explanation":  "Convolving with delta(n) returns the signal unchanged, since delta is the identity."
+    },
+    {
+        "id":  "signals_extra_easy_3",
+        "subject":  "signals",
+        "topic":  "fourier",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What does a signal\u0027s Fourier transform reveal?",
+        "options":  [
+                        "Frequency content",
+                        "Time delay only",
+                        "Amplitude growth",
+                        "Phase noise"
+                    ],
+        "answer":  0,
+        "explanation":  "It decomposes the signal into frequency components with magnitudes and phases."
+    },
+    {
+        "id":  "signals_extra_easy_4",
+        "subject":  "signals",
+        "topic":  "sampling",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is quantisation error?",
+        "keywords":  [
+                         "rounding",
+                         "levels",
+                         "resolution",
+                         "noise",
+                         "amplitude"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It is the difference between the sampled amplitude and the nearest representable level, bounded by half a step."
+    },
+    {
+        "id":  "signals_extra_med_1",
+        "subject":  "signals",
+        "topic":  "filters",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What distinguishes an FIR filter from an IIR filter?",
+        "keywords":  [
+                         "finite impulse",
+                         "feedback",
+                         "recursive",
+                         "stability",
+                         "linear phase"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "FIR has only feed-forward terms and is always stable; IIR uses feedback so it is shorter but may be unstable."
+    },
+    {
+        "id":  "signals_extra_med_2",
+        "subject":  "signals",
+        "topic":  "lti",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why is the impulse response enough to characterise an LTI system?",
+        "keywords":  [
+                         "convolution",
+                         "superposition",
+                         "any input",
+                         "impulse",
+                         "determines"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Any input can be written as shifted impulses, so by superposition the output is the convolution with the impulse response."
+    },
+    {
+        "id":  "signals_extra_med_3",
+        "subject":  "signals",
+        "topic":  "z_transform",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "What does the unit circle in the z-plane correspond to for a digital filter?",
+        "options":  [
+                        "Normalised frequency",
+                        "DC gain",
+                        "Stability margin",
+                        "Group delay"
+                    ],
+        "answer":  0,
+        "explanation":  "z = e^(jw) on the unit circle, so angle maps to normalised digital frequency."
+    },
+    {
+        "id":  "signals_extra_hard_1",
+        "subject":  "signals",
+        "topic":  "fft",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a DFT brute force and print the magnitude spectrum of the given real sequence.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003ccomplex\u003e\n#include \u003ccmath\u003e\n#include \u003cvector\u003e\n\nconst double PI = std::acos(-1.0);\n\nint main() {\n    int n; std::cin \u003e\u003e n;\n    std::vector\u003cstd::complex\u003cdouble\u003e\u003e x(n);\n    for (auto\u0026 v : x) std::cin \u003e\u003e v;\n    // TODO: brute-force DFT, print magnitudes\n    return 0;\n}\n",
+        "testCases":  [
+                          {
+                              "input":  "4\n1 0 1 0",
+                              "expectedOutput":  "2 0 2 0",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "2\n1 -1",
+                              "expectedOutput":  "0 2",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "A brute-force DFT is O(n^2) but demonstrates exactly what the FFT computes in O(n log n)."
+    },
+    {
+        "id":  "signals_extra_hard_2",
+        "subject":  "signals",
+        "topic":  "sampling",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain the Gibbs phenomenon and how it affects windowed filters.",
+        "keywords":  [
+                         "truncation",
+                         "overshoot",
+                         "ripple",
+                         "discontinuity",
+                         "window"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Truncating an ideal response creates overshoot near discontinuities; smoothing windows reduce ripple at the cost of wider transitions."
+    },
+    {
+        "id":  "signals_extra_hard_3",
+        "subject":  "signals",
+        "topic":  "modulation",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why does AM need twice the baseband bandwidth while SSB does not?",
+        "keywords":  [
+                         "carrier",
+                         "sidebands",
+                         "bandwidth",
+                         "redundant",
+                         "filter"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "AM transmits the carrier and both sidebands, doubling the bandwidth; single sideband transmits one sideband carrying all the information."
     }
 ]

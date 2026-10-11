@@ -1,0 +1,123 @@
+[
+  {
+    "id": "analog_extra_easy_1",
+    "subject": "analog",
+    "topic": "diodes",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the knee voltage of a germanium diode?",
+    "options": ["0.3 V", "0.7 V", "1.4 V", "2 V"],
+    "answer": 0,
+    "explanation": "Germanium begins conducting around 0.2-0.3 V, lower than silicon's 0.7 V."
+  },
+  {
+    "id": "analog_extra_easy_2",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is slew rate?",
+    "options": ["Maximum rate of output voltage change", "Maximum gain", "Input bias current", "Offset voltage"],
+    "answer": 0,
+    "explanation": "Slew rate limits how fast the output can swing, in V per microsecond."
+  },
+  {
+    "id": "analog_extra_easy_3",
+    "subject": "analog",
+    "topic": "transistors",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "In a common-emitter amplifier the output is:",
+    "options": ["Inverted and amplified", "In-phase and amplified", "Unchanged", "Only shifted"],
+    "answer": 0,
+    "explanation": "A base current increase raises collector current, dropping the collector voltage, so the output inverts."
+  },
+  {
+    "id": "analog_extra_easy_4",
+    "subject": "analog",
+    "topic": "capacitors",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What is the RC time constant?",
+    "keywords": ["tau", "r times c", "63", "seconds", "charging"],
+    "minKeywords": 2,
+    "explanation": "tau = RC is the time to reach about 63% of the final voltage in an RC circuit."
+  },
+  {
+    "id": "analog_extra_med_1",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does a cascode stage widen bandwidth?",
+    "keywords": ["miller", "capacitance", "reduce", "gain per stage", "shunt"],
+    "minKeywords": 2,
+    "explanation": "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor's swing small."
+  },
+  {
+    "id": "analog_extra_med_2",
+    "subject": "analog",
+    "topic": "feedback",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "How does negative feedback improve bandwidth?",
+    "keywords": ["gain bandwidth", "trade", "lower gain", "wider", "product"],
+    "minKeywords": 2,
+    "explanation": "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response."
+  },
+  {
+    "id": "analog_extra_med_3",
+    "subject": "analog",
+    "topic": "opamps",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What causes offset voltage in an op-amp?",
+    "options": ["Mismatch in the input differential pair", "Thermal noise alone", "Power supply ripple", "Feedback resistor tolerance"],
+    "answer": 0,
+    "explanation": "Device mismatch in the input pair means zero output needs a small nonzero differential input."
+  },
+  {
+    "id": "analog_extra_hard_1",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Compute the output voltage of an inverting op-amp with rail clipping at +/-Vcc for each input sample.",
+    "templateCode": "#include <iostream>\n#include <iomanip>\n#include <vector>\n\nint main() {\n    double rf, vin_ref, vcc;\n    int n;\n    std::cin >> rf >> vin_ref >> vcc >> n;\n    double gain = -rf / vin_ref;\n    std::vector<double> out(n);\n    for (int i = 0; i < n; ++i) {\n        double v; std::cin >> v;\n        // TODO: apply gain and clamp to [-vcc, vcc]\n    }\n    for (double v : out) std::cout << std::fixed << std::setprecision(1) << v << ' ';\n    std::cout << '\\n';\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "10000 1000 12 3\n0.5 -2 10",
+        "expectedOutput": "-5.0 12.0 -12.0",
+        "isHidden": false
+      },
+      {
+        "input": "2000 1000 5 2\n1 -1",
+        "expectedOutput": "-2.0 2.0",
+        "isHidden": true
+      }
+    ],
+    "explanation": "The output is gain times input limited to the rails; clipping models a real op-amp's finite supply."
+  },
+  {
+    "id": "analog_extra_hard_2",
+    "subject": "analog",
+    "topic": "oscillators",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "State the Barkhausen criterion for oscillation.",
+    "keywords": ["loop gain", "unity magnitude", "phase", "360", "0 degrees", "condition"],
+    "minKeywords": 2,
+    "explanation": "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation."
+  },
+  {
+    "id": "analog_extra_hard_3",
+    "subject": "analog",
+    "topic": "noise",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Compare flicker and white noise in terms of frequency dependence.",
+    "keywords": ["1/f", "low frequency", "flat", "thermal", "spectral density"],
+    "minKeywords": 2,
+    "explanation": "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency."
+  }
+]

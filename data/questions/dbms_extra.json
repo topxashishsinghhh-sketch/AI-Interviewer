@@ -1,0 +1,123 @@
+[
+  {
+    "id": "dbms_extra_easy_1",
+    "subject": "dbms",
+    "topic": "sql",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which JOIN returns rows matching in both tables?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN"],
+    "answer": 0,
+    "explanation": "An inner join keeps only rows whose join predicate matches on both sides."
+  },
+  {
+    "id": "dbms_extra_easy_2",
+    "subject": "dbms",
+    "topic": "sql",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which clause removes duplicate rows from a result set?",
+    "options": ["DISTINCT", "UNIQUE", "GROUP", "FILTER"],
+    "answer": 0,
+    "explanation": "SELECT DISTINCT deduplicates the projected rows."
+  },
+  {
+    "id": "dbms_extra_easy_3",
+    "subject": "dbms",
+    "topic": "keys",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is a foreign key?",
+    "options": ["A column referencing a primary key in another table", "A unique index on the same table", "Any non-null column", "A computed column"],
+    "answer": 0,
+    "explanation": "A foreign key enforces referential integrity between two relations."
+  },
+  {
+    "id": "dbms_extra_easy_4",
+    "subject": "dbms",
+    "topic": "relational",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What is relational algebra?",
+    "keywords": ["operations", "relations", "select", "project", "join", "formal"],
+    "minKeywords": 2,
+    "explanation": "It is the formal query language of operations over relations that SQL is built on."
+  },
+  {
+    "id": "dbms_extra_med_1",
+    "subject": "dbms",
+    "topic": "sql",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is the difference between WHERE and HAVING?",
+    "keywords": ["before grouping", "after grouping", "rows", "aggregate", "filter"],
+    "minKeywords": 2,
+    "explanation": "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates."
+  },
+  {
+    "id": "dbms_extra_med_2",
+    "subject": "dbms",
+    "topic": "indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which index type is best for range queries?",
+    "options": ["B+ tree", "Hash", "Bitmap", "Bloom filter"],
+    "answer": 0,
+    "explanation": "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential."
+  },
+  {
+    "id": "dbms_extra_med_3",
+    "subject": "dbms",
+    "topic": "transactions",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is a phantom read?",
+    "keywords": ["range", "new rows", "repeat", "transaction", "insert"],
+    "minKeywords": 2,
+    "explanation": "Re-running a range predicate returns newly inserted rows that another transaction committed in between."
+  },
+  {
+    "id": "dbms_extra_hard_1",
+    "subject": "dbms",
+    "topic": "query",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Write SQL to rank employees by salary within each department, highest first.",
+    "templateCode": "-- Employees: id, name, dept, salary\n-- Output: dept, name, salary, rank\nSELECT dept, name, salary FROM employees;\n",
+    "testCases": [
+      {
+        "input": "eng Alice 90\neng Bob 80\nsales Cara 95",
+        "expectedOutput": "eng Alice 90 1\neng Bob 80 2\nsales Cara 95 1",
+        "isHidden": false
+      },
+      {
+        "input": "eng Alice 90\neng Bob 90",
+        "expectedOutput": "eng Alice 90 1\neng Bob 90 1",
+        "isHidden": true
+      }
+    ],
+    "explanation": "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next."
+  },
+  {
+    "id": "dbms_extra_hard_2",
+    "subject": "dbms",
+    "topic": "transactions",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain how MVCC avoids readers blocking writers.",
+    "keywords": ["version", "snapshot", "writer", "copy", "no read lock"],
+    "minKeywords": 2,
+    "explanation": "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers."
+  },
+  {
+    "id": "dbms_extra_hard_3",
+    "subject": "dbms",
+    "topic": "optimization",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "How does a cost-based optimiser choose a join order?",
+    "keywords": ["cardinality", "statistics", "selectivity", "plan", "cost model"],
+    "minKeywords": 2,
+    "explanation": "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost."
+  }
+]

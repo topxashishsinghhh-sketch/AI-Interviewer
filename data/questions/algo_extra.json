@@ -1,0 +1,123 @@
+[
+  {
+    "id": "algo_extra_easy_1",
+    "subject": "algo",
+    "topic": "sorting",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which sorting algorithm is stable and guarantees O(n log n) worst case?",
+    "options": ["Merge sort", "Quicksort", "Heapsort", "Selection sort"],
+    "answer": 0,
+    "explanation": "Mergesort keeps equal keys in order and its worst case stays O(n log n)."
+  },
+  {
+    "id": "algo_extra_easy_2",
+    "subject": "algo",
+    "topic": "searching",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the worst case of linear search?",
+    "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+    "answer": 0,
+    "explanation": "Every element may have to be inspected, so the worst case is linear."
+  },
+  {
+    "id": "algo_extra_easy_3",
+    "subject": "algo",
+    "topic": "complexity",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What does Big-O notation describe?",
+    "keywords": ["upper bound", "worst case", "growth", "rate", "asymptotic"],
+    "minKeywords": 2,
+    "explanation": "Big-O bounds growth from above as input size tends to infinity."
+  },
+  {
+    "id": "algo_extra_easy_4",
+    "subject": "algo",
+    "topic": "recursion",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What does a recursive function need to terminate?",
+    "options": ["A base case", "A loop", "A global variable", "Heap allocation"],
+    "answer": 0,
+    "explanation": "Without a base case the recursion never stops and the stack overflows."
+  },
+  {
+    "id": "algo_extra_med_1",
+    "subject": "algo",
+    "topic": "two_pointers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "How does the two-pointer technique speed up pair search in a sorted array?",
+    "keywords": ["sorted", "ends", "move", "sum", "linear"],
+    "minKeywords": 2,
+    "explanation": "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n)."
+  },
+  {
+    "id": "algo_extra_med_2",
+    "subject": "algo",
+    "topic": "greedy",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why does greedy fail for the 0/1 knapsack?",
+    "keywords": ["fraction", "whole", "local optimum", "global", "not optimal"],
+    "minKeywords": 2,
+    "explanation": "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version."
+  },
+  {
+    "id": "algo_extra_med_3",
+    "subject": "algo",
+    "topic": "dp",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which is the space-optimised DP for Fibonacci?",
+    "options": ["Two variables", "Full table", "Recursion without memoisation", "A queue"],
+    "answer": 0,
+    "explanation": "Only the previous two values are needed, so O(1) space replaces an O(n) table."
+  },
+  {
+    "id": "algo_extra_hard_1",
+    "subject": "algo",
+    "topic": "graphs",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Implement Dijkstra shortest paths from node 0 and print the distance to every node, infinity for unreachable.",
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <queue>\n#include <utility>\n\nint main() {\n    // Node count, edge count, then each edge as u v w\n    int n, m; std::cin >> n >> m;\n    std::vector<std::vector<std::pair<int,int>>> adj(n);\n    for (int i = 0; i < m; ++i) { int u, v, w; std::cin >> u >> v >> w; adj[u].push_back({v, w}); }\n    // TODO: Dijkstra from 0, print distances\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "3 3\n0 1 4\n1 2 3\n0 2 10",
+        "expectedOutput": "0 4 7",
+        "isHidden": false
+      },
+      {
+        "input": "4 2\n0 1 1\n2 3 5",
+        "expectedOutput": "0 1 INF INF",
+        "isHidden": true
+      }
+    ],
+    "explanation": "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex."
+  },
+  {
+    "id": "algo_extra_hard_2",
+    "subject": "algo",
+    "topic": "dp",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Why is a greedy interval-scheduling solution optimal but activity selection with weights is not?",
+    "keywords": ["earliest finish", "weight", "counterexample", "optimal", "dynamic"],
+    "minKeywords": 2,
+    "explanation": "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required."
+  },
+  {
+    "id": "algo_extra_hard_3",
+    "subject": "algo",
+    "topic": "strings",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain why KMP avoids rescanning after a mismatch.",
+    "keywords": ["prefix", "failure function", "automaton", "shift", "linear"],
+    "minKeywords": 2,
+    "explanation": "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting."
+  }
+]
