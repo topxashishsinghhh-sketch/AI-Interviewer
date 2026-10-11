@@ -16,7 +16,7 @@
     "explanation": "Each letter moves one position forward, so D-O-G becomes E-P-H.",
     "objective": "Each letter moves one position forward, so D-O-G becomes E-P-H.",
     "skillTags": [
-      "Logical Reasoning"
+      "Coding and Decoding"
     ],
     "keywords": [
       "written"
@@ -40,7 +40,7 @@
     "explanation": "The others are prime; 14 is composite.",
     "objective": "The others are prime; 14 is composite.",
     "skillTags": [
-      "Logical Reasoning"
+      "Classification"
     ],
     "keywords": [
       "concept"
@@ -64,7 +64,7 @@
     "explanation": "The grandmother's only child is Neha's parent, so his son is her brother.",
     "objective": "The grandmother's only child is Neha's parent, so his son is her brother.",
     "skillTags": [
-      "Logical Reasoning"
+      "Family Relations"
     ],
     "keywords": [
       "Pointing",
@@ -90,7 +90,7 @@
     "explanation": "A clockwise quarter turn from north faces east.",
     "objective": "A clockwise quarter turn from north faces east.",
     "skillTags": [
-      "Logical Reasoning"
+      "Directions"
     ],
     "softSkill": false
   },
@@ -111,7 +111,7 @@
     "explanation": "The remaining constraints do not fix the order of E and F, so it is undetermined.",
     "objective": "The remaining constraints do not fix the order of E and F, so it is undetermined.",
     "skillTags": [
-      "Logical Reasoning"
+      "Seating Arrangement"
     ],
     "keywords": [
       "circle.",
@@ -138,7 +138,7 @@
     "explanation": "The wild animals might not include cats, so no affirmative conclusion is forced.",
     "objective": "The wild animals might not include cats, so no affirmative conclusion is forced.",
     "skillTags": [
-      "Logical Reasoning"
+      "Syllogisms"
     ],
     "softSkill": false
   },
@@ -159,7 +159,7 @@
     "explanation": "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25.",
     "objective": "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25.",
     "skillTags": [
-      "Logical Reasoning"
+      "Series and Patterns"
     ],
     "keywords": [
       "Complete"
@@ -184,7 +184,7 @@
     "explanation": "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination.",
     "objective": "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination.",
     "skillTags": [
-      "Logical Reasoning"
+      "Logic Puzzles"
     ],
     "softSkill": false
   },
@@ -206,7 +206,7 @@
     "explanation": "If P implies Q and Q is false, then P must be false, because Q true whenever P true.",
     "objective": "If P implies Q and Q is false, then P must be false, because Q true whenever P true.",
     "skillTags": [
-      "Logical Reasoning"
+      "Logical Deduction"
     ],
     "softSkill": false
   },
@@ -233,7 +233,7 @@
     "explanation": "With 8 files per rank, square s is on rank (s-1)/8 + 1.",
     "objective": "With 8 files per rank, square s is on rank (s-1)/8 + 1.",
     "skillTags": [
-      "Logical Reasoning"
+      "Board Reasoning"
     ],
     "keywords": [
       "knight's",

@@ -135,7 +135,7 @@
     "explanation": "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response.",
     "objective": "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response.",
     "skillTags": [
-      "Circuit Design"
+      "Feedback Systems"
     ],
     "softSkill": false
   },
@@ -215,7 +215,6 @@
     "explanation": "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation.",
     "objective": "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation.",
     "skillTags": [
-      "Operating Systems",
       "Circuit Design"
     ],
     "softSkill": false
@@ -238,7 +237,7 @@
     "explanation": "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency.",
     "objective": "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency.",
     "skillTags": [
-      "Circuit Design"
+      "Noise Analysis"
     ],
     "softSkill": false
   }

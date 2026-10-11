@@ -16,7 +16,7 @@
     "explanation": "ARP broadcasts a request to resolve an IP to the hardware address on the local segment.",
     "objective": "ARP broadcasts a request to resolve an IP to the hardware address on the local segment.",
     "skillTags": [
-      "Computer Networks"
+      "Addressing"
     ],
     "keywords": [
       "protocol",
@@ -41,7 +41,7 @@
     "explanation": "HTTP uses port 80 by convention; HTTPS uses 443.",
     "objective": "HTTP uses port 80 by convention; HTTPS uses 443.",
     "skillTags": [
-      "Computer Networks"
+      "Protocols"
     ],
     "keywords": [
       "default"
@@ -65,7 +65,7 @@
     "explanation": "Switches forward frames using MAC addresses, which is layer 2.",
     "objective": "Switches forward frames using MAC addresses, which is layer 2.",
     "skillTags": [
-      "Computer Networks"
+      "Network Layers"
     ],
     "keywords": [
       "operate"
@@ -90,7 +90,7 @@
     "explanation": "UDP skips connection setup and retransmission, trading reliability for low latency.",
     "objective": "UDP skips connection setup and retransmission, trading reliability for low latency.",
     "skillTags": [
-      "Computer Networks"
+      "Transport"
     ],
     "softSkill": false
   },
@@ -112,7 +112,7 @@
     "explanation": "Flow control respects the receiver's advertised window; congestion control infers network capacity with cwnd.",
     "objective": "Flow control respects the receiver's advertised window; congestion control infers network capacity with cwnd.",
     "skillTags": [
-      "Computer Networks"
+      "Transport"
     ],
     "softSkill": false
   },
@@ -134,7 +134,7 @@
     "explanation": "It maps destination prefixes to outgoing interfaces, choosing the longest matching prefix.",
     "objective": "It maps destination prefixes to outgoing interfaces, choosing the longest matching prefix.",
     "skillTags": [
-      "Computer Networks"
+      "Routing"
     ],
     "softSkill": false
   },
@@ -155,7 +155,7 @@
     "explanation": "TLS encrypts the payload and authenticates the server, giving confidentiality and integrity.",
     "objective": "TLS encrypts the payload and authenticates the server, giving confidentiality and integrity.",
     "skillTags": [
-      "Computer Networks"
+      "Network Security"
     ],
     "keywords": [
       "primarily",
@@ -186,7 +186,7 @@
     "explanation": "Slow start doubles cwnd each RTT until it reaches ssthresh, then congestion avoidance adds one MSS per RTT.",
     "objective": "Slow start doubles cwnd each RTT until it reaches ssthresh, then congestion avoidance adds one MSS per RTT.",
     "skillTags": [
-      "Computer Networks"
+      "Congestion Control"
     ],
     "keywords": [
       "Simulate",
@@ -214,7 +214,7 @@
     "explanation": "BGP advertises the full AS path, which prevents loops by inspection and carries policy attributes for inter-domain routing.",
     "objective": "BGP advertises the full AS path, which prevents loops by inspection and carries policy attributes for inter-domain routing.",
     "skillTags": [
-      "Computer Networks"
+      "Routing"
     ],
     "softSkill": false
   },
@@ -237,7 +237,7 @@
     "explanation": "Each layer adds its own header and passes the payload down: data, segment, packet, frame, then bits on the wire.",
     "objective": "Each layer adds its own header and passes the payload down: data, segment, packet, frame, then bits on the wire.",
     "skillTags": [
-      "Computer Networks"
+      "Network Layers"
     ],
     "softSkill": false
   }

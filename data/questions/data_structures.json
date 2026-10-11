@@ -16,7 +16,7 @@
     "explanation": "Arrays support random access: the address is base + index * elementSize, so it is constant time.",
     "objective": "Arrays support random access: the address is base + index * elementSize, so it is constant time.",
     "skillTags": [
-      "Data Structures"
+      "Arrays"
     ],
     "keywords": [
       "complexity",
@@ -42,7 +42,7 @@
     "explanation": "You must traverse from the head because there is no random access, so the worst case visits every node.",
     "objective": "You must traverse from the head because there is no random access, so the worst case visits every node.",
     "skillTags": [
-      "Data Structures"
+      "Linked Lists"
     ],
     "keywords": [
       "complexity",
@@ -68,7 +68,7 @@
     "explanation": "A stack is Last In First Out: the most recently pushed element is the first one popped.",
     "objective": "A stack is Last In First Out: the most recently pushed element is the first one popped.",
     "skillTags": [
-      "Data Structures"
+      "Stacks"
     ],
     "keywords": [
       "principle"
@@ -92,7 +92,7 @@
     "explanation": "A queue inserts at the rear and removes from the front, preserving arrival order.",
     "objective": "A queue inserts at the rear and removes from the front, preserving arrival order.",
     "skillTags": [
-      "Data Structures"
+      "Queues"
     ],
     "softSkill": false
   },
@@ -113,7 +113,7 @@
     "explanation": "Keep going right until there is no right child; that node holds the largest key.",
     "objective": "Keep going right until there is no right child; that node holds the largest key.",
     "skillTags": [
-      "Data Structures"
+      "Trees"
     ],
     "keywords": [
       "maximum",
@@ -138,7 +138,7 @@
     "explanation": "Each level can hold at most twice the previous level, so level L holds 2^L nodes.",
     "objective": "Each level can hold at most twice the previous level, so level L holds 2^L nodes.",
     "skillTags": [
-      "Data Structures"
+      "Trees"
     ],
     "softSkill": false
   },
@@ -159,7 +159,7 @@
     "explanation": "With a uniform hash and low load factor, the expected chain length is constant.",
     "objective": "With a uniform hash and low load factor, the expected chain length is constant.",
     "skillTags": [
-      "Data Structures"
+      "Hashing"
     ],
     "keywords": [
       "average-case",
@@ -185,7 +185,7 @@
     "explanation": "The new element bubbles up at most the height of the heap, which is O(log n).",
     "objective": "The new element bubbles up at most the height of the heap, which is O(log n).",
     "skillTags": [
-      "Data Structures"
+      "Heaps"
     ],
     "softSkill": false
   },
@@ -206,7 +206,7 @@
     "explanation": "AVL rotations keep the height balanced within a constant factor of log n.",
     "objective": "AVL rotations keep the height balanced within a constant factor of log n.",
     "skillTags": [
-      "Data Structures"
+      "Balanced Trees"
     ],
     "keywords": [
       "concept"
@@ -230,7 +230,6 @@
     "explanation": "Each vertex and each edge is visited a constant number of times, giving O(V + E).",
     "objective": "Each vertex and each edge is visited a constant number of times, giving O(V + E).",
     "skillTags": [
-      "Data Structures",
       "Graphs"
     ],
     "softSkill": false
@@ -258,7 +257,7 @@
     "explanation": "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function.",
     "objective": "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function.",
     "skillTags": [
-      "Data Structures"
+      "Disjoint Sets"
     ],
     "keywords": [
       "Implement",
@@ -286,7 +285,6 @@
     "explanation": "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates negative weights (barring negative cycles).",
     "objective": "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates ne",
     "skillTags": [
-      "Data Structures",
       "Graphs"
     ],
     "softSkill": false

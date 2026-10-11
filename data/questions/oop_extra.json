@@ -16,7 +16,7 @@
     "explanation": "Base construction happens first so the derived part builds on an initialised base.",
     "objective": "Base construction happens first so the derived part builds on an initialised base.",
     "skillTags": [
-      "OOP"
+      "Object Lifetime"
     ],
     "keywords": [
       "constructor",
@@ -41,7 +41,7 @@
     "explanation": "protected allows derived-class access while still hiding members from unrelated code.",
     "objective": "protected allows derived-class access while still hiding members from unrelated code.",
     "skillTags": [
-      "OOP"
+      "Encapsulation"
     ],
     "keywords": [
       "specifier",
@@ -69,7 +69,7 @@
     "explanation": "A friend is granted access to private and protected members, which bypasses the public interface.",
     "objective": "A friend is granted access to private and protected members, which bypasses the public interface.",
     "skillTags": [
-      "OOP"
+      "Encapsulation"
     ],
     "softSkill": false
   },
@@ -90,7 +90,7 @@
     "explanation": "override makes the compiler verify a base virtual with the same signature exists.",
     "objective": "override makes the compiler verify a base virtual with the same signature exists.",
     "skillTags": [
-      "OOP"
+      "Polymorphism"
     ],
     "keywords": [
       "`override`",
@@ -117,8 +117,7 @@
     "explanation": "Without a virtual destructor only the base destructor runs, leaking derived resources.",
     "objective": "Without a virtual destructor only the base destructor runs, leaking derived resources.",
     "skillTags": [
-      "OOP",
-      "Operating Systems"
+      "Memory Management"
     ],
     "softSkill": false
   },
@@ -140,7 +139,6 @@
     "explanation": "It defines a one-to-many dependency so dependents are notified without the subject knowing them.",
     "objective": "It defines a one-to-many dependency so dependents are notified without the subject knowing them.",
     "skillTags": [
-      "OOP",
       "Design Patterns"
     ],
     "softSkill": false
@@ -162,7 +160,7 @@
     "explanation": "A derived class inherits the same base twice, duplicating members unless virtual inheritance is used.",
     "objective": "A derived class inherits the same base twice, duplicating members unless virtual inheritance is used.",
     "skillTags": [
-      "OOP"
+      "Inheritance"
     ],
     "keywords": [
       "diamond",
@@ -193,7 +191,6 @@
     "explanation": "A function-local static is initialised on first use and guaranteed thread-safe since C++11.",
     "objective": "A function-local static is initialised on first use and guaranteed thread-safe since C++11.",
     "skillTags": [
-      "OOP",
       "Design Patterns"
     ],
     "keywords": [
@@ -222,7 +219,7 @@
     "explanation": "Each area algorithm becomes a class behind a common interface selected by composition, so adding a shape adds a class instead of a branch.",
     "objective": "Each area algorithm becomes a class behind a common interface selected by composition, so adding a shape adds a class instead of a branch.",
     "skillTags": [
-      "OOP"
+      "Software Design"
     ],
     "softSkill": false
   },
@@ -245,7 +242,7 @@
     "explanation": "Subtypes must be usable wherever the base is expected; a subtype that throws on inputs the base accepts violates it.",
     "objective": "Subtypes must be usable wherever the base is expected; a subtype that throws on inputs the base accepts violates it.",
     "skillTags": [
-      "OOP"
+      "Design Contracts"
     ],
     "softSkill": false
   }

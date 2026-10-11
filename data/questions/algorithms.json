@@ -16,7 +16,7 @@
     "explanation": "With an unlucky pivot choice the partitions stay unbalanced, degrading to O(n^2).",
     "objective": "With an unlucky pivot choice the partitions stay unbalanced, degrading to O(n^2).",
     "skillTags": [
-      "Algorithms"
+      "Sorting"
     ],
     "keywords": [
       "worst-case",
@@ -42,7 +42,7 @@
     "explanation": "Heapsort swaps elements across the array, destroying the relative order of equal keys.",
     "objective": "Heapsort swaps elements across the array, destroying the relative order of equal keys.",
     "skillTags": [
-      "algo"
+      "Complexity Analysis"
     ],
     "keywords": [
       "sorting",
@@ -67,7 +67,7 @@
     "explanation": "Each comparison halves the search space, giving O(log n).",
     "objective": "Each comparison halves the search space, giving O(log n).",
     "skillTags": [
-      "Algorithms"
+      "Searching"
     ],
     "keywords": [
       "complexity",
@@ -92,7 +92,7 @@
     "explanation": "Big-O bounds the growth rate of a function from above as the input size tends to infinity.",
     "objective": "Big-O bounds the growth rate of a function from above as the input size tends to infinity.",
     "skillTags": [
-      "algo"
+      "Complexity Analysis"
     ],
     "softSkill": false
   },
@@ -161,7 +161,7 @@
     "explanation": "Fractional knapsack has the greedy-choice property, so sorting by value/weight yields the exact optimum.",
     "objective": "Fractional knapsack has the greedy-choice property, so sorting by value/weight yields the exact optimum.",
     "skillTags": [
-      "Algorithms"
+      "Greedy"
     ],
     "keywords": [
       "fractional",
@@ -188,7 +188,7 @@
     "explanation": "Rare O(n) resizes are averaged over n insertions, so the amortized cost is O(1).",
     "objective": "Rare O(n) resizes are averaged over n insertions, so the amortized cost is O(1).",
     "skillTags": [
-      "algo"
+      "Complexity"
     ],
     "softSkill": false
   },
@@ -237,7 +237,7 @@
     "explanation": "NP means a proposed solution can be verified in polynomial time; NP-hard means every problem in NP reduces to it, which does not require it to be in NP or even be a decision problem.",
     "objective": "NP means a proposed solution can be verified in polynomial time; NP-hard means every problem in NP reduces to it, which does not require it to be in NP or even ",
     "skillTags": [
-      "algo"
+      "Complexity"
     ],
     "softSkill": false
   },
@@ -264,7 +264,7 @@
     "explanation": "A min-heap of size k costs O(n log k) time and O(k) space, beating a full sort when k is much smaller than n.",
     "objective": "A min-heap of size k costs O(n log k) time and O(k) space, beating a full sort when k is much smaller than n.",
     "skillTags": [
-      "Algorithms"
+      "Sorting"
     ],
     "keywords": [
       "integers",

@@ -16,7 +16,7 @@
     "explanation": "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12.",
     "objective": "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Number Systems"
     ],
     "keywords": [
       "concept"
@@ -40,7 +40,7 @@
     "explanation": "20% of x = 40 => 0.2x = 40 => x = 40/0.2 = 200.",
     "objective": "20% of x = 40 => 0.2x = 40 => x = 40/0.2 = 200.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Percentages"
     ],
     "keywords": [
       "concept"
@@ -64,7 +64,7 @@
     "explanation": "A's 1 day work = 1/10, B's = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days.",
     "objective": "A's 1 day work = 1/10, B's = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Time and Work"
     ],
     "keywords": [
       "Together",
@@ -88,7 +88,7 @@
     "explanation": "LCM(12, 15, 20) = 60. Prime factors: 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60.",
     "objective": "LCM(12, 15, 20) = 60. Prime factors: 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Number Systems"
     ],
     "softSkill": false
   },
@@ -109,7 +109,7 @@
     "explanation": "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%.",
     "objective": "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Percentages"
     ],
     "keywords": [
       "shopkeeper",
@@ -134,7 +134,7 @@
     "explanation": "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours ≈ 3.43 hours.",
     "objective": "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours ≈ 3.43 hours.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Time and Work"
     ],
     "softSkill": false
   },
@@ -155,7 +155,7 @@
     "explanation": "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 × 102 = 2550.",
     "objective": "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 × 102 = 2550.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Number Systems"
     ],
     "keywords": [
       "numbers"
@@ -177,7 +177,7 @@
     "explanation": "P × 1.1 × 1.1 = 12100 => P × 1.21 = 12100 => P = 10000.",
     "objective": "P × 1.1 × 1.1 = 12100 => P × 1.21 = 12100 => P = 10000.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Percentages"
     ],
     "softSkill": false
   },
@@ -209,7 +209,7 @@
     "explanation": "Net rate = sum of all rates. If net > 0, time = 1/net. If net <= 0, never fills.",
     "objective": "Net rate = sum of all rates. If net > 0, time = 1/net. If net <= 0, never fills.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Time and Work"
     ],
     "keywords": [
       "fill/empty",
@@ -246,7 +246,7 @@
     "explanation": "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from <numeric>.",
     "objective": "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from <numeric>.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Number Systems"
     ],
     "keywords": [
       "smallest",
@@ -272,7 +272,7 @@
     "explanation": "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-x²/10000). Net change = -x²/100%. Always a decrease.",
     "objective": "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-x²/10000). Net change = -x²/100%. Always a decrease.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Percentages"
     ],
     "softSkill": false
   }

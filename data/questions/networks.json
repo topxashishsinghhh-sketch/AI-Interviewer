@@ -16,7 +16,7 @@
     "explanation": "The network layer performs logical addressing and routing; routers operate there.",
     "objective": "The network layer performs logical addressing and routing; routers operate there.",
     "skillTags": [
-      "Computer Networks"
+      "Network Layers"
     ],
     "keywords": [
       "handles",
@@ -43,7 +43,7 @@
     "explanation": "TCP provides sequencing, acknowledgements and retransmission; UDP is best-effort.",
     "objective": "TCP provides sequencing, acknowledgements and retransmission; UDP is best-effort.",
     "skillTags": [
-      "Computer Networks"
+      "Transport"
     ],
     "keywords": [
       "transport",
@@ -70,7 +70,7 @@
     "explanation": "IPv4 uses 32 bits, usually written as four dotted decimal octets.",
     "objective": "IPv4 uses 32 bits, usually written as four dotted decimal octets.",
     "skillTags": [
-      "Computer Networks"
+      "Addressing"
     ],
     "keywords": [
       "address"
@@ -95,7 +95,7 @@
     "explanation": "DNS translates human-readable domain names into IP addresses.",
     "objective": "DNS translates human-readable domain names into IP addresses.",
     "skillTags": [
-      "Computer Networks"
+      "Protocols"
     ],
     "softSkill": false
   },
@@ -116,7 +116,7 @@
     "explanation": "The client sends SYN, the server replies SYN-ACK, and the client completes with ACK.",
     "objective": "The client sends SYN, the server replies SYN-ACK, and the client completes with ACK.",
     "skillTags": [
-      "Computer Networks"
+      "Transport"
     ],
     "keywords": [
       "three-way",
@@ -143,7 +143,7 @@
     "explanation": "On loss the threshold drops (typically to half the window) and the sender switches from exponential growth to linear AIMD.",
     "objective": "On loss the threshold drops (typically to half the window) and the sender switches from exponential growth to linear AIMD.",
     "skillTags": [
-      "Computer Networks"
+      "Congestion Control"
     ],
     "softSkill": false
   },
@@ -164,7 +164,7 @@
     "explanation": "OSPF floods link-state advertisements and runs Dijkstra; RIP is distance-vector and BGP is path-vector.",
     "objective": "OSPF floods link-state advertisements and runs Dijkstra; RIP is distance-vector and BGP is path-vector.",
     "skillTags": [
-      "Computer Networks"
+      "Routing"
     ],
     "keywords": [
       "routing",
@@ -193,7 +193,7 @@
     "explanation": "A switch forwards frames using MAC addresses within a broadcast domain; a router forwards packets between networks using IP addresses.",
     "objective": "A switch forwards frames using MAC addresses within a broadcast domain; a router forwards packets between networks using IP addresses.",
     "skillTags": [
-      "Computer Networks"
+      "Network Layers"
     ],
     "softSkill": false
   },
@@ -214,7 +214,7 @@
     "explanation": "Small advertised windows cause senders to transmit small segments, wasting bandwidth and header overhead.",
     "objective": "Small advertised windows cause senders to transmit small segments, wasting bandwidth and header overhead.",
     "skillTags": [
-      "Computer Networks"
+      "Congestion Control"
     ],
     "keywords": [
       "problem",
@@ -242,7 +242,7 @@
     "explanation": "Nodes slowly converge upward on stale routes because they trust neighbours; split horizon stops advertising a route back to the neighbour it was learned from.",
     "objective": "Nodes slowly converge upward on stale routes because they trust neighbours; split horizon stops advertising a route back to the neighbour it was learned from.",
     "skillTags": [
-      "Computer Networks"
+      "Routing"
     ],
     "softSkill": false
   },
@@ -269,7 +269,7 @@
     "explanation": "A stop-and-wait sender keeps a timer and one outstanding frame, retransmitting the same sequence number until acknowledged.",
     "objective": "A stop-and-wait sender keeps a timer and one outstanding frame, retransmitting the same sequence number until acknowledged.",
     "skillTags": [
-      "Computer Networks"
+      "Transport"
     ],
     "keywords": [
       "Implement",
@@ -297,7 +297,7 @@
     "explanation": "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table.",
     "objective": "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table.",
     "skillTags": [
-      "Computer Networks"
+      "Addressing"
     ],
     "softSkill": false
   }

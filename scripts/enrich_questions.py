@@ -14,10 +14,109 @@ import os
 import sys
 
 # Which tag group each question topic belongs to.
+# Which tag group each topic belongs to. Exact topic names, so a subject tag
+# such as "ds" never wins over "Graphs" for a graphs question.
+TOPIC_TAGS = {
+    # --- accounting ---
+    "analysis": "Financial Analysis", "cash": "Financial Analysis",
+    "cash_flow": "Financial Analysis", "revenue": "Financial Analysis",
+    "ratios": "Financial Analysis", "books": "Accounting",
+    "basics": "Accounting", "statements": "Accounting",
+    "depreciation": "Depreciation", "inventory": "Inventory",
+    # --- algorithms ---
+    "amortized": "Complexity", "complexity": "Complexity", "np": "Complexity",
+    "recursion": "Recursion", "sorting": "Sorting", "searching": "Searching",
+    "dp": "Dynamic Programming", "greedy": "Greedy", "graphs": "Graphs",
+    "strings": "Strings", "two_pointers": "Two Pointers",
+    # --- analog ---
+    "amplifiers": "Circuit Design", "opamps": "Circuit Design",
+    "transistors": "Circuit Design", "capacitors": "Circuit Design",
+    "diodes": "Circuit Design", "oscillators": "Circuit Design",
+    "feedback": "Feedback Systems", "filters": "Circuit Design",
+    "stability": "Feedback Systems", "noise": "Noise Analysis",
+    # --- aptitude ---
+    "arithmetic": "Arithmetic", "numbers": "Number Systems",
+    "number_series": "Number Series", "averages": "Averages",
+    "percentages": "Percentages", "ratios": "Ratio and Proportion",
+    "probability": "Probability", "time_speed": "Time and Speed",
+    "time_work": "Time and Work", "work_time": "Time and Work",
+    "profit_loss": "Profit and Loss", "mixtures": "Mixtures and Alligation",
+    # --- dbms ---
+    "relational": "Relational Model", "sql": "SQL", "keys": "Keys and Constraints",
+    "normalization": "Normalization", "transactions": "Transactions",
+    "concurrency": "Concurrency", "indexing": "Indexing",
+    "query": "Query Processing", "optimization": "Query Processing",
+    # --- ds ---
+    "arrays": "Arrays", "linked_lists": "Linked Lists", "stacks": "Stacks",
+    "queues": "Queues", "hashing": "Hashing", "heaps": "Heaps",
+    "trees": "Trees", "binary_trees": "Trees", "balanced_trees": "Balanced Trees",
+    "graphs": "Graphs", "complexity": "Complexity Analysis",
+    "disjoint_sets": "Disjoint Sets",
+    # --- networks ---
+    "layers": "Network Layers", "addressing": "Addressing",
+    "protocols": "Protocols", "transport": "Transport",
+    "congestion": "Congestion Control", "routing": "Routing",
+    "security": "Network Security",
+    # --- oop ---
+    "encapsulation": "Encapsulation", "inheritance": "Inheritance",
+    "polymorphism": "Polymorphism", "constructors": "Object Lifetime",
+    "access_specifiers": "Encapsulation", "contracts": "Design Contracts",
+    "patterns": "Design Patterns", "memory": "Object Lifetime",
+    "design": "Software Design",
+    # --- os ---
+    "processes": "Processes", "scheduling": "CPU Scheduling",
+    "concurrency": "Concurrency", "synchronization": "Synchronization",
+    "deadlock": "Deadlocks", "memory": "Memory Management",
+    "storage": "File Systems", "io": "I/O Systems",
+    # --- reasoning ---
+    "series": "Series and Patterns", "odd_one_out": "Classification",
+    "coding": "Coding and Decoding", "coding_decoding": "Coding and Decoding",
+    "blood_relations": "Family Relations", "directions": "Directions",
+    "seating": "Seating Arrangement", "syllogism": "Syllogisms",
+    "puzzles": "Logic Puzzles", "analogies": "Analogies",
+    "logical_deduction": "Logical Deduction", "chess": "Board Reasoning",
+    # --- signals ---
+    "signal_types": "Signal Types", "convolution": "Convolution",
+    "fourier": "Fourier Analysis", "dtft_properties": "Fourier Analysis",
+    "sampling": "Sampling Theory", "filters": "Digital Filters",
+    "z_transform": "Z Transform", "stability": "System Stability",
+    "fft": "Fourier Analysis", "lti": "LTI Systems",
+    "modulation": "Modulation",
+}
+
+# Subject-level fallback, used only when no topic rule matched.
+SUBJECT_TAGS = {
+    "accounting": "Accounting", "algo": "Algorithms", "analog": "Circuit Design",
+    "aptitude": "Quantitative Aptitude", "dbms": "SQL & Databases",
+    "ds": "Data Structures", "networks": "Computer Networks",
+    "oop": "Object Oriented Programming", "os": "Operating Systems",
+    "reasoning": "Logical Reasoning", "signals": "Signal Processing",
+    "hr": "Behavioural Interviews", "placement": "Soft Skills",
+}
+
+# Behavioural/soft-skill topic rules. These run after the hard-skill rules, so a
+# subject can end up in both groups: explaining an algorithm is a Communication
+# question that lives in the Algorithms bank.
+SOFT_TOPIC_RULES = [
+    ("communication", "Communication"),
+    ("communica", "Communication"),
+    ("teamwork", "Teamwork"),
+    ("team", "Teamwork"),
+    ("conflict", "Conflict Resolution"),
+    ("leadership", "Leadership"),
+    ("negoti", "Negotiation"),
+    ("career", "Career Planning"),
+    ("adaptab", "Adaptability"),
+    ("ownership", "Ownership"),
+    ("scenario", "Problem Solving"),
+    ("situational", "Problem Solving"),
+    ("behavioural", "Behavioural Interviews"),
+    ("behavio", "Behavioural Interviews"),
+]
+
 TAG_RULES = [
     # (substring of subject or topic, hard_tag, soft_tag)
-    ("ds",      "Data Structures",  None),
-    ("tree",    "Data Structures",  None),
+    ("ds",      "Data Structures",  None),    ("tree",    "Data Structures",  None),
     ("graph",   "Graphs",           None),
     ("hash",    "Data Structures",  None),
     ("heap",    "Data Structures",  None),
@@ -80,31 +179,77 @@ TAG_RULES = [
 # Subjects that are entirely human-skills practice.
 SOFT_SUBJECTS = {"hr"}
 
+# Behavioural/soft-skill topic rules. These run after the hard-skill rules, so a
+# subject can end up in both groups: explaining an algorithm is a Communication
+# question that lives in the Algorithms bank.
+SOFT_TOPIC_RULES = [
+    ("communication", "Communication"),
+    ("communica", "Communication"),
+    ("teamwork", "Teamwork"),
+    ("team", "Teamwork"),
+    ("conflict", "Conflict Resolution"),
+    ("leadership", "Leadership"),
+    ("negoti", "Negotiation"),
+    ("career", "Career Planning"),
+    ("adaptab", "Adaptability"),
+    ("ownership", "Ownership"),
+    ("scenario", "Problem Solving"),
+    ("situational", "Problem Solving"),
+    ("behavioural", "Behavioural Interviews"),
+    ("behavio", "Behavioural Interviews"),
+]
+
 
 def tags_for(entry):
     subject = entry.get("subject", "")
     topic = entry.get("topic", "")
     haystack = (subject + " " + topic).lower()
 
+    is_soft = subject in SOFT_SUBJECTS
     hard_tags = []
     soft_tags = []
-    for needle, hard, soft in TAG_RULES:
-        if needle in haystack:
-            if hard and hard not in hard_tags:
-                hard_tags.append(hard)
-            if soft and soft not in soft_tags:
-                soft_tags.append(soft)
 
-    if not hard_tags:
-        hard_tags.append(subject or "General")
-
-    is_soft = subject in SOFT_SUBJECTS
     if is_soft:
-        # Soft subjects keep their own topic tags so the chart is not empty,
-        # but every question is marked soft so the tag is classified soft in
-        # the skills profile.
-        return hard_tags, list(hard_tags), True
+        # Soft subjects derive a specific behavioural tag from the topic, so the
+        # skill chart shows real coverage rather than one generic bucket.
+        for tag in soft_tags_for(subject, topic):
+            if tag not in soft_tags:
+                soft_tags.append(tag)
+        if not soft_tags:
+            soft_tags.append("Behavioural Interviews")
+        return [], soft_tags, True
+
+    # Technical subjects: a specific topic tag first, subject-level fallback.
+    hard_tags = hard_tag_for(subject, topic)
+    soft_tags = soft_tags_for(subject, topic)
     return hard_tags, soft_tags, False
+
+
+def hard_tag_for(subject, topic):
+    tag = TOPIC_TAGS.get(topic)
+    if tag:
+        return [tag]
+    tag = SUBJECT_TAGS.get(subject)
+    if tag:
+        return [tag]
+
+    # Word-aware substring fallback for topics not in the table. A plain
+    # substring test on "hr" used to match "synchr-onization", which tagged
+    # Operating Systems concurrency questions as soft skills.
+    words = set(w for w in (subject + " " + topic).lower().replace("_", " ").split() if w)
+    for needle, hard, _soft in TAG_RULES:
+        if needle in words and hard:
+            return [hard]
+    return [subject or "General"]
+
+
+def soft_tags_for(subject, topic):
+    words = set(w for w in topic.lower().replace("_", " ").split() if w)
+    out = []
+    for needle, tag in SOFT_TOPIC_RULES:
+        if needle in words and tag not in out:
+            out.append(tag)
+    return out
 
 
 def keywords_for(entry):
@@ -129,16 +274,12 @@ def enrich(path):
         if "objective" not in entry:
             entry["objective"] = entry.get("explanation", "")[:160] or "Apply the concept correctly."
             changed += 1
-        # Enrichment only fills gaps. Generated banks already carry curated
-        # skillTags, and overwriting them here replaced those with the subject
-        # name (e.g. "placement"), which polluted the skills profile.
-        if not entry.get("skillTags"):
-            entry["skillTags"] = hard_tags + soft_tags if soft_tags else hard_tags
+        # Authoritative, not "fill the gap": a previous run of this script
+        # mis-tagged Operating Systems concurrency questions as soft skills, and
+        # gap-filling could not undo its own earlier damage.
+        entry["skillTags"] = hard_tags + soft_tags if soft_tags else hard_tags
+        entry["softSkill"] = bool(is_soft or soft_tags)
         entry.setdefault("keywords", keywords_for(entry))
-        if not entry.get("softSkill"):
-            entry["softSkill"] = is_soft or bool(soft_tags)
-        elif not is_soft and not entry.get("softSkill"):
-            entry["softSkill"] = bool(soft_tags)
 
     with io.open(path, "w", encoding="utf-8") as fh:
         json.dump(data, fh, indent=2, ensure_ascii=False)

@@ -16,7 +16,7 @@
     "explanation": "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed.",
     "objective": "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed.",
     "skillTags": [
-      "Operating Systems"
+      "Processes"
     ],
     "keywords": [
       "Process",
@@ -41,7 +41,7 @@
     "explanation": "Virtual memory isolates address spaces and lets processes use more memory than is physically present.",
     "objective": "Virtual memory isolates address spaces and lets processes use more memory than is physically present.",
     "skillTags": [
-      "Operating Systems"
+      "Memory Management"
     ],
     "keywords": [
       "purpose",
@@ -66,7 +66,6 @@
     "explanation": "Deadlock is a cycle of waiting where no process can proceed.",
     "objective": "Deadlock is a cycle of waiting where no process can proceed.",
     "skillTags": [
-      "Operating Systems",
       "Concurrency"
     ],
     "keywords": [
@@ -92,7 +91,7 @@
     "explanation": "The OS saves the running process's state and restores another's so the CPU can be shared.",
     "objective": "The OS saves the running process's state and restores another's so the CPU can be shared.",
     "skillTags": [
-      "Operating Systems"
+      "CPU Scheduling"
     ],
     "softSkill": false
   },
@@ -113,7 +112,7 @@
     "explanation": "The TLB holds recent page-table entries so most translations skip the memory walk.",
     "objective": "The TLB holds recent page-table entries so most translations skip the memory walk.",
     "skillTags": [
-      "Operating Systems"
+      "Memory Management"
     ],
     "keywords": [
       "Translation",
@@ -139,7 +138,7 @@
     "explanation": "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent.",
     "objective": "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent.",
     "skillTags": [
-      "Operating Systems"
+      "File Systems"
     ],
     "softSkill": false
   },
@@ -160,7 +159,6 @@
     "explanation": "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions.",
     "objective": "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions.",
     "skillTags": [
-      "Operating Systems",
       "Concurrency"
     ],
     "keywords": [
@@ -193,7 +191,7 @@
     "explanation": "FIFO evicts the page that has been resident longest, which can suffer Belady's anomaly: more frames, more faults.",
     "objective": "FIFO evicts the page that has been resident longest, which can suffer Belady's anomaly: more frames, more faults.",
     "skillTags": [
-      "Operating Systems"
+      "Memory Management"
     ],
     "keywords": [
       "Simulate",
@@ -221,11 +219,9 @@
     "explanation": "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner.",
     "objective": "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner.",
     "skillTags": [
-      "Operating Systems",
-      "Behavioural Interviews",
-      "Communication"
+      "Synchronization"
     ],
-    "softSkill": true
+    "softSkill": false
   },
   {
     "id": "os_extra_hard_3",
@@ -245,7 +241,7 @@
     "explanation": "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved.",
     "objective": "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved.",
     "skillTags": [
-      "Operating Systems"
+      "I/O Systems"
     ],
     "softSkill": false
   }

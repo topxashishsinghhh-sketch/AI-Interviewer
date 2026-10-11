@@ -16,7 +16,7 @@
     "explanation": "Mergesort keeps equal keys in order and its worst case stays O(n log n).",
     "objective": "Mergesort keeps equal keys in order and its worst case stays O(n log n).",
     "skillTags": [
-      "Algorithms"
+      "Sorting"
     ],
     "keywords": [
       "sorting",
@@ -42,7 +42,7 @@
     "explanation": "Every element may have to be inspected, so the worst case is linear.",
     "objective": "Every element may have to be inspected, so the worst case is linear.",
     "skillTags": [
-      "Algorithms"
+      "Searching"
     ],
     "keywords": [
       "concept"
@@ -67,7 +67,7 @@
     "explanation": "Big-O bounds growth from above as input size tends to infinity.",
     "objective": "Big-O bounds growth from above as input size tends to infinity.",
     "skillTags": [
-      "algo"
+      "Complexity Analysis"
     ],
     "softSkill": false
   },
@@ -88,7 +88,7 @@
     "explanation": "Without a base case the recursion never stops and the stack overflows.",
     "objective": "Without a base case the recursion never stops and the stack overflows.",
     "skillTags": [
-      "algo"
+      "Recursion"
     ],
     "keywords": [
       "recursive",
@@ -115,7 +115,7 @@
     "explanation": "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n).",
     "objective": "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n).",
     "skillTags": [
-      "algo"
+      "Two Pointers"
     ],
     "softSkill": false
   },
@@ -137,7 +137,7 @@
     "explanation": "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version.",
     "objective": "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version.",
     "skillTags": [
-      "Algorithms"
+      "Greedy"
     ],
     "softSkill": false
   },

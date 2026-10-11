@@ -113,9 +113,7 @@
     "explanation": "It measures short-term liquidity by comparing short-term resources with short-term obligations.",
     "objective": "It measures short-term liquidity by comparing short-term resources with short-term obligations.",
     "skillTags": [
-      "Operating Systems",
-      "Accounting",
-      "Financial Analysis"
+      "Ratio and Proportion"
     ],
     "keywords": [
       "current",
@@ -141,7 +139,7 @@
     "explanation": "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought.",
     "objective": "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought.",
     "skillTags": [
-      "Accounting"
+      "Depreciation"
     ],
     "softSkill": false
   },
@@ -162,7 +160,6 @@
     "explanation": "Distributions to owners are financing activities, along with borrowings and share issues.",
     "objective": "Distributions to owners are financing activities, along with borrowings and share issues.",
     "skillTags": [
-      "Accounting",
       "Financial Analysis"
     ],
     "keywords": [
@@ -191,9 +188,7 @@
     "explanation": "It compares total debt with shareholders' funds, so the company finances 0.8 currency units of debt for each unit of equity.",
     "objective": "It compares total debt with shareholders' funds, so the company finances 0.8 currency units of debt for each unit of equity.",
     "skillTags": [
-      "Operating Systems",
-      "Accounting",
-      "Financial Analysis"
+      "Ratio and Proportion"
     ],
     "softSkill": false
   },
@@ -214,7 +209,7 @@
     "explanation": "Revenue follows the transfer of control of goods or services to the customer.",
     "objective": "Revenue follows the transfer of control of goods or services to the customer.",
     "skillTags": [
-      "Accounting"
+      "Financial Analysis"
     ],
     "keywords": [
       "revenue",
@@ -242,7 +237,7 @@
     "explanation": "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO.",
     "objective": "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO.",
     "skillTags": [
-      "Accounting"
+      "Inventory"
     ],
     "softSkill": false
   },
@@ -269,7 +264,7 @@
     "explanation": "Gross margin shows how much of each revenue unit survives direct production costs.",
     "objective": "Gross margin shows how much of each revenue unit survives direct production costs.",
     "skillTags": [
-      "Accounting"
+      "Financial Analysis"
     ],
     "keywords": [
       "Compute",
@@ -297,9 +292,7 @@
     "explanation": "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE.",
     "objective": "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE.",
     "skillTags": [
-      "Operating Systems",
-      "Accounting",
-      "Financial Analysis"
+      "Ratio and Proportion"
     ],
     "softSkill": false
   }

@@ -16,7 +16,7 @@
     "explanation": "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components.",
     "objective": "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components.",
     "skillTags": [
-      "OOP"
+      "Encapsulation"
     ],
     "keywords": [
       "encapsulation"
@@ -40,7 +40,7 @@
     "explanation": "Private members are only accessible within the class they are declared in.",
     "objective": "Private members are only accessible within the class they are declared in.",
     "skillTags": [
-      "OOP"
+      "Encapsulation"
     ],
     "keywords": [
       "specifier",
@@ -66,7 +66,7 @@
     "explanation": "Single inheritance is when a derived class inherits from exactly one base class.",
     "objective": "Single inheritance is when a derived class inherits from exactly one base class.",
     "skillTags": [
-      "OOP"
+      "Inheritance"
     ],
     "keywords": [
       "inheritance"
@@ -90,7 +90,7 @@
     "explanation": "Virtual functions allow derived class methods to be called through base class pointers/references at runtime.",
     "objective": "Virtual functions allow derived class methods to be called through base class pointers/references at runtime.",
     "skillTags": [
-      "OOP"
+      "Polymorphism"
     ],
     "keywords": [
       "enables",
@@ -118,7 +118,7 @@
     "explanation": "Public inheritance models 'is-a', protected/private model 'implemented-in-terms-of'. Access levels affect derived class access to base members.",
     "objective": "Public inheritance models 'is-a', protected/private model 'implemented-in-terms-of'. Access levels affect derived class access to base members.",
     "skillTags": [
-      "OOP"
+      "Inheritance"
     ],
     "softSkill": false
   },
@@ -141,7 +141,7 @@
     "explanation": "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable.",
     "objective": "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable.",
     "skillTags": [
-      "OOP"
+      "Polymorphism"
     ],
     "softSkill": false
   },
@@ -162,7 +162,6 @@
     "explanation": "Singleton pattern restricts instantiation to a single object and provides global access to it.",
     "objective": "Singleton pattern restricts instantiation to a single object and provides global access to it.",
     "skillTags": [
-      "OOP",
       "Design Patterns"
     ],
     "keywords": [
@@ -189,7 +188,6 @@
     "explanation": "Strategy pattern encapsulates algorithms and allows switching between them at runtime.",
     "objective": "Strategy pattern encapsulates algorithms and allows switching between them at runtime.",
     "skillTags": [
-      "OOP",
       "Design Patterns"
     ],
     "keywords": [
@@ -233,7 +231,6 @@
     "explanation": "Strategy pattern allows switching sorting algorithms at runtime without changing client code.",
     "objective": "Strategy pattern allows switching sorting algorithms at runtime without changing client code.",
     "skillTags": [
-      "OOP",
       "Design Patterns"
     ],
     "keywords": [
@@ -262,7 +259,7 @@
     "explanation": "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified.",
     "objective": "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified.",
     "skillTags": [
-      "OOP"
+      "Polymorphism"
     ],
     "keywords": [
       "Implement",
@@ -292,7 +289,7 @@
     "explanation": "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base class exists.",
     "objective": "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base cl",
     "skillTags": [
-      "OOP"
+      "Inheritance"
     ],
     "softSkill": false
   }

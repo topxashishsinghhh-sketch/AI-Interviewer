@@ -188,8 +188,7 @@
     "explanation": "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs.",
     "objective": "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs.",
     "skillTags": [
-      "Signal Processing",
-      "Circuit Design"
+      "Digital Filters"
     ],
     "softSkill": false
   },
@@ -210,7 +209,7 @@
     "explanation": "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation.",
     "objective": "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation.",
     "skillTags": [
-      "Circuit Design"
+      "System Stability"
     ],
     "keywords": [
       "degrees",
@@ -238,7 +237,7 @@
     "explanation": "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta).",
     "objective": "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta).",
     "skillTags": [
-      "Circuit Design"
+      "Feedback Systems"
     ],
     "softSkill": false
   },

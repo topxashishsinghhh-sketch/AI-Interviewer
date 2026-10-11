@@ -16,7 +16,7 @@
     "explanation": "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead.",
     "objective": "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead.",
     "skillTags": [
-      "Data Structures"
+      "Stacks"
     ],
     "keywords": [
       "expression",
@@ -41,7 +41,7 @@
     "explanation": "The extra prev pointer allows backward traversal and O(1) deletion given a node.",
     "objective": "The extra prev pointer allows backward traversal and O(1) deletion given a node.",
     "skillTags": [
-      "Data Structures"
+      "Linked Lists"
     ],
     "keywords": [
       "advantage"
@@ -65,7 +65,7 @@
     "explanation": "Linear probing scans forward from the collision until an empty slot is found.",
     "objective": "Linear probing scans forward from the collision until an empty slot is found.",
     "skillTags": [
-      "Data Structures"
+      "Hashing"
     ],
     "keywords": [
       "technique",
@@ -93,7 +93,7 @@
     "explanation": "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot.",
     "objective": "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot.",
     "skillTags": [
-      "Data Structures"
+      "Arrays"
     ],
     "softSkill": false
   },
@@ -114,7 +114,7 @@
     "explanation": "Every node is visited exactly once, so traversal is linear in the number of nodes.",
     "objective": "Every node is visited exactly once, so traversal is linear in the number of nodes.",
     "skillTags": [
-      "Data Structures"
+      "Trees"
     ],
     "keywords": [
       "complexity",
@@ -140,7 +140,7 @@
     "explanation": "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic.",
     "objective": "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic.",
     "skillTags": [
-      "Data Structures"
+      "Trees"
     ],
     "softSkill": false
   },
@@ -161,7 +161,7 @@
     "explanation": "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n).",
     "objective": "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n).",
     "skillTags": [
-      "Data Structures"
+      "Heaps"
     ],
     "keywords": [
       "structure",
@@ -193,7 +193,6 @@
     "explanation": "BFS explores by levels using a queue, visiting each vertex and edge once.",
     "objective": "BFS explores by levels using a queue, visiting each vertex and edge once.",
     "skillTags": [
-      "Data Structures",
       "Graphs"
     ],
     "keywords": [
@@ -220,7 +219,7 @@
     "explanation": "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance.",
     "objective": "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance.",
     "skillTags": [
-      "Data Structures"
+      "Balanced Trees"
     ],
     "softSkill": false
   },
@@ -242,7 +241,7 @@
     "explanation": "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer.",
     "objective": "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer.",
     "skillTags": [
-      "Data Structures"
+      "Complexity Analysis"
     ],
     "softSkill": false
   }

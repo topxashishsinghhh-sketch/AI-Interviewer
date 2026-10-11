@@ -16,7 +16,7 @@
     "explanation": "Discrete-time signals are defined at integer indices n; continuous-time signals are defined for all t.",
     "objective": "Discrete-time signals are defined at integer indices n; continuous-time signals are defined for all t.",
     "skillTags": [
-      "Signal Processing"
+      "Signal Types"
     ],
     "keywords": [
       "defined",
@@ -42,7 +42,7 @@
     "explanation": "delta(n - k) picks out x(n - k), so convolving with a shifted impulse shifts and scales the signal.",
     "objective": "delta(n - k) picks out x(n - k), so convolving with a shifted impulse shifts and scales the signal.",
     "skillTags": [
-      "Signal Processing"
+      "Convolution"
     ],
     "keywords": [
       "convolution",
@@ -69,7 +69,7 @@
     "explanation": "It expresses the signal as a sum of sinusoids, so the horizontal axis becomes frequency.",
     "objective": "It expresses the signal as a sum of sinusoids, so the horizontal axis becomes frequency.",
     "skillTags": [
-      "Signal Processing"
+      "Fourier Analysis"
     ],
     "keywords": [
       "Fourier",
@@ -96,7 +96,7 @@
     "explanation": "The Nyquist rate: sample strictly above twice the highest frequency so the shifted spectra do not overlap.",
     "objective": "The Nyquist rate: sample strictly above twice the highest frequency so the shifted spectra do not overlap.",
     "skillTags": [
-      "Signal Processing"
+      "Sampling Theory"
     ],
     "softSkill": false
   },
@@ -117,7 +117,7 @@
     "explanation": "Finite sums always converge except where poles at zero or infinity make the transform undefined.",
     "objective": "Finite sums always converge except where poles at zero or infinity make the transform undefined.",
     "skillTags": [
-      "Signal Processing"
+      "Z Transform"
     ],
     "keywords": [
       "convergence",
@@ -144,7 +144,7 @@
     "explanation": "Linearity gives superposition and scaling; time invariance means a shifted input yields the same shifted output.",
     "objective": "Linearity gives superposition and scaling; time invariance means a shifted input yields the same shifted output.",
     "skillTags": [
-      "Signal Processing"
+      "LTI Systems"
     ],
     "softSkill": false
   },
@@ -165,7 +165,7 @@
     "explanation": "Its magnitude response is 1 inside the passband |omega| <= W and 0 elsewhere.",
     "objective": "Its magnitude response is 1 inside the passband |omega| <= W and 0 elsewhere.",
     "skillTags": [
-      "Signal Processing"
+      "Digital Filters"
     ],
     "keywords": [
       "low-pass",
@@ -190,7 +190,7 @@
     "explanation": "The impulse response must be absolutely summable: the sum of |h[n]| over all n must be finite.",
     "objective": "The impulse response must be absolutely summable: the sum of |h[n]| over all n must be finite.",
     "skillTags": [
-      "Signal Processing"
+      "System Stability"
     ],
     "softSkill": false
   },
@@ -211,7 +211,7 @@
     "explanation": "If fs is below the Nyquist rate, the replicas centred at multiples of fs overlap and high frequencies masquerade as low ones.",
     "objective": "If fs is below the Nyquist rate, the replicas centred at multiples of fs overlap and high frequencies masquerade as low ones.",
     "skillTags": [
-      "Signal Processing"
+      "Fourier Analysis"
     ],
     "keywords": [
       "Aliasing",
@@ -236,7 +236,7 @@
     "explanation": "Multiplication in the time domain equals convolution in the frequency domain, and vice versa; a time shift only adds a linear phase term.",
     "objective": "Multiplication in the time domain equals convolution in the frequency domain, and vice versa; a time shift only adds a linear phase term.",
     "skillTags": [
-      "Signal Processing"
+      "Fourier Analysis"
     ],
     "softSkill": false
   },
@@ -263,7 +263,7 @@
     "explanation": "The FFT computes the DFT in O(n log n) by splitting into even/odd subsequences and combining with twiddle factors.",
     "objective": "The FFT computes the DFT in O(n log n) by splitting into even/odd subsequences and combining with twiddle factors.",
     "skillTags": [
-      "Signal Processing"
+      "Fourier Analysis"
     ],
     "keywords": [
       "Implement",
@@ -291,7 +291,7 @@
     "explanation": "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass filtering.",
     "objective": "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass fil",
     "skillTags": [
-      "Signal Processing"
+      "Sampling Theory"
     ],
     "softSkill": false
   }

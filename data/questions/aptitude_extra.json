@@ -16,7 +16,7 @@
     "explanation": "0.15 x 240 = 36.",
     "objective": "0.15 x 240 = 36.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Arithmetic"
     ],
     "keywords": [
       "concept"
@@ -40,7 +40,7 @@
     "explanation": "(250-200)/200 = 50/200 = 25%.",
     "objective": "(250-200)/200 = 50/200 = 25%.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Percentages"
     ],
     "keywords": [
       "percentage",
@@ -66,9 +66,7 @@
     "explanation": "A ratio compares two quantities by division, expressed as a fraction or with a colon.",
     "objective": "A ratio compares two quantities by division, expressed as a fraction or with a colon.",
     "skillTags": [
-      "Operating Systems",
-      "Financial Analysis",
-      "Quantitative Aptitude"
+      "Ratio and Proportion"
     ],
     "softSkill": false
   },
@@ -89,7 +87,7 @@
     "explanation": "(4+8+12)/3 = 24/3 = 8.",
     "objective": "(4+8+12)/3 = 24/3 = 8.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Averages"
     ],
     "keywords": [
       "average"
@@ -113,7 +111,7 @@
     "explanation": "Speed = distance / time = 150 / 2.5 = 60 km/h.",
     "objective": "Speed = distance / time = 150 / 2.5 = 60 km/h.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Time and Speed"
     ],
     "keywords": [
       "average"
@@ -138,8 +136,7 @@
     "explanation": "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price.",
     "objective": "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price.",
     "skillTags": [
-      "Operating Systems",
-      "Quantitative Aptitude"
+      "Profit and Loss"
     ],
     "softSkill": false
   },
@@ -160,8 +157,7 @@
     "explanation": "The terms are n(n+1), so the next is 6 x 7 = 42.",
     "objective": "The terms are n(n+1), so the next is 6 x 7 = 42.",
     "skillTags": [
-      "Quantitative Aptitude",
-      "Logical Reasoning"
+      "Number Series"
     ],
     "keywords": [
       "Complete"
@@ -191,7 +187,7 @@
     "explanation": "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided.",
     "objective": "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Time and Work"
     ],
     "keywords": [
       "Compute",
@@ -219,7 +215,7 @@
     "explanation": "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis.",
     "objective": "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Probability"
     ],
     "softSkill": false
   },
@@ -241,7 +237,7 @@
     "explanation": "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean.",
     "objective": "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean.",
     "skillTags": [
-      "Quantitative Aptitude"
+      "Mixtures and Alligation"
     ],
     "softSkill": false
   }

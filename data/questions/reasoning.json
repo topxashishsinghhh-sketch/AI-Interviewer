@@ -16,7 +16,7 @@
     "explanation": "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42.",
     "objective": "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42.",
     "skillTags": [
-      "Logical Reasoning"
+      "Series and Patterns"
     ],
     "keywords": [
       "Complete"
@@ -40,7 +40,7 @@
     "explanation": "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U.",
     "objective": "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U.",
     "skillTags": [
-      "Logical Reasoning"
+      "Series and Patterns"
     ],
     "keywords": [
       "Complete"
@@ -64,7 +64,7 @@
     "explanation": "The grandfather's only son is Rahul's father, so his daughter is Rahul's sister.",
     "objective": "The grandfather's only son is Rahul's father, so his daughter is Rahul's sister.",
     "skillTags": [
-      "Logical Reasoning"
+      "Family Relations"
     ],
     "keywords": [
       "Pointing",
@@ -91,7 +91,7 @@
     "explanation": "Every letter moves one position forward, so D-O-G becomes E-P-H.",
     "objective": "Every letter moves one position forward, so D-O-G becomes E-P-H.",
     "skillTags": [
-      "Logical Reasoning"
+      "Coding and Decoding"
     ],
     "softSkill": false
   },
@@ -112,7 +112,7 @@
     "explanation": "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced.",
     "objective": "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced.",
     "skillTags": [
-      "Logical Reasoning"
+      "Syllogisms"
     ],
     "keywords": [
       "flowers.",
@@ -140,7 +140,7 @@
     "explanation": "The path forms a rectangle: he ends 3 km east of the starting point.",
     "objective": "The path forms a rectangle: he ends 3 km east of the starting point.",
     "skillTags": [
-      "Logical Reasoning"
+      "Directions"
     ],
     "softSkill": false
   },
@@ -161,7 +161,7 @@
     "explanation": "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed.",
     "objective": "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed.",
     "skillTags": [
-      "Logical Reasoning"
+      "Seating Arrangement"
     ],
     "keywords": [
       "centre.",
@@ -187,7 +187,7 @@
     "explanation": "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153.",
     "objective": "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153.",
     "skillTags": [
-      "Logical Reasoning"
+      "Series and Patterns"
     ],
     "softSkill": false
   },
@@ -208,7 +208,7 @@
     "explanation": "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists.",
     "objective": "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists.",
     "skillTags": [
-      "Logical Reasoning"
+      "Syllogisms"
     ],
     "keywords": [
       "engineers",
@@ -236,7 +236,7 @@
     "explanation": "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify the three switches.",
     "objective": "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify t",
     "skillTags": [
-      "Logical Reasoning"
+      "Logic Puzzles"
     ],
     "softSkill": false
   },
@@ -257,8 +257,7 @@
     "explanation": "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed.",
     "objective": "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed.",
     "skillTags": [
-      "Circuit Design",
-      "Logical Reasoning"
+      "Analogies"
     ],
     "softSkill": false
   },
@@ -285,7 +284,7 @@
     "explanation": "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step.",
     "objective": "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step.",
     "skillTags": [
-      "Logical Reasoning"
+      "Directions"
     ],
     "keywords": [
       "(N/S/E/W",

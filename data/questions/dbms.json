@@ -16,7 +16,7 @@
     "explanation": "Rows are tuples, columns are attributes, and the table itself is a relation.",
     "objective": "Rows are tuples, columns are attributes, and the table itself is a relation.",
     "skillTags": [
-      "SQL & Databases"
+      "Relational Model"
     ],
     "keywords": [
       "relational"
@@ -40,7 +40,7 @@
     "explanation": "WHERE filters rows before grouping; HAVING filters the resulting groups.",
     "objective": "WHERE filters rows before grouping; HAVING filters the resulting groups.",
     "skillTags": [
-      "SQL & Databases"
+      "SQL"
     ],
     "keywords": [
       "filters",
@@ -65,7 +65,7 @@
     "explanation": "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey.",
     "objective": "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey.",
     "skillTags": [
-      "dbms"
+      "Keys and Constraints"
     ],
     "keywords": [
       "superkey"
@@ -89,7 +89,7 @@
     "explanation": "Every attribute must hold a single atomic value with no repeating groups.",
     "objective": "Every attribute must hold a single atomic value with no repeating groups.",
     "skillTags": [
-      "SQL & Databases"
+      "Normalization"
     ],
     "softSkill": false
   },
@@ -110,7 +110,7 @@
     "explanation": "Consistency means a transaction moves the database from one valid state to another.",
     "objective": "Consistency means a transaction moves the database from one valid state to another.",
     "skillTags": [
-      "SQL & Databases"
+      "Transactions"
     ],
     "keywords": [
       "concept"
@@ -136,7 +136,7 @@
     "explanation": "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans.",
     "objective": "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans.",
     "skillTags": [
-      "SQL & Databases"
+      "Indexing"
     ],
     "softSkill": false
   },
@@ -157,7 +157,7 @@
     "explanation": "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key.",
     "objective": "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key.",
     "skillTags": [
-      "SQL & Databases"
+      "Normalization"
     ],
     "keywords": [
       "relation"
@@ -203,7 +203,7 @@
     "explanation": "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear.",
     "objective": "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear.",
     "skillTags": [
-      "SQL & Databases"
+      "Transactions"
     ],
     "keywords": [
       "isolation",
@@ -230,7 +230,7 @@
     "explanation": "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost.",
     "objective": "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost.",
     "skillTags": [
-      "dbms"
+      "Query Processing"
     ],
     "softSkill": false
   },
@@ -257,7 +257,7 @@
     "explanation": "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) < (SELECT MAX(salary) ...), returns the runner-up.",
     "objective": "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) < (SELECT MAX(salary) ...), returns the runner-up.",
     "skillTags": [
-      "SQL & Databases"
+      "Indexing"
     ],
     "keywords": [
       "highest",
@@ -284,7 +284,7 @@
     "explanation": "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime.",
     "objective": "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime.",
     "skillTags": [
-      "SQL & Databases"
+      "Normalization"
     ],
     "softSkill": false
   }

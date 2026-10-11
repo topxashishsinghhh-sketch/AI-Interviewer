@@ -16,7 +16,7 @@
     "explanation": "An inner join keeps only rows whose join predicate matches on both sides.",
     "objective": "An inner join keeps only rows whose join predicate matches on both sides.",
     "skillTags": [
-      "SQL & Databases"
+      "SQL"
     ],
     "keywords": [
       "returns",
@@ -41,7 +41,7 @@
     "explanation": "SELECT DISTINCT deduplicates the projected rows.",
     "objective": "SELECT DISTINCT deduplicates the projected rows.",
     "skillTags": [
-      "SQL & Databases"
+      "SQL"
     ],
     "keywords": [
       "removes",
@@ -66,7 +66,7 @@
     "explanation": "A foreign key enforces referential integrity between two relations.",
     "objective": "A foreign key enforces referential integrity between two relations.",
     "skillTags": [
-      "dbms"
+      "Keys and Constraints"
     ],
     "keywords": [
       "foreign"
@@ -92,7 +92,7 @@
     "explanation": "It is the formal query language of operations over relations that SQL is built on.",
     "objective": "It is the formal query language of operations over relations that SQL is built on.",
     "skillTags": [
-      "SQL & Databases"
+      "Relational Model"
     ],
     "softSkill": false
   },
@@ -114,7 +114,7 @@
     "explanation": "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates.",
     "objective": "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates.",
     "skillTags": [
-      "SQL & Databases"
+      "SQL"
     ],
     "softSkill": false
   },
@@ -135,7 +135,7 @@
     "explanation": "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential.",
     "objective": "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential.",
     "skillTags": [
-      "SQL & Databases"
+      "Indexing"
     ],
     "keywords": [
       "queries"
@@ -160,7 +160,7 @@
     "explanation": "Re-running a range predicate returns newly inserted rows that another transaction committed in between.",
     "objective": "Re-running a range predicate returns newly inserted rows that another transaction committed in between.",
     "skillTags": [
-      "SQL & Databases"
+      "Transactions"
     ],
     "softSkill": false
   },
@@ -187,7 +187,7 @@
     "explanation": "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next.",
     "objective": "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next.",
     "skillTags": [
-      "dbms"
+      "Query Processing"
     ],
     "keywords": [
       "employees",
@@ -214,7 +214,7 @@
     "explanation": "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers.",
     "objective": "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers.",
     "skillTags": [
-      "SQL & Databases"
+      "Transactions"
     ],
     "softSkill": false
   },
@@ -236,7 +236,7 @@
     "explanation": "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost.",
     "objective": "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost.",
     "skillTags": [
-      "dbms"
+      "Query Processing"
     ],
     "softSkill": false
   }
