@@ -339,6 +339,16 @@
   </div>
 </div>
 
+<div id="bootError" hidden>
+  <h2 style="color:var(--bad)">The interface failed to start</h2>
+  <p class="muted">The page shell loaded but its script did not finish. The
+  message below is the actual browser error — send it back to whoever is
+  debugging this.</p>
+  <pre id="bootErrorDetail" class="problem-text"
+       style="padding:12px;border:1px solid var(--bad);border-radius:8px;
+              background:var(--surface-2);white-space:pre-wrap"></pre>
+</div>
+
 <script src="/app.js"></script>
 </body>
 </html>

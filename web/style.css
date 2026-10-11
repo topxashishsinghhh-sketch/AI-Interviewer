@@ -774,6 +774,21 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
 }
 .foot-hint kbd { display: inline-block; padding: 1px 5px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface-2); font-family: var(--mono); font-size: 10.5px; color: var(--text-2); }
 
+/* When the boot script failed, dim the shell so the error banner is what
+   you read instead of an empty page that looks merely unstyled. */
+body.boot-failed .layout,
+body.boot-failed .topbar { opacity: .25; pointer-events: none; }
+
+#bootError {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 20px 22px;
+  border: 1px solid var(--bad);
+  border-radius: var(--r-lg);
+  background: var(--surface-1);
+  box-shadow: var(--shadow-2);
+}
+
 /* --------------------------------------------------------------------------
    Responsive
    -------------------------------------------------------------------------- */

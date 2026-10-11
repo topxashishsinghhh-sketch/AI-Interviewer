@@ -1289,34 +1289,67 @@ async function loadAdmin() {
 }
 
 // ---------------------------------------------------------------------------
+// Failure surfacing.
+//
+// If app.js throws part-way through load, the result is an empty shell: no
+// sidebar, no nav, every view still hidden. That reads as "the page won't
+// open" and gives no clue why. Catch anything that escapes and print the real
+// browser error on the page instead of leaving a blank screen.
+// ---------------------------------------------------------------------------
+
+function showBootError(message) {
+  const banner = $("bootError");
+  const detail = $("bootErrorDetail");
+  if (!banner) return;
+  if (detail) detail.textContent = message;
+  banner.hidden = false;
+  // Keep the shell visible but dim it so the error is what you read.
+  document.body.classList.add("boot-failed");
+}
+
+window.addEventListener("error", (event) => {
+  showBootError(String(event.message || "unknown error")
+    + (event.filename ? "  (" + event.filename + ":" + event.lineno + ")" : ""));
+});
+
+window.addEventListener("unhandledrejection", (event) => {
+  showBootError("Unhandled promise rejection: "
+    + String(event.reason && event.reason.message ? event.reason.message : event.reason));
+});
+
+// ---------------------------------------------------------------------------
 // Bootstrap
 // ---------------------------------------------------------------------------
 
 (async function init() {
-  // Restore the saved theme before first paint so there is no flash.
-  applyTheme(state.theme);
+  try {
+    // Restore the saved theme before first paint so there is no flash.
+    applyTheme(state.theme);
 
-  // Reads as: what the browser is talking to, so the storage choice is visible.
-  $("backendNote").textContent =
-    "C++17 core · " + (window.location.protocol === "https:" ? "TLS" : "local HTTP") +
-    " · JSON or MongoDB storage";
-  // Land on the sign-in form. This used to call toggleAuthMode(), which flipped
-  // the false default into register mode.
-  setAuthMode(false);
-  renderTopbar();
-  if (state.token) {
-    try {
-      state.user = await request("/api/me");
-      await loadStats();
-      // Warm the palette's problem index so Ctrl+K can search immediately.
-      state.problems = await request("/api/problems?limit=200").catch(() => []);
-      renderTopbar();
-      show("dashboard");
-      return;
-    } catch (error) {
-      sessionStorage.removeItem(TOKEN_KEY);
-      state.token = "";
+    // Reads as: what the browser is talking to, so the storage choice is visible.
+    $("backendNote").textContent =
+      "C++17 core · " + (window.location.protocol === "https:" ? "TLS" : "local HTTP") +
+      " · JSON or MongoDB storage";
+    // Land on the sign-in form. This used to call toggleAuthMode(), which flipped
+    // the false default into register mode.
+    setAuthMode(false);
+    renderTopbar();
+    if (state.token) {
+      try {
+        state.user = await request("/api/me");
+        await loadStats();
+        // Warm the palette's problem index so Ctrl+K can search immediately.
+        state.problems = await request("/api/problems?limit=200").catch(() => []);
+        renderTopbar();
+        show("dashboard");
+        return;
+      } catch (error) {
+        sessionStorage.removeItem(TOKEN_KEY);
+        state.token = "";
+      }
     }
+    show("login");
+  } catch (error) {
+    showBootError(String(error && error.stack ? error.stack : error));
   }
-  show("login");
 })();

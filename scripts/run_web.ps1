@@ -56,16 +56,24 @@ if (-not (Test-Path $exe)) {
 
 $env:PATH = "$qtPrefix\bin;$mongoPrefix\bin;" + $env:PATH
 
-# Pass absolute paths so the front-end is found regardless of the caller's
-# working directory.
-$staticDir = Join-Path $root "web"
-$dataDir = Join-Path $root "data"
+# cpp-httplib resolves the mount directory by appending its own separator to
+# whatever is passed, so an absolute Windows path turns into a mixed-separator
+# path that FileStat cannot resolve -- the server then 404s every static file
+# and the site looks blank. Run from the project root with relative paths
+# instead, which is what the mount code handles correctly.
+$staticDir = "web"
+$dataDir = "data"
 
 Write-Host "[web] starting on http://$BindHost`:$Port (storage: $Storage)"
-Write-Host "[web] serving $staticDir"
+Write-Host "[web] serving $root\$staticDir"
 Write-Host "[web] open http://127.0.0.1:$Port in your browser; Ctrl+C to stop"
 Write-Host ""
 
-& $exe --host $BindHost --port "$Port" --storage $Storage `
-    --static-dir "$staticDir" --data-dir "$dataDir"
+Push-Location $root
+try {
+    & $exe --host $BindHost --port "$Port" --storage $Storage `
+        --static-dir $staticDir --data-dir $dataDir
+} finally {
+    Pop-Location
+}
 exit $LASTEXITCODE
