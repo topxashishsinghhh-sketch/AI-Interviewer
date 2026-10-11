@@ -5,6 +5,7 @@
 #include "core/LinearRampStrategy.h"
 #include "core/AdaptiveStrategy.h"
 #include "core/Student.h"
+#include "core/CodingQuestion.h"
 #include "problem/ProblemService.h"
 #include "interview/InterviewService.h"
 #include "interview/SessionFactory.h"
@@ -78,6 +79,22 @@ json problemToJson(const core::QuestionPtr& question) {
     out["type"] = question->type();
     out["text"] = question->display();
     out["title"] = question->text();
+
+    // Coding problems carry the starter code and the visible sample cases so the
+    // editor and the "Run" button work without extra round trips.
+    if (auto coding = std::dynamic_pointer_cast<core::CodingQuestion>(question)) {
+        out["template"] = coding->templateCode();
+        json samples = json::array();
+        for (std::size_t i = 0; i < coding->testCases().size(); ++i) {
+            const core::CodingTestCase& testCase = coding->testCases()[i];
+            if (testCase.isHidden) continue;
+            json item;
+            item["input"] = testCase.input;
+            item["expected"] = testCase.expectedOutput;
+            samples.push_back(item);
+        }
+        out["samples"] = samples;
+    }
     return out;
 }
 
@@ -527,6 +544,59 @@ void HttpServer::registerRoutes() {
             questionRepo_->findById(challenge.value().questionId);
         out["question"] = question ? JsonApi::questionToJson(question) : json(nullptr);
         sendJson(response, 200, out);
+    });
+
+    // ---- code execution (Run / Submit for coding problems) ----
+    server_->Post(R"(/api/problems/([^/]+)/run)", [this](const httplib::Request& request,
+                                                        httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        json body;
+        if (!JsonApi::body(request, body)) {
+            sendError(response, 400, "Invalid JSON body");
+            return;
+        }
+        const std::string code = stringField(body, "code");
+        const std::string language = stringField(body, "language", "cpp");
+        if (code.empty()) {
+            sendError(response, 400, "code is required");
+            return;
+        }
+
+        try {
+            const problem::ProblemService::CodeExecutionResult result =
+                problemService_->runCode(core::QuestionId(request.matches[1]),
+                                        core::UserId(context.userId()), code, language);
+            json out;
+            out["verdict"] = result.verdict;
+            out["allPassed"] = result.allPassed;
+            out["passedCount"] = result.passedCount;
+            out["totalCount"] = result.totalCount;
+            out["totalTimeMs"] = static_cast<long long>(result.totalTimeMs);
+            out["peakMemoryKb"] = static_cast<long long>(result.peakMemoryKb);
+            out["compileError"] = result.compileError;
+
+            json cases = json::array();
+            for (std::size_t i = 0; i < result.results.size(); ++i) {
+                const execution::TestCaseResult& testCase = result.results[i];
+                json item;
+                item["index"] = static_cast<int>(i) + 1;
+                item["passed"] = testCase.passed;
+                item["output"] = testCase.output;
+                item["expected"] = testCase.expected;
+                item["error"] = testCase.error;
+                item["errorType"] = testCase.errorType;
+                item["exitCode"] = testCase.exitCode;
+                item["timeMs"] = static_cast<long long>(testCase.timeMs);
+                item["memoryKb"] = static_cast<long long>(testCase.memoryKb);
+                cases.push_back(item);
+            }
+            out["results"] = cases;
+            sendJson(response, 200, out);
+        } catch (const std::exception& e) {
+            sendError(response, 400, e.what());
+        }
     });
 
     // ---- problems catalogue (LeetCode-style browsing) ----

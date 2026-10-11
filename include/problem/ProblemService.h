@@ -1,4 +1,4 @@
-// OOP: Service Layer (problem catalogue, solving, statistics)
+// OOP: Service Layer (problem catalogue, solving, statistics, code execution)
 #pragma once
 #include "core/IQuestionRepository.h"
 #include "core/IAttemptRepository.h"
@@ -9,7 +9,7 @@
 #include "core/FeedbackGenerator.h"
 #include "core/StrongId.h"
 #include "core/Difficulty.h"
-
+#include "execution/CodeExecutor.h"
 #include <chrono>
 #include <map>
 #include <memory>
@@ -53,6 +53,7 @@ struct Submission {
     std::string submittedAt;
 };
 
+// Aggregated per-user statistics for the dashboard.
 struct DifficultyCount {
     int easy = 0;
     int medium = 0;
@@ -64,11 +65,23 @@ struct UserStats {
     DifficultyCount solved;
     DifficultyCount available;
     int attempts = 0;
-    long long acceptancePermille = 0;   // solved/attempts * 1000, avoids float drift
+    double acceptancePermille = 0;   // solved/attempts * 1000, avoids float drift
     std::vector<std::pair<std::string, DifficultyCount>> bySubject;
     std::vector<std::string> badges;
     int streak = 0;
     int longestStreak = 0;
+};
+
+// Result of running code against test cases
+struct CodeExecutionResult {
+    bool allPassed = false;
+    int passedCount = 0;
+    int totalCount = 0;
+    long long totalTimeMs = 0;
+    long long peakMemoryKb = 0;
+    std::vector<execution::TestCaseResult> results;
+    std::string compileError;
+    std::string verdict; // "Accepted", "Wrong Answer", "Compile Error", etc.
 };
 
 class ProblemService {
@@ -91,6 +104,22 @@ public:
                             const std::string& answer,
                             const std::string& feedbackText);
 
+    // Run code against all test cases (for Coding questions)
+    struct CodeExecutionResult {
+        bool allPassed = false;
+        int passedCount = 0;
+        int totalCount = 0;
+        long long totalTimeMs = 0;
+        long long peakMemoryKb = 0;
+        std::vector<execution::TestCaseResult> results;
+        std::string compileError;
+        std::string verdict; // "Accepted", "Wrong Answer", "Compile Error", etc.
+    };
+    struct CodeExecutionResult runCode(const core::QuestionId& id,
+                                       const core::UserId& userId,
+                                       const std::string& code,
+                                       const std::string& language);
+
     std::vector<Submission> submissions(const core::UserId& userId,
                                          const core::QuestionId& questionId = core::QuestionId(""),
                                          int limit = 50) const;
@@ -102,7 +131,7 @@ public:
     // Distinct subjects that actually have questions, for the filter dropdown.
     std::vector<std::string> subjectsWithQuestions() const;
 
-private:
+public:
     // Per-user view of one question, built from the attempt history.
     struct Progress {
         bool solved = false;
@@ -119,10 +148,13 @@ private:
     static std::string isoStamp(const std::chrono::system_clock::time_point& tp);
     static std::string todayKey();
 
+    bool explainMode_ = false;
+
     std::shared_ptr<core::IQuestionRepository> questionRepo_;
     std::shared_ptr<core::IAttemptRepository> attemptRepo_;
     std::shared_ptr<core::IUserRepository> userRepo_;
     std::shared_ptr<core::FeedbackGenerator> feedback_;
+    std::shared_ptr<execution::CodeExecutor> codeExecutor_;
 };
 
 } // namespace problem

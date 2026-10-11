@@ -35,3 +35,7 @@ backups/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Code-execution scratch directories
+build/exec/
+build-gui/exec/

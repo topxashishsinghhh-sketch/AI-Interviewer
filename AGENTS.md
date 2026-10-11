@@ -47,3 +47,9 @@ Phases: 1 core console (JSON), 2 MongoDB, 3 admin/daily/streak/leaderboard,
   `C:\mongo-install` and a server at `C:\mongo-server`.
 - Because the driver is 64-bit and the console preset is 32-bit GCC 6.3, the
   Mongo tools and the Mongo-enabled console live in `build-gui`.
+- The code-execution sandbox (`execution::CodeExecutor`) compiles with
+  `std::system()` for the compile step and `CreateProcess` in a Job Object for
+  the run step, so it needs no extras on either toolchain. It writes to
+  `build/exec` / `build-gui/exec` (git-ignored) rather than a hard-coded `/tmp`.
+- The web front-end is plain HTML/CSS/JS with no build step, so edit
+  `web/app.js` / `web/index.html` / `web/style.css` and reload the browser.

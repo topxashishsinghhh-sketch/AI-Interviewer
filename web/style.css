@@ -219,6 +219,19 @@ button:disabled { opacity: .5; cursor: default; }
 }
 .editor-wrap { margin-bottom: 14px; }
 .editor-head { display: flex; justify-content: space-between; margin-bottom: 7px; }
+#pAnswer { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; tab-size: 4; }
+
+.sample { border-top: 1px solid var(--line); padding: 11px 0; }
+.sample:first-child { border-top: 0; padding-top: 0; }
+.sample b { font-size: 12px; }
+.sample-block { margin-top: 7px; }
+.sample-block pre {
+  margin: 3px 0 0; padding: 8px 10px;
+  background: var(--panel-2); border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12.5px; white-space: pre-wrap; word-break: break-word;
+}
 
 .verdict {
   border-radius: var(--radius); padding: 13px 16px; margin-bottom: 14px;

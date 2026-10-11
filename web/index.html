@@ -131,19 +131,43 @@
         <pre id="pText" class="problem-text"></pre>
       </div>
 
+      <div id="pSamples" class="panel" hidden>
+        <h3>Sample cases</h3>
+        <div id="pSampleList"></div>
+      </div>
+
       <div class="editor-wrap">
         <div class="editor-head">
-          <span class="muted">Your answer</span>
-          <span class="muted" id="pTypeNote"></span>
+          <span class="muted" id="pTypeNote">Your answer</span>
+          <span class="muted" id="pEditorHint"></span>
         </div>
         <textarea id="pAnswer" spellcheck="false" rows="10"></textarea>
         <div class="row">
           <button class="primary" id="pSubmit">Submit</button>
+          <button class="ghost" id="pRun" hidden>Run</button>
           <button class="ghost" id="pClear">Clear</button>
         </div>
       </div>
 
+      <div id="pTestCasePicker" class="filters" hidden>
+        <label class="check"><input type="checkbox" id="pSampleOnly" checked> Show sample cases only</label>
+        <select id="pLanguage">
+          <option value="cpp">C++17</option>
+          <option value="c">C11</option>
+        </select>
+      </div>
+
       <div id="pVerdict" class="verdict" hidden></div>
+      <div id="pTestResults" class="panel" hidden>
+        <div class="panel-head">
+          <h3>Test results</h3>
+          <span class="muted" id="pTestSummary"></span>
+        </div>
+        <table class="table">
+          <thead><tr><th>#</th><th>Result</th><th>Expected</th><th>Output</th><th>Time</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
       <div id="pSubmissions" class="panel" hidden>
         <h3>Your submissions</h3>
         <table class="table">

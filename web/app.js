@@ -13,9 +13,12 @@ const state = {
   registerMode: false,
   catalog: null,
   problems: [],
+  problemsLoaded: 0,
   currentProblem: null,
   interviewId: null,
-  interviewTotal: 0
+  interviewTotal: 0,
+  lastRunResult: null,
+  stats: null
 };
 
 async function request(path, options = {}) {
@@ -434,18 +437,50 @@ async function openProblem(id) {
     $("pDifficulty").textContent = problem.difficulty;
     $("pMeta").textContent = problem.subject + " · " + problem.topic + " · " + problem.type;
     $("pText").textContent = problem.text || "";
-    $("pAnswer").value = "";
-    $("pTypeNote").textContent =
-      problem.type === "MCQ" ? "Enter the option letter (A, B, C, D)"
-      : problem.type === "Coding" ? "Paste your solution"
-      : "Type your answer";
+    $("pAnswer").value = problem.template || "";
+    setProblemMode(problem.type);
+    renderSamples(problem.samples || []);
     $("pVerdict").hidden = true;
+    $("pTestResults").hidden = true;
     $("pSubmissions").hidden = true;
     setBookmarkButton(problem.bookmarked);
     show("problem");
     await loadProblemSubmissions(id);
   } catch (error) {
     setMessage("startMsg", error.message, "error");
+  }
+}
+
+// Renders the visible sample cases supplied with a coding problem.
+function renderSamples(samples) {
+  const panel = $("pSamples");
+  if (!samples || samples.length === 0) {
+    panel.hidden = true;
+    return;
+  }
+  panel.hidden = false;
+  $("pSampleList").innerHTML = samples.map((sample, index) =>
+    "<div class='sample'><b>Case " + (index + 1) + "</b>" +
+    "<div class='sample-block'><span class='muted'>Input</span><pre>" +
+    escapeHtml(sample.input) + "</pre></div>" +
+    "<div class='sample-block'><span class='muted'>Expected output</span><pre>" +
+    escapeHtml(sample.expected) + "</pre></div></div>"
+  ).join("");
+}
+
+// Coding problems get an editor plus Run/Submit; other types just answer text.
+function setProblemMode(type) {  const isCoding = type === "Coding";
+  $("pRun").hidden = !isCoding;
+  $("pTestCasePicker").hidden = !isCoding;
+  $("pAnswer").rows = isCoding ? 16 : 4;
+  $("pEditorHint").textContent = isCoding
+    ? "C++17 · stdin/stdout · 2 s and 256 MB per case"
+    : "";
+  if (isCoding) {
+    $("pTypeNote").textContent = "Code";
+  } else {
+    $("pTypeNote").textContent =
+      type === "MCQ" ? "Answer" : "Answer";
   }
 }
 
@@ -469,7 +504,75 @@ $("pBookmark").addEventListener("click", async () => {
   }
 });
 
-$("pClear").addEventListener("click", () => { $("pAnswer").value = ""; $("pAnswer").focus(); });
+$("pClear").addEventListener("click", () => {
+  const template = state.currentProblem ? state.currentProblem.template || "" : "";
+  $("pAnswer").value = template;
+  $("pAnswer").focus();
+});
+
+// "Run" compiles and executes the code against the visible samples. It records
+// nothing, so it can be used freely while working on a solution.
+$("pRun").addEventListener("click", async () => {
+  const problem = state.currentProblem;
+  if (!problem) return;
+  const code = $("pAnswer").value.trim();
+  if (!code) { setMessage("startMsg", "Write some code first.", "error"); return; }
+
+  $("pRun").disabled = true;
+  $("pSubmit").disabled = true;
+  try {
+    renderTestResults(null, "Running…");
+    const result = await request("/api/problems/" + encodeURIComponent(problem.id) + "/run",
+      { method: "POST", body: JSON.stringify({ code, language: $("pLanguage").value }) });
+    renderTestResults(result);
+  } catch (error) {
+    renderTestResults({ verdict: "Error", compileError: error.message, results: [] });
+  } finally {
+    $("pRun").disabled = false;
+    $("pSubmit").disabled = false;
+  }
+});
+
+function renderTestResults(result, pendingMessage) {
+  const panel = $("pTestResults");
+  const verdict = $("pVerdict");
+  panel.hidden = false;
+  const body = panel.querySelector("tbody");
+
+  if (!result) {
+    $("pTestSummary").textContent = pendingMessage || "";
+    body.innerHTML = "";
+    verdict.hidden = true;
+    return;
+  }
+
+  $("pTestSummary").textContent =
+    (result.verdict || "") + (result.totalCount
+      ? "  ·  " + result.passedCount + "/" + result.totalCount + " passed"
+      : "");
+  verdict.hidden = false;
+  verdict.className = "verdict " + (result.allPassed ? "ok" : "bad");
+  verdict.innerHTML = "<b>" + escapeHtml(result.verdict || "") + "</b>" +
+    (result.compileError ? "<pre class='problem-text'>" + escapeHtml(result.compileError) + "</pre>" : "");
+
+  const sampleOnly = $("pSampleOnly").checked;
+  const rows = result.results || [];
+  body.innerHTML = rows
+    .filter((item, index) => (sampleOnly ? index === 0 : true))
+    .map((item) =>
+      "<tr><td class='muted'>" + item.index + "</td>" +
+      "<td>" + (item.passed
+        ? "<span class='pill ok'>Passed</span>"
+        : "<span class='pill bad'>" + escapeHtml(item.errorType || "failed") + "</span>") + "</td>" +
+      "<td class='muted'>" + escapeHtml(String(item.expected).slice(0, 40)) + "</td>" +
+      "<td class='muted'>" + escapeHtml(String(item.output).slice(0, 40)) + "</td>" +
+      "<td class='muted'>" + (item.timeMs || 0) + "ms</td></tr>"
+    ).join("") || "<tr><td colspan='5' class='muted'>No cases ran.</td></tr>";
+}
+
+$("pSampleOnly").addEventListener("change", () => {
+  if (state.lastRunResult) renderTestResults(state.lastRunResult);
+});
 
 $("pSubmit").addEventListener("click", async () => {
   const problem = state.currentProblem;
@@ -479,6 +582,40 @@ $("pSubmit").addEventListener("click", async () => {
     setMessage("startMsg", "Write an answer first.", "error");
     return;
   }
+
+  // Coding problems judge by compiling and running, so Submit records the run.
+  if (problem.type === "Coding") {
+    $("pSubmit").disabled = true;
+    try {
+      const run = await request("/api/problems/" + encodeURIComponent(problem.id) + "/run",
+        { method: "POST", body: JSON.stringify({ code: answer, language: $("pLanguage").value }) });
+      state.lastRunResult = run;
+      renderTestResults(run);
+
+      const correct = Boolean(run.allPassed);
+      const verdict = $("pVerdict");
+      verdict.hidden = false;
+      verdict.className = "verdict " + (correct ? "ok" : "bad");
+      verdict.innerHTML = "<b>" + (correct ? "Accepted" : "Not accepted") + "</b>" +
+        escapeHtml(run.verdict === "Accepted"
+          ? "All test cases passed."
+          : (run.compileError || run.verdict || ""));
+
+      await request("/api/problems/" + encodeURIComponent(problem.id) + "/solve",
+        { method: "POST", body: JSON.stringify({ answer }) });
+      problem.solved = problem.solved || correct;
+      problem.attempts = (problem.attempts || 0) + 1;
+      await loadProblemSubmissions(problem.id);
+      await loadStats();
+      renderSidebar();
+    } catch (error) {
+      setMessage("startMsg", error.message, "error");
+    } finally {
+      $("pSubmit").disabled = false;
+    }
+    return;
+  }
+
   $("pSubmit").disabled = true;
   try {
     const result = await request("/api/problems/" + encodeURIComponent(problem.id) + "/solve",

@@ -126,6 +126,7 @@ for the question-bank schema and current coverage (105 questions across
 | 6. MongoDB backend verification | Done - driver built from source, live `mongod` end-to-end run |
 | 7. Web UI + HTTP API | Done - browser front-end over the same services, JSON or Mongo |
 | 8. LeetCode-style practice platform | Done - problem catalogue, solve, submissions, stats, calendar, 12 subjects |
+| 9. Real code execution | Done - sandboxed compile + run with test cases, Run/Submit, verdicts |
 
 Both builds compile with no warnings under `-Wall -Wextra -Wshadow -Wconversion`.
 
@@ -238,6 +239,29 @@ The site is now a practice platform rather than a thin wrapper around interviews
 Everything is served by the same C++ services, so the console, Qt GUI and web
 site share one implementation of every rule.
 
+## Features (Phase 9 - Real code execution)
+
+Coding problems are compiled and run, not text-matched:
+
+- `execution::CodeExecutor` writes the submission to an isolated scratch
+  directory, compiles it, then runs it against every test case
+- **Run** executes against the visible samples and records nothing; **Submit**
+  records the attempt and updates solved totals, streak and badges
+- Verdicts: Accepted, Wrong Answer, Compile Error, Runtime Error, Time Limit
+  Exceeded, Memory Limit Exceeded
+- Limits: 2 s and 256 MB per case, enforced by a Job Object (`ProcessMemoryLimit`,
+  `PerJobUserTimeLimit`) plus a wall-clock `WaitForSingleObject` timeout, with
+  `TerminateJobObject` as the kill switch
+- stdin/stdout via temp files rather than pipes, so a child that fills its
+  stdout cannot deadlock the parent
+- Output comparison strips `\r` and trailing blank space, so CRLF from a Windows
+  binary matches the LF in the question bank
+- `POST /api/problems/{id}/run` returns per-case status, expected vs actual
+  output, exit code and timing; the front-end shows a verdict banner plus a
+  test-results table
+- The problem API also returns `template` (starter code) and `samples` (visible
+  cases), so the editor and Run button work without extra round trips
+
 ## OOP Patterns Used
 - **Abstraction**: Question, User, Repository interfaces
 - **Inheritance**: MCQQuestion, TextQuestion, CodingQuestion; Student, Admin
@@ -255,6 +279,7 @@ site share one implementation of every rule.
 - **Mapper**: web::JsonApi (domain <-> API payloads), db::BSONMappers (domain <-> BSON)
 - **Repository (in-memory)**: web::SessionStore (browser tokens, in-progress interviews)
 - **Service (catalogue)**: problem::ProblemService (filtering, judging, statistics)
+- **Service (sandbox)**: execution::CodeExecutor (isolated compile and run)
 
 ## Testing
 ```bash

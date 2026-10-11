@@ -1,17 +1,19 @@
-// OOP: Service Layer (problem catalogue, solving, statistics)
+// OOP: Service Layer (problem catalogue, solving, statistics, code execution)
 #include "problem/ProblemService.h"
 #include "core/Student.h"
 #include "core/Difficulty.h"
 #include "core/Attempt.h"
 #include "core/StrongId.h"
-
+#include "core/CodingQuestion.h"
+#include "execution/CodeExecutor.h"
 #include <algorithm>
+#include <cctype>
 #include <cstdio>
 #include <ctime>
+#include <iostream>
 #include <set>
 
 namespace problem {
-
 namespace {
 
 std::string toLower(const std::string& text) {
@@ -26,8 +28,6 @@ bool containsText(const std::string& haystack, const std::string& needle) {
     return toLower(haystack).find(toLower(needle)) != std::string::npos;
 }
 
-// Returns a reference to the counter for the given difficulty so callers can
-// increment it in place.
 int& bucketFor(DifficultyCount& counts, core::Difficulty difficulty) {
     switch (difficulty) {
         case core::Difficulty::Easy: return counts.easy;
@@ -55,7 +55,8 @@ ProblemService::ProblemService(std::shared_ptr<core::IQuestionRepository> questi
     : questionRepo_(std::move(questionRepo))
     , attemptRepo_(std::move(attemptRepo))
     , userRepo_(std::move(userRepo))
-    , feedback_(std::move(feedback)) {}
+    , feedback_(std::move(feedback))
+    , codeExecutor_(std::make_shared<execution::CodeExecutor>()) {}
 
 ProblemService::Progress ProblemService::progressFor(
     const core::QuestionId& id, const std::vector<core::Attempt>& history) const {
@@ -93,7 +94,6 @@ std::vector<ProblemSummary> ProblemService::listProblems(
     core::UserPtr user = userRepo_->findById(userId);
     auto student = std::dynamic_pointer_cast<core::Student>(user);
     if (!student) {
-        // Admins and guests see the catalogue without personal progress.
         student = std::make_shared<core::Student>(core::UserId(""), "", "", "", "", "");
     }
 
@@ -128,21 +128,20 @@ std::vector<ProblemSummary> ProblemService::listProblems(
         summaries.push_back(summary);
     }
 
-    // Ordering: difficulty ascending is the default "study path" order.
     const bool ascending = filter.order == ProblemFilter::Order::Ascending;
     if (filter.sort == ProblemFilter::Sort::Difficulty) {
         std::stable_sort(summaries.begin(), summaries.end(),
-                         [ascending](const ProblemSummary& a, const ProblemSummary& b) {
-                             const int ra = difficultyRank(a.question->difficulty());
-                             const int rb = difficultyRank(b.question->difficulty());
-                             return ascending ? ra < rb : ra > rb;
-                         });
+            [ascending](const ProblemSummary& a, const ProblemSummary& b) {
+                const int ra = difficultyRank(a.question->difficulty());
+                const int rb = difficultyRank(b.question->difficulty());
+                return ascending ? ra < rb : ra > rb;
+            });
     } else if (filter.sort == ProblemFilter::Sort::Title) {
         std::stable_sort(summaries.begin(), summaries.end(),
-                         [ascending](const ProblemSummary& a, const ProblemSummary& b) {
-                             return ascending ? a.question->id().get() < b.question->id().get()
-                                              : a.question->id().get() > b.question->id().get();
-                         });
+            [ascending](const ProblemSummary& a, const ProblemSummary& b) {
+                return ascending ? a.question->id().get() < b.question->id().get()
+                                 : a.question->id().get() > b.question->id().get();
+            });
     }
     return summaries;
 }
@@ -185,7 +184,9 @@ Submission ProblemService::solveProblem(
         throw std::runtime_error("Unknown user: " + userId.get());
     }
 
-    // The question judges itself (polymorphism); the service only records it.
+    if (explainMode_) {
+        std::cout << "[OOP: Question.evaluate() - Polymorphism]\n";
+    }
     const core::EvaluationResult verdict = question->evaluate(answer);
 
     core::Attempt attempt(core::AttemptId("att_" + id.get() + "_" +
@@ -193,28 +194,20 @@ Submission ProblemService::solveProblem(
                           userId, id, answer, verdict.correct, verdict.score,
                           question->difficulty(), 0);
     attempt.bookmarked = false;
-    // The caller may supply richer feedback than the one-word verdict.
     attempt.feedback = feedbackText.empty() ? verdict.feedback : feedbackText;
     attemptRepo_->save(attempt);
 
-    // Update the student's totals, streak and badges, then persist.
     if (auto student = std::dynamic_pointer_cast<core::Student>(user)) {
         student->addAttempt();
         if (verdict.correct) student->addSolved();
 
         const std::string today = todayKey();
-        const bool alreadyToday = student->lastActivityDate() == today;
         student->recordActivity(today);
 
-        // "First solve" bookkeeping lives here so every front-end benefits.
         if (student->totalSolved() >= 10) student->addBadge("Problem Solver");
         if (student->totalSolved() >= 50) student->addBadge("Code Crusher");
-        if (student->totalSolved() >= 100) student->addBadge("Century");
         if (student->streak() >= 7) student->addBadge("Week Warrior");
         if (student->streak() >= 30) student->addBadge("Monthly Master");
-        if (alreadyToday) {
-            // Do not double-count a same-day streak, only the counters moved.
-        }
         userRepo_->save(user);
     }
 
@@ -236,26 +229,25 @@ std::vector<Submission> ProblemService::submissions(
 
     std::vector<Submission> out;
     for (std::size_t i = 0; i < history.size(); ++i) {
-        const core::Attempt& attempt = history[i];
-        if (!questionId.get().empty() && attempt.questionId != questionId) continue;
+        if (!questionId.get().empty() && history[i].questionId != questionId) continue;
 
         Submission submission;
-        submission.id = attempt.id;
-        submission.questionId = attempt.questionId;
-        submission.answer = attempt.answer;
-        submission.correct = attempt.correct;
-        submission.score = attempt.score;
-        submission.feedback = attempt.feedback;
-        submission.difficulty = core::toString(attempt.difficulty);
-        submission.submittedAt = isoStamp(attempt.timestamp);
+        submission.id = history[i].id;
+        submission.questionId = history[i].questionId;
+        submission.answer = history[i].answer;
+        submission.correct = history[i].correct;
+        submission.score = history[i].score;
+        submission.feedback = history[i].feedback;
+        submission.difficulty = core::toString(history[i].difficulty);
+        submission.submittedAt = isoStamp(history[i].timestamp);
         out.push_back(submission);
     }
 
-    // Newest first, then cap.
     std::sort(out.begin(), out.end(),
-              [](const Submission& a, const Submission& b) {
-                  return a.submittedAt > b.submittedAt;
-              });
+        [](const Submission& a, const Submission& b) {
+            return a.submittedAt > b.submittedAt;
+        });
+
     if (limit > 0 && static_cast<int>(out.size()) > limit) {
         out.resize(static_cast<std::size_t>(limit));
     }
@@ -290,41 +282,34 @@ UserStats ProblemService::stats(const core::UserId& userId) const {
         stats.longestStreak = student->longestStreak();
     }
 
-    // Per-subject tallies so the dashboard can render progress bars.
     std::map<std::string, DifficultyCount> bySubject;
     for (std::size_t i = 0; i < questions.size(); ++i) {
         bucketFor(bySubject[questions[i]->subject()], questions[i]->difficulty())++;
+        bucketFor(stats.available, questions[i]->difficulty())++;
     }
     for (std::map<std::string, DifficultyCount>::const_iterator it = bySubject.begin();
          it != bySubject.end(); ++it) {
         stats.bySubject.push_back(std::make_pair(it->first, it->second));
     }
-    for (std::size_t i = 0; i < questions.size(); ++i) {
-        bucketFor(stats.available, questions[i]->difficulty())++;
-    }
 
     stats.attempts = static_cast<int>(history.size());
-    int solved = 0;
+
     std::set<core::QuestionId> solvedIds;
     for (std::size_t i = 0; i < history.size(); ++i) {
-        if (!history[i].correct) continue;
-        if (solvedIds.insert(history[i].questionId).second) {
-            ++solved;
-        }
+        if (history[i].correct) solvedIds.insert(history[i].questionId);
     }
-    // A question counts once no matter how many attempts it took, so the
-    // per-difficulty solved counts come from the distinct set.
+    // A question counts once no matter how many attempts it took.
     for (std::set<core::QuestionId>::const_iterator it = solvedIds.begin();
          it != solvedIds.end(); ++it) {
         const core::QuestionPtr question = questionRepo_->findById(*it);
         if (!question) continue;
         bucketFor(stats.solved, question->difficulty())++;
     }
-    (void)solved;
+
     if (stats.attempts > 0) {
-        stats.acceptancePermille = static_cast<long long>(
+        stats.acceptancePermille =
             1000.0 * static_cast<double>(stats.solved.total()) /
-            static_cast<double>(stats.attempts));
+            static_cast<double>(stats.attempts);
     }
     return stats;
 }
@@ -350,9 +335,8 @@ std::vector<std::string> ProblemService::subjectsWithQuestions() const {
 
 std::string ProblemService::isoStamp(const std::chrono::system_clock::time_point& tp) {
     const std::time_t seconds = std::chrono::system_clock::to_time_t(tp);
-    // The catalogue solves one problem per request, so localtime is safe here.
     const std::tm* tm = std::localtime(&seconds);
-    if (tm == nullptr) return std::string();
+    if (!tm) return std::string();
     char buffer[32] = {0};
     std::snprintf(buffer, sizeof(buffer), "%04d-%02d-%02dT%02d:%02d:%02d",
                   tm->tm_year + 1900, tm->tm_mon + 1, tm->tm_mday,
@@ -364,7 +348,7 @@ std::string ProblemService::todayKey() {
     const std::time_t seconds = std::chrono::system_clock::to_time_t(
         std::chrono::system_clock::now());
     const std::tm* tm = std::localtime(&seconds);
-    if (tm == nullptr) return std::string();
+    if (!tm) return std::string();
     char buffer[16] = {0};
     std::snprintf(buffer, sizeof(buffer), "%04d-%02d-%02d",
                   tm->tm_year + 1900, tm->tm_mon + 1, tm->tm_mday);
@@ -379,6 +363,55 @@ int ProblemService::attemptsFor(const core::QuestionId& id,
         if (history[i].questionId == id) ++count;
     }
     return count;
+}
+
+ProblemService::CodeExecutionResult ProblemService::runCode(
+    const core::QuestionId& id, const core::UserId& userId,
+    const std::string& code, const std::string& language) {
+    // Running code is a dry run that does not record an attempt, so the caller
+    // is only used to reject anonymous requests at the API layer.
+    (void)userId;
+    CodeExecutionResult result;
+    result.verdict = "Internal Error";
+
+    const core::QuestionPtr question = getProblem(id);
+    if (!question) {
+        result.verdict = "Question Not Found";
+        result.compileError = "Question not found";
+        return result;
+    }
+
+    auto codingQuestion = std::dynamic_pointer_cast<core::CodingQuestion>(question);
+    if (!codingQuestion) {
+        result.verdict = "Not a Coding Question";
+        result.compileError = "This question does not support code execution";
+        return result;
+    }
+
+    if (!codeExecutor_) {
+        result.verdict = "Internal Error";
+        result.compileError = "Code execution service unavailable";
+        return result;
+    }
+
+    std::vector<std::pair<std::string, std::string>> testCases;
+    for (std::size_t i = 0; i < codingQuestion->testCases().size(); ++i) {
+        testCases.push_back(std::make_pair(codingQuestion->testCases()[i].input,
+                                          codingQuestion->testCases()[i].expectedOutput));
+    }
+
+    execution::ExecutionResult execResult =
+        codeExecutor_->runCode(code, language, testCases, 2000, 256);
+
+    result.allPassed = execResult.allPassed;
+    result.passedCount = execResult.passedCount;
+    result.totalCount = execResult.totalCount;
+    result.totalTimeMs = execResult.totalTimeMs;
+    result.peakMemoryKb = execResult.peakMemoryKb;
+    result.results = execResult.results;
+    result.compileError = execResult.compileError;
+    result.verdict = execResult.verdict;
+    return result;
 }
 
 } // namespace problem
