@@ -6,9 +6,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "In the relational model, a row of a table is called a:",
-    "options": ["Tuple", "Attribute", "Relation key", "Schema"],
+    "options": [
+      "Tuple",
+      "Attribute",
+      "Relation key",
+      "Schema"
+    ],
     "answer": 0,
-    "explanation": "Rows are tuples, columns are attributes, and the table itself is a relation."
+    "explanation": "Rows are tuples, columns are attributes, and the table itself is a relation.",
+    "objective": "Rows are tuples, columns are attributes, and the table itself is a relation.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "relational"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_easy_2",
@@ -17,9 +30,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which SQL clause filters groups produced by GROUP BY?",
-    "options": ["HAVING", "WHERE", "ORDER BY", "LIMIT"],
+    "options": [
+      "HAVING",
+      "WHERE",
+      "ORDER BY",
+      "LIMIT"
+    ],
     "answer": 0,
-    "explanation": "WHERE filters rows before grouping; HAVING filters the resulting groups."
+    "explanation": "WHERE filters rows before grouping; HAVING filters the resulting groups.",
+    "objective": "WHERE filters rows before grouping; HAVING filters the resulting groups.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "filters",
+      "produced"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_easy_3",
@@ -28,9 +55,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "A superkey is:",
-    "options": ["Any set of attributes that uniquely identifies a tuple", "Always a single column", "Never a primary key", "A foreign key"],
+    "options": [
+      "Any set of attributes that uniquely identifies a tuple",
+      "Always a single column",
+      "Never a primary key",
+      "A foreign key"
+    ],
     "answer": 0,
-    "explanation": "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey."
+    "explanation": "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey.",
+    "objective": "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey.",
+    "skillTags": [
+      "dbms"
+    ],
+    "keywords": [
+      "superkey"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_easy_4",
@@ -39,9 +79,19 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What does first normal form (1NF) require?",
-    "keywords": ["atomic", "single valued", "repeating group", "indivisible"],
+    "keywords": [
+      "atomic",
+      "single valued",
+      "repeating group",
+      "indivisible"
+    ],
     "minKeywords": 2,
-    "explanation": "Every attribute must hold a single atomic value with no repeating groups."
+    "explanation": "Every attribute must hold a single atomic value with no repeating groups.",
+    "objective": "Every attribute must hold a single atomic value with no repeating groups.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_med_1",
@@ -50,9 +100,20 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "The 'C' in ACID stands for:",
-    "options": ["Consistency", "Concurrency", "Compilation", "Commit"],
+    "options": [
+      "Consistency",
+      "Concurrency",
+      "Compilation",
+      "Commit"
+    ],
     "answer": 0,
-    "explanation": "Consistency means a transaction moves the database from one valid state to another."
+    "explanation": "Consistency means a transaction moves the database from one valid state to another.",
+    "objective": "Consistency means a transaction moves the database from one valid state to another.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "dbms_med_2",
@@ -61,9 +122,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why is a B+ tree preferred over a binary search tree for disk indexes?",
-    "keywords": ["height", "fanout", "node", "disk", "i/o", "fewer"],
+    "keywords": [
+      "height",
+      "fanout",
+      "node",
+      "disk",
+      "i/o",
+      "fewer"
+    ],
     "minKeywords": 2,
-    "explanation": "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans."
+    "explanation": "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans.",
+    "objective": "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_med_3",
@@ -72,9 +145,22 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "A relation is in 2NF when it is in 1NF and:",
-    "options": ["No partial dependency of non-prime attributes on a candidate key", "No transitive dependency", "No multivalued dependency", "Every determinant is a key"],
+    "options": [
+      "No partial dependency of non-prime attributes on a candidate key",
+      "No transitive dependency",
+      "No multivalued dependency",
+      "Every determinant is a key"
+    ],
     "answer": 0,
-    "explanation": "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key."
+    "explanation": "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key.",
+    "objective": "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "relation"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_med_4",
@@ -83,9 +169,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is a lost update, and which isolation level prevents it?",
-    "keywords": ["overwrite", "concurrent", "read committed", "uncommitted", "two transactions"],
+    "keywords": [
+      "overwrite",
+      "concurrent",
+      "read committed",
+      "uncommitted",
+      "two transactions"
+    ],
     "minKeywords": 2,
-    "explanation": "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it."
+    "explanation": "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it.",
+    "objective": "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it.",
+    "skillTags": [
+      "Concurrency"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_hard_1",
@@ -94,9 +191,23 @@
     "difficulty": "Hard",
     "type": "MCQ",
     "text": "Which isolation level still allows phantom reads?",
-    "options": ["Repeatable Read in some engines", "Serializable", "Snapshot in most engines", "Strict two-phase locking"],
+    "options": [
+      "Repeatable Read in some engines",
+      "Serializable",
+      "Snapshot in most engines",
+      "Strict two-phase locking"
+    ],
     "answer": 0,
-    "explanation": "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear."
+    "explanation": "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear.",
+    "objective": "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "isolation",
+      "phantom"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_hard_2",
@@ -105,9 +216,21 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why can a nested-loop join be cheaper than a hash join for small, indexed inputs?",
-    "keywords": ["index", "nested", "probe", "build", "hashing", "small"],
+    "keywords": [
+      "index",
+      "nested",
+      "probe",
+      "build",
+      "hashing",
+      "small"
+    ],
     "minKeywords": 2,
-    "explanation": "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost."
+    "explanation": "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost.",
+    "objective": "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost.",
+    "skillTags": [
+      "dbms"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_hard_3",
@@ -129,7 +252,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) < (SELECT MAX(salary) ...), returns the runner-up."
+    "explanation": "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) < (SELECT MAX(salary) ...), returns the runner-up.",
+    "objective": "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) < (SELECT MAX(salary) ...), returns the runner-up.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "highest",
+      "employees",
+      "returning"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_hard_4",
@@ -138,8 +271,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain how BCNF differs from 3NF and when a schema can be in 3NF but not BCNF.",
-    "keywords": ["determinant", "superkey", "transitive", "prime", "candidate"],
+    "keywords": [
+      "determinant",
+      "superkey",
+      "transitive",
+      "prime",
+      "candidate"
+    ],
     "minKeywords": 2,
-    "explanation": "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime."
+    "explanation": "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime.",
+    "objective": "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "softSkill": false
   }
 ]

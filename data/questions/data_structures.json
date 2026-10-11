@@ -6,9 +6,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the time complexity of accessing an element by index in an array?",
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
     "answer": 0,
-    "explanation": "Arrays support random access: the address is base + index * elementSize, so it is constant time."
+    "explanation": "Arrays support random access: the address is base + index * elementSize, so it is constant time.",
+    "objective": "Arrays support random access: the address is base + index * elementSize, so it is constant time.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "complexity",
+      "accessing",
+      "element"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_easy_2",
@@ -17,9 +32,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the time complexity of searching for an element in a singly linked list?",
-    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n^2)"
+    ],
     "answer": 2,
-    "explanation": "You must traverse from the head because there is no random access, so the worst case visits every node."
+    "explanation": "You must traverse from the head because there is no random access, so the worst case visits every node.",
+    "objective": "You must traverse from the head because there is no random access, so the worst case visits every node.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "complexity",
+      "searching",
+      "element"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_easy_3",
@@ -28,9 +58,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which principle does a stack follow?",
-    "options": ["FIFO", "LIFO", "Priority order", "Random order"],
+    "options": [
+      "FIFO",
+      "LIFO",
+      "Priority order",
+      "Random order"
+    ],
     "answer": 1,
-    "explanation": "A stack is Last In First Out: the most recently pushed element is the first one popped."
+    "explanation": "A stack is Last In First Out: the most recently pushed element is the first one popped.",
+    "objective": "A stack is Last In First Out: the most recently pushed element is the first one popped.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "principle"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_easy_4",
@@ -39,9 +82,19 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "Which data structure serves elements in First In First Out order?",
-    "keywords": ["queue", "FIFO", "front", "rear"],
+    "keywords": [
+      "queue",
+      "FIFO",
+      "front",
+      "rear"
+    ],
     "minKeywords": 2,
-    "explanation": "A queue inserts at the rear and removes from the front, preserving arrival order."
+    "explanation": "A queue inserts at the rear and removes from the front, preserving arrival order.",
+    "objective": "A queue inserts at the rear and removes from the front, preserving arrival order.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_med_1",
@@ -50,9 +103,23 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "In a binary search tree, where is the maximum element found?",
-    "options": ["Root", "Right-most node", "Left-most node", "Any leaf"],
+    "options": [
+      "Root",
+      "Right-most node",
+      "Left-most node",
+      "Any leaf"
+    ],
     "answer": 1,
-    "explanation": "Keep going right until there is no right child; that node holds the largest key."
+    "explanation": "Keep going right until there is no right child; that node holds the largest key.",
+    "objective": "Keep going right until there is no right child; that node holds the largest key.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "maximum",
+      "element"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_med_2",
@@ -61,9 +128,19 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is the maximum number of nodes at level L (root at level 0) of a binary tree?",
-    "keywords": ["2^l", "2", "level", "power of two"],
+    "keywords": [
+      "2^l",
+      "2",
+      "level",
+      "power of two"
+    ],
     "minKeywords": 2,
-    "explanation": "Each level can hold at most twice the previous level, so level L holds 2^L nodes."
+    "explanation": "Each level can hold at most twice the previous level, so level L holds 2^L nodes.",
+    "objective": "Each level can hold at most twice the previous level, so level L holds 2^L nodes.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_med_3",
@@ -72,9 +149,24 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "What is the average-case time complexity of a hash table lookup with a good hash function?",
-    "options": ["O(1)", "O(log n)", "O(n)", "O(log log n)"],
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(log log n)"
+    ],
     "answer": 0,
-    "explanation": "With a uniform hash and low load factor, the expected chain length is constant."
+    "explanation": "With a uniform hash and low load factor, the expected chain length is constant.",
+    "objective": "With a uniform hash and low load factor, the expected chain length is constant.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "average-case",
+      "complexity",
+      "function"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_med_4",
@@ -83,9 +175,19 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is the time complexity of inserting an element into a binary min-heap of n elements?",
-    "keywords": ["log", "height", "bubble up", "o(log"],
+    "keywords": [
+      "log",
+      "height",
+      "bubble up",
+      "o(log"
+    ],
     "minKeywords": 1,
-    "explanation": "The new element bubbles up at most the height of the heap, which is O(log n)."
+    "explanation": "The new element bubbles up at most the height of the heap, which is O(log n).",
+    "objective": "The new element bubbles up at most the height of the heap, which is O(log n).",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_hard_1",
@@ -94,9 +196,20 @@
     "difficulty": "Hard",
     "type": "MCQ",
     "text": "What is the height of an AVL tree with n nodes?",
-    "options": ["O(log n)", "O(n)", "O(1)", "O(sqrt(n))"],
+    "options": [
+      "O(log n)",
+      "O(n)",
+      "O(1)",
+      "O(sqrt(n))"
+    ],
     "answer": 0,
-    "explanation": "AVL rotations keep the height balanced within a constant factor of log n."
+    "explanation": "AVL rotations keep the height balanced within a constant factor of log n.",
+    "objective": "AVL rotations keep the height balanced within a constant factor of log n.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "ds_hard_2",
@@ -105,9 +218,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "State the time complexity of a breadth-first search on a graph with V vertices and E edges represented by adjacency lists.",
-    "keywords": ["v+e", "o(v", "linear", "each edge once"],
+    "keywords": [
+      "v+e",
+      "o(v",
+      "linear",
+      "each edge once"
+    ],
     "minKeywords": 1,
-    "explanation": "Each vertex and each edge is visited a constant number of times, giving O(V + E)."
+    "explanation": "Each vertex and each edge is visited a constant number of times, giving O(V + E).",
+    "objective": "Each vertex and each edge is visited a constant number of times, giving O(V + E).",
+    "skillTags": [
+      "Data Structures",
+      "Graphs"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_hard_3",
@@ -129,7 +253,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function."
+    "explanation": "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function.",
+    "objective": "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "Implement",
+      "union-find",
+      "(disjoint",
+      "structure"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_hard_4",
@@ -138,8 +273,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why does Dijkstra's algorithm fail with negative edge weights while Bellman-Ford does not?",
-    "keywords": ["greedy", "settled", "final", "shortest path", "relaxation"],
+    "keywords": [
+      "greedy",
+      "settled",
+      "final",
+      "shortest path",
+      "relaxation"
+    ],
     "minKeywords": 2,
-    "explanation": "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates negative weights (barring negative cycles)."
+    "explanation": "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates negative weights (barring negative cycles).",
+    "objective": "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates ne",
+    "skillTags": [
+      "Data Structures",
+      "Graphs"
+    ],
+    "softSkill": false
   }
 ]

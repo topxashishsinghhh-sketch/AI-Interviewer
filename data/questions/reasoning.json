@@ -6,9 +6,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Complete the series: 2, 6, 12, 20, 30, ?",
-    "options": ["36", "40", "42", "44"],
+    "options": [
+      "36",
+      "40",
+      "42",
+      "44"
+    ],
     "answer": 2,
-    "explanation": "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42."
+    "explanation": "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42.",
+    "objective": "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "Complete"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_easy_2",
@@ -17,9 +30,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Complete the series: A, C, F, J, O, ?",
-    "options": ["T", "U", "S", "V"],
+    "options": [
+      "T",
+      "U",
+      "S",
+      "V"
+    ],
     "answer": 1,
-    "explanation": "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U."
+    "explanation": "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U.",
+    "objective": "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "Complete"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_easy_3",
@@ -28,9 +54,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Pointing to a photo, Rahul said, \"She is the daughter of my grandfather's only son.\" Who is she?",
-    "options": ["His cousin", "His sister", "His aunt", "His niece"],
+    "options": [
+      "His cousin",
+      "His sister",
+      "His aunt",
+      "His niece"
+    ],
     "answer": 1,
-    "explanation": "The grandfather's only son is Rahul's father, so his daughter is Rahul's sister."
+    "explanation": "The grandfather's only son is Rahul's father, so his daughter is Rahul's sister.",
+    "objective": "The grandfather's only son is Rahul's father, so his daughter is Rahul's sister.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "Pointing",
+      "daughter",
+      "grandfather's"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_easy_4",
@@ -39,9 +80,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "If 'CAT' is written as 'DBU', how is 'DOG' written?",
-    "keywords": ["eph", "each letter", "next", "shifted one", "forward"],
+    "keywords": [
+      "eph",
+      "each letter",
+      "next",
+      "shifted one",
+      "forward"
+    ],
     "minKeywords": 2,
-    "explanation": "Every letter moves one position forward, so D-O-G becomes E-P-H."
+    "explanation": "Every letter moves one position forward, so D-O-G becomes E-P-H.",
+    "objective": "Every letter moves one position forward, so D-O-G becomes E-P-H.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_med_1",
@@ -50,9 +102,25 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "All roses are flowers. Some flowers fade quickly. Which conclusion must be true?",
-    "options": ["Some roses fade quickly", "All flowers are roses", "No roses fade quickly", "None of these necessarily follow"],
+    "options": [
+      "Some roses fade quickly",
+      "All flowers are roses",
+      "No roses fade quickly",
+      "None of these necessarily follow"
+    ],
     "answer": 3,
-    "explanation": "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced."
+    "explanation": "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced.",
+    "objective": "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "flowers.",
+      "flowers",
+      "quickly.",
+      "conclusion"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_med_2",
@@ -61,9 +129,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "A man walks 5 km north, turns right and walks 3 km, turns right again and walks 5 km. How far is he from the start and in which direction?",
-    "keywords": ["3", "east", "south", "rectangle", "straight"],
+    "keywords": [
+      "3",
+      "east",
+      "south",
+      "rectangle",
+      "straight"
+    ],
     "minKeywords": 2,
-    "explanation": "The path forms a rectangle: he ends 3 km east of the starting point."
+    "explanation": "The path forms a rectangle: he ends 3 km east of the starting point.",
+    "objective": "The path forms a rectangle: he ends 3 km east of the starting point.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_med_3",
@@ -72,9 +151,24 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Six people sit in a circle facing the centre. If A is opposite D and B sits to the immediate right of A, who sits to the immediate left of A?",
-    "options": ["C", "D", "Cannot be determined", "F"],
+    "options": [
+      "C",
+      "D",
+      "Cannot be determined",
+      "F"
+    ],
     "answer": 2,
-    "explanation": "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed."
+    "explanation": "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed.",
+    "objective": "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "centre.",
+      "opposite",
+      "immediate"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_med_4",
@@ -83,9 +177,19 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Find the next term: 3, 7, 16, 35, 74, ?",
-    "keywords": ["153", "double", "plus one", "x2"],
+    "keywords": [
+      "153",
+      "double",
+      "plus one",
+      "x2"
+    ],
     "minKeywords": 1,
-    "explanation": "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153."
+    "explanation": "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153.",
+    "objective": "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_hard_1",
@@ -94,9 +198,25 @@
     "difficulty": "Hard",
     "type": "MCQ",
     "text": "Some engineers are musicians. All musicians are artists. Which conclusion follows?",
-    "options": ["All engineers are artists", "Some engineers are artists", "No artist is an engineer", "All artists are engineers"],
+    "options": [
+      "All engineers are artists",
+      "Some engineers are artists",
+      "No artist is an engineer",
+      "All artists are engineers"
+    ],
     "answer": 1,
-    "explanation": "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists."
+    "explanation": "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists.",
+    "objective": "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "engineers",
+      "musicians.",
+      "musicians",
+      "artists."
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_hard_2",
@@ -105,9 +225,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Three switches outside a room control three bulbs inside, but you may enter the room only once. How do you identify each switch?",
-    "keywords": ["heat", "on for a while", "warm", "off", "bulb"],
+    "keywords": [
+      "heat",
+      "on for a while",
+      "warm",
+      "off",
+      "bulb"
+    ],
     "minKeywords": 2,
-    "explanation": "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify the three switches."
+    "explanation": "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify the three switches.",
+    "objective": "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify t",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_hard_3",
@@ -116,9 +247,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain the relation in the analogy 'Thermometer : Temperature' and apply it to 'Anemometer : ?'.",
-    "keywords": ["instrument", "measures", "wind speed", "quantity"],
+    "keywords": [
+      "instrument",
+      "measures",
+      "wind speed",
+      "quantity"
+    ],
     "minKeywords": 2,
-    "explanation": "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed."
+    "explanation": "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed.",
+    "objective": "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed.",
+    "skillTags": [
+      "Circuit Design",
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_hard_4",
@@ -140,6 +282,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step."
+    "explanation": "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step.",
+    "objective": "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "(N/S/E/W",
+      "Manhattan",
+      "distance",
+      "direction"
+    ],
+    "softSkill": false
   }
 ]

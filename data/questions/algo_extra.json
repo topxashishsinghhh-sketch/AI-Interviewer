@@ -6,9 +6,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which sorting algorithm is stable and guarantees O(n log n) worst case?",
-    "options": ["Merge sort", "Quicksort", "Heapsort", "Selection sort"],
+    "options": [
+      "Merge sort",
+      "Quicksort",
+      "Heapsort",
+      "Selection sort"
+    ],
     "answer": 0,
-    "explanation": "Mergesort keeps equal keys in order and its worst case stays O(n log n)."
+    "explanation": "Mergesort keeps equal keys in order and its worst case stays O(n log n).",
+    "objective": "Mergesort keeps equal keys in order and its worst case stays O(n log n).",
+    "skillTags": [
+      "Algorithms"
+    ],
+    "keywords": [
+      "sorting",
+      "algorithm",
+      "guarantees"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_easy_2",
@@ -17,9 +32,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the worst case of linear search?",
-    "options": ["O(n)", "O(log n)", "O(1)", "O(n^2)"],
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(1)",
+      "O(n^2)"
+    ],
     "answer": 0,
-    "explanation": "Every element may have to be inspected, so the worst case is linear."
+    "explanation": "Every element may have to be inspected, so the worst case is linear.",
+    "objective": "Every element may have to be inspected, so the worst case is linear.",
+    "skillTags": [
+      "Algorithms"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "algo_extra_easy_3",
@@ -28,9 +54,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What does Big-O notation describe?",
-    "keywords": ["upper bound", "worst case", "growth", "rate", "asymptotic"],
+    "keywords": [
+      "upper bound",
+      "worst case",
+      "growth",
+      "rate",
+      "asymptotic"
+    ],
     "minKeywords": 2,
-    "explanation": "Big-O bounds growth from above as input size tends to infinity."
+    "explanation": "Big-O bounds growth from above as input size tends to infinity.",
+    "objective": "Big-O bounds growth from above as input size tends to infinity.",
+    "skillTags": [
+      "algo"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_easy_4",
@@ -39,9 +76,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What does a recursive function need to terminate?",
-    "options": ["A base case", "A loop", "A global variable", "Heap allocation"],
+    "options": [
+      "A base case",
+      "A loop",
+      "A global variable",
+      "Heap allocation"
+    ],
     "answer": 0,
-    "explanation": "Without a base case the recursion never stops and the stack overflows."
+    "explanation": "Without a base case the recursion never stops and the stack overflows.",
+    "objective": "Without a base case the recursion never stops and the stack overflows.",
+    "skillTags": [
+      "algo"
+    ],
+    "keywords": [
+      "recursive",
+      "function",
+      "terminate"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_med_1",
@@ -50,9 +102,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "How does the two-pointer technique speed up pair search in a sorted array?",
-    "keywords": ["sorted", "ends", "move", "sum", "linear"],
+    "keywords": [
+      "sorted",
+      "ends",
+      "move",
+      "sum",
+      "linear"
+    ],
     "minKeywords": 2,
-    "explanation": "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n)."
+    "explanation": "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n).",
+    "objective": "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n).",
+    "skillTags": [
+      "algo"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_med_2",
@@ -61,9 +124,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why does greedy fail for the 0/1 knapsack?",
-    "keywords": ["fraction", "whole", "local optimum", "global", "not optimal"],
+    "keywords": [
+      "fraction",
+      "whole",
+      "local optimum",
+      "global",
+      "not optimal"
+    ],
     "minKeywords": 2,
-    "explanation": "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version."
+    "explanation": "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version.",
+    "objective": "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version.",
+    "skillTags": [
+      "Algorithms"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_med_3",
@@ -72,9 +146,23 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Which is the space-optimised DP for Fibonacci?",
-    "options": ["Two variables", "Full table", "Recursion without memoisation", "A queue"],
+    "options": [
+      "Two variables",
+      "Full table",
+      "Recursion without memoisation",
+      "A queue"
+    ],
     "answer": 0,
-    "explanation": "Only the previous two values are needed, so O(1) space replaces an O(n) table."
+    "explanation": "Only the previous two values are needed, so O(1) space replaces an O(n) table.",
+    "objective": "Only the previous two values are needed, so O(1) space replaces an O(n) table.",
+    "skillTags": [
+      "Dynamic Programming"
+    ],
+    "keywords": [
+      "space-optimised",
+      "Fibonacci"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_hard_1",
@@ -96,7 +184,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex."
+    "explanation": "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex.",
+    "objective": "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex.",
+    "skillTags": [
+      "Graphs"
+    ],
+    "keywords": [
+      "Implement",
+      "Dijkstra",
+      "shortest",
+      "distance"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_hard_2",
@@ -105,9 +204,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why is a greedy interval-scheduling solution optimal but activity selection with weights is not?",
-    "keywords": ["earliest finish", "weight", "counterexample", "optimal", "dynamic"],
+    "keywords": [
+      "earliest finish",
+      "weight",
+      "counterexample",
+      "optimal",
+      "dynamic"
+    ],
     "minKeywords": 2,
-    "explanation": "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required."
+    "explanation": "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required.",
+    "objective": "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required.",
+    "skillTags": [
+      "Dynamic Programming"
+    ],
+    "softSkill": false
   },
   {
     "id": "algo_extra_hard_3",
@@ -116,8 +226,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain why KMP avoids rescanning after a mismatch.",
-    "keywords": ["prefix", "failure function", "automaton", "shift", "linear"],
+    "keywords": [
+      "prefix",
+      "failure function",
+      "automaton",
+      "shift",
+      "linear"
+    ],
     "minKeywords": 2,
-    "explanation": "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting."
+    "explanation": "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting.",
+    "objective": "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting.",
+    "skillTags": [
+      "Strings"
+    ],
+    "softSkill": false
   }
 ]

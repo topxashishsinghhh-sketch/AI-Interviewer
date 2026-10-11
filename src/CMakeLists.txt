@@ -26,11 +26,12 @@ add_library(ai_interviewer_core STATIC
     core/IQuestionRepository.cpp
     core/IAttemptRepository.cpp
     core/SHA256.cpp
+    execution/CodeExecutor.cpp
     # services
-auth/AuthService.cpp
+    auth/AuthService.cpp
     admin/AdminService.cpp
     problem/ProblemService.cpp
-    execution/CodeExecutor.cpp
+    skills/SkillsService.cpp
     progress/ProgressService.cpp
     course/CourseService.cpp
     interview/InterviewService.cpp

@@ -6,9 +6,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which statement shows the financial position at a point in time?",
-    "options": ["Balance sheet", "Income statement", "Cash flow statement", "Notes to accounts"],
+    "options": [
+      "Balance sheet",
+      "Income statement",
+      "Cash flow statement",
+      "Notes to accounts"
+    ],
     "answer": 0,
-    "explanation": "The balance sheet reports assets, liabilities and equity at a single date."
+    "explanation": "The balance sheet reports assets, liabilities and equity at a single date.",
+    "objective": "The balance sheet reports assets, liabilities and equity at a single date.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "statement",
+      "financial",
+      "position"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_easy_2",
@@ -17,9 +32,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which account is increased by a debit entry?",
-    "options": ["An asset", "A liability", "Revenue", "Owner's equity"],
+    "options": [
+      "An asset",
+      "A liability",
+      "Revenue",
+      "Owner's equity"
+    ],
     "answer": 0,
-    "explanation": "Debits increase assets and expenses; credits increase liabilities, equity and revenue."
+    "explanation": "Debits increase assets and expenses; credits increase liabilities, equity and revenue.",
+    "objective": "Debits increase assets and expenses; credits increase liabilities, equity and revenue.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "account",
+      "increased"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_easy_3",
@@ -28,9 +57,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is a trial balance used to check?",
-    "options": ["That debits equal credits", "That profit is positive", "Cash on hand", "Tax payable"],
+    "options": [
+      "That debits equal credits",
+      "That profit is positive",
+      "Cash on hand",
+      "Tax payable"
+    ],
     "answer": 0,
-    "explanation": "It verifies the ledger is arithmetically balanced before preparing statements."
+    "explanation": "It verifies the ledger is arithmetically balanced before preparing statements.",
+    "objective": "It verifies the ledger is arithmetically balanced before preparing statements.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "balance"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_easy_4",
@@ -39,9 +81,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is double-entry bookkeeping?",
-    "keywords": ["two sides", "debit", "credit", "equal", "transaction"],
+    "keywords": [
+      "two sides",
+      "debit",
+      "credit",
+      "equal",
+      "transaction"
+    ],
     "minKeywords": 2,
-    "explanation": "Every transaction records equal and opposite entries so the accounting equation stays balanced."
+    "explanation": "Every transaction records equal and opposite entries so the accounting equation stays balanced.",
+    "objective": "Every transaction records equal and opposite entries so the accounting equation stays balanced.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_med_1",
@@ -50,9 +103,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why is depreciation added back in the operating cash flow?",
-    "keywords": ["non cash", "reduced profit", "no cash outflow", "add back", "expense"],
+    "keywords": [
+      "non cash",
+      "reduced profit",
+      "no cash outflow",
+      "add back",
+      "expense"
+    ],
     "minKeywords": 2,
-    "explanation": "Depreciation lowered net profit without any cash leaving, so it is added back to reconcile to cash."
+    "explanation": "Depreciation lowered net profit without any cash leaving, so it is added back to reconcile to cash.",
+    "objective": "Depreciation lowered net profit without any cash leaving, so it is added back to reconcile to cash.",
+    "skillTags": [
+      "Accounting",
+      "Financial Analysis"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_med_2",
@@ -61,9 +126,25 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "What does the current ratio measure?",
-    "options": ["Short-term liquidity", "Profitability", "Asset turnover", "Solvency"],
+    "options": [
+      "Short-term liquidity",
+      "Profitability",
+      "Asset turnover",
+      "Solvency"
+    ],
     "answer": 0,
-    "explanation": "Current assets over current liabilities shows whether short-term obligations can be met."
+    "explanation": "Current assets over current liabilities shows whether short-term obligations can be met.",
+    "objective": "Current assets over current liabilities shows whether short-term obligations can be met.",
+    "skillTags": [
+      "Operating Systems",
+      "Accounting",
+      "Financial Analysis"
+    ],
+    "keywords": [
+      "current",
+      "measure"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_med_3",
@@ -72,9 +153,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "How does FIFO affect closing inventory during rising prices?",
-    "keywords": ["older", "cheaper", "remaining", "newer", "costlier", "higher"],
+    "keywords": [
+      "older",
+      "cheaper",
+      "remaining",
+      "newer",
+      "costlier",
+      "higher"
+    ],
     "minKeywords": 2,
-    "explanation": "The oldest (cheapest) purchases are sold first, so the newer costlier stock stays in closing inventory."
+    "explanation": "The oldest (cheapest) purchases are sold first, so the newer costlier stock stays in closing inventory.",
+    "objective": "The oldest (cheapest) purchases are sold first, so the newer costlier stock stays in closing inventory.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_hard_1",
@@ -96,7 +189,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "Turnover divided by 365 or 365 days gives days-in-inventory; a zero denominator must not divide by zero."
+    "explanation": "Turnover divided by 365 or 365 days gives days-in-inventory; a zero denominator must not divide by zero.",
+    "objective": "Turnover divided by 365 or 365 days gives days-in-inventory; a zero denominator must not divide by zero.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "Compute",
+      "inventory",
+      "turnover",
+      "rounded"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_hard_2",
@@ -105,9 +209,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain deferred revenue and when it is recognised.",
-    "keywords": ["advance", "liability", "unearned", "performance obligation", "future"],
+    "keywords": [
+      "advance",
+      "liability",
+      "unearned",
+      "performance obligation",
+      "future"
+    ],
     "minKeywords": 2,
-    "explanation": "Cash received before delivery is a liability, released to revenue as the performance obligation is satisfied."
+    "explanation": "Cash received before delivery is a liability, released to revenue as the performance obligation is satisfied.",
+    "objective": "Cash received before delivery is a liability, released to revenue as the performance obligation is satisfied.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "softSkill": false
   },
   {
     "id": "acc_extra_hard_3",
@@ -116,8 +231,21 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why can a very high return on equity be a warning sign?",
-    "keywords": ["leverage", "debt", "amplif", "risk", "equity small"],
+    "keywords": [
+      "leverage",
+      "debt",
+      "amplif",
+      "risk",
+      "equity small"
+    ],
     "minKeywords": 2,
-    "explanation": "ROE rises when equity shrinks, so heavy borrowing can inflate the ratio without improved performance."
+    "explanation": "ROE rises when equity shrinks, so heavy borrowing can inflate the ratio without improved performance.",
+    "objective": "ROE rises when equity shrinks, so heavy borrowing can inflate the ratio without improved performance.",
+    "skillTags": [
+      "Operating Systems",
+      "Accounting",
+      "Financial Analysis"
+    ],
+    "softSkill": false
   }
 ]

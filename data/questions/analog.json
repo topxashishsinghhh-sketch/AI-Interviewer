@@ -6,9 +6,25 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "A silicon diode conducts appreciably when forward biased at approximately:",
-    "options": ["0.2 V", "0.7 V", "1.4 V", "5 V"],
+    "options": [
+      "0.2 V",
+      "0.7 V",
+      "1.4 V",
+      "5 V"
+    ],
     "answer": 1,
-    "explanation": "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that."
+    "explanation": "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that.",
+    "objective": "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "silicon",
+      "conducts",
+      "appreciably",
+      "forward"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_easy_2",
@@ -17,9 +33,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "In a BJT, which current is the largest?",
-    "options": ["Base", "Collector", "Emitter", "Leakage"],
+    "options": [
+      "Base",
+      "Collector",
+      "Emitter",
+      "Leakage"
+    ],
     "answer": 2,
-    "explanation": "The emitter current is the sum of the collector and base currents, so it is the largest."
+    "explanation": "The emitter current is the sum of the collector and base currents, so it is the largest.",
+    "objective": "The emitter current is the sum of the collector and base currents, so it is the largest.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "current",
+      "largest"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_easy_3",
@@ -28,9 +58,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the input resistance of an ideal op-amp?",
-    "options": ["Zero", "Finite and small", "Infinite", "Equal to the feedback resistor"],
+    "options": [
+      "Zero",
+      "Finite and small",
+      "Infinite",
+      "Equal to the feedback resistor"
+    ],
     "answer": 2,
-    "explanation": "An ideal op-amp draws no input current, which is modelled as infinite input resistance."
+    "explanation": "An ideal op-amp draws no input current, which is modelled as infinite input resistance.",
+    "objective": "An ideal op-amp draws no input current, which is modelled as infinite input resistance.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "resistance"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_easy_4",
@@ -39,9 +82,19 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What determines the capacitive reactance of a capacitor at a given frequency?",
-    "keywords": ["1/(2 pi f c)", "inversely proportional", "frequency", "capacitance"],
+    "keywords": [
+      "1/(2 pi f c)",
+      "inversely proportional",
+      "frequency",
+      "capacitance"
+    ],
     "minKeywords": 2,
-    "explanation": "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises."
+    "explanation": "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises.",
+    "objective": "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_med_1",
@@ -50,9 +103,25 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "A voltage follower (buffer) configuration has a voltage gain of:",
-    "options": ["Zero", "Unity", "Infinite", "Set by the feedback network"],
+    "options": [
+      "Zero",
+      "Unity",
+      "Infinite",
+      "Set by the feedback network"
+    ],
     "answer": 1,
-    "explanation": "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching."
+    "explanation": "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching.",
+    "objective": "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "voltage",
+      "follower",
+      "(buffer)",
+      "configuration"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_med_2",
@@ -61,9 +130,19 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is the input resistance seen at the base of a common-emitter amplifier with an emitter degeneration resistor?",
-    "keywords": ["beta", "re", "emitter resistor", "amplified"],
+    "keywords": [
+      "beta",
+      "re",
+      "emitter resistor",
+      "amplified"
+    ],
     "minKeywords": 2,
-    "explanation": "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger."
+    "explanation": "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger.",
+    "objective": "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_med_3",
@@ -72,9 +151,25 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Thermal noise voltage per square root of bandwidth increases with:",
-    "options": ["Temperature", "Lower temperature", "Frequency only", "Supply voltage"],
+    "options": [
+      "Temperature",
+      "Lower temperature",
+      "Frequency only",
+      "Supply voltage"
+    ],
     "answer": 0,
-    "explanation": "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature."
+    "explanation": "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature.",
+    "objective": "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "Thermal",
+      "voltage",
+      "bandwidth",
+      "increases"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_med_4",
@@ -83,9 +178,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What are the two defining characteristics of a Butterworth filter?",
-    "keywords": ["maximally flat", "passband", "no ripple", "monotonic"],
+    "keywords": [
+      "maximally flat",
+      "passband",
+      "no ripple",
+      "monotonic"
+    ],
     "minKeywords": 2,
-    "explanation": "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs."
+    "explanation": "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs.",
+    "objective": "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs.",
+    "skillTags": [
+      "Signal Processing",
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_hard_1",
@@ -94,9 +200,25 @@
     "difficulty": "Hard",
     "type": "MCQ",
     "text": "A phase margin of zero degrees in a closed-loop amplifier indicates:",
-    "options": ["Stable with fast response", "Marginal stability with sustained oscillation", "No feedback", "Infinite gain"],
+    "options": [
+      "Stable with fast response",
+      "Marginal stability with sustained oscillation",
+      "No feedback",
+      "Infinite gain"
+    ],
     "answer": 1,
-    "explanation": "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation."
+    "explanation": "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation.",
+    "objective": "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "degrees",
+      "closed-loop",
+      "amplifier",
+      "indicates"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_hard_2",
@@ -105,9 +227,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain why negative feedback reduces harmonic distortion in an amplifier.",
-    "keywords": ["loop gain", "error", "inverse", "suppress", "1+ab"],
+    "keywords": [
+      "loop gain",
+      "error",
+      "inverse",
+      "suppress",
+      "1+ab"
+    ],
     "minKeywords": 2,
-    "explanation": "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta)."
+    "explanation": "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta).",
+    "objective": "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta).",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_hard_3",
@@ -129,7 +262,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp."
+    "explanation": "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp.",
+    "objective": "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "Simulate",
+      "inverting",
+      "amplifier",
+      "clipped"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_hard_4",
@@ -138,8 +282,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why does a diode's dynamic resistance fall as the DC bias current increases?",
-    "keywords": ["shockley", "vt", "id", "slope", "exponential"],
+    "keywords": [
+      "shockley",
+      "vt",
+      "id",
+      "slope",
+      "exponential"
+    ],
     "minKeywords": 2,
-    "explanation": "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely."
+    "explanation": "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely.",
+    "objective": "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   }
 ]

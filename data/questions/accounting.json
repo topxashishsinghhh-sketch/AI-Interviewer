@@ -6,9 +6,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "The fundamental accounting equation is:",
-    "options": ["Assets = Liabilities + Equity", "Assets + Liabilities = Equity", "Revenue - Expenses = Assets", "Equity = Assets + Expenses"],
+    "options": [
+      "Assets = Liabilities + Equity",
+      "Assets + Liabilities = Equity",
+      "Revenue - Expenses = Assets",
+      "Equity = Assets + Expenses"
+    ],
     "answer": 0,
-    "explanation": "Everything the business owns is funded either by creditors or by the owners."
+    "explanation": "Everything the business owns is funded either by creditors or by the owners.",
+    "objective": "Everything the business owns is funded either by creditors or by the owners.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "fundamental",
+      "accounting",
+      "equation"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_easy_2",
@@ -17,9 +32,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which account is increased by a credit entry?",
-    "options": ["An asset", "A liability", "An expense", "A drawing"],
+    "options": [
+      "An asset",
+      "A liability",
+      "An expense",
+      "A drawing"
+    ],
     "answer": 1,
-    "explanation": "Credits increase liabilities, equity and revenue, and decrease assets and expenses."
+    "explanation": "Credits increase liabilities, equity and revenue, and decrease assets and expenses.",
+    "objective": "Credits increase liabilities, equity and revenue, and decrease assets and expenses.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "account",
+      "increased"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_easy_3",
@@ -28,9 +57,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Profit for a period equals:",
-    "options": ["Revenue - Expenses", "Assets - Liabilities", "Cash received - Cash paid", "Revenue + Expenses"],
+    "options": [
+      "Revenue - Expenses",
+      "Assets - Liabilities",
+      "Cash received - Cash paid",
+      "Revenue + Expenses"
+    ],
     "answer": 0,
-    "explanation": "The income statement reports revenue less expenses recognised in the period."
+    "explanation": "The income statement reports revenue less expenses recognised in the period.",
+    "objective": "The income statement reports revenue less expenses recognised in the period.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "accounting_easy_4",
@@ -39,9 +79,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What does the accrual basis of accounting require?",
-    "keywords": ["earned", "incurred", "revenue", "expense", "recognise"],
+    "keywords": [
+      "earned",
+      "incurred",
+      "revenue",
+      "expense",
+      "recognise"
+    ],
     "minKeywords": 2,
-    "explanation": "Revenue is recognised when earned and expenses when incurred, regardless of when cash moves."
+    "explanation": "Revenue is recognised when earned and expenses when incurred, regardless of when cash moves.",
+    "objective": "Revenue is recognised when earned and expenses when incurred, regardless of when cash moves.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_med_1",
@@ -50,9 +101,25 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "The current ratio is calculated as:",
-    "options": ["Current assets / Current liabilities", "Current liabilities / Current assets", "Total assets / Total liabilities", "Net profit / Revenue"],
+    "options": [
+      "Current assets / Current liabilities",
+      "Current liabilities / Current assets",
+      "Total assets / Total liabilities",
+      "Net profit / Revenue"
+    ],
     "answer": 0,
-    "explanation": "It measures short-term liquidity by comparing short-term resources with short-term obligations."
+    "explanation": "It measures short-term liquidity by comparing short-term resources with short-term obligations.",
+    "objective": "It measures short-term liquidity by comparing short-term resources with short-term obligations.",
+    "skillTags": [
+      "Operating Systems",
+      "Accounting",
+      "Financial Analysis"
+    ],
+    "keywords": [
+      "current",
+      "calculated"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_med_2",
@@ -61,9 +128,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why does depreciation reduce net profit without using cash?",
-    "keywords": ["non-cash", "allocation", "cost", "useful life", "expense"],
+    "keywords": [
+      "non-cash",
+      "allocation",
+      "cost",
+      "useful life",
+      "expense"
+    ],
     "minKeywords": 2,
-    "explanation": "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought."
+    "explanation": "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought.",
+    "objective": "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_med_3",
@@ -72,9 +150,26 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Dividends paid to shareholders appear in which section of the cash flow statement?",
-    "options": ["Operating", "Investing", "Financing", "They do not appear"],
+    "options": [
+      "Operating",
+      "Investing",
+      "Financing",
+      "They do not appear"
+    ],
     "answer": 2,
-    "explanation": "Distributions to owners are financing activities, along with borrowings and share issues."
+    "explanation": "Distributions to owners are financing activities, along with borrowings and share issues.",
+    "objective": "Distributions to owners are financing activities, along with borrowings and share issues.",
+    "skillTags": [
+      "Accounting",
+      "Financial Analysis"
+    ],
+    "keywords": [
+      "Dividends",
+      "shareholders",
+      "section",
+      "statement"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_med_4",
@@ -83,9 +178,22 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "A debt-to-equity ratio of 0.8:1 means what?",
-    "keywords": ["for every unit", "equity", "debt", "borrowed", "0.8"],
+    "keywords": [
+      "for every unit",
+      "equity",
+      "debt",
+      "borrowed",
+      "0.8"
+    ],
     "minKeywords": 2,
-    "explanation": "It compares total debt with shareholders' funds, so the company finances 0.8 currency units of debt for each unit of equity."
+    "explanation": "It compares total debt with shareholders' funds, so the company finances 0.8 currency units of debt for each unit of equity.",
+    "objective": "It compares total debt with shareholders' funds, so the company finances 0.8 currency units of debt for each unit of equity.",
+    "skillTags": [
+      "Operating Systems",
+      "Accounting",
+      "Financial Analysis"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_hard_1",
@@ -94,9 +202,24 @@
     "difficulty": "Hard",
     "type": "MCQ",
     "text": "Under IFRS 15, revenue from a contract is recognised:",
-    "options": ["When cash is received", "As performance obligations are satisfied", "When the invoice is issued", "Only at year end"],
+    "options": [
+      "When cash is received",
+      "As performance obligations are satisfied",
+      "When the invoice is issued",
+      "Only at year end"
+    ],
     "answer": 1,
-    "explanation": "Revenue follows the transfer of control of goods or services to the customer."
+    "explanation": "Revenue follows the transfer of control of goods or services to the customer.",
+    "objective": "Revenue follows the transfer of control of goods or services to the customer.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "revenue",
+      "contract",
+      "recognised"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_hard_2",
@@ -105,9 +228,21 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "How do FIFO and weighted-average cost differ in their effect on closing inventory during rising prices?",
-    "keywords": ["FIFO", "older", "cheaper", "closing inventory higher", "average", "smoothed"],
+    "keywords": [
+      "FIFO",
+      "older",
+      "cheaper",
+      "closing inventory higher",
+      "average",
+      "smoothed"
+    ],
     "minKeywords": 2,
-    "explanation": "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO."
+    "explanation": "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO.",
+    "objective": "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_hard_3",
@@ -129,7 +264,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "Gross margin shows how much of each revenue unit survives direct production costs."
+    "explanation": "Gross margin shows how much of each revenue unit survives direct production costs.",
+    "objective": "Gross margin shows how much of each revenue unit survives direct production costs.",
+    "skillTags": [
+      "Accounting"
+    ],
+    "keywords": [
+      "Compute",
+      "percentage",
+      "revenue",
+      "rounded"
+    ],
+    "softSkill": false
   },
   {
     "id": "accounting_hard_4",
@@ -138,8 +284,21 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why can two profitable companies show very different return on equity?",
-    "keywords": ["leverage", "equity", "asset turnover", "margin", "DuPont"],
+    "keywords": [
+      "leverage",
+      "equity",
+      "asset turnover",
+      "margin",
+      "DuPont"
+    ],
     "minKeywords": 2,
-    "explanation": "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE."
+    "explanation": "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE.",
+    "objective": "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE.",
+    "skillTags": [
+      "Operating Systems",
+      "Accounting",
+      "Financial Analysis"
+    ],
+    "softSkill": false
   }
 ]

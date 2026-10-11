@@ -251,7 +251,15 @@ bsoncxx::document::value QuestionMapper::toBSON(const core::QuestionPtr& questio
                kvp("topic", question->topic()),
                kvp("difficulty", core::toString(question->difficulty())),
                kvp("text", question->text()),
-               kvp("explanation", question->explanation()));
+               kvp("explanation", question->explanation()),
+               kvp("objective", question->objective()),
+               kvp("softSkill", question->skillKind() == core::SkillKind::Soft),
+               kvp("skillTags", [&question](sub_array arr) {
+                   for (const std::string& tag : question->skillTags()) {
+                       arr.append(tag);
+                   }
+                   return arr;
+               }));
 
     if (auto mcq = std::dynamic_pointer_cast<core::MCQQuestion>(question)) {
         doc.append(kvp("type", "MCQ"),
@@ -304,20 +312,35 @@ core::QuestionPtr QuestionMapper::fromBSON(const bsoncxx::document::view& doc) {
     if (type == "MCQ") {
         const std::vector<std::string> options = stringArrayAt(doc, "options");
         const int answer = int32At(doc, "answer");
-        return std::make_shared<core::MCQQuestion>(id, subject, topic, difficulty,
-                                                  text, options, answer, explanation);
+        auto q = std::make_shared<core::MCQQuestion>(id, subject, topic, difficulty,
+                                                     text, options, answer, explanation);
+        q->setObjective(stringAt(doc, "objective"));
+        q->setSkillKind(has(doc, "softSkill") && boolAt(doc, "softSkill")
+                        ? core::SkillKind::Soft : core::SkillKind::Hard);
+        q->setSkillTags(stringArrayAt(doc, "skillTags"));
+        return q;
     }
     if (type == "Text") {
         const std::vector<std::string> keywords = stringArrayAt(doc, "keywords");
         const int minKeywords = int32At(doc, "minKeywords", 1);
-        return std::make_shared<core::TextQuestion>(id, subject, topic, difficulty,
-                                                    text, keywords, minKeywords, explanation);
+        auto q = std::make_shared<core::TextQuestion>(id, subject, topic, difficulty,
+                                                      text, keywords, minKeywords, explanation);
+        q->setObjective(stringAt(doc, "objective"));
+        q->setSkillKind(has(doc, "softSkill") && boolAt(doc, "softSkill")
+                        ? core::SkillKind::Soft : core::SkillKind::Hard);
+        q->setSkillTags(stringArrayAt(doc, "skillTags"));
+        return q;
     }
     if (type == "Coding") {
         const std::string templateCode = stringAt(doc, "templateCode");
         const std::vector<core::CodingTestCase> testCases = testCasesAt(doc);
-        return std::make_shared<core::CodingQuestion>(id, subject, topic, difficulty,
-                                                      text, templateCode, testCases, explanation);
+        auto q = std::make_shared<core::CodingQuestion>(id, subject, topic, difficulty,
+                                                       text, templateCode, testCases, explanation);
+        q->setObjective(stringAt(doc, "objective"));
+        q->setSkillKind(has(doc, "softSkill") && boolAt(doc, "softSkill")
+                        ? core::SkillKind::Soft : core::SkillKind::Hard);
+        q->setSkillTags(stringArrayAt(doc, "skillTags"));
+        return q;
     }
     return nullptr;
 }

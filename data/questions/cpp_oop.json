@@ -13,7 +13,15 @@
       "Creating objects from classes"
     ],
     "answer": 0,
-    "explanation": "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components."
+    "explanation": "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components.",
+    "objective": "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components.",
+    "skillTags": [
+      "OOP"
+    ],
+    "keywords": [
+      "encapsulation"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_easy_2",
@@ -22,9 +30,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which access specifier makes members accessible only within the class?",
-    "options": ["public", "protected", "private", "friend"],
+    "options": [
+      "public",
+      "protected",
+      "private",
+      "friend"
+    ],
     "answer": 2,
-    "explanation": "Private members are only accessible within the class they are declared in."
+    "explanation": "Private members are only accessible within the class they are declared in.",
+    "objective": "Private members are only accessible within the class they are declared in.",
+    "skillTags": [
+      "OOP"
+    ],
+    "keywords": [
+      "specifier",
+      "members",
+      "accessible"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_easy_3",
@@ -40,7 +63,15 @@
       "A class with no inheritance"
     ],
     "answer": 0,
-    "explanation": "Single inheritance is when a derived class inherits from exactly one base class."
+    "explanation": "Single inheritance is when a derived class inherits from exactly one base class.",
+    "objective": "Single inheritance is when a derived class inherits from exactly one base class.",
+    "skillTags": [
+      "OOP"
+    ],
+    "keywords": [
+      "inheritance"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_easy_4",
@@ -49,9 +80,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What enables runtime polymorphism in C++?",
-    "options": ["Function overloading", "Virtual functions", "Templates", "Inline functions"],
+    "options": [
+      "Function overloading",
+      "Virtual functions",
+      "Templates",
+      "Inline functions"
+    ],
     "answer": 1,
-    "explanation": "Virtual functions allow derived class methods to be called through base class pointers/references at runtime."
+    "explanation": "Virtual functions allow derived class methods to be called through base class pointers/references at runtime.",
+    "objective": "Virtual functions allow derived class methods to be called through base class pointers/references at runtime.",
+    "skillTags": [
+      "OOP"
+    ],
+    "keywords": [
+      "enables",
+      "runtime",
+      "polymorphism"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_medium_1",
@@ -60,9 +106,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Explain the difference between public, protected, and private inheritance in C++.",
-    "keywords": ["public", "protected", "private", "access", "is-a", "implemented-in-terms-of"],
+    "keywords": [
+      "public",
+      "protected",
+      "private",
+      "access",
+      "is-a",
+      "implemented-in-terms-of"
+    ],
     "minKeywords": 3,
-    "explanation": "Public inheritance models 'is-a', protected/private model 'implemented-in-terms-of'. Access levels affect derived class access to base members."
+    "explanation": "Public inheritance models 'is-a', protected/private model 'implemented-in-terms-of'. Access levels affect derived class access to base members.",
+    "objective": "Public inheritance models 'is-a', protected/private model 'implemented-in-terms-of'. Access levels affect derived class access to base members.",
+    "skillTags": [
+      "OOP"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_medium_2",
@@ -71,9 +129,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Describe the difference between static and dynamic polymorphism with examples.",
-    "keywords": ["compile-time", "runtime", "templates", "virtual", "overloading", "overriding"],
+    "keywords": [
+      "compile-time",
+      "runtime",
+      "templates",
+      "virtual",
+      "overloading",
+      "overriding"
+    ],
     "minKeywords": 3,
-    "explanation": "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable."
+    "explanation": "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable.",
+    "objective": "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable.",
+    "skillTags": [
+      "OOP"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_medium_3",
@@ -82,9 +152,25 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Which pattern ensures a class has only one instance?",
-    "options": ["Factory", "Singleton", "Builder", "Prototype"],
+    "options": [
+      "Factory",
+      "Singleton",
+      "Builder",
+      "Prototype"
+    ],
     "answer": 1,
-    "explanation": "Singleton pattern restricts instantiation to a single object and provides global access to it."
+    "explanation": "Singleton pattern restricts instantiation to a single object and provides global access to it.",
+    "objective": "Singleton pattern restricts instantiation to a single object and provides global access to it.",
+    "skillTags": [
+      "OOP",
+      "Design Patterns"
+    ],
+    "keywords": [
+      "pattern",
+      "ensures",
+      "instance"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_medium_4",
@@ -93,9 +179,26 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "What pattern defines a family of algorithms and makes them interchangeable?",
-    "options": ["Strategy", "Observer", "Decorator", "Adapter"],
+    "options": [
+      "Strategy",
+      "Observer",
+      "Decorator",
+      "Adapter"
+    ],
     "answer": 0,
-    "explanation": "Strategy pattern encapsulates algorithms and allows switching between them at runtime."
+    "explanation": "Strategy pattern encapsulates algorithms and allows switching between them at runtime.",
+    "objective": "Strategy pattern encapsulates algorithms and allows switching between them at runtime.",
+    "skillTags": [
+      "OOP",
+      "Design Patterns"
+    ],
+    "keywords": [
+      "pattern",
+      "defines",
+      "algorithms",
+      "interchangeable"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_hard_1",
@@ -127,7 +230,19 @@
         "isHidden": true
       }
     ],
-    "explanation": "Strategy pattern allows switching sorting algorithms at runtime without changing client code."
+    "explanation": "Strategy pattern allows switching sorting algorithms at runtime without changing client code.",
+    "objective": "Strategy pattern allows switching sorting algorithms at runtime without changing client code.",
+    "skillTags": [
+      "OOP",
+      "Design Patterns"
+    ],
+    "keywords": [
+      "Implement",
+      "Strategy",
+      "pattern",
+      "sorting"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_hard_2",
@@ -144,7 +259,18 @@
         "isHidden": false
       }
     ],
-    "explanation": "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified."
+    "explanation": "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified.",
+    "objective": "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified.",
+    "skillTags": [
+      "OOP"
+    ],
+    "keywords": [
+      "Implement",
+      "Observer",
+      "pattern.",
+      "Subject"
+    ],
+    "softSkill": false
   },
   {
     "id": "cpp_oop_hard_3",
@@ -153,8 +279,21 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain the diamond problem in multiple inheritance and how virtual inheritance solves it. Provide a code example.",
-    "keywords": ["diamond", "virtual", "inheritance", "ambiguity", "vptr", "shared", "base"],
+    "keywords": [
+      "diamond",
+      "virtual",
+      "inheritance",
+      "ambiguity",
+      "vptr",
+      "shared",
+      "base"
+    ],
     "minKeywords": 4,
-    "explanation": "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base class exists."
+    "explanation": "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base class exists.",
+    "objective": "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base cl",
+    "skillTags": [
+      "OOP"
+    ],
+    "softSkill": false
   }
 ]

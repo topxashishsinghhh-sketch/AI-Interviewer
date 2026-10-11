@@ -6,9 +6,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is 15% of 240?",
-    "options": ["36", "32", "40", "24"],
+    "options": [
+      "36",
+      "32",
+      "40",
+      "24"
+    ],
     "answer": 0,
-    "explanation": "0.15 x 240 = 36."
+    "explanation": "0.15 x 240 = 36.",
+    "objective": "0.15 x 240 = 36.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "apt_extra_easy_2",
@@ -17,9 +28,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "A price rises from 200 to 250. What is the percentage increase?",
-    "options": ["25%", "20%", "50%", "12.5%"],
+    "options": [
+      "25%",
+      "20%",
+      "50%",
+      "12.5%"
+    ],
     "answer": 0,
-    "explanation": "(250-200)/200 = 50/200 = 25%."
+    "explanation": "(250-200)/200 = 50/200 = 25%.",
+    "objective": "(250-200)/200 = 50/200 = 25%.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "percentage",
+      "increase"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_easy_3",
@@ -28,9 +53,22 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is a ratio?",
-    "keywords": ["compare", "two quantities", "fraction", "proportion", "division"],
+    "keywords": [
+      "compare",
+      "two quantities",
+      "fraction",
+      "proportion",
+      "division"
+    ],
     "minKeywords": 2,
-    "explanation": "A ratio compares two quantities by division, expressed as a fraction or with a colon."
+    "explanation": "A ratio compares two quantities by division, expressed as a fraction or with a colon.",
+    "objective": "A ratio compares two quantities by division, expressed as a fraction or with a colon.",
+    "skillTags": [
+      "Operating Systems",
+      "Financial Analysis",
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_easy_4",
@@ -39,9 +77,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the average of 4, 8 and 12?",
-    "options": ["8", "6", "12", "24"],
+    "options": [
+      "8",
+      "6",
+      "12",
+      "24"
+    ],
     "answer": 0,
-    "explanation": "(4+8+12)/3 = 24/3 = 8."
+    "explanation": "(4+8+12)/3 = 24/3 = 8.",
+    "objective": "(4+8+12)/3 = 24/3 = 8.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "average"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_med_1",
@@ -50,9 +101,22 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "A car covers 150 km in 2.5 hours. What is its average speed?",
-    "options": ["60 km/h", "45 km/h", "75 km/h", "50 km/h"],
+    "options": [
+      "60 km/h",
+      "45 km/h",
+      "75 km/h",
+      "50 km/h"
+    ],
     "answer": 0,
-    "explanation": "Speed = distance / time = 150 / 2.5 = 60 km/h."
+    "explanation": "Speed = distance / time = 150 / 2.5 = 60 km/h.",
+    "objective": "Speed = distance / time = 150 / 2.5 = 60 km/h.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "average"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_med_2",
@@ -61,9 +125,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is profit percentage based on cost price?",
-    "keywords": ["profit", "cost", "times 100", "selling price", "divide"],
+    "keywords": [
+      "profit",
+      "cost",
+      "times 100",
+      "selling price",
+      "divide"
+    ],
     "minKeywords": 2,
-    "explanation": "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price."
+    "explanation": "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price.",
+    "objective": "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price.",
+    "skillTags": [
+      "Operating Systems",
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_med_3",
@@ -72,9 +148,23 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Complete the series: 2, 6, 12, 20, 30, ?",
-    "options": ["42", "36", "40", "44"],
+    "options": [
+      "42",
+      "36",
+      "40",
+      "44"
+    ],
     "answer": 0,
-    "explanation": "The terms are n(n+1), so the next is 6 x 7 = 42."
+    "explanation": "The terms are n(n+1), so the next is 6 x 7 = 42.",
+    "objective": "The terms are n(n+1), so the next is 6 x 7 = 42.",
+    "skillTags": [
+      "Quantitative Aptitude",
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "Complete"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_hard_1",
@@ -96,7 +186,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided."
+    "explanation": "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided.",
+    "objective": "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "Compute",
+      "workers",
+      "combined-rate",
+      "together"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_hard_2",
@@ -105,9 +206,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain Bayes' theorem in plain language.",
-    "keywords": ["prior", "likelihood", "evidence", "posterior", "update"],
+    "keywords": [
+      "prior",
+      "likelihood",
+      "evidence",
+      "posterior",
+      "update"
+    ],
     "minKeywords": 2,
-    "explanation": "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis."
+    "explanation": "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis.",
+    "objective": "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_extra_hard_3",
@@ -116,8 +228,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "How do you solve an allegation problem where two mixtures are combined?",
-    "keywords": ["weighted average", "ratio", "amount", "concentration", "alligation"],
+    "keywords": [
+      "weighted average",
+      "ratio",
+      "amount",
+      "concentration",
+      "alligation"
+    ],
     "minKeywords": 2,
-    "explanation": "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean."
+    "explanation": "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean.",
+    "objective": "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   }
 ]

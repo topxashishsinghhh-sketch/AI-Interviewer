@@ -171,6 +171,12 @@ var api = {
   daily: function () {
     return request('/api/daily-challenge');
   },
+  skills: function () {
+    return request('/api/skills');
+  },
+  practice: function (tag) {
+    return request('/api/skills/practice?tag=' + encodeURIComponent(tag));
+  },
   adminStats: function () {
     return request('/api/admin/stats');
   },
@@ -212,6 +218,48 @@ function statCard(value, label, variant) {
     '<span class="value">' + esc(value) + '</span></div>';
 }
 
+// Wraps the server-supplied keywords in <mark> so the things the grader looks
+// for are visible while reading. Keywords longer than 3 chars only, so short
+// words do not turn the whole prompt yellow.
+function highlight(text, keywords) {
+  if (!text || !keywords || !keywords.length) return esc(text);
+  var order = keywords.slice().sort(function (a, b) { return b.length - a.length; });
+  var pattern = order.map(function (k) {
+    return k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }).join('|');
+  if (!pattern) return esc(text);
+
+  var re = new RegExp('\\b(' + pattern + ')\\b', 'gi');
+  var out = '';
+  var last = 0;
+  var m;
+  while ((m = re.exec(text)) !== null) {
+    out += esc(text.slice(last, m.index));
+    out += '<mark>' + esc(m[0]) + '</mark>';
+    last = m.index + m[0].length;
+    if (m.index === re.lastIndex) re.lastIndex++; // avoid zero-length loops
+  }
+  out += esc(text.slice(last));
+  return out;
+}
+
+// The "what you are being asked to do" banner shown above the prompt.
+function objectiveBanner(p) {
+  if (!p.objective) return '';
+  return '<div class="objective"><span class="objective-label">Objective</span>' +
+         '<span class="objective-text">' + esc(p.objective) + '</span></div>';
+}
+
+// Skill chips rendered under the objective.
+function skillChips(p) {
+  if (!p.skillTags || !p.skillTags.length) return '';
+  var chips = p.skillTags.map(function (t) {
+    return '<span class="chip' + (p.skillKind === 'Soft' ? ' chip-soft' : '') + '">' +
+           esc(t) + '</span>';
+  });
+  return '<div class="chips">' + chips.join('') + '</div>';
+}
+
 /* --------------------------------------------------------------------------
    Screens. Each returns an HTML string for #view-<name> plus optional
    header content. Rendering never mutates state.
@@ -243,7 +291,10 @@ views.problem = function () {
   parts.push('<h1>' + esc(p.title || p.id) + '</h1>');
   parts.push('<p class="muted">' + esc(p.subject) + ' &middot; ' + esc(p.topic) + ' &middot; ' +
              esc(p.type) + ' ' + difficultyPill(p.difficulty) + '</p>');
-  parts.push('<div class="card" style="margin-top:14px"><pre class="problem-text">' + esc(p.text) + '</pre></div>');
+  parts.push('<div class="card" style="margin-top:14px">');
+  parts.push(objectiveBanner(p));
+  parts.push('<pre class="problem-text">' + highlight(p.text, p.keywords) + '</pre></div>');
+  parts.push(skillChips(p));
 
   if (p.samples && p.samples.length) {
     parts.push('<div class="panel"><h3>Sample cases</h3>');
@@ -378,6 +429,56 @@ views.board = function (rows) {
   return parts.join('');
 };
 
+// Skill development screen: hard skills and soft skills tracked separately,
+// plus the weakest tags to practise next.
+views.skills = function (profile) {
+  var parts = [];
+
+  parts.push('<div class="stat-grid">');
+  parts.push(statCard(Math.round((profile.hardMastery || 0) * 100) + '%', 'Technical mastery', 'ok'));
+  parts.push(statCard(Math.round((profile.softMastery || 0) * 100) + '%', 'Behavioural mastery', 'warn'));
+  parts.push(statCard(profile.hard.length, 'Hard skills'));
+  parts.push(statCard(profile.soft.length, 'Soft skills'));
+  parts.push('</div>');
+
+  var renderSection = function (title, rows, extraClass) {
+    if (!rows.length) return '';
+    var html = '<div class="panel"><h3>' + esc(title) + '</h3><div class="bars">';
+    for (var i = 0; i < rows.length; i++) {
+      var row = rows[i];
+      var pct = Math.round(row.mastery * 100);
+      html += '<div class="bar-row' + (extraClass ? ' ' + extraClass : '') + '">' +
+              '<span>' + esc(row.tag) + '</span>' +
+              '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+              '<span class="bar-num">' + row.solved + '/' + row.available + '</span></div>';
+    }
+    html += '</div></div>';
+    return html;
+  };
+
+  parts.push(renderSection('Technical skills', profile.hard, 'bar-hard'));
+  parts.push(renderSection('Behavioural skills', profile.soft, 'bar-soft'));
+
+  if (profile.gaps && profile.gaps.length) {
+    parts.push('<div class="panel"><h3>Practise next</h3>');
+    parts.push('<p class="muted">Weakest first, based on what you have solved.</p>');
+    parts.push('<div class="gap-list">');
+    for (var g = 0; g < profile.gaps.length; g++) {
+      var gap = profile.gaps[g];
+      parts.push('<div class="gap-item' + (gap.kind === 'Soft' ? ' gap-soft' : '') + '" ' +
+                 'data-practice="' + esc(gap.tag) + '">' +
+                 '<span class="gap-tag">' + esc(gap.tag) + '</span>' +
+                 '<span class="chip' + (gap.kind === 'Soft' ? ' chip-soft' : '') + '">' +
+                 esc(gap.kind) + '</span>' +
+                 '<span class="gap-bar">' +
+                   blocks(gap.available > 0 ? Math.round(gap.mastery * 10) : 0, 10) +
+                 '</span></div>');
+    }
+    parts.push('</div></div>');
+  }
+  return parts.join('');
+};
+
 views.admin = function (stats, users, questions) {
   var parts = [];
   parts.push('<div class="stat-grid">');
@@ -416,6 +517,7 @@ var NAV = [
   { id: 'start', label: 'Interview', nav: true },
   { group: 'Progress' },
   { id: 'dashboard', label: 'Dashboard', nav: true },
+  { id: 'skills', label: 'Skills', nav: true },
   { id: 'submissions', label: 'Submissions', nav: true },
   { id: 'board', label: 'Leaderboard', nav: true },
   { group: 'Account' },
@@ -439,6 +541,7 @@ function navigate(view) {
 
   if (view === 'problems') { loadProblems(); }
   if (view === 'dashboard') { loadDashboard(); }
+  if (view === 'skills') { loadSkills(); }
   if (view === 'submissions') { loadSubmissions(); }
   if (view === 'board') { loadBoard(); }
   if (view === 'profile') { loadProfile(); }
@@ -480,6 +583,7 @@ function renderHeader(view) {
     problems: 'Problems',
     problem: 'Problem',
     dashboard: 'Dashboard',
+    skills: 'Skill development',
     profile: 'Profile',
     submissions: 'Submissions',
     board: 'Leaderboard',
@@ -772,6 +876,27 @@ function loadDashboard() {
   });
 }
 
+function loadSkills() {
+  api.skills().then(function (profile) {
+    setHtml('view-skills', views.skills(profile));
+    // Clicking a gap row jumps to a focused practice list.
+    var items = document.querySelectorAll('[data-practice]');
+    for (var i = 0; i < items.length; i++) {
+      items[i].addEventListener('click', function () {
+        var tag = this.dataset.practice;
+        api.practice(tag).then(function (list) {
+          state.problems = list || [];
+          state.problemsLoaded = state.problems.length;
+          renderProblemList();
+          navigate('problems');
+        });
+      });
+    }
+  }).catch(function (e) {
+    setHtml('view-skills', '<p class="notice">' + esc(e.message) + '</p>');
+  });
+}
+
 function loadSubmissions() {
   api.submissions().then(function (rows) {
     setHtml('view-submissions', views.submissions(rows || []));
@@ -957,6 +1082,7 @@ function cmdkItems() {
     { id: 'start', label: 'Start interview' },
     { id: 'daily', label: 'Daily challenge' },
     { id: 'dashboard', label: 'Dashboard' },
+    { id: 'skills', label: 'Skill development' },
     { id: 'submissions', label: 'Submissions' },
     { id: 'board', label: 'Leaderboard' },
     { id: 'profile', label: 'Profile' },

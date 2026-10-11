@@ -6,9 +6,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which of these is an even signal?",
-    "options": ["x(t) = x(-t)", "x(t) = -x(-t)", "x(t) = t", "x(t) = e^t"],
+    "options": [
+      "x(t) = x(-t)",
+      "x(t) = -x(-t)",
+      "x(t) = t",
+      "x(t) = e^t"
+    ],
     "answer": 0,
-    "explanation": "Even signals are symmetric about the origin; odd ones satisfy x(t) = -x(-t)."
+    "explanation": "Even signals are symmetric about the origin; odd ones satisfy x(t) = -x(-t).",
+    "objective": "Even signals are symmetric about the origin; odd ones satisfy x(t) = -x(-t).",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "signals_extra_easy_2",
@@ -17,9 +28,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the convolution of a signal with a unit impulse?",
-    "options": ["The same signal", "A scaled version", "Zero everywhere", "The derivative"],
+    "options": [
+      "The same signal",
+      "A scaled version",
+      "Zero everywhere",
+      "The derivative"
+    ],
     "answer": 0,
-    "explanation": "Convolving with delta(n) returns the signal unchanged, since delta is the identity."
+    "explanation": "Convolving with delta(n) returns the signal unchanged, since delta is the identity.",
+    "objective": "Convolving with delta(n) returns the signal unchanged, since delta is the identity.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "keywords": [
+      "convolution",
+      "impulse"
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_easy_3",
@@ -28,9 +53,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What does a signal's Fourier transform reveal?",
-    "options": ["Frequency content", "Time delay only", "Amplitude growth", "Phase noise"],
+    "options": [
+      "Frequency content",
+      "Time delay only",
+      "Amplitude growth",
+      "Phase noise"
+    ],
     "answer": 0,
-    "explanation": "It decomposes the signal into frequency components with magnitudes and phases."
+    "explanation": "It decomposes the signal into frequency components with magnitudes and phases.",
+    "objective": "It decomposes the signal into frequency components with magnitudes and phases.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "keywords": [
+      "signal's",
+      "Fourier",
+      "transform"
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_easy_4",
@@ -39,9 +79,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is quantisation error?",
-    "keywords": ["rounding", "levels", "resolution", "noise", "amplitude"],
+    "keywords": [
+      "rounding",
+      "levels",
+      "resolution",
+      "noise",
+      "amplitude"
+    ],
     "minKeywords": 2,
-    "explanation": "It is the difference between the sampled amplitude and the nearest representable level, bounded by half a step."
+    "explanation": "It is the difference between the sampled amplitude and the nearest representable level, bounded by half a step.",
+    "objective": "It is the difference between the sampled amplitude and the nearest representable level, bounded by half a step.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_med_1",
@@ -50,9 +101,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What distinguishes an FIR filter from an IIR filter?",
-    "keywords": ["finite impulse", "feedback", "recursive", "stability", "linear phase"],
+    "keywords": [
+      "finite impulse",
+      "feedback",
+      "recursive",
+      "stability",
+      "linear phase"
+    ],
     "minKeywords": 2,
-    "explanation": "FIR has only feed-forward terms and is always stable; IIR uses feedback so it is shorter but may be unstable."
+    "explanation": "FIR has only feed-forward terms and is always stable; IIR uses feedback so it is shorter but may be unstable.",
+    "objective": "FIR has only feed-forward terms and is always stable; IIR uses feedback so it is shorter but may be unstable.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_med_2",
@@ -61,9 +123,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why is the impulse response enough to characterise an LTI system?",
-    "keywords": ["convolution", "superposition", "any input", "impulse", "determines"],
+    "keywords": [
+      "convolution",
+      "superposition",
+      "any input",
+      "impulse",
+      "determines"
+    ],
     "minKeywords": 2,
-    "explanation": "Any input can be written as shifted impulses, so by superposition the output is the convolution with the impulse response."
+    "explanation": "Any input can be written as shifted impulses, so by superposition the output is the convolution with the impulse response.",
+    "objective": "Any input can be written as shifted impulses, so by superposition the output is the convolution with the impulse response.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_med_3",
@@ -72,9 +145,24 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "What does the unit circle in the z-plane correspond to for a digital filter?",
-    "options": ["Normalised frequency", "DC gain", "Stability margin", "Group delay"],
+    "options": [
+      "Normalised frequency",
+      "DC gain",
+      "Stability margin",
+      "Group delay"
+    ],
     "answer": 0,
-    "explanation": "z = e^(jw) on the unit circle, so angle maps to normalised digital frequency."
+    "explanation": "z = e^(jw) on the unit circle, so angle maps to normalised digital frequency.",
+    "objective": "z = e^(jw) on the unit circle, so angle maps to normalised digital frequency.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "keywords": [
+      "z-plane",
+      "correspond",
+      "digital"
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_hard_1",
@@ -96,7 +184,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "A brute-force DFT is O(n^2) but demonstrates exactly what the FFT computes in O(n log n)."
+    "explanation": "A brute-force DFT is O(n^2) but demonstrates exactly what the FFT computes in O(n log n).",
+    "objective": "A brute-force DFT is O(n^2) but demonstrates exactly what the FFT computes in O(n log n).",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "keywords": [
+      "Implement",
+      "magnitude",
+      "spectrum",
+      "sequence."
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_hard_2",
@@ -105,9 +204,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain the Gibbs phenomenon and how it affects windowed filters.",
-    "keywords": ["truncation", "overshoot", "ripple", "discontinuity", "window"],
+    "keywords": [
+      "truncation",
+      "overshoot",
+      "ripple",
+      "discontinuity",
+      "window"
+    ],
     "minKeywords": 2,
-    "explanation": "Truncating an ideal response creates overshoot near discontinuities; smoothing windows reduce ripple at the cost of wider transitions."
+    "explanation": "Truncating an ideal response creates overshoot near discontinuities; smoothing windows reduce ripple at the cost of wider transitions.",
+    "objective": "Truncating an ideal response creates overshoot near discontinuities; smoothing windows reduce ripple at the cost of wider transitions.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "softSkill": false
   },
   {
     "id": "signals_extra_hard_3",
@@ -116,8 +226,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why does AM need twice the baseband bandwidth while SSB does not?",
-    "keywords": ["carrier", "sidebands", "bandwidth", "redundant", "filter"],
+    "keywords": [
+      "carrier",
+      "sidebands",
+      "bandwidth",
+      "redundant",
+      "filter"
+    ],
     "minKeywords": 2,
-    "explanation": "AM transmits the carrier and both sidebands, doubling the bandwidth; single sideband transmits one sideband carrying all the information."
+    "explanation": "AM transmits the carrier and both sidebands, doubling the bandwidth; single sideband transmits one sideband carrying all the information.",
+    "objective": "AM transmits the carrier and both sidebands, doubling the bandwidth; single sideband transmits one sideband carrying all the information.",
+    "skillTags": [
+      "Signal Processing"
+    ],
+    "softSkill": false
   }
 ]

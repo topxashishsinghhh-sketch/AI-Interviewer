@@ -6,9 +6,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the HCF of 24 and 36?",
-    "options": ["6", "12", "18", "24"],
+    "options": [
+      "6",
+      "12",
+      "18",
+      "24"
+    ],
     "answer": 1,
-    "explanation": "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12."
+    "explanation": "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12.",
+    "objective": "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "apt_easy_2",
@@ -17,9 +28,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "If 20% of a number is 40, what is the number?",
-    "options": ["100", "200", "80", "160"],
+    "options": [
+      "100",
+      "200",
+      "80",
+      "160"
+    ],
     "answer": 1,
-    "explanation": "20% of x = 40 => 0.2x = 40 => x = 40/0.2 = 200."
+    "explanation": "20% of x = 40 => 0.2x = 40 => x = 40/0.2 = 200.",
+    "objective": "20% of x = 40 => 0.2x = 40 => x = 40/0.2 = 200.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "apt_easy_3",
@@ -28,9 +50,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "A can do a work in 10 days, B in 15 days. Together they complete it in:",
-    "options": ["5 days", "6 days", "7 days", "8 days"],
+    "options": [
+      "5 days",
+      "6 days",
+      "7 days",
+      "8 days"
+    ],
     "answer": 1,
-    "explanation": "A's 1 day work = 1/10, B's = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days."
+    "explanation": "A's 1 day work = 1/10, B's = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days.",
+    "objective": "A's 1 day work = 1/10, B's = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "Together",
+      "complete"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_easy_4",
@@ -39,9 +75,18 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "Find the LCM of 12, 15, and 20.",
-    "keywords": ["60", "lcm", "least common multiple"],
+    "keywords": [
+      "60",
+      "lcm",
+      "least common multiple"
+    ],
     "minKeywords": 1,
-    "explanation": "LCM(12, 15, 20) = 60. Prime factors: 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60."
+    "explanation": "LCM(12, 15, 20) = 60. Prime factors: 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60.",
+    "objective": "LCM(12, 15, 20) = 60. Prime factors: 12=2²×3, 15=3×5, 20=2²×5. LCM = 2²×3×5 = 60.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_medium_1",
@@ -50,9 +95,23 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "A shopkeeper marks up price by 40% and gives 10% discount. Profit %?",
-    "options": ["26%", "30%", "20%", "36%"],
+    "options": [
+      "26%",
+      "30%",
+      "20%",
+      "36%"
+    ],
     "answer": 0,
-    "explanation": "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%."
+    "explanation": "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%.",
+    "objective": "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "shopkeeper",
+      "discount."
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_medium_2",
@@ -61,9 +120,19 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Pipe A fills tank in 4 hrs, B in 6 hrs, C empties in 8 hrs. All three open, time to fill?",
-    "keywords": ["24/7", "3.43", "3 hours", "fraction"],
+    "keywords": [
+      "24/7",
+      "3.43",
+      "3 hours",
+      "fraction"
+    ],
     "minKeywords": 1,
-    "explanation": "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours ≈ 3.43 hours."
+    "explanation": "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours ≈ 3.43 hours.",
+    "objective": "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours ≈ 3.43 hours.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_medium_3",
@@ -72,9 +141,22 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Sum of first 50 even numbers?",
-    "options": ["2500", "2550", "2600", "2450"],
+    "options": [
+      "2500",
+      "2550",
+      "2600",
+      "2450"
+    ],
     "answer": 1,
-    "explanation": "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 × 102 = 2550."
+    "explanation": "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 × 102 = 2550.",
+    "objective": "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 × 102 = 2550.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "numbers"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_medium_4",
@@ -83,9 +165,17 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Population increases 10% annually. After 2 years it's 12100. Present population?",
-    "keywords": ["10000", "ten thousand"],
+    "keywords": [
+      "10000",
+      "ten thousand"
+    ],
     "minKeywords": 1,
-    "explanation": "P × 1.1 × 1.1 = 12100 => P × 1.21 = 12100 => P = 10000."
+    "explanation": "P × 1.1 × 1.1 = 12100 => P × 1.21 = 12100 => P = 10000.",
+    "objective": "P × 1.1 × 1.1 = 12100 => P × 1.21 = 12100 => P = 10000.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_hard_1",
@@ -112,7 +202,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "Net rate = sum of all rates. If net > 0, time = 1/net. If net <= 0, never fills."
+    "explanation": "Net rate = sum of all rates. If net > 0, time = 1/net. If net <= 0, never fills.",
+    "objective": "Net rate = sum of all rates. If net > 0, time = 1/net. If net <= 0, never fills.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "fill/empty",
+      "(positive=fills",
+      "negative=empties)"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_hard_2",
@@ -139,7 +239,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from <numeric>."
+    "explanation": "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from <numeric>.",
+    "objective": "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from <numeric>.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "keywords": [
+      "smallest",
+      "divisible",
+      "numbers"
+    ],
+    "softSkill": false
   },
   {
     "id": "apt_hard_3",
@@ -148,8 +258,18 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "A product's price is increased by x% then decreased by x%. Net change?",
-    "keywords": ["decrease", "loss", "x^2/100", "negative"],
+    "keywords": [
+      "decrease",
+      "loss",
+      "x^2/100",
+      "negative"
+    ],
     "minKeywords": 2,
-    "explanation": "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-x²/10000). Net change = -x²/100%. Always a decrease."
+    "explanation": "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-x²/10000). Net change = -x²/100%. Always a decrease.",
+    "objective": "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-x²/10000). Net change = -x²/100%. Always a decrease.",
+    "skillTags": [
+      "Quantitative Aptitude"
+    ],
+    "softSkill": false
   }
 ]

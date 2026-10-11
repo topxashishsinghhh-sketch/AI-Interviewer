@@ -6,9 +6,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What are the typical states in a process lifecycle?",
-    "options": ["New, Ready, Running, Waiting, Terminated", "Start, Middle, End", "Read, Write, Execute", "Compile, Link, Load"],
+    "options": [
+      "New, Ready, Running, Waiting, Terminated",
+      "Start, Middle, End",
+      "Read, Write, Execute",
+      "Compile, Link, Load"
+    ],
     "answer": 0,
-    "explanation": "A process moves between new, ready, running and waiting, then terminates."
+    "explanation": "A process moves between new, ready, running and waiting, then terminates.",
+    "objective": "A process moves between new, ready, running and waiting, then terminates.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [
+      "typical",
+      "process",
+      "lifecycle"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_easy_2",
@@ -17,9 +32,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which CPU scheduling algorithm can cause starvation of long jobs?",
-    "options": ["Shortest Job First", "First Come First Served", "Round Robin", "Longest Job First"],
+    "options": [
+      "Shortest Job First",
+      "First Come First Served",
+      "Round Robin",
+      "Longest Job First"
+    ],
     "answer": 0,
-    "explanation": "SJF always favours short jobs, so a steady stream of them starves longer ones."
+    "explanation": "SJF always favours short jobs, so a steady stream of them starves longer ones.",
+    "objective": "SJF always favours short jobs, so a steady stream of them starves longer ones.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [
+      "scheduling",
+      "algorithm",
+      "starvation"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_easy_3",
@@ -28,9 +58,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "A page fault occurs when:",
-    "options": ["The required page is not in physical memory", "The CPU overheats", "A disk sector fails", "Memory is full of cache"],
+    "options": [
+      "The required page is not in physical memory",
+      "The CPU overheats",
+      "A disk sector fails",
+      "Memory is full of cache"
+    ],
     "answer": 0,
-    "explanation": "The referenced virtual page is absent, so it must be fetched from secondary storage."
+    "explanation": "The referenced virtual page is absent, so it must be fetched from secondary storage.",
+    "objective": "The referenced virtual page is absent, so it must be fetched from secondary storage.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "os_easy_4",
@@ -39,9 +80,21 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is a race condition?",
-    "keywords": ["concurrent", "shared", "outcome", "timing", "ordering"],
+    "keywords": [
+      "concurrent",
+      "shared",
+      "outcome",
+      "timing",
+      "ordering"
+    ],
     "minKeywords": 2,
-    "explanation": "The result depends on the relative timing or ordering of concurrent accesses to shared state."
+    "explanation": "The result depends on the relative timing or ordering of concurrent accesses to shared state.",
+    "objective": "The result depends on the relative timing or ordering of concurrent accesses to shared state.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_med_1",
@@ -50,9 +103,27 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Which requirement must a correct solution to the critical section problem satisfy?",
-    "options": ["Mutual exclusion", "High throughput only", "Fixed priority", "Memory sharing"],
+    "options": [
+      "Mutual exclusion",
+      "High throughput only",
+      "Fixed priority",
+      "Memory sharing"
+    ],
     "answer": 0,
-    "explanation": "Mutual exclusion is the core requirement; progress and bounded waiting must also hold."
+    "explanation": "Mutual exclusion is the core requirement; progress and bounded waiting must also hold.",
+    "objective": "Mutual exclusion is the core requirement; progress and bounded waiting must also hold.",
+    "skillTags": [
+      "Operating Systems",
+      "Behavioural Interviews",
+      "Communication"
+    ],
+    "keywords": [
+      "requirement",
+      "correct",
+      "solution",
+      "critical"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_med_2",
@@ -61,9 +132,19 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "List the four necessary conditions for deadlock.",
-    "keywords": ["mutual exclusion", "hold and wait", "no preemption", "circular wait"],
+    "keywords": [
+      "mutual exclusion",
+      "hold and wait",
+      "no preemption",
+      "circular wait"
+    ],
     "minKeywords": 3,
-    "explanation": "All four (Coffman) conditions must hold simultaneously for a deadlock to arise."
+    "explanation": "All four (Coffman) conditions must hold simultaneously for a deadlock to arise.",
+    "objective": "All four (Coffman) conditions must hold simultaneously for a deadlock to arise.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_med_3",
@@ -72,9 +153,23 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "In demand paging, the effective access time is closest to:",
-    "options": ["Page-fault-rate dependent", "Always the disk seek time", "Zero", "The TLB lookup time"],
+    "options": [
+      "Page-fault-rate dependent",
+      "Always the disk seek time",
+      "Zero",
+      "The TLB lookup time"
+    ],
     "answer": 0,
-    "explanation": "EAT blends the memory access time with the (rare) service time weighted by the fault rate."
+    "explanation": "EAT blends the memory access time with the (rare) service time weighted by the fault rate.",
+    "objective": "EAT blends the memory access time with the (rare) service time weighted by the fault rate.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [
+      "effective",
+      "closest"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_med_4",
@@ -83,9 +178,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why is the disk scheduling algorithm SCAN (elevator) better than FCFS for heavy I/O?",
-    "keywords": ["seek", "head", "direction", "reduced", "throughput"],
+    "keywords": [
+      "seek",
+      "head",
+      "direction",
+      "reduced",
+      "throughput"
+    ],
     "minKeywords": 2,
-    "explanation": "It moves the head monotonically, servicing requests along the way and cutting total seek distance."
+    "explanation": "It moves the head monotonically, servicing requests along the way and cutting total seek distance.",
+    "objective": "It moves the head monotonically, servicing requests along the way and cutting total seek distance.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_hard_1",
@@ -94,9 +200,26 @@
     "difficulty": "Hard",
     "type": "MCQ",
     "text": "The readers-writers problem with writer priority can cause:",
-    "options": ["Reader starvation", "Data corruption", "A system crash", "Deadlock on all reads"],
+    "options": [
+      "Reader starvation",
+      "Data corruption",
+      "A system crash",
+      "Deadlock on all reads"
+    ],
     "answer": 0,
-    "explanation": "Prioritising writers means a waiting writer blocks new readers, so readers may starve."
+    "explanation": "Prioritising writers means a waiting writer blocks new readers, so readers may starve.",
+    "objective": "Prioritising writers means a waiting writer blocks new readers, so readers may starve.",
+    "skillTags": [
+      "Operating Systems",
+      "Behavioural Interviews",
+      "Communication"
+    ],
+    "keywords": [
+      "readers-writers",
+      "problem",
+      "priority"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_hard_2",
@@ -118,7 +241,19 @@
         "isHidden": true
       }
     ],
-    "explanation": "A mutex protects the counter and a condition variable blocks and wakes waiters without busy waiting."
+    "explanation": "A mutex protects the counter and a condition variable blocks and wakes waiters without busy waiting.",
+    "objective": "A mutex protects the counter and a condition variable blocks and wakes waiters without busy waiting.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "Implement",
+      "counting",
+      "semaphore",
+      "standard"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_hard_3",
@@ -127,9 +262,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain why a TLB miss is not automatically a page fault.",
-    "keywords": ["translation", "valid", "memory", "page table", "cache"],
+    "keywords": [
+      "translation",
+      "valid",
+      "memory",
+      "page table",
+      "cache"
+    ],
     "minKeywords": 2,
-    "explanation": "A TLB miss only means the cached translation is absent; the page may still be resident, so the page table in memory is consulted."
+    "explanation": "A TLB miss only means the cached translation is absent; the page may still be resident, so the page table in memory is consulted.",
+    "objective": "A TLB miss only means the cached translation is absent; the page may still be resident, so the page table in memory is consulted.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_hard_4",
@@ -138,8 +284,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why does multilevel feedback queue scheduling approximate SRTF without knowing burst times?",
-    "keywords": ["ageing", "demotion", "priority", "interactive", "short"],
+    "keywords": [
+      "ageing",
+      "demotion",
+      "priority",
+      "interactive",
+      "short"
+    ],
     "minKeywords": 2,
-    "explanation": "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour."
+    "explanation": "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour.",
+    "objective": "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "softSkill": false
   }
 ]

@@ -13,7 +13,17 @@
                         "Equity = Assets + Expenses"
                     ],
         "answer":  0,
-        "explanation":  "Everything the business owns is funded either by creditors or by the owners."
+        "explanation":  "Everything the business owns is funded either by creditors or by the owners.",
+        "objective":  "Everything the business owns is funded either by creditors or by the owners.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "fundamental",
+                         "accounting",
+                         "equation"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_easy_2",
@@ -29,7 +39,16 @@
                         "A drawing"
                     ],
         "answer":  1,
-        "explanation":  "Credits increase liabilities, equity and revenue, and decrease assets and expenses."
+        "explanation":  "Credits increase liabilities, equity and revenue, and decrease assets and expenses.",
+        "objective":  "Credits increase liabilities, equity and revenue, and decrease assets and expenses.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "account",
+                         "increased"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_easy_3",
@@ -45,7 +64,15 @@
                         "Revenue + Expenses"
                     ],
         "answer":  0,
-        "explanation":  "The income statement reports revenue less expenses recognised in the period."
+        "explanation":  "The income statement reports revenue less expenses recognised in the period.",
+        "objective":  "The income statement reports revenue less expenses recognised in the period.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_easy_4",
@@ -62,7 +89,12 @@
                          "recognise"
                      ],
         "minKeywords":  2,
-        "explanation":  "Revenue is recognised when earned and expenses when incurred, regardless of when cash moves."
+        "explanation":  "Revenue is recognised when earned and expenses when incurred, regardless of when cash moves.",
+        "objective":  "Revenue is recognised when earned and expenses when incurred, regardless of when cash moves.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_med_1",
@@ -78,7 +110,18 @@
                         "Net profit / Revenue"
                     ],
         "answer":  0,
-        "explanation":  "It measures short-term liquidity by comparing short-term resources with short-term obligations."
+        "explanation":  "It measures short-term liquidity by comparing short-term resources with short-term obligations.",
+        "objective":  "It measures short-term liquidity by comparing short-term resources with short-term obligations.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Accounting",
+                          "Financial Analysis"
+                      ],
+        "keywords":  [
+                         "current",
+                         "calculated"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_med_2",
@@ -95,7 +138,12 @@
                          "expense"
                      ],
         "minKeywords":  2,
-        "explanation":  "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought."
+        "explanation":  "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought.",
+        "objective":  "Depreciation allocates the historical cost of an asset over its useful life; the cash was spent when the asset was bought.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_med_3",
@@ -111,7 +159,19 @@
                         "They do not appear"
                     ],
         "answer":  2,
-        "explanation":  "Distributions to owners are financing activities, along with borrowings and share issues."
+        "explanation":  "Distributions to owners are financing activities, along with borrowings and share issues.",
+        "objective":  "Distributions to owners are financing activities, along with borrowings and share issues.",
+        "skillTags":  [
+                          "Accounting",
+                          "Financial Analysis"
+                      ],
+        "keywords":  [
+                         "Dividends",
+                         "shareholders",
+                         "section",
+                         "statement"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_med_4",
@@ -128,7 +188,14 @@
                          "0.8"
                      ],
         "minKeywords":  2,
-        "explanation":  "It compares total debt with shareholders\u0027 funds, so the company finances 0.8 currency units of debt for each unit of equity."
+        "explanation":  "It compares total debt with shareholders\u0027 funds, so the company finances 0.8 currency units of debt for each unit of equity.",
+        "objective":  "It compares total debt with shareholders\u0027 funds, so the company finances 0.8 currency units of debt for each unit of equity.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Accounting",
+                          "Financial Analysis"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_hard_1",
@@ -144,7 +211,17 @@
                         "Only at year end"
                     ],
         "answer":  1,
-        "explanation":  "Revenue follows the transfer of control of goods or services to the customer."
+        "explanation":  "Revenue follows the transfer of control of goods or services to the customer.",
+        "objective":  "Revenue follows the transfer of control of goods or services to the customer.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "revenue",
+                         "contract",
+                         "recognised"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_hard_2",
@@ -162,7 +239,12 @@
                          "smoothed"
                      ],
         "minKeywords":  2,
-        "explanation":  "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO."
+        "explanation":  "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO.",
+        "objective":  "FIFO leaves the newest, costlier purchases in inventory; weighted averaging blends costs, so the closing value and profit sit between FIFO and LIFO.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_hard_3",
@@ -184,7 +266,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Gross margin shows how much of each revenue unit survives direct production costs."
+        "explanation":  "Gross margin shows how much of each revenue unit survives direct production costs.",
+        "objective":  "Gross margin shows how much of each revenue unit survives direct production costs.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "Compute",
+                         "percentage",
+                         "revenue",
+                         "rounded"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "accounting_hard_4",
@@ -201,7 +294,14 @@
                          "DuPont"
                      ],
         "minKeywords":  2,
-        "explanation":  "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE."
+        "explanation":  "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE.",
+        "objective":  "ROE decomposes into net margin, asset turnover and the equity multiplier; a leveraged business can amplify a modest margin into a high ROE.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Accounting",
+                          "Financial Analysis"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_easy_1",
@@ -217,7 +317,17 @@
                         "Notes to accounts"
                     ],
         "answer":  0,
-        "explanation":  "The balance sheet reports assets, liabilities and equity at a single date."
+        "explanation":  "The balance sheet reports assets, liabilities and equity at a single date.",
+        "objective":  "The balance sheet reports assets, liabilities and equity at a single date.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "statement",
+                         "financial",
+                         "position"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_easy_2",
@@ -233,7 +343,16 @@
                         "Owner\u0027s equity"
                     ],
         "answer":  0,
-        "explanation":  "Debits increase assets and expenses; credits increase liabilities, equity and revenue."
+        "explanation":  "Debits increase assets and expenses; credits increase liabilities, equity and revenue.",
+        "objective":  "Debits increase assets and expenses; credits increase liabilities, equity and revenue.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "account",
+                         "increased"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_easy_3",
@@ -249,7 +368,15 @@
                         "Tax payable"
                     ],
         "answer":  0,
-        "explanation":  "It verifies the ledger is arithmetically balanced before preparing statements."
+        "explanation":  "It verifies the ledger is arithmetically balanced before preparing statements.",
+        "objective":  "It verifies the ledger is arithmetically balanced before preparing statements.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "balance"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_easy_4",
@@ -266,7 +393,12 @@
                          "transaction"
                      ],
         "minKeywords":  2,
-        "explanation":  "Every transaction records equal and opposite entries so the accounting equation stays balanced."
+        "explanation":  "Every transaction records equal and opposite entries so the accounting equation stays balanced.",
+        "objective":  "Every transaction records equal and opposite entries so the accounting equation stays balanced.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_med_1",
@@ -283,7 +415,13 @@
                          "expense"
                      ],
         "minKeywords":  2,
-        "explanation":  "Depreciation lowered net profit without any cash leaving, so it is added back to reconcile to cash."
+        "explanation":  "Depreciation lowered net profit without any cash leaving, so it is added back to reconcile to cash.",
+        "objective":  "Depreciation lowered net profit without any cash leaving, so it is added back to reconcile to cash.",
+        "skillTags":  [
+                          "Accounting",
+                          "Financial Analysis"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_med_2",
@@ -299,7 +437,18 @@
                         "Solvency"
                     ],
         "answer":  0,
-        "explanation":  "Current assets over current liabilities shows whether short-term obligations can be met."
+        "explanation":  "Current assets over current liabilities shows whether short-term obligations can be met.",
+        "objective":  "Current assets over current liabilities shows whether short-term obligations can be met.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Accounting",
+                          "Financial Analysis"
+                      ],
+        "keywords":  [
+                         "current",
+                         "measure"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_med_3",
@@ -317,7 +466,12 @@
                          "higher"
                      ],
         "minKeywords":  2,
-        "explanation":  "The oldest (cheapest) purchases are sold first, so the newer costlier stock stays in closing inventory."
+        "explanation":  "The oldest (cheapest) purchases are sold first, so the newer costlier stock stays in closing inventory.",
+        "objective":  "The oldest (cheapest) purchases are sold first, so the newer costlier stock stays in closing inventory.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_hard_1",
@@ -339,7 +493,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Turnover divided by 365 or 365 days gives days-in-inventory; a zero denominator must not divide by zero."
+        "explanation":  "Turnover divided by 365 or 365 days gives days-in-inventory; a zero denominator must not divide by zero.",
+        "objective":  "Turnover divided by 365 or 365 days gives days-in-inventory; a zero denominator must not divide by zero.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "keywords":  [
+                         "Compute",
+                         "inventory",
+                         "turnover",
+                         "rounded"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_hard_2",
@@ -356,7 +521,12 @@
                          "future"
                      ],
         "minKeywords":  2,
-        "explanation":  "Cash received before delivery is a liability, released to revenue as the performance obligation is satisfied."
+        "explanation":  "Cash received before delivery is a liability, released to revenue as the performance obligation is satisfied.",
+        "objective":  "Cash received before delivery is a liability, released to revenue as the performance obligation is satisfied.",
+        "skillTags":  [
+                          "Accounting"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "acc_extra_hard_3",
@@ -373,7 +543,14 @@
                          "equity small"
                      ],
         "minKeywords":  2,
-        "explanation":  "ROE rises when equity shrinks, so heavy borrowing can inflate the ratio without improved performance."
+        "explanation":  "ROE rises when equity shrinks, so heavy borrowing can inflate the ratio without improved performance.",
+        "objective":  "ROE rises when equity shrinks, so heavy borrowing can inflate the ratio without improved performance.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Accounting",
+                          "Financial Analysis"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_easy_1",
@@ -389,7 +566,17 @@
                         "Selection sort"
                     ],
         "answer":  0,
-        "explanation":  "Mergesort keeps equal keys in order and its worst case stays O(n log n)."
+        "explanation":  "Mergesort keeps equal keys in order and its worst case stays O(n log n).",
+        "objective":  "Mergesort keeps equal keys in order and its worst case stays O(n log n).",
+        "skillTags":  [
+                          "Algorithms"
+                      ],
+        "keywords":  [
+                         "sorting",
+                         "algorithm",
+                         "guarantees"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_easy_2",
@@ -405,7 +592,15 @@
                         "O(n^2)"
                     ],
         "answer":  0,
-        "explanation":  "Every element may have to be inspected, so the worst case is linear."
+        "explanation":  "Every element may have to be inspected, so the worst case is linear.",
+        "objective":  "Every element may have to be inspected, so the worst case is linear.",
+        "skillTags":  [
+                          "Algorithms"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_easy_3",
@@ -422,7 +617,12 @@
                          "asymptotic"
                      ],
         "minKeywords":  2,
-        "explanation":  "Big-O bounds growth from above as input size tends to infinity."
+        "explanation":  "Big-O bounds growth from above as input size tends to infinity.",
+        "objective":  "Big-O bounds growth from above as input size tends to infinity.",
+        "skillTags":  [
+                          "algo"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_easy_4",
@@ -438,7 +638,17 @@
                         "Heap allocation"
                     ],
         "answer":  0,
-        "explanation":  "Without a base case the recursion never stops and the stack overflows."
+        "explanation":  "Without a base case the recursion never stops and the stack overflows.",
+        "objective":  "Without a base case the recursion never stops and the stack overflows.",
+        "skillTags":  [
+                          "algo"
+                      ],
+        "keywords":  [
+                         "recursive",
+                         "function",
+                         "terminate"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_med_1",
@@ -455,7 +665,12 @@
                          "linear"
                      ],
         "minKeywords":  2,
-        "explanation":  "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n)."
+        "explanation":  "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n).",
+        "objective":  "Starting at both ends, you move the pointer that improves the target comparison, reducing O(n^2) to O(n).",
+        "skillTags":  [
+                          "algo"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_med_2",
@@ -472,7 +687,12 @@
                          "not optimal"
                      ],
         "minKeywords":  2,
-        "explanation":  "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version."
+        "explanation":  "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version.",
+        "objective":  "Choosing the best ratio first can leave a combination with strictly higher total value, so greedy is only optimal for the fractional version.",
+        "skillTags":  [
+                          "Algorithms"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_med_3",
@@ -488,7 +708,16 @@
                         "A queue"
                     ],
         "answer":  0,
-        "explanation":  "Only the previous two values are needed, so O(1) space replaces an O(n) table."
+        "explanation":  "Only the previous two values are needed, so O(1) space replaces an O(n) table.",
+        "objective":  "Only the previous two values are needed, so O(1) space replaces an O(n) table.",
+        "skillTags":  [
+                          "Dynamic Programming"
+                      ],
+        "keywords":  [
+                         "space-optimised",
+                         "Fibonacci"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_hard_1",
@@ -510,7 +739,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex."
+        "explanation":  "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex.",
+        "objective":  "With a min-heap Dijkstra runs in O((V+E) log V) and never relaxes an edge into a finalised vertex.",
+        "skillTags":  [
+                          "Graphs"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "Dijkstra",
+                         "shortest",
+                         "distance"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_hard_2",
@@ -527,7 +767,12 @@
                          "dynamic"
                      ],
         "minKeywords":  2,
-        "explanation":  "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required."
+        "explanation":  "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required.",
+        "objective":  "Choosing the earliest-finishing compatible activity leaves the most room; adding weights breaks that exchange argument so DP is required.",
+        "skillTags":  [
+                          "Dynamic Programming"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_extra_hard_3",
@@ -544,7 +789,12 @@
                          "linear"
                      ],
         "minKeywords":  2,
-        "explanation":  "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting."
+        "explanation":  "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting.",
+        "objective":  "The failure function records the longest prefix-suffix, so the pattern moves past known-matched characters instead of restarting.",
+        "skillTags":  [
+                          "Strings"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_easy_1",
@@ -560,7 +810,17 @@
                         "O(log n)"
                     ],
         "answer":  1,
-        "explanation":  "With an unlucky pivot choice the partitions stay unbalanced, degrading to O(n^2)."
+        "explanation":  "With an unlucky pivot choice the partitions stay unbalanced, degrading to O(n^2).",
+        "objective":  "With an unlucky pivot choice the partitions stay unbalanced, degrading to O(n^2).",
+        "skillTags":  [
+                          "Algorithms"
+                      ],
+        "keywords":  [
+                         "worst-case",
+                         "complexity",
+                         "quicksort"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_easy_2",
@@ -576,7 +836,16 @@
                         "Heapsort"
                     ],
         "answer":  3,
-        "explanation":  "Heapsort swaps elements across the array, destroying the relative order of equal keys."
+        "explanation":  "Heapsort swaps elements across the array, destroying the relative order of equal keys.",
+        "objective":  "Heapsort swaps elements across the array, destroying the relative order of equal keys.",
+        "skillTags":  [
+                          "algo"
+                      ],
+        "keywords":  [
+                         "sorting",
+                         "algorithm"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_easy_3",
@@ -592,7 +861,16 @@
                         "O(n log n)"
                     ],
         "answer":  1,
-        "explanation":  "Each comparison halves the search space, giving O(log n)."
+        "explanation":  "Each comparison halves the search space, giving O(log n).",
+        "objective":  "Each comparison halves the search space, giving O(log n).",
+        "skillTags":  [
+                          "Algorithms"
+                      ],
+        "keywords":  [
+                         "complexity",
+                         "elements"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_easy_4",
@@ -608,7 +886,12 @@
                          "asymptotic"
                      ],
         "minKeywords":  2,
-        "explanation":  "Big-O bounds the growth rate of a function from above as the input size tends to infinity."
+        "explanation":  "Big-O bounds the growth rate of a function from above as the input size tends to infinity.",
+        "objective":  "Big-O bounds the growth rate of a function from above as the input size tends to infinity.",
+        "skillTags":  [
+                          "algo"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_med_1",
@@ -624,7 +907,18 @@
                         "Divide and conquer and pruning"
                     ],
         "answer":  0,
-        "explanation":  "Optimal solutions must contain optimal sub-solutions, and the same subproblems must recur."
+        "explanation":  "Optimal solutions must contain optimal sub-solutions, and the same subproblems must recur.",
+        "objective":  "Optimal solutions must contain optimal sub-solutions, and the same subproblems must recur.",
+        "skillTags":  [
+                          "Dynamic Programming"
+                      ],
+        "keywords":  [
+                         "essential",
+                         "properties",
+                         "required",
+                         "dynamic"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_med_2",
@@ -640,7 +934,12 @@
                          "heap"
                      ],
         "minKeywords":  1,
-        "explanation":  "With a binary heap each edge relaxation costs O(log V), giving O((V + E) log V)."
+        "explanation":  "With a binary heap each edge relaxation costs O(log V), giving O((V + E) log V).",
+        "objective":  "With a binary heap each edge relaxation costs O(log V), giving O((V + E) log V).",
+        "skillTags":  [
+                          "Graphs"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_med_3",
@@ -656,7 +955,18 @@
                         "At most n x optimum"
                     ],
         "answer":  0,
-        "explanation":  "Fractional knapsack has the greedy-choice property, so sorting by value/weight yields the exact optimum."
+        "explanation":  "Fractional knapsack has the greedy-choice property, so sorting by value/weight yields the exact optimum.",
+        "objective":  "Fractional knapsack has the greedy-choice property, so sorting by value/weight yields the exact optimum.",
+        "skillTags":  [
+                          "Algorithms"
+                      ],
+        "keywords":  [
+                         "fractional",
+                         "knapsack",
+                         "algorithm",
+                         "achieves"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_med_4",
@@ -672,7 +982,12 @@
                          "doubling"
                      ],
         "minKeywords":  1,
-        "explanation":  "Rare O(n) resizes are averaged over n insertions, so the amortized cost is O(1)."
+        "explanation":  "Rare O(n) resizes are averaged over n insertions, so the amortized cost is O(1).",
+        "objective":  "Rare O(n) resizes are averaged over n insertions, so the amortized cost is O(1).",
+        "skillTags":  [
+                          "algo"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_hard_1",
@@ -688,7 +1003,18 @@
                         "O(E log V)"
                     ],
         "answer":  1,
-        "explanation":  "It relaxes all E edges V-1 times, so the cost is O(V E)."
+        "explanation":  "It relaxes all E edges V-1 times, so the cost is O(V E).",
+        "objective":  "It relaxes all E edges V-1 times, so the cost is O(V E).",
+        "skillTags":  [
+                          "Graphs"
+                      ],
+        "keywords":  [
+                         "complexity",
+                         "Bellman-Ford",
+                         "algorithm",
+                         "vertices"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_hard_2",
@@ -705,7 +1031,12 @@
                          "at least as hard"
                      ],
         "minKeywords":  2,
-        "explanation":  "NP means a proposed solution can be verified in polynomial time; NP-hard means every problem in NP reduces to it, which does not require it to be in NP or even be a decision problem."
+        "explanation":  "NP means a proposed solution can be verified in polynomial time; NP-hard means every problem in NP reduces to it, which does not require it to be in NP or even be a decision problem.",
+        "objective":  "NP means a proposed solution can be verified in polynomial time; NP-hard means every problem in NP reduces to it, which does not require it to be in NP or even ",
+        "skillTags":  [
+                          "algo"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "algo_hard_3",
@@ -727,7 +1058,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "A min-heap of size k costs O(n log k) time and O(k) space, beating a full sort when k is much smaller than n."
+        "explanation":  "A min-heap of size k costs O(n log k) time and O(k) space, beating a full sort when k is much smaller than n.",
+        "objective":  "A min-heap of size k costs O(n log k) time and O(k) space, beating a full sort when k is much smaller than n.",
+        "skillTags":  [
+                          "Algorithms"
+                      ],
+        "keywords":  [
+                         "integers",
+                         "largest",
+                         "elements",
+                         "ascending."
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "algo_hard_4",
@@ -743,7 +1085,12 @@
                          "avoid reusing item twice"
                      ],
         "minKeywords":  2,
-        "explanation":  "A single array of capacities works if you iterate the capacity downwards: the value at w - weight must still refer to the previous item, and descending order guarantees that."
+        "explanation":  "A single array of capacities works if you iterate the capacity downwards: the value at w - weight must still refer to the previous item, and descending order guarantees that.",
+        "objective":  "A single array of capacities works if you iterate the capacity downwards: the value at w - weight must still refer to the previous item, and descending order gu",
+        "skillTags":  [
+                          "Dynamic Programming"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_easy_1",
@@ -759,7 +1106,18 @@
                         "5 V"
                     ],
         "answer":  1,
-        "explanation":  "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that."
+        "explanation":  "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that.",
+        "objective":  "The junction barrier potential of silicon is about 0.7 V, so significant current flows above that.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "silicon",
+                         "conducts",
+                         "appreciably",
+                         "forward"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_easy_2",
@@ -775,7 +1133,16 @@
                         "Leakage"
                     ],
         "answer":  2,
-        "explanation":  "The emitter current is the sum of the collector and base currents, so it is the largest."
+        "explanation":  "The emitter current is the sum of the collector and base currents, so it is the largest.",
+        "objective":  "The emitter current is the sum of the collector and base currents, so it is the largest.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "current",
+                         "largest"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_easy_3",
@@ -791,7 +1158,15 @@
                         "Equal to the feedback resistor"
                     ],
         "answer":  2,
-        "explanation":  "An ideal op-amp draws no input current, which is modelled as infinite input resistance."
+        "explanation":  "An ideal op-amp draws no input current, which is modelled as infinite input resistance.",
+        "objective":  "An ideal op-amp draws no input current, which is modelled as infinite input resistance.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "resistance"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_easy_4",
@@ -807,7 +1182,12 @@
                          "capacitance"
                      ],
         "minKeywords":  2,
-        "explanation":  "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises."
+        "explanation":  "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises.",
+        "objective":  "Xc = 1/(2*pi*f*C), so it falls as either frequency or capacitance rises.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_med_1",
@@ -823,7 +1203,18 @@
                         "Set by the feedback network"
                     ],
         "answer":  1,
-        "explanation":  "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching."
+        "explanation":  "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching.",
+        "objective":  "With full output-to-inverting feedback the gain is 1, which is why it is used for impedance matching.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "voltage",
+                         "follower",
+                         "(buffer)",
+                         "configuration"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_med_2",
@@ -839,7 +1230,12 @@
                          "amplified"
                      ],
         "minKeywords":  2,
-        "explanation":  "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger."
+        "explanation":  "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger.",
+        "objective":  "Looking into the base, the emitter resistor is multiplied by roughly (beta + 1), so the input resistance is much larger.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_med_3",
@@ -855,7 +1251,18 @@
                         "Supply voltage"
                     ],
         "answer":  0,
-        "explanation":  "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature."
+        "explanation":  "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature.",
+        "objective":  "Johnson-Nyquist noise is proportional to sqrt(4 k T B R), so it grows with absolute temperature.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "Thermal",
+                         "voltage",
+                         "bandwidth",
+                         "increases"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_med_4",
@@ -871,7 +1278,13 @@
                          "monotonic"
                      ],
         "minKeywords":  2,
-        "explanation":  "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs."
+        "explanation":  "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs.",
+        "objective":  "A Butterworth response is maximally flat in the passband with no ripple, at the cost of a gentler roll-off than Chebyshev designs.",
+        "skillTags":  [
+                          "Signal Processing",
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_hard_1",
@@ -887,7 +1300,18 @@
                         "Infinite gain"
                     ],
         "answer":  1,
-        "explanation":  "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation."
+        "explanation":  "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation.",
+        "objective":  "Zero phase margin means the loop gain is 1 at -180 degrees, so the system is on the edge of oscillation.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "degrees",
+                         "closed-loop",
+                         "amplifier",
+                         "indicates"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_hard_2",
@@ -904,7 +1328,12 @@
                          "1+ab"
                      ],
         "minKeywords":  2,
-        "explanation":  "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta)."
+        "explanation":  "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta).",
+        "objective":  "The feedback network returns a fraction of the distorted output and opposes it with a large loop gain, suppressing distortion by roughly (1 + A*beta).",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_hard_3",
@@ -926,7 +1355,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp."
+        "explanation":  "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp.",
+        "objective":  "The output is gain * input limited to the rails; clipping models the finite supply of a real op-amp.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "Simulate",
+                         "inverting",
+                         "amplifier",
+                         "clipped"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_hard_4",
@@ -943,7 +1383,12 @@
                          "exponential"
                      ],
         "minKeywords":  2,
-        "explanation":  "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely."
+        "explanation":  "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely.",
+        "objective":  "The I-V curve is exponential, so rd = Vt / Id; the slope steepens with current and the incremental resistance drops inversely.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_easy_1",
@@ -959,7 +1404,16 @@
                         "2 V"
                     ],
         "answer":  0,
-        "explanation":  "Germanium begins conducting around 0.2-0.3 V, lower than silicon\u0027s 0.7 V."
+        "explanation":  "Germanium begins conducting around 0.2-0.3 V, lower than silicon\u0027s 0.7 V.",
+        "objective":  "Germanium begins conducting around 0.2-0.3 V, lower than silicon\u0027s 0.7 V.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "voltage",
+                         "germanium"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_easy_2",
@@ -975,7 +1429,15 @@
                         "Offset voltage"
                     ],
         "answer":  0,
-        "explanation":  "Slew rate limits how fast the output can swing, in V per microsecond."
+        "explanation":  "Slew rate limits how fast the output can swing, in V per microsecond.",
+        "objective":  "Slew rate limits how fast the output can swing, in V per microsecond.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_easy_3",
@@ -991,7 +1453,16 @@
                         "Only shifted"
                     ],
         "answer":  0,
-        "explanation":  "A base current increase raises collector current, dropping the collector voltage, so the output inverts."
+        "explanation":  "A base current increase raises collector current, dropping the collector voltage, so the output inverts.",
+        "objective":  "A base current increase raises collector current, dropping the collector voltage, so the output inverts.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "common-emitter",
+                         "amplifier"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_easy_4",
@@ -1008,7 +1479,12 @@
                          "charging"
                      ],
         "minKeywords":  2,
-        "explanation":  "tau = RC is the time to reach about 63% of the final voltage in an RC circuit."
+        "explanation":  "tau = RC is the time to reach about 63% of the final voltage in an RC circuit.",
+        "objective":  "tau = RC is the time to reach about 63% of the final voltage in an RC circuit.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_med_1",
@@ -1025,7 +1501,12 @@
                          "shunt"
                      ],
         "minKeywords":  2,
-        "explanation":  "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor\u0027s swing small."
+        "explanation":  "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor\u0027s swing small.",
+        "objective":  "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor\u0027s swing small.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_med_2",
@@ -1042,7 +1523,12 @@
                          "product"
                      ],
         "minKeywords":  2,
-        "explanation":  "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response."
+        "explanation":  "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response.",
+        "objective":  "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_med_3",
@@ -1058,7 +1544,15 @@
                         "Feedback resistor tolerance"
                     ],
         "answer":  0,
-        "explanation":  "Device mismatch in the input pair means zero output needs a small nonzero differential input."
+        "explanation":  "Device mismatch in the input pair means zero output needs a small nonzero differential input.",
+        "objective":  "Device mismatch in the input pair means zero output needs a small nonzero differential input.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "voltage"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_hard_1",
@@ -1080,7 +1574,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "The output is gain times input limited to the rails; clipping models a real op-amp\u0027s finite supply."
+        "explanation":  "The output is gain times input limited to the rails; clipping models a real op-amp\u0027s finite supply.",
+        "objective":  "The output is gain times input limited to the rails; clipping models a real op-amp\u0027s finite supply.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "keywords":  [
+                         "Compute",
+                         "voltage",
+                         "inverting",
+                         "clipping"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_hard_2",
@@ -1098,7 +1603,13 @@
                          "condition"
                      ],
         "minKeywords":  2,
-        "explanation":  "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation."
+        "explanation":  "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation.",
+        "objective":  "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "analog_extra_hard_3",
@@ -1115,7 +1626,12 @@
                          "spectral density"
                      ],
         "minKeywords":  2,
-        "explanation":  "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency."
+        "explanation":  "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency.",
+        "objective":  "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency.",
+        "skillTags":  [
+                          "Circuit Design"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_easy_1",
@@ -1131,7 +1647,15 @@
                         "24"
                     ],
         "answer":  1,
-        "explanation":  "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12."
+        "explanation":  "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12.",
+        "objective":  "HCF(24, 36) = 12. Factors of 24: 1,2,3,4,6,8,12,24. Factors of 36: 1,2,3,4,6,9,12,18,36. Common: 1,2,3,4,6,12. Highest is 12.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_easy_2",
@@ -1147,7 +1671,15 @@
                         "160"
                     ],
         "answer":  1,
-        "explanation":  "20% of x = 40 =\u003e 0.2x = 40 =\u003e x = 40/0.2 = 200."
+        "explanation":  "20% of x = 40 =\u003e 0.2x = 40 =\u003e x = 40/0.2 = 200.",
+        "objective":  "20% of x = 40 =\u003e 0.2x = 40 =\u003e x = 40/0.2 = 200.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_easy_3",
@@ -1163,7 +1695,16 @@
                         "8 days"
                     ],
         "answer":  1,
-        "explanation":  "A\u0027s 1 day work = 1/10, B\u0027s = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days."
+        "explanation":  "A\u0027s 1 day work = 1/10, B\u0027s = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days.",
+        "objective":  "A\u0027s 1 day work = 1/10, B\u0027s = 1/15. Together = 1/10 + 1/15 = 5/30 = 1/6. So 6 days.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "Together",
+                         "complete"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_easy_4",
@@ -1178,7 +1719,12 @@
                          "least common multiple"
                      ],
         "minKeywords":  1,
-        "explanation":  "LCM(12, 15, 20) = 60. Prime factors: 12=2Â²Ã—3, 15=3Ã—5, 20=2Â²Ã—5. LCM = 2Â²Ã—3Ã—5 = 60."
+        "explanation":  "LCM(12, 15, 20) = 60. Prime factors: 12=2Â²Ã—3, 15=3Ã—5, 20=2Â²Ã—5. LCM = 2Â²Ã—3Ã—5 = 60.",
+        "objective":  "LCM(12, 15, 20) = 60. Prime factors: 12=2Â²Ã—3, 15=3Ã—5, 20=2Â²Ã—5. LCM = 2Â²Ã—3Ã—5 = 60.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_medium_1",
@@ -1194,7 +1740,16 @@
                         "36%"
                     ],
         "answer":  0,
-        "explanation":  "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%."
+        "explanation":  "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%.",
+        "objective":  "Let CP = 100. MP = 140. SP after 10% discount = 126. Profit = 26%.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "shopkeeper",
+                         "discount."
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_medium_2",
@@ -1210,7 +1765,12 @@
                          "fraction"
                      ],
         "minKeywords":  1,
-        "explanation":  "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours â‰ˆ 3.43 hours."
+        "explanation":  "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours â‰ˆ 3.43 hours.",
+        "objective":  "Net rate = 1/4 + 1/6 - 1/8 = 6/24 + 4/24 - 3/24 = 7/24. Time = 24/7 hours â‰ˆ 3.43 hours.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_medium_3",
@@ -1226,7 +1786,15 @@
                         "2450"
                     ],
         "answer":  1,
-        "explanation":  "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 Ã— 102 = 2550."
+        "explanation":  "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 Ã— 102 = 2550.",
+        "objective":  "First 50 even numbers: 2, 4, ..., 100. Sum = n/2(first + last) = 50/2(2 + 100) = 25 Ã— 102 = 2550.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "numbers"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_medium_4",
@@ -1240,7 +1808,12 @@
                          "ten thousand"
                      ],
         "minKeywords":  1,
-        "explanation":  "P Ã— 1.1 Ã— 1.1 = 12100 =\u003e P Ã— 1.21 = 12100 =\u003e P = 10000."
+        "explanation":  "P Ã— 1.1 Ã— 1.1 = 12100 =\u003e P Ã— 1.21 = 12100 =\u003e P = 10000.",
+        "objective":  "P Ã— 1.1 Ã— 1.1 = 12100 =\u003e P Ã— 1.21 = 12100 =\u003e P = 10000.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_hard_1",
@@ -1267,7 +1840,17 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Net rate = sum of all rates. If net \u003e 0, time = 1/net. If net \u003c= 0, never fills."
+        "explanation":  "Net rate = sum of all rates. If net \u003e 0, time = 1/net. If net \u003c= 0, never fills.",
+        "objective":  "Net rate = sum of all rates. If net \u003e 0, time = 1/net. If net \u003c= 0, never fills.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "fill/empty",
+                         "(positive=fills",
+                         "negative=empties)"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_hard_2",
@@ -1294,7 +1877,17 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from \u003cnumeric\u003e."
+        "explanation":  "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from \u003cnumeric\u003e.",
+        "objective":  "LCM(1..n) = LCM(LCM(1..n-1), n). Use std::lcm from \u003cnumeric\u003e.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "smallest",
+                         "divisible",
+                         "numbers"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_hard_3",
@@ -1310,7 +1903,12 @@
                          "negative"
                      ],
         "minKeywords":  2,
-        "explanation":  "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-xÂ²/10000). Net change = -xÂ²/100%. Always a decrease."
+        "explanation":  "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-xÂ²/10000). Net change = -xÂ²/100%. Always a decrease.",
+        "objective":  "Let price = 100. After +x%: 100(1+x/100). After -x%: 100(1+x/100)(1-x/100) = 100(1-xÂ²/10000). Net change = -xÂ²/100%. Always a decrease.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_easy_1",
@@ -1326,7 +1924,15 @@
                         "24"
                     ],
         "answer":  0,
-        "explanation":  "0.15 x 240 = 36."
+        "explanation":  "0.15 x 240 = 36.",
+        "objective":  "0.15 x 240 = 36.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_easy_2",
@@ -1342,7 +1948,16 @@
                         "12.5%"
                     ],
         "answer":  0,
-        "explanation":  "(250-200)/200 = 50/200 = 25%."
+        "explanation":  "(250-200)/200 = 50/200 = 25%.",
+        "objective":  "(250-200)/200 = 50/200 = 25%.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "percentage",
+                         "increase"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_easy_3",
@@ -1359,7 +1974,14 @@
                          "division"
                      ],
         "minKeywords":  2,
-        "explanation":  "A ratio compares two quantities by division, expressed as a fraction or with a colon."
+        "explanation":  "A ratio compares two quantities by division, expressed as a fraction or with a colon.",
+        "objective":  "A ratio compares two quantities by division, expressed as a fraction or with a colon.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Financial Analysis",
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_easy_4",
@@ -1375,7 +1997,15 @@
                         "24"
                     ],
         "answer":  0,
-        "explanation":  "(4+8+12)/3 = 24/3 = 8."
+        "explanation":  "(4+8+12)/3 = 24/3 = 8.",
+        "objective":  "(4+8+12)/3 = 24/3 = 8.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "average"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_med_1",
@@ -1391,7 +2021,15 @@
                         "50 km/h"
                     ],
         "answer":  0,
-        "explanation":  "Speed = distance / time = 150 / 2.5 = 60 km/h."
+        "explanation":  "Speed = distance / time = 150 / 2.5 = 60 km/h.",
+        "objective":  "Speed = distance / time = 150 / 2.5 = 60 km/h.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "average"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_med_2",
@@ -1408,7 +2046,13 @@
                          "divide"
                      ],
         "minKeywords":  2,
-        "explanation":  "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price."
+        "explanation":  "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price.",
+        "objective":  "Profit percentage = (profit / cost price) x 100, expressed against the cost rather than the selling price.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_med_3",
@@ -1424,7 +2068,16 @@
                         "44"
                     ],
         "answer":  0,
-        "explanation":  "The terms are n(n+1), so the next is 6 x 7 = 42."
+        "explanation":  "The terms are n(n+1), so the next is 6 x 7 = 42.",
+        "objective":  "The terms are n(n+1), so the next is 6 x 7 = 42.",
+        "skillTags":  [
+                          "Quantitative Aptitude",
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "Complete"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_hard_1",
@@ -1446,7 +2099,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided."
+        "explanation":  "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided.",
+        "objective":  "1/a + 1/b = 1/together; when either worker alone is undefined the answer should be handled, not divided.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "keywords":  [
+                         "Compute",
+                         "workers",
+                         "combined-rate",
+                         "together"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_hard_2",
@@ -1463,7 +2127,12 @@
                          "update"
                      ],
         "minKeywords":  2,
-        "explanation":  "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis."
+        "explanation":  "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis.",
+        "objective":  "It revises a prior belief with new evidence by weighting how likely that evidence is under each hypothesis.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "apt_extra_hard_3",
@@ -1480,7 +2149,12 @@
                          "alligation"
                      ],
         "minKeywords":  2,
-        "explanation":  "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean."
+        "explanation":  "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean.",
+        "objective":  "The final concentration is the amount-weighted average, and alligation gives the mixing ratio from distances from the mean.",
+        "skillTags":  [
+                          "Quantitative Aptitude"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_easy_1",
@@ -1496,7 +2170,15 @@
                         "Creating objects from classes"
                     ],
         "answer":  0,
-        "explanation":  "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components."
+        "explanation":  "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components.",
+        "objective":  "Encapsulation bundles data and methods that operate on that data within a single unit (class) and restricts direct access to some components.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "encapsulation"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_easy_2",
@@ -1512,7 +2194,17 @@
                         "friend"
                     ],
         "answer":  2,
-        "explanation":  "Private members are only accessible within the class they are declared in."
+        "explanation":  "Private members are only accessible within the class they are declared in.",
+        "objective":  "Private members are only accessible within the class they are declared in.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "specifier",
+                         "members",
+                         "accessible"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_easy_3",
@@ -1528,7 +2220,15 @@
                         "A class with no inheritance"
                     ],
         "answer":  0,
-        "explanation":  "Single inheritance is when a derived class inherits from exactly one base class."
+        "explanation":  "Single inheritance is when a derived class inherits from exactly one base class.",
+        "objective":  "Single inheritance is when a derived class inherits from exactly one base class.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "inheritance"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_easy_4",
@@ -1544,7 +2244,17 @@
                         "Inline functions"
                     ],
         "answer":  1,
-        "explanation":  "Virtual functions allow derived class methods to be called through base class pointers/references at runtime."
+        "explanation":  "Virtual functions allow derived class methods to be called through base class pointers/references at runtime.",
+        "objective":  "Virtual functions allow derived class methods to be called through base class pointers/references at runtime.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "enables",
+                         "runtime",
+                         "polymorphism"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_medium_1",
@@ -1562,7 +2272,12 @@
                          "implemented-in-terms-of"
                      ],
         "minKeywords":  3,
-        "explanation":  "Public inheritance models \u0027is-a\u0027, protected/private model \u0027implemented-in-terms-of\u0027. Access levels affect derived class access to base members."
+        "explanation":  "Public inheritance models \u0027is-a\u0027, protected/private model \u0027implemented-in-terms-of\u0027. Access levels affect derived class access to base members.",
+        "objective":  "Public inheritance models \u0027is-a\u0027, protected/private model \u0027implemented-in-terms-of\u0027. Access levels affect derived class access to base members.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_medium_2",
@@ -1580,7 +2295,12 @@
                          "overriding"
                      ],
         "minKeywords":  3,
-        "explanation":  "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable."
+        "explanation":  "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable.",
+        "objective":  "Static polymorphism (templates, overloading) resolved at compile-time. Dynamic polymorphism (virtual functions) resolved at runtime via vtable.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_medium_3",
@@ -1596,7 +2316,18 @@
                         "Prototype"
                     ],
         "answer":  1,
-        "explanation":  "Singleton pattern restricts instantiation to a single object and provides global access to it."
+        "explanation":  "Singleton pattern restricts instantiation to a single object and provides global access to it.",
+        "objective":  "Singleton pattern restricts instantiation to a single object and provides global access to it.",
+        "skillTags":  [
+                          "OOP",
+                          "Design Patterns"
+                      ],
+        "keywords":  [
+                         "pattern",
+                         "ensures",
+                         "instance"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_medium_4",
@@ -1612,7 +2343,19 @@
                         "Adapter"
                     ],
         "answer":  0,
-        "explanation":  "Strategy pattern encapsulates algorithms and allows switching between them at runtime."
+        "explanation":  "Strategy pattern encapsulates algorithms and allows switching between them at runtime.",
+        "objective":  "Strategy pattern encapsulates algorithms and allows switching between them at runtime.",
+        "skillTags":  [
+                          "OOP",
+                          "Design Patterns"
+                      ],
+        "keywords":  [
+                         "pattern",
+                         "defines",
+                         "algorithms",
+                         "interchangeable"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_hard_1",
@@ -1644,7 +2387,19 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Strategy pattern allows switching sorting algorithms at runtime without changing client code."
+        "explanation":  "Strategy pattern allows switching sorting algorithms at runtime without changing client code.",
+        "objective":  "Strategy pattern allows switching sorting algorithms at runtime without changing client code.",
+        "skillTags":  [
+                          "OOP",
+                          "Design Patterns"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "Strategy",
+                         "pattern",
+                         "sorting"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_hard_2",
@@ -1661,7 +2416,18 @@
                               "isHidden":  false
                           }
                       ],
-        "explanation":  "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified."
+        "explanation":  "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified.",
+        "objective":  "Observer pattern defines one-to-many dependency so when one object changes state, all dependents are notified.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "Observer",
+                         "pattern.",
+                         "Subject"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "cpp_oop_hard_3",
@@ -1680,7 +2446,12 @@
                          "base"
                      ],
         "minKeywords":  4,
-        "explanation":  "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base class exists."
+        "explanation":  "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base class exists.",
+        "objective":  "Diamond problem occurs when a class inherits from two classes that both inherit from a common base. Virtual inheritance ensures only one instance of the base cl",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_easy_1",
@@ -1696,7 +2467,17 @@
                         "O(n log n)"
                     ],
         "answer":  0,
-        "explanation":  "Arrays support random access: the address is base + index * elementSize, so it is constant time."
+        "explanation":  "Arrays support random access: the address is base + index * elementSize, so it is constant time.",
+        "objective":  "Arrays support random access: the address is base + index * elementSize, so it is constant time.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "complexity",
+                         "accessing",
+                         "element"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_easy_2",
@@ -1712,7 +2493,17 @@
                         "O(n^2)"
                     ],
         "answer":  2,
-        "explanation":  "You must traverse from the head because there is no random access, so the worst case visits every node."
+        "explanation":  "You must traverse from the head because there is no random access, so the worst case visits every node.",
+        "objective":  "You must traverse from the head because there is no random access, so the worst case visits every node.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "complexity",
+                         "searching",
+                         "element"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_easy_3",
@@ -1728,7 +2519,15 @@
                         "Random order"
                     ],
         "answer":  1,
-        "explanation":  "A stack is Last In First Out: the most recently pushed element is the first one popped."
+        "explanation":  "A stack is Last In First Out: the most recently pushed element is the first one popped.",
+        "objective":  "A stack is Last In First Out: the most recently pushed element is the first one popped.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "principle"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_easy_4",
@@ -1744,7 +2543,12 @@
                          "rear"
                      ],
         "minKeywords":  2,
-        "explanation":  "A queue inserts at the rear and removes from the front, preserving arrival order."
+        "explanation":  "A queue inserts at the rear and removes from the front, preserving arrival order.",
+        "objective":  "A queue inserts at the rear and removes from the front, preserving arrival order.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_med_1",
@@ -1760,7 +2564,16 @@
                         "Any leaf"
                     ],
         "answer":  1,
-        "explanation":  "Keep going right until there is no right child; that node holds the largest key."
+        "explanation":  "Keep going right until there is no right child; that node holds the largest key.",
+        "objective":  "Keep going right until there is no right child; that node holds the largest key.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "maximum",
+                         "element"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_med_2",
@@ -1776,7 +2589,12 @@
                          "power of two"
                      ],
         "minKeywords":  2,
-        "explanation":  "Each level can hold at most twice the previous level, so level L holds 2^L nodes."
+        "explanation":  "Each level can hold at most twice the previous level, so level L holds 2^L nodes.",
+        "objective":  "Each level can hold at most twice the previous level, so level L holds 2^L nodes.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_med_3",
@@ -1792,7 +2610,17 @@
                         "O(log log n)"
                     ],
         "answer":  0,
-        "explanation":  "With a uniform hash and low load factor, the expected chain length is constant."
+        "explanation":  "With a uniform hash and low load factor, the expected chain length is constant.",
+        "objective":  "With a uniform hash and low load factor, the expected chain length is constant.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "average-case",
+                         "complexity",
+                         "function"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_med_4",
@@ -1808,7 +2636,12 @@
                          "o(log"
                      ],
         "minKeywords":  1,
-        "explanation":  "The new element bubbles up at most the height of the heap, which is O(log n)."
+        "explanation":  "The new element bubbles up at most the height of the heap, which is O(log n).",
+        "objective":  "The new element bubbles up at most the height of the heap, which is O(log n).",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_hard_1",
@@ -1824,7 +2657,15 @@
                         "O(sqrt(n))"
                     ],
         "answer":  0,
-        "explanation":  "AVL rotations keep the height balanced within a constant factor of log n."
+        "explanation":  "AVL rotations keep the height balanced within a constant factor of log n.",
+        "objective":  "AVL rotations keep the height balanced within a constant factor of log n.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_hard_2",
@@ -1840,7 +2681,13 @@
                          "each edge once"
                      ],
         "minKeywords":  1,
-        "explanation":  "Each vertex and each edge is visited a constant number of times, giving O(V + E)."
+        "explanation":  "Each vertex and each edge is visited a constant number of times, giving O(V + E).",
+        "objective":  "Each vertex and each edge is visited a constant number of times, giving O(V + E).",
+        "skillTags":  [
+                          "Data Structures",
+                          "Graphs"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_hard_3",
@@ -1862,7 +2709,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function."
+        "explanation":  "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function.",
+        "objective":  "Both optimisations give near-constant amortised cost per operation, bounded by the inverse Ackermann function.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "union-find",
+                         "(disjoint",
+                         "structure"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_hard_4",
@@ -1879,7 +2737,13 @@
                          "relaxation"
                      ],
         "minKeywords":  2,
-        "explanation":  "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates negative weights (barring negative cycles)."
+        "explanation":  "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates negative weights (barring negative cycles).",
+        "objective":  "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates ne",
+        "skillTags":  [
+                          "Data Structures",
+                          "Graphs"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_easy_1",
@@ -1895,7 +2759,15 @@
                         "Schema"
                     ],
         "answer":  0,
-        "explanation":  "Rows are tuples, columns are attributes, and the table itself is a relation."
+        "explanation":  "Rows are tuples, columns are attributes, and the table itself is a relation.",
+        "objective":  "Rows are tuples, columns are attributes, and the table itself is a relation.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "relational"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_easy_2",
@@ -1911,7 +2783,16 @@
                         "LIMIT"
                     ],
         "answer":  0,
-        "explanation":  "WHERE filters rows before grouping; HAVING filters the resulting groups."
+        "explanation":  "WHERE filters rows before grouping; HAVING filters the resulting groups.",
+        "objective":  "WHERE filters rows before grouping; HAVING filters the resulting groups.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "filters",
+                         "produced"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_easy_3",
@@ -1927,7 +2808,15 @@
                         "A foreign key"
                     ],
         "answer":  0,
-        "explanation":  "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey."
+        "explanation":  "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey.",
+        "objective":  "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey.",
+        "skillTags":  [
+                          "dbms"
+                      ],
+        "keywords":  [
+                         "superkey"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_easy_4",
@@ -1943,7 +2832,12 @@
                          "indivisible"
                      ],
         "minKeywords":  2,
-        "explanation":  "Every attribute must hold a single atomic value with no repeating groups."
+        "explanation":  "Every attribute must hold a single atomic value with no repeating groups.",
+        "objective":  "Every attribute must hold a single atomic value with no repeating groups.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_med_1",
@@ -1959,7 +2853,15 @@
                         "Commit"
                     ],
         "answer":  0,
-        "explanation":  "Consistency means a transaction moves the database from one valid state to another."
+        "explanation":  "Consistency means a transaction moves the database from one valid state to another.",
+        "objective":  "Consistency means a transaction moves the database from one valid state to another.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_med_2",
@@ -1977,7 +2879,12 @@
                          "fewer"
                      ],
         "minKeywords":  2,
-        "explanation":  "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans."
+        "explanation":  "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans.",
+        "objective":  "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_med_3",
@@ -1993,7 +2900,15 @@
                         "Every determinant is a key"
                     ],
         "answer":  0,
-        "explanation":  "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key."
+        "explanation":  "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key.",
+        "objective":  "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "relation"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_med_4",
@@ -2010,7 +2925,12 @@
                          "two transactions"
                      ],
         "minKeywords":  2,
-        "explanation":  "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it."
+        "explanation":  "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it.",
+        "objective":  "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it.",
+        "skillTags":  [
+                          "Concurrency"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_hard_1",
@@ -2026,7 +2946,16 @@
                         "Strict two-phase locking"
                     ],
         "answer":  0,
-        "explanation":  "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear."
+        "explanation":  "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear.",
+        "objective":  "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "isolation",
+                         "phantom"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_hard_2",
@@ -2044,7 +2973,12 @@
                          "small"
                      ],
         "minKeywords":  2,
-        "explanation":  "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost."
+        "explanation":  "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost.",
+        "objective":  "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost.",
+        "skillTags":  [
+                          "dbms"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_hard_3",
@@ -2066,7 +3000,17 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) \u003c (SELECT MAX(salary) ...), returns the runner-up."
+        "explanation":  "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) \u003c (SELECT MAX(salary) ...), returns the runner-up.",
+        "objective":  "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) \u003c (SELECT MAX(salary) ...), returns the runner-up.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "highest",
+                         "employees",
+                         "returning"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_hard_4",
@@ -2083,7 +3027,12 @@
                          "candidate"
                      ],
         "minKeywords":  2,
-        "explanation":  "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime."
+        "explanation":  "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime.",
+        "objective":  "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_easy_1",
@@ -2099,7 +3048,16 @@
                         "CROSS JOIN"
                     ],
         "answer":  0,
-        "explanation":  "An inner join keeps only rows whose join predicate matches on both sides."
+        "explanation":  "An inner join keeps only rows whose join predicate matches on both sides.",
+        "objective":  "An inner join keeps only rows whose join predicate matches on both sides.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "returns",
+                         "matching"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_easy_2",
@@ -2115,7 +3073,16 @@
                         "FILTER"
                     ],
         "answer":  0,
-        "explanation":  "SELECT DISTINCT deduplicates the projected rows."
+        "explanation":  "SELECT DISTINCT deduplicates the projected rows.",
+        "objective":  "SELECT DISTINCT deduplicates the projected rows.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "removes",
+                         "duplicate"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_easy_3",
@@ -2131,7 +3098,15 @@
                         "A computed column"
                     ],
         "answer":  0,
-        "explanation":  "A foreign key enforces referential integrity between two relations."
+        "explanation":  "A foreign key enforces referential integrity between two relations.",
+        "objective":  "A foreign key enforces referential integrity between two relations.",
+        "skillTags":  [
+                          "dbms"
+                      ],
+        "keywords":  [
+                         "foreign"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_easy_4",
@@ -2149,7 +3124,12 @@
                          "formal"
                      ],
         "minKeywords":  2,
-        "explanation":  "It is the formal query language of operations over relations that SQL is built on."
+        "explanation":  "It is the formal query language of operations over relations that SQL is built on.",
+        "objective":  "It is the formal query language of operations over relations that SQL is built on.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_med_1",
@@ -2166,7 +3146,12 @@
                          "filter"
                      ],
         "minKeywords":  2,
-        "explanation":  "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates."
+        "explanation":  "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates.",
+        "objective":  "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_med_2",
@@ -2182,7 +3167,15 @@
                         "Bloom filter"
                     ],
         "answer":  0,
-        "explanation":  "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential."
+        "explanation":  "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential.",
+        "objective":  "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "keywords":  [
+                         "queries"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_med_3",
@@ -2199,7 +3192,12 @@
                          "insert"
                      ],
         "minKeywords":  2,
-        "explanation":  "Re-running a range predicate returns newly inserted rows that another transaction committed in between."
+        "explanation":  "Re-running a range predicate returns newly inserted rows that another transaction committed in between.",
+        "objective":  "Re-running a range predicate returns newly inserted rows that another transaction committed in between.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_hard_1",
@@ -2221,7 +3219,17 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next."
+        "explanation":  "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next.",
+        "objective":  "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next.",
+        "skillTags":  [
+                          "dbms"
+                      ],
+        "keywords":  [
+                         "employees",
+                         "department",
+                         "highest"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_hard_2",
@@ -2238,7 +3246,12 @@
                          "no read lock"
                      ],
         "minKeywords":  2,
-        "explanation":  "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers."
+        "explanation":  "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers.",
+        "objective":  "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers.",
+        "skillTags":  [
+                          "SQL \u0026 Databases"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "dbms_extra_hard_3",
@@ -2255,7 +3268,12 @@
                          "cost model"
                      ],
         "minKeywords":  2,
-        "explanation":  "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost."
+        "explanation":  "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost.",
+        "objective":  "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost.",
+        "skillTags":  [
+                          "dbms"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_easy_1",
@@ -2271,7 +3289,16 @@
                         "Message queue routing"
                     ],
         "answer":  0,
-        "explanation":  "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead."
+        "explanation":  "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead.",
+        "objective":  "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "expression",
+                         "evaluate"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_easy_2",
@@ -2287,7 +3314,15 @@
                         "Better cache behaviour"
                     ],
         "answer":  0,
-        "explanation":  "The extra prev pointer allows backward traversal and O(1) deletion given a node."
+        "explanation":  "The extra prev pointer allows backward traversal and O(1) deletion given a node.",
+        "objective":  "The extra prev pointer allows backward traversal and O(1) deletion given a node.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "advantage"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_easy_3",
@@ -2303,7 +3338,18 @@
                         "Perfect hashing"
                     ],
         "answer":  0,
-        "explanation":  "Linear probing scans forward from the collision until an empty slot is found."
+        "explanation":  "Linear probing scans forward from the collision until an empty slot is found.",
+        "objective":  "Linear probing scans forward from the collision until an empty slot is found.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "technique",
+                         "resolves",
+                         "collisions",
+                         "placing"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_easy_4",
@@ -2320,7 +3366,12 @@
                          "sorted"
                      ],
         "minKeywords":  2,
-        "explanation":  "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot."
+        "explanation":  "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot.",
+        "objective":  "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_med_1",
@@ -2336,7 +3387,17 @@
                         "O(1)"
                     ],
         "answer":  0,
-        "explanation":  "Every node is visited exactly once, so traversal is linear in the number of nodes."
+        "explanation":  "Every node is visited exactly once, so traversal is linear in the number of nodes.",
+        "objective":  "Every node is visited exactly once, so traversal is linear in the number of nodes.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "complexity",
+                         "in-order",
+                         "traversal"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_med_2",
@@ -2352,7 +3413,12 @@
                          "depth"
                      ],
         "minKeywords":  2,
-        "explanation":  "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic."
+        "explanation":  "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic.",
+        "objective":  "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_med_3",
@@ -2368,7 +3434,17 @@
                         "Hash table"
                     ],
         "answer":  0,
-        "explanation":  "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n)."
+        "explanation":  "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n).",
+        "objective":  "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n).",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "keywords":  [
+                         "structure",
+                         "fastest",
+                         "minimum"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_hard_1",
@@ -2390,7 +3466,17 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "BFS explores by levels using a queue, visiting each vertex and edge once."
+        "explanation":  "BFS explores by levels using a queue, visiting each vertex and edge once.",
+        "objective":  "BFS explores by levels using a queue, visiting each vertex and edge once.",
+        "skillTags":  [
+                          "Data Structures",
+                          "Graphs"
+                      ],
+        "keywords":  [
+                         "adjacency",
+                         "visitation"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_hard_2",
@@ -2407,7 +3493,12 @@
                          "memory"
                      ],
         "minKeywords":  2,
-        "explanation":  "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance."
+        "explanation":  "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance.",
+        "objective":  "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "ds_extra_hard_3",
@@ -2424,7 +3515,12 @@
                          "auxiliary"
                      ],
         "minKeywords":  2,
-        "explanation":  "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer."
+        "explanation":  "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer.",
+        "objective":  "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer.",
+        "skillTags":  [
+                          "Data Structures"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "hr_easy_1",
@@ -2440,7 +3536,16 @@
                         "Strategy, Tactics, Approach, Result"
                     ],
         "answer":  0,
-        "explanation":  "STAR = Situation, Task, Action, Result. A framework for answering behavioral questions."
+        "explanation":  "STAR = Situation, Task, Action, Result. A framework for answering behavioral questions.",
+        "objective":  "STAR = Situation, Task, Action, Result. A framework for answering behavioral questions.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "behavioral",
+                         "interviews"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_easy_2",
@@ -2456,7 +3561,16 @@
                         "Hobbies and interests only"
                     ],
         "answer":  1,
-        "explanation":  "Keep it professional, relevant to the role, and concise (1-2 minutes)."
+        "explanation":  "Keep it professional, relevant to the role, and concise (1-2 minutes).",
+        "objective":  "Keep it professional, relevant to the role, and concise (1-2 minutes).",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "response",
+                         "yourself\u0027"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_easy_3",
@@ -2472,7 +3586,18 @@
                         "Quit immediately"
                     ],
         "answer":  1,
-        "explanation":  "Professional disagreement: schedule private meeting, present concerns with data, seek alignment."
+        "explanation":  "Professional disagreement: schedule private meeting, present concerns with data, seek alignment.",
+        "objective":  "Professional disagreement: schedule private meeting, present concerns with data, seek alignment.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "disagree",
+                         "manager\u0027s",
+                         "decision.",
+                         "approach"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_easy_4",
@@ -2489,7 +3614,12 @@
                          "communicate"
                      ],
         "minKeywords":  2,
-        "explanation":  "Use STAR: Situation (project), Task (goal), Action (your contribution), Result (outcome)."
+        "explanation":  "Use STAR: Situation (project), Task (goal), Action (your contribution), Result (outcome).",
+        "objective":  "Use STAR: Situation (project), Task (goal), Action (your contribution), Result (outcome).",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_medium_1",
@@ -2507,7 +3637,12 @@
                          "outcome"
                      ],
         "minKeywords":  3,
-        "explanation":  "Show emotional intelligence: listen, understand perspective, find common ground, positive outcome."
+        "explanation":  "Show emotional intelligence: listen, understand perspective, find common ground, positive outcome.",
+        "objective":  "Show emotional intelligence: listen, understand perspective, find common ground, positive outcome.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_medium_2",
@@ -2523,7 +3658,17 @@
                         "Report to manager immediately without talking"
                     ],
         "answer":  1,
-        "explanation":  "Collaborative approach: understand root cause, support, then escalate if unresolved."
+        "explanation":  "Collaborative approach: understand root cause, support, then escalate if unresolved.",
+        "objective":  "Collaborative approach: understand root cause, support, then escalate if unresolved.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "Project",
+                         "deadline",
+                         "delivering."
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_medium_3",
@@ -2541,7 +3686,12 @@
                          "growth"
                      ],
         "minKeywords":  3,
-        "explanation":  "Own the failure, explain lessons learned, show growth mindset with concrete improvements."
+        "explanation":  "Own the failure, explain lessons learned, show growth mindset with concrete improvements.",
+        "objective":  "Own the failure, explain lessons learned, show growth mindset with concrete improvements.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_medium_4",
@@ -2557,7 +3707,18 @@
                         "Complain to HR"
                     ],
         "answer":  1,
-        "explanation":  "Receive feedback gracefully: listen, clarify, reflect, then decide on action."
+        "explanation":  "Receive feedback gracefully: listen, clarify, reflect, then decide on action.",
+        "objective":  "Receive feedback gracefully: listen, clarify, reflect, then decide on action.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "receive",
+                         "negative",
+                         "feedback",
+                         "disagree"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_hard_1",
@@ -2574,7 +3735,18 @@
                               "isHidden":  false
                           }
                       ],
-        "explanation":  "Simple data structure practice. Use vector for storage, filter by receiver, compute average."
+        "explanation":  "Simple data structure practice. Use vector for storage, filter by receiver, compute average.",
+        "objective":  "Simple data structure practice. Use vector for storage, filter by receiver, compute average.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "feedback",
+                         "tracker.",
+                         "entries"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_hard_2",
@@ -2594,7 +3766,12 @@
                          "consensus"
                      ],
         "minKeywords":  4,
-        "explanation":  "Facilitate structured discussion: gather data, list pros/cons, seek consensus, make decision if needed, ensure team alignment."
+        "explanation":  "Facilitate structured discussion: gather data, list pros/cons, seek consensus, make decision if needed, ensure team alignment.",
+        "objective":  "Facilitate structured discussion: gather data, list pros/cons, seek consensus, make decision if needed, ensure team alignment.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_hard_3",
@@ -2616,7 +3793,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class."
+        "explanation":  "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class.",
+        "objective":  "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "hierarchy",
+                         "interview",
+                         "questions",
+                         "Coding)"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_easy_1",
@@ -2632,7 +3820,15 @@
                         "Summary, Topic, Answer, Response"
                     ],
         "answer":  0,
-        "explanation":  "STAR structures a behavioural answer as situation, task, action and result."
+        "explanation":  "STAR structures a behavioural answer as situation, task, action and result.",
+        "objective":  "STAR structures a behavioural answer as situation, task, action and result.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "interviews"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_easy_2",
@@ -2649,7 +3845,12 @@
                          "respond"
                      ],
         "minKeywords":  2,
-        "explanation":  "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering."
+        "explanation":  "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering.",
+        "objective":  "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_easy_3",
@@ -2665,7 +3866,16 @@
                         "Where do you see the company in 10 years?"
                     ],
         "answer":  0,
-        "explanation":  "Naming a genuine growth area shows reflection rather than a rehearsed strength."
+        "explanation":  "Naming a genuine growth area shows reflection rather than a rehearsed strength.",
+        "objective":  "Naming a genuine growth area shows reflection rather than a rehearsed strength.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "question",
+                         "self-awareness"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_easy_4",
@@ -2682,7 +3892,12 @@
                          "blame"
                      ],
         "minKeywords":  2,
-        "explanation":  "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally."
+        "explanation":  "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally.",
+        "objective":  "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_med_1",
@@ -2699,7 +3914,12 @@
                          "progress"
                      ],
         "minKeywords":  2,
-        "explanation":  "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress."
+        "explanation":  "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress.",
+        "objective":  "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_med_2",
@@ -2716,7 +3936,12 @@
                          "role"
                      ],
         "minKeywords":  2,
-        "explanation":  "Focus on what you want next and the fit with this role, without criticising the current employer."
+        "explanation":  "Focus on what you want next and the fit with this role, without criticising the current employer.",
+        "objective":  "Focus on what you want next and the fit with this role, without criticising the current employer.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_med_3",
@@ -2732,7 +3957,17 @@
                         "State your current salary only"
                     ],
         "answer":  0,
-        "explanation":  "A researched range keeps negotiation grounded and shows market awareness."
+        "explanation":  "A researched range keeps negotiation grounded and shows market awareness.",
+        "objective":  "A researched range keeps negotiation grounded and shows market awareness.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "keywords":  [
+                         "expectation",
+                         "usually",
+                         "approach"
+                     ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_hard_1",
@@ -2750,7 +3985,12 @@
                          "outcome"
                      ],
         "minKeywords":  2,
-        "explanation":  "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it."
+        "explanation":  "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it.",
+        "objective":  "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_hard_2",
@@ -2767,7 +4007,12 @@
                          "credibility"
                      ],
         "minKeywords":  2,
-        "explanation":  "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring."
+        "explanation":  "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring.",
+        "objective":  "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "hr_extra_hard_3",
@@ -2784,7 +4029,12 @@
                          "disagree"
                      ],
         "minKeywords":  2,
-        "explanation":  "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided."
+        "explanation":  "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided.",
+        "objective":  "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided.",
+        "skillTags":  [
+                          "Behavioural Interviews"
+                      ],
+        "softSkill":  true
     },
     {
         "id":  "net_easy_1",
@@ -2800,7 +4050,18 @@
                         "Session"
                     ],
         "answer":  0,
-        "explanation":  "The network layer performs logical addressing and routing; routers operate there."
+        "explanation":  "The network layer performs logical addressing and routing; routers operate there.",
+        "objective":  "The network layer performs logical addressing and routing; routers operate there.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "handles",
+                         "routing",
+                         "between",
+                         "networks"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_easy_2",
@@ -2816,7 +4077,18 @@
                         "ARP"
                     ],
         "answer":  0,
-        "explanation":  "TCP provides sequencing, acknowledgements and retransmission; UDP is best-effort."
+        "explanation":  "TCP provides sequencing, acknowledgements and retransmission; UDP is best-effort.",
+        "objective":  "TCP provides sequencing, acknowledgements and retransmission; UDP is best-effort.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "transport",
+                         "protocol",
+                         "connection-oriented",
+                         "reliable"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_easy_3",
@@ -2832,7 +4104,15 @@
                         "16"
                     ],
         "answer":  0,
-        "explanation":  "IPv4 uses 32 bits, usually written as four dotted decimal octets."
+        "explanation":  "IPv4 uses 32 bits, usually written as four dotted decimal octets.",
+        "objective":  "IPv4 uses 32 bits, usually written as four dotted decimal octets.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "address"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_easy_4",
@@ -2849,7 +4129,12 @@
                          "translate"
                      ],
         "minKeywords":  2,
-        "explanation":  "DNS translates human-readable domain names into IP addresses."
+        "explanation":  "DNS translates human-readable domain names into IP addresses.",
+        "objective":  "DNS translates human-readable domain names into IP addresses.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_med_1",
@@ -2865,7 +4150,17 @@
                         "GET, POST, OK"
                     ],
         "answer":  0,
-        "explanation":  "The client sends SYN, the server replies SYN-ACK, and the client completes with ACK."
+        "explanation":  "The client sends SYN, the server replies SYN-ACK, and the client completes with ACK.",
+        "objective":  "The client sends SYN, the server replies SYN-ACK, and the client completes with ACK.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "three-way",
+                         "handshake",
+                         "consists"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_med_2",
@@ -2882,7 +4177,12 @@
                          "multiplicative decrease"
                      ],
         "minKeywords":  2,
-        "explanation":  "On loss the threshold drops (typically to half the window) and the sender switches from exponential growth to linear AIMD."
+        "explanation":  "On loss the threshold drops (typically to half the window) and the sender switches from exponential growth to linear AIMD.",
+        "objective":  "On loss the threshold drops (typically to half the window) and the sender switches from exponential growth to linear AIMD.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_med_3",
@@ -2898,7 +4198,17 @@
                         "EIGRP"
                     ],
         "answer":  0,
-        "explanation":  "OSPF floods link-state advertisements and runs Dijkstra; RIP is distance-vector and BGP is path-vector."
+        "explanation":  "OSPF floods link-state advertisements and runs Dijkstra; RIP is distance-vector and BGP is path-vector.",
+        "objective":  "OSPF floods link-state advertisements and runs Dijkstra; RIP is distance-vector and BGP is path-vector.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "routing",
+                         "protocol",
+                         "link-state"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_med_4",
@@ -2917,7 +4227,12 @@
                          "route"
                      ],
         "minKeywords":  2,
-        "explanation":  "A switch forwards frames using MAC addresses within a broadcast domain; a router forwards packets between networks using IP addresses."
+        "explanation":  "A switch forwards frames using MAC addresses within a broadcast domain; a router forwards packets between networks using IP addresses.",
+        "objective":  "A switch forwards frames using MAC addresses within a broadcast domain; a router forwards packets between networks using IP addresses.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_hard_1",
@@ -2933,7 +4248,17 @@
                         "IP fragmentation of large datagrams"
                     ],
         "answer":  0,
-        "explanation":  "Small advertised windows cause senders to transmit small segments, wasting bandwidth and header overhead."
+        "explanation":  "Small advertised windows cause senders to transmit small segments, wasting bandwidth and header overhead.",
+        "objective":  "Small advertised windows cause senders to transmit small segments, wasting bandwidth and header overhead.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "problem",
+                         "syndrome",
+                         "describe"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_hard_2",
@@ -2951,7 +4276,12 @@
                          "infinite"
                      ],
         "minKeywords":  2,
-        "explanation":  "Nodes slowly converge upward on stale routes because they trust neighbours; split horizon stops advertising a route back to the neighbour it was learned from."
+        "explanation":  "Nodes slowly converge upward on stale routes because they trust neighbours; split horizon stops advertising a route back to the neighbour it was learned from.",
+        "objective":  "Nodes slowly converge upward on stale routes because they trust neighbours; split horizon stops advertising a route back to the neighbour it was learned from.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_hard_3",
@@ -2973,7 +4303,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "A stop-and-wait sender keeps a timer and one outstanding frame, retransmitting the same sequence number until acknowledged."
+        "explanation":  "A stop-and-wait sender keeps a timer and one outstanding frame, retransmitting the same sequence number until acknowledged.",
+        "objective":  "A stop-and-wait sender keeps a timer and one outstanding frame, retransmitting the same sequence number until acknowledged.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "single-bit",
+                         "sliding",
+                         "stop-and-wait"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_hard_4",
@@ -2990,7 +4331,12 @@
                          "route summarisation"
                      ],
         "minKeywords":  2,
-        "explanation":  "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table."
+        "explanation":  "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table.",
+        "objective":  "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_easy_1",
@@ -3006,7 +4352,16 @@
                         "ICMP"
                     ],
         "answer":  0,
-        "explanation":  "ARP broadcasts a request to resolve an IP to the hardware address on the local segment."
+        "explanation":  "ARP broadcasts a request to resolve an IP to the hardware address on the local segment.",
+        "objective":  "ARP broadcasts a request to resolve an IP to the hardware address on the local segment.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "protocol",
+                         "addresses"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_easy_2",
@@ -3022,7 +4377,15 @@
                         "8080"
                     ],
         "answer":  0,
-        "explanation":  "HTTP uses port 80 by convention; HTTPS uses 443."
+        "explanation":  "HTTP uses port 80 by convention; HTTPS uses 443.",
+        "objective":  "HTTP uses port 80 by convention; HTTPS uses 443.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "default"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_easy_3",
@@ -3038,7 +4401,15 @@
                         "Session"
                     ],
         "answer":  0,
-        "explanation":  "Switches forward frames using MAC addresses, which is layer 2."
+        "explanation":  "Switches forward frames using MAC addresses, which is layer 2.",
+        "objective":  "Switches forward frames using MAC addresses, which is layer 2.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "operate"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_easy_4",
@@ -3055,7 +4426,12 @@
                          "fast"
                      ],
         "minKeywords":  2,
-        "explanation":  "UDP skips connection setup and retransmission, trading reliability for low latency."
+        "explanation":  "UDP skips connection setup and retransmission, trading reliability for low latency.",
+        "objective":  "UDP skips connection setup and retransmission, trading reliability for low latency.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_med_1",
@@ -3072,7 +4448,12 @@
                          "sliding"
                      ],
         "minKeywords":  2,
-        "explanation":  "Flow control respects the receiver\u0027s advertised window; congestion control infers network capacity with cwnd."
+        "explanation":  "Flow control respects the receiver\u0027s advertised window; congestion control infers network capacity with cwnd.",
+        "objective":  "Flow control respects the receiver\u0027s advertised window; congestion control infers network capacity with cwnd.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_med_2",
@@ -3089,7 +4470,12 @@
                          "forward"
                      ],
         "minKeywords":  2,
-        "explanation":  "It maps destination prefixes to outgoing interfaces, choosing the longest matching prefix."
+        "explanation":  "It maps destination prefixes to outgoing interfaces, choosing the longest matching prefix.",
+        "objective":  "It maps destination prefixes to outgoing interfaces, choosing the longest matching prefix.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_med_3",
@@ -3105,7 +4491,16 @@
                         "IP addressing"
                     ],
         "answer":  0,
-        "explanation":  "TLS encrypts the payload and authenticates the server, giving confidentiality and integrity."
+        "explanation":  "TLS encrypts the payload and authenticates the server, giving confidentiality and integrity.",
+        "objective":  "TLS encrypts the payload and authenticates the server, giving confidentiality and integrity.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "primarily",
+                         "provide"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_hard_1",
@@ -3127,7 +4522,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Slow start doubles cwnd each RTT until it reaches ssthresh, then congestion avoidance adds one MSS per RTT."
+        "explanation":  "Slow start doubles cwnd each RTT until it reaches ssthresh, then congestion avoidance adds one MSS per RTT.",
+        "objective":  "Slow start doubles cwnd each RTT until it reaches ssthresh, then congestion avoidance adds one MSS per RTT.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "keywords":  [
+                         "Simulate",
+                         "congestion",
+                         "control",
+                         "ssthresh"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_hard_2",
@@ -3144,7 +4550,12 @@
                          "autonomous system"
                      ],
         "minKeywords":  2,
-        "explanation":  "BGP advertises the full AS path, which prevents loops by inspection and carries policy attributes for inter-domain routing."
+        "explanation":  "BGP advertises the full AS path, which prevents loops by inspection and carries policy attributes for inter-domain routing.",
+        "objective":  "BGP advertises the full AS path, which prevents loops by inspection and carries policy attributes for inter-domain routing.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "net_extra_hard_3",
@@ -3162,7 +4573,12 @@
                          "header"
                      ],
         "minKeywords":  3,
-        "explanation":  "Each layer adds its own header and passes the payload down: data, segment, packet, frame, then bits on the wire."
+        "explanation":  "Each layer adds its own header and passes the payload down: data, segment, packet, frame, then bits on the wire.",
+        "objective":  "Each layer adds its own header and passes the payload down: data, segment, packet, frame, then bits on the wire.",
+        "skillTags":  [
+                          "Computer Networks"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_easy_1",
@@ -3178,7 +4594,16 @@
                         "Neither"
                     ],
         "answer":  0,
-        "explanation":  "Base construction happens first so the derived part builds on an initialised base."
+        "explanation":  "Base construction happens first so the derived part builds on an initialised base.",
+        "objective":  "Base construction happens first so the derived part builds on an initialised base.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "constructor",
+                         "derived"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_easy_2",
@@ -3194,7 +4619,18 @@
                         "internal"
                     ],
         "answer":  1,
-        "explanation":  "protected allows derived-class access while still hiding members from unrelated code."
+        "explanation":  "protected allows derived-class access while still hiding members from unrelated code.",
+        "objective":  "protected allows derived-class access while still hiding members from unrelated code.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "specifier",
+                         "members",
+                         "visible",
+                         "derived"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_easy_3",
@@ -3211,7 +4647,12 @@
                          "breaks"
                      ],
         "minKeywords":  2,
-        "explanation":  "A friend is granted access to private and protected members, which bypasses the public interface."
+        "explanation":  "A friend is granted access to private and protected members, which bypasses the public interface.",
+        "objective":  "A friend is granted access to private and protected members, which bypasses the public interface.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_easy_4",
@@ -3227,7 +4668,17 @@
                         "This function is inline"
                     ],
         "answer":  0,
-        "explanation":  "override makes the compiler verify a base virtual with the same signature exists."
+        "explanation":  "override makes the compiler verify a base virtual with the same signature exists.",
+        "objective":  "override makes the compiler verify a base virtual with the same signature exists.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "`override`",
+                         "keyword",
+                         "compiler"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_med_1",
@@ -3244,7 +4695,13 @@
                          "virtual"
                      ],
         "minKeywords":  2,
-        "explanation":  "Without a virtual destructor only the base destructor runs, leaking derived resources."
+        "explanation":  "Without a virtual destructor only the base destructor runs, leaking derived resources.",
+        "objective":  "Without a virtual destructor only the base destructor runs, leaking derived resources.",
+        "skillTags":  [
+                          "OOP",
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_med_2",
@@ -3261,7 +4718,13 @@
                          "loose coupling"
                      ],
         "minKeywords":  2,
-        "explanation":  "It defines a one-to-many dependency so dependents are notified without the subject knowing them."
+        "explanation":  "It defines a one-to-many dependency so dependents are notified without the subject knowing them.",
+        "objective":  "It defines a one-to-many dependency so dependents are notified without the subject knowing them.",
+        "skillTags":  [
+                          "OOP",
+                          "Design Patterns"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_med_3",
@@ -3277,7 +4740,16 @@
                         "Virtual tables conflicting"
                     ],
         "answer":  0,
-        "explanation":  "A derived class inherits the same base twice, duplicating members unless virtual inheritance is used."
+        "explanation":  "A derived class inherits the same base twice, duplicating members unless virtual inheritance is used.",
+        "objective":  "A derived class inherits the same base twice, duplicating members unless virtual inheritance is used.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "keywords":  [
+                         "diamond",
+                         "problem"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_hard_1",
@@ -3299,7 +4771,19 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "A function-local static is initialised on first use and guaranteed thread-safe since C++11."
+        "explanation":  "A function-local static is initialised on first use and guaranteed thread-safe since C++11.",
+        "objective":  "A function-local static is initialised on first use and guaranteed thread-safe since C++11.",
+        "skillTags":  [
+                          "OOP",
+                          "Design Patterns"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "thread-safe",
+                         "Singleton",
+                         "(function-local"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_hard_2",
@@ -3316,7 +4800,12 @@
                          "replace conditional"
                      ],
         "minKeywords":  2,
-        "explanation":  "Each area algorithm becomes a class behind a common interface selected by composition, so adding a shape adds a class instead of a branch."
+        "explanation":  "Each area algorithm becomes a class behind a common interface selected by composition, so adding a shape adds a class instead of a branch.",
+        "objective":  "Each area algorithm becomes a class behind a common interface selected by composition, so adding a shape adds a class instead of a branch.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "oop_extra_hard_3",
@@ -3334,7 +4823,12 @@
                          "strengthen precondition"
                      ],
         "minKeywords":  2,
-        "explanation":  "Subtypes must be usable wherever the base is expected; a subtype that throws on inputs the base accepts violates it."
+        "explanation":  "Subtypes must be usable wherever the base is expected; a subtype that throws on inputs the base accepts violates it.",
+        "objective":  "Subtypes must be usable wherever the base is expected; a subtype that throws on inputs the base accepts violates it.",
+        "skillTags":  [
+                          "OOP"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_easy_1",
@@ -3350,7 +4844,17 @@
                         "Compile, Link, Load"
                     ],
         "answer":  0,
-        "explanation":  "A process moves between new, ready, running and waiting, then terminates."
+        "explanation":  "A process moves between new, ready, running and waiting, then terminates.",
+        "objective":  "A process moves between new, ready, running and waiting, then terminates.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+                         "typical",
+                         "process",
+                         "lifecycle"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_easy_2",
@@ -3366,7 +4870,17 @@
                         "Longest Job First"
                     ],
         "answer":  0,
-        "explanation":  "SJF always favours short jobs, so a steady stream of them starves longer ones."
+        "explanation":  "SJF always favours short jobs, so a steady stream of them starves longer ones.",
+        "objective":  "SJF always favours short jobs, so a steady stream of them starves longer ones.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+                         "scheduling",
+                         "algorithm",
+                         "starvation"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_easy_3",
@@ -3382,7 +4896,15 @@
                         "Memory is full of cache"
                     ],
         "answer":  0,
-        "explanation":  "The referenced virtual page is absent, so it must be fetched from secondary storage."
+        "explanation":  "The referenced virtual page is absent, so it must be fetched from secondary storage.",
+        "objective":  "The referenced virtual page is absent, so it must be fetched from secondary storage.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_easy_4",
@@ -3399,7 +4921,13 @@
                          "ordering"
                      ],
         "minKeywords":  2,
-        "explanation":  "The result depends on the relative timing or ordering of concurrent accesses to shared state."
+        "explanation":  "The result depends on the relative timing or ordering of concurrent accesses to shared state.",
+        "objective":  "The result depends on the relative timing or ordering of concurrent accesses to shared state.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Concurrency"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_med_1",
@@ -3415,7 +4943,20 @@
                         "Memory sharing"
                     ],
         "answer":  0,
-        "explanation":  "Mutual exclusion is the core requirement; progress and bounded waiting must also hold."
+        "explanation":  "Mutual exclusion is the core requirement; progress and bounded waiting must also hold.",
+        "objective":  "Mutual exclusion is the core requirement; progress and bounded waiting must also hold.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Behavioural Interviews",
+                          "Communication"
+                      ],
+        "keywords":  [
+                         "requirement",
+                         "correct",
+                         "solution",
+                         "critical"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_med_2",
@@ -3431,7 +4972,12 @@
                          "circular wait"
                      ],
         "minKeywords":  3,
-        "explanation":  "All four (Coffman) conditions must hold simultaneously for a deadlock to arise."
+        "explanation":  "All four (Coffman) conditions must hold simultaneously for a deadlock to arise.",
+        "objective":  "All four (Coffman) conditions must hold simultaneously for a deadlock to arise.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_med_3",
@@ -3447,7 +4993,16 @@
                         "The TLB lookup time"
                     ],
         "answer":  0,
-        "explanation":  "EAT blends the memory access time with the (rare) service time weighted by the fault rate."
+        "explanation":  "EAT blends the memory access time with the (rare) service time weighted by the fault rate.",
+        "objective":  "EAT blends the memory access time with the (rare) service time weighted by the fault rate.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+                         "effective",
+                         "closest"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_med_4",
@@ -3464,7 +5019,12 @@
                          "throughput"
                      ],
         "minKeywords":  2,
-        "explanation":  "It moves the head monotonically, servicing requests along the way and cutting total seek distance."
+        "explanation":  "It moves the head monotonically, servicing requests along the way and cutting total seek distance.",
+        "objective":  "It moves the head monotonically, servicing requests along the way and cutting total seek distance.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_hard_1",
@@ -3480,7 +5040,19 @@
                         "Deadlock on all reads"
                     ],
         "answer":  0,
-        "explanation":  "Prioritising writers means a waiting writer blocks new readers, so readers may starve."
+        "explanation":  "Prioritising writers means a waiting writer blocks new readers, so readers may starve.",
+        "objective":  "Prioritising writers means a waiting writer blocks new readers, so readers may starve.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Behavioural Interviews",
+                          "Communication"
+                      ],
+        "keywords":  [
+                         "readers-writers",
+                         "problem",
+                         "priority"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_hard_2",
@@ -3502,7 +5074,19 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "A mutex protects the counter and a condition variable blocks and wakes waiters without busy waiting."
+        "explanation":  "A mutex protects the counter and a condition variable blocks and wakes waiters without busy waiting.",
+        "objective":  "A mutex protects the counter and a condition variable blocks and wakes waiters without busy waiting.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Concurrency"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "counting",
+                         "semaphore",
+                         "standard"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_hard_3",
@@ -3519,7 +5103,12 @@
                          "cache"
                      ],
         "minKeywords":  2,
-        "explanation":  "A TLB miss only means the cached translation is absent; the page may still be resident, so the page table in memory is consulted."
+        "explanation":  "A TLB miss only means the cached translation is absent; the page may still be resident, so the page table in memory is consulted.",
+        "objective":  "A TLB miss only means the cached translation is absent; the page may still be resident, so the page table in memory is consulted.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_hard_4",
@@ -3536,7 +5125,12 @@
                          "short"
                      ],
         "minKeywords":  2,
-        "explanation":  "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour."
+        "explanation":  "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour.",
+        "objective":  "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_easy_1",
@@ -3552,7 +5146,16 @@
                         "A user-level stack"
                     ],
         "answer":  0,
-        "explanation":  "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed."
+        "explanation":  "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed.",
+        "objective":  "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+                         "Process",
+                         "Control"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_easy_2",
@@ -3568,7 +5171,16 @@
                         "To encrypt RAM"
                     ],
         "answer":  0,
-        "explanation":  "Virtual memory isolates address spaces and lets processes use more memory than is physically present."
+        "explanation":  "Virtual memory isolates address spaces and lets processes use more memory than is physically present.",
+        "objective":  "Virtual memory isolates address spaces and lets processes use more memory than is physically present.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+                         "purpose",
+                         "virtual"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_easy_3",
@@ -3584,7 +5196,16 @@
                         "Disk failure"
                     ],
         "answer":  0,
-        "explanation":  "Deadlock is a cycle of waiting where no process can proceed."
+        "explanation":  "Deadlock is a cycle of waiting where no process can proceed.",
+        "objective":  "Deadlock is a cycle of waiting where no process can proceed.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Concurrency"
+                      ],
+        "keywords":  [
+                         "deadlock"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_easy_4",
@@ -3601,7 +5222,12 @@
                          "overhead"
                      ],
         "minKeywords":  2,
-        "explanation":  "The OS saves the running process\u0027s state and restores another\u0027s so the CPU can be shared."
+        "explanation":  "The OS saves the running process\u0027s state and restores another\u0027s so the CPU can be shared.",
+        "objective":  "The OS saves the running process\u0027s state and restores another\u0027s so the CPU can be shared.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_med_1",
@@ -3617,7 +5243,16 @@
                         "Process IDs"
                     ],
         "answer":  0,
-        "explanation":  "The TLB holds recent page-table entries so most translations skip the memory walk."
+        "explanation":  "The TLB holds recent page-table entries so most translations skip the memory walk.",
+        "objective":  "The TLB holds recent page-table entries so most translations skip the memory walk.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+                         "Translation",
+                         "Lookaside"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_med_2",
@@ -3634,7 +5269,12 @@
                          "metadata"
                      ],
         "minKeywords":  2,
-        "explanation":  "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent."
+        "explanation":  "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent.",
+        "objective":  "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_med_3",
@@ -3650,7 +5290,18 @@
                         "Preemption"
                     ],
         "answer":  0,
-        "explanation":  "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions."
+        "explanation":  "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions.",
+        "objective":  "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Concurrency"
+                      ],
+        "keywords":  [
+                         "deadlock",
+                         "prevention",
+                         "technique"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_hard_1",
@@ -3672,7 +5323,17 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "FIFO evicts the page that has been resident longest, which can suffer Belady\u0027s anomaly: more frames, more faults."
+        "explanation":  "FIFO evicts the page that has been resident longest, which can suffer Belady\u0027s anomaly: more frames, more faults.",
+        "objective":  "FIFO evicts the page that has been resident longest, which can suffer Belady\u0027s anomaly: more frames, more faults.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "keywords":  [
+                         "Simulate",
+                         "replacement",
+                         "faults."
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_hard_2",
@@ -3690,7 +5351,14 @@
                          "unbounded"
                      ],
         "minKeywords":  2,
-        "explanation":  "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner."
+        "explanation":  "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner.",
+        "objective":  "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner.",
+        "skillTags":  [
+                          "Operating Systems",
+                          "Behavioural Interviews",
+                          "Communication"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "os_extra_hard_3",
@@ -3707,7 +5375,12 @@
                          "overhead"
                      ],
         "minKeywords":  2,
-        "explanation":  "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved."
+        "explanation":  "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved.",
+        "objective":  "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved.",
+        "skillTags":  [
+                          "Operating Systems"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_easy_1",
@@ -3723,7 +5396,15 @@
                         "44"
                     ],
         "answer":  2,
-        "explanation":  "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42."
+        "explanation":  "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42.",
+        "objective":  "The terms are n(n+1): 1x2, 2x3, 3x4, 4x5, 5x6, so the next is 6x7 = 42.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "Complete"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_easy_2",
@@ -3739,7 +5420,15 @@
                         "V"
                     ],
         "answer":  1,
-        "explanation":  "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U."
+        "explanation":  "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U.",
+        "objective":  "The gaps grow by one each time (+1, +2, +3, +4, +5), so O + 6 = U.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "Complete"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_easy_3",
@@ -3755,7 +5444,17 @@
                         "His niece"
                     ],
         "answer":  1,
-        "explanation":  "The grandfather\u0027s only son is Rahul\u0027s father, so his daughter is Rahul\u0027s sister."
+        "explanation":  "The grandfather\u0027s only son is Rahul\u0027s father, so his daughter is Rahul\u0027s sister.",
+        "objective":  "The grandfather\u0027s only son is Rahul\u0027s father, so his daughter is Rahul\u0027s sister.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "Pointing",
+                         "daughter",
+                         "grandfather\u0027s"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_easy_4",
@@ -3772,7 +5471,12 @@
                          "forward"
                      ],
         "minKeywords":  2,
-        "explanation":  "Every letter moves one position forward, so D-O-G becomes E-P-H."
+        "explanation":  "Every letter moves one position forward, so D-O-G becomes E-P-H.",
+        "objective":  "Every letter moves one position forward, so D-O-G becomes E-P-H.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_med_1",
@@ -3788,7 +5492,18 @@
                         "None of these necessarily follow"
                     ],
         "answer":  3,
-        "explanation":  "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced."
+        "explanation":  "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced.",
+        "objective":  "The flowers that fade quickly need not be roses, so neither affirmative conclusion is forced.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "flowers.",
+                         "flowers",
+                         "quickly.",
+                         "conclusion"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_med_2",
@@ -3805,7 +5520,12 @@
                          "straight"
                      ],
         "minKeywords":  2,
-        "explanation":  "The path forms a rectangle: he ends 3 km east of the starting point."
+        "explanation":  "The path forms a rectangle: he ends 3 km east of the starting point.",
+        "objective":  "The path forms a rectangle: he ends 3 km east of the starting point.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_med_3",
@@ -3821,7 +5541,17 @@
                         "F"
                     ],
         "answer":  2,
-        "explanation":  "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed."
+        "explanation":  "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed.",
+        "objective":  "Only two constraints are known for six seats, so the neighbours of A other than B are not fixed.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "centre.",
+                         "opposite",
+                         "immediate"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_med_4",
@@ -3837,7 +5567,12 @@
                          "x2"
                      ],
         "minKeywords":  1,
-        "explanation":  "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153."
+        "explanation":  "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153.",
+        "objective":  "Each term is 2 * previous + an increasing odd number, giving 74 * 2 + 5 = 153.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_hard_1",
@@ -3853,7 +5588,18 @@
                         "All artists are engineers"
                     ],
         "answer":  1,
-        "explanation":  "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists."
+        "explanation":  "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists.",
+        "objective":  "The engineers who are musicians inherit membership of the artists class, so at least some engineers are artists.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "engineers",
+                         "musicians.",
+                         "musicians",
+                         "artists."
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_hard_2",
@@ -3870,7 +5616,12 @@
                          "bulb"
                      ],
         "minKeywords":  2,
-        "explanation":  "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify the three switches."
+        "explanation":  "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify the three switches.",
+        "objective":  "Leave one switch on, switch a second on for several minutes then off, leave the third off; on entering, the lit bulb, the warm bulb and the cold bulb identify t",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_hard_3",
@@ -3886,7 +5637,13 @@
                          "quantity"
                      ],
         "minKeywords":  2,
-        "explanation":  "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed."
+        "explanation":  "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed.",
+        "objective":  "The first term is an instrument and the second is the quantity it measures; an anemometer measures wind speed.",
+        "skillTags":  [
+                          "Circuit Design",
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_hard_4",
@@ -3908,7 +5665,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step."
+        "explanation":  "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step.",
+        "objective":  "Manhattan distance is the sum of the absolute coordinate offsets; facing starts at North and updates with each step.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "(N/S/E/W",
+                         "Manhattan",
+                         "distance",
+                         "direction"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_easy_1",
@@ -3924,7 +5692,15 @@
                         "EOL"
                     ],
         "answer":  0,
-        "explanation":  "Each letter moves one position forward, so D-O-G becomes E-P-H."
+        "explanation":  "Each letter moves one position forward, so D-O-G becomes E-P-H.",
+        "objective":  "Each letter moves one position forward, so D-O-G becomes E-P-H.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "written"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_easy_2",
@@ -3940,7 +5716,15 @@
                         "11"
                     ],
         "answer":  0,
-        "explanation":  "The others are prime; 14 is composite."
+        "explanation":  "The others are prime; 14 is composite.",
+        "objective":  "The others are prime; 14 is composite.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_easy_3",
@@ -3956,7 +5740,17 @@
                         "Her nephew"
                     ],
         "answer":  0,
-        "explanation":  "The grandmother\u0027s only child is Neha\u0027s parent, so his son is her brother."
+        "explanation":  "The grandmother\u0027s only child is Neha\u0027s parent, so his son is her brother.",
+        "objective":  "The grandmother\u0027s only child is Neha\u0027s parent, so his son is her brother.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "Pointing",
+                         "grandmother\u0027s",
+                         "child.\""
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_easy_4",
@@ -3972,7 +5766,12 @@
                          "north"
                      ],
         "minKeywords":  2,
-        "explanation":  "A clockwise quarter turn from north faces east."
+        "explanation":  "A clockwise quarter turn from north faces east.",
+        "objective":  "A clockwise quarter turn from north faces east.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_med_1",
@@ -3988,7 +5787,17 @@
                         "D"
                     ],
         "answer":  0,
-        "explanation":  "The remaining constraints do not fix the order of E and F, so it is undetermined."
+        "explanation":  "The remaining constraints do not fix the order of E and F, so it is undetermined.",
+        "objective":  "The remaining constraints do not fix the order of E and F, so it is undetermined.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "circle.",
+                         "between",
+                         "opposite"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_med_2",
@@ -4005,7 +5814,12 @@
                          "wild cats"
                      ],
         "minKeywords":  2,
-        "explanation":  "The wild animals might not include cats, so no affirmative conclusion is forced."
+        "explanation":  "The wild animals might not include cats, so no affirmative conclusion is forced.",
+        "objective":  "The wild animals might not include cats, so no affirmative conclusion is forced.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_med_3",
@@ -4021,7 +5835,15 @@
                         "P25"
                     ],
         "answer":  0,
-        "explanation":  "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25."
+        "explanation":  "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25.",
+        "objective":  "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "Complete"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_hard_1",
@@ -4038,7 +5860,12 @@
                          "swap"
                      ],
         "minKeywords":  2,
-        "explanation":  "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination."
+        "explanation":  "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination.",
+        "objective":  "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_hard_2",
@@ -4055,7 +5882,12 @@
                          "valid"
                      ],
         "minKeywords":  2,
-        "explanation":  "If P implies Q and Q is false, then P must be false, because Q true whenever P true."
+        "explanation":  "If P implies Q and Q is false, then P must be false, because Q true whenever P true.",
+        "objective":  "If P implies Q and Q is false, then P must be false, because Q true whenever P true.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "reasoning_extra_hard_3",
@@ -4077,7 +5909,16 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "With 8 files per rank, square s is on rank (s-1)/8 + 1."
+        "explanation":  "With 8 files per rank, square s is on rank (s-1)/8 + 1.",
+        "objective":  "With 8 files per rank, square s is on rank (s-1)/8 + 1.",
+        "skillTags":  [
+                          "Logical Reasoning"
+                      ],
+        "keywords":  [
+                         "knight\u0027s",
+                         "numbered"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_easy_1",
@@ -4093,7 +5934,17 @@
                         "Random"
                     ],
         "answer":  1,
-        "explanation":  "Discrete-time signals are defined at integer indices n; continuous-time signals are defined for all t."
+        "explanation":  "Discrete-time signals are defined at integer indices n; continuous-time signals are defined for all t.",
+        "objective":  "Discrete-time signals are defined at integer indices n; continuous-time signals are defined for all t.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "defined",
+                         "discrete",
+                         "instants"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_easy_2",
@@ -4109,7 +5960,18 @@
                         "The signal reversed"
                     ],
         "answer":  1,
-        "explanation":  "delta(n - k) picks out x(n - k), so convolving with a shifted impulse shifts and scales the signal."
+        "explanation":  "delta(n - k) picks out x(n - k), so convolving with a shifted impulse shifts and scales the signal.",
+        "objective":  "delta(n - k) picks out x(n - k), so convolving with a shifted impulse shifts and scales the signal.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "convolution",
+                         "impulse",
+                         "delta(n)",
+                         "produce"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_easy_3",
@@ -4125,7 +5987,17 @@
                         "Laplace domain"
                     ],
         "answer":  0,
-        "explanation":  "It expresses the signal as a sum of sinusoids, so the horizontal axis becomes frequency."
+        "explanation":  "It expresses the signal as a sum of sinusoids, so the horizontal axis becomes frequency.",
+        "objective":  "It expresses the signal as a sum of sinusoids, so the horizontal axis becomes frequency.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "Fourier",
+                         "transform",
+                         "converts"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_easy_4",
@@ -4142,7 +6014,12 @@
                          "bandwidth"
                      ],
         "minKeywords":  2,
-        "explanation":  "The Nyquist rate: sample strictly above twice the highest frequency so the shifted spectra do not overlap."
+        "explanation":  "The Nyquist rate: sample strictly above twice the highest frequency so the shifted spectra do not overlap.",
+        "objective":  "The Nyquist rate: sample strictly above twice the highest frequency so the shifted spectra do not overlap.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_med_1",
@@ -4158,7 +6035,18 @@
                         "Outside a circle"
                     ],
         "answer":  0,
-        "explanation":  "Finite sums always converge except where poles at zero or infinity make the transform undefined."
+        "explanation":  "Finite sums always converge except where poles at zero or infinity make the transform undefined.",
+        "objective":  "Finite sums always converge except where poles at zero or infinity make the transform undefined.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "convergence",
+                         "z-transform",
+                         "finite-length",
+                         "sequence"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_med_2",
@@ -4174,7 +6062,12 @@
                          "shift"
                      ],
         "minKeywords":  2,
-        "explanation":  "Linearity gives superposition and scaling; time invariance means a shifted input yields the same shifted output."
+        "explanation":  "Linearity gives superposition and scaling; time invariance means a shifted input yields the same shifted output.",
+        "objective":  "Linearity gives superposition and scaling; time invariance means a shifted input yields the same shifted output.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_med_3",
@@ -4190,7 +6083,16 @@
                         "All frequencies attenuated"
                     ],
         "answer":  0,
-        "explanation":  "Its magnitude response is 1 inside the passband |omega| \u003c= W and 0 elsewhere."
+        "explanation":  "Its magnitude response is 1 inside the passband |omega| \u003c= W and 0 elsewhere.",
+        "objective":  "Its magnitude response is 1 inside the passband |omega| \u003c= W and 0 elsewhere.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "low-pass",
+                         "frequencies"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_med_4",
@@ -4206,7 +6108,12 @@
                          "magnitudes"
                      ],
         "minKeywords":  2,
-        "explanation":  "The impulse response must be absolutely summable: the sum of |h[n]| over all n must be finite."
+        "explanation":  "The impulse response must be absolutely summable: the sum of |h[n]| over all n must be finite.",
+        "objective":  "The impulse response must be absolutely summable: the sum of |h[n]| over all n must be finite.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_hard_1",
@@ -4222,7 +6129,16 @@
                         "Filter roll-off"
                     ],
         "answer":  0,
-        "explanation":  "If fs is below the Nyquist rate, the replicas centred at multiples of fs overlap and high frequencies masquerade as low ones."
+        "explanation":  "If fs is below the Nyquist rate, the replicas centred at multiples of fs overlap and high frequencies masquerade as low ones.",
+        "objective":  "If fs is below the Nyquist rate, the replicas centred at multiples of fs overlap and high frequencies masquerade as low ones.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "Aliasing",
+                         "sampled"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_hard_2",
@@ -4238,7 +6154,12 @@
                          "duality"
                      ],
         "minKeywords":  2,
-        "explanation":  "Multiplication in the time domain equals convolution in the frequency domain, and vice versa; a time shift only adds a linear phase term."
+        "explanation":  "Multiplication in the time domain equals convolution in the frequency domain, and vice versa; a time shift only adds a linear phase term.",
+        "objective":  "Multiplication in the time domain equals convolution in the frequency domain, and vice versa; a time shift only adds a linear phase term.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_hard_3",
@@ -4260,7 +6181,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "The FFT computes the DFT in O(n log n) by splitting into even/odd subsequences and combining with twiddle factors."
+        "explanation":  "The FFT computes the DFT in O(n log n) by splitting into even/odd subsequences and combining with twiddle factors.",
+        "objective":  "The FFT computes the DFT in O(n log n) by splitting into even/odd subsequences and combining with twiddle factors.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "iterative",
+                         "radix-2",
+                         "Cooley-Tukey"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_hard_4",
@@ -4277,7 +6209,12 @@
                          "shannon"
                      ],
         "minKeywords":  2,
-        "explanation":  "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass filtering."
+        "explanation":  "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass filtering.",
+        "objective":  "Each sample is weighted by a sinc function centred at that sample; summing them reconstructs the bandlimited original, which is equivalent to ideal low-pass fil",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_easy_1",
@@ -4293,7 +6230,15 @@
                         "x(t) = e^t"
                     ],
         "answer":  0,
-        "explanation":  "Even signals are symmetric about the origin; odd ones satisfy x(t) = -x(-t)."
+        "explanation":  "Even signals are symmetric about the origin; odd ones satisfy x(t) = -x(-t).",
+        "objective":  "Even signals are symmetric about the origin; odd ones satisfy x(t) = -x(-t).",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_easy_2",
@@ -4309,7 +6254,16 @@
                         "The derivative"
                     ],
         "answer":  0,
-        "explanation":  "Convolving with delta(n) returns the signal unchanged, since delta is the identity."
+        "explanation":  "Convolving with delta(n) returns the signal unchanged, since delta is the identity.",
+        "objective":  "Convolving with delta(n) returns the signal unchanged, since delta is the identity.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "convolution",
+                         "impulse"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_easy_3",
@@ -4325,7 +6279,17 @@
                         "Phase noise"
                     ],
         "answer":  0,
-        "explanation":  "It decomposes the signal into frequency components with magnitudes and phases."
+        "explanation":  "It decomposes the signal into frequency components with magnitudes and phases.",
+        "objective":  "It decomposes the signal into frequency components with magnitudes and phases.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "signal\u0027s",
+                         "Fourier",
+                         "transform"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_easy_4",
@@ -4342,7 +6306,12 @@
                          "amplitude"
                      ],
         "minKeywords":  2,
-        "explanation":  "It is the difference between the sampled amplitude and the nearest representable level, bounded by half a step."
+        "explanation":  "It is the difference between the sampled amplitude and the nearest representable level, bounded by half a step.",
+        "objective":  "It is the difference between the sampled amplitude and the nearest representable level, bounded by half a step.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_med_1",
@@ -4359,7 +6328,12 @@
                          "linear phase"
                      ],
         "minKeywords":  2,
-        "explanation":  "FIR has only feed-forward terms and is always stable; IIR uses feedback so it is shorter but may be unstable."
+        "explanation":  "FIR has only feed-forward terms and is always stable; IIR uses feedback so it is shorter but may be unstable.",
+        "objective":  "FIR has only feed-forward terms and is always stable; IIR uses feedback so it is shorter but may be unstable.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_med_2",
@@ -4376,7 +6350,12 @@
                          "determines"
                      ],
         "minKeywords":  2,
-        "explanation":  "Any input can be written as shifted impulses, so by superposition the output is the convolution with the impulse response."
+        "explanation":  "Any input can be written as shifted impulses, so by superposition the output is the convolution with the impulse response.",
+        "objective":  "Any input can be written as shifted impulses, so by superposition the output is the convolution with the impulse response.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_med_3",
@@ -4392,7 +6371,17 @@
                         "Group delay"
                     ],
         "answer":  0,
-        "explanation":  "z = e^(jw) on the unit circle, so angle maps to normalised digital frequency."
+        "explanation":  "z = e^(jw) on the unit circle, so angle maps to normalised digital frequency.",
+        "objective":  "z = e^(jw) on the unit circle, so angle maps to normalised digital frequency.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "z-plane",
+                         "correspond",
+                         "digital"
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_hard_1",
@@ -4414,7 +6403,18 @@
                               "isHidden":  true
                           }
                       ],
-        "explanation":  "A brute-force DFT is O(n^2) but demonstrates exactly what the FFT computes in O(n log n)."
+        "explanation":  "A brute-force DFT is O(n^2) but demonstrates exactly what the FFT computes in O(n log n).",
+        "objective":  "A brute-force DFT is O(n^2) but demonstrates exactly what the FFT computes in O(n log n).",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "keywords":  [
+                         "Implement",
+                         "magnitude",
+                         "spectrum",
+                         "sequence."
+                     ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_hard_2",
@@ -4431,7 +6431,12 @@
                          "window"
                      ],
         "minKeywords":  2,
-        "explanation":  "Truncating an ideal response creates overshoot near discontinuities; smoothing windows reduce ripple at the cost of wider transitions."
+        "explanation":  "Truncating an ideal response creates overshoot near discontinuities; smoothing windows reduce ripple at the cost of wider transitions.",
+        "objective":  "Truncating an ideal response creates overshoot near discontinuities; smoothing windows reduce ripple at the cost of wider transitions.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     },
     {
         "id":  "signals_extra_hard_3",
@@ -4448,6 +6453,11 @@
                          "filter"
                      ],
         "minKeywords":  2,
-        "explanation":  "AM transmits the carrier and both sidebands, doubling the bandwidth; single sideband transmits one sideband carrying all the information."
+        "explanation":  "AM transmits the carrier and both sidebands, doubling the bandwidth; single sideband transmits one sideband carrying all the information.",
+        "objective":  "AM transmits the carrier and both sidebands, doubling the bandwidth; single sideband transmits one sideband carrying all the information.",
+        "skillTags":  [
+                          "Signal Processing"
+                      ],
+        "softSkill":  false
     }
 ]

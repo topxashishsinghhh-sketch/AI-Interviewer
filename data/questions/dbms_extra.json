@@ -6,9 +6,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which JOIN returns rows matching in both tables?",
-    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "CROSS JOIN"],
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "CROSS JOIN"
+    ],
     "answer": 0,
-    "explanation": "An inner join keeps only rows whose join predicate matches on both sides."
+    "explanation": "An inner join keeps only rows whose join predicate matches on both sides.",
+    "objective": "An inner join keeps only rows whose join predicate matches on both sides.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "returns",
+      "matching"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_easy_2",
@@ -17,9 +31,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which clause removes duplicate rows from a result set?",
-    "options": ["DISTINCT", "UNIQUE", "GROUP", "FILTER"],
+    "options": [
+      "DISTINCT",
+      "UNIQUE",
+      "GROUP",
+      "FILTER"
+    ],
     "answer": 0,
-    "explanation": "SELECT DISTINCT deduplicates the projected rows."
+    "explanation": "SELECT DISTINCT deduplicates the projected rows.",
+    "objective": "SELECT DISTINCT deduplicates the projected rows.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "removes",
+      "duplicate"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_easy_3",
@@ -28,9 +56,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is a foreign key?",
-    "options": ["A column referencing a primary key in another table", "A unique index on the same table", "Any non-null column", "A computed column"],
+    "options": [
+      "A column referencing a primary key in another table",
+      "A unique index on the same table",
+      "Any non-null column",
+      "A computed column"
+    ],
     "answer": 0,
-    "explanation": "A foreign key enforces referential integrity between two relations."
+    "explanation": "A foreign key enforces referential integrity between two relations.",
+    "objective": "A foreign key enforces referential integrity between two relations.",
+    "skillTags": [
+      "dbms"
+    ],
+    "keywords": [
+      "foreign"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_easy_4",
@@ -39,9 +80,21 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is relational algebra?",
-    "keywords": ["operations", "relations", "select", "project", "join", "formal"],
+    "keywords": [
+      "operations",
+      "relations",
+      "select",
+      "project",
+      "join",
+      "formal"
+    ],
     "minKeywords": 2,
-    "explanation": "It is the formal query language of operations over relations that SQL is built on."
+    "explanation": "It is the formal query language of operations over relations that SQL is built on.",
+    "objective": "It is the formal query language of operations over relations that SQL is built on.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_med_1",
@@ -50,9 +103,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is the difference between WHERE and HAVING?",
-    "keywords": ["before grouping", "after grouping", "rows", "aggregate", "filter"],
+    "keywords": [
+      "before grouping",
+      "after grouping",
+      "rows",
+      "aggregate",
+      "filter"
+    ],
     "minKeywords": 2,
-    "explanation": "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates."
+    "explanation": "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates.",
+    "objective": "WHERE filters individual rows before GROUP BY, while HAVING filters the resulting groups and may use aggregates.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_med_2",
@@ -61,9 +125,22 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Which index type is best for range queries?",
-    "options": ["B+ tree", "Hash", "Bitmap", "Bloom filter"],
+    "options": [
+      "B+ tree",
+      "Hash",
+      "Bitmap",
+      "Bloom filter"
+    ],
     "answer": 0,
-    "explanation": "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential."
+    "explanation": "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential.",
+    "objective": "A B+ tree keeps keys ordered and its leaves are linked, so range scans are sequential.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "keywords": [
+      "queries"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_med_3",
@@ -72,9 +149,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is a phantom read?",
-    "keywords": ["range", "new rows", "repeat", "transaction", "insert"],
+    "keywords": [
+      "range",
+      "new rows",
+      "repeat",
+      "transaction",
+      "insert"
+    ],
     "minKeywords": 2,
-    "explanation": "Re-running a range predicate returns newly inserted rows that another transaction committed in between."
+    "explanation": "Re-running a range predicate returns newly inserted rows that another transaction committed in between.",
+    "objective": "Re-running a range predicate returns newly inserted rows that another transaction committed in between.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_hard_1",
@@ -96,7 +184,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next."
+    "explanation": "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next.",
+    "objective": "RANK() OVER (PARTITION BY dept ORDER BY salary DESC) gives tied salaries the same rank and skips the next.",
+    "skillTags": [
+      "dbms"
+    ],
+    "keywords": [
+      "employees",
+      "department",
+      "highest"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_hard_2",
@@ -105,9 +203,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain how MVCC avoids readers blocking writers.",
-    "keywords": ["version", "snapshot", "writer", "copy", "no read lock"],
+    "keywords": [
+      "version",
+      "snapshot",
+      "writer",
+      "copy",
+      "no read lock"
+    ],
     "minKeywords": 2,
-    "explanation": "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers."
+    "explanation": "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers.",
+    "objective": "Each transaction sees a consistent snapshot of row versions, so writers create new versions instead of blocking readers.",
+    "skillTags": [
+      "SQL & Databases"
+    ],
+    "softSkill": false
   },
   {
     "id": "dbms_extra_hard_3",
@@ -116,8 +225,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "How does a cost-based optimiser choose a join order?",
-    "keywords": ["cardinality", "statistics", "selectivity", "plan", "cost model"],
+    "keywords": [
+      "cardinality",
+      "statistics",
+      "selectivity",
+      "plan",
+      "cost model"
+    ],
     "minKeywords": 2,
-    "explanation": "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost."
+    "explanation": "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost.",
+    "objective": "It estimates intermediate result sizes from column statistics and picks the join order with the lowest modelled total cost.",
+    "skillTags": [
+      "dbms"
+    ],
+    "softSkill": false
   }
 ]

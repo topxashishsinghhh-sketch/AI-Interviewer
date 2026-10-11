@@ -323,6 +323,62 @@ textarea {
 .view-head .title { font-size: 22px; font-weight: 700; }
 .view-head .actions { margin-left: auto; display: flex; gap: 8px; }
 
+/* Problem detail: objective banner, skill chips, keyword highlight */
+
+.objective {
+  display: flex; gap: 10px; align-items: baseline;
+  padding: 10px 12px; margin-bottom: 12px;
+  background: var(--accent-dim);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-sm);
+}
+.objective-label {
+  font-size: 10.5px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .07em; color: var(--accent);
+  flex: 0 0 auto;
+}
+.objective-text { font-size: 13px; color: var(--text); }
+
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0 4px; }
+.chip {
+  padding: 3px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--surface-2);
+  font-size: 11.5px; font-weight: 600; color: var(--text-2);
+}
+.chip-soft {
+  border-color: var(--warn); background: var(--warn-dim); color: var(--warn);
+}
+
+mark {
+  background: color-mix(in srgb, var(--warn) 30%, transparent);
+  color: inherit;
+  border-bottom: 1.5px solid var(--warn);
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* Hard / soft skill bars differ by hue so the two groups read apart. */
+.bar-hard .bar-fill { background: var(--accent); }
+.bar-soft .bar-fill { background: var(--warn); }
+.bar-soft > span:first-child { color: var(--warn); }
+
+/* Practise-next list */
+.gap-list { display: grid; gap: 8px; margin-top: 10px; }
+.gap-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 9px 12px;
+  border: 1px solid var(--line); border-radius: var(--r-sm);
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: border-color var(--fast), background-color var(--fast);
+}
+.gap-item:hover { border-color: var(--accent); background: var(--surface-3); }
+.gap-item.gap-soft:hover { border-color: var(--warn); }
+.gap-tag { font-weight: 600; font-size: 13px; flex: 0 0 auto; }
+.gap-bar { margin-left: auto; }
+
 /* --------------------------------------------------------------------------
    Cards / stats / tables
    -------------------------------------------------------------------------- */

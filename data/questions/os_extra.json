@@ -6,9 +6,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is a Process Control Block?",
-    "options": ["A kernel data structure holding process state", "A CPU register set", "A disk sector", "A user-level stack"],
+    "options": [
+      "A kernel data structure holding process state",
+      "A CPU register set",
+      "A disk sector",
+      "A user-level stack"
+    ],
     "answer": 0,
-    "explanation": "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed."
+    "explanation": "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed.",
+    "objective": "The PCB stores PID, registers, memory map and scheduling state so a process can be suspended and resumed.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [
+      "Process",
+      "Control"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_easy_2",
@@ -17,9 +31,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the main purpose of virtual memory?",
-    "options": ["To give each process its own address space", "To speed up the disk", "To cache DNS", "To encrypt RAM"],
+    "options": [
+      "To give each process its own address space",
+      "To speed up the disk",
+      "To cache DNS",
+      "To encrypt RAM"
+    ],
     "answer": 0,
-    "explanation": "Virtual memory isolates address spaces and lets processes use more memory than is physically present."
+    "explanation": "Virtual memory isolates address spaces and lets processes use more memory than is physically present.",
+    "objective": "Virtual memory isolates address spaces and lets processes use more memory than is physically present.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [
+      "purpose",
+      "virtual"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_easy_3",
@@ -28,9 +56,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is a deadlock?",
-    "options": ["Processes waiting forever for each other", "A CPU stall", "A memory leak", "Disk failure"],
+    "options": [
+      "Processes waiting forever for each other",
+      "A CPU stall",
+      "A memory leak",
+      "Disk failure"
+    ],
     "answer": 0,
-    "explanation": "Deadlock is a cycle of waiting where no process can proceed."
+    "explanation": "Deadlock is a cycle of waiting where no process can proceed.",
+    "objective": "Deadlock is a cycle of waiting where no process can proceed.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "deadlock"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_easy_4",
@@ -39,9 +81,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is context switching?",
-    "keywords": ["save", "restore", "state", "switch", "overhead"],
+    "keywords": [
+      "save",
+      "restore",
+      "state",
+      "switch",
+      "overhead"
+    ],
     "minKeywords": 2,
-    "explanation": "The OS saves the running process's state and restores another's so the CPU can be shared."
+    "explanation": "The OS saves the running process's state and restores another's so the CPU can be shared.",
+    "objective": "The OS saves the running process's state and restores another's so the CPU can be shared.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_med_1",
@@ -50,9 +103,23 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "What does a Translation Lookaside Buffer cache?",
-    "options": ["Virtual to physical page mappings", "Open file handles", "DNS records", "Process IDs"],
+    "options": [
+      "Virtual to physical page mappings",
+      "Open file handles",
+      "DNS records",
+      "Process IDs"
+    ],
     "answer": 0,
-    "explanation": "The TLB holds recent page-table entries so most translations skip the memory walk."
+    "explanation": "The TLB holds recent page-table entries so most translations skip the memory walk.",
+    "objective": "The TLB holds recent page-table entries so most translations skip the memory walk.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [
+      "Translation",
+      "Lookaside"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_med_2",
@@ -61,9 +128,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why do file systems use journaling?",
-    "keywords": ["crash", "consistency", "log", "replay", "metadata"],
+    "keywords": [
+      "crash",
+      "consistency",
+      "log",
+      "replay",
+      "metadata"
+    ],
     "minKeywords": 2,
-    "explanation": "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent."
+    "explanation": "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent.",
+    "objective": "Intent is written to a journal first, so after a crash the metadata can be replayed instead of left inconsistent.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_med_3",
@@ -72,9 +150,25 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Which of these is not a deadlock prevention technique?",
-    "options": ["Starvation", "Resource ordering", "No hold and wait", "Preemption"],
+    "options": [
+      "Starvation",
+      "Resource ordering",
+      "No hold and wait",
+      "Preemption"
+    ],
     "answer": 0,
-    "explanation": "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions."
+    "explanation": "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions.",
+    "objective": "Starvation is a scheduling fairness problem; prevention attacks one of the four Coffman conditions.",
+    "skillTags": [
+      "Operating Systems",
+      "Concurrency"
+    ],
+    "keywords": [
+      "deadlock",
+      "prevention",
+      "technique"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_hard_1",
@@ -96,7 +190,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "FIFO evicts the page that has been resident longest, which can suffer Belady's anomaly: more frames, more faults."
+    "explanation": "FIFO evicts the page that has been resident longest, which can suffer Belady's anomaly: more frames, more faults.",
+    "objective": "FIFO evicts the page that has been resident longest, which can suffer Belady's anomaly: more frames, more faults.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "keywords": [
+      "Simulate",
+      "replacement",
+      "faults."
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_hard_2",
@@ -105,9 +209,23 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain priority inversion and how priority inheritance fixes it.",
-    "keywords": ["low", "high", "medium", "inherits", "blocked", "unbounded"],
+    "keywords": [
+      "low",
+      "high",
+      "medium",
+      "inherits",
+      "blocked",
+      "unbounded"
+    ],
     "minKeywords": 2,
-    "explanation": "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner."
+    "explanation": "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner.",
+    "objective": "A medium-priority task keeps a high one waiting behind a low one; priority inheritance lets the low task run at the high priority so it finishes sooner.",
+    "skillTags": [
+      "Operating Systems",
+      "Behavioural Interviews",
+      "Communication"
+    ],
+    "softSkill": false
   },
   {
     "id": "os_extra_hard_3",
@@ -116,8 +234,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Compare polling, interrupts and DMA for device I/O.",
-    "keywords": ["cpu", "busy wait", "bus", "direct memory access", "overhead"],
+    "keywords": [
+      "cpu",
+      "busy wait",
+      "bus",
+      "direct memory access",
+      "overhead"
+    ],
     "minKeywords": 2,
-    "explanation": "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved."
+    "explanation": "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved.",
+    "objective": "Polling burns CPU, interrupts avoid busy waiting but cost per transfer, and DMA moves blocks with the CPU barely involved.",
+    "skillTags": [
+      "Operating Systems"
+    ],
+    "softSkill": false
   }
 ]

@@ -79,6 +79,27 @@ json problemToJson(const core::QuestionPtr& question) {
     out["type"] = question->type();
     out["text"] = question->display();
     out["title"] = question->text();
+    // Phase 11: objective, skill side, tags and the words to highlight.
+    out["objective"] = question->objective();
+    out["skillKind"] = question->skillKind() == core::SkillKind::Soft ? "Soft" : "Hard";
+    out["skillTags"] = question->skillTags();
+
+    // Keywords differ per question type: Text questions already own theirs,
+    // everything else gets the topic words.
+    std::vector<std::string> keywords = question->keywords();
+    if (keywords.empty()) {
+        std::string topic = question->topic();
+        std::string current;
+        for (std::size_t i = 0; i <= topic.size(); ++i) {
+            if (i == topic.size() || topic[i] == '_' || topic[i] == ' ') {
+                if (current.size() > 2) keywords.push_back(current);
+                current.clear();
+            } else {
+                current += topic[i];
+            }
+        }
+    }
+    out["keywords"] = keywords;
 
     // Coding problems carry the starter code and the visible sample cases so the
     // editor and the "Run" button work without extra round trips.
@@ -176,6 +197,7 @@ HttpServer::HttpServer(const Config& config)
     feedbackGen_ = std::make_shared<core::RuleBasedFeedback>();
     authService_ = std::make_unique<auth::AuthService>(userRepo_);
     adminService_ = std::make_unique<admin::AdminService>(userRepo_, questionRepo_, attemptRepo_);
+    skillsService_ = std::make_unique<skills::SkillsService>(questionRepo_, attemptRepo_, userRepo_);
     progressService_ = std::make_unique<progress::ProgressService>(
         userRepo_, questionRepo_, scoreboardRepo_, dailyChallengeRepo_, courseService_);
     problemService_ = std::make_unique<problem::ProblemService>(
@@ -775,6 +797,67 @@ void HttpServer::registerRoutes() {
                                             userRepo_->findById(core::UserId(context.userId())))
                                             ->lastActivityDate()
                                       : "";
+        sendJson(response, 200, out);
+    });
+
+    // ---- skill profile: hard and soft skill development ----
+    auto skillRowToJson = [](const skills::SkillRow& row) -> json {
+        json item;
+        item["tag"] = row.tag;
+        item["kind"] = row.kind;
+        item["available"] = row.available;
+        item["solved"] = row.solved;
+        item["attempted"] = row.attempted;
+        item["mastery"] = row.mastery();
+        return item;
+    };
+
+    server_->Get("/api/skills", [this, skillRowToJson](const httplib::Request& request,
+                                                        httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        const skills::SkillProfile profile =
+            skillsService_->profile(core::UserId(context.userId()));
+
+        json out;
+        out["hardMastery"] = profile.hardMastery;
+        out["softMastery"] = profile.softMastery;
+        json hard = json::array();
+        for (std::size_t i = 0; i < profile.hard.size(); ++i) {
+            hard.push_back(skillRowToJson(profile.hard[i]));
+        }
+        json soft = json::array();
+        for (std::size_t i = 0; i < profile.soft.size(); ++i) {
+            soft.push_back(skillRowToJson(profile.soft[i]));
+        }
+        json gaps = json::array();
+        for (std::size_t i = 0; i < profile.gaps.size() && i < 10; ++i) {
+            gaps.push_back(skillRowToJson(profile.gaps[i]));
+        }
+        out["hard"] = hard;
+        out["soft"] = soft;
+        out["gaps"] = gaps;
+        sendJson(response, 200, out);
+    });
+
+    server_->Get("/api/skills/practice", [this](const httplib::Request& request,
+                                                 httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        const std::string tag = paramOr(request, "tag", "");
+        if (tag.empty()) {
+            sendError(response, 400, "tag is required");
+            return;
+        }
+
+        const std::vector<core::QuestionPtr> questions =
+            skillsService_->practiceFor(tag, core::UserId(context.userId()));
+        json out = json::array();
+        for (std::size_t i = 0; i < questions.size(); ++i) {
+            out.push_back(problemToJson(questions[i]));
+        }
         sendJson(response, 200, out);
     });
 

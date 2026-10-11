@@ -6,9 +6,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the knee voltage of a germanium diode?",
-    "options": ["0.3 V", "0.7 V", "1.4 V", "2 V"],
+    "options": [
+      "0.3 V",
+      "0.7 V",
+      "1.4 V",
+      "2 V"
+    ],
     "answer": 0,
-    "explanation": "Germanium begins conducting around 0.2-0.3 V, lower than silicon's 0.7 V."
+    "explanation": "Germanium begins conducting around 0.2-0.3 V, lower than silicon's 0.7 V.",
+    "objective": "Germanium begins conducting around 0.2-0.3 V, lower than silicon's 0.7 V.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "voltage",
+      "germanium"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_easy_2",
@@ -17,9 +31,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is slew rate?",
-    "options": ["Maximum rate of output voltage change", "Maximum gain", "Input bias current", "Offset voltage"],
+    "options": [
+      "Maximum rate of output voltage change",
+      "Maximum gain",
+      "Input bias current",
+      "Offset voltage"
+    ],
     "answer": 0,
-    "explanation": "Slew rate limits how fast the output can swing, in V per microsecond."
+    "explanation": "Slew rate limits how fast the output can swing, in V per microsecond.",
+    "objective": "Slew rate limits how fast the output can swing, in V per microsecond.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "analog_extra_easy_3",
@@ -28,9 +53,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "In a common-emitter amplifier the output is:",
-    "options": ["Inverted and amplified", "In-phase and amplified", "Unchanged", "Only shifted"],
+    "options": [
+      "Inverted and amplified",
+      "In-phase and amplified",
+      "Unchanged",
+      "Only shifted"
+    ],
     "answer": 0,
-    "explanation": "A base current increase raises collector current, dropping the collector voltage, so the output inverts."
+    "explanation": "A base current increase raises collector current, dropping the collector voltage, so the output inverts.",
+    "objective": "A base current increase raises collector current, dropping the collector voltage, so the output inverts.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "common-emitter",
+      "amplifier"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_easy_4",
@@ -39,9 +78,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is the RC time constant?",
-    "keywords": ["tau", "r times c", "63", "seconds", "charging"],
+    "keywords": [
+      "tau",
+      "r times c",
+      "63",
+      "seconds",
+      "charging"
+    ],
     "minKeywords": 2,
-    "explanation": "tau = RC is the time to reach about 63% of the final voltage in an RC circuit."
+    "explanation": "tau = RC is the time to reach about 63% of the final voltage in an RC circuit.",
+    "objective": "tau = RC is the time to reach about 63% of the final voltage in an RC circuit.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_med_1",
@@ -50,9 +100,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Why does a cascode stage widen bandwidth?",
-    "keywords": ["miller", "capacitance", "reduce", "gain per stage", "shunt"],
+    "keywords": [
+      "miller",
+      "capacitance",
+      "reduce",
+      "gain per stage",
+      "shunt"
+    ],
     "minKeywords": 2,
-    "explanation": "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor's swing small."
+    "explanation": "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor's swing small.",
+    "objective": "It reduces the Miller multiplication of the base-collector capacitance by keeping the input transistor's swing small.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_med_2",
@@ -61,9 +122,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "How does negative feedback improve bandwidth?",
-    "keywords": ["gain bandwidth", "trade", "lower gain", "wider", "product"],
+    "keywords": [
+      "gain bandwidth",
+      "trade",
+      "lower gain",
+      "wider",
+      "product"
+    ],
     "minKeywords": 2,
-    "explanation": "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response."
+    "explanation": "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response.",
+    "objective": "Gain falls while bandwidth rises so the product is roughly preserved, giving predictable response.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_med_3",
@@ -72,9 +144,22 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "What causes offset voltage in an op-amp?",
-    "options": ["Mismatch in the input differential pair", "Thermal noise alone", "Power supply ripple", "Feedback resistor tolerance"],
+    "options": [
+      "Mismatch in the input differential pair",
+      "Thermal noise alone",
+      "Power supply ripple",
+      "Feedback resistor tolerance"
+    ],
     "answer": 0,
-    "explanation": "Device mismatch in the input pair means zero output needs a small nonzero differential input."
+    "explanation": "Device mismatch in the input pair means zero output needs a small nonzero differential input.",
+    "objective": "Device mismatch in the input pair means zero output needs a small nonzero differential input.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "voltage"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_hard_1",
@@ -96,7 +181,18 @@
         "isHidden": true
       }
     ],
-    "explanation": "The output is gain times input limited to the rails; clipping models a real op-amp's finite supply."
+    "explanation": "The output is gain times input limited to the rails; clipping models a real op-amp's finite supply.",
+    "objective": "The output is gain times input limited to the rails; clipping models a real op-amp's finite supply.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "keywords": [
+      "Compute",
+      "voltage",
+      "inverting",
+      "clipping"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_hard_2",
@@ -105,9 +201,22 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "State the Barkhausen criterion for oscillation.",
-    "keywords": ["loop gain", "unity magnitude", "phase", "360", "0 degrees", "condition"],
+    "keywords": [
+      "loop gain",
+      "unity magnitude",
+      "phase",
+      "360",
+      "0 degrees",
+      "condition"
+    ],
     "minKeywords": 2,
-    "explanation": "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation."
+    "explanation": "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation.",
+    "objective": "The loop gain must have magnitude one and phase that is a multiple of 360 degrees to sustain oscillation.",
+    "skillTags": [
+      "Operating Systems",
+      "Circuit Design"
+    ],
+    "softSkill": false
   },
   {
     "id": "analog_extra_hard_3",
@@ -116,8 +225,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Compare flicker and white noise in terms of frequency dependence.",
-    "keywords": ["1/f", "low frequency", "flat", "thermal", "spectral density"],
+    "keywords": [
+      "1/f",
+      "low frequency",
+      "flat",
+      "thermal",
+      "spectral density"
+    ],
     "minKeywords": 2,
-    "explanation": "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency."
+    "explanation": "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency.",
+    "objective": "White noise has flat spectral density across frequency, while flicker noise rises as 1/f and dominates at low frequency.",
+    "skillTags": [
+      "Circuit Design"
+    ],
+    "softSkill": false
   }
 ]

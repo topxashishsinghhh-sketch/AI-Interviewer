@@ -6,9 +6,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which expression does a stack help evaluate?",
-    "options": ["Infix to postfix conversion", "Binary search", "Shortest path", "Message queue routing"],
+    "options": [
+      "Infix to postfix conversion",
+      "Binary search",
+      "Shortest path",
+      "Message queue routing"
+    ],
     "answer": 0,
-    "explanation": "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead."
+    "explanation": "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead.",
+    "objective": "A stack holds operators while operands are emitted, giving postfix order without precedence lookahead.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "expression",
+      "evaluate"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_easy_2",
@@ -17,9 +31,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What is the advantage of a doubly linked list over a singly linked one?",
-    "options": ["Traversal in both directions", "Lower memory use", "Faster random access", "Better cache behaviour"],
+    "options": [
+      "Traversal in both directions",
+      "Lower memory use",
+      "Faster random access",
+      "Better cache behaviour"
+    ],
     "answer": 0,
-    "explanation": "The extra prev pointer allows backward traversal and O(1) deletion given a node."
+    "explanation": "The extra prev pointer allows backward traversal and O(1) deletion given a node.",
+    "objective": "The extra prev pointer allows backward traversal and O(1) deletion given a node.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "advantage"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_easy_3",
@@ -28,9 +55,25 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which technique resolves hash collisions by placing a key in the next free slot?",
-    "options": ["Open addressing / linear probing", "Separate chaining", "Universal hashing", "Perfect hashing"],
+    "options": [
+      "Open addressing / linear probing",
+      "Separate chaining",
+      "Universal hashing",
+      "Perfect hashing"
+    ],
     "answer": 0,
-    "explanation": "Linear probing scans forward from the collision until an empty slot is found."
+    "explanation": "Linear probing scans forward from the collision until an empty slot is found.",
+    "objective": "Linear probing scans forward from the collision until an empty slot is found.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "technique",
+      "resolves",
+      "collisions",
+      "placing"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_easy_4",
@@ -39,9 +82,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "Why is binary search impossible on an unsorted array?",
-    "keywords": ["order", "half", "discard", "guarantee", "sorted"],
+    "keywords": [
+      "order",
+      "half",
+      "discard",
+      "guarantee",
+      "sorted"
+    ],
     "minKeywords": 2,
-    "explanation": "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot."
+    "explanation": "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot.",
+    "objective": "Binary search relies on the mid element proving which half holds the target, which unsorted data cannot.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_med_1",
@@ -50,9 +104,24 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "What is the time complexity of an in-order traversal of a binary search tree?",
-    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "options": [
+      "O(n)",
+      "O(log n)",
+      "O(n log n)",
+      "O(1)"
+    ],
     "answer": 0,
-    "explanation": "Every node is visited exactly once, so traversal is linear in the number of nodes."
+    "explanation": "Every node is visited exactly once, so traversal is linear in the number of nodes.",
+    "objective": "Every node is visited exactly once, so traversal is linear in the number of nodes.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "complexity",
+      "in-order",
+      "traversal"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_med_2",
@@ -61,9 +130,19 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "What is the height of a balanced binary tree with n nodes?",
-    "keywords": ["log", "height", "balanced", "depth"],
+    "keywords": [
+      "log",
+      "height",
+      "balanced",
+      "depth"
+    ],
     "minKeywords": 2,
-    "explanation": "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic."
+    "explanation": "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic.",
+    "objective": "A balanced tree keeps height near log2(n), which is why search, insert and delete stay logarithmic.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_med_3",
@@ -72,9 +151,24 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Which structure gives the fastest access to the minimum of a stream?",
-    "options": ["Min-heap", "Sorted array", "Linked list", "Hash table"],
+    "options": [
+      "Min-heap",
+      "Sorted array",
+      "Linked list",
+      "Hash table"
+    ],
     "answer": 0,
-    "explanation": "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n)."
+    "explanation": "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n).",
+    "objective": "A min-heap keeps the smallest element at the root in O(1) and inserts in O(log n).",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "keywords": [
+      "structure",
+      "fastest",
+      "minimum"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_hard_1",
@@ -96,7 +190,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "BFS explores by levels using a queue, visiting each vertex and edge once."
+    "explanation": "BFS explores by levels using a queue, visiting each vertex and edge once.",
+    "objective": "BFS explores by levels using a queue, visiting each vertex and edge once.",
+    "skillTags": [
+      "Data Structures",
+      "Graphs"
+    ],
+    "keywords": [
+      "adjacency",
+      "visitation"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_hard_2",
@@ -105,9 +209,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Compare B-trees and red-black trees for index storage.",
-    "keywords": ["disk", "page", "fanout", "height", "memory"],
+    "keywords": [
+      "disk",
+      "page",
+      "fanout",
+      "height",
+      "memory"
+    ],
     "minKeywords": 2,
-    "explanation": "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance."
+    "explanation": "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance.",
+    "objective": "B-trees have high fanout matching disk pages and stay shallow, while red-black trees are optimised for in-memory balance.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "softSkill": false
   },
   {
     "id": "ds_extra_hard_3",
@@ -116,8 +231,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Why is quicksort often faster than mergesort in practice despite equal average complexity?",
-    "keywords": ["cache", "in place", "locality", "constant", "auxiliary"],
+    "keywords": [
+      "cache",
+      "in place",
+      "locality",
+      "constant",
+      "auxiliary"
+    ],
     "minKeywords": 2,
-    "explanation": "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer."
+    "explanation": "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer.",
+    "objective": "Quicksort is in place with good cache locality and smaller constants, while mergesort needs an auxiliary buffer.",
+    "skillTags": [
+      "Data Structures"
+    ],
+    "softSkill": false
   }
 ]

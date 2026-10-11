@@ -6,9 +6,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "If 'CAT' is written as 'DBU', how is 'DOG' written?",
-    "options": ["EPH", "ENC", "DPH", "EOL"],
+    "options": [
+      "EPH",
+      "ENC",
+      "DPH",
+      "EOL"
+    ],
     "answer": 0,
-    "explanation": "Each letter moves one position forward, so D-O-G becomes E-P-H."
+    "explanation": "Each letter moves one position forward, so D-O-G becomes E-P-H.",
+    "objective": "Each letter moves one position forward, so D-O-G becomes E-P-H.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "written"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_easy_2",
@@ -17,9 +30,20 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which is the odd one out: 3, 5, 7, 11, 14?",
-    "options": ["14", "5", "7", "11"],
+    "options": [
+      "14",
+      "5",
+      "7",
+      "11"
+    ],
     "answer": 0,
-    "explanation": "The others are prime; 14 is composite."
+    "explanation": "The others are prime; 14 is composite.",
+    "objective": "The others are prime; 14 is composite.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_easy_3",
@@ -28,9 +52,24 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Pointing to a photo, Neha said, \"He is the son of my grandmother's only child.\" Who is he?",
-    "options": ["Her brother", "Her cousin", "Her uncle", "Her nephew"],
+    "options": [
+      "Her brother",
+      "Her cousin",
+      "Her uncle",
+      "Her nephew"
+    ],
     "answer": 0,
-    "explanation": "The grandmother's only child is Neha's parent, so his son is her brother."
+    "explanation": "The grandmother's only child is Neha's parent, so his son is her brother.",
+    "objective": "The grandmother's only child is Neha's parent, so his son is her brother.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "Pointing",
+      "grandmother's",
+      "child.\""
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_easy_4",
@@ -39,9 +78,19 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "Facing north and turning 90 degrees right leaves you facing which direction?",
-    "keywords": ["east", "right", "clockwise", "north"],
+    "keywords": [
+      "east",
+      "right",
+      "clockwise",
+      "north"
+    ],
     "minKeywords": 2,
-    "explanation": "A clockwise quarter turn from north faces east."
+    "explanation": "A clockwise quarter turn from north faces east.",
+    "objective": "A clockwise quarter turn from north faces east.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_med_1",
@@ -50,9 +99,24 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Six people sit in a circle. A is between B and C, and D is opposite A. Who sits between E and F?",
-    "options": ["Cannot be determined", "A", "B", "D"],
+    "options": [
+      "Cannot be determined",
+      "A",
+      "B",
+      "D"
+    ],
     "answer": 0,
-    "explanation": "The remaining constraints do not fix the order of E and F, so it is undetermined."
+    "explanation": "The remaining constraints do not fix the order of E and F, so it is undetermined.",
+    "objective": "The remaining constraints do not fix the order of E and F, so it is undetermined.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "circle.",
+      "between",
+      "opposite"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_med_2",
@@ -61,9 +125,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "All cats are animals. Some animals are wild. What follows?",
-    "keywords": ["does not follow", "may or may not", "not necessarily", "cannot conclude", "wild cats"],
+    "keywords": [
+      "does not follow",
+      "may or may not",
+      "not necessarily",
+      "cannot conclude",
+      "wild cats"
+    ],
     "minKeywords": 2,
-    "explanation": "The wild animals might not include cats, so no affirmative conclusion is forced."
+    "explanation": "The wild animals might not include cats, so no affirmative conclusion is forced.",
+    "objective": "The wild animals might not include cats, so no affirmative conclusion is forced.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_med_3",
@@ -72,9 +147,22 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "Complete the series: A1, C4, F9, J16, ?",
-    "options": ["O25", "O20", "N25", "P25"],
+    "options": [
+      "O25",
+      "O20",
+      "N25",
+      "P25"
+    ],
     "answer": 0,
-    "explanation": "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25."
+    "explanation": "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25.",
+    "objective": "Letters advance +2, +3, +4, +5 (A,C,F,J,O) and numbers are 1,4,9,16,25.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "Complete"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_hard_1",
@@ -83,9 +171,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Three boxes are mislabeled Apples, Oranges and Mixed. How many fruits must you draw to relabel all correctly?",
-    "keywords": ["one", "mislabeled", "the mixed", "deduce", "swap"],
+    "keywords": [
+      "one",
+      "mislabeled",
+      "the mixed",
+      "deduce",
+      "swap"
+    ],
     "minKeywords": 2,
-    "explanation": "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination."
+    "explanation": "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination.",
+    "objective": "Draw one fruit from the box labelled Mixed: since every label is wrong, it holds a single fruit, which fixes the other two by elimination.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_hard_2",
@@ -94,9 +193,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "Explain why modus tollens is valid.",
-    "keywords": ["if p then q", "not q", "not p", "contrapositive", "valid"],
+    "keywords": [
+      "if p then q",
+      "not q",
+      "not p",
+      "contrapositive",
+      "valid"
+    ],
     "minKeywords": 2,
-    "explanation": "If P implies Q and Q is false, then P must be false, because Q true whenever P true."
+    "explanation": "If P implies Q and Q is false, then P must be false, because Q true whenever P true.",
+    "objective": "If P implies Q and Q is false, then P must be false, because Q true whenever P true.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "softSkill": false
   },
   {
     "id": "reasoning_extra_hard_3",
@@ -118,6 +228,15 @@
         "isHidden": true
       }
     ],
-    "explanation": "With 8 files per rank, square s is on rank (s-1)/8 + 1."
+    "explanation": "With 8 files per rank, square s is on rank (s-1)/8 + 1.",
+    "objective": "With 8 files per rank, square s is on rank (s-1)/8 + 1.",
+    "skillTags": [
+      "Logical Reasoning"
+    ],
+    "keywords": [
+      "knight's",
+      "numbered"
+    ],
+    "softSkill": false
   }
 ]

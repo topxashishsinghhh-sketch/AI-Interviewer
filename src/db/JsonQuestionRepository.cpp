@@ -57,15 +57,16 @@ core::QuestionPtr JsonQuestionRepository::deserialize(const nlohmann::json& j) {
     std::string text = j["text"].get<std::string>();
     std::string type = j["type"].get<std::string>();
     std::string explanation = j.value("explanation", "");
-    
+
+    core::QuestionPtr question;
     if (type == "MCQ") {
         std::vector<std::string> options = j["options"].get<std::vector<std::string>>();
         int correctIndex = j["answer"].get<int>();
-        return std::make_shared<core::MCQQuestion>(id, subject, topic, difficulty, text, options, correctIndex, explanation);
+        question = std::make_shared<core::MCQQuestion>(id, subject, topic, difficulty, text, options, correctIndex, explanation);
     } else if (type == "Text") {
         std::vector<std::string> keywords = j["keywords"].get<std::vector<std::string>>();
         int minKeywords = j.value("minKeywords", 1);
-        return std::make_shared<core::TextQuestion>(id, subject, topic, difficulty, text, keywords, minKeywords, explanation);
+        question = std::make_shared<core::TextQuestion>(id, subject, topic, difficulty, text, keywords, minKeywords, explanation);
     } else if (type == "Coding") {
         std::string templateCode = j["templateCode"].get<std::string>();
         std::vector<core::CodingTestCase> testCases;
@@ -76,10 +77,24 @@ core::QuestionPtr JsonQuestionRepository::deserialize(const nlohmann::json& j) {
                 tc.value("isHidden", false)
             });
         }
-        return std::make_shared<core::CodingQuestion>(id, subject, topic, difficulty, text, templateCode, testCases, explanation);
+        question = std::make_shared<core::CodingQuestion>(id, subject, topic, difficulty, text, templateCode, testCases, explanation);
     }
-    
-    return nullptr;
+
+    // Phase 11: objective, skill tags and keywords are all optional so the
+    // existing question files load unchanged.
+    if (question) {
+        question->setObjective(j.value("objective", ""));
+        question->setSkillKind(j.value("softSkill", false) ? core::SkillKind::Soft
+                                                           : core::SkillKind::Hard);
+        std::vector<std::string> tags;
+        if (j.contains("skillTags")) {
+            for (const auto& tag : j["skillTags"]) {
+                tags.push_back(tag.get<std::string>());
+            }
+        }
+        question->setSkillTags(tags);
+    }
+    return question;
 }
 
 nlohmann::json JsonQuestionRepository::serialize(const core::QuestionPtr& question) {
@@ -91,6 +106,9 @@ nlohmann::json JsonQuestionRepository::serialize(const core::QuestionPtr& questi
     j["text"] = question->text();
     j["type"] = question->type();
     j["explanation"] = question->explanation();
+    j["objective"] = question->objective();
+    j["softSkill"] = (question->skillKind() == core::SkillKind::Soft);
+    j["skillTags"] = question->skillTags();
     
     if (auto mcq = std::dynamic_pointer_cast<core::MCQQuestion>(question)) {
         j["options"] = mcq->options();

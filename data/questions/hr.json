@@ -13,7 +13,16 @@
       "Strategy, Tactics, Approach, Result"
     ],
     "answer": 0,
-    "explanation": "STAR = Situation, Task, Action, Result. A framework for answering behavioral questions."
+    "explanation": "STAR = Situation, Task, Action, Result. A framework for answering behavioral questions.",
+    "objective": "STAR = Situation, Task, Action, Result. A framework for answering behavioral questions.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "behavioral",
+      "interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_easy_2",
@@ -29,7 +38,16 @@
       "Hobbies and interests only"
     ],
     "answer": 1,
-    "explanation": "Keep it professional, relevant to the role, and concise (1-2 minutes)."
+    "explanation": "Keep it professional, relevant to the role, and concise (1-2 minutes).",
+    "objective": "Keep it professional, relevant to the role, and concise (1-2 minutes).",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "response",
+      "yourself'"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_easy_3",
@@ -45,7 +63,18 @@
       "Quit immediately"
     ],
     "answer": 1,
-    "explanation": "Professional disagreement: schedule private meeting, present concerns with data, seek alignment."
+    "explanation": "Professional disagreement: schedule private meeting, present concerns with data, seek alignment.",
+    "objective": "Professional disagreement: schedule private meeting, present concerns with data, seek alignment.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "disagree",
+      "manager's",
+      "decision.",
+      "approach"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_easy_4",
@@ -54,9 +83,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "Describe a time you worked in a team. What was your role?",
-    "keywords": ["team", "collaborate", "role", "contribute", "communicate"],
+    "keywords": [
+      "team",
+      "collaborate",
+      "role",
+      "contribute",
+      "communicate"
+    ],
     "minKeywords": 2,
-    "explanation": "Use STAR: Situation (project), Task (goal), Action (your contribution), Result (outcome)."
+    "explanation": "Use STAR: Situation (project), Task (goal), Action (your contribution), Result (outcome).",
+    "objective": "Use STAR: Situation (project), Task (goal), Action (your contribution), Result (outcome).",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_medium_1",
@@ -65,9 +105,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Tell me about a conflict with a colleague and how you resolved it.",
-    "keywords": ["conflict", "resolve", "communicate", "listen", "compromise", "outcome"],
+    "keywords": [
+      "conflict",
+      "resolve",
+      "communicate",
+      "listen",
+      "compromise",
+      "outcome"
+    ],
     "minKeywords": 3,
-    "explanation": "Show emotional intelligence: listen, understand perspective, find common ground, positive outcome."
+    "explanation": "Show emotional intelligence: listen, understand perspective, find common ground, positive outcome.",
+    "objective": "Show emotional intelligence: listen, understand perspective, find common ground, positive outcome.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_medium_2",
@@ -83,7 +135,17 @@
       "Report to manager immediately without talking"
     ],
     "answer": 1,
-    "explanation": "Collaborative approach: understand root cause, support, then escalate if unresolved."
+    "explanation": "Collaborative approach: understand root cause, support, then escalate if unresolved.",
+    "objective": "Collaborative approach: understand root cause, support, then escalate if unresolved.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "Project",
+      "deadline",
+      "delivering."
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_medium_3",
@@ -92,9 +154,21 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "Describe a time you failed. What did you learn?",
-    "keywords": ["failed", "learn", "mistake", "improve", "feedback", "growth"],
+    "keywords": [
+      "failed",
+      "learn",
+      "mistake",
+      "improve",
+      "feedback",
+      "growth"
+    ],
     "minKeywords": 3,
-    "explanation": "Own the failure, explain lessons learned, show growth mindset with concrete improvements."
+    "explanation": "Own the failure, explain lessons learned, show growth mindset with concrete improvements.",
+    "objective": "Own the failure, explain lessons learned, show growth mindset with concrete improvements.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_medium_4",
@@ -110,7 +184,18 @@
       "Complain to HR"
     ],
     "answer": 1,
-    "explanation": "Receive feedback gracefully: listen, clarify, reflect, then decide on action."
+    "explanation": "Receive feedback gracefully: listen, clarify, reflect, then decide on action.",
+    "objective": "Receive feedback gracefully: listen, clarify, reflect, then decide on action.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "receive",
+      "negative",
+      "feedback",
+      "disagree"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_hard_1",
@@ -127,7 +212,18 @@
         "isHidden": false
       }
     ],
-    "explanation": "Simple data structure practice. Use vector for storage, filter by receiver, compute average."
+    "explanation": "Simple data structure practice. Use vector for storage, filter by receiver, compute average.",
+    "objective": "Simple data structure practice. Use vector for storage, filter by receiver, compute average.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "Implement",
+      "feedback",
+      "tracker.",
+      "entries"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_hard_2",
@@ -136,9 +232,23 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "You're leading a project. Two senior developers strongly disagree on architecture. How do you resolve?",
-    "keywords": ["mediate", "data", "pros", "cons", "decide", "align", "team", "consensus"],
+    "keywords": [
+      "mediate",
+      "data",
+      "pros",
+      "cons",
+      "decide",
+      "align",
+      "team",
+      "consensus"
+    ],
     "minKeywords": 4,
-    "explanation": "Facilitate structured discussion: gather data, list pros/cons, seek consensus, make decision if needed, ensure team alignment."
+    "explanation": "Facilitate structured discussion: gather data, list pros/cons, seek consensus, make decision if needed, ensure team alignment.",
+    "objective": "Facilitate structured discussion: gather data, list pros/cons, seek consensus, make decision if needed, ensure team alignment.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_hard_3",
@@ -160,6 +270,17 @@
         "isHidden": true
       }
     ],
-    "explanation": "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class."
+    "explanation": "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class.",
+    "objective": "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "hierarchy",
+      "interview",
+      "questions",
+      "Coding)"
+    ],
+    "softSkill": true
   }
 ]

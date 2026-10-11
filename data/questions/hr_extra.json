@@ -6,9 +6,22 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "What does the STAR method stand for in interviews?",
-    "options": ["Situation, Task, Action, Result", "Strength, Target, Action, Review", "Skill, Task, Analysis, Rating", "Summary, Topic, Answer, Response"],
+    "options": [
+      "Situation, Task, Action, Result",
+      "Strength, Target, Action, Review",
+      "Skill, Task, Analysis, Rating",
+      "Summary, Topic, Answer, Response"
+    ],
     "answer": 0,
-    "explanation": "STAR structures a behavioural answer as situation, task, action and result."
+    "explanation": "STAR structures a behavioural answer as situation, task, action and result.",
+    "objective": "STAR structures a behavioural answer as situation, task, action and result.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_easy_2",
@@ -17,9 +30,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What is active listening in an interview?",
-    "keywords": ["full attention", "clarify", "reflect", "interrupt", "respond"],
+    "keywords": [
+      "full attention",
+      "clarify",
+      "reflect",
+      "interrupt",
+      "respond"
+    ],
     "minKeywords": 2,
-    "explanation": "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering."
+    "explanation": "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering.",
+    "objective": "It means concentrating fully on the question, clarifying ambiguous parts, and confirming before answering.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_easy_3",
@@ -28,9 +52,23 @@
     "difficulty": "Easy",
     "type": "MCQ",
     "text": "Which question best shows self-awareness?",
-    "options": ["What is an area you want to improve?", "What is your salary expectation?", "When can you join?", "Where do you see the company in 10 years?"],
+    "options": [
+      "What is an area you want to improve?",
+      "What is your salary expectation?",
+      "When can you join?",
+      "Where do you see the company in 10 years?"
+    ],
     "answer": 0,
-    "explanation": "Naming a genuine growth area shows reflection rather than a rehearsed strength."
+    "explanation": "Naming a genuine growth area shows reflection rather than a rehearsed strength.",
+    "objective": "Naming a genuine growth area shows reflection rather than a rehearsed strength.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "question",
+      "self-awareness"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_easy_4",
@@ -39,9 +77,20 @@
     "difficulty": "Easy",
     "type": "Text",
     "text": "What makes a good answer to \"tell me about a conflict with a teammate\"?",
-    "keywords": ["specific", "assume good", "focus on outcome", "own part", "blame"],
+    "keywords": [
+      "specific",
+      "assume good",
+      "focus on outcome",
+      "own part",
+      "blame"
+    ],
     "minKeywords": 2,
-    "explanation": "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally."
+    "explanation": "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally.",
+    "objective": "A good answer is specific about the disagreement, avoids blaming, and shows how it was resolved professionally.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_med_1",
@@ -50,9 +99,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "How should you answer \"what is your greatest weakness\"?",
-    "keywords": ["real", "not critical", "steps", "improvement", "progress"],
+    "keywords": [
+      "real",
+      "not critical",
+      "steps",
+      "improvement",
+      "progress"
+    ],
     "minKeywords": 2,
-    "explanation": "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress."
+    "explanation": "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress.",
+    "objective": "Name a genuine but non-critical weakness, then the concrete steps taken to improve and evidence of progress.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_med_2",
@@ -61,9 +121,20 @@
     "difficulty": "Medium",
     "type": "Text",
     "text": "How do you answer \"why do you want to leave your current job\"?",
-    "keywords": ["positive", "growth", "forward", "no complaint", "role"],
+    "keywords": [
+      "positive",
+      "growth",
+      "forward",
+      "no complaint",
+      "role"
+    ],
     "minKeywords": 2,
-    "explanation": "Focus on what you want next and the fit with this role, without criticising the current employer."
+    "explanation": "Focus on what you want next and the fit with this role, without criticising the current employer.",
+    "objective": "Focus on what you want next and the fit with this role, without criticising the current employer.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_med_3",
@@ -72,9 +143,24 @@
     "difficulty": "Medium",
     "type": "MCQ",
     "text": "When asked for a salary expectation, what is usually the best approach?",
-    "options": ["Give a researched range first", "Say \"whatever you offer\"", "Refuse to answer", "State your current salary only"],
+    "options": [
+      "Give a researched range first",
+      "Say \"whatever you offer\"",
+      "Refuse to answer",
+      "State your current salary only"
+    ],
     "answer": 0,
-    "explanation": "A researched range keeps negotiation grounded and shows market awareness."
+    "explanation": "A researched range keeps negotiation grounded and shows market awareness.",
+    "objective": "A researched range keeps negotiation grounded and shows market awareness.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "keywords": [
+      "expectation",
+      "usually",
+      "approach"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_hard_1",
@@ -83,9 +169,21 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "How do you answer \"describe a time you failed\" without hurting your case?",
-    "keywords": ["owned", "specific", "lesson", "changed", "behaviour", "outcome"],
+    "keywords": [
+      "owned",
+      "specific",
+      "lesson",
+      "changed",
+      "behaviour",
+      "outcome"
+    ],
     "minKeywords": 2,
-    "explanation": "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it."
+    "explanation": "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it.",
+    "objective": "Own a real failure, quantify the impact, then describe the concrete behaviour change and a later success that proves it.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_hard_2",
@@ -94,9 +192,20 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "How do you demonstrate leadership when you have no formal authority?",
-    "keywords": ["influence", "ownership", "coordinate", "mentor", "credibility"],
+    "keywords": [
+      "influence",
+      "ownership",
+      "coordinate",
+      "mentor",
+      "credibility"
+    ],
     "minKeywords": 2,
-    "explanation": "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring."
+    "explanation": "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring.",
+    "objective": "Lead by taking ownership, coordinating across teams, and building credibility through consistent delivery and mentoring.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   },
   {
     "id": "hr_extra_hard_3",
@@ -105,8 +214,19 @@
     "difficulty": "Hard",
     "type": "Text",
     "text": "How would you respond if asked to deliver a feature you believe is wrong?",
-    "keywords": ["clarify", "data", "escalate", "commit", "disagree"],
+    "keywords": [
+      "clarify",
+      "data",
+      "escalate",
+      "commit",
+      "disagree"
+    ],
     "minKeywords": 2,
-    "explanation": "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided."
+    "explanation": "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided.",
+    "objective": "State the concern with evidence, seek context, escalate if unresolved, and commit fully once decided.",
+    "skillTags": [
+      "Behavioural Interviews"
+    ],
+    "softSkill": true
   }
 ]
