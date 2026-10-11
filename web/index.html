@@ -3,174 +3,271 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Interviewer</title>
+<title>AI Interviewer · Practice Platform</title>
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <header class="topbar">
-  <div class="brand">AI Interviewer</div>
-  <nav class="nav" id="nav">
-    <button data-view="login" class="navbtn">Sign in</button>
-  </nav>
+  <a class="brand" href="#" data-nav="dashboard">
+    <span class="logo">&lt;/&gt;</span> AI Interviewer
+  </a>
+  <nav class="nav" id="nav"></nav>
   <div class="who" id="who"></div>
 </header>
 
-<main class="wrap">
+<div class="layout">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="content">
 
-  <!-- ---------- auth ---------- -->
-  <section id="view-login" class="view card">
-    <h2 id="authTitle">Sign in</h2>
-    <div class="row">
-      <button id="authMode" class="ghost">Need an account? Register</button>
-    </div>
-    <form id="authForm" class="form">
-      <label>Email <input name="email" type="email" required autocomplete="username"></label>
-      <label>Password <input name="password" type="password" required autocomplete="current-password"></label>
-      <div id="registerFields" hidden>
-        <label>Name <input name="name" autocomplete="name"></label>
-        <label>College <input name="college"></label>
-        <label>Branch <input name="branch"></label>
+    <!-- ======================= AUTH ======================= -->
+    <section id="view-login" class="view">
+      <div class="auth-wrap">
+        <div class="auth-card card">
+          <h1 id="authTitle">Sign in</h1>
+          <p class="muted" id="authSub">Continue to the practice platform.</p>
+          <form id="authForm" class="form">
+            <label>Email<input name="email" type="email" required autocomplete="username"></label>
+            <label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+            <div id="registerFields" hidden>
+              <label>Display name<input name="name" autocomplete="name"></label>
+              <label>College<input name="college"></label>
+              <label>Branch<input name="branch"></label>
+            </div>
+            <button class="primary block" id="authSubmit" type="submit">Sign in</button>
+          </form>
+          <button class="ghost block" id="authMode" type="button">Need an account? Register</button>
+          <p id="authMsg" class="msg"></p>
+        </div>
       </div>
-      <button type="submit" class="primary" id="authSubmit">Sign in</button>
-    </form>
-    <p id="authMsg" class="msg"></p>
-  </section>
+    </section>
 
-  <!-- ---------- dashboard ---------- -->
-  <section id="view-dashboard" class="view" hidden>
-    <div class="grid">
-      <button class="tile" data-view="start">Start interview</button>
-      <button class="tile" data-view="daily">Daily challenge</button>
-      <button class="tile" data-view="profile">Profile &amp; streak</button>
-      <button class="tile" data-view="board">Leaderboard</button>
-      <button class="tile" data-view="admin" id="adminTile" hidden>Admin</button>
-    </div>
-  </section>
-
-  <!-- ---------- interview setup ---------- -->
-  <section id="view-start" class="view" hidden>
-    <h2>Start an interview</h2>
-    <div class="form">
-      <label>Course
-        <select id="courseSelect"></select>
-      </label>
-      <label>Subject
-        <select id="subjectSelect"></select>
-      </label>
-      <label>Mode
-        <select id="modeSelect">
-          <option value="Practice">Practice (linear ramp)</option>
-          <option value="Mock">Mock interview (linear ramp)</option>
-          <option value="Daily">Daily challenge (adaptive)</option>
-        </select>
-      </label>
-      <button id="beginBtn" class="primary">Begin</button>
-    </div>
-    <p id="startMsg" class="msg"></p>
-  </section>
-
-  <!-- ---------- interview run ---------- -->
-  <section id="view-interview" class="view" hidden>
-    <h2 id="interviewTitle">Interview</h2>
-    <progress id="progress" max="100" value="0"></progress>
-    <div id="questionBox" class="card question">
-      <p id="questionMeta" class="meta"></p>
-      <p id="questionText" class="qtext"></p>
-    </div>
-    <form id="answerForm" class="form">
-      <label>Your answer
-        <input id="answerInput" autocomplete="off">
-      </label>
-      <div class="row">
-        <button type="submit" class="primary">Submit</button>
-        <button type="button" id="skipBtn" class="ghost">Skip</button>
-        <button type="button" id="finishEarlyBtn" class="ghost">Finish early</button>
+    <!-- ====================== DASHBOARD ====================== -->
+    <section id="view-dashboard" class="view" hidden>
+      <div class="page-head">
+        <h1>Dashboard</h1>
+        <button class="primary" data-nav="problems">Start practising</button>
       </div>
-    </form>
-  </section>
+      <div class="cards" id="dashCards"></div>
 
-  <!-- ---------- report ---------- -->
-  <section id="view-report" class="view" hidden>
-    <h2>Report</h2>
-    <div id="reportBox" class="card"></div>
-    <div class="row">
-      <button id="againBtn" class="primary">Another interview</button>
-      <button id="reportHomeBtn" class="ghost">Dashboard</button>
-    </div>
-  </section>
+      <div class="panel">
+        <h3>Recommended for you</h3>
+        <p class="muted">Unsolved problems, easiest first.</p>
+        <ul class="plain-list" id="recommendList"></ul>
+      </div>
 
-  <!-- ---------- daily challenge ---------- -->
-  <section id="view-daily" class="view" hidden>
-    <h2>Daily challenge</h2>
-    <p id="dailyMeta" class="meta"></p>
-    <div id="dailyQuestion" class="card question"></div>
-    <form id="dailyForm" class="form">
-      <label>Your answer <input id="dailyAnswer" autocomplete="off"></label>
-      <button class="primary">Submit</button>
-    </form>
-    <div id="dailyResult" class="msg"></div>
-  </section>
+      <div class="panel">
+        <div class="panel-head">
+          <h3>Activity</h3>
+          <span class="muted" id="dashStreak"></span>
+        </div>
+        <div class="calendar" id="dashCalendar"></div>
+      </div>
+    </section>
 
-  <!-- ---------- profile ---------- -->
-  <section id="view-profile" class="view" hidden>
-    <h2>Profile</h2>
-    <div id="profileBox" class="card"></div>
-  </section>
+    <!-- ======================= PROBLEMS ======================= -->
+    <section id="view-problems" class="view" hidden>
+      <div class="page-head">
+        <h1>Problems</h1>
+        <div class="search">
+          <input id="problemSearch" placeholder="Search problems…" autocomplete="off">
+        </div>
+      </div>
 
-  <!-- ---------- leaderboard ---------- -->
-  <section id="view-board" class="view" hidden>
-    <h2>Leaderboard</h2>
-    <div class="row filters">
-      <label>Scope
-        <select id="boardScope">
-          <option value="global">Global</option>
-          <option value="college">My college</option>
-          <option value="branch">My branch</option>
+      <div class="filters" id="problemFilters">
+        <select id="filterSubject"></select>
+        <select id="filterDifficulty">
+          <option value="">All difficulties</option>
+          <option>Easy</option><option>Medium</option><option>Hard</option>
         </select>
-      </label>
-      <label>Window
-        <select id="boardWindow">
-          <option value="alltime">All time</option>
-          <option value="week">Week</option>
-          <option value="month">Month</option>
-        </select>
-      </label>
-      <label>Ranking
-        <select id="boardRanking">
-          <option value="score">Score</option>
+        <select id="filterStatus">
+          <option value="">All statuses</option>
           <option value="solved">Solved</option>
-          <option value="streak">Streak</option>
+          <option value="attempted">Attempted</option>
+          <option value="unsolved">Unsolved</option>
         </select>
-      </label>
-      <button id="boardRefresh" class="ghost">Refresh</button>
-    </div>
-    <table class="table" id="boardTable">
-      <thead><tr><th>#</th><th>Name</th><th>Score</th><th>Solved</th><th>Streak</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </section>
+        <select id="filterType">
+          <option value="">All types</option>
+          <option value="MCQ">MCQ</option>
+          <option value="Text">Text</option>
+          <option value="Coding">Coding</option>
+        </select>
+        <select id="filterSort">
+          <option value="difficulty">Sort: difficulty</option>
+          <option value="title">Sort: title</option>
+          <option value="newest">Sort: list order</option>
+        </select>
+        <label class="check"><input type="checkbox" id="filterBookmarked"> Bookmarked only</label>
+      </div>
 
-  <!-- ---------- admin ---------- -->
-  <section id="view-admin" class="view" hidden>
-    <h2>Administration</h2>
-    <div id="adminStats" class="card"></div>
-    <h3>Users</h3>
-    <table class="table" id="usersTable">
-      <thead><tr><th>Email</th><th>Name</th><th>Role</th><th>Solved</th><th>Attempts</th></tr></thead>
-      <tbody></tbody>
-    </table>
-    <h3>Question bank</h3>
-    <table class="table" id="questionStatsTable">
-      <thead><tr><th>Subject</th><th>Easy</th><th>Medium</th><th>Hard</th><th>Total</th></tr></thead>
-      <tbody></tbody>
-    </table>
-  </section>
+      <div class="table-wrap">
+        <table class="table" id="problemTable">
+          <thead>
+            <tr>
+              <th class="col-status"></th>
+              <th>Title</th>
+              <th class="col-subject">Subject</th>
+              <th class="col-topic">Topic</th>
+              <th class="col-diff">Difficulty</th>
+              <th class="col-act"></th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <p class="muted center" id="problemCount"></p>
+    </section>
 
-</main>
+    <!-- ====================== PROBLEM DETAIL ====================== -->
+    <section id="view-problem" class="view" hidden>
+      <button class="ghost back" data-nav="problems">← All problems</button>
+      <div class="problem-head">
+        <h1 id="pTitle">Problem</h1>
+        <span class="pill" id="pDifficulty"></span>
+        <button class="ghost" id="pBookmark" type="button">☆ Bookmark</button>
+      </div>
+      <p class="muted" id="pMeta"></p>
 
-<footer class="foot">
-  <span id="backendNote"></span>
-</footer>
+      <div class="problem-body card">
+        <pre id="pText" class="problem-text"></pre>
+      </div>
+
+      <div class="editor-wrap">
+        <div class="editor-head">
+          <span class="muted">Your answer</span>
+          <span class="muted" id="pTypeNote"></span>
+        </div>
+        <textarea id="pAnswer" spellcheck="false" rows="10"></textarea>
+        <div class="row">
+          <button class="primary" id="pSubmit">Submit</button>
+          <button class="ghost" id="pClear">Clear</button>
+        </div>
+      </div>
+
+      <div id="pVerdict" class="verdict" hidden></div>
+      <div id="pSubmissions" class="panel" hidden>
+        <h3>Your submissions</h3>
+        <table class="table">
+          <thead><tr><th>Result</th><th>When</th><th>Answer</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ======================= SUBMISSIONS ======================= -->
+    <section id="view-submissions" class="view" hidden>
+      <div class="page-head"><h1>Submissions</h1></div>
+      <div class="table-wrap">
+        <table class="table" id="submissionTable">
+          <thead><tr><th>Result</th><th>Problem</th><th>Subject</th><th>Difficulty</th><th>When</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ====================== INTERVIEW ====================== -->
+    <section id="view-start" class="view" hidden>
+      <div class="page-head"><h1>Start an interview</h1></div>
+      <div class="form card">
+        <label>Course<select id="courseSelect"></select></label>
+        <label>Subject<select id="subjectSelect"></select></label>
+        <label>Mode
+          <select id="modeSelect">
+            <option value="Practice">Practice — 10 questions, linear ramp</option>
+            <option value="Mock">Mock interview — linear ramp</option>
+            <option value="Daily">Daily challenge — adaptive</option>
+          </select>
+        </label>
+        <button class="primary" id="beginBtn">Begin</button>
+        <p class="msg" id="startMsg"></p>
+      </div>
+    </section>
+
+    <section id="view-interview" class="view" hidden>
+      <div class="page-head"><h1 id="interviewTitle">Interview</h1></div>
+      <progress id="progress" max="100" value="0"></progress>
+      <div class="card question">
+        <p class="meta" id="questionMeta"></p>
+        <p class="qtext" id="questionText"></p>
+      </div>
+      <div class="form">
+        <label>Answer<input id="answerInput" autocomplete="off"></label>
+        <div class="row">
+          <button class="primary" id="answerSubmit">Submit</button>
+          <button class="ghost" type="button" id="skipBtn">Skip</button>
+          <button class="ghost" type="button" id="finishEarlyBtn">Finish early</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="view-report" class="view" hidden>
+      <div class="page-head"><h1>Report</h1></div>
+      <div id="reportBox" class="card"></div>
+      <div class="row">
+        <button class="primary" data-nav="start">Another interview</button>
+        <button class="ghost" data-nav="dashboard">Dashboard</button>
+      </div>
+    </section>
+
+    <!-- ======================= DAILY ======================= -->
+    <section id="view-daily" class="view" hidden>
+      <div class="page-head"><h1>Daily challenge</h1></div>
+      <p class="meta" id="dailyMeta"></p>
+      <div class="card question" id="dailyQuestion"></div>
+      <div class="form">
+        <label>Answer<input id="dailyAnswer" autocomplete="off"></label>
+        <button class="primary" id="dailySubmit">Submit</button>
+      </div>
+      <p class="msg" id="dailyResult"></p>
+    </section>
+
+    <!-- ====================== LEADERBOARD ====================== -->
+    <section id="view-board" class="view" hidden>
+      <div class="page-head"><h1>Leaderboard</h1></div>
+      <div class="filters">
+        <select id="boardScope"><option value="global">Global</option><option value="college">My college</option><option value="branch">My branch</option></select>
+        <select id="boardWindow"><option value="alltime">All time</option><option value="week">Week</option><option value="month">Month</option></select>
+        <select id="boardRanking"><option value="score">By score</option><option value="solved">By solved</option><option value="streak">By streak</option></select>
+      </div>
+      <div class="table-wrap">
+        <table class="table" id="boardTable">
+          <thead><tr><th>#</th><th>Name</th><th>Score</th><th>Solved</th><th>Streak</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ======================= PROFILE ======================= -->
+    <section id="view-profile" class="view" hidden>
+      <div class="page-head"><h1>Profile</h1></div>
+      <div class="card" id="profileCard"></div>
+      <div class="panel">
+        <div class="panel-head"><h3>Progress by subject</h3></div>
+        <div id="subjectProgress"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Activity — last 12 weeks</h3></div>
+        <div class="calendar" id="profileCalendar"></div>
+      </div>
+    </section>
+
+    <!-- ======================== ADMIN ======================== -->
+    <section id="view-admin" class="view" hidden>
+      <div class="page-head"><h1>Administration</h1></div>
+      <div class="cards" id="adminStats"></div>
+      <div class="panel"><h3>Users</h3><div class="table-wrap">
+        <table class="table" id="usersTable">
+          <thead><tr><th>Email</th><th>Name</th><th>Role</th><th>Solved</th><th>Attempts</th></tr></thead>
+          <tbody></tbody>
+        </table></div></div>
+      <div class="panel"><h3>Question bank</h3><div class="table-wrap">
+        <table class="table" id="questionStatsTable">
+          <thead><tr><th>Subject</th><th>Easy</th><th>Medium</th><th>Hard</th><th>Total</th></tr></thead>
+          <tbody></tbody>
+        </table></div></div>
+    </section>
+
+  </main>
+</div>
 
 <script src="/app.js"></script>
 </body>

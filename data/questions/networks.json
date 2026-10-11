@@ -1,0 +1,145 @@
+[
+  {
+    "id": "net_easy_1",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "In the OSI model, which layer handles routing between networks?",
+    "options": ["Network", "Transport", "Data link", "Session"],
+    "answer": 0,
+    "explanation": "The network layer performs logical addressing and routing; routers operate there."
+  },
+  {
+    "id": "net_easy_2",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which transport protocol is connection-oriented and reliable?",
+    "options": ["TCP", "UDP", "ICMP", "ARP"],
+    "answer": 0,
+    "explanation": "TCP provides sequencing, acknowledgements and retransmission; UDP is best-effort."
+  },
+  {
+    "id": "net_easy_3",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "How many bits are in an IPv4 address?",
+    "options": ["32", "64", "128", "16"],
+    "answer": 0,
+    "explanation": "IPv4 uses 32 bits, usually written as four dotted decimal octets."
+  },
+  {
+    "id": "net_easy_4",
+    "subject": "networks",
+    "topic": "protocols",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What does DNS do?",
+    "keywords": ["domain", "name", "ip", "resolve", "translate"],
+    "minKeywords": 2,
+    "explanation": "DNS translates human-readable domain names into IP addresses."
+  },
+  {
+    "id": "net_med_1",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "TCP's three-way handshake consists of:",
+    "options": ["SYN, SYN-ACK, ACK", "SYN, FIN, ACK", "SYN, ACK, RST", "GET, POST, OK"],
+    "answer": 0,
+    "explanation": "The client sends SYN, the server replies SYN-ACK, and the client completes with ACK."
+  },
+  {
+    "id": "net_med_2",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "In TCP congestion control, what does the slow-start threshold control after a loss?",
+    "keywords": ["ssthresh", "halve", "window", "avoidance", "multiplicative decrease"],
+    "minKeywords": 2,
+    "explanation": "On loss the threshold drops (typically to half the window) and the sender switches from exponential growth to linear AIMD."
+  },
+  {
+    "id": "net_med_3",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Which routing protocol is a link-state protocol?",
+    "options": ["OSPF", "RIP", "BGP", "EIGRP"],
+    "answer": 0,
+    "explanation": "OSPF floods link-state advertisements and runs Dijkstra; RIP is distance-vector and BGP is path-vector."
+  },
+  {
+    "id": "net_med_4",
+    "subject": "networks",
+    "topic": "layers",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is the difference between a switch and a router?",
+    "keywords": ["mac", "frame", "layer 2", "ip", "packet", "layer 3", "route"],
+    "minKeywords": 2,
+    "explanation": "A switch forwards frames using MAC addresses within a broadcast domain; a router forwards packets between networks using IP addresses."
+  },
+  {
+    "id": "net_hard_1",
+    "subject": "networks",
+    "topic": "congestion",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "What problem does the silly window syndrome describe?",
+    "options": ["Tiny segments from small receiver windows", "Oversized MTU frames", "Excessive ARP requests", "IP fragmentation of large datagrams"],
+    "answer": 0,
+    "explanation": "Small advertised windows cause senders to transmit small segments, wasting bandwidth and header overhead."
+  },
+  {
+    "id": "net_hard_2",
+    "subject": "networks",
+    "topic": "routing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Why can the count-to-infinity problem occur in distance-vector routing, and how does split horizon help?",
+    "keywords": ["loop", "stale", "neighbour", "advertise", "back", "infinite"],
+    "minKeywords": 2,
+    "explanation": "Nodes slowly converge upward on stale routes because they trust neighbours; split horizon stops advertising a route back to the neighbour it was learned from."
+  },
+  {
+    "id": "net_hard_3",
+    "subject": "networks",
+    "topic": "transport",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Implement a single-bit sliding window stop-and-wait sender loop that retransmits on timeout and accepts on ACK.",
+    "templateCode": "#include <iostream>\n#include <string>\n\n// Return true when the frame is acknowledged, retrying on timeout.\nbool sendWithRetries(const std::string& frame, int maxAttempts) {\n    // TODO: send frame, wait for ack, retransmit on timeout\n    return false;\n}\n\nint main() { std::cout << (sendWithRetries(\"data\", 3) ? \"ACK\" : \"FAIL\") << '\\n'; return 0; }\n",
+    "testCases": [
+      {
+        "input": "ack_immediately",
+        "expectedOutput": "ACK",
+        "isHidden": false
+      },
+      {
+        "input": "timeout_then_ack",
+        "expectedOutput": "ACK",
+        "isHidden": true
+      }
+    ],
+    "explanation": "A stop-and-wait sender keeps a timer and one outstanding frame, retransmitting the same sequence number until acknowledged."
+  },
+  {
+    "id": "net_hard_4",
+    "subject": "networks",
+    "topic": "addressing",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain CIDR and how it reduces the size of routing tables compared to classful addressing.",
+    "keywords": ["prefix", "aggregate", "subnet", "mask", "route summarisation"],
+    "minKeywords": 2,
+    "explanation": "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table."
+  }
+]

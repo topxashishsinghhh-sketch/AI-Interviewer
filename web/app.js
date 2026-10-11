@@ -1,8 +1,7 @@
 "use strict";
 
 // ---------------------------------------------------------------------------
-// API client. The only place the browser talks to the server; every call goes
-// through request() so the auth token and error handling stay in one spot.
+// API client. The only place the browser talks to the server.
 // ---------------------------------------------------------------------------
 
 const TOKEN_KEY = "ai_interviewer.token";
@@ -12,10 +11,11 @@ const state = {
   user: null,
   view: "login",
   registerMode: false,
-  courses: [],
+  catalog: null,
+  problems: [],
+  currentProblem: null,
   interviewId: null,
-  interviewTotal: 0,
-  dailyQuestionId: null
+  interviewTotal: 0
 };
 
 async function request(path, options = {}) {
@@ -36,32 +36,37 @@ async function request(path, options = {}) {
     try { payload = JSON.parse(text); } catch (parseError) { payload = null; }
   }
   if (!response.ok) {
-    const message = payload && payload.error ? payload.error : "Request failed (" + response.status + ")";
-    throw new Error(message);
+    throw new Error((payload && payload.error) || "Request failed (" + response.status + ")");
   }
   return payload;
 }
 
 // ---------------------------------------------------------------------------
-// Presentation helpers. No domain decisions here: this file only renders what
-// the API returns and forwards user input to the API.
+// Presentation helpers. No domain decisions here: this file renders what the
+// API returns and forwards input to the API.
 // ---------------------------------------------------------------------------
 
 const $ = (id) => document.getElementById(id);
 
-function show(view) {
-  state.view = view;
-  document.querySelectorAll(".view").forEach((section) => {
-    section.hidden = section.id !== "view-" + view;
-  });
-  document.querySelectorAll(".navbtn").forEach((button) => {
-    const active = button.dataset.view === view;
-    button.style.color = active ? "var(--accent)" : "";
-  });
-  if (view === "board") loadLeaderboard();
-  if (view === "profile") loadProfile();
-  if (view === "daily") loadDaily();
-  if (view === "admin") loadAdmin();
+const NAV_ITEMS = [
+  { group: "Practice" },
+  { id: "problems",  label: "Problems",     ico: "#" },
+  { id: "collections", label: "Study list", ico: "*" },
+  { id: "start",     label: "Interview",    ico: ">" },
+  { id: "daily",     label: "Daily",        ico: "!" },
+  { group: "Progress" },
+  { id: "dashboard", label: "Dashboard",    ico: "~" },
+  { id: "profile",   label: "Profile",      ico: "@" },
+  { id: "submissions", label: "Submissions", ico: "=" },
+  { id: "board",     label: "Leaderboard",  ico: "^" },
+  { group: "Admin" },
+  { id: "admin",     label: "Admin",        ico: "+" }
+];
+
+function escapeHtml(text) {
+  return String(text === null || text === undefined ? "" : text)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
 }
 
 function setMessage(id, message, kind) {
@@ -71,39 +76,116 @@ function setMessage(id, message, kind) {
   element.className = "msg" + (kind ? " " + kind : "");
 }
 
-function escapeHtml(text) {
-  return String(text === null || text === undefined ? "" : text)
-    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+function difficultyPill(difficulty) {
+  const key = String(difficulty || "").toLowerCase();
+  const cls = key === "easy" ? "easy" : key === "medium" ? "medium" : "hard";
+  return '<span class="pill ' + cls + '">' + escapeHtml(difficulty) + "</span>";
 }
 
-function renderNav() {
+function show(view) {
+  state.view = view;
+  document.querySelectorAll(".view").forEach((section) => {
+    section.hidden = section.id !== "view-" + view;
+  });
+  document.querySelectorAll(".side-item, .navbtn, [data-nav]").forEach((element) => {
+    if (element.dataset.nav) {
+      element.classList.toggle("active", element.dataset.nav === view);
+    }
+  });
+  renderSidebar();
+
+  if (view === "dashboard") loadDashboard();
+  if (view === "problems") loadProblems();
+  if (view === "submissions") loadSubmissions();
+  if (view === "profile") loadProfile();
+  if (view === "board") loadLeaderboard();
+  if (view === "daily") loadDaily();
+  if (view === "admin") loadAdmin();
+  if (view === "start") { loadCourses(); loadSubjects(); }
+}
+
+document.addEventListener("click", (event) => {
+  const trigger = event.target.closest("[data-nav]");
+  if (!trigger) return;
+  event.preventDefault();
+  const view = trigger.dataset.nav;
+  const authenticated = Boolean(state.user);
+  if (!authenticated && view !== "login") { show("login"); return; }
+  show(view);
+});
+
+function renderTopbar() {
   const nav = $("nav");
   nav.innerHTML = "";
-  const authenticated = Boolean(state.user);
-  const views = authenticated
-    ? ["dashboard", "start", "daily", "profile", "board", "admin"]
-    : ["login"];
-  for (const view of views) {
-    if (view === "admin" && !(state.user && state.user.role === "Admin")) continue;
+  if (state.user) {
+    const items = [
+      { id: "problems", label: "Problems" },
+      { id: "start", label: "Interview" },
+      { id: "daily", label: "Daily" },
+      { id: "board", label: "Leaderboard" }
+    ];
+    for (const item of items) {
+      const button = document.createElement("button");
+      button.className = "navbtn" + (state.view === item.id ? " active" : "");
+      button.dataset.nav = item.id;
+      button.textContent = item.label;
+      nav.appendChild(button);
+    }
+  } else {
     const button = document.createElement("button");
-    button.className = "navbtn";
-    button.dataset.view = view;
-    button.textContent = view === "login" ? "Sign in" : view === "board" ? "Leaderboard" : view[0].toUpperCase() + view.slice(1);
-    button.addEventListener("click", () => show(view));
+    button.className = "navbtn active";
+    button.dataset.nav = "login";
+    button.textContent = "Sign in";
     nav.appendChild(button);
   }
 
-  const signOut = document.createElement("button");
-  signOut.className = "navbtn";
-  signOut.textContent = "Sign out";
-  signOut.addEventListener("click", signOutUser);
-  if (authenticated) nav.appendChild(signOut);
+  const who = $("who");
+  who.innerHTML = "";
+  if (state.user) {
+    const label = document.createElement("span");
+    label.textContent = state.user.name + " · " + state.user.role;
+    const out = document.createElement("button");
+    out.className = "ghost";
+    out.textContent = "Sign out";
+    out.addEventListener("click", signOut);
+    who.appendChild(label);
+    who.appendChild(out);
+  }
 
-  $("who").textContent = authenticated
-    ? state.user.name + " (" + state.user.role + ")"
-    : "";
-  $("adminTile").hidden = !(state.user && state.user.role === "Admin");
+  const adminEntry = NAV_ITEMS.find((item) => item.id === "admin");
+  if (adminEntry) adminEntry.hidden = !(state.user && state.user.role === "Admin");
+}
+
+function renderSidebar() {
+  const sidebar = $("sidebar");
+  sidebar.innerHTML = "";
+  if (!state.user) { sidebar.hidden = true; return; }
+  sidebar.hidden = false;
+
+  for (const item of NAV_ITEMS) {
+    if (item.hidden) continue;
+    if (item.group) {
+      const label = document.createElement("p");
+      label.className = "side-label";
+      label.textContent = item.group;
+      sidebar.appendChild(label);
+      continue;
+    }
+    if (item.id === "admin" && !(state.user && state.user.role === "Admin")) continue;
+
+    const button = document.createElement("button");
+    button.className = "side-item" + (state.view === item.id ? " active" : "");
+    button.dataset.nav = item.id;
+    let suffix = "";
+    if (item.id === "submissions" && state.stats) {
+      suffix = "<span class='count'>" + state.stats.attempts + "</span>";
+    } else if (item.id === "problems" && state.stats) {
+      suffix = "<span class='count'>" + state.problemsLoaded + "</span>";
+    }
+    button.innerHTML = "<span class='ico'>" + item.ico + "</span>" + escapeHtml(item.label) + suffix;
+    sidebar.appendChild(button);
+  }
+  renderTopbar();
 }
 
 // ---------------------------------------------------------------------------
@@ -112,7 +194,10 @@ function renderNav() {
 
 function toggleAuthMode() {
   state.registerMode = !state.registerMode;
-  $("authTitle").textContent = state.registerMode ? "Create an account" : "Sign in";
+  $("authTitle").textContent = state.registerMode ? "Create your account" : "Sign in";
+  $("authSub").textContent = state.registerMode
+    ? "Track solved problems, streaks and rankings."
+    : "Continue to the practice platform.";
   $("authSubmit").textContent = state.registerMode ? "Register" : "Sign in";
   $("authMode").textContent = state.registerMode ? "Have an account? Sign in" : "Need an account? Register";
   $("registerFields").hidden = !state.registerMode;
@@ -124,14 +209,15 @@ $("authMode").addEventListener("click", toggleAuthMode);
 $("authForm").addEventListener("submit", async (event) => {
   event.preventDefault();
   const form = event.target;
-  const body = {
-    email: form.email.value.trim(),
-    password: form.password.value
-  };
+  const body = { email: form.email.value.trim(), password: form.password.value };
   if (state.registerMode) {
-    body.name = form.name.value.trim() || body.email;
+    body.name = form.name.value.trim() || body.email.split("@")[0];
     body.college = form.college.value.trim() || "Unspecified";
     body.branch = form.branch.value.trim() || "Unspecified";
+  }
+  if (!body.email || !body.password) {
+    setMessage("authMsg", "Email and password are required.", "error");
+    return;
   }
 
   setMessage("authMsg", "Working…");
@@ -139,41 +225,325 @@ $("authForm").addEventListener("submit", async (event) => {
     const payload = state.registerMode
       ? await request("/api/register", { method: "POST", body: JSON.stringify(body) })
       : await request("/api/login", { method: "POST", body: JSON.stringify(body) });
-
     state.token = payload.token;
     state.user = payload.user;
     sessionStorage.setItem(TOKEN_KEY, state.token);
     form.reset();
-    setMessage("authMsg", "Welcome, " + payload.user.name, "good");
-    renderNav();
+    state.registerMode = false;
+    toggleAuthMode();
+    await loadStats();
     show("dashboard");
-    await loadCourses();
   } catch (error) {
     setMessage("authMsg", error.message, "error");
   }
 });
 
-async function signOutUser() {
+async function signOut() {
   try { await request("/api/logout", { method: "POST" }); } catch (error) { /* ignore */ }
   state.token = "";
   state.user = null;
-  state.interviewId = null;
+  state.stats = null;
+  state.problemsLoaded = 0;
   sessionStorage.removeItem(TOKEN_KEY);
-  renderNav();
   show("login");
-  setMessage("authMsg", "");
 }
 
 // ---------------------------------------------------------------------------
-// Catalogue + interview setup
+// Shared data
+// ---------------------------------------------------------------------------
+
+async function loadStats() {
+  try {
+    state.stats = await request("/api/stats/me");
+  } catch (error) {
+    state.stats = null;
+  }
+}
+
+async function loadCatalog() {
+  if (state.catalog) return state.catalog;
+  state.catalog = await request("/api/catalog");
+  return state.catalog;
+}
+
+// ---------------------------------------------------------------------------
+// Dashboard
+// ---------------------------------------------------------------------------
+
+async function loadDashboard() {
+  await loadStats();
+  const stats = state.stats || { solved: { total: 0 }, available: { total: 0 } };
+
+  const solved = stats.solved || {};
+  const available = stats.available || {};
+  const solvedTotals = [solved.easy || 0, solved.medium || 0, solved.hard || 0];
+  const availTotals = [available.easy || 0, available.medium || 0, available.hard || 0];
+  const pct = (a, b) => (b > 0 ? Math.round((a / b) * 100) : 0);
+  const acceptance = stats.acceptancePermille
+    ? (stats.acceptancePermille / 10).toFixed(1) + "%"
+    : "—";
+
+  $("dashCards").innerHTML = [
+    statCard(solvedTotals[0] + "/" + availTotals[0], "Easy solved"),
+    statCard(solvedTotals[1] + "/" + availTotals[1], "Medium solved"),
+    statCard(solvedTotals[2] + "/" + availTotals[2], "Hard solved"),
+    statCard(solved.total || 0, "Total solved"),
+    statCard(stats.attempts || 0, "Submissions"),
+    statCard(acceptance, "Acceptance"),
+    statCard(stats.streak || 0, "Current streak")
+  ].join("");
+
+  $("dashStreak").textContent = (stats.streak || 0) + " day streak · longest " + (stats.longestStreak || 0);
+
+  // Recommended: unsolved, easiest first.
+  const problems = await request("/api/problems?status=unsolved&sort=difficulty&limit=6");
+  const list = $("recommendList");
+  list.innerHTML = problems.length
+    ? problems.slice(0, 6).map((problem) =>
+        '<li><a data-problem="' + escapeHtml(problem.id) + '">' +
+        difficultyPill(problem.difficulty) + "<span>" + escapeHtml(problem.text) + "</span></a></li>"
+      ).join("")
+    : '<li class="empty">You have solved everything available. Nice work.</li>';
+
+  renderCalendar($("dashCalendar"), stats.activeDates || []);
+}
+
+function statCard(value, label) {
+  return '<div class="stat"><b>' + escapeHtml(value) + "</b><span>" + escapeHtml(label) + "</span></div>";
+}
+
+function renderCalendar(element, activeDates) {
+  if (!element) return;
+  const active = new Set(activeDates || []);
+  const weeks = 18;
+  const end = new Date();
+  const start = new Date(end);
+  start.setDate(start.getDate() - weeks * 7 + 1);
+  start.setDate(start.getDate() - start.getDay()); // back to Sunday
+
+  const todayKey = localKey(end);
+  let html = "";
+  const cursor = new Date(start);
+  while (cursor <= end) {
+    const key = localKey(cursor);
+    const isActive = active.has(key);
+    let cls = "cal-cell";
+    if (isActive) cls += " l3";
+    if (key === todayKey) cls += " today";
+    html += '<span class="' + cls + '" data-tip="' + key + '"></span>';
+    cursor.setDate(cursor.getDate() + 1);
+  }
+  element.innerHTML = html +
+    '<div class="cal-legend"><span>Less</span>' +
+    '<span class="cal-cell"></span><span class="cal-cell l1"></span>' +
+    '<span class="cal-cell l2"></span><span class="cal-cell l3"></span>' +
+    '<span class="cal-cell l4"></span><span>More</span></div>';
+}
+
+function localKey(date) {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return y + "-" + m + "-" + d;
+}
+
+// ---------------------------------------------------------------------------
+// Problems list
+// ---------------------------------------------------------------------------
+
+async function fillFilters() {
+  const catalog = await loadCatalog();
+  const subject = $("filterSubject");
+  subject.innerHTML = '<option value="">All subjects</option>' +
+    catalog.subjects.map((s) =>
+      '<option value="' + escapeHtml(s.id) + '">' + escapeHtml(s.id) + " (" + s.total + ")</option>"
+    ).join("");
+}
+
+async function loadProblems() {
+  await fillFilters();
+  const params = new URLSearchParams();
+  if ($("filterSubject").value) params.set("subject", $("filterSubject").value);
+  if ($("filterDifficulty").value) params.set("difficulty", $("filterDifficulty").value);
+  if ($("filterStatus").value) params.set("status", $("filterStatus").value);
+  if ($("filterType").value) params.set("type", $("filterType").value);
+  if ($("filterSort").value) params.set("sort", $("filterSort").value);
+  if ($("filterBookmarked").checked) params.set("bookmarked", "1");
+  const search = $("problemSearch").value.trim();
+  if (search) params.set("q", search);
+
+  let problems;
+  try {
+    problems = await request("/api/problems?" + params.toString());
+  } catch (error) {
+    $("problemCount").textContent = error.message;
+    return;
+  }
+  state.problems = problems;
+  state.problemsLoaded = problems.length;
+
+  const body = $("problemTable").querySelector("tbody");
+  body.innerHTML = problems.map((problem) =>
+    "<tr>" +
+      '<td class="col-status">' + (problem.solved ? '<span class="tick">✓</span>' : '<span class="tick pending">○</span>') + "</td>" +
+      '<td><span class="link" data-problem="' + escapeHtml(problem.id) + '">' + escapeHtml(problem.text) + "</span>" +
+        (problem.bookmarked ? ' <span style="color:var(--medium)">★</span>' : "") + "</td>" +
+      '<td class="col-subject muted">' + escapeHtml(problem.subject) + "</td>" +
+      '<td class="col-topic muted">' + escapeHtml(problem.topic) + "</td>" +
+      '<td class="col-diff">' + difficultyPill(problem.difficulty) + "</td>" +
+      '<td class="col-act muted">' + (problem.attempts > 0 ? problem.attempts + "×" : "") + "</td>" +
+    "</tr>"
+  ).join("") || '<tr><td colspan="6" class="muted">No problems match those filters.</td></tr>';
+
+  const counts = { Easy: 0, Medium: 0, Hard: 0 };
+  problems.forEach((p) => { if (counts[p.difficulty] !== undefined) counts[p.difficulty]++; });
+  $("problemCount").textContent =
+    problems.length + " problems · " + counts.Easy + " easy / " + counts.Medium +
+    " medium / " + counts.Hard + " hard";
+
+  renderSidebar();
+}
+
+for (const id of ["filterSubject", "filterDifficulty", "filterStatus", "filterType",
+                  "filterSort", "filterBookmarked"]) {
+  $(id).addEventListener("change", loadProblems);
+}
+let searchTimer = null;
+$("problemSearch").addEventListener("input", () => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(loadProblems, 220);
+});
+
+// ---------------------------------------------------------------------------
+// Problem detail
+// ---------------------------------------------------------------------------
+
+document.addEventListener("click", async (event) => {
+  const link = event.target.closest("[data-problem]");
+  if (!link) return;
+  event.preventDefault();
+  openProblem(link.dataset.problem);
+});
+
+async function openProblem(id) {
+  try {
+    const problem = await request("/api/problems/" + encodeURIComponent(id));
+    state.currentProblem = problem;
+    $("pTitle").textContent = problem.title || problem.id;
+    $("pDifficulty").className = "pill " + String(problem.difficulty).toLowerCase();
+    $("pDifficulty").textContent = problem.difficulty;
+    $("pMeta").textContent = problem.subject + " · " + problem.topic + " · " + problem.type;
+    $("pText").textContent = problem.text || "";
+    $("pAnswer").value = "";
+    $("pTypeNote").textContent =
+      problem.type === "MCQ" ? "Enter the option letter (A, B, C, D)"
+      : problem.type === "Coding" ? "Paste your solution"
+      : "Type your answer";
+    $("pVerdict").hidden = true;
+    $("pSubmissions").hidden = true;
+    setBookmarkButton(problem.bookmarked);
+    show("problem");
+    await loadProblemSubmissions(id);
+  } catch (error) {
+    setMessage("startMsg", error.message, "error");
+  }
+}
+
+function setBookmarkButton(bookmarked) {
+  const button = $("pBookmark");
+  button.textContent = bookmarked ? "★ Bookmarked" : "☆ Bookmark";
+  button.classList.toggle("active", Boolean(bookmarked));
+}
+
+$("pBookmark").addEventListener("click", async () => {
+  const problem = state.currentProblem;
+  if (!problem) return;
+  try {
+    const result = await request("/api/problems/" + encodeURIComponent(problem.id) + "/bookmark",
+      { method: "POST" });
+    problem.bookmarked = result.bookmarked;
+    setBookmarkButton(result.bookmarked);
+    await loadStats();
+  } catch (error) {
+    setMessage("startMsg", error.message, "error");
+  }
+});
+
+$("pClear").addEventListener("click", () => { $("pAnswer").value = ""; $("pAnswer").focus(); });
+
+$("pSubmit").addEventListener("click", async () => {
+  const problem = state.currentProblem;
+  if (!problem) return;
+  const answer = $("pAnswer").value.trim();
+  if (!answer) {
+    setMessage("startMsg", "Write an answer first.", "error");
+    return;
+  }
+  $("pSubmit").disabled = true;
+  try {
+    const result = await request("/api/problems/" + encodeURIComponent(problem.id) + "/solve",
+      { method: "POST", body: JSON.stringify({ answer }) });
+    const verdict = $("pVerdict");
+    verdict.hidden = false;
+    verdict.className = "verdict " + (result.correct ? "ok" : "bad");
+    verdict.innerHTML =
+      "<b>" + (result.correct ? "Accepted" : "Wrong answer") + "</b>" +
+      escapeHtml(result.feedback || "");
+    if (result.stats) state.stats = result.stats;
+    problem.solved = problem.solved || result.correct;
+    problem.attempts = (problem.attempts || 0) + 1;
+    await loadProblemSubmissions(problem.id);
+    renderSidebar();
+  } catch (error) {
+    setMessage("startMsg", error.message, "error");
+  } finally {
+    $("pSubmit").disabled = false;
+  }
+});
+
+async function loadProblemSubmissions(id) {
+  try {
+    const rows = await request("/api/problems/" + encodeURIComponent(id) + "/submissions");
+    const body = $("pSubmissions").querySelector("tbody");
+    $("pSubmissions").hidden = rows.length === 0;
+    body.innerHTML = rows.map((row) =>
+      "<tr><td>" + (row.correct ? '<span class="pill ok">Accepted</span>' : '<span class="pill bad">Wrong</span>') + "</td>" +
+      "<td class='muted'>" + escapeHtml(row.submittedAt) + "</td>" +
+      "<td class='muted'>" + escapeHtml(String(row.answer).slice(0, 40)) + "</td></tr>"
+    ).join("");
+  } catch (error) { /* submissions are optional */ }
+}
+
+// ---------------------------------------------------------------------------
+// Submissions history
+// ---------------------------------------------------------------------------
+
+async function loadSubmissions() {
+  try {
+    const rows = await request("/api/submissions?limit=100");
+    const body = $("submissionTable").querySelector("tbody");
+    body.innerHTML = rows.map((row) =>
+      "<tr><td>" + (row.correct ? '<span class="pill ok">Accepted</span>' : '<span class="pill bad">Wrong</span>') + "</td>" +
+      '<td><span class="link" data-problem="' + escapeHtml(row.questionId) + '">' + escapeHtml(row.title || row.questionId) + "</span></td>" +
+      '<td class="muted">' + escapeHtml(row.subject) + "</td>" +
+      "<td>" + difficultyPill(row.difficulty) + "</td>" +
+      '<td class="muted">' + escapeHtml(row.submittedAt) + "</td></tr>"
+    ).join("") || '<tr><td colspan="5" class="muted">No submissions yet.</td></tr>';
+  } catch (error) {
+    setMessage("problemCount", error.message, "error");
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Interview (10-question session)
 // ---------------------------------------------------------------------------
 
 async function loadCourses() {
   try {
-    state.courses = await request("/api/courses");
+    const courses = await request("/api/courses");
     const select = $("courseSelect");
     select.innerHTML = "";
-    for (const course of state.courses) {
+    for (const course of courses) {
       const option = document.createElement("option");
       option.value = course.id;
       option.textContent = course.name;
@@ -193,10 +563,10 @@ async function loadSubjects() {
     const select = $("subjectSelect");
     select.innerHTML = "";
     for (const subject of subjects) {
-      if (!subject.questionCount) continue; // nothing to interview on yet
+      if (!subject.questionCount) continue;
       const option = document.createElement("option");
       option.value = subject.id;
-      option.textContent = subject.name;
+      option.textContent = subject.name + " (" + subject.questionCount + ")";
       select.appendChild(option);
     }
     setMessage("startMsg", "");
@@ -210,122 +580,77 @@ $("courseSelect").addEventListener("change", loadSubjects);
 $("beginBtn").addEventListener("click", async () => {
   const subject = $("subjectSelect").value;
   const mode = $("modeSelect").value;
-  if (!subject) {
-    setMessage("startMsg", "This course has no interviewable subjects yet.", "error");
-    return;
-  }
+  if (!subject) { setMessage("startMsg", "No subject has questions yet.", "error"); return; }
   setMessage("startMsg", "Starting…");
   try {
-    const session = await request("/api/interviews", {
-      method: "POST",
-      body: JSON.stringify({ subject, mode })
-    });
+    const session = await request("/api/interviews",
+      { method: "POST", body: JSON.stringify({ subject, mode }) });
     state.interviewId = session.id;
     state.interviewTotal = session.total;
     $("interviewTitle").textContent = mode + " interview";
     show("interview");
     renderQuestion(session);
-    setMessage("startMsg", "");
   } catch (error) {
     setMessage("startMsg", error.message, "error");
   }
 });
 
 function renderQuestion(session) {
-  if (!session.question) {
-    show("report");
-    return;
-  }
+  if (!session.question) { finishInterview(); return; }
   $("questionMeta").textContent =
     "Question " + (session.answered + 1) + " of " + session.total +
-    " · " + (session.question.difficulty || "") + " · " + (session.question.topic || "");
+    " · " + session.question.difficulty + " · " + session.question.topic;
   $("questionText").textContent = session.question.text || "";
   $("answerInput").value = "";
   $("answerInput").focus();
-  $("progress").value = session.answered;
   $("progress").max = session.total;
+  $("progress").value = session.answered;
 }
 
-$("answerForm").addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const answer = $("answerInput").value.trim();
-  if (!answer || !state.interviewId) return;
-  try {
-    const session = await request("/api/interviews/" + state.interviewId + "/answers", {
-      method: "POST",
-      body: JSON.stringify({ answer })
-    });
-    if (session.finished) {
-      await finishInterview();
-      return;
-    }
-    renderQuestion(session);
-  } catch (error) {
-    setMessage("questionText", error.message);
-  }
-});
-
-$("skipBtn").addEventListener("click", async () => {
+async function answerInterview(skip) {
   if (!state.interviewId) return;
+  const answer = skip ? "" : $("answerInput").value.trim();
+  if (!skip && !answer) return;
   try {
-    const session = await request("/api/interviews/" + state.interviewId + "/answers", {
-      method: "POST",
-      body: JSON.stringify({ skip: 1 })
-    });
-    if (session.finished) {
-      await finishInterview();
-      return;
-    }
+    const session = await request("/api/interviews/" + state.interviewId + "/answers",
+      { method: "POST", body: JSON.stringify(skip ? { skip: 1 } : { answer }) });
+    if (session.finished) { await finishInterview(); return; }
     renderQuestion(session);
   } catch (error) {
-    setMessage("questionText", error.message);
+    $("questionText").textContent = error.message;
   }
-});
+}
 
+$("answerSubmit").addEventListener("click", () => answerInterview(false));
+$("skipBtn").addEventListener("click", () => answerInterview(true));
 $("finishEarlyBtn").addEventListener("click", finishInterview);
 
 async function finishInterview() {
-  if (!state.interviewId) {
-    show("report");
-    return;
-  }
+  if (!state.interviewId) { show("report"); return; }
   try {
-    const payload = await request("/api/interviews/" + state.interviewId + "/finish", {
-      method: "POST"
-    });
+    const payload = await request("/api/interviews/" + state.interviewId + "/finish",
+      { method: "POST" });
     state.interviewId = null;
     renderReport(payload);
     show("report");
   } catch (error) {
-    show("report");
     $("reportBox").textContent = error.message;
+    show("report");
   }
 }
 
 function renderReport(payload) {
   const report = payload.report || {};
   const percent = ((report.overallScore || 0) * 100).toFixed(1);
-  const parts = [];
-  parts.push("<div class='stats'>");
-  parts.push("<div class='stat'><b>" + percent + "%</b><span>Overall score</span></div>");
-  parts.push("<div class='stat'><b>" + escapeHtml(report.strongestTopic || "-") + "</b><span>Strongest</span></div>");
-  parts.push("<div class='stat'><b>" + escapeHtml(report.weakestTopic || "-") + "</b><span>Weakest</span></div>");
-  parts.push("<div class='stat'><b>" + (payload.streak || 0) + "</b><span>Streak (days)</span></div>");
-  parts.push("</div>");
-
-  const tips = (report.tips || []).map((tip) => "<li>" + escapeHtml(tip) + "</li>").join("");
-  parts.push("<h3>Tips</h3><ul>" + tips + "</ul>");
-
-  const wrong = (report.wrongAnswers || []).map(
-    (item) => "<li>" + escapeHtml(item.questionId) + " — you said " + escapeHtml(item.answer) + "</li>"
-  ).join("");
-  if (wrong) parts.push("<h3>Review</h3><ul>" + wrong + "</ul>");
-
-  $("reportBox").innerHTML = parts.join("");
+  $("reportBox").innerHTML =
+    "<div class='cards'>" +
+    statCard(percent + "%", "Overall score") +
+    statCard(escapeHtml(report.strongestTopic || "-"), "Strongest") +
+    statCard(escapeHtml(report.weakestTopic || "-"), "Weakest") +
+    statCard(payload.streak || 0, "Streak") +
+    "</div><h3>Tips</h3><ul>" +
+    (report.tips || []).map(t => "<li>" + escapeHtml(t) + "</li>").join("") + "</ul>";
 }
-
-$("againBtn").addEventListener("click", () => { show("start"); loadSubjects(); });
-$("reportHomeBtn").addEventListener("click", () => show("dashboard"));
 
 // ---------------------------------------------------------------------------
 // Daily challenge
@@ -335,64 +660,36 @@ async function loadDaily() {
   $("dailyResult").textContent = "";
   try {
     const challenge = await request("/api/daily-challenge");
-    state.dailyQuestionId = challenge.question ? challenge.question.id : null;
-    $("dailyMeta").textContent = "For " + challenge.date + " · worth " + challenge.bonusPoints + " bonus points";
+    $("dailyMeta").textContent = challenge.date + " · worth " + challenge.bonusPoints + " bonus points";
     $("dailyQuestion").innerHTML = challenge.question
-      ? "<p class='meta'>" + escapeHtml(challenge.question.difficulty) + " · " + escapeHtml(challenge.question.topic) + "</p>" +
-        "<p class='qtext'>" + escapeHtml(challenge.question.text) + "</p>"
-      : "<p>No question today.</p>";
+      ? "<p class='meta'>" + difficultyPill(challenge.question.difficulty) + " " +
+        escapeHtml(challenge.question.topic) + "</p><p class='qtext'>" +
+        escapeHtml(challenge.question.text) + "</p>"
+      : "<p class='muted'>No question today.</p>";
+    state.dailyQuestionId = challenge.question ? challenge.question.id : null;
   } catch (error) {
     $("dailyMeta").textContent = error.message;
   }
 }
 
-$("dailyForm").addEventListener("submit", async (event) => {
-  event.preventDefault();
+$("dailySubmit").addEventListener("click", async () => {
   const answer = $("dailyAnswer").value.trim();
   if (!answer) return;
   try {
-    const session = await request("/api/interviews", {
-      method: "POST",
-      body: JSON.stringify({ subject: (state.dailyQuestionId || ""), mode: "Daily" })
-    });
-    const answered = await request("/api/interviews/" + session.id + "/answers", {
-      method: "POST",
-      body: JSON.stringify({ answer })
-    });
+    const challenge = await request("/api/daily-challenge");
+    const session = await request("/api/interviews",
+      { method: "POST", body: JSON.stringify({ subject: challenge.question.subject, mode: "Daily" }) });
+    await request("/api/interviews/" + session.id + "/answers",
+      { method: "POST", body: JSON.stringify({ answer }) });
     const payload = await request("/api/interviews/" + session.id + "/finish", { method: "POST" });
-    $("dailyResult").textContent =
-      "Score " + (((payload.report || {}).overallScore || 0) * 100).toFixed(1) + "% · streak " + payload.streak + " day(s)";
+    $("dailyResult").textContent = "Score " + (((payload.report || {}).overallScore || 0) * 100).toFixed(1) +
+      "% · streak " + payload.streak + " day(s)";
     $("dailyAnswer").value = "";
+    await loadStats();
   } catch (error) {
     $("dailyResult").textContent = error.message;
   }
 });
-
-// ---------------------------------------------------------------------------
-// Profile
-// ---------------------------------------------------------------------------
-
-async function loadProfile() {
-  try {
-    const user = await request("/api/me");
-    state.user = user;
-    renderNav();
-    const badges = (user.badges || []).length
-      ? (user.badges || []).join(", ")
-      : "None yet";
-    $("profileBox").innerHTML =
-      "<div class='stats'>" +
-      "<div class='stat'><b>" + escapeHtml(user.name) + "</b><span>" + escapeHtml(user.email) + "</span></div>" +
-      "<div class='stat'><b>" + (user.streak || 0) + "</b><span>Current streak</span></div>" +
-      "<div class='stat'><b>" + (user.longestStreak || 0) + "</b><span>Longest streak</span></div>" +
-      "<div class='stat'><b>" + (user.totalSolved || 0) + "</b><span>Solved</span></div>" +
-      "<div class='stat'><b>" + (user.totalAttempts || 0) + "</b><span>Attempts</span></div>" +
-      "<div class='stat'><b>" + escapeHtml(user.college || "-") + "</b><span>College</span></div>" +
-      "</div><p class='meta'>Badges: " + escapeHtml(badges) + "</p>";
-  } catch (error) {
-    $("profileBox").textContent = error.message;
-  }
-}
 
 // ---------------------------------------------------------------------------
 // Leaderboard
@@ -407,21 +704,61 @@ async function loadLeaderboard() {
   try {
     const rows = await request("/api/leaderboard?" + params.toString());
     const body = $("boardTable").querySelector("tbody");
-    body.innerHTML = rows.map((entry) =>
-      "<tr><td>" + entry.rank + "</td><td>" + escapeHtml(entry.name) + "</td><td>" +
-      entry.score.toFixed(2) + "</td><td>" + entry.solved + "</td><td>" + entry.streak + "</td></tr>"
-    ).join("");
-    if (!rows.length) body.innerHTML = "<tr><td colspan='5'>No scores yet.</td></tr>";
+    body.innerHTML = rows.map(row =>
+      "<tr><td class='muted'>" + row.rank + "</td><td>" + escapeHtml(row.name) + "</td><td>" +
+      row.score.toFixed(2) + "</td><td>" + row.solved + "</td><td>" + row.streak + "</td></tr>"
+    ).join("") || '<tr><td colspan="5" class="muted">No scores yet.</td></tr>';
   } catch (error) {
-    const body = $("boardTable").querySelector("tbody");
-    body.innerHTML = "<tr><td colspan='5'>" + escapeHtml(error.message) + "</td></tr>";
+    setMessage("problemCount", error.message, "error");
   }
 }
 
-$("boardRefresh").addEventListener("click", loadLeaderboard);
-$("boardScope").addEventListener("change", loadLeaderboard);
-$("boardWindow").addEventListener("change", loadLeaderboard);
-$("boardRanking").addEventListener("change", loadLeaderboard);
+for (const id of ["boardScope", "boardWindow", "boardRanking"]) {
+  $(id).addEventListener("change", loadLeaderboard);
+}
+
+// ---------------------------------------------------------------------------
+// Profile
+// ---------------------------------------------------------------------------
+
+async function loadProfile() {
+  await loadStats();
+  const user = await request("/api/me");
+  const stats = state.stats || { solved: { total: 0 }, available: { total: 0 } };
+  const badges = (user.badges || []).length ? user.badges.join(", ") : "None yet";
+
+  $("profileCard").innerHTML =
+    "<div class='cards'>" +
+    statCard(user.name, "Name") +
+    statCard(user.role, "Role") +
+    statCard(stats.solved.total || 0, "Solved") +
+    statCard(stats.attempts || 0, "Submissions") +
+    statCard(stats.streak || 0, "Streak") +
+    statCard(stats.longestStreak || 0, "Longest") +
+    "</div><p class='muted'>" + escapeHtml(user.email) + " · " + escapeHtml(user.college) +
+    " · " + escapeHtml(user.branch) + "</p><p class='muted'>Badges: " + escapeHtml(badges) + "</p>";
+
+  const rows = stats.bySubject || [];
+
+  // Per-subject solved counts come from the problems endpoint so the bars are
+  // accurate rather than re-deriving them client-side.
+  const problems = await request("/api/problems");
+  const solvedBySubject = {};
+  problems.forEach(p => {
+    if (!p.solved) return;
+    solvedBySubject[p.subject] = (solvedBySubject[p.subject] || 0) + 1;
+  });
+
+  $("subjectProgress").innerHTML = rows.map(row => {
+    const done = solvedBySubject[row.subject] || 0;
+    const pct = row.total > 0 ? Math.round((done / row.total) * 100) : 0;
+    return '<div class="bar-row"><span>' + escapeHtml(row.subject) + "</span>" +
+      '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%"></div></div>' +
+      '<span class="bar-num">' + done + "/" + row.total + "</span></div>";
+  }).join("") || '<p class="muted">No subjects yet.</p>';
+
+  renderCalendar($("profileCalendar"), stats.activeDates || []);
+}
 
 // ---------------------------------------------------------------------------
 // Admin
@@ -430,30 +767,29 @@ $("boardRanking").addEventListener("change", loadLeaderboard);
 async function loadAdmin() {
   try {
     const stats = await request("/api/admin/stats");
-    $("adminStats").innerHTML =
-      "<div class='stats'>" +
-      "<div class='stat'><b>" + stats.totalUsers + "</b><span>Users</span></div>" +
-      "<div class='stat'><b>" + stats.students + "</b><span>Students</span></div>" +
-      "<div class='stat'><b>" + stats.admins + "</b><span>Admins</span></div>" +
-      "<div class='stat'><b>" + stats.totalQuestions + "</b><span>Questions</span></div>" +
-      "<div class='stat'><b>" + stats.totalAttempts + "</b><span>Attempts</span></div>" +
-      "<div class='stat'><b>" + stats.averageScore.toFixed(2) + "</b><span>Average score</span></div>" +
-      "<div class='stat'><b>" + stats.activeStreaks + "</b><span>Active streaks</span></div>" +
-      "</div>";
+    $("adminStats").innerHTML = [
+      statCard(stats.totalUsers, "Users"),
+      statCard(stats.students, "Students"),
+      statCard(stats.admins, "Admins"),
+      statCard(stats.totalQuestions, "Questions"),
+      statCard(stats.totalAttempts, "Attempts"),
+      statCard((stats.averageScore || 0).toFixed(2), "Average score"),
+      statCard(stats.activeStreaks, "Active streaks")
+    ].join("");
 
     const users = await request("/api/admin/users");
-    $("usersTable").querySelector("tbody").innerHTML = users.map((user) =>
-      "<tr><td>" + escapeHtml(user.email) + "</td><td>" + escapeHtml(user.name) + "</td><td>" +
-      escapeHtml(user.role) + "</td><td>" + (user.solved || 0) + "</td><td>" + (user.attempts || 0) + "</td></tr>"
+    $("usersTable").querySelector("tbody").innerHTML = users.map(u =>
+      "<tr><td>" + escapeHtml(u.email) + "</td><td>" + escapeHtml(u.name) + "</td><td>" +
+      escapeHtml(u.role) + "</td><td>" + (u.solved || 0) + "</td><td>" + (u.attempts || 0) + "</td></tr>"
     ).join("");
 
     const questions = await request("/api/admin/questions");
-    $("questionStatsTable").querySelector("tbody").innerHTML = questions.map((row) =>
-      "<tr><td>" + escapeHtml(row.subject) + "</td><td>" + row.easy + "</td><td>" + row.medium +
-      "</td><td>" + row.hard + "</td><td>" + row.total + "</td></tr>"
+    $("questionStatsTable").querySelector("tbody").innerHTML = questions.map(q =>
+      "<tr><td>" + escapeHtml(q.subject) + "</td><td>" + q.easy + "</td><td>" + q.medium +
+      "</td><td>" + q.hard + "</td><td>" + q.total + "</td></tr>"
     ).join("");
   } catch (error) {
-    $("adminStats").textContent = error.message;
+    setMessage("problemCount", error.message, "error");
   }
 }
 
@@ -461,19 +797,15 @@ async function loadAdmin() {
 // Bootstrap
 // ---------------------------------------------------------------------------
 
-document.querySelectorAll("[data-view]").forEach((button) => {
-  button.addEventListener("click", () => show(button.dataset.view));
-});
-
 (async function init() {
-  $("backendNote").textContent = "Backend: " + (window.location.protocol === "https:" ? "https" : "http");
-  renderNav();
+  toggleAuthMode();
+  renderTopbar();
   if (state.token) {
     try {
       state.user = await request("/api/me");
-      renderNav();
+      await loadStats();
+      renderTopbar();
       show("dashboard");
-      await loadCourses();
       return;
     } catch (error) {
       sessionStorage.removeItem(TOKEN_KEY);

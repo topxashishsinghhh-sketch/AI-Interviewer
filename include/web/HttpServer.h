@@ -7,6 +7,7 @@
 #include "admin/AdminService.h"
 #include "course/CourseService.h"
 #include "progress/ProgressService.h"
+#include "problem/ProblemService.h"
 #include "db/RepositoryFactory.h"
 #include "httplib.h"
 
@@ -69,6 +70,8 @@ private:
     std::unique_ptr<auth::AuthService> authService_;
     std::unique_ptr<admin::AdminService> adminService_;
     std::unique_ptr<progress::ProgressService> progressService_;
+    std::unique_ptr<problem::ProblemService> problemService_;
+    std::shared_ptr<core::FeedbackGenerator> feedbackGen_;
 };
 
 } // namespace web

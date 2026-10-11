@@ -5,6 +5,7 @@
 #include "core/LinearRampStrategy.h"
 #include "core/AdaptiveStrategy.h"
 #include "core/Student.h"
+#include "problem/ProblemService.h"
 #include "interview/InterviewService.h"
 #include "interview/SessionFactory.h"
 #ifdef USE_MONGO
@@ -16,6 +17,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <iostream>
+#include <set>
 #include <sstream>
 
 using web::HttpServer;
@@ -64,6 +66,69 @@ std::string paramOr(const httplib::Request& request, const std::string& name,
     return value.empty() ? fallback : value;
 }
 
+// ---- problem API payload helpers ----
+
+json problemToJson(const core::QuestionPtr& question) {
+    json out;
+    if (!question) return out;
+    out["id"] = question->id().get();
+    out["subject"] = question->subject();
+    out["topic"] = question->topic();
+    out["difficulty"] = core::toString(question->difficulty());
+    out["type"] = question->type();
+    out["text"] = question->display();
+    out["title"] = question->text();
+    return out;
+}
+
+json submissionToJson(const problem::Submission& submission) {
+    json out;
+    out["id"] = submission.id.get();
+    out["questionId"] = submission.questionId.get();
+    out["answer"] = submission.answer;
+    out["correct"] = submission.correct;
+    out["score"] = submission.score;
+    out["feedback"] = submission.feedback;
+    out["difficulty"] = submission.difficulty;
+    out["submittedAt"] = submission.submittedAt;
+    return out;
+}
+
+json statsToJson(const problem::UserStats& stats) {
+    json out;
+    json solved;
+    solved["easy"] = stats.solved.easy;
+    solved["medium"] = stats.solved.medium;
+    solved["hard"] = stats.solved.hard;
+    solved["total"] = stats.solved.total();
+    json available;
+    available["easy"] = stats.available.easy;
+    available["medium"] = stats.available.medium;
+    available["hard"] = stats.available.hard;
+    available["total"] = stats.available.total();
+    out["solved"] = solved;
+    out["available"] = available;
+    out["attempts"] = stats.attempts;
+    out["acceptancePermille"] = stats.acceptancePermille;
+    out["streak"] = stats.streak;
+    out["longestStreak"] = stats.longestStreak;
+    out["badges"] = stats.badges;
+    json bySubject = json::array();
+    for (std::size_t i = 0; i < stats.bySubject.size(); ++i) {
+        const std::string& name = stats.bySubject[i].first;
+        const problem::DifficultyCount& counts = stats.bySubject[i].second;
+        json item;
+        item["subject"] = name;
+        item["easy"] = counts.easy;
+        item["medium"] = counts.medium;
+        item["hard"] = counts.hard;
+        item["total"] = counts.total();
+        bySubject.push_back(item);
+    }
+    out["bySubject"] = bySubject;
+    return out;
+}
+
 } // namespace
 
 HttpServer::HttpServer(const Config& config)
@@ -91,10 +156,13 @@ HttpServer::HttpServer(const Config& config)
         config_.backend, config_.dataDir + "/daily_challenges.json", config_.dbName);
 
     courseService_ = std::make_shared<course::CourseService>();
+    feedbackGen_ = std::make_shared<core::RuleBasedFeedback>();
     authService_ = std::make_unique<auth::AuthService>(userRepo_);
     adminService_ = std::make_unique<admin::AdminService>(userRepo_, questionRepo_, attemptRepo_);
     progressService_ = std::make_unique<progress::ProgressService>(
         userRepo_, questionRepo_, scoreboardRepo_, dailyChallengeRepo_, courseService_);
+    problemService_ = std::make_unique<problem::ProblemService>(
+        questionRepo_, attemptRepo_, userRepo_, feedbackGen_);
 
     server_ = std::make_unique<httplib::Server>();
     registerRoutes();
@@ -458,6 +526,226 @@ void HttpServer::registerRoutes() {
         const core::QuestionPtr question =
             questionRepo_->findById(challenge.value().questionId);
         out["question"] = question ? JsonApi::questionToJson(question) : json(nullptr);
+        sendJson(response, 200, out);
+    });
+
+    // ---- problems catalogue (LeetCode-style browsing) ----
+    server_->Get("/api/problems", [this](const httplib::Request& request,
+                                         httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+
+        problem::ProblemFilter filter;
+        filter.subject = paramOr(request, "subject", "");
+        filter.difficulty = paramOr(request, "difficulty", "");
+        filter.topic = paramOr(request, "topic", "");
+        filter.type = paramOr(request, "type", "");
+        filter.status = paramOr(request, "status", "");
+        filter.search = paramOr(request, "q", "");
+        filter.bookmarkedOnly = paramOr(request, "bookmarked", "") == "1";
+
+        const std::string sort = paramOr(request, "sort", "difficulty");
+        if (sort == "title") filter.sort = problem::ProblemFilter::Sort::Title;
+        else if (sort == "newest") filter.sort = problem::ProblemFilter::Sort::Newest;
+        else filter.sort = problem::ProblemFilter::Sort::Difficulty;
+        filter.order = paramOr(request, "order", "asc") == "asc"
+                           ? problem::ProblemFilter::Order::Ascending
+                           : problem::ProblemFilter::Order::Descending;
+
+        // The caller's id drives the per-user status; anonymous callers just
+        // see the catalogue without progress.
+        const core::UserId userId(context.authenticated() ? core::UserId(context.userId())
+                                                         : core::UserId(""));
+        const std::vector<problem::ProblemSummary> summaries =
+            problemService_->listProblems(filter, userId);
+
+        json out = json::array();
+        for (std::size_t i = 0; i < summaries.size(); ++i) {
+            json item = problemToJson(summaries[i].question);
+            item["solved"] = summaries[i].solved;
+            item["attempted"] = summaries[i].attempted;
+            item["bookmarked"] = summaries[i].bookmarked;
+            item["attempts"] = summaries[i].attempts;
+            out.push_back(item);
+        }
+        sendJson(response, 200, out);
+    });
+
+    server_->Get(R"(/api/problems/([^/]+))", [this](const httplib::Request& request,
+                                                    httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        const core::QuestionId id(request.matches[1]);
+
+        const core::UserId userId(context.authenticated() ? core::UserId(context.userId())
+                                                         : core::UserId(""));
+        const problem::ProblemSummary summary = problemService_->getProblemSummary(id, userId);
+        if (!summary.question) {
+            sendError(response, 404, "Problem not found");
+            return;
+        }
+
+        json out = problemToJson(summary.question);
+        out["solved"] = summary.solved;
+        out["attempted"] = summary.attempted;
+        out["bookmarked"] = summary.bookmarked;
+        out["attempts"] = summary.attempts;
+        out["needsAuth"] = !context.authenticated();
+        sendJson(response, 200, out);
+    });
+
+    server_->Get(R"(/api/problems/([^/]+)/submissions)", [this](const httplib::Request& request,
+                                                                httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        const std::vector<problem::Submission> attempts =
+            problemService_->submissions(core::UserId(context.userId()),
+                                        core::QuestionId(request.matches[1]), 25);
+        json out = json::array();
+        for (std::size_t i = 0; i < attempts.size(); ++i) {
+            out.push_back(submissionToJson(attempts[i]));
+        }
+        sendJson(response, 200, out);
+    });
+
+    server_->Post(R"(/api/problems/([^/]+)/solve)", [this](const httplib::Request& request,
+                                                           httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        json body;
+        if (!JsonApi::body(request, body)) {
+            sendError(response, 400, "Invalid JSON body");
+            return;
+        }
+        const std::string answer = stringField(body, "answer");
+        if (answer.empty()) {
+            sendError(response, 400, "answer is required");
+            return;
+        }
+
+        try {
+            const problem::Submission submission =
+                problemService_->solveProblem(core::QuestionId(request.matches[1]),
+                                              core::UserId(context.userId()), answer,
+                                              stringField(body, "feedback"));
+            json out = submissionToJson(submission);
+            // Include the refreshed totals so the caller can update the UI
+            // without a second round trip.
+            const problem::UserStats stats =
+                problemService_->stats(core::UserId(context.userId()));
+            out["stats"] = statsToJson(stats);
+            sendJson(response, 200, out);
+        } catch (const std::exception& e) {
+            sendError(response, 400, e.what());
+        }
+    });
+
+    server_->Post(R"(/api/problems/([^/]+)/bookmark)", [this](const httplib::Request& request,
+                                                              httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        const bool bookmarked = problemService_->toggleBookmark(
+            core::QuestionId(request.matches[1]), core::UserId(context.userId()));
+        json out;
+        out["bookmarked"] = bookmarked;
+        sendJson(response, 200, out);
+    });
+
+    // ---- submissions history ----
+    server_->Get("/api/submissions", [this](const httplib::Request& request,
+                                            httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        int limit = 25;
+        const std::string raw = paramOr(request, "limit", "25");
+        if (!raw.empty()) limit = std::atoi(raw.c_str());
+        if (limit <= 0 || limit > 200) limit = 25;
+
+        const std::vector<problem::Submission> attempts =
+            problemService_->submissions(core::UserId(context.userId()),
+                                        core::QuestionId(""), limit);
+        json out = json::array();
+        for (std::size_t i = 0; i < attempts.size(); ++i) {
+            json item = submissionToJson(attempts[i]);
+            const core::QuestionPtr question = problemService_->getProblem(attempts[i].questionId);
+            item["subject"] = question ? question->subject() : "";
+            item["topic"] = question ? question->topic() : "";
+            item["title"] = question ? question->text() : "";
+            out.push_back(item);
+        }
+        sendJson(response, 200, out);
+    });
+
+    // ---- personal statistics ----
+    server_->Get("/api/stats/me", [this](const httplib::Request& request,
+                                         httplib::Response& response) {
+        const RequestContext context = authenticate(request);
+        if (!requireAuth(context, response)) return;
+
+        const problem::UserStats stats =
+            problemService_->stats(core::UserId(context.userId()));
+
+        // The streak calendar needs the raw activity dates, so include them.
+        json out = statsToJson(stats);
+        const std::vector<core::Attempt> history =
+            attemptRepo_->findByUser(core::UserId(context.userId()));
+        std::set<std::string> days;
+        for (std::size_t i = 0; i < history.size(); ++i) {
+            days.insert(history[i].timestampAsDateKey());
+        }
+        json dates = json::array();
+        for (std::set<std::string>::const_iterator it = days.begin(); it != days.end(); ++it) {
+            dates.push_back(*it);
+        }
+        out["activeDates"] = dates;
+        out["lastActivityDate"] = userRepo_->findById(core::UserId(context.userId()))
+                                      ? std::dynamic_pointer_cast<core::Student>(
+                                            userRepo_->findById(core::UserId(context.userId())))
+                                            ->lastActivityDate()
+                                      : "";
+        sendJson(response, 200, out);
+    });
+
+    // ---- filter metadata ----
+    server_->Get("/api/catalog", [this](const httplib::Request&, httplib::Response& response) {
+        json out;
+        const std::vector<std::string> subjects = problemService_->subjectsWithQuestions();
+        json subjectArray = json::array();
+        for (std::size_t i = 0; i < subjects.size(); ++i) {
+            json item;
+            item["id"] = subjects[i];
+            item["name"] = subjects[i];
+            const std::vector<core::QuestionPtr> questions =
+                questionRepo_->findBySubject(subjects[i]);
+            item["total"] = questions.size();
+            int easy = 0;
+            int medium = 0;
+            int hard = 0;
+            for (std::size_t q = 0; q < questions.size(); ++q) {
+                switch (questions[q]->difficulty()) {
+                    case core::Difficulty::Easy: ++easy; break;
+                    case core::Difficulty::Medium: ++medium; break;
+                    case core::Difficulty::Hard: ++hard; break;
+                }
+            }
+            item["easy"] = easy;
+            item["medium"] = medium;
+            item["hard"] = hard;
+            subjectArray.push_back(item);
+        }
+        out["subjects"] = subjectArray;
+
+        json topics = json::array();
+        const std::vector<std::string> topicList = problemService_->topics("");
+        for (std::size_t i = 0; i < topicList.size(); ++i) {
+            json item;
+            item["id"] = topicList[i];
+            item["name"] = topicList[i];
+            topics.push_back(item);
+        }
+        out["topics"] = topics;
         sendJson(response, 200, out);
     });
 

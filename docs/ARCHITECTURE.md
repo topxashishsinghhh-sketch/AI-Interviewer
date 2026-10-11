@@ -15,7 +15,7 @@ higher one, and no UI class contains business logic.
 +-------------------------------------------------------------+
 | auth/AuthService           admin/AdminService               |
 | interview/*                course/CourseService             |  services
-| progress/ProgressService                                     |
+| progress/ProgressService   problem/ProblemService           |
 +-------------------------------------------------------------+
 | core/*  (Question, User, InterviewSession, strategies,      |  domain
 |          feedback, repository interfaces)                   |
@@ -104,6 +104,19 @@ interviews); every durable read and write goes through a repository interface.
 
 Config comes from command-line flags and environment variables; no secrets are
 committed, and the app works with no database at all via the JSON fallback.
+
+### Problem catalogue
+Browsing a problem and solving one are separate from running a ten-question
+session, which is why they live in `problem::ProblemService`:
+
+1. `listProblems()` applies the filter (subject, difficulty, type, free text,
+   status) and, for each surviving row, the caller's own progress derived from a
+   single `findByUser()` call rather than one query per problem.
+2. `solveProblem()` asks the question to `evaluate()` itself (polymorphism), then
+   records the attempt, updates the student's counters, streak and badges, and
+   persists. A repeat attempt never inflates the solved count.
+3. `stats()` counts distinct solved question ids per difficulty, so acceptance
+   rate stays correct no matter how many retries a problem took.
 
 ## Build matrix
 

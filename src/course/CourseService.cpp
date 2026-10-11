@@ -33,6 +33,27 @@ void CourseService::initializeCourses() {
     oop->addTopic(std::make_shared<core::Topic>("patterns", "Design Patterns", "Creational, structural, behavioral"));
     cse->addSubject(oop);
     
+    auto os = std::make_shared<core::Subject>("os", "Operating Systems", "Processes, memory, scheduling");
+    os->addTopic(std::make_shared<core::Topic>("processes", "Processes", "Lifecycle, PCB"));
+    os->addTopic(std::make_shared<core::Topic>("scheduling", "CPU Scheduling", "FCFS, SJF, MLFQ"));
+    os->addTopic(std::make_shared<core::Topic>("synchronization", "Synchronization", "Semaphores, monitors"));
+    os->addTopic(std::make_shared<core::Topic>("memory", "Memory", "Paging, virtual memory"));
+    cse->addSubject(os);
+    
+    auto dbms = std::make_shared<core::Subject>("dbms", "Database Management Systems", "Relational model, SQL, transactions");
+    dbms->addTopic(std::make_shared<core::Topic>("relational", "Relational Model", "Relations, algebra"));
+    dbms->addTopic(std::make_shared<core::Topic>("sql", "SQL", "Queries, joins, aggregation"));
+    dbms->addTopic(std::make_shared<core::Topic>("normalization", "Normalization", "1NF through BCNF"));
+    dbms->addTopic(std::make_shared<core::Topic>("transactions", "Transactions", "ACID, isolation"));
+    cse->addSubject(dbms);
+    
+    auto networks = std::make_shared<core::Subject>("networks", "Computer Networks", "Layers, protocols, congestion");
+    networks->addTopic(std::make_shared<core::Topic>("layers", "Network Layers", "OSI, TCP/IP"));
+    networks->addTopic(std::make_shared<core::Topic>("transport", "Transport", "TCP, UDP, flow control"));
+    networks->addTopic(std::make_shared<core::Topic>("routing", "Routing", "Distance-vector, link-state"));
+    networks->addTopic(std::make_shared<core::Topic>("congestion", "Congestion", "AIMD, slow start"));
+    cse->addSubject(networks);
+    
     courses_.push_back(cse);
     
     // ECE Course

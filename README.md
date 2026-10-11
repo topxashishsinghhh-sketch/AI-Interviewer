@@ -125,6 +125,7 @@ for the question-bank schema and current coverage (105 questions across
 | 5. Polish + docs | Done |
 | 6. MongoDB backend verification | Done - driver built from source, live `mongod` end-to-end run |
 | 7. Web UI + HTTP API | Done - browser front-end over the same services, JSON or Mongo |
+| 8. LeetCode-style practice platform | Done - problem catalogue, solve, submissions, stats, calendar, 12 subjects |
 
 Both builds compile with no warnings under `-Wall -Wextra -Wshadow -Wconversion`.
 
@@ -216,6 +217,27 @@ The service layer is reusable, so a browser front-end shares all the C++:
 - Bearer-token auth; admin endpoints reject non-admins with 403
 - Storage follows the selected backend (JSON or MongoDB); no duplicated logic
 
+## Features (Phase 8 - LeetCode-style practice platform)
+
+The site is now a practice platform rather than a thin wrapper around interviews:
+
+- **Problem catalogue**: browse, filter by subject / difficulty / type / status
+  (solved / attempted / unsolved), text search, sort by difficulty or title, and a
+  bookmarked-only view
+- **Problem pages**: solve any single problem on demand, get an immediate verdict
+  with the question's own explanation, and see your previous attempts
+- **Submissions history**: every judged answer with verdict, difficulty and time
+- **Personal statistics**: solved/total per difficulty, acceptance rate,
+  per-subject progress bars, streaks and badges
+- **Activity calendar**: GitHub-style contribution grid over the last 18 weeks
+- **Recommendations**: unsolved problems, easiest first, on the dashboard
+- **Bookmarks** on any problem
+- New subjects: **Operating Systems**, **DBMS**, **Computer Networks** (12 total,
+  141 questions)
+
+Everything is served by the same C++ services, so the console, Qt GUI and web
+site share one implementation of every rule.
+
 ## OOP Patterns Used
 - **Abstraction**: Question, User, Repository interfaces
 - **Inheritance**: MCQQuestion, TextQuestion, CodingQuestion; Student, Admin
@@ -232,6 +254,7 @@ The service layer is reusable, so a browser front-end shares all the C++:
 - **Observer**: Qt signals/slots between GUI screens (sessionFinished, challengeCompleted)
 - **Mapper**: web::JsonApi (domain <-> API payloads), db::BSONMappers (domain <-> BSON)
 - **Repository (in-memory)**: web::SessionStore (browser tokens, in-progress interviews)
+- **Service (catalogue)**: problem::ProblemService (filtering, judging, statistics)
 
 ## Testing
 ```bash

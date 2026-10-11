@@ -1,0 +1,145 @@
+[
+  {
+    "id": "dbms_easy_1",
+    "subject": "dbms",
+    "topic": "relational",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "In the relational model, a row of a table is called a:",
+    "options": ["Tuple", "Attribute", "Relation key", "Schema"],
+    "answer": 0,
+    "explanation": "Rows are tuples, columns are attributes, and the table itself is a relation."
+  },
+  {
+    "id": "dbms_easy_2",
+    "subject": "dbms",
+    "topic": "sql",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "Which SQL clause filters groups produced by GROUP BY?",
+    "options": ["HAVING", "WHERE", "ORDER BY", "LIMIT"],
+    "answer": 0,
+    "explanation": "WHERE filters rows before grouping; HAVING filters the resulting groups."
+  },
+  {
+    "id": "dbms_easy_3",
+    "subject": "dbms",
+    "topic": "keys",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "A superkey is:",
+    "options": ["Any set of attributes that uniquely identifies a tuple", "Always a single column", "Never a primary key", "A foreign key"],
+    "answer": 0,
+    "explanation": "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey."
+  },
+  {
+    "id": "dbms_easy_4",
+    "subject": "dbms",
+    "topic": "normalization",
+    "difficulty": "Easy",
+    "type": "Text",
+    "text": "What does first normal form (1NF) require?",
+    "keywords": ["atomic", "single valued", "repeating group", "indivisible"],
+    "minKeywords": 2,
+    "explanation": "Every attribute must hold a single atomic value with no repeating groups."
+  },
+  {
+    "id": "dbms_med_1",
+    "subject": "dbms",
+    "topic": "transactions",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "The 'C' in ACID stands for:",
+    "options": ["Consistency", "Concurrency", "Compilation", "Commit"],
+    "answer": 0,
+    "explanation": "Consistency means a transaction moves the database from one valid state to another."
+  },
+  {
+    "id": "dbms_med_2",
+    "subject": "dbms",
+    "topic": "indexing",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Why is a B+ tree preferred over a binary search tree for disk indexes?",
+    "keywords": ["height", "fanout", "node", "disk", "i/o", "fewer"],
+    "minKeywords": 2,
+    "explanation": "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans."
+  },
+  {
+    "id": "dbms_med_3",
+    "subject": "dbms",
+    "topic": "normalization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "A relation is in 2NF when it is in 1NF and:",
+    "options": ["No partial dependency of non-prime attributes on a candidate key", "No transitive dependency", "No multivalued dependency", "Every determinant is a key"],
+    "answer": 0,
+    "explanation": "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key."
+  },
+  {
+    "id": "dbms_med_4",
+    "subject": "dbms",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "What is a lost update, and which isolation level prevents it?",
+    "keywords": ["overwrite", "concurrent", "read committed", "uncommitted", "two transactions"],
+    "minKeywords": 2,
+    "explanation": "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it."
+  },
+  {
+    "id": "dbms_hard_1",
+    "subject": "dbms",
+    "topic": "transactions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Which isolation level still allows phantom reads?",
+    "options": ["Repeatable Read in some engines", "Serializable", "Snapshot in most engines", "Strict two-phase locking"],
+    "answer": 0,
+    "explanation": "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear."
+  },
+  {
+    "id": "dbms_hard_2",
+    "subject": "dbms",
+    "topic": "query",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Why can a nested-loop join be cheaper than a hash join for small, indexed inputs?",
+    "keywords": ["index", "nested", "probe", "build", "hashing", "small"],
+    "minKeywords": 2,
+    "explanation": "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost."
+  },
+  {
+    "id": "dbms_hard_3",
+    "subject": "dbms",
+    "topic": "indexing",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Write SQL to find the second highest salary from an employees table, returning NULL when it does not exist.",
+    "templateCode": "SELECT /* second highest salary */ FROM employees;\n",
+    "testCases": [
+      {
+        "input": "100;200;300",
+        "expectedOutput": "200",
+        "isHidden": false
+      },
+      {
+        "input": "100",
+        "expectedOutput": "NULL",
+        "isHidden": true
+      }
+    ],
+    "explanation": "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) < (SELECT MAX(salary) ...), returns the runner-up."
+  },
+  {
+    "id": "dbms_hard_4",
+    "subject": "dbms",
+    "topic": "normalization",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain how BCNF differs from 3NF and when a schema can be in 3NF but not BCNF.",
+    "keywords": ["determinant", "superkey", "transitive", "prime", "candidate"],
+    "minKeywords": 2,
+    "explanation": "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime."
+  }
+]

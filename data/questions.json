@@ -1197,6 +1197,210 @@
         "explanation":  "Dijkstra finalises a vertex once popped, which is only safe when all edge weights are non-negative; Bellman-Ford relaxes every edge V-1 times so it tolerates negative weights (barring negative cycles)."
     },
     {
+        "id":  "dbms_easy_1",
+        "subject":  "dbms",
+        "topic":  "relational",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "In the relational model, a row of a table is called a:",
+        "options":  [
+                        "Tuple",
+                        "Attribute",
+                        "Relation key",
+                        "Schema"
+                    ],
+        "answer":  0,
+        "explanation":  "Rows are tuples, columns are attributes, and the table itself is a relation."
+    },
+    {
+        "id":  "dbms_easy_2",
+        "subject":  "dbms",
+        "topic":  "sql",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which SQL clause filters groups produced by GROUP BY?",
+        "options":  [
+                        "HAVING",
+                        "WHERE",
+                        "ORDER BY",
+                        "LIMIT"
+                    ],
+        "answer":  0,
+        "explanation":  "WHERE filters rows before grouping; HAVING filters the resulting groups."
+    },
+    {
+        "id":  "dbms_easy_3",
+        "subject":  "dbms",
+        "topic":  "keys",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "A superkey is:",
+        "options":  [
+                        "Any set of attributes that uniquely identifies a tuple",
+                        "Always a single column",
+                        "Never a primary key",
+                        "A foreign key"
+                    ],
+        "answer":  0,
+        "explanation":  "Any attribute set whose values are unique across rows qualifies; a candidate key is a minimal superkey."
+    },
+    {
+        "id":  "dbms_easy_4",
+        "subject":  "dbms",
+        "topic":  "normalization",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What does first normal form (1NF) require?",
+        "keywords":  [
+                         "atomic",
+                         "single valued",
+                         "repeating group",
+                         "indivisible"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Every attribute must hold a single atomic value with no repeating groups."
+    },
+    {
+        "id":  "dbms_med_1",
+        "subject":  "dbms",
+        "topic":  "transactions",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "The \u0027C\u0027 in ACID stands for:",
+        "options":  [
+                        "Consistency",
+                        "Concurrency",
+                        "Compilation",
+                        "Commit"
+                    ],
+        "answer":  0,
+        "explanation":  "Consistency means a transaction moves the database from one valid state to another."
+    },
+    {
+        "id":  "dbms_med_2",
+        "subject":  "dbms",
+        "topic":  "indexing",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why is a B+ tree preferred over a binary search tree for disk indexes?",
+        "keywords":  [
+                         "height",
+                         "fanout",
+                         "node",
+                         "disk",
+                         "i/o",
+                         "fewer"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "High fanout keeps the tree shallow, so far fewer disk I/Os are needed per lookup and leaves are linked for range scans."
+    },
+    {
+        "id":  "dbms_med_3",
+        "subject":  "dbms",
+        "topic":  "normalization",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "A relation is in 2NF when it is in 1NF and:",
+        "options":  [
+                        "No partial dependency of non-prime attributes on a candidate key",
+                        "No transitive dependency",
+                        "No multivalued dependency",
+                        "Every determinant is a key"
+                    ],
+        "answer":  0,
+        "explanation":  "2NF removes partial dependencies where a non-prime attribute depends on part of a composite key."
+    },
+    {
+        "id":  "dbms_med_4",
+        "subject":  "dbms",
+        "topic":  "concurrency",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is a lost update, and which isolation level prevents it?",
+        "keywords":  [
+                         "overwrite",
+                         "concurrent",
+                         "read committed",
+                         "uncommitted",
+                         "two transactions"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Two transactions read and write the same row so one write is lost; READ COMMITTED or higher prevents it."
+    },
+    {
+        "id":  "dbms_hard_1",
+        "subject":  "dbms",
+        "topic":  "transactions",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "Which isolation level still allows phantom reads?",
+        "options":  [
+                        "Repeatable Read in some engines",
+                        "Serializable",
+                        "Snapshot in most engines",
+                        "Strict two-phase locking"
+                    ],
+        "answer":  0,
+        "explanation":  "REPEATABLE READ guarantees row stability but not range stability, so new matching rows can appear."
+    },
+    {
+        "id":  "dbms_hard_2",
+        "subject":  "dbms",
+        "topic":  "query",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why can a nested-loop join be cheaper than a hash join for small, indexed inputs?",
+        "keywords":  [
+                         "index",
+                         "nested",
+                         "probe",
+                         "build",
+                         "hashing",
+                         "small"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "With an index on the inner relation each outer row costs a few lookups, avoiding the hash build and memory cost."
+    },
+    {
+        "id":  "dbms_hard_3",
+        "subject":  "dbms",
+        "topic":  "indexing",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Write SQL to find the second highest salary from an employees table, returning NULL when it does not exist.",
+        "templateCode":  "SELECT /* second highest salary */ FROM employees;\n",
+        "testCases":  [
+                          {
+                              "input":  "100;200;300",
+                              "expectedOutput":  "200",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "100",
+                              "expectedOutput":  "NULL",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "ORDER BY ... LIMIT 1 OFFSET 1, or a subquery with MAX(salary) \u003c (SELECT MAX(salary) ...), returns the runner-up."
+    },
+    {
+        "id":  "dbms_hard_4",
+        "subject":  "dbms",
+        "topic":  "normalization",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain how BCNF differs from 3NF and when a schema can be in 3NF but not BCNF.",
+        "keywords":  [
+                         "determinant",
+                         "superkey",
+                         "transitive",
+                         "prime",
+                         "candidate"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "BCNF requires every determinant to be a superkey; 3NF tolerates a transitive dependency when the dependent attribute is prime."
+    },
+    {
         "id":  "hr_easy_1",
         "subject":  "hr",
         "topic":  "behavioral",
@@ -1387,6 +1591,414 @@
                           }
                       ],
         "explanation":  "Factory pattern + polymorphism. Parse JSON type field, instantiate appropriate derived class."
+    },
+    {
+        "id":  "net_easy_1",
+        "subject":  "networks",
+        "topic":  "layers",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "In the OSI model, which layer handles routing between networks?",
+        "options":  [
+                        "Network",
+                        "Transport",
+                        "Data link",
+                        "Session"
+                    ],
+        "answer":  0,
+        "explanation":  "The network layer performs logical addressing and routing; routers operate there."
+    },
+    {
+        "id":  "net_easy_2",
+        "subject":  "networks",
+        "topic":  "transport",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which transport protocol is connection-oriented and reliable?",
+        "options":  [
+                        "TCP",
+                        "UDP",
+                        "ICMP",
+                        "ARP"
+                    ],
+        "answer":  0,
+        "explanation":  "TCP provides sequencing, acknowledgements and retransmission; UDP is best-effort."
+    },
+    {
+        "id":  "net_easy_3",
+        "subject":  "networks",
+        "topic":  "addressing",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "How many bits are in an IPv4 address?",
+        "options":  [
+                        "32",
+                        "64",
+                        "128",
+                        "16"
+                    ],
+        "answer":  0,
+        "explanation":  "IPv4 uses 32 bits, usually written as four dotted decimal octets."
+    },
+    {
+        "id":  "net_easy_4",
+        "subject":  "networks",
+        "topic":  "protocols",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What does DNS do?",
+        "keywords":  [
+                         "domain",
+                         "name",
+                         "ip",
+                         "resolve",
+                         "translate"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "DNS translates human-readable domain names into IP addresses."
+    },
+    {
+        "id":  "net_med_1",
+        "subject":  "networks",
+        "topic":  "transport",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "TCP\u0027s three-way handshake consists of:",
+        "options":  [
+                        "SYN, SYN-ACK, ACK",
+                        "SYN, FIN, ACK",
+                        "SYN, ACK, RST",
+                        "GET, POST, OK"
+                    ],
+        "answer":  0,
+        "explanation":  "The client sends SYN, the server replies SYN-ACK, and the client completes with ACK."
+    },
+    {
+        "id":  "net_med_2",
+        "subject":  "networks",
+        "topic":  "congestion",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "In TCP congestion control, what does the slow-start threshold control after a loss?",
+        "keywords":  [
+                         "ssthresh",
+                         "halve",
+                         "window",
+                         "avoidance",
+                         "multiplicative decrease"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "On loss the threshold drops (typically to half the window) and the sender switches from exponential growth to linear AIMD."
+    },
+    {
+        "id":  "net_med_3",
+        "subject":  "networks",
+        "topic":  "routing",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Which routing protocol is a link-state protocol?",
+        "options":  [
+                        "OSPF",
+                        "RIP",
+                        "BGP",
+                        "EIGRP"
+                    ],
+        "answer":  0,
+        "explanation":  "OSPF floods link-state advertisements and runs Dijkstra; RIP is distance-vector and BGP is path-vector."
+    },
+    {
+        "id":  "net_med_4",
+        "subject":  "networks",
+        "topic":  "layers",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "What is the difference between a switch and a router?",
+        "keywords":  [
+                         "mac",
+                         "frame",
+                         "layer 2",
+                         "ip",
+                         "packet",
+                         "layer 3",
+                         "route"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A switch forwards frames using MAC addresses within a broadcast domain; a router forwards packets between networks using IP addresses."
+    },
+    {
+        "id":  "net_hard_1",
+        "subject":  "networks",
+        "topic":  "congestion",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "What problem does the silly window syndrome describe?",
+        "options":  [
+                        "Tiny segments from small receiver windows",
+                        "Oversized MTU frames",
+                        "Excessive ARP requests",
+                        "IP fragmentation of large datagrams"
+                    ],
+        "answer":  0,
+        "explanation":  "Small advertised windows cause senders to transmit small segments, wasting bandwidth and header overhead."
+    },
+    {
+        "id":  "net_hard_2",
+        "subject":  "networks",
+        "topic":  "routing",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why can the count-to-infinity problem occur in distance-vector routing, and how does split horizon help?",
+        "keywords":  [
+                         "loop",
+                         "stale",
+                         "neighbour",
+                         "advertise",
+                         "back",
+                         "infinite"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Nodes slowly converge upward on stale routes because they trust neighbours; split horizon stops advertising a route back to the neighbour it was learned from."
+    },
+    {
+        "id":  "net_hard_3",
+        "subject":  "networks",
+        "topic":  "transport",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a single-bit sliding window stop-and-wait sender loop that retransmits on timeout and accepts on ACK.",
+        "templateCode":  "#include \u003ciostream\u003e\n#include \u003cstring\u003e\n\n// Return true when the frame is acknowledged, retrying on timeout.\nbool sendWithRetries(const std::string\u0026 frame, int maxAttempts) {\n    // TODO: send frame, wait for ack, retransmit on timeout\n    return false;\n}\n\nint main() { std::cout \u003c\u003c (sendWithRetries(\"data\", 3) ? \"ACK\" : \"FAIL\") \u003c\u003c \u0027\\n\u0027; return 0; }\n",
+        "testCases":  [
+                          {
+                              "input":  "ack_immediately",
+                              "expectedOutput":  "ACK",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "timeout_then_ack",
+                              "expectedOutput":  "ACK",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "A stop-and-wait sender keeps a timer and one outstanding frame, retransmitting the same sequence number until acknowledged."
+    },
+    {
+        "id":  "net_hard_4",
+        "subject":  "networks",
+        "topic":  "addressing",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain CIDR and how it reduces the size of routing tables compared to classful addressing.",
+        "keywords":  [
+                         "prefix",
+                         "aggregate",
+                         "subnet",
+                         "mask",
+                         "route summarisation"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "CIDR uses variable-length prefixes so adjacent blocks can be aggregated into a single route, shrinking the global table."
+    },
+    {
+        "id":  "os_easy_1",
+        "subject":  "os",
+        "topic":  "processes",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "What are the typical states in a process lifecycle?",
+        "options":  [
+                        "New, Ready, Running, Waiting, Terminated",
+                        "Start, Middle, End",
+                        "Read, Write, Execute",
+                        "Compile, Link, Load"
+                    ],
+        "answer":  0,
+        "explanation":  "A process moves between new, ready, running and waiting, then terminates."
+    },
+    {
+        "id":  "os_easy_2",
+        "subject":  "os",
+        "topic":  "scheduling",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "Which CPU scheduling algorithm can cause starvation of long jobs?",
+        "options":  [
+                        "Shortest Job First",
+                        "First Come First Served",
+                        "Round Robin",
+                        "Longest Job First"
+                    ],
+        "answer":  0,
+        "explanation":  "SJF always favours short jobs, so a steady stream of them starves longer ones."
+    },
+    {
+        "id":  "os_easy_3",
+        "subject":  "os",
+        "topic":  "memory",
+        "difficulty":  "Easy",
+        "type":  "MCQ",
+        "text":  "A page fault occurs when:",
+        "options":  [
+                        "The required page is not in physical memory",
+                        "The CPU overheats",
+                        "A disk sector fails",
+                        "Memory is full of cache"
+                    ],
+        "answer":  0,
+        "explanation":  "The referenced virtual page is absent, so it must be fetched from secondary storage."
+    },
+    {
+        "id":  "os_easy_4",
+        "subject":  "os",
+        "topic":  "concurrency",
+        "difficulty":  "Easy",
+        "type":  "Text",
+        "text":  "What is a race condition?",
+        "keywords":  [
+                         "concurrent",
+                         "shared",
+                         "outcome",
+                         "timing",
+                         "ordering"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "The result depends on the relative timing or ordering of concurrent accesses to shared state."
+    },
+    {
+        "id":  "os_med_1",
+        "subject":  "os",
+        "topic":  "synchronization",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "Which requirement must a correct solution to the critical section problem satisfy?",
+        "options":  [
+                        "Mutual exclusion",
+                        "High throughput only",
+                        "Fixed priority",
+                        "Memory sharing"
+                    ],
+        "answer":  0,
+        "explanation":  "Mutual exclusion is the core requirement; progress and bounded waiting must also hold."
+    },
+    {
+        "id":  "os_med_2",
+        "subject":  "os",
+        "topic":  "deadlock",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "List the four necessary conditions for deadlock.",
+        "keywords":  [
+                         "mutual exclusion",
+                         "hold and wait",
+                         "no preemption",
+                         "circular wait"
+                     ],
+        "minKeywords":  3,
+        "explanation":  "All four (Coffman) conditions must hold simultaneously for a deadlock to arise."
+    },
+    {
+        "id":  "os_med_3",
+        "subject":  "os",
+        "topic":  "memory",
+        "difficulty":  "Medium",
+        "type":  "MCQ",
+        "text":  "In demand paging, the effective access time is closest to:",
+        "options":  [
+                        "Page-fault-rate dependent",
+                        "Always the disk seek time",
+                        "Zero",
+                        "The TLB lookup time"
+                    ],
+        "answer":  0,
+        "explanation":  "EAT blends the memory access time with the (rare) service time weighted by the fault rate."
+    },
+    {
+        "id":  "os_med_4",
+        "subject":  "os",
+        "topic":  "storage",
+        "difficulty":  "Medium",
+        "type":  "Text",
+        "text":  "Why is the disk scheduling algorithm SCAN (elevator) better than FCFS for heavy I/O?",
+        "keywords":  [
+                         "seek",
+                         "head",
+                         "direction",
+                         "reduced",
+                         "throughput"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "It moves the head monotonically, servicing requests along the way and cutting total seek distance."
+    },
+    {
+        "id":  "os_hard_1",
+        "subject":  "os",
+        "topic":  "synchronization",
+        "difficulty":  "Hard",
+        "type":  "MCQ",
+        "text":  "The readers-writers problem with writer priority can cause:",
+        "options":  [
+                        "Reader starvation",
+                        "Data corruption",
+                        "A system crash",
+                        "Deadlock on all reads"
+                    ],
+        "answer":  0,
+        "explanation":  "Prioritising writers means a waiting writer blocks new readers, so readers may starve."
+    },
+    {
+        "id":  "os_hard_2",
+        "subject":  "os",
+        "topic":  "concurrency",
+        "difficulty":  "Hard",
+        "type":  "Coding",
+        "text":  "Implement a counting semaphore using two standard semaphores and a counter, with wait() and signal().",
+        "templateCode":  "#include \u003ccondition_variable\u003e\n#include \u003cmutex\u003e\n\nclass CountingSemaphore {\npublic:\n    explicit CountingSemaphore(int initial) : count_(initial) {}\n    void wait();\n    void signal();\nprivate:\n    std::mutex m_;\n    std::condition_variable cv_;\n    int count_;\n};\n",
+        "testCases":  [
+                          {
+                              "input":  "1\nwait\nwait_should_block\n",
+                              "expectedOutput":  "blocked",
+                              "isHidden":  false
+                          },
+                          {
+                              "input":  "2\nwait\nwait\nwait_should_block\n",
+                              "expectedOutput":  "blocked",
+                              "isHidden":  true
+                          }
+                      ],
+        "explanation":  "A mutex protects the counter and a condition variable blocks and wakes waiters without busy waiting."
+    },
+    {
+        "id":  "os_hard_3",
+        "subject":  "os",
+        "topic":  "memory",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Explain why a TLB miss is not automatically a page fault.",
+        "keywords":  [
+                         "translation",
+                         "valid",
+                         "memory",
+                         "page table",
+                         "cache"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "A TLB miss only means the cached translation is absent; the page may still be resident, so the page table in memory is consulted."
+    },
+    {
+        "id":  "os_hard_4",
+        "subject":  "os",
+        "topic":  "scheduling",
+        "difficulty":  "Hard",
+        "type":  "Text",
+        "text":  "Why does multilevel feedback queue scheduling approximate SRTF without knowing burst times?",
+        "keywords":  [
+                         "ageing",
+                         "demotion",
+                         "priority",
+                         "interactive",
+                         "short"
+                     ],
+        "minKeywords":  2,
+        "explanation":  "Jobs that yield the CPU quickly stay at high priority while long ones are demoted, so short jobs are favoured by observed behaviour."
     },
     {
         "id":  "reasoning_easy_1",
