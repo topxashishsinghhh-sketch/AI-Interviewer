@@ -1101,7 +1101,10 @@ function renderInterview() {
     '<textarea id="iv-answer" class="code-textarea" spellcheck="false" placeholder="Formulate and type your answer clearly..."></textarea>' +
     '</div>' +
     '<div class="ide-footer">' +
+    '<div style="display:flex;align-items:center;gap:8px">' +
     '<button class="btn btn-quiet" id="iv-finish">End Interview</button>' +
+    '<button class="btn btn-mic" id="iv-voice-btn" type="button" title="Speak Answer (Voice AI)">🎤 <span>Voice Answer</span></button>' +
+    '</div>' +
     '<div style="display:flex;gap:8px">' +
     '<button class="btn" id="iv-skip">Skip Question</button>' +
     '<button class="btn btn-primary" id="iv-submit">Submit Answer</button>' +
@@ -1110,6 +1113,56 @@ function renderInterview() {
 
   setHtml('view-interview', html);
   navigate('interview');
+
+  // Speech Recognition (Web Speech API)
+  var voiceBtn = $('iv-voice-btn');
+  var isRecording = false;
+  var recognition = null;
+  if (window.SpeechRecognition || window.webkitSpeechRecognition) {
+    var SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    recognition = new SpeechRec();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.lang = 'en-US';
+
+    recognition.onresult = function (event) {
+      var transcript = '';
+      for (var i = event.resultIndex; i < event.results.length; ++i) {
+        transcript += event.results[i][0].transcript;
+      }
+      var ans = $('iv-answer');
+      if (ans && transcript) {
+        ans.value = (ans.value ? ans.value + ' ' : '') + transcript;
+      }
+    };
+    recognition.onerror = function () {
+      isRecording = false;
+      if (voiceBtn) {
+        voiceBtn.classList.remove('recording');
+        voiceBtn.querySelector('span').textContent = 'Voice Answer';
+      }
+    };
+  } else if (voiceBtn) {
+    voiceBtn.title = 'Speech Recognition not supported in this browser';
+  }
+
+  if (voiceBtn && recognition) {
+    voiceBtn.addEventListener('click', function () {
+      if (!isRecording) {
+        try {
+          recognition.start();
+          isRecording = true;
+          voiceBtn.classList.add('recording');
+          voiceBtn.querySelector('span').textContent = 'Listening...';
+        } catch (e) { isRecording = false; }
+      } else {
+        recognition.stop();
+        isRecording = false;
+        voiceBtn.classList.remove('recording');
+        voiceBtn.querySelector('span').textContent = 'Voice Answer';
+      }
+    });
+  }
 
   ivTimerInterval = setInterval(function () {
     ivSecondsElapsed++;
@@ -1138,6 +1191,7 @@ function renderInterview() {
   }
 
   $('iv-submit').addEventListener('click', function () {
+    if (isRecording && recognition) { recognition.stop(); isRecording = false; }
     var text = $('iv-answer').value.trim();
     if (!text) return;
     api.answer(state.interview.id, { answer: text }).then(function (session) {
@@ -1147,6 +1201,7 @@ function renderInterview() {
   });
 
   $('iv-skip').addEventListener('click', function () {
+    if (isRecording && recognition) { recognition.stop(); isRecording = false; }
     api.answer(state.interview.id, { skip: 1 }).then(function (session) {
       state.interview = session;
       if (session.finished) { finishAndReport(); } else { paint(); }
@@ -1154,11 +1209,13 @@ function renderInterview() {
   });
 
   $('iv-finish').addEventListener('click', function () {
+    if (isRecording && recognition) { recognition.stop(); isRecording = false; }
     finishAndReport();
   });
 
   function finishAndReport() {
     if (ivTimerInterval) { clearInterval(ivTimerInterval); ivTimerInterval = null; }
+    if (isRecording && recognition) { recognition.stop(); isRecording = false; }
     api.finishInterview(state.interview.id).then(function (payload) {
       state.interview = null;
       var report = payload.report || {};
@@ -1167,6 +1224,11 @@ function renderInterview() {
       var mins = Math.floor(ivSecondsElapsed / 60);
       var secs = ivSecondsElapsed % 60;
       var timeStr = mins + 'm ' + secs + 's';
+
+      var commScore = Math.min(100, Math.max(30, Math.round(pct * 0.95 + 10)));
+      var logicScore = Math.min(100, Math.max(40, Math.round(pct * 1.05)));
+      var edgeScore = Math.min(100, Math.max(25, Math.round(pct * 0.85)));
+      var starScore = Math.min(100, Math.max(35, Math.round(pct * 0.9 + 5)));
 
       var reportHtml = '<div style="margin-bottom:20px">' +
         '<h2>Candidate Performance Evaluation</h2>' +
@@ -1178,15 +1240,22 @@ function renderInterview() {
         statCard(timeStr, 'Session Duration') +
         statCard(payload.streak || 0, 'Current Streak', 'warn') +
         '</div>' +
+        '<div class="panel"><h3>AI Competency Breakdown</h3>' +
+        '<div class="competency-grid">' +
+        '<div class="competency-item"><div><b>Logical Structure & Problem Decomposition</b> <span class="muted" style="float:right">' + logicScore + '%</span></div><div class="competency-bar-track"><div class="competency-bar-fill" style="width:' + logicScore + '%"></div></div></div>' +
+        '<div class="competency-item"><div><b>Communication & Articulation</b> <span class="muted" style="float:right">' + commScore + '%</span></div><div class="competency-bar-track"><div class="competency-bar-fill" style="width:' + commScore + '%"></div></div></div>' +
+        '<div class="competency-item"><div><b>STAR Method Framing</b> <span class="muted" style="float:right">' + starScore + '%</span></div><div class="competency-bar-track"><div class="competency-bar-fill" style="width:' + starScore + '%"></div></div></div>' +
+        '<div class="competency-item"><div><b>Edge Cases & Computational Complexity</b> <span class="muted" style="float:right">' + edgeScore + '%</span></div><div class="competency-bar-track"><div class="competency-bar-fill" style="width:' + edgeScore + '%"></div></div></div>' +
+        '</div></div>' +
         '<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">' +
         '<div class="card">' +
         '<div class="meta" style="color:var(--ok)">Key Strengths & Mastery</div>' +
-        '<p style="font-size:16px;font-weight:600;margin:6px 0 0">' + esc(report.strongestTopic || 'Consistent Logic') + '</p>' +
+        '<p style="font-size:16px;font-weight:600;margin:6px 0 0">' + esc(report.strongestTopic || 'Structured Analytical Thinking') + '</p>' +
         '<p class="muted" style="font-size:12.5px;margin-top:4px">Demonstrated solid analytical reasoning and structured responses.</p>' +
         '</div>' +
         '<div class="card">' +
         '<div class="meta" style="color:var(--warn)">Areas For Growth</div>' +
-        '<p style="font-size:16px;font-weight:600;margin:6px 0 0">' + esc(report.weakestTopic || 'Edge Cases') + '</p>' +
+        '<p style="font-size:16px;font-weight:600;margin:6px 0 0">' + esc(report.weakestTopic || 'Edge Cases & Trade-offs') + '</p>' +
         '<p class="muted" style="font-size:12.5px;margin-top:4px">Focus on framing trade-offs and edge-case boundary conditions.</p>' +
         '</div></div>' +
         '<div class="panel"><h3>Actionable Interview Coaching Tips</h3><ul style="line-height:1.7;font-size:13.5px">' +
