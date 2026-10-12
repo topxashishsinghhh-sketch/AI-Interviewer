@@ -610,5 +610,169 @@
       "log n"
     ],
     "softSkill": false
+  },
+  {
+    "id": "longest-substring-without-repeating-characters",
+    "subject": "algo",
+    "topic": "sliding_window",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Given a string s, find the length of the longest substring without duplicate characters in optimal O(N) time and O(min(N, M)) space using a sliding window.",
+    "explanation": "Maintain a sliding window [left, right] along with a hash table recording the most recent index of each character. When a duplicate character is encountered, jump the left pointer past its previous occurrence.",
+    "objective": "Master the sliding window technique and two-pointer state tracking.",
+    "skillTags": [
+      "Sliding Window",
+      "Hash Table",
+      "Strings",
+      "Algorithms"
+    ],
+    "keywords": [
+      "longest substring",
+      "sliding window",
+      "two pointers",
+      "hash table"
+    ],
+    "softSkill": false,
+    "templateCode": "#include <iostream>\n#include <string>\n#include <vector>\n#include <algorithm>\n\nint lengthOfLongestSubstring(const std::string& s) {\n    std::vector<int> lastIndex(256, -1);\n    int maxLen = 0, start = 0;\n    for (int i = 0; i < (int)s.size(); ++i) {\n        unsigned char c = s[i];\n        if (lastIndex[c] >= start) {\n            start = lastIndex[c] + 1;\n        }\n        lastIndex[c] = i;\n        maxLen = std::max(maxLen, i - start + 1);\n    }\n    return maxLen;\n}\n\nint main() {\n    std::string s;\n    if (std::cin >> s) {\n        std::cout << lengthOfLongestSubstring(s) << std::endl;\n    } else {\n        std::cout << 0 << std::endl;\n    }\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "abcabcbb",
+        "expectedOutput": "3",
+        "isHidden": false
+      },
+      {
+        "input": "bbbbb",
+        "expectedOutput": "1",
+        "isHidden": false
+      },
+      {
+        "input": "pwwkew",
+        "expectedOutput": "3",
+        "isHidden": true
+      }
+    ]
+  },
+  {
+    "id": "kth-largest-element-in-an-array",
+    "subject": "algo",
+    "topic": "heaps_quickselect",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Given an integer array nums and an integer k, return the kth largest element in the array using a min-heap or Quickselect.",
+    "explanation": "Maintain a min-heap of size k. Iterate through nums: if the current element is greater than the heap's top, pop the top and push the element. The heap top at the end will be the kth largest element.",
+    "objective": "Master min-heap streaming and Quickselect partitioning.",
+    "skillTags": [
+      "Heaps",
+      "Priority Queue",
+      "Quickselect",
+      "Sorting"
+    ],
+    "keywords": [
+      "kth largest",
+      "min heap",
+      "priority queue",
+      "quickselect"
+    ],
+    "softSkill": false,
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <queue>\n\nint findKthLargest(const std::vector<int>& nums, int k) {\n    std::priority_queue<int, std::vector<int>, std::greater<int>> minHeap;\n    for (int x : nums) {\n        minHeap.push(x);\n        if ((int)minHeap.size() > k) minHeap.pop();\n    }\n    return minHeap.top();\n}\n\nint main() {\n    int n, k;\n    if (!(std::cin >> n >> k)) return 0;\n    std::vector<int> nums(n);\n    for (int i = 0; i < n; ++i) std::cin >> nums[i];\n    std::cout << findKthLargest(nums, k) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "6 2\n3 2 1 5 6 4",
+        "expectedOutput": "5",
+        "isHidden": false
+      },
+      {
+        "input": "9 4\n3 2 3 1 2 4 5 5 6",
+        "expectedOutput": "4",
+        "isHidden": false
+      },
+      {
+        "input": "1 1\n1",
+        "expectedOutput": "1",
+        "isHidden": true
+      }
+    ]
+  },
+  {
+    "id": "course-schedule",
+    "subject": "algo",
+    "topic": "graphs",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "There are a total of numCourses courses labeled 0 to numCourses - 1. You are given an array prerequisites. Determine if you can finish all courses using Kahn's algorithm (topological sort) or cycle detection in a directed graph.",
+    "explanation": "Model prerequisites as a directed graph. Track in-degrees of all nodes. Enqueue all nodes with in-degree 0. While the queue is non-empty, dequeue a node, increment processed count, and decrement in-degrees of neighbors. If processed count equals numCourses, the graph is a DAG with no cycles.",
+    "objective": "Implement topological sorting and cycle detection in directed graphs.",
+    "skillTags": [
+      "Graphs",
+      "Topological Sort",
+      "BFS",
+      "Kahn Algorithm"
+    ],
+    "keywords": [
+      "topological sort",
+      "course schedule",
+      "cycle detection",
+      "dag",
+      "graphs"
+    ],
+    "softSkill": false,
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <queue>\n\nbool canFinish(int numCourses, const std::vector<std::pair<int,int>>& prerequisites) {\n    std::vector<int> inDegree(numCourses, 0);\n    std::vector<std::vector<int>> adj(numCourses);\n    for (const auto& p : prerequisites) {\n        adj[p.second].push_back(p.first);\n        inDegree[p.first]++;\n    }\n    std::queue<int> q;\n    for (int i = 0; i < numCourses; ++i) if (inDegree[i] == 0) q.push(i);\n    int count = 0;\n    while (!q.empty()) {\n        int u = q.front(); q.pop();\n        count++;\n        for (int v : adj[u]) {\n            if (--inDegree[v] == 0) q.push(v);\n        }\n    }\n    return count == numCourses;\n}\n\nint main() {\n    int n, m;\n    if (!(std::cin >> n >> m)) return 0;\n    std::vector<std::pair<int,int>> prereqs(m);\n    for (int i = 0; i < m; ++i) std::cin >> prereqs[i].first >> prereqs[i].second;\n    std::cout << (canFinish(n, prereqs) ? 1 : 0) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "2 1\n1 0",
+        "expectedOutput": "1",
+        "isHidden": false
+      },
+      {
+        "input": "2 2\n1 0\n0 1",
+        "expectedOutput": "0",
+        "isHidden": false
+      },
+      {
+        "input": "1 0",
+        "expectedOutput": "1",
+        "isHidden": true
+      }
+    ]
+  },
+  {
+    "id": "word-break",
+    "subject": "algo",
+    "topic": "dynamic_programming",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. Solve using Dynamic Programming.",
+    "explanation": "Define dp[i] as true if s[0...i-1] can be segmented. Base case: dp[0] = true. For each i from 1 to n, and j from 0 to i-1, if dp[j] is true and s[j...i-1] is in wordDict, set dp[i] = true and break.",
+    "objective": "Apply 1D dynamic programming with dictionary lookups.",
+    "skillTags": [
+      "Dynamic Programming",
+      "Strings",
+      "Hash Set"
+    ],
+    "keywords": [
+      "word break",
+      "dynamic programming",
+      "dictionary",
+      "memoization"
+    ],
+    "softSkill": false,
+    "templateCode": "#include <iostream>\n#include <string>\n#include <vector>\n#include <unordered_set>\n\nbool wordBreak(const std::string& s, const std::vector<std::string>& wordDict) {\n    std::unordered_set<std::string> dict(wordDict.begin(), wordDict.end());\n    std::vector<bool> dp(s.size() + 1, false);\n    dp[0] = true;\n    for (int i = 1; i <= (int)s.size(); ++i) {\n        for (int j = 0; j < i; ++j) {\n            if (dp[j] && dict.count(s.substr(j, i - j))) {\n                dp[i] = true;\n                break;\n            }\n        }\n    }\n    return dp[s.size()];\n}\n\nint main() {\n    std::string s;\n    int m;\n    if (!(std::cin >> s >> m)) return 0;\n    std::vector<std::string> dict(m);\n    for (int i = 0; i < m; ++i) std::cin >> dict[i];\n    std::cout << (wordBreak(s, dict) ? 1 : 0) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "leetcode 2\nleet code",
+        "expectedOutput": "1",
+        "isHidden": false
+      },
+      {
+        "input": "catsandog 5\ncats dog sand and cat",
+        "expectedOutput": "0",
+        "isHidden": false
+      },
+      {
+        "input": "applepenapple 2\napple pen",
+        "expectedOutput": "1",
+        "isHidden": true
+      }
+    ]
   }
 ]

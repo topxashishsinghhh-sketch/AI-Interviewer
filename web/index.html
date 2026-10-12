@@ -25,6 +25,7 @@
 
     <nav class="nav-links">
       <a href="#landing" class="nav-item" id="nav-link-home"><i class="bi bi-house me-1"></i> Home</a>
+      <a href="#subjects" class="nav-item" id="nav-link-subjects"><i class="bi bi-grid-3x3-gap me-1"></i> Subjects</a>
       <a href="#ai-mentor" class="nav-item" id="nav-link-mentor"><i class="bi bi-robot me-1"></i> AI Mentor</a>
       <a href="#challenges" class="nav-item" id="nav-link-challenges"><i class="bi bi-code-slash me-1"></i> Challenges</a>
       <a href="#features" class="nav-item" id="nav-link-features"><i class="bi bi-stars me-1"></i> Features</a>
@@ -81,19 +82,19 @@
           with Interactive AI Challenges
         </h1>
         <p class="hero-description">
-          The premier interview preparation platform. Practice with 284+ curated challenges across 
-          Algorithms, Data Structures, Modern C++ OOP, System Design, and STAR Behavioral questions.
+          The premier interview preparation platform. Practice with 310+ curated challenges across 
+          Algorithms, Data Structures, Modern C++ OOP, Operating Systems, DBMS, Networks, and STAR Behavioral questions.
         </p>
 
         <!-- Stats Counter -->
         <div class="hero-stats">
           <div class="stat-compact">
-            <span class="stat-number">284+</span>
+            <span class="stat-number">310+</span>
             <span class="stat-label">Challenges</span>
           </div>
           <div class="stat-compact">
-            <span class="stat-number">4</span>
-            <span class="stat-label">Core Tracks</span>
+            <span class="stat-number">8</span>
+            <span class="stat-label">Core Subjects</span>
           </div>
           <div class="stat-compact">
             <span class="stat-number">100%</span>
@@ -238,6 +239,178 @@
         <button type="button" class="btn btn-primary btn-lg" id="mentor-cta-btn">
           <i class="bi bi-mic-fill me-2"></i>Start Mock Interview with AI
         </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SEPARATOR -->
+  <div class="section-separator">
+    <div class="separator-line">
+      <div class="separator-icon"><i class="bi bi-grid-3x3-gap"></i></div>
+    </div>
+  </div>
+
+  <!-- SUBJECTS & KNOWLEDGE DOMAINS SECTION -->
+  <section class="subjects-section" id="subjects">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-pill mb-2"><i class="bi bi-folder2-open me-1"></i> Core Curriculum & Tracks</div>
+        <h2 class="display-title">Curated Subjects & Knowledge Domains</h2>
+        <p class="section-sub">Comprehensive topic-wise practice modules with 310+ questions tailored for FAANG, HFT, and top-tier technical interviews.</p>
+      </div>
+
+      <div class="subjects-grid">
+        <!-- Algorithms -->
+        <div class="subject-card" data-subject="algo">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-cyan"><i class="bi bi-diagram-3"></i></div>
+            <span class="subject-count-badge">34 Questions</span>
+          </div>
+          <h3 class="subject-title">Algorithms & Problem Solving</h3>
+          <p class="subject-desc">Master sliding window, dynamic programming, two pointers, graph theory, topological sort, and greedy strategies.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">DP</span>
+            <span class="topic-tag">Graphs</span>
+            <span class="topic-tag">Sliding Window</span>
+            <span class="topic-tag">Two Pointers</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="algo">
+            Practice Algorithms <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <!-- Data Structures -->
+        <div class="subject-card" data-subject="ds">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-emerald"><i class="bi bi-layers"></i></div>
+            <span class="subject-count-badge">27 Questions</span>
+          </div>
+          <h3 class="subject-title">Data Structures</h3>
+          <p class="subject-desc">Trie prefix trees, binary tree lowest common ancestor, min-heaps, doubly linked lists, monotonic stacks, and hash tables.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">Tries</span>
+            <span class="topic-tag">Binary Trees</span>
+            <span class="topic-tag">Heaps</span>
+            <span class="topic-tag">Stacks & Queues</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="ds">
+            Practice Data Structures <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <!-- C++ & OOP -->
+        <div class="subject-card" data-subject="oop">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-violet"><i class="bi bi-filetype-cpp"></i></div>
+            <span class="subject-count-badge">29 Questions</span>
+          </div>
+          <h3 class="subject-title">Modern C++ & OOP</h3>
+          <p class="subject-desc">RAII, Rule of 5, smart pointer cycle breaking, VTABLE/VPTR dispatch, move semantics, RVO, and perfect forwarding.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">RAII</span>
+            <span class="topic-tag">Smart Pointers</span>
+            <span class="topic-tag">VTABLE</span>
+            <span class="topic-tag">Templates</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="oop">
+            Practice C++ & OOP <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <!-- Operating Systems -->
+        <div class="subject-card" data-subject="os">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-amber"><i class="bi bi-cpu"></i></div>
+            <span class="subject-count-badge">27 Questions</span>
+          </div>
+          <h3 class="subject-title">Operating Systems</h3>
+          <p class="subject-desc">Virtual memory, TLB misses, multi-level paging, Mutex vs Semaphore, Coffman deadlock conditions, Copy-on-Write, and context switching.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">Virtual Memory</span>
+            <span class="topic-tag">Concurrency</span>
+            <span class="topic-tag">Deadlocks</span>
+            <span class="topic-tag">Context Switching</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="os">
+            Practice Operating Systems <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <!-- DBMS -->
+        <div class="subject-card" data-subject="dbms">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-blue"><i class="bi bi-database"></i></div>
+            <span class="subject-count-badge">27 Questions</span>
+          </div>
+          <h3 class="subject-title">Database Systems (DBMS)</h3>
+          <p class="subject-desc">B+ Tree vs Hash indexing, ACID transaction isolation levels, write-ahead logging (WAL), BCNF normalization, and sharding.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">B+ Trees</span>
+            <span class="topic-tag">ACID & MVCC</span>
+            <span class="topic-tag">WAL</span>
+            <span class="topic-tag">Sharding</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="dbms">
+            Practice DBMS <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <!-- Computer Networks -->
+        <div class="subject-card" data-subject="networks">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-rose"><i class="bi bi-globe"></i></div>
+            <span class="subject-count-badge">27 Questions</span>
+          </div>
+          <h3 class="subject-title">Computer Networks</h3>
+          <p class="subject-desc">TCP 3-way handshake, HTTP/2 vs HTTP/3 QUIC, TLS 1.3 1-RTT handshake, recursive DNS resolution, and WebSockets vs SSE.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">TCP / IP</span>
+            <span class="topic-tag">HTTP/3 QUIC</span>
+            <span class="topic-tag">TLS 1.3</span>
+            <span class="topic-tag">DNS</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="networks">
+            Practice Networks <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <!-- Behavioral & Leadership -->
+        <div class="subject-card" data-subject="hr">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-teal"><i class="bi bi-chat-quote"></i></div>
+            <span class="subject-count-badge">30 Questions</span>
+          </div>
+          <h3 class="subject-title">Behavioral & STAR Leadership</h3>
+          <p class="subject-desc">Conflict resolution, engineering leadership, deadline triage, failure postmortems, mentorship, and disagree-and-commit culture.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">STAR Method</span>
+            <span class="topic-tag">Conflict</span>
+            <span class="topic-tag">Leadership</span>
+            <span class="topic-tag">Postmortems</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="hr">
+            Practice Behavioral <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <!-- Aptitude & Reasoning -->
+        <div class="subject-card" data-subject="aptitude">
+          <div class="subject-card-top">
+            <div class="subject-icon-box icon-orange"><i class="bi bi-calculator"></i></div>
+            <span class="subject-count-badge">43 Questions</span>
+          </div>
+          <h3 class="subject-title">Quantitative Aptitude & Logic</h3>
+          <p class="subject-desc">Combinatorics, probability theory, logical deductions, data interpretation, and algorithmic brain teasers.</p>
+          <div class="subject-topics-wrap">
+            <span class="topic-tag">Probability</span>
+            <span class="topic-tag">Combinatorics</span>
+            <span class="topic-tag">Critical Logic</span>
+            <span class="topic-tag">Puzzles</span>
+          </div>
+          <button class="btn btn-outline btn-block subject-btn" data-explore-subject="aptitude">
+            Practice Aptitude <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
       </div>
     </div>
   </section>

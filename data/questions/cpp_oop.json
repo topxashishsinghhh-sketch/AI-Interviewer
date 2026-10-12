@@ -308,7 +308,7 @@
         "isHidden": false
       }
     ],
-    "explanation": "C++11 standard \u00a76.7 specifies that static local variables are initialized exactly once in a thread-safe manner (Meyers Singleton).",
+    "explanation": "C++11 standard §6.7 specifies that static local variables are initialized exactly once in a thread-safe manner (Meyers Singleton).",
     "objective": "Implement thread-safe creational design patterns in modern C++.",
     "skillTags": [
       "Design Patterns",
@@ -372,6 +372,148 @@
       "RAII",
       "Rule of 5",
       "Modern C++"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "cpp_hard_vtable_vptr_internals",
+    "subject": "cpp_oop",
+    "topic": "polymorphism",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain how virtual function dispatch is implemented under the hood in C++ using VTABLE and VPTR. What memory overhead does it introduce?",
+    "explanation": "Every class with at least one virtual function has a static compiler-generated table of function pointers called the VTABLE. Every instantiated object of that class contains an invisible pointer (VPTR) pointing to its class VTABLE, usually at offset 0. When a virtual function is invoked through a base pointer/reference, the program dereferences object->vptr, indexes the appropriate offset in the table, and jumps to the function. Overhead: 8 bytes per object on 64-bit platforms plus one pointer per virtual method per class.",
+    "objective": "Explain virtual dispatch mechanics, runtime polymorphism, and memory overhead of virtual method tables.",
+    "skillTags": [
+      "VTABLE",
+      "VPTR",
+      "Polymorphism",
+      "C++ Internals"
+    ],
+    "keywords": [
+      "vtable",
+      "vptr",
+      "virtual function",
+      "dynamic dispatch",
+      "function pointer",
+      "offset"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "cpp_med_rvo_nrvo",
+    "subject": "cpp_oop",
+    "topic": "optimization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What is Return Value Optimization (RVO) in modern C++?",
+    "options": [
+      "A compiler optimization where the return value is constructed directly in the storage allocated for the caller's target variable, eliding copy/move constructors",
+      "An optimization where all functions automatically return void to save stack memory",
+      "A runtime garbage collector that frees unused return objects",
+      "A technique where function parameters are sorted alphabetically"
+    ],
+    "answer": 0,
+    "explanation": "RVO (and mandatory copy elision since C++17) allows the compiler to construct a temporary return value directly in the memory space allocated by the caller, eliminating unnecessary copy and move operations.",
+    "objective": "Understand C++ compiler optimizations, copy elision rules, and value semantics.",
+    "skillTags": [
+      "RVO",
+      "Optimization",
+      "Copy Elision",
+      "Modern C++"
+    ],
+    "keywords": [
+      "rvo",
+      "copy elision",
+      "return value optimization",
+      "move semantics"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "cpp_hard_forwarding_references",
+    "subject": "cpp_oop",
+    "topic": "templates",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "What is a forwarding reference (universal reference) in C++, and what is the role of std::forward?",
+    "options": [
+      "An auto&& or T&& reference where T is a deduced template type; std::forward preserves the original lvalue or rvalue value category",
+      "A pointer to an address that can never be dereferenced",
+      "A reference that forwards all network packets to a remote server",
+      "A macro for printing debug logs to std::cout"
+    ],
+    "answer": 0,
+    "explanation": "In template contexts with deduced types, T&& is a forwarding reference that collapses to lvalue reference if passed an lvalue, or rvalue reference if passed an rvalue. std::forward<T> statically casts the parameter to preserve its original value category (perfect forwarding).",
+    "objective": "Master perfect forwarding, reference collapsing rules, and generic template design.",
+    "skillTags": [
+      "Templates",
+      "Perfect Forwarding",
+      "Move Semantics",
+      "Modern C++"
+    ],
+    "keywords": [
+      "forwarding reference",
+      "std::forward",
+      "perfect forwarding",
+      "reference collapsing",
+      "value category"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "cpp_med_smart_pointer_cycles",
+    "subject": "cpp_oop",
+    "topic": "memory_management",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "How do cyclic references cause memory leaks with std::shared_ptr, and how does std::weak_ptr resolve this issue?",
+    "explanation": "If two objects hold std::shared_ptr references to each other, their strong reference counts will never drop to zero even when all external pointers go out of scope, causing a perpetual leak. std::weak_ptr provides non-owning observer access that increments only the weak reference count without preventing deallocation. When access is needed, lock() creates a temporary shared_ptr.",
+    "objective": "Prevent cyclic memory leaks in complex object graphs using weak pointers.",
+    "skillTags": [
+      "Smart Pointers",
+      "shared_ptr",
+      "weak_ptr",
+      "Memory Safety"
+    ],
+    "keywords": [
+      "cyclic reference",
+      "memory leak",
+      "shared_ptr",
+      "weak_ptr",
+      "reference count",
+      "lock"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "cpp_hard_type_casting",
+    "subject": "cpp_oop",
+    "topic": "type_system",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "When downcasting a base class pointer to a derived class pointer in C++, which cast performs runtime RTTI type checking and returns nullptr on failure?",
+    "options": [
+      "dynamic_cast",
+      "static_cast",
+      "reinterpret_cast",
+      "const_cast"
+    ],
+    "answer": 0,
+    "explanation": "dynamic_cast safely navigates inheritance hierarchies by checking Run-Time Type Information (RTTI) stored in the polymorphic class's VTABLE. It returns nullptr for pointers or throws std::bad_cast for references on mismatch.",
+    "objective": "Evaluate C++ cast operators and understand type safety and RTTI mechanics.",
+    "skillTags": [
+      "dynamic_cast",
+      "RTTI",
+      "Type Casting",
+      "Polymorphism"
+    ],
+    "keywords": [
+      "dynamic_cast",
+      "rtti",
+      "static_cast",
+      "downcasting",
+      "type safety"
     ],
     "softSkill": false
   }

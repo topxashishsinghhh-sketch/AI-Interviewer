@@ -287,5 +287,146 @@
       "Normalization"
     ],
     "softSkill": false
+  },
+  {
+    "id": "dbms_med_bplus_tree_vs_hash",
+    "subject": "dbms",
+    "topic": "indexing",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "Why do relational database storage engines (like InnoDB) overwhelmingly prefer B+ Tree indexing over Hash indexing for primary keys?",
+    "options": [
+      "B+ Trees support efficient range queries, prefix matching, and sorted scans due to linked leaf nodes",
+      "Hash indexes require O(N^2) memory and cannot store integers",
+      "B+ Trees only consume memory while Hash indexes write directly to floppy drives",
+      "Hash indexes do not support exact point lookups"
+    ],
+    "answer": 0,
+    "explanation": "B+ Trees keep keys in sorted order with contiguous leaf node pointers, enabling fast range scans (e.g., WHERE age BETWEEN 20 AND 30) with O(log N) depth. Hash indexes only support O(1) exact equality lookups.",
+    "objective": "Understand relational database indexing data structures, tree balancing, and range query efficiency.",
+    "skillTags": [
+      "B+ Tree",
+      "Indexing",
+      "Storage Engines",
+      "SQL Optimization"
+    ],
+    "keywords": [
+      "b+ tree",
+      "indexing",
+      "range queries",
+      "hash index",
+      "innodb"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "dbms_hard_acid_isolation_levels",
+    "subject": "dbms",
+    "topic": "transactions",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Which concurrency anomaly can occur in the 'Repeatable Read' isolation level that is prevented by 'Serializable'?",
+    "options": [
+      "Phantom Reads",
+      "Dirty Reads",
+      "Non-Repeatable Reads",
+      "Lost Updates"
+    ],
+    "answer": 0,
+    "explanation": "Repeatable Read prevents Dirty Reads and Non-Repeatable Reads for existing rows, but in standard SQL specifications allows Phantom Reads (new rows inserted by concurrent transactions matching a range predicate). Serializable prevents all anomalies.",
+    "objective": "Analyze ANSI SQL transaction isolation levels, concurrency anomalies, and multi-version concurrency control (MVCC).",
+    "skillTags": [
+      "Transactions",
+      "ACID",
+      "Isolation Levels",
+      "MVCC"
+    ],
+    "keywords": [
+      "phantom read",
+      "repeatable read",
+      "serializable",
+      "dirty read",
+      "isolation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "dbms_med_wal_crash_recovery",
+    "subject": "dbms",
+    "topic": "crash_recovery",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Explain Write-Ahead Logging (WAL) in database systems. How does it guarantee the Durability property of ACID without synchronous random disk writes?",
+    "explanation": "WAL dictates that any modifications must be written sequentially to append-only log files on durable storage before the corresponding dirty data pages are flushed to database disk files. This turns random I/O into fast sequential I/O, allowing the engine to recover state after crashes by replaying redo logs.",
+    "objective": "Explain database recovery architectures, append-only logs, and ACID durability enforcement.",
+    "skillTags": [
+      "WAL",
+      "Durability",
+      "Crash Recovery",
+      "Transactions"
+    ],
+    "keywords": [
+      "write ahead logging",
+      "wal",
+      "durability",
+      "redo log",
+      "sequential write",
+      "crash recovery"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "dbms_med_bcnf_normalization",
+    "subject": "dbms",
+    "topic": "normalization",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What is the defining condition for a relation to be in Boyce-Codd Normal Form (BCNF)?",
+    "options": [
+      "For every non-trivial functional dependency X -> Y, X must be a superkey",
+      "Every attribute must be indexed using an AVL tree",
+      "There must be at least two foreign keys referencing the master table",
+      "All columns must allow NULL values to avoid update anomalies"
+    ],
+    "answer": 0,
+    "explanation": "BCNF is a stricter version of 3NF requiring that for every functional dependency X -> Y, the left-hand side X is a superkey of the relation.",
+    "objective": "Master database normalization principles and functional dependency decomposition.",
+    "skillTags": [
+      "Normalization",
+      "BCNF",
+      "Relational Schema Design"
+    ],
+    "keywords": [
+      "bcnf",
+      "superkey",
+      "normalization",
+      "functional dependency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "dbms_hard_sharding_vs_replication",
+    "subject": "dbms",
+    "topic": "distributed_databases",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Compare Database Sharding with Read Replication. When is horizontal sharding necessary, and what complexities does it introduce?",
+    "explanation": "Read replication maintains identical copies of the database across secondary nodes to scale read throughput and ensure high availability. Sharding horizontally partitions rows across multiple independent database nodes when dataset volume or write throughput exceeds single-node storage and memory capacity. Complexities include cross-shard joins, distributed two-phase commit transactions, and re-sharding rebalancing.",
+    "objective": "Design scalable distributed database architectures and evaluate trade-offs in horizontal partitioning.",
+    "skillTags": [
+      "Sharding",
+      "Replication",
+      "Distributed Systems",
+      "Scalability"
+    ],
+    "keywords": [
+      "sharding",
+      "replication",
+      "horizontal partitioning",
+      "distributed transactions",
+      "two-phase commit",
+      "cross-shard"
+    ],
+    "softSkill": false
   }
 ]

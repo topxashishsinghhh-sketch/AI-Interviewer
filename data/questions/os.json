@@ -294,5 +294,147 @@
       "CPU Scheduling"
     ],
     "softSkill": false
+  },
+  {
+    "id": "os_med_virtual_memory_tlb",
+    "subject": "os",
+    "topic": "memory_management",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What happens during a Translation Lookaside Buffer (TLB) miss in modern x86-64 virtual memory architectures?",
+    "options": [
+      "The Memory Management Unit (MMU) walks multi-level page tables in physical RAM to translate the virtual address to physical address",
+      "The operating system halts and prompts the CPU to execute a hard reboot",
+      "The kernel immediately throws a segmentation fault (SIGSEGV) terminating the process",
+      "The CPU swaps the entire process address space onto secondary disk storage"
+    ],
+    "answer": 0,
+    "explanation": "On a TLB miss, a hardware page table walk traverses the multi-level page hierarchy (PML4, PDPT, PD, PT) to resolve the physical page frame address and load the entry into the TLB.",
+    "objective": "Understand virtual memory address translation, TLB caching hierarchy, and hardware page table walks.",
+    "skillTags": [
+      "Virtual Memory",
+      "TLB",
+      "Memory Management"
+    ],
+    "keywords": [
+      "tlb",
+      "virtual memory",
+      "mmu",
+      "page table",
+      "address translation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "os_med_mutex_vs_semaphore",
+    "subject": "os",
+    "topic": "concurrency",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What is the primary conceptual difference between a Mutex and a Counting Semaphore in operating system synchronization?",
+    "options": [
+      "A Mutex has an ownership semantic (only the acquiring thread can release it), whereas a Semaphore can be signaled by any thread",
+      "A Mutex allows up to 5 concurrent threads, while a Semaphore allows only 1",
+      "A Semaphore operates strictly in user-space while a Mutex always triggers a kernel interrupt",
+      "There is no difference; Mutex is simply the POSIX name for Semaphore"
+    ],
+    "answer": 0,
+    "explanation": "A mutex enforces ownership: only the thread that locked the mutex can unlock it. A semaphore maintains an integer count and can be used for signaling across different threads.",
+    "objective": "Distinguish between mutual exclusion locks and signaling primitives in multi-threaded programming.",
+    "skillTags": [
+      "Concurrency",
+      "Mutex",
+      "Semaphores",
+      "Synchronization"
+    ],
+    "keywords": [
+      "mutex",
+      "semaphore",
+      "synchronization",
+      "ownership",
+      "concurrency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "os_hard_deadlock_coffman",
+    "subject": "os",
+    "topic": "deadlock",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "Which of the following describes the four Coffman conditions necessary for a deadlock to occur in an operating system?",
+    "options": [
+      "Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait",
+      "Preemption, Race Condition, Starvation, Aging",
+      "Paging, Segmentation, Swapping, Thrashing",
+      "Virtualization, Multiprocessing, Scheduling, Polling"
+    ],
+    "answer": 0,
+    "explanation": "A deadlock can only occur if all four Coffman conditions simultaneously hold: Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait.",
+    "objective": "Analyze resource allocation graphs and deadlock prevention mechanisms using the Coffman conditions.",
+    "skillTags": [
+      "Deadlock",
+      "Resource Allocation",
+      "Operating Systems"
+    ],
+    "keywords": [
+      "deadlock",
+      "coffman",
+      "mutual exclusion",
+      "circular wait",
+      "no preemption"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "os_med_cow_fork",
+    "subject": "os",
+    "topic": "processes",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Explain Copy-on-Write (COW) during a Unix fork() system call. How does it optimize process creation and memory utilization?",
+    "explanation": "When fork() is called, the child process receives a copy of the parent's page table entries with write permissions cleared and marked as COW. Physical memory pages are shared between parent and child until one of them writes to a page, at which point a page fault is triggered and the OS duplicates only that modified page.",
+    "objective": "Explain process memory virtualization, page fault handling, and resource optimization in Linux/Unix.",
+    "skillTags": [
+      "Copy on Write",
+      "fork",
+      "Processes",
+      "Memory Virtualization"
+    ],
+    "keywords": [
+      "copy on write",
+      "fork",
+      "page fault",
+      "duplicate",
+      "shared memory",
+      "mmu"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "os_hard_context_switch_overhead",
+    "subject": "os",
+    "topic": "scheduling",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "What operations occur during an operating system context switch between two different processes, and why is a process context switch costlier than a thread context switch?",
+    "explanation": "A process context switch requires saving CPU registers (PC, SP, general purpose), changing kernel stack pointer, updating the page table base register (CR3 on x86) which invalidates/flushes the TLB, and repopulating cache lines. Thread context switches within the same process share the same virtual address space, avoiding TLB flushes and page table swaps.",
+    "objective": "Evaluate kernel context switching overhead, CPU cache pollution, and TLB invalidation differences between processes and threads.",
+    "skillTags": [
+      "Context Switching",
+      "Threads",
+      "CPU Scheduling",
+      "TLB"
+    ],
+    "keywords": [
+      "context switch",
+      "registers",
+      "tlb flush",
+      "cr3",
+      "page directory",
+      "cache pollution",
+      "thread"
+    ],
+    "softSkill": false
   }
 ]

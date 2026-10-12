@@ -300,5 +300,147 @@
       "Addressing"
     ],
     "softSkill": false
+  },
+  {
+    "id": "net_med_tcp_handshake",
+    "subject": "networks",
+    "topic": "transport_layer",
+    "difficulty": "Medium",
+    "type": "MCQ",
+    "text": "What is the sequence of flag packets exchanged during a standard TCP three-way handshake?",
+    "options": [
+      "SYN -> SYN-ACK -> ACK",
+      "ACK -> SYN -> FIN",
+      "HELLO -> READY -> CONNECT",
+      "GET -> POST -> 200 OK"
+    ],
+    "answer": 0,
+    "explanation": "Client sends SYN with initial sequence number, server responds with SYN-ACK acknowledging client's sequence number and presenting its own, and client acknowledges with ACK to establish full-duplex connection.",
+    "objective": "Understand TCP connection lifecycle, sequence number synchronization, and handshake fundamentals.",
+    "skillTags": [
+      "TCP",
+      "Transport Layer",
+      "Handshake",
+      "Networking"
+    ],
+    "keywords": [
+      "tcp",
+      "syn",
+      "syn-ack",
+      "ack",
+      "three-way handshake"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "net_hard_http2_vs_http3_quic",
+    "subject": "networks",
+    "topic": "application_layer",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "What fundamental problem in HTTP/2 did HTTP/3 solve by transitioning from TCP to QUIC (over UDP)?",
+    "options": [
+      "Head-of-Line (HoL) blocking at the transport (TCP) layer when a packet is dropped",
+      "Lack of TLS encryption support",
+      "Inability to stream video files larger than 1GB",
+      "HTTP/2 only working on Internet Explorer"
+    ],
+    "answer": 0,
+    "explanation": "While HTTP/2 multiplexes streams over a single TCP connection, a single dropped TCP packet stalls all multiplexed streams until retransmission succeeds. QUIC streams are independent over UDP, eliminating TCP-level Head-of-Line blocking.",
+    "objective": "Evaluate modern web transport protocols, QUIC multiplexing, and TCP Head-of-Line blocking mitigation.",
+    "skillTags": [
+      "HTTP/3",
+      "QUIC",
+      "HTTP/2",
+      "Head-of-Line Blocking"
+    ],
+    "keywords": [
+      "http/3",
+      "quic",
+      "head of line blocking",
+      "udp",
+      "multiplexing"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "net_med_dns_resolution_hierarchy",
+    "subject": "networks",
+    "topic": "dns",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Describe the hierarchical DNS resolution process when a browser queries an uncached domain name like 'api.github.com'.",
+    "explanation": "The local recursive resolver queries Root Nameservers ('.'), which delegate to Top-Level Domain (TLD) servers ('.com'). The TLD server directs the resolver to the Authoritative Nameservers for 'github.com', which returns the authoritative A/AAAA IP address record back to the resolver and client.",
+    "objective": "Trace hierarchical DNS architecture from local resolver to authoritative nameservers.",
+    "skillTags": [
+      "DNS",
+      "Networking",
+      "Internet Architecture"
+    ],
+    "keywords": [
+      "dns",
+      "recursive resolver",
+      "root nameserver",
+      "tld",
+      "authoritative nameserver",
+      "a record"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "net_hard_tls_13_handshake",
+    "subject": "networks",
+    "topic": "security",
+    "difficulty": "Hard",
+    "type": "MCQ",
+    "text": "What major latency enhancement was introduced in TLS 1.3 compared to TLS 1.2?",
+    "options": [
+      "1-RTT handshake by default (and optional 0-RTT resumption) by combining cipher negotiation with Diffie-Hellman key exchange",
+      "Removal of asymmetric cryptography entirely",
+      "Switching from AES to plain base64 encoding",
+      "Elimination of certificate verification authority checks"
+    ],
+    "answer": 0,
+    "explanation": "TLS 1.3 reduced handshake latency from 2 round-trip times (2-RTT) to 1-RTT by having the client send key shares directly in the ClientHello, and allows 0-RTT session resumption for previously visited hosts.",
+    "objective": "Analyze modern network security protocols, TLS handshake round-trips, and cryptographic forward secrecy.",
+    "skillTags": [
+      "TLS",
+      "HTTPS",
+      "Network Security",
+      "Cryptography"
+    ],
+    "keywords": [
+      "tls 1.3",
+      "1-rtt",
+      "0-rtt",
+      "diffie-hellman",
+      "handshake latency"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "net_med_websockets_vs_sse",
+    "subject": "networks",
+    "topic": "application_layer",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Compare WebSockets and Server-Sent Events (SSE). When should you prefer SSE over WebSockets in backend web design?",
+    "explanation": "WebSockets provide full-duplex bidirectional TCP communication with minimal framing over a custom protocol after an HTTP upgrade. SSE provides unidirectional server-to-client streaming over standard HTTP/1.1 or HTTP/2, natively supporting auto-reconnection, event IDs, and corporate proxies without custom firewall configuration. Prefer SSE for unidirectional live feeds, notification dashboards, and LLM text generation streaming.",
+    "objective": "Architect real-time communication systems choosing between full-duplex WebSockets and HTTP SSE.",
+    "skillTags": [
+      "WebSockets",
+      "SSE",
+      "Real-Time Systems",
+      "HTTP"
+    ],
+    "keywords": [
+      "websockets",
+      "server sent events",
+      "sse",
+      "bidirectional",
+      "unidirectional",
+      "http streaming"
+    ],
+    "softSkill": false
   }
 ]

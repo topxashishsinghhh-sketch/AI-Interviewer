@@ -390,5 +390,67 @@
       "dfs"
     ],
     "softSkill": false
+  },
+  {
+    "id": "ds-implement-trie-prefix-tree",
+    "subject": "ds",
+    "topic": "trees",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "A Trie (prefix tree) is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. Implement a Trie class with insert, search, and startsWith methods.",
+    "explanation": "Each TrieNode contains an array of 26 child pointers (for lowercase English letters) and a boolean isEndOfWord flag. Traversal follows character edges in O(L) time where L is string length.",
+    "objective": "Implement prefix trees for fast dictionary and autocomplete lookups.",
+    "skillTags": [
+      "Trie",
+      "Trees",
+      "Prefix Tree",
+      "Data Structures"
+    ],
+    "keywords": [
+      "trie",
+      "prefix tree",
+      "autocomplete",
+      "strings"
+    ],
+    "softSkill": false,
+    "templateCode": "#include <iostream>\n#include <string>\n#include <vector>\n\nstruct TrieNode {\n    TrieNode* children[26] = {nullptr};\n    bool isEnd = false;\n};\n\nclass Trie {\n    TrieNode root;\npublic:\n    void insert(const std::string& word) {\n        TrieNode* curr = &root;\n        for (char c : word) {\n            int idx = c - 'a';\n            if (!curr->children[idx]) curr->children[idx] = new TrieNode();\n            curr = curr->children[idx];\n        }\n        curr->isEnd = true;\n    }\n    bool search(const std::string& word) {\n        TrieNode* curr = &root;\n        for (char c : word) {\n            int idx = c - 'a';\n            if (!curr->children[idx]) return false;\n            curr = curr->children[idx];\n        }\n        return curr->isEnd;\n    }\n};\n\nint main() {\n    Trie t;\n    t.insert(\"apple\");\n    std::cout << t.search(\"apple\") << \" \" << t.search(\"app\") << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "",
+        "expectedOutput": "1 0",
+        "isHidden": false
+      }
+    ]
+  },
+  {
+    "id": "ds-lowest-common-ancestor-binary-tree",
+    "subject": "ds",
+    "topic": "binary_trees",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Given a binary tree, find the lowest common ancestor (LCA) of two given nodes p and q in O(N) time and O(H) recursion stack space.",
+    "explanation": "Recursively traverse the tree: if current node is null or equals p or q, return root. Recursively search left and right subtrees. If both return non-null, the current node is the LCA. Otherwise return the non-null child.",
+    "objective": "Master post-order tree traversal for ancestor finding.",
+    "skillTags": [
+      "Binary Trees",
+      "Recursion",
+      "LCA",
+      "Data Structures"
+    ],
+    "keywords": [
+      "lowest common ancestor",
+      "binary tree",
+      "recursion",
+      "post-order"
+    ],
+    "softSkill": false,
+    "templateCode": "#include <iostream>\n\nstruct Node {\n    int val;\n    Node* left = nullptr;\n    Node* right = nullptr;\n    Node(int v) : val(v) {}\n};\n\nNode* lca(Node* root, int p, int q) {\n    if (!root || root->val == p || root->val == q) return root;\n    Node* l = lca(root->left, p, q);\n    Node* r = lca(root->right, p, q);\n    if (l && r) return root;\n    return l ? l : r;\n}\n\nint main() {\n    Node* root = new Node(3);\n    root->left = new Node(5);\n    root->right = new Node(1);\n    Node* res = lca(root, 5, 1);\n    std::cout << (res ? res->val : -1) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "",
+        "expectedOutput": "3",
+        "isHidden": false
+      }
+    ]
   }
 ]

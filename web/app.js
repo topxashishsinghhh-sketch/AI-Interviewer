@@ -270,7 +270,17 @@ var views = {};
 views.problems = function (html) {
   var parts = [];
   parts.push('<div class="filters">');
-  parts.push('<input type="text" id="problem-search" placeholder="Search problems…" autocomplete="off">');
+  parts.push('<input type="text" id="problem-search" placeholder="Search 310+ problems by keyword…" autocomplete="off">');
+  parts.push('<select id="filter-subject"><option value="">All subjects (310)</option>' +
+             '<option value="algo">Algorithms (34)</option>' +
+             '<option value="ds">Data Structures (27)</option>' +
+             '<option value="oop">C++ & OOP (29)</option>' +
+             '<option value="os">Operating Systems (27)</option>' +
+             '<option value="dbms">DBMS & SQL (27)</option>' +
+             '<option value="networks">Computer Networks (27)</option>' +
+             '<option value="hr">HR & Behavioral (30)</option>' +
+             '<option value="aptitude">Quantitative Aptitude (21)</option>' +
+             '<option value="reasoning">Logical Reasoning (22)</option></select>');
   parts.push('<select id="filter-difficulty"><option value="">All difficulties</option>' +
              '<option>Easy</option><option>Medium</option><option>Hard</option></select>');
   parts.push('<select id="filter-status"><option value="">All statuses</option>' +
@@ -692,7 +702,7 @@ function setLoginMode(registering) {
   setHidden('login-error', true);
 }
 
-function quickDemo(targetView, problemId) {
+function quickDemo(targetView, problemId, initialSubject) {
   var rand = Math.floor(1000 + Math.random() * 9000);
   var email = 'candidate.' + rand + '@interview.dev';
   var pass = 'DemoPass123!';
@@ -703,7 +713,7 @@ function quickDemo(targetView, problemId) {
       sessionStorage.setItem('ai_interviewer.token', state.token);
       updateAuthUI(true);
       return loadStats().then(function () {
-        return api.problems({ limit: 200 }).then(function (list) {
+        return api.problems({ limit: 0 }).then(function (list) {
           state.problems = list || [];
           state.problemsLoaded = state.problems.length;
         });
@@ -712,6 +722,9 @@ function quickDemo(targetView, problemId) {
           loadProblem(problemId);
         } else {
           navigate(targetView || 'problems');
+          if ((!targetView || targetView === 'problems') && initialSubject) {
+            loadProblems(initialSubject);
+          }
         }
       });
     }).catch(function (err) {
@@ -720,7 +733,7 @@ function quickDemo(targetView, problemId) {
     });
 }
 
-function enterPractice(targetView, problemId) {
+function enterPractice(targetView, problemId, initialSubject) {
   if (state.token && state.user) {
     setHidden('landing-view', true);
     setHidden('app', false);
@@ -728,9 +741,12 @@ function enterPractice(targetView, problemId) {
       loadProblem(problemId);
     } else {
       navigate(targetView || 'problems');
+      if ((!targetView || targetView === 'problems') && initialSubject) {
+        loadProblems(initialSubject);
+      }
     }
   } else {
-    quickDemo(targetView || 'problems', problemId);
+    quickDemo(targetView || 'problems', problemId, initialSubject);
   }
 }
 
@@ -794,6 +810,11 @@ function scrollToLanding(sectionId) {
   var el = $(sectionId);
   if (el) el.scrollIntoView({ behavior: 'smooth' });
 }
+
+on('nav-link-subjects', 'click', function (e) {
+  e.preventDefault();
+  scrollToLanding('subjects');
+});
 
 on('nav-link-mentor', 'click', function (e) {
   e.preventDefault();
@@ -885,19 +906,25 @@ function loadStats() {
   });
 }
 
-function loadProblems() {
+function loadProblems(initialSubject) {
   setHtml('view-problems', views.problems());
   var search = $('problem-search');
+  var subject = $('filter-subject');
   var difficulty = $('filter-difficulty');
   var status = $('filter-status');
   var type = $('filter-type');
 
+  if (initialSubject && subject) {
+    subject.value = initialSubject;
+  }
+
   function params() {
     var p = {};
-    if (difficulty.value) p.difficulty = difficulty.value;
-    if (status.value) p.status = status.value;
-    if (type.value) p.type = type.value;
-    if (search.value.trim()) p.q = search.value.trim();
+    if (subject && subject.value) p.subject = subject.value;
+    if (difficulty && difficulty.value) p.difficulty = difficulty.value;
+    if (status && status.value) p.status = status.value;
+    if (type && type.value) p.type = type.value;
+    if (search && search.value.trim()) p.q = search.value.trim();
     return p;
   }
 
@@ -910,10 +937,11 @@ function loadProblems() {
     });
   };
 
-  search.addEventListener('input', apply);
-  difficulty.addEventListener('change', apply);
-  status.addEventListener('change', apply);
-  type.addEventListener('change', apply);
+  if (search) search.addEventListener('input', apply);
+  if (subject) subject.addEventListener('change', apply);
+  if (difficulty) difficulty.addEventListener('change', apply);
+  if (status) status.addEventListener('change', apply);
+  if (type) type.addEventListener('change', apply);
   apply();
 }
 
@@ -1610,6 +1638,15 @@ document.addEventListener('click', function (event) {
         cards[c].style.display = 'none';
       }
     }
+    return;
+  }
+
+  // Explore subject button on landing page
+  var subjectBtn = event.target.closest('[data-explore-subject]');
+  if (subjectBtn) {
+    event.preventDefault();
+    var subj = subjectBtn.dataset.exploreSubject;
+    enterPractice('problems', null, subj);
     return;
   }
 
