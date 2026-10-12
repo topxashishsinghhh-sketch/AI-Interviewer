@@ -286,46 +286,95 @@ views.problems = function (html) {
 
 views.problem = function () {
   var p = state.currentProblem || {};
+  var isCoding = p.type === 'Coding';
+  var isSoft = p.softSkill || p.skillKind === 'Soft';
   var parts = [];
+
   parts.push('<a href="#" class="back-link" data-nav="problems">&larr; All problems</a>');
-  parts.push('<h1>' + esc(p.title || p.id) + '</h1>');
-  parts.push('<p class="muted">' + esc(p.subject) + ' &middot; ' + esc(p.topic) + ' &middot; ' +
-             esc(p.type) + ' ' + difficultyPill(p.difficulty) + '</p>');
-  parts.push('<div class="card" style="margin-top:14px">');
+
+  parts.push('<div class="workspace-split">');
+
+  // Left Pane: Description, Objective, STAR / Rubric, Sample Cases
+  parts.push('<div class="workspace-left">');
+  parts.push('<div class="card">');
+  parts.push('<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">');
+  parts.push('<h2 style="font-size:18px;margin:0">' + esc(p.title || p.id) + '</h2>');
+  parts.push(difficultyPill(p.difficulty));
+  parts.push('</div>');
+  parts.push('<p class="muted" style="font-size:12px;margin:0 0 12px 0">' + esc(p.subject) + ' &middot; ' + esc(p.topic) + ' &middot; ' + esc(p.type) + '</p>');
   parts.push(objectiveBanner(p));
-  parts.push('<pre class="problem-text">' + highlight(p.text, p.keywords) + '</pre></div>');
+  parts.push('<pre class="problem-text" style="white-space:pre-wrap;font-size:13.5px;line-height:1.6">' + highlight(p.text, p.keywords) + '</pre>');
   parts.push(skillChips(p));
+  parts.push('</div>');
+
+  if (isSoft) {
+    parts.push('<div class="rubric-card">');
+    parts.push('<div class="rubric-header"><span>&#10024;</span> Professional Evaluation Rubric (STAR Method)</div>');
+    parts.push('<div class="rubric-list">');
+    parts.push('<div><b>S - Situation:</b> Set clear context and background.</div>');
+    parts.push('<div><b>T - Task:</b> Explain your specific responsibility and core challenge.</div>');
+    parts.push('<div><b>A - Action:</b> Detail technical trade-offs, interpersonal initiatives, and proactive execution.</div>');
+    parts.push('<div><b>R - Result:</b> Quantify positive impact, learnings, and engineering takeaways.</div>');
+    parts.push('</div></div>');
+  }
 
   if (p.samples && p.samples.length) {
-    parts.push('<div class="panel"><h3>Sample cases</h3>');
+    parts.push('<div class="panel" style="margin-top:0"><h3>Sample Test Cases</h3>');
     for (var i = 0; i < p.samples.length; i++) {
-      parts.push('<div class="sample"><b>Case ' + (i + 1) + '</b>' +
+      parts.push('<div class="sample"><b>Example ' + (i + 1) + '</b>' +
         '<div class="sample-block"><span class="muted">Input</span><pre>' + esc(p.samples[i].input) + '</pre></div>' +
-        '<div class="sample-block"><span class="muted">Expected output</span><pre>' + esc(p.samples[i].expected) + '</pre></div>' +
+        '<div class="sample-block"><span class="muted">Expected Output</span><pre>' + esc(p.samples[i].expected) + '</pre></div>' +
         '</div>');
     }
     parts.push('</div>');
   }
+  parts.push('</div>'); // end workspace-left
 
-  var isCoding = p.type === 'Coding';
-  parts.push('<div class="editor"><div class="panel-head"><h3>' +
-             (isCoding ? 'Code' : 'Your answer') + '</h3></div>');
-  parts.push('<textarea id="answer" rows="12" spellcheck="false">' + esc(p.template || '') + '</textarea>');
-  parts.push('<div style="margin-top:10px;display:flex;gap:8px">');
-  parts.push('<button class="btn btn-primary" id="submit">Submit</button>');
+  // Right Pane: Modern IDE / Response Area, Action Bar, Results
+  parts.push('<div class="workspace-right">');
+  parts.push('<div class="ide-card">');
+  parts.push('<div class="ide-header">');
+  parts.push('<div class="ide-tabs">');
+  parts.push('<button class="ide-tab active" type="button">' + (isCoding ? 'Solution.cpp' : 'Response Form') + '</button>');
+  parts.push('</div>');
   if (isCoding) {
-    parts.push('<button class="btn" id="run">Run</button>');
-    parts.push('<select id="language" style="width:auto">' +
+    parts.push('<div style="display:flex;align-items:center;gap:8px">');
+    parts.push('<span class="muted" style="font-size:11.5px">Language:</span>');
+    parts.push('<select id="language" style="width:auto;padding:3px 24px 3px 8px;font-size:12px">' +
                '<option value="cpp">C++17</option><option value="c">C11</option></select>');
+    parts.push('</div>');
   }
-  parts.push('<button class="btn btn-quiet" id="clear">Clear</button>');
-  parts.push('<button class="btn" id="bookmark">' +
-             (p.bookmarked ? 'Bookmarked' : 'Bookmark') + '</button>');
-  parts.push('</div></div>');
+  parts.push('</div>'); // end ide-header
+
+  parts.push('<div class="code-editor-wrapper">');
+  parts.push('<div class="editor-line-numbers" id="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12</div>');
+  parts.push('<textarea id="answer" class="code-textarea" spellcheck="false" placeholder="' +
+             (isCoding ? '// Write your solution here...' : 'Compose your structured answer according to the STAR framework...') +
+             '">' + esc(p.template || '') + '</textarea>');
+  parts.push('</div>'); // end code-editor-wrapper
+
+  parts.push('<div class="ide-footer">');
+  parts.push('<div style="display:flex;gap:8px">');
+  parts.push('<button class="btn btn-quiet" id="clear">Reset</button>');
+  parts.push('<button class="btn btn-quiet" id="bookmark">' + (p.bookmarked ? '★ Bookmarked' : '☆ Bookmark') + '</button>');
+  parts.push('</div>');
+  parts.push('<div style="display:flex;gap:8px">');
+  if (isCoding) {
+    parts.push('<button class="btn" id="run">Run Code</button>');
+  }
+  parts.push('<button class="btn btn-primary" id="submit">Submit Solution</button>');
+  parts.push('</div>');
+  parts.push('</div>'); // end ide-footer
+  parts.push('</div>'); // end ide-card
+
   parts.push('<div id="verdict" class="verdict" hidden></div>');
-  parts.push('<div id="test-results" class="panel" hidden><h3>Test results</h3><table>' +
-             '<thead><tr><th>#</th><th>Result</th><th>Expected</th><th>Output</th></tr></thead>' +
+  parts.push('<div id="test-results" class="panel" style="margin-top:0" hidden><h3>Test Suite Execution</h3><table>' +
+             '<thead><tr><th>#</th><th>Status</th><th>Expected</th><th>Actual Output</th></tr></thead>' +
              '<tbody></tbody></table></div>');
+
+  parts.push('</div>'); // end workspace-right
+  parts.push('</div>'); // end workspace-split
+
   return parts.join('');
 };
 
@@ -781,6 +830,40 @@ function loadProblem(id) {
     var run = $('run');
     var bookmarkButton = $('bookmark');
     var answer = $('answer');
+    var lineNumbers = $('line-numbers');
+
+    function updateLineNumbers() {
+      if (!lineNumbers || !answer) return;
+      var count = (answer.value.split('\n').length || 1);
+      var nums = [];
+      for (var n = 1; n <= Math.max(count, 12); n++) nums.push(n);
+      lineNumbers.innerHTML = nums.join('<br>');
+    }
+    if (answer) {
+      answer.addEventListener('input', updateLineNumbers);
+      answer.addEventListener('scroll', function () {
+        if (lineNumbers) lineNumbers.scrollTop = answer.scrollTop;
+      });
+      // Professional IDE enhancement: Tab key indents by 4 spaces instead of losing focus
+      answer.addEventListener('keydown', function (e) {
+        if (e.key === 'Tab') {
+          e.preventDefault();
+          var start = this.selectionStart;
+          var end = this.selectionEnd;
+          this.value = this.value.substring(0, start) + '    ' + this.value.substring(end);
+          this.selectionStart = this.selectionEnd = start + 4;
+          updateLineNumbers();
+        } else if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+          e.preventDefault();
+          if (p.type === 'Coding' && run) {
+            run.click();
+          } else if (submit) {
+            submit.click();
+          }
+        }
+      });
+      updateLineNumbers();
+    }
 
     if (submit) {
       submit.addEventListener('click', function () {
@@ -845,7 +928,12 @@ function renderVerdict(r) {
   var verdict = $('verdict');
   setHidden('verdict', false);
   verdict.className = 'verdict ' + (r.allPassed || r.correct ? 'ok' : 'bad');
-  verdict.innerHTML = '<b>' + esc(r.verdict) + '</b>' + esc(r.feedback || '');
+  
+  var statusBadge = (r.allPassed || r.correct) 
+    ? '<span class="pill ok" style="margin-bottom:6px">✔ All Checks Passed</span>'
+    : '<span class="pill bad" style="margin-bottom:6px">✖ Checks Failed</span>';
+    
+  verdict.innerHTML = statusBadge + '<div style="margin-top:4px"><b>' + esc(r.verdict) + '</b>' + esc(r.feedback || '') + '</div>';
   if (!r.results) return;
 
   var host = $('test-results');
@@ -855,8 +943,8 @@ function renderVerdict(r) {
     var t = r.results[i];
     rows += '<tr><td class="muted">' + (i + 1) + '</td>' +
             '<td>' + resultPill(t.passed) + '</td>' +
-            '<td>' + esc(t.expected) + '</td>' +
-            '<td>' + esc(t.output) + '</td></tr>';
+            '<td><code style="font-family:var(--mono);font-size:12px;background:var(--surface-2);padding:2px 6px;border-radius:4px">' + esc(t.expected) + '</code></td>' +
+            '<td><code style="font-family:var(--mono);font-size:12px;background:var(--surface-2);padding:2px 6px;border-radius:4px">' + esc(t.output) + '</code></td></tr>';
   }
   host.querySelector('tbody').innerHTML = rows;
 }
@@ -973,29 +1061,80 @@ function subjectsForCourse(courseId) {
   return out;
 }
 
+var ivTimerInterval = null;
+var ivSecondsElapsed = 0;
+
 function renderInterview() {
   var s = state.interview;
-  setHtml('view-interview',
+  ivSecondsElapsed = 0;
+  if (ivTimerInterval) clearInterval(ivTimerInterval);
+
+  var html = '<div class="interview-hud">' +
+    '<div><div class="meta">Live Evaluation Session</div>' +
+    '<h3 style="margin:2px 0 0;font-size:16px" id="iv-hud-title">Interview Simulation</h3></div>' +
+    '<div class="interview-timer"><span style="color:var(--muted)">⏱</span> <span id="iv-timer-display">00:00</span></div>' +
+    '</div>' +
     '<progress id="iv-progress" max="100" value="0"></progress>' +
-    '<div class="card"><p class="meta" id="iv-meta"></p>' +
-    '<p class="question-text" id="iv-text"></p></div>' +
-    '<div class="field" style="margin-top:12px"><span>Answer</span>' +
-    '<input type="text" id="iv-answer"></div>' +
-    '<div style="margin-top:10px;display:flex;gap:8px">' +
-    '<button class="btn btn-primary" id="iv-submit">Submit</button>' +
-    '<button class="btn" id="iv-skip">Skip</button>' +
-    '<button class="btn btn-quiet" id="iv-finish">Finish early</button></div>');
+    '<div class="workspace-split">' +
+    '<div class="workspace-left">' +
+    '<div class="card">' +
+    '<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">' +
+    '<span class="meta" id="iv-meta">Question 1</span>' +
+    '<span id="iv-difficulty-pill"></span>' +
+    '</div>' +
+    '<p class="question-text" id="iv-text" style="font-size:15px;line-height:1.6;font-weight:550"></p>' +
+    '</div>' +
+    '<div class="rubric-card">' +
+    '<div class="rubric-header"><span>🎯</span> Evaluation Criteria</div>' +
+    '<div class="rubric-list">' +
+    '<div>• Technical Accuracy & Logical Completeness</div>' +
+    '<div>• Time & Space Complexity Consideration</div>' +
+    '<div>• STAR Methodology Structure (Situation, Task, Action, Result)</div>' +
+    '</div></div>' +
+    '</div>' +
+    '<div class="workspace-right">' +
+    '<div class="ide-card">' +
+    '<div class="ide-header">' +
+    '<span style="font-size:12px;font-weight:600;color:var(--text)">Candidate Response</span>' +
+    '</div>' +
+    '<div class="code-editor-wrapper" style="min-height:280px">' +
+    '<textarea id="iv-answer" class="code-textarea" spellcheck="false" placeholder="Formulate and type your answer clearly..."></textarea>' +
+    '</div>' +
+    '<div class="ide-footer">' +
+    '<button class="btn btn-quiet" id="iv-finish">End Interview</button>' +
+    '<div style="display:flex;gap:8px">' +
+    '<button class="btn" id="iv-skip">Skip Question</button>' +
+    '<button class="btn btn-primary" id="iv-submit">Submit Answer</button>' +
+    '</div></div>' +
+    '</div></div></div>';
+
+  setHtml('view-interview', html);
   navigate('interview');
+
+  ivTimerInterval = setInterval(function () {
+    ivSecondsElapsed++;
+    var mins = String(Math.floor(ivSecondsElapsed / 60)).padStart(2, '0');
+    var secs = String(ivSecondsElapsed % 60).padStart(2, '0');
+    var disp = $('iv-timer-display');
+    if (disp) disp.textContent = mins + ':' + secs;
+  }, 1000);
 
   function paint() {
     var q = state.interview.question;
-    setText('iv-meta', 'Question ' + (state.interview.answered + 1) + ' of ' +
-                      state.interview.total + ' · ' + q.difficulty);
+    setText('iv-meta', 'Question ' + (state.interview.answered + 1) + ' of ' + state.interview.total);
+    setHtml('iv-difficulty-pill', difficultyPill(q.difficulty));
     setText('iv-text', q.text);
-    setHtml('iv-progress', '');
-    $('iv-progress').setAttribute('value', state.interview.answered);
-    $('iv-progress').setAttribute('max', state.interview.total);
-    $('iv-answer').value = '';
+    setText('iv-hud-title', (q.topic || 'General') + ' · ' + (q.type || 'Question'));
+    var prog = $('iv-progress');
+    if (prog) {
+      prog.setAttribute('value', state.interview.answered);
+      prog.setAttribute('max', state.interview.total);
+    }
+    var ans = $('iv-answer');
+    if (ans) {
+      ans.value = '';
+      ans.focus();
+    }
   }
 
   $('iv-submit').addEventListener('click', function () {
@@ -1006,29 +1145,60 @@ function renderInterview() {
       if (session.finished) { finishAndReport(); } else { paint(); }
     });
   });
+
   $('iv-skip').addEventListener('click', function () {
     api.answer(state.interview.id, { skip: 1 }).then(function (session) {
       state.interview = session;
       if (session.finished) { finishAndReport(); } else { paint(); }
     });
   });
+
   $('iv-finish').addEventListener('click', function () {
     finishAndReport();
   });
 
   function finishAndReport() {
+    if (ivTimerInterval) { clearInterval(ivTimerInterval); ivTimerInterval = null; }
     api.finishInterview(state.interview.id).then(function (payload) {
       state.interview = null;
       var report = payload.report || {};
-      setHtml('view-report',
+      var pct = Math.round((report.overallScore || 0) * 100);
+      var grade = pct >= 80 ? 'Distinction' : (pct >= 60 ? 'Proficient' : 'Needs Practice');
+      var mins = Math.floor(ivSecondsElapsed / 60);
+      var secs = ivSecondsElapsed % 60;
+      var timeStr = mins + 'm ' + secs + 's';
+
+      var reportHtml = '<div style="margin-bottom:20px">' +
+        '<h2>Candidate Performance Evaluation</h2>' +
+        '<p class="muted">Comprehensive rubric evaluation based on your interview session.</p>' +
+        '</div>' +
         '<div class="stat-grid">' +
-        statCard(((report.overallScore || 0) * 100).toFixed(1) + '%', 'Overall score', 'ok') +
-        statCard(report.strongestTopic || '-', 'Strongest') +
-        statCard(report.weakestTopic || '-', 'Weakest') +
-        statCard(payload.streak || 0, 'Streak', 'warn') +
-        '</div><div class="panel"><h3>Tips</h3><ul>' +
-        (report.tips || []).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') +
-        '</ul></div>');
+        statCard(pct + '%', 'Evaluation Score', pct >= 60 ? 'ok' : 'warn') +
+        statCard(grade, 'Competency Rating') +
+        statCard(timeStr, 'Session Duration') +
+        statCard(payload.streak || 0, 'Current Streak', 'warn') +
+        '</div>' +
+        '<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">' +
+        '<div class="card">' +
+        '<div class="meta" style="color:var(--ok)">Key Strengths & Mastery</div>' +
+        '<p style="font-size:16px;font-weight:600;margin:6px 0 0">' + esc(report.strongestTopic || 'Consistent Logic') + '</p>' +
+        '<p class="muted" style="font-size:12.5px;margin-top:4px">Demonstrated solid analytical reasoning and structured responses.</p>' +
+        '</div>' +
+        '<div class="card">' +
+        '<div class="meta" style="color:var(--warn)">Areas For Growth</div>' +
+        '<p style="font-size:16px;font-weight:600;margin:6px 0 0">' + esc(report.weakestTopic || 'Edge Cases') + '</p>' +
+        '<p class="muted" style="font-size:12.5px;margin-top:4px">Focus on framing trade-offs and edge-case boundary conditions.</p>' +
+        '</div></div>' +
+        '<div class="panel"><h3>Actionable Interview Coaching Tips</h3><ul style="line-height:1.7;font-size:13.5px">' +
+        (report.tips && report.tips.length ? report.tips : [
+          'Structure situational answers clearly using the STAR methodology (Situation, Task, Action, Result).',
+          'Mention time and space complexities explicitly when describing algorithms.',
+          'Review edge cases and boundary inputs before submitting.'
+        ]).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') +
+        '</ul></div>' +
+        '<div style="margin-top:18px"><button class="btn btn-primary" onclick="navigate(\'problems\')">Back to Problem Practice</button></div>';
+
+      setHtml('view-report', reportHtml);
       navigate('report');
       loadStats();
     });
