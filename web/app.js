@@ -562,19 +562,22 @@ views.admin = function (stats, users, questions) {
 
 var NAV = [
   { group: 'Practice' },
-  { id: 'problems', label: 'Problems', nav: true },
-  { id: 'start', label: 'Interview', nav: true },
-  { group: 'Progress' },
-  { id: 'dashboard', label: 'Dashboard', nav: true },
-  { id: 'skills', label: 'Skills', nav: true },
-  { id: 'submissions', label: 'Submissions', nav: true },
-  { id: 'board', label: 'Leaderboard', nav: true },
+  { id: 'problems', label: 'Problems', icon: 'bi-code-slash', nav: true },
+  { id: 'start', label: 'Mock Interview', icon: 'bi-mic-fill', nav: true },
+  { id: 'daily', label: 'Daily Challenge', icon: 'bi-calendar-check', nav: true },
+  { group: 'Analytics' },
+  { id: 'dashboard', label: 'Dashboard', icon: 'bi-speedometer2', nav: true },
+  { id: 'skills', label: 'Skill Matrix', icon: 'bi-mortarboard', nav: true },
+  { id: 'submissions', label: 'Submissions', icon: 'bi-clock-history', nav: true },
+  { id: 'board', label: 'Leaderboard', icon: 'bi-trophy', nav: true },
   { group: 'Account' },
-  { id: 'profile', label: 'Profile', nav: true }
+  { id: 'profile', label: 'Profile', icon: 'bi-person', nav: true }
 ];
 
 function navigate(view) {
   state.view = view;
+  setHidden('landing-view', true);
+  setHidden('app', false);
 
   var screens = document.querySelectorAll('.view');
   for (var i = 0; i < screens.length; i++) {
@@ -615,9 +618,9 @@ function renderNav() {
     if (item.id === 'admin' && !(state.user && state.user.role === 'Admin')) continue;
     var button = document.createElement('button');
     button.className = 'nav-item' + (state.view === item.id ? ' active' : '');
-    button.textContent = item.label;
+    button.innerHTML = '<i class="bi ' + (item.icon || 'bi-circle') + ' me-2"></i>' + esc(item.label);
     if (state.stats && item.id === 'problems' && state.problemsLoaded) {
-      button.textContent += '  (' + state.problemsLoaded + ')';
+      button.innerHTML += ' <span class="muted" style="font-size:11px;margin-left:auto">(' + state.problemsLoaded + ')</span>';
     }
     button.addEventListener('click', function () {
       navigate(this.dataset.view);
@@ -656,11 +659,31 @@ function renderHeader(view) {
    Login / register.
    ------------------------------------------------------------------------- */
 
+function updateAuthUI(isLoggedIn) {
+  setHidden('login-view', true);
+  if (isLoggedIn && state.user) {
+    setHidden('guest-actions', true);
+    setHidden('user-actions', false);
+    setText('who', state.user.name || 'Candidate');
+    var avatar = $('user-avatar');
+    if (avatar) avatar.textContent = (state.user.name || 'U').charAt(0).toUpperCase();
+    var authItems = document.querySelectorAll('.auth-only');
+    for (var i = 0; i < authItems.length; i++) authItems[i].hidden = false;
+  } else {
+    setHidden('guest-actions', false);
+    setHidden('user-actions', true);
+    var authItems = document.querySelectorAll('.auth-only');
+    for (var j = 0; j < authItems.length; j++) authItems[j].hidden = true;
+  }
+}
+
 function setLoginMode(registering) {
   state.registerMode = Boolean(registering);
+  var title = $('auth-title');
+  if (title) title.textContent = state.registerMode ? 'Create New Account' : 'Welcome to AI Interviewer';
   setText('login-sub', state.registerMode
     ? 'Track solved problems, streaks and rankings.'
-    : 'Sign in to continue practising.');
+    : 'Sign in or jump straight in with an instant guest pass.');
   setText('login-submit', state.registerMode ? 'Create account' : 'Sign in');
   setText('login-toggle', state.registerMode
     ? 'Have an account? Sign in'
@@ -669,8 +692,122 @@ function setLoginMode(registering) {
   setHidden('login-error', true);
 }
 
+function quickDemo(targetView, problemId) {
+  var rand = Math.floor(1000 + Math.random() * 9000);
+  var email = 'candidate.' + rand + '@interview.dev';
+  var pass = 'DemoPass123!';
+  return api.register(email, pass, 'Demo Candidate', 'Engineering Academy', 'Computer Science')
+    .then(function (data) {
+      state.token = data.token;
+      state.user = data.user;
+      sessionStorage.setItem('ai_interviewer.token', state.token);
+      updateAuthUI(true);
+      return loadStats().then(function () {
+        return api.problems({ limit: 200 }).then(function (list) {
+          state.problems = list || [];
+          state.problemsLoaded = state.problems.length;
+        });
+      }).then(function () {
+        if (problemId) {
+          loadProblem(problemId);
+        } else {
+          navigate(targetView || 'problems');
+        }
+      });
+    }).catch(function (err) {
+      // If error occurs, fall back to opening auth modal
+      setHidden('login-view', false);
+    });
+}
+
+function enterPractice(targetView, problemId) {
+  if (state.token && state.user) {
+    setHidden('landing-view', true);
+    setHidden('app', false);
+    if (problemId) {
+      loadProblem(problemId);
+    } else {
+      navigate(targetView || 'problems');
+    }
+  } else {
+    quickDemo(targetView || 'problems', problemId);
+  }
+}
+
 on('login-toggle', 'click', function () {
   setLoginMode(!state.registerMode);
+});
+
+on('btn-open-login', 'click', function () {
+  setHidden('login-view', false);
+});
+
+on('modal-close-btn', 'click', function () {
+  setHidden('login-view', true);
+});
+
+on('login-view', 'click', function (e) {
+  if (e.target === $('login-view')) setHidden('login-view', true);
+});
+
+on('btn-modal-guest', 'click', function () {
+  quickDemo('problems');
+});
+
+on('btn-instant-demo', 'click', function () {
+  enterPractice('problems');
+});
+
+on('hero-start-btn', 'click', function () {
+  enterPractice('problems');
+});
+
+on('hero-demo-btn', 'click', function () {
+  quickDemo('problems');
+});
+
+on('mentor-cta-btn', 'click', function () {
+  enterPractice('start');
+});
+
+on('view-all-challenges-btn', 'click', function () {
+  enterPractice('problems');
+});
+
+on('brand-home', 'click', function (e) {
+  e.preventDefault();
+  setHidden('app', true);
+  setHidden('landing-view', false);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+on('nav-link-home', 'click', function (e) {
+  e.preventDefault();
+  setHidden('app', true);
+  setHidden('landing-view', false);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+function scrollToLanding(sectionId) {
+  setHidden('app', true);
+  setHidden('landing-view', false);
+  var el = $(sectionId);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+on('nav-link-mentor', 'click', function (e) {
+  e.preventDefault();
+  scrollToLanding('ai-mentor');
+});
+
+on('nav-link-challenges', 'click', function (e) {
+  e.preventDefault();
+  scrollToLanding('challenges');
+});
+
+on('nav-link-features', 'click', function (e) {
+  e.preventDefault();
+  scrollToLanding('features');
 });
 
 on('login-form', 'submit', function (event) {
@@ -704,9 +841,9 @@ on('login-form', 'submit', function (event) {
     sessionStorage.setItem('ai_interviewer.token', state.token);
     event.target.reset();
     setLoginMode(false);
-    setHidden('login-view', true);
+    updateAuthUI(true);
+    setHidden('landing-view', true);
     setHidden('app', false);
-    setText('who', state.user.name + ' (' + state.user.role + ')');
     return loadStats().then(function () {
       return api.problems({ limit: 200 }).then(function (list) {
         state.problems = list || [];
@@ -727,9 +864,10 @@ on('sign-out', 'click', function () {
     state.user = null;
     state.stats = null;
     sessionStorage.removeItem('ai_interviewer.token');
+    updateAuthUI(false);
     setHidden('app', true);
-    setHidden('login-view', false);
-    setLoginMode(false);
+    setHidden('landing-view', false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
 
@@ -1453,14 +1591,46 @@ document.addEventListener('keydown', function (event) {
   }
 });
 
-/* Click handling for anything that opens a problem row. */
+/* Click handling for anything that opens a problem row or preview card. */
 document.addEventListener('click', function (event) {
+  // Track tab filters on landing page
+  var trackTab = event.target.closest('.track-tab');
+  if (trackTab) {
+    var tabs = document.querySelectorAll('.track-tab');
+    for (var t = 0; t < tabs.length; t++) tabs[t].classList.remove('active');
+    trackTab.classList.add('active');
+    var track = trackTab.dataset.track;
+    var cards = document.querySelectorAll('.preview-card');
+    for (var c = 0; c < cards.length; c++) {
+      var trackEl = cards[c].querySelector('.preview-track');
+      var cardTrack = trackEl ? trackEl.textContent.trim() : '';
+      if (track === 'all' || cardTrack.toLowerCase().indexOf(track.toLowerCase().slice(0, 4)) !== -1) {
+        cards[c].style.display = 'flex';
+      } else {
+        cards[c].style.display = 'none';
+      }
+    }
+    return;
+  }
+
+  // Preview card on landing page
+  var previewCard = event.target.closest('.preview-card');
+  if (previewCard) {
+    event.preventDefault();
+    var probId = previewCard.dataset.problem;
+    enterPractice('problem', probId);
+    return;
+  }
+
+  // Standard nav link
   var nav = event.target.closest('[data-nav]');
   if (nav) {
     event.preventDefault();
     navigate(nav.dataset.nav);
     return;
   }
+
+  // Problem row in workspace
   var row = event.target.closest('[data-problem]');
   if (row) {
     event.preventDefault();
@@ -1474,7 +1644,12 @@ document.addEventListener('click', function (event) {
 
 on('theme-toggle', 'click', function () {
   var current = document.documentElement.getAttribute('data-theme');
-  document.documentElement.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+  var next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  var icon = $('theme-icon');
+  if (icon) {
+    icon.className = next === 'dark' ? 'bi bi-moon-stars' : 'bi bi-sun';
+  }
 });
 
 /* --------------------------------------------------------------------------
@@ -1504,19 +1679,27 @@ window.addEventListener('unhandledrejection', function (event) {
     if (state.token) {
       request('/api/me').then(function (user) {
         state.user = user;
-        setHidden('login-view', true);
+        updateAuthUI(true);
+        setHidden('landing-view', true);
         setHidden('app', false);
-        setText('who', user.name + ' (' + user.role + ')');
-        return api.problems({ limit: 0 }).then(function (list) {
-          state.problems = list || [];
-          state.problemsLoaded = state.problems.length;
-          navigate('dashboard');
+        return loadStats().then(function () {
+          return api.problems({ limit: 0 }).then(function (list) {
+            state.problems = list || [];
+            state.problemsLoaded = state.problems.length;
+            navigate('dashboard');
+          });
         });
       }).catch(function () {
         state.token = '';
         sessionStorage.removeItem('ai_interviewer.token');
-        setLoginMode(false);
+        updateAuthUI(false);
+        setHidden('landing-view', false);
+        setHidden('app', true);
       });
+    } else {
+      updateAuthUI(false);
+      setHidden('landing-view', false);
+      setHidden('app', true);
     }
   } catch (error) {
     showBootError(String(error && error.stack ? error.stack : error));

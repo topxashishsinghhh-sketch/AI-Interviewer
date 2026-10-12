@@ -1,79 +1,511 @@
-<!--
-  AI Interviewer - practice platform front-end.
-
-  Single page, no framework. Three sections (login, app shell, boot error).
-  Every element the JS touches has an id, and every view is a <section class="view">
-  that is shown by removing the hidden attribute. See style.css for tokens.
--->
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Interviewer — Technical & Behavioral Mastery Platform</title>
+<title>AI Interviewer — Technical Interview Practice with AI Mentor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-<!-- ============================ LOGIN ============================ -->
-<section id="login-view" class="login-screen">
-  <form id="login-form" class="login-card" autocomplete="off">
-    <h1 class="login-title">Welcome back</h1>
-    <p class="login-sub" id="login-sub">Sign in to continue practising.</p>
+<!-- ========================= GLOBAL NAVBAR ========================== -->
+<header class="global-navbar" id="global-navbar">
+  <div class="nav-container">
+    <a href="#" class="brand-link" id="brand-home">
+      <div class="brand-icon-box">
+        <i class="bi bi-code-square"></i>
+      </div>
+      <span class="brand-text">AI Interviewer</span>
+    </a>
 
-    <label class="field">
-      <span>Email</span>
-      <input type="email" name="email" required autocomplete="username">
-    </label>
+    <nav class="nav-links">
+      <a href="#landing" class="nav-item" id="nav-link-home"><i class="bi bi-house me-1"></i> Home</a>
+      <a href="#ai-mentor" class="nav-item" id="nav-link-mentor"><i class="bi bi-robot me-1"></i> AI Mentor</a>
+      <a href="#challenges" class="nav-item" id="nav-link-challenges"><i class="bi bi-code-slash me-1"></i> Challenges</a>
+      <a href="#features" class="nav-item" id="nav-link-features"><i class="bi bi-stars me-1"></i> Features</a>
+      <a href="#" class="nav-item auth-only" data-nav="start" hidden><i class="bi bi-mic-fill me-1"></i> Mock Interview</a>
+      <a href="#" class="nav-item auth-only" data-nav="daily" hidden><i class="bi bi-calendar-check me-1"></i> Daily</a>
+      <a href="#" class="nav-item auth-only" data-nav="board" hidden><i class="bi bi-trophy me-1"></i> Leaderboard</a>
+    </nav>
 
-    <label class="field">
-      <span>Password</span>
-      <input type="password" name="password" required autocomplete="current-password">
-    </label>
+    <div class="nav-actions">
+      <button class="cmdk-trigger" id="cmdk-trigger" type="button" title="Command Palette">
+        <i class="bi bi-search me-1"></i><span>Search…</span><kbd>Ctrl K</kbd>
+      </button>
 
-    <div id="register-fields" hidden>
-      <label class="field">
-        <span>Display name</span>
-        <input type="text" name="name" autocomplete="name">
-      </label>
-      <label class="field">
-        <span>College</span>
-        <input type="text" name="college">
-      </label>
-      <label class="field">
-        <span>Branch</span>
-        <input type="text" name="branch">
-      </label>
+      <a href="https://github.com/topxashishsinghhh-sketch/AI-Interviewer" target="_blank" rel="noopener" class="nav-icon-link" title="View Source on GitHub">
+        <i class="bi bi-github"></i>
+      </a>
+
+      <button class="nav-icon-btn" id="theme-toggle" type="button" title="Toggle Theme">
+        <i class="bi bi-moon-stars" id="theme-icon"></i>
+      </button>
+
+      <!-- Guest action buttons -->
+      <div id="guest-actions" class="d-flex align-center gap-2">
+        <button type="button" class="btn btn-quiet btn-sm" id="btn-open-login">Sign in</button>
+        <button type="button" class="btn btn-primary btn-nav" id="btn-instant-demo">
+          <i class="bi bi-rocket-takeoff me-1"></i> Start Practicing
+        </button>
+      </div>
+
+      <!-- Authenticated user pill -->
+      <div id="user-actions" class="d-flex align-center gap-2" hidden>
+        <div class="user-pill" id="user-pill" data-nav="profile">
+          <div class="user-avatar" id="user-avatar">U</div>
+          <span class="user-name" id="who">Candidate</span>
+        </div>
+        <button type="button" class="btn btn-quiet btn-sm" id="sign-out">Sign out</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ========================= LANDING PAGE ========================== -->
+<section id="landing-view" class="landing-view">
+  
+  <!-- HERO SECTION -->
+  <div class="hero-gradient">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="bi bi-robot me-2"></i>Now with AI-Powered Interview Simulation & Evaluation
+        </div>
+        <h1 class="hero-title">
+          Master <span class="text-gradient">Technical Interviews</span><br>
+          with Interactive AI Challenges
+        </h1>
+        <p class="hero-description">
+          The premier interview preparation platform. Practice with 284+ curated challenges across 
+          Algorithms, Data Structures, Modern C++ OOP, System Design, and STAR Behavioral questions.
+        </p>
+
+        <!-- Stats Counter -->
+        <div class="hero-stats">
+          <div class="stat-compact">
+            <span class="stat-number">284+</span>
+            <span class="stat-label">Challenges</span>
+          </div>
+          <div class="stat-compact">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Core Tracks</span>
+          </div>
+          <div class="stat-compact">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Automated Tests</span>
+          </div>
+          <div class="stat-compact">
+            <span class="stat-number">Voice AI</span>
+            <span class="stat-label">Dictation HUD</span>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-actions">
+          <button type="button" class="btn btn-primary btn-hero" id="hero-start-btn">
+            <i class="bi bi-rocket-takeoff me-2"></i>Start Your Journey
+          </button>
+          <button type="button" class="btn btn-outline btn-hero" id="hero-demo-btn">
+            <i class="bi bi-lightning-charge me-2"></i>1-Click Guest Pass
+          </button>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Simulated IDE Terminal Mockup -->
+      <div class="hero-visual">
+        <div class="custom-code-card">
+          <div class="code-card-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="code-file-name"><i class="bi bi-file-earmark-code me-1"></i> Solution.cpp</div>
+            <div class="compiler-badge">C++17 • MinGW GCC</div>
+          </div>
+          <div class="code-card-body">
+            <pre class="code-lines"><code><span class="kw">#include</span> <span class="str">&lt;iostream&gt;</span>
+<span class="kw">#include</span> <span class="str">&lt;unordered_map&gt;</span>
+<span class="kw">#include</span> <span class="str">&lt;memory&gt;</span>
+
+<span class="kw">class</span> <span class="cls">LRUCache</span> {
+<span class="kw">private</span>:
+    <span class="kw">struct</span> <span class="cls">Node</span> { <span class="type">int</span> key, val; ... };
+    <span class="cls">std::unordered_map</span>&lt;<span class="type">int</span>, Node*&gt; cache;
+
+<span class="kw">public</span>:
+    <span class="type">int</span> <span class="fn">get</span>(<span class="type">int</span> key) {
+        <span class="kw">if</span> (cache.find(key) == cache.end()) <span class="kw">return</span> -1;
+        moveToHead(cache[key]);
+        <span class="kw">return</span> cache[key]-&gt;val;
+    }
+};</code></pre>
+          </div>
+          <div class="code-card-footer">
+            <div class="float-status-pill success">
+              <i class="bi bi-check-circle-fill me-1"></i> 100% Test Cases Passed
+            </div>
+            <div class="float-status-pill ai">
+              <i class="bi bi-cpu-fill me-1"></i> AI Complexity: O(1) Optimal
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION SEPARATOR -->
+  <div class="section-separator">
+    <div class="separator-line">
+      <div class="separator-icon"><i class="bi bi-robot"></i></div>
+    </div>
+  </div>
+
+  <!-- AI MENTOR SECTION (matches gointerview.dev) -->
+  <section class="ai-mentor-section" id="ai-mentor">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-pill mb-2"><i class="bi bi-robot me-1"></i> Powered by Evaluation Engine</div>
+        <h2 class="display-title">Meet Your AI Mentor</h2>
+        <p class="section-sub">Learn C++ system architecture and master interview questions with personalized AI guidance and instant code reviews.</p>
+      </div>
+
+      <div class="mentor-grid">
+        <!-- Interactive AI Chat Demo -->
+        <div class="mentor-card ai-chat-demo">
+          <div class="chat-card-header">
+            <div class="chat-avatar"><i class="bi bi-robot"></i></div>
+            <div class="chat-meta">
+              <h4 class="m-0">AI Mentor</h4>
+              <span class="muted-small">Interactive Architecture Discussion</span>
+            </div>
+          </div>
+          <div class="chat-messages">
+            <div class="chat-msg ai-msg">
+              <div class="msg-bubble">
+                👋 <strong>Welcome!</strong> I'm your technical interviewer and code reviewer. What topic would you like to tackle today?
+              </div>
+            </div>
+            <div class="chat-msg user-msg">
+              <div class="msg-bubble">
+                Can you explain std::unique_ptr vs std::shared_ptr and RAII memory safety in C++?
+              </div>
+            </div>
+            <div class="chat-msg ai-msg">
+              <div class="msg-bubble">
+                Excellent question! <code>std::unique_ptr</code> models exclusive ownership with zero overhead (move-only):
+                <div class="code-snippet-box">
+                  <code>auto ptr = std::make_unique&lt;Resource&gt;();<br>// Exclusive ownership; automatically freed upon scope exit</code>
+                </div>
+                In contrast, <code>std::shared_ptr</code> maintains an atomic reference-counted control block. Prefer <code>std::unique_ptr</code> by default!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Code Review Card -->
+        <div class="mentor-card ai-review-demo">
+          <div class="chat-card-header">
+            <div class="chat-avatar review-avatar"><i class="bi bi-search"></i></div>
+            <div class="chat-meta">
+              <h4 class="m-0">AI Code Reviewer</h4>
+              <span class="muted-small">Instant Test & Complexity Feedback</span>
+            </div>
+          </div>
+          <div class="review-body">
+            <div class="review-scores-row">
+              <span class="score-badge success"><i class="bi bi-check2 me-1"></i> Correctness: 100%</span>
+              <span class="score-badge info"><i class="bi bi-speedometer2 me-1"></i> Score: 94/100</span>
+              <span class="score-badge optimal"><i class="bi bi-graph-up me-1"></i> O(N) Time</span>
+            </div>
+            <div class="review-card-content">
+              <p class="review-p"><strong>✅ Optimal Implementation:</strong> Your hash-map frequency counter solves the problem in a single pass with linear space complexity.</p>
+              <div class="review-tip-box">
+                <div class="tip-title"><i class="bi bi-lightbulb-fill me-1"></i> Interviewer Follow-Up:</div>
+                <p class="tip-desc m-0">"Can you handle an in-place version with O(1) auxiliary space if the input vector is guaranteed to be sorted?"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary btn-lg" id="mentor-cta-btn">
+          <i class="bi bi-mic-fill me-2"></i>Start Mock Interview with AI
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SEPARATOR -->
+  <div class="section-separator">
+    <div class="separator-line">
+      <div class="separator-icon"><i class="bi bi-lightning-charge"></i></div>
+    </div>
+  </div>
+
+  <!-- FEATURES SECTION -->
+  <section class="features-section" id="features">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <h2 class="display-title">Why Developers Choose AI Interviewer</h2>
+        <p class="section-sub">A production-grade environment built to simulate real FAANG / Tier-1 engineering screening rounds.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon icon-cyan"><i class="bi bi-terminal"></i></div>
+          <h3 class="feature-title">Zero Setup In-Browser IDE</h3>
+          <p class="feature-desc">Code directly in your browser with synchronized line numbers, tab indentation, and full syntax highlighting.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-violet"><i class="bi bi-cpu"></i></div>
+          <h3 class="feature-title">Real-Time Evaluation Engine</h3>
+          <p class="feature-desc">Automated test runners analyze your solutions against edge cases, validating both logic and asymptotic runtime.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-rose"><i class="bi bi-mic-fill"></i></div>
+          <h3 class="feature-title">Voice AI Mock Interviewer</h3>
+          <p class="feature-desc">Speak directly to the AI with real-time speech-to-text dictation. Practice behavioral and architecture questions hands-free.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-emerald"><i class="bi bi-collection"></i></div>
+          <h3 class="feature-title">284+ Comprehensive Questions</h3>
+          <p class="feature-desc">Extensive curated bank spanning Algorithms, Data Structures, Modern C++ OOP, System Design, and STAR leadership.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-amber"><i class="bi bi-pie-chart-fill"></i></div>
+          <h3 class="feature-title">Radar Competency Matrix</h3>
+          <p class="feature-desc">Post-interview scorecards break down your performance across Communication, Technical Depth, Problem Solving, and STAR Structure.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-blue"><i class="bi bi-trophy-fill"></i></div>
+          <h3 class="feature-title">Leaderboard & Streaks</h3>
+          <p class="feature-desc">Keep your engineering consistency sharp with daily challenges, streak counters, and global student leaderboards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SEPARATOR -->
+  <div class="section-separator">
+    <div class="separator-line">
+      <div class="separator-icon"><i class="bi bi-code-slash"></i></div>
+    </div>
+  </div>
+
+  <!-- CHALLENGES SHOWCASE SECTION -->
+  <section class="challenges-section" id="challenges">
+    <div class="section-container">
+      <div class="section-heading text-center">
+        <div class="badge-pill mb-2"><i class="bi bi-code-slash me-1"></i> Interactive Question Bank</div>
+        <h2 class="display-title">Explore Coding & System Challenges</h2>
+        <p class="section-sub">Browse 284+ questions and dive straight into the code editor.</p>
+      </div>
+
+      <!-- Track Tabs -->
+      <div class="track-tabs-container">
+        <button class="track-tab active" data-track="all">All (284)</button>
+        <button class="track-tab" data-track="Algorithms">Algorithms (20)</button>
+        <button class="track-tab" data-track="Data Structures">Data Structures (15)</button>
+        <button class="track-tab" data-track="C++ OOP">C++ & OOP (14)</button>
+        <button class="track-tab" data-track="HR & Behavioral">Behavioral STAR (20)</button>
+      </div>
+
+      <!-- Featured Challenges Grid -->
+      <div class="challenge-preview-grid" id="challenge-preview-grid">
+        <!-- Rendered dynamically or populated with top canonical problems -->
+        <div class="preview-card" data-problem="two-sum">
+          <div class="preview-card-top">
+            <span class="diff-tag easy">Easy</span>
+            <span class="preview-track">Algorithms</span>
+          </div>
+          <h4 class="preview-title">Two Sum</h4>
+          <p class="preview-desc">Find two numbers in an array that add up to a specific target in O(N) linear time using hash tables.</p>
+          <div class="preview-footer">
+            <span class="preview-meta"><i class="bi bi-file-code me-1"></i> Coding</span>
+            <button class="btn btn-primary btn-sm preview-solve-btn">Solve Challenge <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="preview-card" data-problem="lru-cache">
+          <div class="preview-card-top">
+            <span class="diff-tag medium">Medium</span>
+            <span class="preview-track">Algorithms</span>
+          </div>
+          <h4 class="preview-title">LRU Cache</h4>
+          <p class="preview-desc">Design a data structure that implements the Least Recently Used (LRU) cache policy with O(1) get and put operations.</p>
+          <div class="preview-footer">
+            <span class="preview-meta"><i class="bi bi-file-code me-1"></i> Coding</span>
+            <button class="btn btn-primary btn-sm preview-solve-btn">Solve Challenge <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="preview-card" data-problem="trapping-rain-water">
+          <div class="preview-card-top">
+            <span class="diff-tag hard">Hard</span>
+            <span class="preview-track">Algorithms</span>
+          </div>
+          <h4 class="preview-title">Trapping Rain Water</h4>
+          <p class="preview-desc">Given n non-negative integers representing elevation map, compute how much water it can trap after raining.</p>
+          <div class="preview-footer">
+            <span class="preview-meta"><i class="bi bi-file-code me-1"></i> Coding</span>
+            <button class="btn btn-primary btn-sm preview-solve-btn">Solve Challenge <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="preview-card" data-problem="cpp-oop-raii-rule-five">
+          <div class="preview-card-top">
+            <span class="diff-tag medium">Medium</span>
+            <span class="preview-track">C++ OOP</span>
+          </div>
+          <h4 class="preview-title">RAII and Rule of Five / Zero</h4>
+          <p class="preview-desc">Explain resource ownership, destructor semantics, and move operations under the C++ Rule of Five.</p>
+          <div class="preview-footer">
+            <span class="preview-meta"><i class="bi bi-chat-left-text me-1"></i> Text</span>
+            <button class="btn btn-primary btn-sm preview-solve-btn">Solve Challenge <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="preview-card" data-problem="hr-conflict-resolution">
+          <div class="preview-card-top">
+            <span class="diff-tag medium">Medium</span>
+            <span class="preview-track">Behavioral</span>
+          </div>
+          <h4 class="preview-title">Engineering Conflict Resolution</h4>
+          <p class="preview-desc">Describe a technical disagreement regarding system design and how you aligned team members using data.</p>
+          <div class="preview-footer">
+            <span class="preview-meta"><i class="bi bi-mic me-1"></i> Voice / STAR</span>
+            <button class="btn btn-primary btn-sm preview-solve-btn">Solve Challenge <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="preview-card" data-problem="coin-change">
+          <div class="preview-card-top">
+            <span class="diff-tag medium">Medium</span>
+            <span class="preview-track">Algorithms</span>
+          </div>
+          <h4 class="preview-title">Coin Change (Dynamic Programming)</h4>
+          <p class="preview-desc">Compute the fewest number of coins that you need to make up an amount using optimal subproblems.</p>
+          <div class="preview-footer">
+            <span class="preview-meta"><i class="bi bi-file-code me-1"></i> Coding</span>
+            <button class="btn btn-primary btn-sm preview-solve-btn">Solve Challenge <i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <button class="btn btn-outline btn-lg" id="view-all-challenges-btn">
+          View All 284 Challenges in Workspace <i class="bi bi-arrow-right ms-1"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="landing-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-link mb-2">
+            <i class="bi bi-code-square brand-icon"></i>
+            <span class="brand-text">AI Interviewer</span>
+          </div>
+          <p class="footer-desc">Professional interview preparation and technical screening simulator with real-time AI code reviews.</p>
+        </div>
+        <div class="footer-links-group">
+          <h5>Platform</h5>
+          <a href="#landing">Home</a>
+          <a href="#ai-mentor">AI Mentor</a>
+          <a href="#challenges">Challenges</a>
+          <a href="#features">Features</a>
+        </div>
+        <div class="footer-links-group">
+          <h5>Tracks</h5>
+          <a href="#challenges">DSA & Algorithms</a>
+          <a href="#challenges">Modern C++ OOP</a>
+          <a href="#challenges">System Architecture</a>
+          <a href="#challenges">STAR Behavioral</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="m-0">&copy; 2026 AI Interviewer. Open-source engineering practice platform.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/topxashishsinghhh-sketch/AI-Interviewer" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</section>
+
+<!-- ============================ AUTH MODAL ============================ -->
+<section id="login-view" class="auth-modal-backdrop" hidden>
+  <div class="auth-modal-dialog">
+    <button type="button" class="modal-close-btn" id="modal-close-btn" title="Close">&times;</button>
+    
+    <div class="auth-header">
+      <div class="auth-icon-circle"><i class="bi bi-person-badge"></i></div>
+      <h2 class="auth-title" id="auth-title">Welcome to AI Interviewer</h2>
+      <p class="auth-sub" id="login-sub">Sign in or jump straight in with an instant guest pass.</p>
     </div>
 
-    <p class="login-error" id="login-error" hidden></p>
+    <!-- Quick 1-Click Guest Button -->
+    <div class="quick-pass-box">
+      <button type="button" class="btn btn-quick-pass" id="btn-modal-guest">
+        <i class="bi bi-lightning-charge-fill me-2"></i> Instant Guest Access (1-Click Demo)
+      </button>
+      <div class="auth-divider"><span>or with credentials</span></div>
+    </div>
 
-    <button type="submit" class="btn btn-primary btn-block" id="login-submit">Sign in</button>
-    <button type="button" class="btn btn-quiet btn-block" id="login-toggle">Need an account? Register</button>
-  </form>
+    <form id="login-form" autocomplete="off">
+      <label class="field">
+        <span>Email Address</span>
+        <input type="email" name="email" required autocomplete="username" placeholder="alex@engineering.com">
+      </label>
+
+      <label class="field">
+        <span>Password</span>
+        <input type="password" name="password" required autocomplete="current-password" placeholder="••••••••">
+      </label>
+
+      <div id="register-fields" hidden>
+        <label class="field">
+          <span>Full Name</span>
+          <input type="text" name="name" autocomplete="name" placeholder="Alex Kumar">
+        </label>
+        <div class="fields-row">
+          <label class="field">
+            <span>College / Org</span>
+            <input type="text" name="college" placeholder="IIT / BITS / Stanford">
+          </label>
+          <label class="field">
+            <span>Branch / Major</span>
+            <input type="text" name="branch" placeholder="Computer Science">
+          </label>
+        </div>
+      </div>
+
+      <p class="login-error" id="login-error" hidden></p>
+
+      <button type="submit" class="btn btn-primary btn-block btn-lg" id="login-submit">Sign in</button>
+      <button type="button" class="btn btn-quiet btn-block mt-2" id="login-toggle">Need an account? Register</button>
+    </form>
+  </div>
 </section>
 
 <!-- ========================= APP SHELL ========================== -->
 <div id="app" class="app" hidden>
-
-  <header class="topbar">
-    <div class="topbar-left">
-      <span class="logo">&lt;/&gt;</span>
-      <span class="brand">AI Interviewer</span>
-    </div>
-    <button class="cmdk-trigger" id="cmdk-trigger" type="button">
-      <span>Search or jump to…</span><kbd>Ctrl K</kbd>
-    </button>
-    <div class="topbar-right">
-      <button class="icon-btn" id="theme-toggle" type="button" title="Toggle theme">&#9789;</button>
-      <span class="who" id="who"></span>
-      <button class="btn btn-quiet" id="sign-out" type="button">Sign out</button>
-    </div>
-  </header>
-
   <div class="shell">
     <nav class="nav" id="nav"></nav>
     <main class="main">
@@ -112,8 +544,7 @@
 <section id="boot-error" class="boot-error" hidden>
   <div class="boot-error-card">
     <h2>The interface failed to start</h2>
-    <p>The page shell loaded, but its script did not finish. The message below
-       is the actual browser error.</p>
+    <p>The page shell loaded, but its script did not finish. The message below is the actual browser error.</p>
     <pre id="boot-error-detail" class="problem-text"></pre>
   </div>
 </section>
