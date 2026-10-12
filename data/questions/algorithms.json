@@ -454,5 +454,161 @@
       "contiguous"
     ],
     "softSkill": false
+  },
+  {
+    "id": "algo_coding_merge_intervals",
+    "subject": "algo",
+    "topic": "intervals",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input. Format: read N pairs, output merged intervals space separated.",
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nstd::vector<std::pair<int, int>> mergeIntervals(std::vector<std::pair<int, int>>& intervals) {\n    // TODO: Sort by start time and merge overlaps\n    return {};\n}\n\nint main() {\n    int n;\n    if (!(std::cin >> n)) return 0;\n    std::vector<std::pair<int, int>> intervals(n);\n    for (int i = 0; i < n; ++i) std::cin >> intervals[i].first >> intervals[i].second;\n    auto res = mergeIntervals(intervals);\n    for (size_t i = 0; i < res.size(); ++i) {\n        if (i > 0) std::cout << \" \";\n        std::cout << res[i].first << \" \" << res[i].second;\n    }\n    std::cout << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "4\n1 3 2 6 8 10 15 18",
+        "expectedOutput": "1 6 8 10 15 18",
+        "isHidden": false
+      },
+      {
+        "input": "2\n1 4 4 5",
+        "expectedOutput": "1 5",
+        "isHidden": false
+      },
+      {
+        "input": "3\n1 4 0 2 3 5",
+        "expectedOutput": "0 5",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Sort intervals by starting time in O(n log n), then iterate through comparing the current interval start with the previous interval end.",
+    "objective": "Apply greedy interval scheduling and sorting techniques.",
+    "skillTags": [
+      "Intervals",
+      "Greedy",
+      "Sorting"
+    ],
+    "keywords": [
+      "intervals",
+      "overlapping",
+      "merge",
+      "sorting"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "algo_coding_trapping_rain_water",
+    "subject": "algo",
+    "topic": "two_pointers",
+    "difficulty": "Hard",
+    "type": "Coding",
+    "text": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining using the Two Pointers approach in O(n) time and O(1) extra space.",
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nlong long trapWater(const std::vector<int>& height) {\n    // TODO: Two pointers technique\n    return 0;\n}\n\nint main() {\n    int n;\n    if (!(std::cin >> n)) return 0;\n    std::vector<int> height(n);\n    for (int i = 0; i < n; ++i) std::cin >> height[i];\n    std::cout << trapWater(height) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "12\n0 1 0 2 1 0 1 3 2 1 2 1",
+        "expectedOutput": "6",
+        "isHidden": false
+      },
+      {
+        "input": "6\n4 2 0 3 2 5",
+        "expectedOutput": "9",
+        "isHidden": false
+      },
+      {
+        "input": "3\n3 0 2",
+        "expectedOutput": "2",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Maintain left and right pointers and tracking variables left_max and right_max. Move the pointer on the shorter boundary inward.",
+    "objective": "Master two-pointer elevation boundary scanning in O(1) auxiliary space.",
+    "skillTags": [
+      "Two Pointers",
+      "Dynamic Programming",
+      "Arrays"
+    ],
+    "keywords": [
+      "trapping",
+      "rain water",
+      "two pointers",
+      "elevation"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "algo_coding_coin_change",
+    "subject": "algo",
+    "topic": "dynamic_programming",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Given an integer array coins representing coins of different denominations and an integer amount, return the fewest number of coins that you need to make up that amount. If that amount cannot be made up, return -1.",
+    "templateCode": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint coinChange(const std::vector<int>& coins, int amount) {\n    // TODO: DP tabulation\n    return -1;\n}\n\nint main() {\n    int n, amount;\n    if (!(std::cin >> n >> amount)) return 0;\n    std::vector<int> coins(n);\n    for (int i = 0; i < n; ++i) std::cin >> coins[i];\n    std::cout << coinChange(coins, amount) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "3 11\n1 2 5",
+        "expectedOutput": "3",
+        "isHidden": false
+      },
+      {
+        "input": "1 3\n2",
+        "expectedOutput": "-1",
+        "isHidden": false
+      },
+      {
+        "input": "1 0\n1",
+        "expectedOutput": "0",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Bottom-up tabulation dp[i] represents minimum coins for amount i. Transition: dp[i] = min(dp[i], dp[i - coin] + 1).",
+    "objective": "Apply unbounded knapsack recurrence relations.",
+    "skillTags": [
+      "Dynamic Programming",
+      "Knapsack"
+    ],
+    "keywords": [
+      "coin change",
+      "fewest coins",
+      "dynamic programming"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "algo_coding_binary_search_rotated",
+    "subject": "algo",
+    "topic": "binary_search",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "There is an integer array nums sorted in ascending order with distinct values, rotated at an unknown pivot index. Given nums and target, return the index of target, or -1 if not found in O(log n) time.",
+    "templateCode": "#include <iostream>\n#include <vector>\n\nint searchRotated(const std::vector<int>& nums, int target) {\n    // TODO: Modified binary search\n    return -1;\n}\n\nint main() {\n    int n, target;\n    if (!(std::cin >> n >> target)) return 0;\n    std::vector<int> nums(n);\n    for (int i = 0; i < n; ++i) std::cin >> nums[i];\n    std::cout << searchRotated(nums, target) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "7 0\n4 5 6 7 0 1 2",
+        "expectedOutput": "4",
+        "isHidden": false
+      },
+      {
+        "input": "7 3\n4 5 6 7 0 1 2",
+        "expectedOutput": "-1",
+        "isHidden": false
+      },
+      {
+        "input": "1 0\n0",
+        "expectedOutput": "0",
+        "isHidden": true
+      }
+    ],
+    "explanation": "At any midpoint, at least one half (left or right) is guaranteed to be normally sorted. Determine which half is sorted and test if target falls within it.",
+    "objective": "Master logarithmic binary search with rotational invariants.",
+    "skillTags": [
+      "Binary Search",
+      "Arrays"
+    ],
+    "keywords": [
+      "rotated",
+      "binary search",
+      "log n"
+    ],
+    "softSkill": false
   }
 ]

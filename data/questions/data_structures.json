@@ -288,5 +288,107 @@
       "Graphs"
     ],
     "softSkill": false
+  },
+  {
+    "id": "ds_coding_reverse_linked_list",
+    "subject": "ds",
+    "topic": "linked_lists",
+    "difficulty": "Easy",
+    "type": "Coding",
+    "text": "Given the head of a singly linked list represented as space-separated integers, reverse the list iteratively in O(n) time and O(1) space, and print the reversed elements space-separated.",
+    "templateCode": "#include <iostream>\n#include <vector>\n\nstruct ListNode {\n    int val;\n    ListNode* next;\n    ListNode(int x) : val(x), next(nullptr) {}\n};\n\nListNode* reverseList(ListNode* head) {\n    // TODO: 3-pointer iterative reversal\n    return nullptr;\n}\n\nint main() {\n    int n;\n    if (!(std::cin >> n) || n <= 0) return 0;\n    ListNode dummy(0);\n    ListNode* tail = &dummy;\n    for (int i = 0; i < n; ++i) {\n        int v; std::cin >> v;\n        tail->next = new ListNode(v);\n        tail = tail->next;\n    }\n    ListNode* rev = reverseList(dummy.next);\n    while (rev) {\n        std::cout << rev->val << (rev->next ? \" \" : \"\");\n        rev = rev->next;\n    }\n    std::cout << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "5\n1 2 3 4 5",
+        "expectedOutput": "5 4 3 2 1",
+        "isHidden": false
+      },
+      {
+        "input": "2\n1 2",
+        "expectedOutput": "2 1",
+        "isHidden": false
+      },
+      {
+        "input": "1\n42",
+        "expectedOutput": "42",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Use prev, curr, and next pointers to reverse link directions in place without extra memory allocations.",
+    "objective": "Pointer manipulation and in-place list transformations.",
+    "skillTags": [
+      "Linked Lists",
+      "Pointers"
+    ],
+    "keywords": [
+      "reverse",
+      "linked list",
+      "iterative",
+      "pointers"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "ds_coding_min_stack",
+    "subject": "ds",
+    "topic": "stacks",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant O(1) time.",
+    "templateCode": "#include <iostream>\n#include <stack>\n#include <string>\n\nclass MinStack {\n    std::stack<int> s;\n    std::stack<int> min_s;\npublic:\n    void push(int val) {\n        // TODO: Push value and maintain minimum\n    }\n    void pop() {\n        // TODO: Pop from stack and min_stack\n    }\n    int top() {\n        return s.top();\n    }\n    int getMin() {\n        return min_s.top();\n    }\n};\n\nint main() {\n    int q;\n    if (!(std::cin >> q)) return 0;\n    MinStack ms;\n    while (q--) {\n        std::string op;\n        std::cin >> op;\n        if (op == \"push\") {\n            int val; std::cin >> val;\n            ms.push(val);\n        } else if (op == \"pop\") {\n            ms.pop();\n        } else if (op == \"top\") {\n            std::cout << ms.top() << std::endl;\n        } else if (op == \"getMin\") {\n            std::cout << ms.getMin() << std::endl;\n        }\n    }\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "6\npush -2\npush 0\npush -3\ngetMin\npop\ntop",
+        "expectedOutput": "-3\n0",
+        "isHidden": false
+      },
+      {
+        "input": "4\npush 5\npush 2\ngetMin\npop",
+        "expectedOutput": "2",
+        "isHidden": true
+      }
+    ],
+    "explanation": "Maintain an auxiliary stack tracking the minimum element seen so far at each height of the main stack.",
+    "objective": "Stack tracking patterns and constant-time invariant preservation.",
+    "skillTags": [
+      "Stack",
+      "Data Structure Design"
+    ],
+    "keywords": [
+      "min stack",
+      "constant time",
+      "getMin"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "ds_coding_tree_diameter",
+    "subject": "ds",
+    "topic": "trees",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Given the root of a binary tree, return the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree (number of edges).",
+    "templateCode": "#include <iostream>\n#include <algorithm>\n\nstruct TreeNode {\n    int val;\n    TreeNode *left, *right;\n    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n};\n\nint depth(TreeNode* root, int& diameter) {\n    // TODO: compute depth and update max diameter\n    return 0;\n}\n\nint diameterOfBinaryTree(TreeNode* root) {\n    int diameter = 0;\n    depth(root, diameter);\n    return diameter;\n}\n\nint main() {\n    // Construct sample tree: 1 -> (2 -> 4, 5), 3\n    TreeNode* root = new TreeNode(1);\n    root->left = new TreeNode(2);\n    root->right = new TreeNode(3);\n    root->left->left = new TreeNode(4);\n    root->left->right = new TreeNode(5);\n    std::cout << diameterOfBinaryTree(root) << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "test",
+        "expectedOutput": "3",
+        "isHidden": false
+      }
+    ],
+    "explanation": "At every node, the longest path passing through it is left_height + right_height. Compute tree height via DFS in O(n) while updating global maximum.",
+    "objective": "Tree DFS traversal and depth computation.",
+    "skillTags": [
+      "Trees",
+      "Binary Tree",
+      "DFS"
+    ],
+    "keywords": [
+      "diameter",
+      "binary tree",
+      "longest path",
+      "dfs"
+    ],
+    "softSkill": false
   }
 ]

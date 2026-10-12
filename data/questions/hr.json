@@ -449,5 +449,87 @@
       "execution"
     ],
     "softSkill": true
+  },
+  {
+    "id": "hr_star_cross_functional_influence",
+    "subject": "hr",
+    "topic": "cross_functional",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Describe a scenario where you had to persuade product managers, designers, or non-technical stakeholders to prioritize critical technical debt or security refactoring over new shiny features.",
+    "keywords": [
+      "data",
+      "business impact",
+      "risk",
+      "customer",
+      "metrics",
+      "latency",
+      "reliability",
+      "compromise"
+    ],
+    "minKeywords": 3,
+    "explanation": "Bridge technical risk to business outcomes: frame technical debt in terms of outage risk, feature velocity drag, or infrastructure dollar costs.",
+    "objective": "Assess cross-functional communication, empathy, and business alignment.",
+    "skillTags": [
+      "Stakeholder Management",
+      "Communication",
+      "Technical Debt"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "hr_star_ambiguous_requirements",
+    "subject": "hr",
+    "topic": "ambiguity",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Tell me about a time you were given a highly ambiguous project requirement with minimal guidance. How did you break it down, validate assumptions, and drive clarity?",
+    "keywords": [
+      "assumptions",
+      "prototype",
+      "clarify",
+      "milestones",
+      "feedback loops",
+      "iteration",
+      "discovery"
+    ],
+    "minKeywords": 3,
+    "explanation": "Show bias for action: formulate hypotheses, interview users/stakeholders, build rapid proof-of-concept prototypes, and establish tight feedback loops.",
+    "objective": "Evaluate autonomous leadership, ambiguity tolerance, and problem decomposition.",
+    "skillTags": [
+      "Autonomous Execution",
+      "Ambiguity",
+      "Leadership"
+    ],
+    "softSkill": true
+  },
+  {
+    "id": "hr_mcq_code_review_empathy",
+    "subject": "hr",
+    "topic": "code_review_culture",
+    "difficulty": "Easy",
+    "type": "MCQ",
+    "text": "What is the most constructive way to leave feedback on a pull request when a peer writes suboptimal code?",
+    "options": [
+      "Reject the PR immediately with 'Rewrite this, it is slow and unreadable'",
+      "Explain the rationale kindly, suggest a concrete alternative or link to docs, and phrase critiques around the code rather than the person",
+      "Silently approve the PR to avoid hurting their feelings",
+      "Take over their branch and rewrite the code yourself"
+    ],
+    "answer": 1,
+    "explanation": "Constructive code reviews focus on mentoring, psychological safety, and objective rationale without personal critiques.",
+    "objective": "Promote psychological safety and positive engineering code review culture.",
+    "skillTags": [
+      "Code Review",
+      "Team Culture",
+      "Empathy"
+    ],
+    "keywords": [
+      "code review",
+      "pull request",
+      "constructive",
+      "empathy"
+    ],
+    "softSkill": true
   }
 ]

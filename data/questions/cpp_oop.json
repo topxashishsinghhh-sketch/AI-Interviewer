@@ -292,5 +292,87 @@
       "Inheritance"
     ],
     "softSkill": false
+  },
+  {
+    "id": "oop_coding_singleton_threadsafe",
+    "subject": "oop",
+    "topic": "design_patterns",
+    "difficulty": "Medium",
+    "type": "Coding",
+    "text": "Implement a thread-safe Meyers Singleton in C++11/17. Demonstrate that calling getInstance() from multiple calls returns a reference to the exact same memory instance.",
+    "templateCode": "#include <iostream>\n\nclass ConfigurationManager {\nprivate:\n    ConfigurationManager() { /* Private constructor */ }\n    ConfigurationManager(const ConfigurationManager&) = delete;\n    ConfigurationManager& operator=(const ConfigurationManager&) = delete;\n\npublic:\n    static ConfigurationManager& getInstance() {\n        // TODO: Thread-safe Meyer's Singleton using static local\n        static ConfigurationManager instance;\n        return instance;\n    }\n\n    void test() {\n        std::cout << \"Singleton Active\" << std::endl;\n    }\n};\n\nint main() {\n    auto& a = ConfigurationManager::getInstance();\n    auto& b = ConfigurationManager::getInstance();\n    std::cout << (&a == &b ? \"SAME_INSTANCE\" : \"DIFFERENT\") << std::endl;\n    return 0;\n}\n",
+    "testCases": [
+      {
+        "input": "run",
+        "expectedOutput": "SAME_INSTANCE",
+        "isHidden": false
+      }
+    ],
+    "explanation": "C++11 standard \u00a76.7 specifies that static local variables are initialized exactly once in a thread-safe manner (Meyers Singleton).",
+    "objective": "Implement thread-safe creational design patterns in modern C++.",
+    "skillTags": [
+      "Design Patterns",
+      "C++",
+      "Singleton"
+    ],
+    "keywords": [
+      "singleton",
+      "thread-safe",
+      "meyers singleton",
+      "design patterns"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "oop_text_solid_principles",
+    "subject": "oop",
+    "topic": "solid",
+    "difficulty": "Medium",
+    "type": "Text",
+    "text": "Explain the Liskov Substitution Principle (LSP) and how violating it with a classic Rectangle/Square inheritance hierarchy breaks client code.",
+    "keywords": [
+      "preconditions",
+      "postconditions",
+      "invariants",
+      "inheritance",
+      "behavior",
+      "contract",
+      "subtype"
+    ],
+    "minKeywords": 3,
+    "explanation": "LSP states that subtypes must be substitutable for their base types without altering program correctness. A Square cannot cleanly inherit from Rectangle if setting width independently alters height.",
+    "objective": "Master Object-Oriented Design principles and polymorphism contracts.",
+    "skillTags": [
+      "SOLID",
+      "OOP Architecture",
+      "Inheritance"
+    ],
+    "softSkill": false
+  },
+  {
+    "id": "oop_text_raii_rule_of_five",
+    "subject": "oop",
+    "topic": "resource_management",
+    "difficulty": "Hard",
+    "type": "Text",
+    "text": "Explain Resource Acquisition Is Initialization (RAII) and detail the Rule of Five in Modern C++ (C++11 and later).",
+    "keywords": [
+      "destructor",
+      "copy constructor",
+      "copy assignment",
+      "move constructor",
+      "move assignment",
+      "resource",
+      "deterministic"
+    ],
+    "minKeywords": 4,
+    "explanation": "RAII binds the lifecycle of a resource to object lifetime. The Rule of Five mandates defining destructor, copy constructor, copy assignment, move constructor, and move assignment when managing raw resources.",
+    "objective": "Demonstrate modern C++ memory management and move semantics proficiency.",
+    "skillTags": [
+      "RAII",
+      "Rule of 5",
+      "Modern C++"
+    ],
+    "softSkill": false
   }
 ]
