@@ -2078,3 +2078,194 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
 [data-theme="light"] .mcq-option { background: #f8f9fc; border-color: #d1d5db; }
 [data-theme="light"] .mcq-option:hover { background: #eef0ff; }
 [data-theme="light"] .mcq-letter { background: #e5e7eb; border-color: #d1d5db; color: #6b7280; }
+
+/* ==========================================================================
+   Profile Page — Full Redesign
+   ========================================================================== */
+
+.profile-page { display: flex; flex-direction: column; gap: 20px; max-width: 1100px; }
+
+/* ── Hero Card ─────────────────────────────────────────────── */
+.profile-hero {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  background: var(--surface-1);
+}
+.profile-hero-bg {
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(99,102,241,.25) 0%, rgba(168,85,247,.18) 50%, rgba(236,72,153,.12) 100%);
+  pointer-events: none;
+}
+.profile-hero-bg::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(99,102,241,.15) 0%, transparent 60%);
+}
+.profile-hero-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 32px 36px;
+  flex-wrap: wrap;
+}
+.profile-avatar-wrap { flex-shrink: 0; }
+.profile-avatar-ring {
+  width: 96px; height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 6px rgba(99,102,241,.4);
+  animation: profilePulse 3s ease-in-out infinite;
+}
+@keyframes profilePulse {
+  0%, 100% { box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 6px rgba(99,102,241,.4); }
+  50%       { box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 10px rgba(168,85,247,.3); }
+}
+.profile-avatar-circle {
+  width: 82px; height: 82px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 34px; font-weight: 800;
+  color: var(--text);
+  letter-spacing: -1px;
+}
+.profile-hero-info { flex: 1; min-width: 220px; }
+.profile-name {
+  font-size: 26px; font-weight: 800;
+  margin: 0 0 8px;
+  background: linear-gradient(135deg, var(--text), var(--text-2));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.profile-meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.profile-meta-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(99,102,241,.1);
+  border: 1px solid rgba(99,102,241,.25);
+  font-size: 12px; color: var(--text-2);
+}
+.profile-stat-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+.profile-stat-pill {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 10px 18px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  min-width: 68px;
+  transition: transform .15s ease;
+}
+.profile-stat-pill:hover { transform: translateY(-2px); }
+.profile-stat-pill.ok     { border-color: rgba(16,185,129,.35); background: rgba(16,185,129,.08); }
+.profile-stat-pill.warn   { border-color: rgba(245,158,11,.35); background: rgba(245,158,11,.08); }
+.profile-stat-pill.accent { border-color: rgba(99,102,241,.35);  background: rgba(99,102,241,.1); }
+.psp-val { font-size: 20px; font-weight: 800; color: var(--text); line-height: 1.1; }
+.psp-lab { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 2px; }
+
+.profile-ring-wrap { flex-shrink: 0; margin-left: auto; }
+.profile-ring { filter: drop-shadow(0 0 12px rgba(99,102,241,.35)); }
+
+/* ── Sections ───────────────────────────────────────────────── */
+.profile-section {
+  background: var(--surface-1);
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  padding: 22px 24px;
+  transition: border-color .2s;
+}
+.profile-section:hover { border-color: rgba(99,102,241,.3); }
+.profile-section-title {
+  font-size: 13px; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .07em;
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex; align-items: center;
+}
+
+/* ── Badges ─────────────────────────────────────────────────── */
+.profile-badges { display: flex; flex-wrap: wrap; gap: 10px; }
+.profile-badge {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 14px;
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--badge-color) 12%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--badge-color) 35%, transparent);
+  font-size: 13px; font-weight: 600;
+  color: var(--text);
+  transition: transform .15s, box-shadow .15s;
+  animation: badgePop .4s ease backwards;
+}
+.profile-badge:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--badge-color) 25%, transparent);
+}
+@keyframes badgePop {
+  from { transform: scale(.7); opacity: 0; }
+  to   { transform: scale(1);  opacity: 1; }
+}
+.profile-badge-icon { font-size: 18px; line-height: 1; }
+.profile-badge-label { color: color-mix(in srgb, var(--badge-color) 80%, var(--text)); }
+
+/* ── Two-column grid ─────────────────────────────────────────── */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 720px) { .profile-grid { grid-template-columns: 1fr; } }
+
+/* ── Edit profile form ───────────────────────────────────────── */
+.edit-profile-form .field { margin-bottom: 14px; }
+.edit-profile-form textarea { min-height: 62px; }
+.profile-save-msg {
+  font-size: 13px; font-weight: 600; color: var(--ok);
+  animation: fadeIn .3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; } }
+
+/* ── Subject progress bars ───────────────────────────────────── */
+.pbar-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 52px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 12.5px;
+}
+.pbar-label { color: var(--text-2); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pbar-track { height: 7px; border-radius: 8px; background: var(--surface-3); overflow: hidden; }
+.pbar-fill  { height: 100%; border-radius: 8px; transition: width 1s cubic-bezier(.4,0,.2,1); }
+.pbar-num   { text-align: right; color: var(--muted); font-size: 11px; font-weight: 600; }
+
+/* ── Milestones ──────────────────────────────────────────────── */
+.profile-milestones { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.milestone-card {
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1.5px solid var(--line-strong);
+  transition: border-color .2s, transform .15s;
+}
+.milestone-card:hover { transform: translateY(-2px); border-color: rgba(99,102,241,.35); }
+.milestone-card.done  { border-color: rgba(16,185,129,.4); background: rgba(16,185,129,.06); }
+.milestone-icon { font-size: 26px; flex-shrink: 0; }
+.milestone-info { flex: 1; min-width: 0; }
+.milestone-label { font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
+.milestone-bar   { height: 5px; border-radius: 6px; background: var(--surface-3); overflow: hidden; margin-bottom: 4px; }
+.milestone-fill  { height: 100%; border-radius: 6px; background: linear-gradient(90deg, #6366f1, #a855f7); transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+.milestone-card.done .milestone-fill { background: linear-gradient(90deg, #10b981, #06b6d4); }
+.milestone-num   { font-size: 10.5px; color: var(--muted); font-weight: 600; }
+
+/* Light theme overrides */
+[data-theme="light"] .profile-hero { background: #fff; }
+[data-theme="light"] .profile-section { background: #fff; border-color: #e5e7eb; }
+[data-theme="light"] .profile-stat-pill { background: #f3f4f6; border-color: #d1d5db; }
+[data-theme="light"] .profile-avatar-circle { background: #f3f4f6; color: #111; }
+[data-theme="light"] .profile-meta-chip { background: rgba(99,102,241,.07); }
+[data-theme="light"] .milestone-card { background: #f9fafb; border-color: #e5e7eb; }
+[data-theme="light"] .pbar-track { background: #e5e7eb; }

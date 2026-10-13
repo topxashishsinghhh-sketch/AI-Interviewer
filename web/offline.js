@@ -615,6 +615,20 @@
   }
 
   /* -----------------------------------------------------------------------
+     Profile update
+  ----------------------------------------------------------------------- */
+  function handleUpdateProfile(body) {
+    if (!body) return err('No data', 400);
+    var d = load();
+    if (body.name)    d.userName    = body.name.trim();
+    if (body.college) d.userCollege = body.college.trim();
+    if (body.branch)  d.userBranch  = body.branch.trim();
+    if (body.bio)     d.userBio     = body.bio.trim();
+    save(d);
+    return ok({ user: guestUser() });
+  }
+
+  /* -----------------------------------------------------------------------
      Admin
   ----------------------------------------------------------------------- */
   function handleAdminStats() {
@@ -651,6 +665,7 @@
     if (method === 'POST' && path === '/api/register') return handleRegister(body);
     if (method === 'POST' && path === '/api/logout')   return handleLogout();
     if (method === 'GET'  && path === '/api/me')       return handleMe();
+    if (method === 'POST' && path === '/api/profile')  return handleUpdateProfile(body);
     if (method === 'GET'  && path === '/api/stats/me') return handleStats();
     if (method === 'GET'  && path === '/api/problems') return handleProblems(search);
 

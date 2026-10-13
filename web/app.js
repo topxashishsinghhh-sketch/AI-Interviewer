@@ -444,21 +444,174 @@ views.dashboard = function () {
 };
 
 views.profile = function (user) {
-  var s = state.stats || {};
-  var parts = [];
-  parts.push('<div class="stat-grid">');
-  parts.push(statCard(user.name, 'Name'));
-  parts.push(statCard(user.role, 'Role'));
-  parts.push(statCard(s.streak || 0, 'Current streak', 'warn'));
-  parts.push(statCard(s.longestStreak || 0, 'Longest streak'));
-  parts.push('</div>');
-  parts.push('<div class="panel"><h3>Account</h3>' +
-             '<p class="muted">Email: ' + esc(user.email) + '</p>' +
-             '<p class="muted">College: ' + esc(user.college) + '</p>' +
-             '<p class="muted">Branch: ' + esc(user.branch) + '</p>' +
-             '<p class="muted">Badges: ' + esc((user.badges || []).join(', ') || 'None yet') + '</p></div>');
-  return parts.join('');
+  var s      = state.stats || {};
+  var solved = (s.solved && s.solved.total) || 0;
+  var total  = (s.available && s.available.total) || 310;
+  var pct    = total > 0 ? Math.round((solved / total) * 100) : 0;
+  var streak = s.streak || 0;
+  var bySubject = s.bySubject || [];
+
+  // SVG progress ring
+  var radius = 54, circ = Math.round(2 * Math.PI * radius);
+  var dash   = Math.round((pct / 100) * circ);
+  var ring   = '<svg width="140" height="140" viewBox="0 0 140 140" class="profile-ring">' +
+    '<circle cx="70" cy="70" r="' + radius + '" fill="none" stroke="var(--surface-3)" stroke-width="12"/>' +
+    '<circle cx="70" cy="70" r="' + radius + '" fill="none" stroke="url(#rg)" stroke-width="12"' +
+    '  stroke-dasharray="' + dash + ' ' + circ + '"' +
+    '  stroke-dashoffset="0" stroke-linecap="round"' +
+    '  transform="rotate(-90 70 70)"/>' +
+    '<defs><linearGradient id="rg" x1="0%" y1="0%" x2="100%" y2="100%">' +
+    '<stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#a855f7"/>' +
+    '</linearGradient></defs>' +
+    '<text x="70" y="65" text-anchor="middle" fill="var(--text)" font-size="22" font-weight="800">' + pct + '%</text>' +
+    '<text x="70" y="84" text-anchor="middle" fill="var(--muted)" font-size="11">Completed</text>' +
+    '</svg>';
+
+  // Badges logic
+  var badges = [];
+  if (solved >= 1)   badges.push({ icon: '🎯', label: 'First Solve',      color: '#6366f1' });
+  if (solved >= 10)  badges.push({ icon: '⚡', label: '10 Solved',         color: '#f59e0b' });
+  if (solved >= 25)  badges.push({ icon: '🔥', label: '25 Solved',         color: '#ef4444' });
+  if (solved >= 50)  badges.push({ icon: '💎', label: '50 Solved',         color: '#06b6d4' });
+  if (solved >= 100) badges.push({ icon: '👑', label: 'Century',           color: '#8b5cf6' });
+  if (streak >= 3)   badges.push({ icon: '📅', label: streak + 'd Streak', color: '#10b981' });
+  if (solved >= 5 && bySubject.length >= 3) badges.push({ icon: '🧠', label: 'Multi-Domain', color: '#f97316' });
+  if (badges.length === 0) badges.push({ icon: '🌱', label: 'Getting Started', color: '#6b7280' });
+
+  var badgeHtml = badges.map(function (b) {
+    return '<div class="profile-badge" style="--badge-color:' + b.color + '">' +
+      '<span class="profile-badge-icon">' + b.icon + '</span>' +
+      '<span class="profile-badge-label">' + esc(b.label) + '</span>' +
+      '</div>';
+  }).join('');
+
+  // Subject bars
+  var barsHtml = '';
+  var subjectLabels = {
+    algo: 'Algorithms', ds: 'Data Structures', cpp_oop: 'C++ & OOP',
+    oop: 'OOP', os: 'Operating Systems', dbms: 'DBMS', networks: 'Networks',
+    hr: 'Behavioral / HR', aptitude: 'Aptitude', reasoning: 'Reasoning',
+    accounting: 'Accounting', analog: 'Analog Electronics', signals: 'Signals'
+  };
+  bySubject.slice(0, 8).forEach(function (row) {
+    var label = subjectLabels[row.subject] || row.subject;
+    var barPct = row.total > 0 ? Math.round((row.solved / row.total) * 100) : 0;
+    var color = barPct === 0 ? 'var(--surface-4)' : (barPct >= 70 ? 'var(--ok)' : (barPct >= 40 ? 'var(--accent)' : 'var(--warn))'));
+    barsHtml +=
+      '<div class="pbar-row">' +
+        '<div class="pbar-label">' + esc(label) + '</div>' +
+        '<div class="pbar-track"><div class="pbar-fill" style="width:' + barPct + '%;background:' + color + '"></div></div>' +
+        '<div class="pbar-num">' + row.solved + '/' + row.total + '</div>' +
+      '</div>';
+  });
+
+  var nameInitial = (user.name || 'C').charAt(0).toUpperCase();
+
+  return [
+    '<div class="profile-page">',
+
+    /* ── Hero Card ── */
+    '<div class="profile-hero">',
+      '<div class="profile-hero-bg"></div>',
+      '<div class="profile-hero-content">',
+        '<div class="profile-avatar-wrap">',
+          '<div class="profile-avatar-ring">',
+            '<div class="profile-avatar-circle" id="profile-avatar-letter">' + nameInitial + '</div>',
+          '</div>',
+        '</div>',
+        '<div class="profile-hero-info">',
+          '<h2 class="profile-name">' + esc(user.name || 'Candidate') + '</h2>',
+          '<div class="profile-meta-row">',
+            user.college && user.college !== 'N/A' ?
+              '<span class="profile-meta-chip"><i class="bi bi-building me-1"></i>' + esc(user.college) + '</span>' : '',
+            user.branch && user.branch !== 'N/A' && user.branch !== 'Computer Science' ?
+              '<span class="profile-meta-chip"><i class="bi bi-book me-1"></i>' + esc(user.branch) + '</span>' : '',
+            '<span class="profile-meta-chip"><i class="bi bi-envelope me-1"></i>' + esc(user.email || 'guest@offline.dev') + '</span>',
+          '</div>',
+          '<div class="profile-stat-pills">',
+            '<div class="profile-stat-pill ok"><span class="psp-val">' + solved + '</span><span class="psp-lab">Solved</span></div>',
+            '<div class="profile-stat-pill warn"><span class="psp-val">' + streak + '</span><span class="psp-lab">Streak</span></div>',
+            '<div class="profile-stat-pill accent"><span class="psp-val">' + pct + '%</span><span class="psp-lab">Progress</span></div>',
+            '<div class="profile-stat-pill"><span class="psp-val">' + badges.length + '</span><span class="psp-lab">Badges</span></div>',
+          '</div>',
+        '</div>',
+        '<div class="profile-ring-wrap">' + ring + '</div>',
+      '</div>',
+    '</div>',
+
+    /* ── Badges ── */
+    '<div class="profile-section">',
+      '<div class="profile-section-title"><i class="bi bi-award me-2"></i>Achievements & Badges</div>',
+      '<div class="profile-badges">' + badgeHtml + '</div>',
+    '</div>',
+
+    /* ── Two-column grid: Edit + Subject Progress ── */
+    '<div class="profile-grid">',
+
+      /* Edit form */
+      '<div class="profile-section">',
+        '<div class="profile-section-title"><i class="bi bi-person-gear me-2"></i>Edit Profile</div>',
+        '<form id="edit-profile-form" class="edit-profile-form" autocomplete="off">',
+          '<label class="field">',
+            '<span>Full Name</span>',
+            '<input type="text" name="pname" value="' + esc(user.name || '') + '" placeholder="Your full name" required>',
+          '</label>',
+          '<label class="field">',
+            '<span>College / University</span>',
+            '<input type="text" name="college" value="' + esc(user.college && user.college !== 'N/A' ? user.college : '') + '" placeholder="IIT Delhi / BITS Pilani / VIT…">',
+          '</label>',
+          '<label class="field">',
+            '<span>Branch / Course</span>',
+            '<input type="text" name="branch" value="' + esc(user.branch && user.branch !== 'Computer Science' ? user.branch : '') + '" placeholder="Computer Science, ECE, MCA…">',
+          '</label>',
+          '<label class="field">',
+            '<span>Short Bio <span class="muted" style="font-size:11px">(optional)</span></span>',
+            '<textarea name="bio" rows="2" placeholder="Passionate about algorithms and competitive programming…" style="resize:vertical"></textarea>',
+          '</label>',
+          '<div style="display:flex;align-items:center;gap:12px;margin-top:4px">',
+            '<button type="submit" class="btn btn-primary">Save Changes</button>',
+            '<span id="profile-save-msg" class="profile-save-msg" hidden>✅ Saved!</span>',
+          '</div>',
+        '</form>',
+      '</div>',
+
+      /* Subject progress */
+      '<div class="profile-section">',
+        '<div class="profile-section-title"><i class="bi bi-bar-chart me-2"></i>Subject Progress</div>',
+        barsHtml || '<p class="muted">Solve some problems to see your progress here.</p>',
+      '</div>',
+
+    '</div>',
+
+    /* ── Goals & Upcoming ── */
+    '<div class="profile-section">',
+      '<div class="profile-section-title"><i class="bi bi-trophy me-2"></i>Next Milestones</div>',
+      '<div class="profile-milestones">',
+        milestone(solved, 1,   'First Solve',     '🎯'),
+        milestone(solved, 10,  '10 Problems',      '⚡'),
+        milestone(solved, 25,  '25 Problems',      '🔥'),
+        milestone(solved, 50,  'Half Century',     '💎'),
+        milestone(solved, 100, 'Century Club',     '👑'),
+      '</div>',
+    '</div>',
+
+    '</div>' /* end profile-page */
+  ].join('');
 };
+
+function milestone(solved, target, label, icon) {
+  var done  = solved >= target;
+  var pct   = Math.min(100, Math.round((solved / target) * 100));
+  return '<div class="milestone-card' + (done ? ' done' : '') + '">' +
+    '<div class="milestone-icon">' + icon + '</div>' +
+    '<div class="milestone-info">' +
+      '<div class="milestone-label">' + esc(label) + '</div>' +
+      '<div class="milestone-bar"><div class="milestone-fill" style="width:' + pct + '%"></div></div>' +
+      '<div class="milestone-num">' + (done ? '✅ Achieved' : (solved + ' / ' + target)) + '</div>' +
+    '</div>' +
+  '</div>';
+}
+
 
 views.submissions = function (rows) {
   var parts = [];
@@ -1215,9 +1368,38 @@ function loadBoard() {
 }
 
 function loadProfile() {
-  api.me().then(function (user) {
+  Promise.all([api.me(), loadStats()]).then(function (results) {
+    var user = results[0];
     state.user = user;
     setHtml('view-profile', views.profile(user));
+
+    // Wire edit-profile form
+    var form = $('edit-profile-form');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var els = form.elements;
+        var updated = {
+          name:    els.pname   ? els.pname.value.trim()   : user.name,
+          college: els.college ? els.college.value.trim() : user.college,
+          branch:  els.branch  ? els.branch.value.trim()  : user.branch,
+          bio:     els.bio     ? els.bio.value.trim()     : ''
+        };
+        request('/api/profile', { method: 'POST', body: JSON.stringify(updated) })
+          .then(function (data) {
+            state.user = data.user || state.user;
+            Object.assign(state.user, updated);
+            var saved = $('profile-save-msg');
+            if (saved) { saved.hidden = false; setTimeout(function () { saved.hidden = true; }, 2500); }
+            // Update navbar name
+            setText('who', state.user.name || 'Candidate');
+            var avatar = $('user-avatar');
+            if (avatar) avatar.textContent = (state.user.name || 'U').charAt(0).toUpperCase();
+            var pavatar = $('profile-avatar-letter');
+            if (pavatar) pavatar.textContent = (state.user.name || 'U').charAt(0).toUpperCase();
+          }).catch(function () {});
+      });
+    }
   });
 }
 
