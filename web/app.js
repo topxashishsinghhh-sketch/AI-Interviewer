@@ -356,23 +356,43 @@ views.problem = function () {
   }
   parts.push('</div>'); // end ide-header
 
-  parts.push('<div class="code-editor-wrapper">');
-  parts.push('<div class="editor-line-numbers" id="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12</div>');
-  parts.push('<textarea id="answer" class="code-textarea" spellcheck="false" placeholder="' +
-             (isCoding ? '// Write your solution here...' : 'Compose your structured answer according to the STAR framework...') +
-             '">' + esc(p.template || '') + '</textarea>');
-  parts.push('</div>'); // end code-editor-wrapper
+  if (p.type === 'MCQ' && p.options && p.options.length) {
+    // MCQ: render clickable option cards
+    var letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    parts.push('<div class="mcq-options" id="mcq-options">');
+    for (var oi = 0; oi < p.options.length; oi++) {
+      parts.push(
+        '<label class="mcq-option" for="mcq-opt-' + oi + '">' +
+        '<input type="radio" name="mcq-answer" id="mcq-opt-' + oi + '" value="' + oi + '">' +
+        '<span class="mcq-letter">' + (letters[oi] || oi) + '</span>' +
+        '<span class="mcq-text">' + esc(p.options[oi]) + '</span>' +
+        '</label>'
+      );
+    }
+    parts.push('</div>');
+  } else {
+    parts.push('<div class="code-editor-wrapper">');
+    if (!p.type || p.type === 'Coding') {
+      parts.push('<div class="editor-line-numbers" id="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12</div>');
+    }
+    parts.push('<textarea id="answer" class="code-textarea" spellcheck="false" placeholder="' +
+               (isCoding ? '// Write your solution here...' : 'Compose your structured answer according to the STAR framework...') +
+               '">' + esc(p.template || '') + '</textarea>');
+    parts.push('</div>'); // end code-editor-wrapper
+  }
 
   parts.push('<div class="ide-footer">');
   parts.push('<div style="display:flex;gap:8px">');
-  parts.push('<button class="btn btn-quiet" id="clear">Reset</button>');
+  if (p.type !== 'MCQ') {
+    parts.push('<button class="btn btn-quiet" id="clear">Reset</button>');
+  }
   parts.push('<button class="btn btn-quiet" id="bookmark">' + (p.bookmarked ? '★ Bookmarked' : '☆ Bookmark') + '</button>');
   parts.push('</div>');
   parts.push('<div style="display:flex;gap:8px">');
   if (isCoding) {
     parts.push('<button class="btn" id="run">Run Code</button>');
   }
-  parts.push('<button class="btn btn-primary" id="submit">Submit Solution</button>');
+  parts.push('<button class="btn btn-primary" id="submit">' + (p.type === 'MCQ' ? 'Submit Answer' : 'Submit Solution') + '</button>');
   parts.push('</div>');
   parts.push('</div>'); // end ide-footer
   parts.push('</div>'); // end ide-card
@@ -703,34 +723,13 @@ function setLoginMode(registering) {
 }
 
 function quickDemo(targetView, problemId, initialSubject) {
-  var rand = Math.floor(1000 + Math.random() * 9000);
-  var email = 'candidate.' + rand + '@interview.dev';
-  var pass = 'DemoPass123!';
-  return api.register(email, pass, 'Demo Candidate', 'Engineering Academy', 'Computer Science')
-    .then(function (data) {
-      state.token = data.token;
-      state.user = data.user;
-      sessionStorage.setItem('ai_interviewer.token', state.token);
-      updateAuthUI(true);
-      return loadStats().then(function () {
-        return api.problems({ limit: 0 }).then(function (list) {
-          state.problems = list || [];
-          state.problemsLoaded = state.problems.length;
-        });
-      }).then(function () {
-        if (problemId) {
-          loadProblem(problemId);
-        } else {
-          navigate(targetView || 'problems');
-          if ((!targetView || targetView === 'problems') && initialSubject) {
-            loadProblems(initialSubject);
-          }
-        }
-      });
-    }).catch(function (err) {
-      // If error occurs, fall back to opening auth modal
-      setHidden('login-view', false);
-    });
+  // Store where the user wants to go after logging in
+  window._pendingView    = targetView    || 'problems';
+  window._pendingProblem = problemId     || null;
+  window._pendingSubject = initialSubject|| null;
+  // Show the auth modal — offline.js will handle register/login
+  setLoginMode(false);
+  setHidden('login-view', false);
 }
 
 function enterPractice(targetView, problemId, initialSubject) {
@@ -767,7 +766,11 @@ on('login-view', 'click', function (e) {
 });
 
 on('btn-modal-guest', 'click', function () {
-  quickDemo('problems');
+  // Switch to register mode so user can enter their name
+  setLoginMode(true);
+  // Pre-fill with a generated guest email hint
+  var emailEl = document.querySelector('#login-form input[name="email"]');
+  if (emailEl && !emailEl.value) emailEl.value = 'guest' + Math.floor(Math.random()*9000+1000) + '@ai.interview';
 });
 
 on('btn-instant-demo', 'click', function () {
@@ -863,18 +866,29 @@ on('login-form', 'submit', function (event) {
     event.target.reset();
     setLoginMode(false);
     updateAuthUI(true);
+    setHidden('login-view', true);
     setHidden('landing-view', true);
     setHidden('app', false);
     return loadStats().then(function () {
-      return api.problems({ limit: 200 }).then(function (list) {
+      return api.problems({ limit: 300 }).then(function (list) {
         state.problems = list || [];
         state.problemsLoaded = state.problems.length;
       });
     }).then(function () {
-      navigate('dashboard');
+      // Go to where the user originally wanted to go
+      var dest    = window._pendingView    || 'problems';
+      var prob    = window._pendingProblem || null;
+      var subject = window._pendingSubject || null;
+      window._pendingView = window._pendingProblem = window._pendingSubject = null;
+      if (prob) {
+        loadProblem(prob);
+      } else {
+        navigate(dest);
+        if ((dest === 'problems') && subject) loadProblems(subject);
+      }
     });
   }).catch(function (error) {
-    setText('login-error', error.message);
+    setText('login-error', error.message || 'Sign in failed. Please try again.');
     setHidden('login-error', false);
   });
 });
@@ -1033,8 +1047,22 @@ function loadProblem(id) {
 
     if (submit) {
       submit.addEventListener('click', function () {
-        var text = answer.value.trim();
-        if (!text) return;
+        var text;
+        if (p.type === 'MCQ') {
+          var checked = document.querySelector('input[name="mcq-answer"]:checked');
+          if (!checked) {
+            setText('verdict', '⚠️ Please select an option before submitting.');
+            setHidden('verdict', false);
+            $('verdict').className = 'verdict bad';
+            return;
+          }
+          text = checked.value; // index as string, e.g. "0", "1", "2", "3"
+        } else {
+          if (!answer) return;
+          text = answer.value.trim();
+          if (!text) return;
+        }
+
         if (p.type === 'Coding') {
           api.runCode(p.id, text, $('language').value).then(function (r) {
             renderVerdict(r);
@@ -1050,6 +1078,24 @@ function loadProblem(id) {
           api.solve(p.id, text).then(function (r) {
             renderVerdict(r);
             p.solved = p.solved || r.correct;
+            // Highlight correct MCQ option visually
+            if (p.type === 'MCQ') {
+              var labels = document.querySelectorAll('.mcq-option');
+              for (var li = 0; li < labels.length; li++) {
+                var radio = labels[li].querySelector('input[type="radio"]');
+                if (!radio) continue;
+                var idx = parseInt(radio.value, 10);
+                var correctIdx = p.answer !== undefined ? parseInt(String(p.answer), 10) : -1;
+                labels[li].classList.remove('correct', 'wrong');
+                if (idx === correctIdx) {
+                  labels[li].classList.add('correct');
+                } else if (radio.checked) {
+                  labels[li].classList.add('wrong');
+                }
+                radio.disabled = true;
+              }
+              submit.disabled = true;
+            }
             loadStats();
           }).catch(function (e) {
             setText('verdict', e.message);

@@ -1986,3 +1986,95 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
 
 .icon-teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
 .icon-orange { background: linear-gradient(135deg, #f97316, #ea580c); }
+
+/* ==========================================================================
+   MCQ Option Cards
+   ========================================================================== */
+
+.mcq-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+}
+
+.mcq-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 1.5px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--surface-2);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  user-select: none;
+}
+
+.mcq-option:hover {
+  border-color: var(--accent);
+  background: var(--surface-3);
+  transform: translateX(3px);
+}
+
+.mcq-option input[type="radio"] {
+  display: none;
+}
+
+.mcq-option:has(input:checked) {
+  border-color: var(--accent);
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.mcq-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--surface-4);
+  border: 1.5px solid var(--line-strong);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: all 0.18s ease;
+}
+
+.mcq-option:hover .mcq-letter,
+.mcq-option:has(input:checked) .mcq-letter {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.mcq-text {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text);
+  flex: 1;
+}
+
+.mcq-option.correct {
+  border-color: var(--ok) !important;
+  background: rgba(16, 185, 129, 0.12) !important;
+}
+.mcq-option.correct .mcq-letter {
+  background: var(--ok) !important;
+  border-color: var(--ok) !important;
+  color: white !important;
+}
+.mcq-option.wrong {
+  border-color: var(--bad) !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+.mcq-option.wrong .mcq-letter {
+  background: var(--bad) !important;
+  border-color: var(--bad) !important;
+  color: white !important;
+}
+
+[data-theme="light"] .mcq-option { background: #f8f9fc; border-color: #d1d5db; }
+[data-theme="light"] .mcq-option:hover { background: #eef0ff; }
+[data-theme="light"] .mcq-letter { background: #e5e7eb; border-color: #d1d5db; color: #6b7280; }

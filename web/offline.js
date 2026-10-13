@@ -95,12 +95,25 @@
     }));
   }
 
+  function saveUserProfile(name, email) {
+    var d = load();
+    if (name)  d.userName  = name;
+    if (email) d.userEmail = email;
+    save(d);
+  }
+
   function guestUser() {
     var store = getStore();
+    var d     = load();
     return {
-      id: 'guest', name: 'Guest Candidate', email: 'guest@offline.dev',
-      college: 'N/A', branch: 'Computer Science', role: 'Candidate',
-      streak: store.streak, score: Object.keys(store.solved).length * 10,
+      id: 'guest',
+      name:    d.userName  || 'Candidate',
+      email:   d.userEmail || 'guest@offline.dev',
+      college: d.userCollege || 'N/A',
+      branch:  d.userBranch  || 'Computer Science',
+      role: 'Candidate',
+      streak: store.streak,
+      score:  Object.keys(store.solved).length * 10,
       badges: []
     };
   }
@@ -109,15 +122,33 @@
      Auth endpoints
   ----------------------------------------------------------------------- */
   function handleLogin(body) {
-    var name = body && body.email ? body.email.split('@')[0] : 'Guest';
-    return ok({ token: 'offline-' + Date.now(), user: Object.assign({}, guestUser(), { name: name }) });
+    var email = (body && body.email) ? body.email : '';
+    var name  = email ? email.split('@')[0] : 'Candidate';
+    saveUserProfile(name, email);
+    return ok({ token: 'offline-' + Date.now(), user: guestUser() });
   }
   function handleRegister(body) {
-    var name = (body && body.name) ? body.name : 'Candidate';
-    return ok({ token: 'offline-' + Date.now(), user: Object.assign({}, guestUser(), { name: name }) });
+    var name    = (body && body.name)    ? body.name.trim()    : '';
+    var email   = (body && body.email)   ? body.email.trim()   : '';
+    var college = (body && body.college) ? body.college.trim() : '';
+    var branch  = (body && body.branch)  ? body.branch.trim()  : '';
+    if (!name && email) name = email.split('@')[0];
+    if (!name) name = 'Candidate';
+    var d = load();
+    d.userName    = name;
+    d.userEmail   = email || d.userEmail || 'guest@offline.dev';
+    d.userCollege = college || d.userCollege || 'N/A';
+    d.userBranch  = branch  || d.userBranch  || 'Computer Science';
+    save(d);
+    return ok({ token: 'offline-' + Date.now(), user: guestUser() });
   }
-  function handleLogout() { return ok({ ok: true }); }
-  function handleMe()     { return ok(guestUser()); }
+  function handleLogout() {
+    var d = load();
+    delete d.userName; delete d.userEmail; delete d.userCollege; delete d.userBranch;
+    save(d);
+    return ok({ ok: true });
+  }
+  function handleMe() { return ok(guestUser()); }
 
   /* -----------------------------------------------------------------------
      Stats — shape that views.dashboard reads:
