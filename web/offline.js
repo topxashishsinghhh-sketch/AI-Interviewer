@@ -23,6 +23,7 @@
      LocalStorage helpers
   ----------------------------------------------------------------------- */
   var LS_KEY = 'ai_interviewer_offline_v2';
+  var LS_SOFT_SKILLS = 'ai_interviewer_soft_skills_v1';
 
   function load() {
     try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); }
@@ -52,6 +53,30 @@
     return fetch('./data/questions.json')
       .then(function (r) { return r.json(); })
       .then(function (arr) { _qs = arr; return arr; });
+  }
+
+  function questionsCache() {
+    return _qs;
+  }
+
+  /* -----------------------------------------------------------------------
+     Soft-skills theory cache — loaded once from soft_skills_theory.json
+  ----------------------------------------------------------------------- */
+  var _theory = null;   // { subjectId: article }
+
+  function fetchTheory() {
+    if (_theory) return Promise.resolve(_theory);
+    return fetch('./data/soft_skills_theory.json')
+      .then(function (r) { return r.json(); })
+      .then(function (arr) {
+        var map = {};
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] && arr[i].id) map[arr[i].id] = arr[i];
+        }
+        _theory = map;
+        try { localStorage.setItem(LS_SOFT_SKILLS, JSON.stringify(map)); } catch (e) {}
+        return _theory;
+      });
   }
 
   /* -----------------------------------------------------------------------
@@ -629,6 +654,64 @@
   }
 
   /* -----------------------------------------------------------------------
+     Soft Skills — theory articles plus practice questions
+  ----------------------------------------------------------------------- */
+  function softTheoryStore() {
+    if (_theory) return _theory;
+    // Warm the cache from localStorage first so the section works on a second
+    // visit even if the JSON fetch has not run yet.
+    var cached = null;
+    try { cached = JSON.parse(localStorage.getItem(LS_SOFT_SKILLS) || 'null'); } catch (e) { cached = null; }
+    if (cached) { _theory = cached; return _theory; }
+    return {};
+  }
+
+  function softTheorySubjects() {
+    var store = softTheoryStore();
+    var out = [];
+    for (var id in store) {
+      if (Object.prototype.hasOwnProperty.call(store, id)) {
+        out.push(store[id]);
+      }
+    }
+    return out;
+  }
+
+  function countQuestionsFor(subject) {
+    var qs = questionsCache() || [];
+    var n = 0;
+    for (var i = 0; i < qs.length; i++) {
+      if (qs[i].subject === subject) n++;
+    }
+    return n;
+  }
+
+  function handleSoftSkillSubjects() {
+    var subjects = softTheorySubjects();
+    if (!subjects.length) {
+      return err('Soft-skills theory is not available offline', 503);
+    }
+    var out = subjects.map(function (s) {
+      return {
+        id: s.id, name: s.name, tagline: s.tagline, icon: s.icon,
+        readingTime: s.readingTime, summary: s.summary,
+        questionCount: countQuestionsFor(s.id)
+      };
+    });
+    out.sort(function (a, b) { return a.name.localeCompare(b.name); });
+    return ok(out);
+  }
+
+  function handleSoftSkill(id) {
+    var store = softTheoryStore();
+    var subject = store[id];
+    if (!subject) return err('No soft-skill subject named ' + id, 404);
+    var copy = JSON.parse(JSON.stringify(subject));
+    copy.questionCount = countQuestionsFor(id);
+    return ok(copy);
+  }
+
+  /* -----------------------------------------------------------------------
      Admin
   ----------------------------------------------------------------------- */
   function handleAdminStats() {
@@ -694,6 +777,11 @@
 
     var finishMatch = path.match(/^\/api\/interviews\/([^/]+)\/finish$/);
     if (finishMatch && method === 'POST') return handleFinishInterview(finishMatch[1]);
+
+    // Soft Skills — theory comes from the local JSON, practice from the bank
+    if (method === 'GET' && path === '/api/soft-skills') return handleSoftSkillSubjects();
+    var softMatch = path.match(/^\/api\/soft-skills\/([^/]+)$/);
+    if (softMatch && method === 'GET') return handleSoftSkill(decodeURIComponent(softMatch[1]));
 
     // Admin
     if (path === '/api/admin/stats')     return handleAdminStats();

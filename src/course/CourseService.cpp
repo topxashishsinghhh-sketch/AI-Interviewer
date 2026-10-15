@@ -102,6 +102,71 @@ void CourseService::initializeCourses() {
     common->addSubject(hr);
     
     courses_.push_back(common);
+
+    // Soft Skills Course — theory plus practice questions per subject
+    auto soft = std::make_shared<core::Course>("soft", "Soft Skills", "Communication, teamwork and workplace behaviour");
+
+    auto communication = std::make_shared<core::Subject>("communication", "Communication Skills", "Clarity, listening, feedback");
+    communication->addTopic(std::make_shared<core::Topic>("clarity", "Clarity", "Structure, concision, the ask"));
+    communication->addTopic(std::make_shared<core::Topic>("active_listening", "Active Listening", "Paraphrasing, confirming understanding"));
+    communication->addTopic(std::make_shared<core::Topic>("feedback", "Feedback", "Giving and receiving it"));
+    soft->addSubject(communication);
+
+    auto teamwork = std::make_shared<core::Subject>("teamwork", "Teamwork & Collaboration", "Coordination, trust, remote work");
+    teamwork->addTopic(std::make_shared<core::Topic>("roles", "Roles", "Handoffs, ownership, shared outcomes"));
+    teamwork->addTopic(std::make_shared<core::Topic>("remote_collaboration", "Remote Collaboration", "Visible state, async decisions"));
+    teamwork->addTopic(std::make_shared<core::Topic>("trust", "Trust", "Disagreeing well, reliability"));
+    soft->addSubject(teamwork);
+
+    auto leadership = std::make_shared<core::Subject>("leadership", "Leadership & Initiative", "Influence, ownership, delegation");
+    leadership->addTopic(std::make_shared<core::Topic>("influence", "Influence", "Initiative without authority"));
+    leadership->addTopic(std::make_shared<core::Topic>("ownership", "Ownership", "Outcomes, escalation"));
+    leadership->addTopic(std::make_shared<core::Topic>("delegation", "Delegation", "Outcomes over instructions"));
+    soft->addSubject(leadership);
+
+    auto timeManagement = std::make_shared<core::Subject>("time_management", "Time Management & Productivity", "Priorities, focus, commitments");
+    timeManagement->addTopic(std::make_shared<core::Topic>("prioritization", "Prioritization", "Consequence over urgency"));
+    timeManagement->addTopic(std::make_shared<core::Topic>("deep_work", "Deep Work", "Protecting focus"));
+    timeManagement->addTopic(std::make_shared<core::Topic>("habits", "Habits", "Capacity, commitments, buffers"));
+    soft->addSubject(timeManagement);
+
+    auto adaptability = std::make_shared<core::Subject>("adaptability", "Adaptability & Learning Agility", "Change, feedback, unlearning");
+    adaptability->addTopic(std::make_shared<core::Topic>("change", "Change", "Ambiguity, invalidated plans"));
+    adaptability->addTopic(std::make_shared<core::Topic>("feedback_loop", "Feedback Loop", "Updating on evidence"));
+    adaptability->addTopic(std::make_shared<core::Topic>("growth", "Growth", "Unlearning and transfer"));
+    soft->addSubject(adaptability);
+
+    auto conflictResolution = std::make_shared<core::Subject>("conflict_resolution", "Conflict Resolution", "Disagreement, negotiation, repair");
+    conflictResolution->addTopic(std::make_shared<core::Topic>("disagreement", "Disagreement", "Positions versus interests"));
+    conflictResolution->addTopic(std::make_shared<core::Topic>("negotiation", "Negotiation", "De-escalation, criteria"));
+    conflictResolution->addTopic(std::make_shared<core::Topic>("repair", "Repair", "Restoring relationships"));
+    soft->addSubject(conflictResolution);
+
+    auto emotionalIntelligence = std::make_shared<core::Subject>("emotional_intelligence", "Emotional Intelligence", "Self-awareness, empathy, regulation");
+    emotionalIntelligence->addTopic(std::make_shared<core::Topic>("self_awareness", "Self-Awareness", "Noticing your own state"));
+    emotionalIntelligence->addTopic(std::make_shared<core::Topic>("empathy", "Empathy", "Checked hypotheses about others"));
+    emotionalIntelligence->addTopic(std::make_shared<core::Topic>("regulation", "Regulation", "Composure as a practice"));
+    soft->addSubject(emotionalIntelligence);
+
+    auto workplaceEthics = std::make_shared<core::Subject>("workplace_ethics", "Workplace Ethics & Professionalism", "Integrity, boundaries, escalation");
+    workplaceEthics->addTopic(std::make_shared<core::Topic>("integrity", "Integrity", "Honest reporting, credit"));
+    workplaceEthics->addTopic(std::make_shared<core::Topic>("boundaries", "Boundaries", "Confidentiality, saying no"));
+    workplaceEthics->addTopic(std::make_shared<core::Topic>("compliance", "Compliance", "Raising risk concerns"));
+    soft->addSubject(workplaceEthics);
+
+    auto careerPlanning = std::make_shared<core::Subject>("career_planning", "Career Planning & Growth", "Direction, networks, interviews");
+    careerPlanning->addTopic(std::make_shared<core::Topic>("goals", "Goals", "Choosing a direction, evidence"));
+    careerPlanning->addTopic(std::make_shared<core::Topic>("networking", "Networking", "Being useful early"));
+    careerPlanning->addTopic(std::make_shared<core::Topic>("interviews", "Interviews", "Demonstrating reasoning"));
+    soft->addSubject(careerPlanning);
+
+    auto presentation = std::make_shared<core::Subject>("presentation", "Presentation & Storytelling", "Structure, delivery, visuals");
+    presentation->addTopic(std::make_shared<core::Topic>("structure", "Structure", "Situation, problem, resolution"));
+    presentation->addTopic(std::make_shared<core::Topic>("delivery", "Delivery", "Preparation and nerves"));
+    presentation->addTopic(std::make_shared<core::Topic>("visuals", "Visuals", "One idea per slide"));
+    soft->addSubject(presentation);
+
+    courses_.push_back(soft);
 }
 
 const std::vector<std::shared_ptr<core::Course>>& CourseService::courses() const {

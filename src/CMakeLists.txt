@@ -32,6 +32,7 @@ add_library(ai_interviewer_core STATIC
     admin/AdminService.cpp
     problem/ProblemService.cpp
     skills/SkillsService.cpp
+    softskills/SoftSkillsService.cpp
     progress/ProgressService.cpp
     course/CourseService.cpp
     interview/InterviewService.cpp

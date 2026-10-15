@@ -207,6 +207,7 @@ HttpServer::HttpServer(const Config& config)
         config_.backend, config_.dataDir + "/daily_challenges.json", config_.dbName);
 
     courseService_ = std::make_shared<course::CourseService>();
+    softSkillsService_ = std::make_unique<softskills::SoftSkillsService>(config_.dataDir, questionRepo_);
     feedbackGen_ = std::make_shared<core::RuleBasedFeedback>();
     authService_ = std::make_unique<auth::AuthService>(userRepo_);
     adminService_ = std::make_unique<admin::AdminService>(userRepo_, questionRepo_, attemptRepo_);
@@ -914,6 +915,93 @@ void HttpServer::registerRoutes() {
             topics.push_back(item);
         }
         out["topics"] = topics;
+        sendJson(response, 200, out);
+    });
+
+    // ---- soft skills: readable theory + practice subjects ----
+    // Browsable like the catalogue: the theory is learning content, not private
+    // data, so it needs no session.
+    server_->Get("/api/soft-skills", [this](const httplib::Request&, httplib::Response& response) {
+        json out = json::array();
+        const std::vector<softskills::TheorySummary> summaries = softSkillsService_->subjects();
+        for (std::size_t i = 0; i < summaries.size(); ++i) {
+            const softskills::TheorySummary& summary = summaries[i];
+            json item;
+            item["id"] = summary.id;
+            item["name"] = summary.name;
+            item["tagline"] = summary.tagline;
+            item["icon"] = summary.icon;
+            item["readingTime"] = summary.readingTime;
+            item["summary"] = summary.summary;
+            item["questionCount"] = summary.questionCount;
+            out.push_back(item);
+        }
+        if (out.empty()) {
+            sendJson(response, 503, JsonApi::error(
+                "Soft-skills theory is not available: data/soft_skills_theory.json "
+                "is missing or empty", 503));
+            return;
+        }
+        sendJson(response, 200, out);
+    });
+
+    server_->Get(R"(/api/soft-skills/([^/]+))", [this](const httplib::Request& request,
+                                                      httplib::Response& response) {
+        const std::string id = request.matches[1];
+        softskills::TheorySubject subject;
+        if (!softSkillsService_->find(id, subject)) {
+            sendJson(response, 404, JsonApi::error("No soft-skill subject named " + id, 404));
+            return;
+        }
+
+        json out;
+        out["id"] = subject.id;
+        out["name"] = subject.name;
+        out["tagline"] = subject.tagline;
+        out["icon"] = subject.icon;
+        out["readingTime"] = subject.readingTime;
+        out["summary"] = subject.summary;
+        out["practiceTip"] = subject.practiceTip;
+        out["questionCount"] = static_cast<int>(questionRepo_->findBySubject(subject.id).size());
+
+        json keyPoints = json::array();
+        for (std::size_t i = 0; i < subject.keyPoints.size(); ++i) {
+            keyPoints.push_back(subject.keyPoints[i]);
+        }
+        out["keyPoints"] = keyPoints;
+
+        json sections = json::array();
+        for (std::size_t s = 0; s < subject.sections.size(); ++s) {
+            const softskills::TheorySection& section = subject.sections[s];
+            json item;
+            item["heading"] = section.heading;
+            item["body"] = json::array();
+            for (std::size_t b = 0; b < section.body.size(); ++b) {
+                item["body"].push_back(section.body[b]);
+            }
+            item["bullets"] = json::array();
+            for (std::size_t b = 0; b < section.bullets.size(); ++b) {
+                item["bullets"].push_back(section.bullets[b]);
+            }
+            sections.push_back(item);
+        }
+        out["sections"] = sections;
+
+        json examples = json::array();
+        for (std::size_t e = 0; e < subject.examples.size(); ++e) {
+            json item;
+            item["title"] = subject.examples[e].title;
+            item["body"] = subject.examples[e].body;
+            examples.push_back(item);
+        }
+        out["examples"] = examples;
+
+        json mistakes = json::array();
+        for (std::size_t m = 0; m < subject.mistakes.size(); ++m) {
+            mistakes.push_back(subject.mistakes[m]);
+        }
+        out["mistakes"] = mistakes;
+
         sendJson(response, 200, out);
     });
 
