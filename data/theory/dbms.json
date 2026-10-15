@@ -1,0 +1,313 @@
+[
+    {
+        "id":  "dbms",
+        "subject":  "dbms",
+        "kind":  "technical",
+        "category":  "DBMS \u0026 SQL",
+        "name":  "Databases \u0026 SQL",
+        "tagline":  "Modelled data, queried declaratively, kept consistent",
+        "icon":  "bi-database",
+        "readingTime":  7,
+        "summary":  "A relational database stores data in relations with declared constraints, and queries it declaratively: you say what you want, and the optimizer decides how to get it. Most database skill is modelling well and then reading what the plan is doing.",
+        "sections":  [
+                         {
+                             "heading":  "Declarative means the plan matters",
+                             "body":  [
+                                          "SQL describes the result, not the procedure. Two identical-looking queries can differ by orders of magnitude depending on whether the optimizer used an index, which is why reading EXPLAIN output is a core skill rather than an advanced one.",
+                                          "A missing index on a join or filter column turns a scan into a full table scan. An unselective index can be worse than none. Cost estimates, not rules of thumb, decide."
+                                      ],
+                             "bullets":  [
+                                             "Model first: entities, keys, constraints",
+                                             "Normalize to remove redundancy, denormalize for measured read cost",
+                                             "Filter and join columns are the index candidates",
+                                             "Read EXPLAIN before optimising anything",
+                                             "Transactions carry the consistency guarantees"
+                                         ]
+                         },
+                         {
+                             "heading":  "SQL is set-based",
+                             "body":  [
+                                          "Thinking in sets instead of loops is the main translation. Aggregation with GROUP BY and HAVING, window functions for running and ranked values, and set operators for combining results cover most needs. Row-by-row processing in application code usually duplicates what one query could do.",
+                                          "The common performance mistake is the N+1 pattern: one query for a list, then one per row for details. A join or a single IN query replaces the loop."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "SQL is declarative; the plan decides the cost",
+                          "Read EXPLAIN before optimising",
+                          "Index the filter and join columns",
+                          "Think in sets, not row loops",
+                          "Constraints are cheaper than application-side validation"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "The N+1 pattern",
+                             "body":  "Loading a page of orders and then querying the customer for each one costs one query plus N queries. A single join, or one query with IN, reduces it to one round trip."
+                         },
+                         {
+                             "title":  "Ranked results without a self-join",
+                             "body":  "A window function such as ROW_NUMBER() OVER (PARTITION BY ...) produces ranks in one pass, replacing a correlated subquery per row."
+                         }
+                     ],
+        "mistakes":  [
+                         "Optimising before reading the plan",
+                         "Selecting star instead of the needed columns on wide tables",
+                         "Storing comma-separated values in a single column",
+                         "Assuming a query is fast because the table is small today"
+                     ],
+        "practiceTip":  "For every query you write, ask what index the optimizer would choose and why. If you cannot say, run EXPLAIN."
+    },
+    {
+        "id":  "dbms_normalization",
+        "subject":  "dbms",
+        "topic":  "normalization",
+        "kind":  "technical",
+        "category":  "DBMS \u0026 SQL",
+        "name":  "Normalization",
+        "tagline":  "Remove redundancy by moving dependencies into their own tables",
+        "icon":  "bi-table",
+        "readingTime":  6,
+        "summary":  "Normalization reorganises tables so that each fact is stored once, which prevents update, insert and delete anomalies. The normal forms are a sequence of requirements about what a table\u0027s primary key determines.",
+        "sections":  [
+                         {
+                             "heading":  "The forms as a sequence",
+                             "body":  [
+                                          "First normal form requires atomic values and no repeating groups. Second requires every non-key column to depend on the whole key, not part of it. Third goes further: no non-key column may depend on another non-key column, which means no transitive dependencies.",
+                                          "BCNF tightens the third form\u0027s dependency rule. In practice, reaching BCNF on every table is rarely worth the join count, and many production schemas stop at third normal form deliberately."
+                                      ],
+                             "bullets":  [
+                                             "1NF: atomic values, no repeating groups",
+                                             "2NF: no partial dependency on part of a composite key",
+                                             "3NF: no transitive dependency between non-key columns",
+                                             "BCNF: every determinant is a candidate key",
+                                             "Denormalize only for a measured read cost"
+                                         ]
+                         },
+                         {
+                             "heading":  "The anomalies you are removing",
+                             "body":  [
+                                          "Update anomaly: one fact stored in many rows, so changing it means many changes and inconsistency is possible. Insert anomaly: unrelated data cannot be recorded because something else is missing. Delete anomaly: removing one fact destroys another that had no other home.",
+                                          "Naming the anomaly a normalization prevents is the standard way to answer why it matters, and it is a more convincing answer than citing the form number."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "1NF atomic, 2NF no partial dependency, 3NF no transitive dependency",
+                          "Normalization removes update, insert and delete anomalies",
+                          "A functional dependency is what the forms are actually about",
+                          "BCNF is stricter than 3NF and often unnecessary in practice",
+                          "Denormalization is a performance decision, not a modelling one"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Splitting a course table",
+                             "body":  "A row holding course, instructor and instructor office stores the office once per student enrolled, so changing the office means many updates. Moving instructor details to their own table with a foreign key removes that anomaly."
+                         },
+                         {
+                             "title":  "Transitive dependency",
+                             "body":  "Order rows storing zip code and city mean the city is determined by the zip, which is determined by the order key. City depends transitively, so it belongs in a zip-code table."
+                         }
+                     ],
+        "mistakes":  [
+                         "Normalizing to BCNF everywhere without measuring the join cost",
+                         "Storing multiple values in one column to dodge 1NF",
+                         "Ignoring the anomalies and only citing form numbers",
+                         "Treating denormalization as inherently bad"
+                     ],
+        "practiceTip":  "For each table you design, name the anomalies its structure prevents. That sentence is usually the whole normalization answer."
+    },
+    {
+        "id":  "dbms_transactions",
+        "subject":  "dbms",
+        "topic":  "transactions",
+        "kind":  "technical",
+        "category":  "DBMS \u0026 SQL",
+        "name":  "Transactions \u0026 Concurrency",
+        "tagline":  "ACID is a contract, and isolation levels are a dial",
+        "icon":  "bi-arrow-repeat",
+        "readingTime":  7,
+        "summary":  "A transaction is a unit of work that is atomic, consistent, isolated and durable. Isolation is not binary: levels from read committed to serializable trade correctness guarantees against concurrency and throughput.",
+        "sections":  [
+                         {
+                             "heading":  "ACID, one promise at a time",
+                             "body":  [
+                                          "Atomicity means all or nothing, implemented with an undo log. Consistency means constraints hold before and after, which is the application\u0027s definition as much as the database\u0027s. Isolation means concurrent transactions do not see each other\u0027s intermediate states. Durability means committed data survives a crash, typically via a write-ahead log flushed before the commit returns.",
+                                          "Knowing which mechanism implements which property is what turns the acronym into an answer."
+                                      ],
+                             "bullets":  [
+                                             "Atomicity: undo log",
+                                             "Durability: write-ahead log, flushed on commit",
+                                             "Isolation: locking or MVCC snapshots",
+                                             "Consistency: declared constraints plus application rules"
+                                         ]
+                         },
+                         {
+                             "heading":  "Isolation levels and the anomalies they allow",
+                             "body":  [
+                                          "Read committed prevents dirty reads. Repeatable read also prevents non-repeatable reads. Serializable additionally prevents phantom reads, and is the only level that behaves like sequential execution. Snapshot isolation in MVCC databases gives repeatable reads cheaply but allows write skew.",
+                                          "Read uncommitted allows dirty reads and is almost never appropriate. Choosing a level is a deliberate decision about which anomalies your application can tolerate."
+                                      ],
+                             "bullets":  [
+                                             "Dirty read: reading another transaction\u0027s uncommitted write",
+                                             "Non-repeatable read: a row changes between two reads",
+                                             "Phantom read: a range gains or loses rows between reads",
+                                             "Write skew: two transactions read overlapping data and both write"
+                                         ]
+                         },
+                         {
+                             "heading":  "Locking and MVCC",
+                             "body":  [
+                                          "Two-phase locking acquires locks and releases them only at the end, which gives serializability but risks deadlock and reduces concurrency. MVCC keeps multiple versions of a row so readers never block writers, at the cost of version cleanup and some anomalies.",
+                                          "Deadlocks are detected or avoided by lock ordering, exactly as in the OS case, and the usual resolution is to abort one transaction and retry."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Atomicity via undo, durability via write-ahead logging",
+                          "Read committed is the common default",
+                          "Serializable is the only level equal to sequential execution",
+                          "Dirty, non-repeatable, phantom and write skew are distinct anomalies",
+                          "Two-phase locking gives serializability; MVCC gives cheap reads"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Transfer between accounts",
+                             "body":  "Debit and credit must both happen or neither, so they share a transaction. With serializable isolation, two concurrent transfers cannot interleave into a lost update."
+                         },
+                         {
+                             "title":  "Report versus checkout",
+                             "body":  "A nightly report tolerates stale reads and can use snapshot isolation. A balance check that gates a payment needs repeatable read or serializable to avoid deciding on a value that changes underneath it."
+                         }
+                     ],
+        "mistakes":  [
+                         "Assuming read committed prevents phantoms",
+                         "Using higher isolation without measuring the contention cost",
+                         "Retrying a deadlocked transaction without changing the lock order",
+                         "Treating durability as guaranteed without a flush on commit"
+                     ],
+        "practiceTip":  "For each isolation level, write the anomaly it still permits. The table of level-to-anomaly is the entire answer."
+    },
+    {
+        "topic":  "sql",
+        "id":  "dbms_sql",
+        "mistakes":  [
+                         "Left join then COUNT(*) inflating results",
+                         "Filtering on an aggregate in WHERE instead of HAVING",
+                         "Using DISTINCT to hide a join duplication bug",
+                         "Joining on columns without indexes"
+                     ],
+        "subject":  "dbms",
+        "sections":  [
+                         {
+                             "bullets":  [
+                                             "Inner: only matching rows",
+                                             "Left: all left rows, nulls on the right",
+                                             "Semi-join: filter by existence, do not duplicate",
+                                             "Anti-join: filter by non-existence"
+                                         ],
+                             "body":  [
+                                          "An inner join keeps only rows matching on both sides. A left join keeps every left row and nulls the right side where nothing matches, which is why counting after a left join can double-count.",
+                                          "Choosing between them is a question about which side is authoritative. If every order must appear even without a customer, a left join is required."
+                                      ],
+                             "heading":  "Joins decide the row count"
+                         },
+                         {
+                             "bullets":  [
+                                             "WHERE filters rows, HAVING filters groups",
+                                             "Window functions keep rows and add computed columns",
+                                             "PARTITION BY sets the window, ORDER BY sets the order within it",
+                                             "Running totals are SUM() OVER (ORDER BY ...)"
+                                         ],
+                             "body":  [
+                                          "GROUP BY collapses rows into groups, and HAVING filters after the collapse while WHERE filters before. Window functions compute across a partition while keeping every row, which is how running totals and ranks are expressed in one pass.",
+                                          "Reaching for a correlated subquery where a window function would do is the usual performance loss."
+                                      ],
+                             "heading":  "Aggregation and window functions"
+                         }
+                     ],
+        "readingTime":  7,
+        "practiceTip":  "Write every query twice: once with subqueries and once with joins or window functions. Compare the plans.",
+        "category":  "DBMS \u0026 SQL",
+        "name":  "SQL Queries",
+        "kind":  "technical",
+        "summary":  "SQL expresses what to retrieve over sets of rows. Joins combine relations, GROUP BY aggregates them, and window functions compute values across a partition without collapsing rows.",
+        "examples":  [
+                         {
+                             "body":  "SUM(amount) OVER (PARTITION BY customer_id ORDER BY created_at) gives a running total per customer in one pass, without a self-join.",
+                             "title":  "Running total per customer"
+                         },
+                         {
+                             "body":  "ROW_NUMBER() OVER (PARTITION BY group_id ORDER BY score DESC) then filtering on row number one gives the best row per group, replacing a correlated subquery.",
+                             "title":  "Top row per group"
+                         }
+                     ],
+        "icon":  "bi-filetype-sql",
+        "keyPoints":  [
+                          "Inner join matches, left join preserves the left side",
+                          "WHERE filters before grouping, HAVING after",
+                          "Window functions compute without collapsing rows",
+                          "Correlated subqueries are usually replaceable by a join",
+                          "Count distinct to avoid double counting after a join"
+                      ],
+        "tagline":  "Joins, aggregation and window functions"
+    },
+    {
+        "topic":  "indexing",
+        "id":  "dbms_indexing",
+        "mistakes":  [
+                         "Indexing every column on a write-heavy table",
+                         "Wrong column order in a composite index",
+                         "Expecting a hash index to serve a range query",
+                         "Ignoring the plan and adding indexes on suspicion"
+                     ],
+        "subject":  "dbms",
+        "sections":  [
+                         {
+                             "bullets":  [
+                                             "B-tree: equality and range",
+                                             "Hash: equality only",
+                                             "Composite: leftmost prefix rule applies",
+                                             "Covering: answers the query without a table lookup",
+                                             "Unique: also enforces a constraint"
+                                         ],
+                             "body":  [
+                                          "A B-tree index stores keys in sorted order with pointers to rows, so equality and range lookups are both logarithmic. A hash index maps a key to a bucket, giving O(1) equality but no ordering, so it cannot serve range queries.",
+                                          "A covering index includes every column the query needs, so the engine can answer from the index alone without touching the table. That is often the largest single win available."
+                                      ],
+                             "heading":  "What an index actually is"
+                         },
+                         {
+                             "body":  [
+                                          "Every insert, update and delete must maintain each index, so write-heavy tables pay per index. An unselective index on a column with few distinct values is often ignored by the optimizer because a scan is cheaper.",
+                                          "The decision is data-driven: look at the query workload and the plan, then add the index that removes a scan. Indexing every column is a common well-meant mistake that slows everything down."
+                                      ],
+                             "heading":  "Cost and when not to"
+                         }
+                     ],
+        "readingTime":  6,
+        "practiceTip":  "Before adding an index, run EXPLAIN and identify the exact scan you are removing.",
+        "category":  "DBMS \u0026 SQL",
+        "name":  "Indexing",
+        "kind":  "technical",
+        "summary":  "An index is a separate structure that lets the engine find rows without scanning the table. A B-tree index serves range and equality queries, a hash index serves equality only, and each index slows writes and consumes space.",
+        "examples":  [
+                         {
+                             "body":  "An index on (last_name, first_name) serves queries filtering on last_name alone, but not queries filtering on first_name alone, because the prefix rule requires the leftmost column.",
+                             "title":  "Composite index order"
+                         },
+                         {
+                             "body":  "A dashboard query selecting id, status and created_at can be answered entirely from an index on those columns, removing every table access from the plan.",
+                             "title":  "Covering index win"
+                         }
+                     ],
+        "icon":  "bi-list-columns-reverse",
+        "keyPoints":  [
+                          "B-tree serves equality and range; hash serves equality only",
+                          "A composite index is used leftmost-first",
+                          "A covering index avoids the table lookup entirely",
+                          "Each index costs write throughput and space",
+                          "Unselective indexes are usually ignored"
+                      ],
+        "tagline":  "Trade write cost and space for read speed"
+    }
+]

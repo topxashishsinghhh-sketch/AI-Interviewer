@@ -1,0 +1,175 @@
+[
+  {
+    "id": "signals",
+    "subject": "signals",
+    "kind": "technical",
+    "category": "ECE Core",
+    "name": "Signals & Systems",
+    "tagline": "Describe signals in time, then in frequency",
+    "icon": "bi-activity",
+    "readingTime": 7,
+    "summary": "A signal is a function of time or of index, and a system maps input signals to output signals. The two domains, time and frequency, are equivalent views of the same information, and most analysis is about knowing which view makes a question easy.",
+    "sections": [
+      {
+        "heading": "Signals and their properties",
+        "body": [
+          "A continuous-time signal is defined for every t; a discrete-time signal only at integer indices. Even signals satisfy x(t) = x(-t), odd signals satisfy x(t) = -x(-t), and any signal can be split into those two parts.",
+          "The unit impulse is the identity under convolution: convolving a signal with delta(n) returns the signal unchanged, and convolving with a shifted impulse shifts it. That single property is what makes impulse response a complete description of an LTI system."
+        ],
+        "bullets": [
+          "Continuous versus discrete: defined for all t, or only at integers",
+          "Even and odd decompositions",
+          "Unit impulse is the identity for convolution",
+          "Energy signals have finite energy; power signals have finite average power"
+        ]
+      },
+      {
+        "heading": "LTI systems",
+        "body": [
+          "A system is linear if superposition holds, and time-invariant if a shifted input produces the same shifted output. Together they mean the system is completely described by its impulse response, and any input can be written as shifted impulses, so the output is the convolution of the input with that response.",
+          "This is why one experiment, measuring the impulse response, characterises the whole system. Stability is then a property of that response: for discrete-time BIBO stability it must be absolutely summable."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Continuous signals are defined for all t; discrete only at integers",
+      "Convolution with a unit impulse returns the signal unchanged",
+      "An LTI system is fully described by its impulse response",
+      "Output equals input convolved with the impulse response",
+      "BIBO stability requires an absolutely summable impulse response"
+    ],
+    "examples": [
+      {
+        "title": "Why the impulse response suffices",
+        "body": "Any input is a sum of shifted impulses. By superposition the output is the same sum of shifted impulse responses, which is exactly the convolution integral or sum."
+      },
+      {
+        "title": "Checking stability",
+        "body": "For a discrete-time system, sum the absolute values of the impulse response. A finite sum means every bounded input produces a bounded output."
+      }
+    ],
+    "mistakes": [
+      "Confusing continuous and discrete definitions",
+      "Assuming a system is LTI without checking time invariance",
+      "Treating energy and power signals interchangeably",
+      "Forgetting that convolution with delta shifts as well as scales"
+    ],
+    "practiceTip": "For each system you meet, state whether it is linear and time-invariant before doing anything else. Almost every later step depends on that answer."
+  },
+  {
+    "id": "signals_fourier",
+    "subject": "signals",
+    "topic": "fourier",
+    "kind": "technical",
+    "category": "ECE Core",
+    "name": "Fourier Analysis & Sampling",
+    "tagline": "Frequency content, and the rate needed to capture it",
+    "icon": "bi-broadcast",
+    "readingTime": 7,
+    "summary": "The Fourier transform expresses a signal as a sum of sinusoids, which turns convolution into multiplication and filtering into attenuation. Sampling theory then states the rate needed to capture that content without loss.",
+    "sections": [
+      {
+        "heading": "The transform and its consequences",
+        "body": [
+          "The Fourier transform converts between time and frequency. The most useful consequence is the duality of operations: convolution in one domain equals multiplication in the other, so filtering a signal is multiplying its spectrum, and modulating a signal is convolving its spectrum.",
+          "Properties are what make analysis fast: linearity, time shifting adding a linear phase, scaling in one domain inverting in the other, and Parseval's theorem relating energy across domains."
+        ],
+        "bullets": [
+          "Convolution in time equals multiplication in frequency",
+          "A time shift adds a linear phase term",
+          "The transform of a real signal has conjugate symmetry",
+          "The DFT is the sampled version, computed by the FFT in O(n log n)"
+        ]
+      },
+      {
+        "heading": "Sampling and aliasing",
+        "body": [
+          "Sampling replicates the spectrum at multiples of the sampling rate. If the rate is above twice the highest frequency, the replicas do not overlap and the original can be recovered by an ideal low-pass filter. Below that rate, replicas overlap and high frequencies masquerade as low ones, which is aliasing.",
+          "Reconstruction uses the sinc interpolator, which is equivalent to ideal low-pass filtering. Quantisation adds a separate error, bounded by half a step, which is why resolution matters independently of rate."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "The transform converts convolution to multiplication",
+      "A time shift only adds a linear phase term",
+      "Nyquist: sample above twice the bandwidth for perfect reconstruction",
+      "Aliasing is spectrum overlap from too low a rate",
+      "The FFT computes the DFT in O(n log n)"
+    ],
+    "examples": [
+      {
+        "title": "Filtering by multiplication",
+        "body": "Instead of convolving a long signal with a filter, transform both, multiply the spectra and transform back. The cost is dominated by two FFTs rather than a long convolution."
+      },
+      {
+        "title": "Aliasing in audio",
+        "body": "Sampling a 12 kHz tone at 16 kHz folds it to 4 kHz, an audible artefact. Anti-aliasing filters before the sampler prevent the fold."
+      }
+    ],
+    "mistakes": [
+      "Sampling below Nyquist and expecting clean recovery",
+      "Confusing quantisation error with aliasing",
+      "Forgetting the linear phase term on time shifts",
+      "Assuming the FFT is exact for non-periodic signals"
+    ],
+    "practiceTip": "Compute the spectrum of a simple rectangular pulse by hand once. It makes every windowing discussion concrete."
+  },
+  {
+    "id": "analog",
+    "subject": "analog",
+    "kind": "technical",
+    "category": "ECE Core",
+    "name": "Analog Circuits",
+    "tagline": "Diodes, transistors and amplifiers from first principles",
+    "icon": "bi-cpu-fill",
+    "readingTime": 7,
+    "summary": "Analog circuits process continuously varying signals with diodes, transistors and operational amplifiers. Almost every analysis reduces to a bias point, a small-signal model, and a check that the device stays in its intended region.",
+    "sections": [
+      {
+        "heading": "The three-step analysis",
+        "body": [
+          "First find the DC operating point, because that determines gain and headroom. Second replace the active device with its small-signal model, which is a controlled source plus an output resistance. Third verify the small-signal assumptions still hold, meaning the device has not left its active region.",
+          "Skipping the operating point is the most common error, because gain depends on it directly, and a circuit that is fine on paper can be saturated in practice."
+        ],
+        "bullets": [
+          "Diode: conducts one way, modelled as a voltage source plus resistance",
+          "BJT: current-controlled, exponential relationship",
+          "MOSFET: voltage-controlled, square-law in saturation",
+          "Op-amp: very high gain, used with feedback to set behaviour",
+          "Feedback trades gain for bandwidth and linearity"
+        ]
+      },
+      {
+        "heading": "Feedback and stability",
+        "body": [
+          "Negative feedback sets the closed-loop behaviour from passive components and makes the circuit insensitive to device variation. The price is reduced loop gain and the possibility of oscillation if the phase shift reaches 180 degrees while the loop gain is still above one.",
+          "Gain margin and phase margin quantify how close the circuit is to that condition. Compensating a circuit means deliberately reducing the gain at high frequency to buy back phase margin."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Find the DC operating point before any small-signal analysis",
+      "BJTs are current-controlled; MOSFETs are voltage-controlled",
+      "Op-amp behaviour is set by feedback, not by the device",
+      "Negative feedback buys linearity at the cost of gain",
+      "Gain and phase margin quantify stability"
+    ],
+    "examples": [
+      {
+        "title": "Op-amp inverting amplifier",
+        "body": "With the input through a resistor to the inverting node and feedback from output to that node, the gain is set by the ratio of the two resistors and is almost independent of the op-amp's own gain."
+      },
+      {
+        "title": "Why an amplifier oscillates",
+        "body": "A three-pole amplifier has enough phase shift to make negative feedback positive at high frequency. Adding a compensation capacitor pushes the dominant pole lower, restoring phase margin."
+      }
+    ],
+    "mistakes": [
+      "Analysing small signal without the DC bias",
+      "Treating an op-amp's output as unlimited",
+      "Ignoring loading between cascaded stages",
+      "Assuming feedback always improves stability"
+    ],
+    "practiceTip": "For each amplifier stage you analyse, write the operating point, the small-signal model and the region check, in that order."
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "id": "algo",
+    "subject": "algo",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Algorithms",
+    "tagline": "A named technique for a recurring shape of problem",
+    "icon": "bi-gear-wide-connected",
+    "readingTime": 6,
+    "summary": "An algorithm is a procedure with a cost. Interview problems repeat a small set of shapes, and naming the shape is most of the work: sorting, searching, two pointers, sliding window, greedy, dynamic programming and backtracking.",
+    "sections": [
+      {
+        "heading": "Recognise the shape before you code",
+        "body": [
+          "Almost every problem is one of a handful of shapes. Sorted input suggests two pointers or binary search. A contiguous subarray suggests a sliding window. A choice at each step where the locally best option is safe suggests greedy. Overlapping subproblems with an optimal substructure suggest dynamic programming. Enumerating all valid configurations suggests backtracking.",
+          "Naming the shape first prevents the most common failure mode: writing a correct-looking brute force, seeing it time out, and then patching it instead of replacing it."
+        ],
+        "bullets": [
+          "Sorted or monotonic: two pointers, binary search",
+          "Contiguous window: sliding window",
+          "Count the ways or optimise over choices: dynamic programming",
+          "Locally best is provably safe: greedy",
+          "All valid arrangements: backtracking",
+          "Ordering with constraints: topological sort"
+        ]
+      },
+      {
+        "heading": "Brute force first, then improve deliberately",
+        "body": [
+          "Write the obviously correct version first, even if it is slow. It gives you test cases, and it makes the waste visible: which value is recomputed, which comparison is redundant, which scan could be a lookup.",
+          "Each optimisation should remove one specific waste. Replace a scan with a hash map, collapse a nested loop with a pointer, cache a repeated subproblem. Optimising without identifying the waste usually produces clever code with the same complexity."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Name the problem shape before writing code",
+      "Brute force first, then remove one waste at a time",
+      "State the complexity of your final solution out loud",
+      "Most optimisations replace a scan with a lookup or a nested loop with a pointer",
+      "Verify with a small hand-traced example before submitting"
+    ],
+    "examples": [
+      {
+        "title": "Turning brute force into a sliding window",
+        "body": "A double loop checking every subarray becomes O(n) once you notice the inner bound only moves forward and the window's state can be updated incrementally."
+      },
+      {
+        "title": "Turning recursion into DP",
+        "body": "A recursive solution that recomputes the same arguments gets a memo table keyed by those arguments. The shape of the code does not change; the repeated work disappears."
+      }
+    ],
+    "mistakes": [
+      "Patching a brute force instead of changing the approach",
+      "Choosing DP where greedy is provably correct and simpler",
+      "Optimising before understanding the constraints",
+      "Not stating complexity, so nobody can check the reasoning"
+    ],
+    "practiceTip": "After each problem, write one sentence naming the technique. A list of those sentences is a personal pattern library."
+  },
+  {
+    "id": "algo_sorting",
+    "subject": "algo",
+    "topic": "sorting",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Sorting",
+    "tagline": "O(n log n) is the comparison barrier; know when to beat it",
+    "icon": "bi-sort-down",
+    "readingTime": 7,
+    "summary": "Comparison-based sorting cannot beat O(n log n) in the worst case, which merge sort, heap sort and quicksort all reach. Counting and radix sort bypass the barrier when the keys are small integers.",
+    "sections": [
+      {
+        "heading": "The algorithms and their personalities",
+        "body": [
+          "Merge sort splits, sorts each half and merges, guaranteeing O(n log n) with O(n) extra space and stable ordering. Heap sort builds a heap and extracts repeatedly, O(n log n) in place but not stable and with worse cache behaviour. Quicksort partitions around a pivot, O(n log n) average with O(n^2) worst case on adversarial input, but excellent constants and in-place operation.",
+          "Insertion sort is O(n^2) but unbeatable for tiny or nearly sorted inputs, which is why hybrid sorts use it below a size threshold."
+        ],
+        "bullets": [
+          "Merge sort: stable, guaranteed O(n log n), needs O(n) space",
+          "Quicksort: fastest in practice, O(n^2) worst case without randomisation",
+          "Heap sort: in place, O(n log n), unstable",
+          "Counting/radix: O(n + k) when keys are bounded integers",
+          "Insertion sort: best for small or nearly sorted data"
+        ]
+      },
+      {
+        "heading": "Beating the barrier with structure",
+        "body": [
+          "Counting sort counts occurrences of each key in a bounded range and rebuilds the output, which is O(n + k) time and space. Radix sort applies a stable counting sort to each digit, giving O(d * (n + k)) for d digits.",
+          "Both require knowing something about the keys: a bounded range or fixed digit width. When that holds they beat every comparison sort, and the win is often the entire solution to the problem."
+        ]
+      },
+      {
+        "heading": "Sorting as a preprocessing step",
+        "body": [
+          "Many problems stop being hard once the input is sorted: intervals merge in one pass, two-sum becomes two pointers, closest pair becomes a neighbour check, and duplicate detection becomes an adjacent comparison.",
+          "Remember the cost: if the problem needs only one pass after sorting, O(n log n) is the total, and that is often the intended complexity."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Comparison sorting has an O(n log n) lower bound",
+      "Merge sort is stable and guaranteed; quicksort is fastest on average",
+      "Heap sort is in place but unstable",
+      "Counting and radix sort beat the barrier on bounded integer keys",
+      "Sorting first turns many hard problems into a single pass"
+    ],
+    "examples": [
+      {
+        "title": "Merging intervals",
+        "body": "Sort by start time, then walk once, merging whenever the next interval starts before the current one ends. Sorting makes the overlap check local, so one pass suffices."
+      },
+      {
+        "title": "Sorting colours in one pass",
+        "body": "With only three values, counting sort uses O(1) space: count each value, then overwrite the array. No comparison sort needed."
+      }
+    ],
+    "mistakes": [
+      "Using an unstable sort where stability matters",
+      "Quicksort with a fixed pivot on adversarial input",
+      "Sorting inside a loop, turning O(n log n) into O(n^2 log n)",
+      "Assuming the input is sorted when the contract does not say so"
+    ],
+    "practiceTip": "Implement merge sort and quicksort once each from scratch. The partition step in quicksort is worth knowing cold."
+  },
+  {
+    "id": "algo_searching",
+    "subject": "algo",
+    "topic": "binary_search",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Binary Search",
+    "tagline": "Halve the search space, but only when it is monotonic",
+    "icon": "bi-search",
+    "readingTime": 7,
+    "summary": "Binary search finds a target in a sorted array in O(log n) by halving the range each step. Its real power is that it works on any monotonic predicate, which lets you search over answers rather than over data.",
+    "sections": [
+      {
+        "heading": "The loop that everyone gets subtly wrong",
+        "body": [
+          "Use left = 0, right = n - 1 and loop while left <= right. Compute mid with left + (right - left) / 2 to avoid overflow. If the middle value is too small, move left to mid + 1; if too large, move right to mid - 1.",
+          "The alternative boundary convention, half-open [left, right), uses while left < right and right = mid. Pick one and be consistent; mixing them is the classic off-by-one bug."
+        ],
+        "bullets": [
+          "Always compute mid without overflow",
+          "Decide inclusive or half-open bounds and stick to it",
+          "Move by mid + 1 / mid - 1, never by 1, or you lose the logarithm",
+          "Binary search on the answer: find the smallest x where feasible(x) is true"
+        ]
+      },
+      {
+        "heading": "Searching over the answer",
+        "body": [
+          "The generalisation: if a predicate is monotonic, false for small inputs and true for large ones, binary search finds the boundary in O(log n) evaluations. Koko eating bananas, splitting an array into k subarrays, and minimum capacity to ship packages are all answer searches.",
+          "The work is proving monotonicity and writing the feasibility check. The search itself is three lines. This pattern solves a large fraction of hard interview problems."
+        ]
+      },
+      {
+        "heading": "Variants worth recognising",
+        "body": [
+          "Lower bound finds the first index whose value is >= target; upper bound finds the first index whose value is > target. Finding the first or last occurrence of a duplicate is the same shape. Search in a rotated sorted array checks which half is properly ordered before deciding which side to discard."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Requires sorted data or a monotonic predicate",
+      "Halving each step gives O(log n)",
+      "Binary search on the answer works for any monotonic feasibility check",
+      "Compute mid without overflowing",
+      "Pick one boundary convention and never mix them"
+    ],
+    "examples": [
+      {
+        "title": "First bad version",
+        "body": "Versions are monotonic: good before the first bad, bad after. Binary search for the first index where isBad is true, giving O(log n) calls."
+      },
+      {
+        "title": "Koko eating bananas",
+        "body": "Feasibility, can she finish at speed k, is monotonic in k. Binary search the smallest feasible speed and check each candidate by summing ceil(pile / k)."
+      }
+    ],
+    "mistakes": [
+      "Using left < right with inclusive index arithmetic",
+      "Setting mid = (left + right) / 2 on large indices and overflowing",
+      "Assuming the array is sorted without checking",
+      "Discarding the wrong half when the predicate is not monotonic"
+    ],
+    "practiceTip": "Write lower_bound and upper_bound once each, then implement first-occurrence and last-occurrence as one-line callers."
+  },
+  {
+    "id": "algo_two_pointers",
+    "subject": "algo",
+    "topic": "two_pointers",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Two Pointers & Sliding Window",
+    "tagline": "Replace a nested loop with one forward-only pass",
+    "icon": "bi-arrows-angle-contract",
+    "readingTime": 6,
+    "summary": "Two pointers walk the input from both ends or at different speeds, and a sliding window keeps a contiguous range valid by advancing one end at a time. Both convert O(n^2) scans into O(n) by exploiting monotonicity or incremental state.",
+    "sections": [
+      {
+        "heading": "Opposite ends",
+        "body": [
+          "With a sorted array, put one pointer at each end and move the one that improves the situation. Two-sum in a sorted array, container with most water, and reversing in place are all this pattern. The insight is that moving one pointer can be justified while moving both would not.",
+          "Without sortedness the pattern usually does not apply, and forcing it produces wrong answers."
+        ],
+        "bullets": [
+          "Sorted pair problems: pointers from both ends",
+          "Palindrome checks: converge from both ends",
+          "Fast and slow pointers: cycle detection, middle of a list",
+          "Sliding window: contiguous subarray with a constraint"
+        ]
+      },
+      {
+        "heading": "Sliding window, the incremental state trick",
+        "body": [
+          "Expand the right pointer to add an element, then shrink from the left while the window is invalid, updating the answer whenever the window is valid. The cost is O(n) because each element enters and leaves the window once.",
+          "The state must be maintainable incrementally: a running sum, a frequency map, or a count of distinct elements. If updating the state costs more than O(1), the window is no longer linear."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Opposite-end pointers need sorted or symmetric structure",
+      "Fast and slow pointers detect cycles and find middles",
+      "A sliding window is valid only when the state updates in O(1)",
+      "Each element enters and leaves the window exactly once, giving O(n)",
+      "Both patterns remove the inner loop, not just speed it up"
+    ],
+    "examples": [
+      {
+        "title": "Longest substring without repeats",
+        "body": "Track the last index of each character. When a repeat is inside the window, jump the left pointer past it. One pass with a map, O(n)."
+      },
+      {
+        "title": "Minimum window substring",
+        "body": "Expand until the window contains all required characters, then shrink from the left as far as possible while it still does, recording the shortest. Each index is visited twice at most."
+      }
+    ],
+    "mistakes": [
+      "Applying opposite-end pointers to unsorted data",
+      "Letting the window state update cost more than O(1)",
+      "Shrinking only once instead of in a while loop",
+      "Forgetting to update the answer after shrinking"
+    ],
+    "practiceTip": "When a brute force has an inner loop that only moves forward, rewrite it as a window before reaching for anything fancier."
+  },
+  {
+    "id": "algo_dp",
+    "subject": "algo",
+    "topic": "dp",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Dynamic Programming",
+    "tagline": "Optimal substructure plus overlapping subproblems",
+    "icon": "bi-layers",
+    "readingTime": 9,
+    "summary": "Dynamic programming solves a problem by expressing the answer in terms of smaller answers and caching those answers. It applies when subproblems repeat and the optimal solution contains optimal solutions to subproblems.",
+    "sections": [
+      {
+        "heading": "The two conditions, checked honestly",
+        "body": [
+          "Optimal substructure means the best solution to the whole is built from the best solutions to the parts. Overlapping subproblems means those parts recur, so recomputing them is waste. Both must hold; if subproblems never overlap, memoisation adds nothing and plain recursion is fine.",
+          "Counting problems also qualify: \"how many ways\" usually has optimal substructure in the sense that counts add up over the last choice, even though nothing is being optimised."
+        ],
+        "bullets": [
+          "Define what a subproblem is, usually indexed by a suffix or prefix",
+          "Write the recurrence in words before code",
+          "Identify the base cases explicitly",
+          "Decide top-down memoisation or bottom-up table",
+          "State the dimensions and the resulting time and space"
+        ]
+      },
+      {
+        "heading": "Top-down versus bottom-up",
+        "body": [
+          "Top-down writes the recursion and adds a memo table, which is faster to get right and only computes needed states. Bottom-up fills a table in dependency order, which avoids recursion depth limits and often allows space optimisation.",
+          "If the recurrence only needs the previous row, a 2D table collapses to O(n) space. If it only needs a few previous values, keep those in variables. State the optimisation; interviewers expect it."
+        ]
+      },
+      {
+        "heading": "The classic families",
+        "body": [
+          "Linear DP, one dimension: climbing stairs, house robber, maximum subarray. Knapsack family, a capacity dimension: subset sum, 0/1 knapsack, coin change. Interval DP, ranges of indices: matrix chain multiplication, palindrome partitioning. Grid DP, two dimensions: unique paths, edit distance. Tree DP: subtree aggregates.",
+          "The fastest way to get unstuck is to write the brute-force recursion, notice which arguments repeat, and add a memo table. That single move converts most exponential solutions into polynomial ones."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Requires optimal substructure and overlapping subproblems",
+      "Define the state, the recurrence and the base cases before coding",
+      "Top-down memoisation is easier; bottom-up avoids recursion limits",
+      "Collapse dimensions when the recurrence only needs the previous row",
+      "Brute-force recursion plus a memo table is the reliable path in"
+    ],
+    "examples": [
+      {
+        "title": "Coin change",
+        "body": "State: fewest coins to make amount a. Recurrence: 1 + min over coins of dp[a - coin]. Bottom-up over amounts gives O(amount * coins) time and O(amount) space."
+      },
+      {
+        "title": "Longest common subsequence",
+        "body": "Two-index state over both strings. If characters match, take the diagonal plus one; otherwise take the better of dropping one character from either string. O(m*n) time, collapsible to O(min(m, n)) space."
+      }
+    ],
+    "mistakes": [
+      "Memoising without a base case, so nothing terminates",
+      "Defining the state too coarsely so subproblems still overlap",
+      "Filling a bottom-up table in the wrong order",
+      "Using DP where a greedy argument is correct and simpler"
+    ],
+    "practiceTip": "For every DP problem, write the state as a sentence beginning \"dp[i] is the answer for...\" before writing any code."
+  },
+  {
+    "id": "algo_greedy",
+    "subject": "algo",
+    "topic": "greedy",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Greedy Algorithms",
+    "tagline": "Take the locally best choice, and prove it is safe",
+    "icon": "bi-lightning",
+    "readingTime": 6,
+    "summary": "A greedy algorithm builds a solution by repeatedly taking the best-looking option. It is fast and simple, but only correct when the locally best choice can never block a better global solution, which must be argued, not assumed.",
+    "sections": [
+      {
+        "heading": "When greedy is provably correct",
+        "body": [
+          "Greedy works when two properties hold: a greedy choice property, that some locally optimal choice is part of some global optimum, and optimal substructure. Interval scheduling, Huffman coding, Dijkstra's algorithm and Kruskal's MST all satisfy them.",
+          "The proof is usually an exchange argument: take any optimal solution and show it can be transformed into the greedy one without getting worse. If you cannot sketch that argument, greedy is probably wrong."
+        ],
+        "bullets": [
+          "Sort by the right key first; the key is the whole algorithm",
+          "Interval scheduling: earliest finish time",
+          "Fractional knapsack: highest value per weight",
+          "Huffman coding: merge the two smallest frequencies",
+          "Activity and meeting-room problems: finish-time ordering"
+        ]
+      },
+      {
+        "heading": "Greedy versus dynamic programming",
+        "body": [
+          "If a local choice can invalidate a future better choice, greedy fails and DP is needed. The coin-change problem is the standard illustration: with coins 1, 3, 4 and target 6, greedy takes 4 then 1 then 1 for three coins, while 3 + 3 uses two.",
+          "The tell is a counterexample. Spending thirty seconds looking for one is the cheapest way to decide between greedy and DP."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Correct only with a greedy choice property plus optimal substructure",
+      "Prove it with an exchange argument, or look for a counterexample",
+      "The sort key usually carries the entire algorithm",
+      "Greedy is O(n log n) or better when DP would be polynomial",
+      "Counterexamples are the fastest way to reject greedy"
+    ],
+    "examples": [
+      {
+        "title": "Maximum non-overlapping meetings",
+        "body": "Sort by finish time and take every meeting that starts after the last chosen one ends. The exchange argument shows any solution can be rewritten this way without losing meetings."
+      },
+      {
+        "title": "Jump game reachability",
+        "body": "Track the furthest index reachable and update it as you walk. If the current index passes the furthest reach, the end is unreachable. One pass, O(n)."
+      }
+    ],
+    "mistakes": [
+      "Assuming greedy works without a proof or counterexample check",
+      "Sorting by the wrong key, such as start time instead of finish time",
+      "Applying greedy to 0/1 knapsack, where only the fractional version works",
+      "Missing a tie-breaking rule that changes the outcome"
+    ],
+    "practiceTip": "Before coding a greedy solution, write one sentence explaining why the local choice cannot hurt. If you cannot, write the DP instead."
+  },
+  {
+    "id": "algo_recursion",
+    "subject": "algo",
+    "topic": "recursion",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Recursion & Backtracking",
+    "tagline": "Enumerate choices, undo them, and let the stack hold the path",
+    "icon": "bi-arrow-counterclockwise",
+    "readingTime": 7,
+    "summary": "Recursion solves a problem by solving smaller instances of itself. Backtracking extends this to enumeration: try each choice, recurse, and undo the choice before trying the next, which explores the whole search space while keeping memory proportional to depth.",
+    "sections": [
+      {
+        "heading": "Every recursive function has the same three parts",
+        "body": [
+          "A base case that stops the recursion, a step that reduces the problem toward the base case, and a call that trusts the recursion for the reduced problem. If any part is missing, the function either never returns or never terminates.",
+          "The order of work relative to the recursive call gives the three orders: before the call is pre-order, after is post-order, and between two calls on subranges is in-order. Tree traversals are exactly this."
+        ],
+        "bullets": [
+          "Always write the base case first",
+          "Make progress toward it on every branch",
+          "Trust the recursion; do not trace it in your head",
+          "Watch the depth: deep recursion needs an explicit stack"
+        ]
+      },
+      {
+        "heading": "Backtracking is recursion with an undo step",
+        "body": [
+          "Choose an option, recurse, then un-choose it so the next option starts from the same state. Permutations, combinations, subsets, N-queens and word search are all this shape. The visited set or the mutation plus restore is what makes the enumeration correct.",
+          "Pruning is where the speed comes from: cut branches that cannot lead to a valid answer before recursing. A well-pruned backtracking solution can beat a clever DP, and it is usually easier to write."
+        ]
+      },
+      {
+        "heading": "Subsets, permutations, combinations",
+        "body": [
+          "For subsets, at each element decide include or exclude, producing 2^n results. For permutations, fix each unused element at the current position and recurse, producing n! results. For combinations of size k, add elements in increasing order to avoid duplicates.",
+          "Because the output itself is exponential, no algorithm can do better; the goal is O(output size), which these templates achieve."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Base case, reduction step, recursive call, in that order",
+      "Work before the call is pre-order, after is post-order",
+      "Backtracking is choose, recurse, un-choose",
+      "Prune branches early; that is where the performance lives",
+      "Exponential output means O(output) is optimal"
+    ],
+    "examples": [
+      {
+        "title": "N-queens",
+        "body": "Place a queen per row, tracking occupied columns and diagonals in sets. Recurse to the next row, and undo the placement when returning. Pruning by the diagonal sets removes almost all of the search space."
+      },
+      {
+        "title": "Word search in a grid",
+        "body": "From each cell, DFS matching the next character, marking the cell visited and unmarking on return. The mark is the undo step; without it the search wanders in circles."
+      }
+    ],
+    "mistakes": [
+      "Missing or unreachable base cases",
+      "Forgetting to un-choose, so later branches see stale state",
+      "Not pruning, turning a tractable search into an explosion",
+      "Recursing deeper than the stack allows on large inputs"
+    ],
+    "practiceTip": "Write the backtracking template once, with choose, recurse and un-choose clearly separated. Every enumeration problem then becomes filling in three lines."
+  },
+  {
+    "id": "algo_graphs",
+    "subject": "algo",
+    "topic": "graphs",
+    "kind": "technical",
+    "category": "Algorithms",
+    "name": "Graph Algorithms",
+    "tagline": "Traversal plus the right bookkeeping",
+    "icon": "bi-diagram-3-fill",
+    "readingTime": 8,
+    "summary": "Graph algorithms are traversals with extra state: distances, discovery times, indegrees or component labels. Knowing which state to track is what separates Dijkstra from BFS from topological sort.",
+    "sections": [
+      {
+        "heading": "Shortest paths, by weight type",
+        "body": [
+          "Unweighted: BFS with a queue gives shortest paths in O(V + E). Non-negative weights: Dijkstra with a min-heap, O((V + E) log V). Negative weights: Bellman-Ford, O(V * E), which also detects negative cycles. All pairs on a small graph: Floyd-Warshall, O(V^3).",
+          "Choosing BFS where Dijkstra is needed is the classic mistake: BFS ignores edge weights entirely and returns hop counts, not distances."
+        ],
+        "bullets": [
+          "Unweighted shortest path: BFS",
+          "Non-negative weighted: Dijkstra with a heap",
+          "Negative weights: Bellman-Ford",
+          "All pairs, small V: Floyd-Warshall",
+          "Dependencies and ordering: topological sort"
+        ]
+      },
+      {
+        "heading": "Minimum spanning tree and components",
+        "body": [
+          "Kruskal sorts all edges and adds each one that joins two different components, using union-find, for O(E log E). Prim grows one tree by repeatedly adding the cheapest edge to an outside vertex, using a heap, for O(E log V). Both produce the same total weight.",
+          "For components, union-find or a simple DFS labelling is enough; the difference is whether edges arrive incrementally, which union-find handles and a fresh DFS does not."
+        ]
+      },
+      {
+        "heading": "Topological order and cycle detection",
+        "body": [
+          "Kahn's algorithm repeatedly removes vertices with indegree zero, which produces a valid order and detects a cycle when vertices remain. A DFS variant pushes a vertex after all its descendants, then reverses the result.",
+          "Strongly connected components, via Kosaraju or Tarjan, generalise this to directed graphs where cycles are unavoidable; each SCC is a single vertex in the condensation."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "BFS for unweighted, Dijkstra for non-negative weights, Bellman-Ford for negatives",
+      "Kruskal uses union-find; Prim uses a heap; both give the MST weight",
+      "Topological sort exists only on a DAG",
+      "Kahn's indegree method both orders and detects cycles",
+      "Tarjan or Kosaraju finds strongly connected components"
+    ],
+    "examples": [
+      {
+        "title": "Network delay time",
+        "body": "Dijkstra from the source over all nodes; the answer is the largest final distance. BFS would be wrong because the edges have different weights."
+      },
+      {
+        "title": "Course schedule feasibility",
+        "body": "Build the directed graph and run Kahn's algorithm. If the produced order contains every course, the schedule is possible; a leftover vertex means a cycle."
+      }
+    ],
+    "mistakes": [
+      "Using BFS on weighted edges",
+      "Running Dijkstra with negative weights",
+      "Marking visited on finish instead of discovery",
+      "Assuming an undirected graph when the input is directed"
+    ],
+    "practiceTip": "Keep one generic BFS/DFS helper and adapt it. The differences between Dijkstra, topological sort and component labelling are only the bookkeeping."
+  }
+]

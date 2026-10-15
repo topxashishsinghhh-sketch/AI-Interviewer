@@ -1,0 +1,729 @@
+[
+  {
+    "id": "ds",
+    "subject": "ds",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Data Structures",
+    "tagline": "How data is organised decides what your code can do fast",
+    "icon": "bi-diagram-3",
+    "readingTime": 6,
+    "summary": "A data structure is a way of organising data so that the operations you actually perform become cheap. Choosing one is an engineering trade between access time, memory, and how much code you are willing to maintain.",
+    "sections": [
+      {
+        "heading": "Pick the structure from the operation, not the name",
+        "body": [
+          "The wrong question is \"which structure is best\". The right question is \"which operation happens most often, and what does it currently cost\". A list is fine for appending, terrible for random access; a hash map is excellent for lookup, useless for ordered traversal.",
+          "Write the hot path down first: search, insert, delete, range query, min/max, or ordered iteration. Every structure below is a bet on one of those."
+        ],
+        "bullets": [
+          "Random access by index: array",
+          "Frequent insert/delete at the ends: deque, linked list",
+          "Exact lookup: hash table",
+          "Ordered traversal or range queries: balanced tree, sorted array",
+          "Always-need-the-smallest: heap"
+        ]
+      },
+      {
+        "heading": "Trade-offs are the whole subject",
+        "body": [
+          "Nothing is free. A hash table buys O(1) lookup with unordered iteration and memory overhead. A balanced tree buys ordering with a constant factor larger than hashing. An array buys locality and cache speed with expensive middle insertion.",
+          "Say the cost out loud when you choose: \"search will be O(log n) and iteration stays sorted, at the cost of a heavier insert\". That sentence is what an interviewer is listening for."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Choose from the operation you perform most, not from the structure's name",
+      "Every choice trades time, memory and code complexity",
+      "State the complexity and the trade-off explicitly when you decide",
+      "Cache locality matters as much as asymptotics for small inputs",
+      "Revisit the choice when the access pattern changes"
+    ],
+    "examples": [
+      {
+        "title": "Counting word frequencies",
+        "body": "An array of strings forces an O(n) scan per word. A hash map keyed by word makes it O(1) per word and the code gets shorter, not longer."
+      },
+      {
+        "title": "Keeping the top 10 scores",
+        "body": "Sorting after every score is O(n log n) each time. A fixed-size min-heap keeps it O(log 10) per score, and the code expresses the intent directly."
+      }
+    ],
+    "mistakes": [
+      "Reaching for the most complex structure before measuring",
+      "Ignoring the constant factor for small inputs",
+      "Choosing ordered iteration when the code never iterates in order",
+      "Assuming hash tables keep insertion order"
+    ],
+    "practiceTip": "For each structure below, write the one-line rule for when you would reach for it. Then check your last three pieces of code against that rule."
+  },
+  {
+    "id": "ds_arrays",
+    "subject": "ds",
+    "topic": "arrays",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Arrays",
+    "tagline": "Contiguous memory, O(1) indexing, expensive middles",
+    "icon": "bi-list-ol",
+    "readingTime": 7,
+    "summary": "An array stores elements in one contiguous block, so the address of element i is base + i * size. That single fact gives O(1) indexing and excellent cache behaviour, and makes insertion or deletion in the middle O(n) because everything after it must shift.",
+    "sections": [
+      {
+        "heading": "Why indexing is O(1) and insertion is not",
+        "body": [
+          "Contiguity is the whole story. Knowing the start address and the element size is enough to compute any element's address directly, which is why a[i] costs the same time whether the array holds 10 elements or 10 million.",
+          "Inserting in the middle breaks that: every later element must move one slot right, so the cost grows with the number of elements after the insertion point. Appending at the end is amortised O(1) when capacity is doubled, because the expensive reallocation happens rarely and is spread across many cheap appends."
+        ]
+      },
+      {
+        "heading": "The patterns that matter",
+        "body": [
+          "Most array problems reduce to a handful of patterns: prefix sums for range queries, two pointers for sorted or paired data, sliding windows for contiguous subarrays, and in-place swaps or reversals when extra memory is forbidden.",
+          "When you are asked to avoid extra space, remember that you can often overwrite the input: mark visited entries, use the sign bit, or reverse in place with two indices."
+        ],
+        "bullets": [
+          "Prefix sums turn repeated range sums into O(1) lookups",
+          "Two pointers replace a nested loop when the array is sorted",
+          "Sliding window handles contiguous windows in O(n)",
+          "Sorting first often turns a quadratic problem into a linear one"
+        ]
+      },
+      {
+        "heading": "Complexity summary",
+        "body": [
+          "Access by index O(1), search in an unsorted array O(n), search in a sorted array O(log n) with binary search, insert at the end amortised O(1), insert or delete in the middle O(n).",
+          "Space is O(n) with a small constant, and the elements sit next to each other in memory, which is why iterating an array is dramatically faster than iterating a linked list despite identical asymptotic complexity."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Indexing is O(1) because the address is computed arithmetically",
+      "Middle insert/delete is O(n) because elements shift",
+      "Appending is amortised O(1) when capacity doubles",
+      "Cache locality makes arrays the fastest structure to scan",
+      "Prefix sums, two pointers and sliding windows solve most array problems"
+    ],
+    "examples": [
+      {
+        "title": "Two-sum in a sorted array",
+        "body": "Put one pointer at each end and move inward based on the sum. Sorted input plus two pointers turns the O(n^2) double loop into a single O(n) pass with O(1) extra space."
+      },
+      {
+        "title": "Range sum asked many times",
+        "body": "Precompute prefix sums once in O(n); each query then costs O(1). The trade is O(n) extra memory for the prefix array."
+      }
+    ],
+    "mistakes": [
+      "Off-by-one in loops, especially with inclusive ranges",
+      "Forgetting that shifting makes middle insertion O(n)",
+      "Not handling empty or single-element input",
+      "Mutating the input when the caller still needs it"
+    ],
+    "practiceTip": "Implement binary search from scratch until you can write both the leftmost and rightmost variants without looking anything up."
+  },
+  {
+    "id": "ds_linked_lists",
+    "subject": "ds",
+    "topic": "linked_lists",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Linked Lists",
+    "tagline": "Cheap splicing, no random access",
+    "icon": "bi-list-nested",
+    "readingTime": 6,
+    "summary": "A linked list stores each element in its own node with a pointer to the next. Inserting or removing a node is O(1) once you hold the node before it, but reaching index i costs O(i) because you must walk the chain. It is the mirror image of an array's trade-offs.",
+    "sections": [
+      {
+        "heading": "The operations, honestly costed",
+        "body": [
+          "Access by index O(n), search O(n), insert at the head O(1), insert after a known node O(1), delete a known node O(1). Nothing is O(1) by index, and no operation is free of the pointer chase.",
+          "Because nodes are allocated separately, iteration touches scattered memory and performs far worse in practice than an array scan of the same length, even though both are O(n)."
+        ],
+        "bullets": [
+          "Singly linked: forward only, minimal memory",
+          "Doubly linked: backward traversal and O(1) delete given the node",
+          "Circular: no null check at the end, useful for round-robin",
+          "Sentinel/dummy head: removes most special cases"
+        ]
+      },
+      {
+        "heading": "The four patterns worth knowing",
+        "body": [
+          "Reverse the list by walking once and flipping next pointers, keeping three variables: previous, current, next. Detect a cycle with Floyd's tortoise and hare, two pointers at different speeds. Find the middle by advancing a fast pointer two steps for every one of a slow pointer. Merge two sorted lists by repeatedly taking the smaller head.",
+          "Every linked-list interview question is one of those four, plus the discipline of drawing the pointer before you touch it. A drawing prevents the single most common bug: losing the rest of the list."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "No random access; walking to index i is O(i)",
+      "Insert/delete is O(1) given the previous node",
+      "Memory is one node per element plus pointer overhead",
+      "Reverse, cycle detection, middle finding and merging are the core patterns",
+      "Draw the pointers before changing them"
+    ],
+    "examples": [
+      {
+        "title": "Reversing in place",
+        "body": "Keep prev, curr and next. Point curr at prev, then slide all three forward. Ends with the old tail as the new head, using O(1) extra space."
+      },
+      {
+        "title": "Removing the nth node from the end",
+        "body": "Advance a fast pointer n steps, then move fast and slow together until fast reaches the end. Slow then sits on the node before the target, so the deletion is O(1) after one O(n) pass."
+      }
+    ],
+    "mistakes": [
+      "Losing the remainder of the list by overwriting next too early",
+      "Forgetting to update the tail when appending",
+      "Not freeing removed nodes in languages without GC",
+      "Using a linked list when random access dominates"
+    ],
+    "practiceTip": "Write a doubly linked list with a sentinel head and tail once. After that, no list problem needs special cases."
+  },
+  {
+    "id": "ds_stacks",
+    "subject": "ds",
+    "topic": "stacks",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Stacks",
+    "tagline": "Last in, first out — the structure of nesting",
+    "icon": "bi-stack",
+    "readingTime": 5,
+    "summary": "A stack supports push, pop and peek, all O(1), and only at one end. Its power is that it reverses order and remembers the most recent unresolved thing, which is exactly what nesting, undo and expression parsing need.",
+    "sections": [
+      {
+        "heading": "Where stacks come from",
+        "body": [
+          "The call stack is a stack: each call pushes a frame, each return pops one. Undo histories, browser back buttons, bracket matching, depth-first traversal and expression evaluation are all the same shape.",
+          "The signal that a stack is the answer is the phrase \"most recent unresolved item\". If your algorithm needs to remember what you were in the middle of, a stack remembers it for you."
+        ],
+        "bullets": [
+          "Balanced parentheses: push opens, pop on closes, compare",
+          "Monotonic stack: keeps candidates for the next greater/smaller element",
+          "Next greater element: pop while the top is smaller, that is the answer",
+          "DFS iteratively: push neighbours instead of recursing"
+        ]
+      },
+      {
+        "heading": "The monotonic stack pattern",
+        "body": [
+          "A monotonic stack keeps its elements in sorted order by discarding entries that can never be an answer again. For \"next greater element\", every value smaller than the current one is popped because the current element is a better answer for everything they might have served.",
+          "Each element is pushed and popped at most once, so the whole scan is O(n) despite the nested-looking while loop."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Push, pop and peek are all O(1)",
+      "It reverses order and remembers the most recent item",
+      "Balanced brackets and DFS are the canonical uses",
+      "A monotonic stack solves next-greater/next-smaller in O(n)",
+      "Deep recursion can be converted to an explicit stack"
+    ],
+    "examples": [
+      {
+        "title": "Balanced brackets",
+        "body": "Scan once, pushing openers and popping on closers. If a pop mismatches or the stack is non-empty at the end, the string is unbalanced. One pass, O(n) time and space."
+      },
+      {
+        "title": "Daily temperatures",
+        "body": "Keep a stack of indices whose warmer day is still unknown. When a warmer day arrives, pop and record the difference. Each index enters and leaves once."
+      }
+    ],
+    "mistakes": [
+      "Popping from an empty stack",
+      "Forgetting the final empty-stack check in bracket problems",
+      "Recursing where an explicit stack avoids stack overflow",
+      "Confusing LIFO order with queue order"
+    ],
+    "practiceTip": "Implement an iterative DFS with an explicit stack, then compare it with the recursive version to see which parts of the recursion the stack is doing for you."
+  },
+  {
+    "id": "ds_queues",
+    "subject": "ds",
+    "topic": "queues",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Queues & Deques",
+    "tagline": "First in, first out — the structure of waiting",
+    "icon": "bi-collection",
+    "readingTime": 5,
+    "summary": "A queue adds at the back and removes from the front, both O(1). It models anything that must be handled in arrival order: work queues, breadth-first search, and rate limiting. A deque extends this by allowing both operations at both ends.",
+    "sections": [
+      {
+        "heading": "Queues are level order",
+        "body": [
+          "Breadth-first search is a queue: put the start node in, then repeatedly take the front, process it, and push its unseen neighbours. Because the queue preserves arrival order, nodes are visited in non-decreasing distance from the start, which is why BFS finds shortest paths in unweighted graphs.",
+          "Using recursion or a stack instead gives depth-first order, which explores one branch fully before the next and does not guarantee shortest paths."
+        ],
+        "bullets": [
+          "BFS shortest path in unweighted graphs: queue",
+          "Level-order traversal of a tree: queue",
+          "Sliding window maximum: monotonic deque",
+          "Task scheduling with fairness: queue"
+        ]
+      },
+      {
+        "heading": "The monotonic deque",
+        "body": [
+          "For a sliding window maximum, keep a deque of candidate indices whose values decrease from front to back. When a new value arrives, drop every smaller value from the back, since they can never be the maximum while the new one is in the window. The front is always the current maximum.",
+          "Each index is added and removed at most once, so the whole scan is O(n) rather than O(n*k) for a naive window scan."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Enqueue and dequeue are O(1) at opposite ends",
+      "BFS and level-order traversal are queue patterns",
+      "A deque supports both ends, which unlocks sliding-window problems",
+      "A monotonic deque gives window maxima in O(n)",
+      "Queues give breadth-first order; stacks give depth-first"
+    ],
+    "examples": [
+      {
+        "title": "Shortest path in a grid",
+        "body": "Start from the source cell in a queue, expand neighbours in four directions, and record the distance when each cell is first seen. First arrival is the shortest distance because BFS explores in layers."
+      },
+      {
+        "title": "Sliding window maximum",
+        "body": "Maintain a monotonic deque of indices. Push each index after removing smaller values from the back, drop the front when it leaves the window, and read the maximum from the front."
+      }
+    ],
+    "mistakes": [
+      "Marking nodes visited on push instead of on pop, which can enqueue duplicates",
+      "Using a stack and expecting BFS order",
+      "Forgetting to remove indices that slid out of the window",
+      "Confusing priority queues (heaps) with plain queues"
+    ],
+    "practiceTip": "Write BFS so that the first time you see a node you both enqueue and mark it. That single discipline removes the duplicate-enqueue bug."
+  },
+  {
+    "id": "ds_hashing",
+    "subject": "ds",
+    "topic": "hashing",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Hashing & Hash Maps",
+    "tagline": "O(1) average lookup, at the cost of ordering",
+    "icon": "bi-hdd-network",
+    "readingTime": 7,
+    "summary": "A hash map stores key-value pairs in buckets chosen by a hash of the key. Lookup, insert and delete are O(1) on average, but iteration order is not the insertion order and worst case is O(n) if hashes collide badly.",
+    "sections": [
+      {
+        "heading": "How a hash map actually works",
+        "body": [
+          "The key is hashed to an integer, reduced modulo the bucket count to pick a bucket, and stored there. Collisions are handled either by chaining, a small list per bucket, or by open addressing, which probes for the next free slot.",
+          "When the load factor, entries divided by buckets, grows past a threshold, the table is rehashed into a larger array. That rehash is why individual inserts can occasionally be slow while the amortised cost stays O(1)."
+        ]
+      },
+      {
+        "heading": "The patterns that make interviews easy",
+        "body": [
+          "Hashing converts \"have I seen this before\" into a single lookup. Complements are the other half: for a target sum, store what you have seen and check whether target minus current is already present. Frequency counting replaces repeated scanning. Grouping by a canonical key, such as a sorted string, clusters anagrams.",
+          "The cost is that keys must be hashable and comparable for equality, and you give up ordering. If you need sorted iteration, a tree is the answer instead."
+        ],
+        "bullets": [
+          "Seen-set: dedupe and cycle detection",
+          "Complement lookup: two-sum style problems in one pass",
+          "Frequency map: counting, majority element, first unique",
+          "Canonical key: anagram grouping, board state memoisation",
+          "Prefix sums in a map: subarray sums equal to k"
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Average O(1) lookup, insert and delete; worst case O(n)",
+      "A bad hash function or heavy collisions degrade everything",
+      "Iteration order is not guaranteed to be insertion order",
+      "Seen-sets and complement lookups replace nested loops",
+      "Rehashing makes a single insert occasionally expensive"
+    ],
+    "examples": [
+      {
+        "title": "Two-sum in one pass",
+        "body": "Walk the array once, and before inserting each value check whether target minus value is already in the map. O(n) time instead of O(n^2), using O(n) space for the map."
+      },
+      {
+        "title": "Grouping anagrams",
+        "body": "Use the sorted characters of each word as the map key. Words with the same sorted key are anagrams, so grouping costs one pass plus a sort per word."
+      }
+    ],
+    "mistakes": [
+      "Using a mutable object as a key whose hash can change",
+      "Assuming insertion or sorted order",
+      "Ignoring the O(n) worst case in adversarial inputs",
+      "Using a hash map where a sorted structure was required"
+    ],
+    "practiceTip": "Before writing any nested loop, ask whether a hash map keyed on the inner value would collapse it into one pass."
+  },
+  {
+    "id": "ds_trees",
+    "subject": "ds",
+    "topic": "trees",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Binary Trees & BSTs",
+    "tagline": "Hierarchy, with ordered search on the side",
+    "icon": "bi-diagram-2",
+    "readingTime": 8,
+    "summary": "A binary tree gives each node at most two children. When the left subtree holds smaller values and the right holds larger ones it becomes a binary search tree, and search, insert and delete drop to O(log n) provided the tree stays balanced.",
+    "sections": [
+      {
+        "heading": "The traversals and when each fits",
+        "body": [
+          "In-order traversal of a BST visits values in sorted order, which is why an in-order walk is the standard way to validate or to flatten a BST. Pre-order visits the node before its children, which is the natural serialisation order. Post-order visits children first, which is what you need when a node's value depends on its subtree, such as computing heights or freeing memory.",
+          "Level-order traversal uses a queue and visits the tree layer by layer. Every tree problem is one of these four orders plus a small amount of per-node work."
+        ],
+        "bullets": [
+          "In-order: sorted output, BST validation",
+          "Pre-order: copying, serialising, prefix expressions",
+          "Post-order: heights, subtree sums, deletion",
+          "Level-order: depth, width, right-side view"
+        ]
+      },
+      {
+        "heading": "BST operations and the balance catch",
+        "body": [
+          "Search compares against the current node and goes left or right, halving the search space each step: O(log n) when balanced, O(n) in the degenerate case. Insertion follows the same path to a leaf. Deletion has three cases: no child, one child, and two children, where the node is replaced by its in-order successor or predecessor.",
+          "The catch is that inserting sorted data into a plain BST produces a linked list. Self-balancing trees, AVL and red-black, fix this by rotating during insert and delete to keep height logarithmic, at the cost of a more complex implementation."
+        ]
+      },
+      {
+        "heading": "Recursion is the natural language",
+        "body": [
+          "Most tree problems are one recursive call per subtree plus a combine step. State the base case, trust the recursion for the subtrees, and decide what information must flow upward. If two values must be returned, return a small struct or a pair rather than reaching for a global.",
+          "The classic trap is solving a subtree problem bottom-up while only tracking one value. Height, diameter, balance and largest-path-sum each need the subtree result plus a running best answer."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "In-order on a BST yields sorted values",
+      "Balanced BST operations are O(log n); unbalanced degrades to O(n)",
+      "Deletion with two children uses the in-order successor",
+      "Recursion solves most tree problems; post-order fits bottom-up work",
+      "AVL and red-black keep height logarithmic automatically"
+    ],
+    "examples": [
+      {
+        "title": "Validating a BST",
+        "body": "Instead of checking only parent and child, carry an allowed range down the recursion. Every node must lie strictly between a low and high bound, which catches violations several levels away."
+      },
+      {
+        "title": "Tree diameter",
+        "body": "Return the height of each subtree while updating a global best with the sum of the two tallest child heights. The answer is the largest such sum, not the tree's height."
+      }
+    ],
+    "mistakes": [
+      "Comparing only a node with its immediate children",
+      "Forgetting the empty tree base case",
+      "Building a BST from sorted input and getting a linked list",
+      "Recomputing subtree work instead of returning it once"
+    ],
+    "practiceTip": "Implement in-order traversal both recursively and with an explicit stack. The stack version is the same logic with the call stack made visible."
+  },
+  {
+    "id": "ds_heaps",
+    "subject": "ds",
+    "topic": "heaps",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Heaps & Priority Queues",
+    "tagline": "Always know the extreme, in O(log n)",
+    "icon": "bi-bar-chart-steps",
+    "readingTime": 6,
+    "summary": "A binary heap keeps the smallest or largest element at the root. Insert and extract-min are O(log n), peek is O(1), and building a heap from n items is O(n). It is the structure behind priority queues, scheduling and every top-k problem.",
+    "sections": [
+      {
+        "heading": "The array-backed complete tree",
+        "body": [
+          "A heap is a complete binary tree stored in an array: the children of index i live at 2i+1 and 2i+2, and the parent at (i-1)/2. That layout needs no pointers, which makes it compact and cache friendly.",
+          "Insertion appends and then sifts the new element up until the heap property holds. Extraction swaps the root with the last element, removes the tail, and sifts down. Both touch at most the height of the tree."
+        ],
+        "bullets": [
+          "Min-heap: parent smaller than children, peek gives the minimum",
+          "Max-heap: the mirror image, used for top-k largest",
+          "Build-heap is O(n), not O(n log n)",
+          "Heap sort: n extractions, O(n log n), in place"
+        ]
+      },
+      {
+        "heading": "The top-k and k-way merge patterns",
+        "body": [
+          "For the k largest elements, keep a min-heap of size k: push everything, and whenever the size exceeds k pop the smallest. The heap then always holds the k largest seen so far, at O(n log k) instead of O(n log n) for a full sort.",
+          "K-way merging, such as merging k sorted lists, puts the head of each list in a heap and repeatedly pops the smallest and pushes its successor. Dijkstra's shortest path and Huffman coding are the same pattern over different domains."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Peek O(1), insert and extract O(log n), build O(n)",
+      "A min-heap of size k answers top-k largest in O(n log k)",
+      "K-way merge, Dijkstra and Huffman coding are heap patterns",
+      "Stored in an array with index arithmetic, no pointers",
+      "A heap does not give sorted iteration without extracting"
+    ],
+    "examples": [
+      {
+        "title": "K closest points to the origin",
+        "body": "Keep a max-heap of size k keyed by distance. For each point, push and pop when the size exceeds k. What remains is the k closest, in O(n log k)."
+      },
+      {
+        "title": "Merging k sorted lists",
+        "body": "Push the first node of each list into a min-heap keyed by value. Pop the smallest, append it to the output, and push its successor. Total O(N log k) for N total nodes."
+      }
+    ],
+    "mistakes": [
+      "Sorting when a heap of size k would do",
+      "Forgetting to update the key after changing a priority",
+      "Using a min-heap when the question asks for largest, or vice versa",
+      "Assuming a heap supports arbitrary search"
+    ],
+    "practiceTip": "Implement heapify, push and pop once from the array formulas. Afterwards every top-k problem is a two-line change."
+  },
+  {
+    "id": "ds_graphs",
+    "subject": "ds",
+    "topic": "graphs",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Graphs",
+    "tagline": "Nodes plus edges: the model for networks",
+    "icon": "bi-share",
+    "readingTime": 8,
+    "summary": "A graph is a set of vertices connected by edges, directed or undirected, weighted or not. It models anything with relationships, and nearly every graph problem is a traversal plus a bookkeeping decision about what to record along the way.",
+    "sections": [
+      {
+        "heading": "Representation drives the cost",
+        "body": [
+          "An adjacency list stores, per vertex, the list of its neighbours: O(V + E) space, O(degree) to enumerate neighbours, which suits sparse graphs and is what almost every algorithm assumes. An adjacency matrix stores a V x V grid: O(V^2) space, O(1) edge test, which suits dense graphs and Floyd-Warshall style all-pairs work.",
+          "Choosing the wrong representation turns an O(V + E) traversal into an O(V^2) scan, which is the most common performance failure in graph code."
+        ],
+        "bullets": [
+          "Adjacency list: sparse graphs, traversal, O(V + E)",
+          "Adjacency matrix: dense graphs, fast edge test, O(V^2)",
+          "Directed: one-way edges, indegree and outdegree differ",
+          "Weighted: carry distances or costs alongside neighbours"
+        ]
+      },
+      {
+        "heading": "BFS, DFS and what each gives you",
+        "body": [
+          "BFS with a queue explores in layers, so the first time it reaches a node it has found the shortest path in an unweighted graph. DFS with a stack or recursion explores as deep as possible, which is what you want for connectivity, cycle detection, topological order and component labelling.",
+          "Both need a visited set, and the set must be marked when a node is first discovered, not when it is finished. Marking late lets the same node enter the queue many times and turns a linear traversal into an exponential one."
+        ]
+      },
+      {
+        "heading": "The algorithm selection table",
+        "body": [
+          "Shortest path with non-negative weights is Dijkstra with a heap. Negative weights call for Bellman-Ford. All pairs shortest paths call for Floyd-Warshall on small graphs. Minimum spanning tree is Prim with a heap or Kruskal with union-find. Ordering with dependencies is topological sort, which only exists on a directed acyclic graph.",
+          "Cycle detection differs by graph type: a back edge during DFS detects a cycle in a directed graph, while an undirected graph needs care to ignore the edge back to the immediate parent."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Adjacency list for sparse, matrix for dense; the choice changes the complexity",
+      "BFS gives shortest paths in unweighted graphs",
+      "DFS gives connectivity, cycles and topological order",
+      "Mark visited on discovery, or the traversal blows up",
+      "Dijkstra for non-negative weights, Bellman-Ford for negatives, union-find for MST"
+    ],
+    "examples": [
+      {
+        "title": "Course prerequisites",
+        "body": "Model courses as nodes and prerequisites as directed edges. If a topological order exists the schedule is possible; if a cycle is found it is not. Kahn's algorithm with indegree counts produces the order directly."
+      },
+      {
+        "title": "Number of islands",
+        "body": "Treat the grid as a graph and flood-fill from each unvisited land cell with BFS or DFS, marking cells as visited. Each flood fill is one island, so the total cost is O(rows * cols)."
+      }
+    ],
+    "mistakes": [
+      "Marking visited when finishing instead of discovering",
+      "Choosing a matrix for a sparse graph and paying O(V^2)",
+      "Using Dijkstra with negative edge weights",
+      "Treating an undirected cycle check the same as a directed one"
+    ],
+    "practiceTip": "Write one generic traversal that takes a neighbour function and a visitor. Every graph algorithm after that is a different visitor."
+  },
+  {
+    "id": "ds_disjoint_sets",
+    "subject": "ds",
+    "topic": "disjoint_sets",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Union-Find (Disjoint Sets)",
+    "tagline": "Group things, answer 'are these connected' in near O(1)",
+    "icon": "bi-intersect",
+    "readingTime": 6,
+    "summary": "Union-find maintains a partition of elements into disjoint sets and answers two questions: which set does this element belong to, and are two elements in the same set. With path compression and union by rank both operations are effectively constant time.",
+    "sections": [
+      {
+        "heading": "Forests, not flat arrays",
+        "body": [
+          "Each element points to a parent, and roots point to themselves. Find walks up to the root, and union attaches one root under the other. Without care the trees degenerate into chains and find becomes O(n).",
+          "Path compression makes every node on the find path point directly at the root, flattening the forest as you use it. Union by rank or size attaches the shorter tree under the taller one, which bounds the height. Together they give an amortised cost per operation of O(alpha(n)), which is under 5 for any realistic n."
+        ],
+        "bullets": [
+          "Find with path compression: flatten while searching",
+          "Union by size or rank: never make the tall tree taller",
+          "Components in an undirected graph: union every edge, count roots",
+          "Kruskal's MST: sort edges, union endpoints, skip if already joined",
+          "Cycle detection in an undirected graph: an edge that unions two already-joined nodes is a cycle"
+        ]
+      },
+      {
+        "heading": "Why it beats BFS here",
+        "body": [
+          "Connectivity questions asked many times, in any order, with edges arriving incrementally, are exactly what union-find is for. BFS answers one connectivity query in O(V + E), which is wasteful when the same question is asked repeatedly.",
+          "The trade is that union-find cannot answer path questions or shortest paths, only membership. If you need the path itself, run BFS or DFS instead."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Two operations: find the set, and union two sets",
+      "Path compression plus union by rank make operations near O(1)",
+      "It answers membership, never paths or distances",
+      "Kruskal's MST and undirected cycle detection are the classic uses",
+      "It handles incremental edges without recomputation"
+    ],
+    "examples": [
+      {
+        "title": "Redundant connection",
+        "body": "Process edges in order, unioning endpoints. The first edge whose endpoints are already in the same set closes a cycle, and that edge is the redundant one."
+      },
+      {
+        "title": "Accounts merge",
+        "body": "Union accounts that share an email, then group accounts by their set's root. Path compression keeps the repeated finds cheap."
+      }
+    ],
+    "mistakes": [
+      "Union without rank or size, which degrades to O(n) per find",
+      "Forgetting to compress the path on find",
+      "Expecting path or distance information from union-find",
+      "Assuming elements are 0..n-1 without a mapping from ids to indices"
+    ],
+    "practiceTip": "Implement both optimisations together. Implementing either alone is the usual reason a union-find solution times out."
+  },
+  {
+    "id": "ds_strings",
+    "subject": "ds",
+    "topic": "strings",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Strings",
+    "tagline": "Sequences with alphabets, windows and matching",
+    "icon": "bi-fonts",
+    "readingTime": 6,
+    "summary": "Strings are arrays of characters, so every array technique applies, plus a few of their own: sliding windows over characters, frequency counting with a fixed alphabet, and pattern matching where naive comparison is O(n*m).",
+    "sections": [
+      {
+        "heading": "The character-count toolkit",
+        "body": [
+          "A fixed alphabet of 26 or 128 entries turns character comparisons into array lookups. Anagrams become equal frequency vectors. Permutation-in-string becomes a window whose frequency vector matches the pattern's. Palindromes become counts plus at most one odd entry.",
+          "This is the single most useful string trick: convert the problem into counts, then slide a window and compare vectors."
+        ],
+        "bullets": [
+          "Frequency array of 26 for lowercase letters",
+          "Sliding window over the alphabet for substring problems",
+          "Two pointers from both ends for palindromes",
+          "Sort the characters to canonicalise anagrams"
+        ]
+      },
+      {
+        "heading": "Matching without O(n*m)",
+        "body": [
+          "Naive matching compares the pattern at every offset, costing O(n*m). Rolling hashes, as in Rabin-Karp, update the hash of the next window in O(1) and only compare fully on a hash hit, giving O(n + m) on average. The Knuth-Morris-Pratt algorithm precomputes a failure function so it never re-examines characters, achieving O(n + m) worst case.",
+          "For interview purposes, knowing that naive is O(n*m) and that hashing or a prefix function removes the factor of m is usually the whole answer."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Every array technique applies to strings",
+      "A fixed-size frequency array replaces nested character comparisons",
+      "Sliding windows handle substring and permutation questions in O(n)",
+      "Naive matching is O(n*m); hashing or KMP removes the factor",
+      "Two pointers from the ends handle palindromes"
+    ],
+    "examples": [
+      {
+        "title": "Longest substring without repeating characters",
+        "body": "Expand a right pointer and store the last index of each character. When a repeat appears inside the window, jump the left pointer past the previous occurrence. One pass, O(n)."
+      },
+      {
+        "title": "Valid anagram",
+        "body": "Count characters of both strings in 26-element arrays and compare. O(n) time, O(1) space, no sorting needed."
+      }
+    ],
+    "mistakes": [
+      "Building a new substring for every window instead of counting",
+      "Using O(n*m) matching when a hash would do",
+      "Case sensitivity and whitespace assumptions",
+      "Assuming a fixed alphabet when the input is Unicode"
+    ],
+    "practiceTip": "Whenever you write a nested loop over two strings, check whether a frequency array or a rolling hash collapses the inner loop."
+  },
+  {
+    "id": "ds_complexity",
+    "subject": "ds",
+    "topic": "complexity",
+    "kind": "technical",
+    "category": "Data Structures",
+    "name": "Complexity Analysis",
+    "tagline": "Big-O is a promise about growth, not seconds",
+    "icon": "bi-graph-up",
+    "readingTime": 7,
+    "summary": "Big-O describes how cost grows with input size, ignoring constants and lower-order terms. It is the vocabulary for comparing algorithms, and getting it right requires counting the operations that actually repeat, including hidden ones inside library calls.",
+    "sections": [
+      {
+        "heading": "Reading complexity from code",
+        "body": [
+          "Sequential statements add, nested loops multiply, and a loop that halves its range each step is logarithmic. A loop whose bound is reduced by a constant factor each iteration runs O(log n) times regardless of the factor, because constants disappear.",
+          "Recursion needs a different tool: write the recurrence, then expand it. T(n) = 2T(n/2) + O(n) is merge sort and solves to O(n log n); T(n) = T(n-1) + O(n) is a linear recursion and solves to O(n^2)."
+        ],
+        "bullets": [
+          "Nested loops over the same data: multiply",
+          "Halving the input each step: O(log n)",
+          "Two independent recursions per call: often exponential",
+          "Amortised: spread occasional expensive operations over cheap ones",
+          "Space complexity counts memory beyond the input"
+        ]
+      },
+      {
+        "heading": "Amortised, worst and best are different questions",
+        "body": [
+          "Worst case is the guarantee, average case is the expectation, and amortised spreads a rare expensive operation across many cheap ones. A dynamic array append is worst case O(n) when it reallocates, but amortised O(1) because the reallocation happens after a doubling.",
+          "Quoting worst case for an amortised structure sounds wrong, and quoting amortised when someone asks for a guarantee is misleading. Say which one you mean."
+        ]
+      },
+      {
+        "heading": "The hidden costs",
+        "body": [
+          "String concatenation in a loop, copying a container into a function parameter, and sorting inside a loop are the usual invisible O(n) or O(n log n) additions. Library calls are not free: check whether a lookup is a hash map or a linear scan.",
+          "Complexity also ignores cache behaviour, which is why an O(n) linked-list traversal can be slower in practice than an O(n log n) array sort for small n."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Sequential adds, nested multiplies, halving is logarithmic",
+      "Recursion needs a recurrence, expanded or guessed and proved",
+      "Amortised is not the same as worst case; say which you mean",
+      "Library calls can hide a linear scan",
+      "Constants and cache effects matter for small inputs"
+    ],
+    "examples": [
+      {
+        "title": "Building a string in a loop",
+        "body": "Concatenating in a loop copies the growing prefix each time, giving O(n^2). Appending to a buffer, or collecting parts and joining once, is O(n)."
+      },
+      {
+        "title": "Two nested loops that are actually linear",
+        "body": "A left pointer that only moves forward inside an outer right-pointer loop executes O(2n) total, which is O(n). Not every nesting is quadratic; check whether the inner bound resets."
+      }
+    ],
+    "mistakes": [
+      "Counting only the loop body and ignoring the bound's own cost",
+      "Calling an amortised structure's worst case O(1)",
+      "Forgetting that sorting is O(n log n)",
+      "Assuming a nested loop must be quadratic without checking the bounds"
+    ],
+    "practiceTip": "State the complexity of every function you write today, including the ones that call library functions. It takes seconds and catches real bugs."
+  }
+]

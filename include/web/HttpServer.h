@@ -6,7 +6,7 @@
 #include "auth/AuthService.h"
 #include "admin/AdminService.h"
 #include "course/CourseService.h"
-#include "softskills/SoftSkillsService.h"
+#include "theory/TheoryService.h"
 #include "progress/ProgressService.h"
 #include "problem/ProblemService.h"
 #include "skills/SkillsService.h"
@@ -69,7 +69,7 @@ private:
     std::shared_ptr<core::IScoreboardRepository> scoreboardRepo_;
     std::shared_ptr<core::IDailyChallengeRepository> dailyChallengeRepo_;
     std::shared_ptr<course::CourseService> courseService_;
-    std::unique_ptr<softskills::SoftSkillsService> softSkillsService_;
+    std::unique_ptr<theory::TheoryService> theoryService_;
     std::unique_ptr<auth::AuthService> authService_;
     std::unique_ptr<admin::AdminService> adminService_;
     std::unique_ptr<progress::ProgressService> progressService_;

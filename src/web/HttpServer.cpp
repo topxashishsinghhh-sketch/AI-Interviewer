@@ -207,7 +207,7 @@ HttpServer::HttpServer(const Config& config)
         config_.backend, config_.dataDir + "/daily_challenges.json", config_.dbName);
 
     courseService_ = std::make_shared<course::CourseService>();
-    softSkillsService_ = std::make_unique<softskills::SoftSkillsService>(config_.dataDir, questionRepo_);
+    theoryService_ = std::make_unique<theory::TheoryService>(config_.dataDir, questionRepo_);
     feedbackGen_ = std::make_shared<core::RuleBasedFeedback>();
     authService_ = std::make_unique<auth::AuthService>(userRepo_);
     adminService_ = std::make_unique<admin::AdminService>(userRepo_, questionRepo_, attemptRepo_);
@@ -918,61 +918,66 @@ void HttpServer::registerRoutes() {
         sendJson(response, 200, out);
     });
 
-    // ---- soft skills: readable theory + practice subjects ----
-    // Browsable like the catalogue: the theory is learning content, not private
-    // data, so it needs no session.
-    server_->Get("/api/soft-skills", [this](const httplib::Request&, httplib::Response& response) {
+    // ---- theory: readable articles for every subject ----
+    // The DSA sheet, the core CS subjects and soft skills all live in one
+    // data/theory.json, so the section is browsable without a session just
+    // like the catalogue.
+    server_->Get("/api/theory", [this](const httplib::Request& request,
+                                       httplib::Response& response) {
+        const std::string subject = paramOr(request, "subject", "");
         json out = json::array();
-        const std::vector<softskills::TheorySummary> summaries = softSkillsService_->subjects();
-        for (std::size_t i = 0; i < summaries.size(); ++i) {
-            const softskills::TheorySummary& summary = summaries[i];
+        const std::vector<theory::TheorySummary> articles = theoryService_->articles(subject);
+        for (std::size_t i = 0; i < articles.size(); ++i) {
+            const theory::TheorySummary& article = articles[i];
             json item;
-            item["id"] = summary.id;
-            item["name"] = summary.name;
-            item["tagline"] = summary.tagline;
-            item["icon"] = summary.icon;
-            item["readingTime"] = summary.readingTime;
-            item["summary"] = summary.summary;
-            item["questionCount"] = summary.questionCount;
+            item["id"] = article.id;
+            item["subject"] = article.subject;
+            item["topic"] = article.topic;
+            item["kind"] = article.kind;
+            item["category"] = article.category;
+            item["name"] = article.name;
+            item["tagline"] = article.tagline;
+            item["icon"] = article.icon;
+            item["readingTime"] = article.readingTime;
+            item["summary"] = article.summary;
+            item["questionCount"] = article.questionCount;
             out.push_back(item);
-        }
-        if (out.empty()) {
-            sendJson(response, 503, JsonApi::error(
-                "Soft-skills theory is not available: data/soft_skills_theory.json "
-                "is missing or empty", 503));
-            return;
         }
         sendJson(response, 200, out);
     });
 
-    server_->Get(R"(/api/soft-skills/([^/]+))", [this](const httplib::Request& request,
-                                                      httplib::Response& response) {
+    server_->Get(R"(/api/theory/([^/]+))", [this](const httplib::Request& request,
+                                                  httplib::Response& response) {
         const std::string id = request.matches[1];
-        softskills::TheorySubject subject;
-        if (!softSkillsService_->find(id, subject)) {
-            sendJson(response, 404, JsonApi::error("No soft-skill subject named " + id, 404));
+        theory::TheoryArticle article;
+        if (!theoryService_->find(id, article)) {
+            sendJson(response, 404, JsonApi::error("No theory article named " + id, 404));
             return;
         }
 
         json out;
-        out["id"] = subject.id;
-        out["name"] = subject.name;
-        out["tagline"] = subject.tagline;
-        out["icon"] = subject.icon;
-        out["readingTime"] = subject.readingTime;
-        out["summary"] = subject.summary;
-        out["practiceTip"] = subject.practiceTip;
-        out["questionCount"] = static_cast<int>(questionRepo_->findBySubject(subject.id).size());
+        out["id"] = article.id;
+        out["subject"] = article.subject;
+        out["topic"] = article.topic;
+        out["kind"] = article.kind;
+        out["category"] = article.category;
+        out["name"] = article.name;
+        out["tagline"] = article.tagline;
+        out["icon"] = article.icon;
+        out["readingTime"] = article.readingTime;
+        out["summary"] = article.summary;
+        out["practiceTip"] = article.practiceTip;
+        out["questionCount"] = theoryService_->questionCountFor(article);
 
         json keyPoints = json::array();
-        for (std::size_t i = 0; i < subject.keyPoints.size(); ++i) {
-            keyPoints.push_back(subject.keyPoints[i]);
+        for (std::size_t k = 0; k < article.keyPoints.size(); ++k) {
+            keyPoints.push_back(article.keyPoints[k]);
         }
         out["keyPoints"] = keyPoints;
 
         json sections = json::array();
-        for (std::size_t s = 0; s < subject.sections.size(); ++s) {
-            const softskills::TheorySection& section = subject.sections[s];
+        for (std::size_t s = 0; s < article.sections.size(); ++s) {
+            const theory::TheorySection& section = article.sections[s];
             json item;
             item["heading"] = section.heading;
             item["body"] = json::array();
@@ -988,20 +993,41 @@ void HttpServer::registerRoutes() {
         out["sections"] = sections;
 
         json examples = json::array();
-        for (std::size_t e = 0; e < subject.examples.size(); ++e) {
+        for (std::size_t e = 0; e < article.examples.size(); ++e) {
             json item;
-            item["title"] = subject.examples[e].title;
-            item["body"] = subject.examples[e].body;
+            item["title"] = article.examples[e].title;
+            item["body"] = article.examples[e].body;
             examples.push_back(item);
         }
         out["examples"] = examples;
 
         json mistakes = json::array();
-        for (std::size_t m = 0; m < subject.mistakes.size(); ++m) {
-            mistakes.push_back(subject.mistakes[m]);
+        for (std::size_t m = 0; m < article.mistakes.size(); ++m) {
+            mistakes.push_back(article.mistakes[m]);
         }
         out["mistakes"] = mistakes;
 
+        sendJson(response, 200, out);
+    });
+
+    // Soft skills is the same store filtered to kind="soft", kept as an alias
+    // for the name the section has always had.
+    server_->Get("/api/soft-skills", [this](const httplib::Request&, httplib::Response& response) {
+        json out = json::array();
+        const std::vector<theory::TheorySummary> articles = theoryService_->articles();
+        for (std::size_t i = 0; i < articles.size(); ++i) {
+            const theory::TheorySummary& article = articles[i];
+            if (article.kind != "soft") continue;
+            json item;
+            item["id"] = article.id;
+            item["name"] = article.name;
+            item["tagline"] = article.tagline;
+            item["icon"] = article.icon;
+            item["readingTime"] = article.readingTime;
+            item["summary"] = article.summary;
+            item["questionCount"] = article.questionCount;
+            out.push_back(item);
+        }
         sendJson(response, 200, out);
     });
 

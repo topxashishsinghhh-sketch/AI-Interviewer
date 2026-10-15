@@ -1,0 +1,637 @@
+[
+    {
+        "id":  "communication",
+        "subject":  "communication",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Communication Skills",
+        "tagline":  "Say less, be understood more",
+        "icon":  "bi-chat-dots",
+        "readingTime":  6,
+        "summary":  "Communication is the transfer of intent, not the delivery of words. Strong communicators tailor the message to the listener, choose the right channel, and confirm that meaning landed before moving on.",
+        "sections":  [
+                         {
+                             "heading":  "Clarity beats completeness",
+                             "body":  [
+                                          "Most miscommunication comes from dumping everything you know instead of the one thing the listener needs. Before you speak, decide the single takeaway: if the listener remembers only one sentence, which one should it be?",
+                                          "Structure helps. Lead with the conclusion, then the reason, then the detail. Interviewers and managers are busy; they reward people who get to the point and stay there."
+                                      ],
+                             "bullets":  [
+                                             "One idea per sentence, one decision per message",
+                                             "Name the ask explicitly: decide, review, or just be aware",
+                                             "Replace jargon with the plain word unless the jargon is shared"
+                                         ]
+                         },
+                         {
+                             "heading":  "Listening is the active half",
+                             "body":  [
+                                          "Listening is not waiting for your turn to talk. It is testing your understanding against what the other person actually said, and asking when the two disagree.",
+                                          "Paraphrase the point back in your own words before you respond. It costs ten seconds and prevents the most expensive class of meeting failure: two people solving different problems."
+                                      ],
+                             "bullets":  [
+                                             "Ask what outcome the other person wants before proposing one",
+                                             "Silence after a question is a tool, not a gap to fill",
+                                             "Note the emotional signal as carefully as the factual one"
+                                         ]
+                         },
+                         {
+                             "heading":  "Pick the channel on purpose",
+                             "body":  [
+                                          "Chat is for facts, calls are for nuance, documents are for anything that must be agreed later. Sending nuance over chat is the fastest way to turn a five-minute conversation into a three-day thread.",
+                                          "Written communication has a half-life: anything you send will be read by someone who lacks your context. Write for that reader, not for the person who already knows."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Decide the single takeaway before you open your mouth",
+                          "Conclusion first, then reasoning, then supporting detail",
+                          "Paraphrase before you reply to confirm you understood",
+                          "Match the channel to the ambiguity of the message",
+                          "Write for the reader who lacks your context"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Explaining a delay",
+                             "body":  "Instead of narrating every hour lost, say what slipped, by how much, what you are doing about it, and what you need from them. Four sentences, no defensiveness."
+                         },
+                         {
+                             "title":  "Answering a vague request",
+                             "body":  "When someone asks you to \u0027look into something\u0027, reply with the three possible interpretations and ask which one they meant. That converts a guessing game into a thirty-second clarification."
+                         }
+                     ],
+        "mistakes":  [
+                         "Burying the request at the end of a long explanation",
+                         "Assuming silence means agreement",
+                         "Using channel-inappropriate detail, such as a policy argument in a chat window",
+                         "Correcting someone\u0027s wording instead of engaging their point"
+                     ],
+        "practiceTip":  "Practice by explaining one technical concept per day to a non-technical friend in under two minutes, with no slides."
+    },
+    {
+        "id":  "teamwork",
+        "subject":  "teamwork",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Teamwork \u0026 Collaboration",
+        "tagline":  "Make the people around you more effective",
+        "icon":  "bi-people",
+        "readingTime":  6,
+        "summary":  "Teams fail on coordination long before they fail on skill. Good collaborators reduce the work other people need to do, share context before it is needed, and treat disagreement as information rather than a contest.",
+        "sections":  [
+                         {
+                             "heading":  "Reduce other people\u0027s cost",
+                             "body":  [
+                                          "The measurable form of teamwork is friction: how much effort does someone need to work with you? Reliable handoffs, honest status, and readable work products all lower that number.",
+                                          "When you finish something, ask who will touch it next and what they will need. Writing that down takes minutes and saves them an hour."
+                                      ],
+                             "bullets":  [
+                                             "Hand off with context: goal, state, next step, known risks",
+                                             "Surface blockers early; a surprise delay is worse than the delay",
+                                             "Leave the codebase and the meeting notes better than you found them"
+                                         ]
+                         },
+                         {
+                             "heading":  "Disagree with the work, not the person",
+                             "body":  [
+                                          "Healthy teams separate the idea from the identity of whoever proposed it. Critique the artifact: which assumption is weakest, which evidence would change your mind?",
+                                          "Say what you would need to be convinced. That single move turns a standoff into a shared investigation."
+                                      ]
+                         },
+                         {
+                             "heading":  "Remote work needs explicit signalling",
+                             "body":  [
+                                          "Without shared rooms, silence is ambiguous. Over-communicate state: what you are doing, what you finished, where you are stuck.",
+                                          "Document decisions where the next person will look, not where you happen to be working. A decision nobody can find is a decision that will be made again."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Measure teamwork by how much friction you remove for others",
+                          "Hand off with goal, state, next step and risks",
+                          "Critique the artifact, never the author",
+                          "Say what evidence would change your mind",
+                          "Write decisions where the next reader will look"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Reviewing a teammate\u0027s design",
+                             "body":  "Open with what the design gets right and why it works, then ask about the single riskiest assumption. Ask for a decision on that point before anything else changes."
+                         },
+                         {
+                             "title":  "Joining an ongoing project",
+                             "body":  "Read the last two weeks of decisions first, then list what you think the project\u0027s real constraint is and ask the team to correct you. You will be productive far faster than by asking what to do."
+                         }
+                     ],
+        "mistakes":  [
+                         "Going quiet when blocked because admitting it feels like failure",
+                         "Rewriting a teammate\u0027s work silently instead of discussing it",
+                         "Deciding in a private channel what the whole team needs to know",
+                         "Treating a disagreement as a status contest rather than a technical question"
+                     ],
+        "practiceTip":  "For one week, end every work conversation by confirming who does what by when, out loud."
+    },
+    {
+        "id":  "leadership",
+        "subject":  "leadership",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Leadership \u0026 Initiative",
+        "tagline":  "Influence without authority",
+        "icon":  "bi-compass",
+        "readingTime":  6,
+        "summary":  "Leadership is not a job title; it is the act of taking responsibility for an outcome you do not fully control. It shows up as initiative, as clarity under ambiguity, and as making the people around you more capable.",
+        "sections":  [
+                         {
+                             "heading":  "Initiative is a judgement call",
+                             "body":  [
+                                          "Anyone can follow a ticket. Initiative is noticing the gap between what is being done and what would be valuable, then closing it without being asked.",
+                                          "Scale your initiative to the risk. Fixing a typo needs no permission; changing a shared interface does. Ask early for anything expensive or hard to reverse."
+                                      ],
+                             "bullets":  [
+                                             "Notice what is nobody\u0027s job and pick up the cheap part",
+                                             "Propose a small experiment instead of demanding a bet",
+                                             "Bring a recommendation, not just a problem"
+                                         ]
+                         },
+                         {
+                             "heading":  "Ownership means the outcome, not the task",
+                             "body":  [
+                                          "Owners define done. They know what result matters, what could go wrong, and what the fallback is if it does. When something slips, they say so first.",
+                                          "Ownership also means knowing when to escalate. Carrying a blocked project alone is not loyalty, it is a hidden risk."
+                                      ]
+                         },
+                         {
+                             "heading":  "Delegate the outcome, not the steps",
+                             "body":  [
+                                          "Telling someone how to do a task keeps you the bottleneck. Sharing the goal, the constraints and the definition of done lets them think.",
+                                          "Then be reachable for questions without hovering. Availability is support; presence becomes surveillance."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Notice work nobody owns and take the cheap, reversible part",
+                          "Own the outcome and the definition of done, not just the task list",
+                          "Escalate blockers instead of quietly absorbing them",
+                          "Delegate goals and constraints, not step-by-step instructions",
+                          "Bring a recommendation whenever you raise a problem"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Leading without a title",
+                             "body":  "A team keeps missing a weekly deadline. Instead of complaining, you measure the real cause, propose one process change, and run it for two weeks with the team\u0027s agreement. Initiative plus evidence."
+                         },
+                         {
+                             "title":  "Escalating well",
+                             "body":  "You are blocked for a day on an external dependency. You state the blocker, the impact, the options, and your recommendation, then ask for a decision. Twenty minutes instead of three days."
+                         }
+                     ],
+        "mistakes":  [
+                         "Waiting for permission for small, reversible improvements",
+                         "Presenting problems without a recommendation",
+                         "Escalating everything, which makes your signal worthless",
+                         "Confusing activity with ownership"
+                     ],
+        "practiceTip":  "Once a week, identify one thing that is not going well, write a two-line proposal, and send it to the person who can act on it."
+    },
+    {
+        "id":  "time_management",
+        "subject":  "time_management",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Time Management \u0026 Productivity",
+        "tagline":  "Choose what not to do",
+        "icon":  "bi-clock-history",
+        "readingTime":  5,
+        "summary":  "Productivity is not speed; it is spending attention on the few things that matter. Most people do not need more hours, they need fewer, better-chosen tasks and protection from the interruptions that fragment them.",
+        "sections":  [
+                         {
+                             "heading":  "Prioritise by consequence, not urgency",
+                             "body":  [
+                                          "Urgency is a property of the clock; importance is a property of the outcome. Busy days are usually full of urgent, low-consequence work that feels productive and changes nothing.",
+                                          "Pick one or two things each day that would make the day worthwhile even if nothing else happened. Do those first, while attention is fresh."
+                                      ],
+                             "bullets":  [
+                                             "Write tomorrow\u0027s one most important task before you close today",
+                                             "Batch shallow work into fixed windows",
+                                             "Finish things: a finished small task beats three open big ones"
+                                         ]
+                         },
+                         {
+                             "heading":  "Protect deep work",
+                             "body":  [
+                                          "Real progress needs uninterrupted blocks. Every interruption costs more than its own minutes; it costs the reload time of the context you had built.",
+                                          "Make focus physical: notifications off, one tab, a visible timer. If you can be interrupted in ten seconds, you will be."
+                                      ]
+                         },
+                         {
+                             "heading":  "Estimates are promises you can keep",
+                             "body":  [
+                                          "Break work until the pieces are small enough to predict, then add the risk honestly. A plan with no slack is a plan with no recovery.",
+                                          "Say what you will drop if the deadline holds. That question surfaces the real priority faster than any status meeting."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Rank by consequence, not by urgency",
+                          "Choose one or two tasks that define a good day",
+                          "Batch shallow work; protect the blocks for deep work",
+                          "Make interruption physically harder, not just discouraged",
+                          "Name what will be dropped if the deadline is fixed"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "A fragmented day",
+                             "body":  "Meetings, chat and review requests leave two hours before the deadline. The fix is to start the day with ninety protected minutes on the critical task, then handle the rest in batches."
+                         },
+                         {
+                             "title":  "An overcommitted week",
+                             "body":  "Four things are promised for Friday. List them with consequences, move two, and tell the stakeholders which two and why. Honest triage beats silent failure on all four."
+                         }
+                     ],
+        "mistakes":  [
+                         "Confusing busyness with progress",
+                         "Letting notifications define the day\u0027s order",
+                         "Estimating only the coding time and none of the coordination",
+                         "Starting five things so none of them finish"
+                     ],
+        "practiceTip":  "Track where your time actually goes for three days before changing anything. Most people optimise the wrong block."
+    },
+    {
+        "id":  "adaptability",
+        "subject":  "adaptability",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Adaptability \u0026 Learning Agility",
+        "tagline":  "Change your mind faster than the world changes",
+        "icon":  "bi-arrow-repeat",
+        "readingTime":  5,
+        "summary":  "Adaptability is the skill of updating your plans when reality disagrees with them. It combines tolerance for ambiguity, the discipline to learn from feedback, and the willingness to abandon a good idea for a better one.",
+        "sections":  [
+                         {
+                             "heading":  "Ambiguity is the normal state",
+                             "body":  [
+                                          "Early in any project the information needed to be certain does not exist yet. Adaptive people act on the best available evidence, define what would prove them wrong, and update quickly.",
+                                          "Treat plans as hypotheses. The plan that never changes is usually a plan nobody is testing."
+                                      ],
+                             "bullets":  [
+                                             "Decide what evidence would change your direction, in advance",
+                                             "Prefer reversible decisions early, expensive ones later",
+                                             "Separate what you know from what you assume"
+                                         ]
+                         },
+                         {
+                             "heading":  "Feedback is data, not verdict",
+                             "body":  [
+                                          "The fast learners are not the ones who are right most often; they are the ones who update fastest without ego damage. Ask for the specific observation behind the judgement.",
+                                          "Then check whether the feedback is about the work or about you. Keep the first, question the second, and discard neither automatically."
+                                      ]
+                         },
+                         {
+                             "heading":  "Unlearning is part of learning",
+                             "body":  [
+                                          "Every new framework makes some old habits actively wrong. Spending a day discovering which of your defaults no longer apply is time well spent.",
+                                          "Keep a list of the beliefs you have changed. It is the most honest measure of learning you will ever keep."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Treat plans as hypotheses and define the disproof in advance",
+                          "Act on the best available evidence; do not wait for certainty",
+                          "Ask for the specific observation behind every judgement",
+                          "Identify which of your old defaults the new situation breaks",
+                          "Update fast and cheaply, without treating it as defeat"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "A cancelled requirement",
+                             "body":  "Two weeks of work is invalidated. The adaptive response is to ask what changed, salvage the reusable pieces, and write down the assumption that failed so it is caught earlier next time."
+                         },
+                         {
+                             "title":  "Harsh review feedback",
+                             "body":  "Instead of defending the design, ask which single part the reviewer would change first and why. You get a concrete, actionable item instead of a general verdict."
+                         }
+                     ],
+        "mistakes":  [
+                         "Waiting for certainty before acting",
+                         "Defending a plan after the evidence has turned against it",
+                         "Hearing feedback as an attack on identity rather than information",
+                         "Assuming last year\u0027s best practice still applies"
+                     ],
+        "practiceTip":  "After every project, write down one belief you changed. If the list is empty, you were not paying attention."
+    },
+    {
+        "id":  "conflict_resolution",
+        "subject":  "conflict_resolution",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Conflict Resolution",
+        "tagline":  "Disagree productively",
+        "icon":  "bi-shuffle",
+        "readingTime":  6,
+        "summary":  "Conflict is inevitable wherever people care about outcomes. Handled well it produces better decisions; handled badly it produces politics. The skill is separating the disagreement from the relationship and finding the interest underneath the position.",
+        "sections":  [
+                         {
+                             "heading":  "Positions hide interests",
+                             "body":  [
+                                          "A position is what someone says they want; an interest is why they want it. Two people can hold opposite positions that serve the same interest, which means there is usually a solution neither has proposed.",
+                                          "Ask why until you reach something that would still matter if the plan changed. That is the interest you can work with."
+                                      ],
+                             "bullets":  [
+                                             "Ask what outcome the other person is protecting",
+                                             "Look for constraints both of you must respect",
+                                             "Name the trade-off out loud instead of arguing past it"
+                                         ]
+                         },
+                         {
+                             "heading":  "De-escalate before you persuade",
+                             "body":  [
+                                          "Nobody accepts a proposal from someone they feel unheard by. Lower the temperature first: acknowledge what is true in their position, then add what they are missing.",
+                                          "Move the conversation from blame to facts. What do we agree happened, and where exactly do our readings differ?"
+                                      ]
+                         },
+                         {
+                             "heading":  "Repair the relationship afterwards",
+                             "body":  [
+                                          "Disagreements leave residue even when resolved. A short private follow-up, acknowledging the friction and confirming the working relationship, clears most of it.",
+                                          "Never win a technical argument by making a colleague feel small. The cost shows up in every later decision."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Ask why until you reach the interest beneath the position",
+                          "Acknowledge what is true in their view before adding yours",
+                          "Move from blame to shared facts before proposing solutions",
+                          "Look for constraints both sides must respect",
+                          "Repair the relationship after the disagreement ends"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Two engineers, one design",
+                             "body":  "One wants speed, the other wants flexibility. Underneath, both want to avoid a painful rewrite. Naming that shared interest makes a third option visible: ship the fast version behind an interface that costs almost nothing now."
+                         },
+                         {
+                             "title":  "A heated standup",
+                             "body":  "A disagreement gets personal. The recovery is a five-minute private conversation about what each person was trying to protect, followed by an agreed decision rule for next time."
+                         }
+                     ],
+        "mistakes":  [
+                         "Arguing positions instead of exploring interests",
+                         "Escalating to a manager as the first move",
+                         "Winning the point and losing the working relationship",
+                         "Letting a resolved disagreement stay unresolved personally"
+                     ],
+        "practiceTip":  "In your next disagreement, write one sentence describing the other side\u0027s case so well they would agree you understood it."
+    },
+    {
+        "id":  "emotional_intelligence",
+        "subject":  "emotional_intelligence",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Emotional Intelligence",
+        "tagline":  "Read the room, then manage yourself",
+        "icon":  "bi-heart",
+        "readingTime":  6,
+        "summary":  "Emotional intelligence is the ability to notice emotions accurately, in yourself and in others, and to use that information deliberately. In technical work it shows up as composure under pressure and as reading a room before acting in it.",
+        "sections":  [
+                         {
+                             "heading":  "Self-awareness comes first",
+                             "body":  [
+                                          "You cannot manage a state you have not noticed. Learn your own signals: the moment your writing gets clipped, when you start re-reading the same paragraph, when you need to leave the room.",
+                                          "Name the state to yourself without judgement. Labelling an emotion measurably reduces its grip, which is why the pause works."
+                                      ],
+                             "bullets":  [
+                                             "Track your early warning signs of stress",
+                                             "Separate the trigger from your interpretation of it",
+                                             "Use a deliberate pause before responding when activated"
+                                         ]
+                         },
+                         {
+                             "heading":  "Empathy is a hypothesis",
+                             "body":  [
+                                          "You cannot read minds, but you can form a hypothesis about what someone is experiencing and check it. That is far better than assuming they share your context.",
+                                          "Empathy does not mean agreement. It means accounting for the other person\u0027s reality when you decide how to act."
+                                      ]
+                         },
+                         {
+                             "heading":  "Regulation is a skill, not a personality",
+                             "body":  [
+                                          "Composure is a practice, like any other. Sleep, breaks and boundaries are not soft; they are the inputs that determine whether you can regulate at all.",
+                                          "When you cannot regulate, say so plainly and step back. Announcing your state is always allowed, and usually respected."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Learn your own early warning signs of stress",
+                          "Name the state without judgement before acting",
+                          "Treat your read of someone\u0027s emotion as a hypothesis to check",
+                          "Empathy means accounting for their reality, not agreeing with it",
+                          "Say your state out loud when you cannot regulate it"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "A tense code review",
+                             "body":  "You notice your replies getting shorter. Instead of sending one more comment, you write that you will return after a break, then re-read the thread and ask a question instead of asserting."
+                         },
+                         {
+                             "title":  "A frustrated teammate",
+                             "body":  "Rather than solving immediately, you say what you think they are frustrated about and ask whether that is right. Being understood usually lowers the temperature more than a fix does."
+                         }
+                     ],
+        "mistakes":  [
+                         "Treating a bad day as a permanent verdict about a person",
+                         "Confusing empathy with agreement",
+                         "Suppressing emotions until they leak out sideways",
+                         "Ignoring the physical inputs that make regulation possible"
+                     ],
+        "practiceTip":  "Keep a one-line note of what activated you each day for a week. Patterns show up faster than you expect."
+    },
+    {
+        "id":  "workplace_ethics",
+        "subject":  "workplace_ethics",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Workplace Ethics \u0026 Professionalism",
+        "tagline":  "Behave the same when nobody is watching",
+        "icon":  "bi-shield-check",
+        "readingTime":  5,
+        "summary":  "Professional ethics is the set of defaults you apply when nobody is watching and no rule is written. Trust is built from small, consistent choices and destroyed by a single visible compromise.",
+        "sections":  [
+                         {
+                             "heading":  "Integrity is a habit, not a dilemma",
+                             "body":  [
+                                          "Most ethical failures are not dramatic decisions; they are small conveniences taken once and then repeated. The honest estimate, the credit given properly, the data not quietly excluded.",
+                                          "Decide your defaults in advance for the situations you will actually meet, so the decision is made calmly rather than under pressure."
+                                      ],
+                             "bullets":  [
+                                             "Give credit specifically and publicly; take it rarely",
+                                             "Report the number you measured, including the bad ones",
+                                             "Disclose conflicts of interest before they are discovered"
+                                         ]
+                         },
+                         {
+                             "heading":  "Boundaries protect both sides",
+                             "body":  [
+                                          "Respect for other people\u0027s time, attention and personal information is a professional skill. Silence about a colleague\u0027s private matters is part of the job.",
+                                          "Saying no to unreasonable requests is also ethical: quietly accepting work you cannot do well misleads everyone who depends on you."
+                                      ]
+                         },
+                         {
+                             "heading":  "Escalate early, in the right channel",
+                             "body":  [
+                                          "If you see something unsafe, dishonest or illegal, raise it through the defined channel while it is small. Early reporting is almost always treated as diligence rather than trouble.",
+                                          "Document what you observed, not what you concluded. Facts survive scrutiny; inferences do not."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Decide your defaults in advance, not under pressure",
+                          "Report the measurement, including the inconvenient numbers",
+                          "Give specific public credit; keep confidential matters confidential",
+                          "Disclose conflicts before someone else finds them",
+                          "Escalate early with observations, not conclusions"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "A tempting shortcut",
+                             "body":  "A test can be skipped to hit a release date. The professional move is to state the risk clearly, in writing, and let the decision be made by someone accountable for it."
+                         },
+                         {
+                             "title":  "Credit for shared work",
+                             "body":  "A demo goes well and everyone thanks you. You name the three people whose work actually made it possible, specifically. Trust compounds from exactly this."
+                         }
+                     ],
+        "mistakes":  [
+                         "Taking quiet credit for shared work",
+                         "Hiding a bad metric instead of explaining it",
+                         "Treating confidentiality as optional once a secret is boring",
+                         "Accepting work you cannot deliver to avoid a difficult conversation"
+                     ],
+        "practiceTip":  "Before each commitment, ask whether you would be comfortable if it appeared in a public document with your name on it."
+    },
+    {
+        "id":  "career_planning",
+        "subject":  "career_planning",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Career Planning \u0026 Growth",
+        "tagline":  "Build the next role before you need it",
+        "icon":  "bi-graph-up-arrow",
+        "readingTime":  6,
+        "summary":  "Careers are built from deliberate compounding, not from occasional lucky breaks. The people who move fastest are usually the ones who chose a direction early, collected the right kind of evidence, and made their work visible.",
+        "sections":  [
+                         {
+                             "heading":  "Choose a direction, then test it",
+                             "body":  [
+                                          "A generalist drift feels safe and is hard to explain. Pick a direction you can defend, and collect evidence: projects, shipped work, measurable outcomes.",
+                                          "Directions are hypotheses too. Revisit them once or twice a year with honest evidence, not anxiety."
+                                      ],
+                             "bullets":  [
+                                             "Name the role you want in two years and the gap to it",
+                                             "Prefer projects that produce visible evidence",
+                                             "Track outcomes, not hours or effort"
+                                         ]
+                         },
+                         {
+                             "heading":  "Networking is maintenance, not promotion",
+                             "body":  [
+                                          "The strongest networks are built before you need them, by being useful without expectation. A short message that helps someone is worth more than a hundred connection requests.",
+                                          "Keep in touch with people you worked well with. Most good roles are filled by someone who was already known."
+                                      ]
+                         },
+                         {
+                             "heading":  "Interviews are demonstrations, not quizzes",
+                             "body":  [
+                                          "An interview is a sample of how you think and work together. Narrate your reasoning, ask clarifying questions, and treat it as a collaboration rather than an exam.",
+                                          "Prepare evidence for the claims on your CV: what you did, what changed, what you learned. The story matters more than the technology list."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Choose a direction you can defend, and revisit it with evidence",
+                          "Collect visible evidence: shipped work and outcomes",
+                          "Be useful to your network before you need it",
+                          "Narrate your reasoning during interviews; treat them as collaboration",
+                          "Track outcomes rather than effort"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Preparing for a target role",
+                             "body":  "You want to move into platform work. You take the internal migration nobody wanted, cut deployment time measurably, and write it up. That is an interview answer before the interview."
+                         },
+                         {
+                             "title":  "A stalled application",
+                             "body":  "Instead of re-applying to the same postings, you ask two people in the field what their teams struggle with, then build one small thing that helps. Visibility beats volume."
+                         }
+                     ],
+        "mistakes":  [
+                         "Drifting as a generalist with no defensible story",
+                         "Networking only when job hunting",
+                         "Listing technologies instead of outcomes",
+                         "Treating an interview as an exam to pass rather than a collaboration"
+                     ],
+        "practiceTip":  "Every quarter, write one paragraph describing what you can now do that you could not do a year ago."
+    },
+    {
+        "id":  "presentation",
+        "subject":  "presentation",
+        "kind":  "soft",
+        "category":  "Soft Skills",
+        "name":  "Presentation \u0026 Storytelling",
+        "tagline":  "One slide, one idea, one story",
+        "icon":  "bi-easel",
+        "readingTime":  6,
+        "summary":  "A presentation is not a document read aloud; it is a guided experience with a beginning, a turn and a landing. Structure and narrative do more for comprehension than polish or slides ever will.",
+        "sections":  [
+                         {
+                             "heading":  "Structure carries the audience",
+                             "body":  [
+                                          "Open with the situation, name the problem or opportunity, then the resolution. Audiences forgive plain slides; they do not forgive losing the thread.",
+                                          "One idea per slide. If a slide needs two titles, it needs to be two slides."
+                                      ],
+                             "bullets":  [
+                                             "State the takeaway in the first thirty seconds",
+                                             "Build slides from the talk, not the talk from the slides",
+                                             "Rehearse the transitions, which is where talks break"
+                                         ]
+                         },
+                         {
+                             "heading":  "Story beats summary",
+                             "body":  [
+                                          "People remember narrative. A concrete problem, a real obstacle and a resolution land further than an abstraction list.",
+                                          "Use specifics deliberately: a number, a person, a moment. They anchor the abstract claim you are making."
+                                      ]
+                         },
+                         {
+                             "heading":  "Delivery is mostly preparation",
+                             "body":  [
+                                          "Nerves are normal and mostly disappear once you are speaking. The fix is preparation, not confidence: know your first two sentences cold and have a clear landing.",
+                                          "Handle questions by repeating them, then answering the question asked. If you do not know, say so and follow up in writing."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Open with situation, problem and resolution",
+                          "One idea per slide; the talk drives the slides",
+                          "Use concrete specifics to anchor abstract claims",
+                          "Know your opening and your closing cold",
+                          "Repeat the question, then answer what was asked"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "A technical talk that landed",
+                             "body":  "Instead of listing features, the speaker opened with the incident that motivated the work, showed the two minutes of chaos, then the fix. The feature list arrived as evidence, not as the point."
+                         },
+                         {
+                             "title":  "A design review",
+                             "body":  "One slide per decision, each with the option chosen, the alternative rejected and the reason. Reviewers can argue with a decision instead of decoding a diagram."
+                         }
+                     ],
+        "mistakes":  [
+                         "Reading dense slides aloud",
+                         "Burying the takeaway at the end of a data dump",
+                         "Skipping rehearsal because the content is familiar",
+                         "Answering a different question than the one asked"
+                     ],
+        "practiceTip":  "Give your next five-minute talk to one colleague first. The questions they ask are the questions your audience will ask."
+    }
+]

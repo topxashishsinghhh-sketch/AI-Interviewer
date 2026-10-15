@@ -1,4 +1,4 @@
-/**
+﻿/**
  * offline.js — Static / GitHub Pages offline adapter for AI Interviewer.
  *
  * Intercepts every /api/* fetch() call and handles it entirely in the
@@ -60,13 +60,13 @@
   }
 
   /* -----------------------------------------------------------------------
-     Soft-skills theory cache — loaded once from soft_skills_theory.json
+     Theory cache — loaded once from theory.json (DSA sheet, core CS, soft skills)
   ----------------------------------------------------------------------- */
-  var _theory = null;   // { subjectId: article }
+  var _theory = null;   // { articleId: article }
 
   function fetchTheory() {
     if (_theory) return Promise.resolve(_theory);
-    return fetch('./data/soft_skills_theory.json')
+    return fetch('./data/theory.json')
       .then(function (r) { return r.json(); })
       .then(function (arr) {
         var map = {};
@@ -77,6 +77,76 @@
         try { localStorage.setItem(LS_SOFT_SKILLS, JSON.stringify(map)); } catch (e) {}
         return _theory;
       });
+  }
+
+  function theorySubjects() {
+    if (_theory) return _theory;
+    // Warm the cache from localStorage first so the section works on a second
+    // visit even if the JSON fetch has not run yet.
+    var cached = null;
+    try { cached = JSON.parse(localStorage.getItem(LS_SOFT_SKILLS) || 'null'); } catch (e) { cached = null; }
+    if (cached) { _theory = cached; return _theory; }
+    return {};
+  }
+
+  function countQuestionsFor(article) {
+    var qs = questionsCache() || [];
+    var n = 0;
+    for (var i = 0; i < qs.length; i++) {
+      if (article.topic && qs[i].topic === article.topic) { n++; continue; }
+      if (qs[i].subject === article.subject) n++;
+    }
+    return n;
+  }
+
+  function renderTheoryList(store, search, kindOnly) {
+    var subjectFilter = (search && search.get('subject')) || '';
+    var out = [];
+    var keys = Object.keys(store);
+    for (var i = 0; i < keys.length; i++) {
+      var a = store[keys[i]];
+      if (kindOnly && a.kind !== kindOnly) continue;
+      if (subjectFilter && a.subject !== subjectFilter && a.id !== subjectFilter) continue;
+      out.push({
+        id: a.id, subject: a.subject, topic: a.topic || '', kind: a.kind || 'technical',
+        category: a.category || 'Other', name: a.name, tagline: a.tagline, icon: a.icon,
+        readingTime: a.readingTime, summary: a.summary,
+        questionCount: countQuestionsFor(a)
+      });
+    }
+    return ok(out);
+  }
+
+  function handleTheoryList(search, kindOnly) {
+    var store = theorySubjects();
+    if (!Object.keys(store).length) {
+      // Nothing cached yet: pull the file once, then answer from it.
+      return fetchTheory().then(function () {
+        return renderTheoryList(theorySubjects(), search, kindOnly);
+      }, function () {
+        return err('Theory articles are not available offline', 503);
+      });
+    }
+    return renderTheoryList(store, search, kindOnly);
+  }
+
+  function handleTheoryArticle(id) {
+    var store = theorySubjects();
+    var article = store[id];
+    if (article) return ok(withCount(article));
+    return fetchTheory().then(function (map) {
+      var found = map[id];
+      if (!found) return err('No theory article named ' + id, 404);
+      return ok(withCount(found));
+    }, function () {
+      return err('Theory articles are not available offline', 503);
+    });
+  }
+
+  function withCount(article) {
+    var copy = JSON.parse(JSON.stringify(article));
+    copy.questionCount = countQuestionsFor(copy);
+    return copy;
   }
 
   /* -----------------------------------------------------------------------
@@ -654,64 +724,6 @@
   }
 
   /* -----------------------------------------------------------------------
-     Soft Skills — theory articles plus practice questions
-  ----------------------------------------------------------------------- */
-  function softTheoryStore() {
-    if (_theory) return _theory;
-    // Warm the cache from localStorage first so the section works on a second
-    // visit even if the JSON fetch has not run yet.
-    var cached = null;
-    try { cached = JSON.parse(localStorage.getItem(LS_SOFT_SKILLS) || 'null'); } catch (e) { cached = null; }
-    if (cached) { _theory = cached; return _theory; }
-    return {};
-  }
-
-  function softTheorySubjects() {
-    var store = softTheoryStore();
-    var out = [];
-    for (var id in store) {
-      if (Object.prototype.hasOwnProperty.call(store, id)) {
-        out.push(store[id]);
-      }
-    }
-    return out;
-  }
-
-  function countQuestionsFor(subject) {
-    var qs = questionsCache() || [];
-    var n = 0;
-    for (var i = 0; i < qs.length; i++) {
-      if (qs[i].subject === subject) n++;
-    }
-    return n;
-  }
-
-  function handleSoftSkillSubjects() {
-    var subjects = softTheorySubjects();
-    if (!subjects.length) {
-      return err('Soft-skills theory is not available offline', 503);
-    }
-    var out = subjects.map(function (s) {
-      return {
-        id: s.id, name: s.name, tagline: s.tagline, icon: s.icon,
-        readingTime: s.readingTime, summary: s.summary,
-        questionCount: countQuestionsFor(s.id)
-      };
-    });
-    out.sort(function (a, b) { return a.name.localeCompare(b.name); });
-    return ok(out);
-  }
-
-  function handleSoftSkill(id) {
-    var store = softTheoryStore();
-    var subject = store[id];
-    if (!subject) return err('No soft-skill subject named ' + id, 404);
-    var copy = JSON.parse(JSON.stringify(subject));
-    copy.questionCount = countQuestionsFor(id);
-    return ok(copy);
-  }
-
-  /* -----------------------------------------------------------------------
      Admin
   ----------------------------------------------------------------------- */
   function handleAdminStats() {
@@ -778,10 +790,13 @@
     var finishMatch = path.match(/^\/api\/interviews\/([^/]+)\/finish$/);
     if (finishMatch && method === 'POST') return handleFinishInterview(finishMatch[1]);
 
-    // Soft Skills — theory comes from the local JSON, practice from the bank
-    if (method === 'GET' && path === '/api/soft-skills') return handleSoftSkillSubjects();
+    // Theory — DSA sheet, core CS subjects and soft skills, from local JSON
+    if (method === 'GET' && path === '/api/theory') return handleTheoryList(search);
+    if (method === 'GET' && path === '/api/soft-skills') return handleTheoryList(null, 'soft');
+    var theoryMatch = path.match(/^\/api\/theory\/([^/]+)$/);
+    if (theoryMatch && method === 'GET') return handleTheoryArticle(decodeURIComponent(theoryMatch[1]));
     var softMatch = path.match(/^\/api\/soft-skills\/([^/]+)$/);
-    if (softMatch && method === 'GET') return handleSoftSkill(decodeURIComponent(softMatch[1]));
+    if (softMatch && method === 'GET') return handleTheoryArticle(decodeURIComponent(softMatch[1]));
 
     // Admin
     if (path === '/api/admin/stats')     return handleAdminStats();

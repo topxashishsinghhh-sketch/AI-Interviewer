@@ -1,0 +1,175 @@
+[
+  {
+    "id": "aptitude",
+    "subject": "aptitude",
+    "kind": "technical",
+    "category": "Aptitude & Reasoning",
+    "name": "Quantitative Aptitude",
+    "tagline": "Percentages, ratios and time-speed, fast and exactly",
+    "icon": "bi-calculator",
+    "readingTime": 7,
+    "summary": "Aptitude questions are arithmetic with a time limit. The skill is not long division but recognising the structure: percentages, ratios and inverse proportionality convert most questions into one or two short steps.",
+    "sections": [
+      {
+        "heading": "Percentages are fractions in disguise",
+        "body": [
+          "A percentage change followed by the reverse change is not a return to the start: a 20% rise then a 20% fall leaves 96 percent of the original, because the two percentages apply to different bases. Working in multipliers makes this automatic.",
+          "Successive changes multiply. Three changes of +10%, +20% and -10% are 1.1 times 1.2 times 0.9, which is 1.188, an 18.8 percent net rise."
+        ],
+        "bullets": [
+          "x% of y equals y% of x; pick the easier order",
+          "Successive percentage changes multiply",
+          "Fraction equivalents: 12.5% is 1/8, 37.5% is 3/8",
+          "Profit and loss are percentages on cost price unless stated",
+          "Simple interest is linear; compound interest multiplies"
+        ]
+      },
+      {
+        "heading": "Ratios and inverse relations",
+        "body": [
+          "A ratio a:b means the parts share a total in those proportions, so scaling the ratio scales the share. Time, speed and distance are inversely related at fixed distance, and time and work are inversely related at fixed rate.",
+          "For work problems, convert every person into a rate. If A finishes in 6 days and B in 12, their rates are 1/6 and 1/12 per day, and together they finish in 1/(1/6 + 1/12) days."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "A percentage rise and an equal fall do not cancel",
+      "Successive changes multiply, they do not add",
+      "Ratios scale shares; inverse relations underpin time-speed and work",
+      "Convert people and machines to rates before combining",
+      "Memorise common fraction equivalents to save time"
+    ],
+    "examples": [
+      {
+        "title": "Successive discounts",
+        "body": "Two successive 10 percent discounts give 0.9 times 0.9, or 0.81, which is a single 19 percent discount, not 20 percent."
+      },
+      {
+        "title": "Pipes filling a tank",
+        "body": "One pipe fills in 20 minutes and another in 30. Rates are 1/20 and 1/30 per minute, together 1/12, so the tank fills in 12 minutes."
+      }
+    ],
+    "mistakes": [
+      "Adding percentages that apply to different bases",
+      "Using cost price where selling price was meant",
+      "Adding rates instead of adding their reciprocals",
+      "Forgetting unit conversions in speed problems"
+    ],
+    "practiceTip": "Convert every percentage to a fraction the moment you read it. The arithmetic that follows is usually two lines."
+  },
+  {
+    "id": "reasoning",
+    "subject": "reasoning",
+    "kind": "technical",
+    "category": "Aptitude & Reasoning",
+    "name": "Logical Reasoning",
+    "tagline": "Follow the rule, not the plausibility",
+    "icon": "bi-puzzle-fill",
+    "readingTime": 6,
+    "summary": "Logical reasoning questions supply a rule and ask what follows. The discipline is to answer from the rule alone, and to resist options that are merely true in the everyday world.",
+    "sections": [
+      {
+        "heading": "Syllogisms: what follows, not what is likely",
+        "body": [
+          "With 'all A are B' and 'some B are C', it does not follow that any A is a C. The C that are B need not be the B that are A. Drawing Venn diagrams removes the guesswork.",
+          "The reliable move is to test each conclusion by trying to construct a case where the premises hold and the conclusion fails. If you can, the conclusion does not follow."
+        ],
+        "bullets": [
+          "All A are B does not imply all B are A",
+          "Some A are B does not imply some B are not A",
+          "A conclusion follows only if no counterexample is possible",
+          "Draw the diagram rather than reasoning by feel"
+        ]
+      },
+      {
+        "heading": "Series, coding and arrangement",
+        "body": [
+          "Number series usually hide arithmetic progressions in the differences, or two interleaved series. Letter series often work on positions with shifting gaps. Coding questions map symbols consistently, so write the mapping down before answering.",
+          "Seating and arrangement problems are constraint satisfaction. Start from the fixed points, the clues that name an absolute position, and only then place the relative clues."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Answer from the stated rule, not from everyday plausibility",
+      "A conclusion follows only if no counterexample exists",
+      "Check second differences when a series is not arithmetic",
+      "Write the code mapping before answering",
+      "Place absolute clues first in arrangement problems"
+    ],
+    "examples": [
+      {
+        "title": "The trap in syllogisms",
+        "body": "All roses are flowers and some flowers fade quickly does not imply some roses fade quickly, because the fading flowers need not be roses."
+      },
+      {
+        "title": "Two interleaved series",
+        "body": "A series that alternates between one arithmetic progression and another looks irregular until you split it into odd and even positions."
+      }
+    ],
+    "mistakes": [
+      "Choosing the answer that sounds true rather than the one that follows",
+      "Assuming a series is arithmetic before checking second differences",
+      "Guessing in arrangement problems instead of fixing absolute positions",
+      "Inventing a mapping beyond the one given"
+    ],
+    "practiceTip": "For each reasoning question, state the rule in your own words first. Misreading the rule is the most common cause of a wrong answer."
+  },
+  {
+    "id": "accounting",
+    "subject": "accounting",
+    "kind": "technical",
+    "category": "Aptitude & Reasoning",
+    "name": "Accounting Basics",
+    "tagline": "Every transaction twice, and it must still balance",
+    "icon": "bi-journal-text",
+    "readingTime": 6,
+    "summary": "Accounting records every transaction in at least two accounts so that the books stay balanced. The three statements then describe the same business from three angles: position, performance, and cash.",
+    "sections": [
+      {
+        "heading": "Double entry and the accounting equation",
+        "body": [
+          "Assets equal liabilities plus equity. Every transaction changes at least two accounts so the equation stays true, which is the check that makes the whole system self-verifying.",
+          "Debits increase assets and expenses; credits increase liabilities, equity and revenue. The words are conventional, not directional: a debit is simply the left side of an account."
+        ],
+        "bullets": [
+          "Assets = liabilities + equity, always",
+          "Debits increase assets and expenses",
+          "Credits increase liabilities, equity and revenue",
+          "Accrual basis records when earned, not when paid",
+          "The trial balance proves the ledger balances"
+        ]
+      },
+      {
+        "heading": "The three statements",
+        "body": [
+          "The balance sheet shows position at a point in time. The income statement shows performance over a period, revenue minus expenses. The cash flow statement shows actual cash movement, split into operating, investing and financing.",
+          "Profit and cash differ mainly through accruals and non-cash items such as depreciation, which is why a profitable company can still run out of cash."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Assets equal liabilities plus equity at all times",
+      "Every transaction has at least two entries",
+      "Debits increase assets and expenses; credits the rest",
+      "Depreciation is non-cash, so profit and cash diverge",
+      "The three statements describe position, performance and cash"
+    ],
+    "examples": [
+      {
+        "title": "Buying equipment on credit",
+        "body": "Assets rise by the equipment value and liabilities rise by the same amount, so the equation holds. No cash moves, which is why the cash flow statement is unaffected at that moment."
+      },
+      {
+        "title": "Profitable but out of cash",
+        "body": "Sales are recorded on credit, increasing profit and receivables, while cash leaves for expenses. Profit is high but cash is low until receivables are collected."
+      }
+    ],
+    "mistakes": [
+      "Treating a debit as a decrease",
+      "Confusing profit with cash",
+      "Ignoring depreciation as a real cost",
+      "Recording a transaction in only one account"
+    ],
+    "practiceTip": "For any transaction, state the two accounts affected before writing the entry. If you cannot find two, you have missed part of the transaction."
+  }
+]

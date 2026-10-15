@@ -1,0 +1,118 @@
+[
+  {
+    "id": "hr",
+    "subject": "hr",
+    "kind": "technical",
+    "category": "HR & Behavioural",
+    "name": "HR & Behavioural Interviews",
+    "tagline": "Structured stories that show how you work",
+    "icon": "bi-person-badge",
+    "readingTime": 6,
+    "summary": "Behavioural questions ask for evidence, not opinion. The strongest answers are short, specific stories with a clear situation, the decision you made, the action you took and the measurable result.",
+    "sections": [
+      {
+        "heading": "STAR is the shape, not a script",
+        "body": [
+          "Situation gives enough context to make the story make sense. Task states what was yours to do. Action is the bulk, describing what you specifically did. Result states the outcome, with numbers where they exist.",
+          "Most answers fail by spending eighty percent of the time on situation. Keep it to two sentences and let action carry the story, because that is what the interviewer is assessing."
+        ],
+        "bullets": [
+          "Two sentences of situation, no more",
+          "Use 'I' for what you did, 'we' for the team context",
+          "Quantify the result: time, cost, error rate, revenue",
+          "One story can serve several questions if you vary the emphasis",
+          "Prepare three stories that cover conflict, failure and impact"
+        ]
+      },
+      {
+        "heading": "Answer the question actually asked",
+        "body": [
+          "Interviewers listen for whether the story matches the question. A conflict question answered with a success story reads as avoidance, however impressive the achievement.",
+          "When asked about a failure, the expected shape is: what went wrong, what you did about it, and what you changed afterwards. Skipping the last part is what most candidates get wrong."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Situation short, action detailed, result quantified",
+      "Be honest about your own contribution within the team",
+      "Match the story to the question asked",
+      "For failure questions, always end with what changed",
+      "Three prepared stories cover most interviews"
+    ],
+    "examples": [
+      {
+        "title": "A conflict question",
+        "body": "Situation: two engineers disagreed on an API shape. Task: I owned the interface. Action: I listed the constraints each design protected and proposed a third design satisfying both. Result: adopted, and the disputed point never had to be revisited."
+      },
+      {
+        "title": "A failure question",
+        "body": "Situation: I shipped a change that broke a downstream consumer. Action: I rolled back immediately, notified the team, added the missing integration test. Result: no recurrence in the following quarter, and the rollback checklist is now standard."
+      }
+    ],
+    "mistakes": [
+      "Describing the team's work as if it were yours",
+      "Answering a failure question with a success story",
+      "Leaving out the result",
+      "Reciting a memorised paragraph that does not fit the question"
+    ],
+    "practiceTip": "Write three stories in STAR form and read them aloud. Anything that takes longer than ninety seconds is too long."
+  },
+  {
+    "id": "hr_situational",
+    "subject": "hr",
+    "topic": "situational",
+    "kind": "technical",
+    "category": "HR & Behavioural",
+    "name": "Situational & Workplace Questions",
+    "tagline": "Show judgement under a hypothetical constraint",
+    "icon": "bi-question-circle",
+    "readingTime": 5,
+    "summary": "Situational questions pose a hypothetical conflict, such as an impossible deadline or a disagreement with a manager. They are assessing judgement and self-awareness, and the best answers name the trade-off before choosing.",
+    "sections": [
+      {
+        "heading": "Name the tension, then decide",
+        "body": [
+          "Almost every situational question hides a genuine tension: quality against speed, honesty against harmony, individual work against team goals. Saying what the tension is demonstrates that you understood the question.",
+          "Then commit to an answer. Waffling between options is read as indecision, and hedging with 'it depends' without saying what it depends on is worse than a wrong choice."
+        ],
+        "bullets": [
+          "State the trade-off you see",
+          "Give a first action, not a whole philosophy",
+          "Mention what information would change your mind",
+          "Prefer honest, early communication over quiet absorption"
+        ]
+      },
+      {
+        "heading": "Questions about you",
+        "body": [
+          "Strengths should be evidenced, not asserted: name the strength and the story that proves it. Weaknesses should be real, containable and improving, never a disguised strength.",
+          "'Where do you see yourself in five years' is asking whether your goals match the role. Align your answer with what the job actually offers."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Name the trade-off before choosing",
+      "Commit to an answer rather than hedging",
+      "Evidences strengths; weaknesses should be real and improving",
+      "Prefer early honest communication to quiet absorption",
+      "Match your goals answer to what the role offers"
+    ],
+    "examples": [
+      {
+        "title": "An impossible deadline",
+        "body": "The tension is scope against date. I would confirm what must ship, cut or defer the rest explicitly, and tell stakeholders which items moved and when they land. I would not silently deliver partial work on all fronts."
+      },
+      {
+        "title": "Disagreeing with your manager",
+        "body": "I would ask what outcome they are optimising for, present the evidence for my concern once, and commit to their decision while recording the risk. Escalating immediately or ignoring the decision are both wrong."
+      }
+    ],
+    "mistakes": [
+      "Answering with a philosophy instead of a first action",
+      "Claiming a weakness that is obviously a strength",
+      "Hedging so much that no position is taken",
+      "Ignoring the trade-off the question is really testing"
+    ],
+    "practiceTip": "Answer every situational question in three sentences: the tension, your first action, and what would change your mind."
+  }
+]

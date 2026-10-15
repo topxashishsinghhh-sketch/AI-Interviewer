@@ -177,6 +177,14 @@ var api = {
   softSkill: function (id) {
     return request('/api/soft-skills/' + encodeURIComponent(id));
   },
+  theory: function (subject) {
+    var path = '/api/theory';
+    if (subject) path += '?subject=' + encodeURIComponent(subject);
+    return request(path);
+  },
+  theoryArticle: function (id) {
+    return request('/api/theory/' + encodeURIComponent(id));
+  },
   skills: function () {
     return request('/api/skills');
   },
@@ -273,50 +281,72 @@ function skillChips(p) {
 
 var views = {};
 
-/* ---- Soft Skills section ---- */
+/* ---- Theory section: DSA sheet, core CS subjects and soft skills ---- */
 
-views.softSkills = function (list) {
+views.theory = function (list) {
   var parts = [];
   parts.push('<div class="soft-intro">');
-  parts.push('<h2>Soft Skills</h2>');
-  parts.push('<p class="muted">Interviewers score behaviour as heavily as code. Each subject below pairs a short ' +
-             'theory article you can read end to end with practice questions that test whether it stuck.</p>');
+  parts.push('<h2>Theory</h2>');
+  parts.push('<p class="muted">Study notes for every subject on the platform: the DSA sheet, the core CS ' +
+             'subjects, and soft skills. Each article pairs the explanation with the practice questions ' +
+             'that test it, so reading and solving stay connected.</p>');
   parts.push('</div>');
   if (!list.length) {
-    parts.push('<p class="notice">No soft-skill subjects are available yet.</p>');
+    parts.push('<p class="notice">No theory articles are available yet.</p>');
     return parts.join('');
   }
-  parts.push('<div class="soft-grid">');
+
+  // Group by category, keeping the first-seen order from the data file.
+  var groups = [];
+  var byCategory = {};
   for (var i = 0; i < list.length; i++) {
-    var s = list[i];
-    parts.push('<button type="button" class="soft-card" data-soft-skill="' + esc(s.id) + '">');
-    parts.push('<div class="soft-card-top"><i class="bi ' + esc(s.icon || 'bi-star') + '"></i>' +
-               '<span class="soft-card-meta">' + esc(String(s.readingTime || 5)) + ' min read</span></div>');
-    parts.push('<h3>' + esc(s.name) + '</h3>');
-    parts.push('<p class="soft-tagline">' + esc(s.tagline || '') + '</p>');
-    parts.push('<p class="soft-summary">' + esc(s.summary || '') + '</p>');
-    parts.push('<div class="soft-card-foot"><span>' + esc(String(s.questionCount || 0)) + ' practice questions</span>' +
-               '<span class="soft-read">Read theory <i class="bi bi-arrow-right"></i></span></div>');
-    parts.push('</button>');
+    var a = list[i];
+    var key = a.category || 'Other';
+    if (!byCategory[key]) {
+      byCategory[key] = [];
+      groups.push(key);
+    }
+    byCategory[key].push(a);
   }
-  parts.push('</div>');
+
+  for (var g = 0; g < groups.length; g++) {
+    parts.push('<h3 class="soft-group-title">' + esc(groups[g]) + '</h3>');
+    parts.push('<div class="soft-grid">');
+    var items = byCategory[groups[g]];
+    for (var j = 0; j < items.length; j++) {
+      var s = items[j];
+      parts.push('<button type="button" class="soft-card" data-theory="' + esc(s.id) + '">');
+      parts.push('<div class="soft-card-top"><i class="bi ' + esc(s.icon || 'bi-star') + '"></i>' +
+                 '<span class="soft-card-meta">' + esc(String(s.readingTime || 5)) + ' min read</span></div>');
+      parts.push('<h3>' + esc(s.name) + '</h3>');
+      parts.push('<p class="soft-tagline">' + esc(s.tagline || '') + '</p>');
+      parts.push('<p class="soft-summary">' + esc(s.summary || '') + '</p>');
+      parts.push('<div class="soft-card-foot"><span>' + esc(String(s.questionCount || 0)) + ' practice questions</span>' +
+                 '<span class="soft-read">Read <i class="bi bi-arrow-right"></i></span></div>');
+      parts.push('</button>');
+    }
+    parts.push('</div>');
+  }
   return parts.join('');
 };
 
-views.softSkill = function (subject) {
+views.theoryArticle = function (article) {
   var parts = [];
   parts.push('<button type="button" class="back-link" id="soft-skill-back">' +
-             '&larr; All soft-skill subjects</button>');
+             '&larr; All theory</button>');
   parts.push('<article class="soft-article">');
   parts.push('<header class="soft-article-head">');
-  parts.push('<div class="soft-article-icon"><i class="bi ' + esc(subject.icon || 'bi-star') + '"></i></div>');
-  parts.push('<div><h2>' + esc(subject.name || '') + '</h2>');
-  parts.push('<p class="soft-tagline">' + esc(subject.tagline || '') + '</p></div>');
-  parts.push('<span class="soft-card-meta">' + esc(String(subject.readingTime || 5)) + ' min read</span>');
+  parts.push('<div class="soft-article-icon"><i class="bi ' + esc(article.icon || 'bi-star') + '"></i></div>');
+  parts.push('<div><h2>' + esc(article.name || '') + '</h2>');
+  parts.push('<p class="soft-tagline">' + esc(article.tagline || '') + '</p></div>');
+  parts.push('<span class="soft-card-meta">' + esc(String(article.readingTime || 5)) + ' min read</span>');
   parts.push('</header>');
-  parts.push('<p class="soft-lead">' + esc(subject.summary || '') + '</p>');
+  if (article.category) {
+    parts.push('<p class="soft-category">' + esc(article.category) + '</p>');
+  }
+  parts.push('<p class="soft-lead">' + esc(article.summary || '') + '</p>');
 
-  var sections = subject.sections || [];
+  var sections = article.sections || [];
   for (var i = 0; i < sections.length; i++) {
     parts.push('<section class="soft-section">');
     parts.push('<h3>' + esc(sections[i].heading || '') + '</h3>');
@@ -335,7 +365,7 @@ views.softSkill = function (subject) {
     parts.push('</section>');
   }
 
-  var keyPoints = subject.keyPoints || [];
+  var keyPoints = article.keyPoints || [];
   if (keyPoints.length) {
     parts.push('<section class="soft-panel">');
     parts.push('<h3><i class="bi bi-check2-circle me-2"></i>What to remember</h3>');
@@ -346,7 +376,7 @@ views.softSkill = function (subject) {
     parts.push('</ul></section>');
   }
 
-  var examples = subject.examples || [];
+  var examples = article.examples || [];
   if (examples.length) {
     parts.push('<section class="soft-panel">');
     parts.push('<h3><i class="bi bi-lightbulb me-2"></i>In practice</h3>');
@@ -359,7 +389,7 @@ views.softSkill = function (subject) {
     parts.push('</section>');
   }
 
-  var mistakes = subject.mistakes || [];
+  var mistakes = article.mistakes || [];
   if (mistakes.length) {
     parts.push('<section class="soft-panel soft-panel-warn">');
     parts.push('<h3><i class="bi bi-exclamation-triangle me-2"></i>Common mistakes</h3>');
@@ -370,29 +400,29 @@ views.softSkill = function (subject) {
     parts.push('</ul></section>');
   }
 
-  if (subject.practiceTip) {
+  if (article.practiceTip) {
     parts.push('<section class="soft-tip"><i class="bi bi-arrow-repeat me-2"></i>' +
-               '<strong>Practice habit:</strong> ' + esc(subject.practiceTip) + '</section>');
+               '<strong>Practice habit:</strong> ' + esc(article.practiceTip) + '</section>');
   }
   parts.push('</article>');
 
   parts.push('<section class="soft-practice">');
   parts.push('<h3>Practice questions <span class="muted">(' +
-             esc(String(subject.questionCount || 0)) + ')</span></h3>');
+             esc(String(article.questionCount || 0)) + ')</span></h3>');
   parts.push('<div id="soft-skill-practice"></div>');
   parts.push('</section>');
   return parts.join('');
 };
 
-views.softSkillPractice = function (list) {
+views.theoryPractice = function (list) {
   if (!list.length) {
-    return '<p class="notice">No practice questions are available for this subject yet.</p>';
+    return '<p class="notice">No practice questions are available for this article yet.</p>';
   }
   var parts = [];
   parts.push('<table class="table soft-practice-table"><tbody>');
   for (var i = 0; i < list.length; i++) {
     var q = list[i];
-    parts.push('<tr class="soft-practice-row" data-soft-problem="' + esc(q.id) + '">');
+    parts.push('<tr class="soft-practice-row" data-theory-problem="' + esc(q.id) + '">');
     parts.push('<td class="soft-practice-title">' + esc(q.text || '') + '</td>');
     parts.push('<td><span class="pill">' + esc(q.difficulty || '') + '</span></td>');
     parts.push('<td><span class="muted">' + esc(q.type || '') + '</span></td>');
@@ -891,7 +921,7 @@ views.admin = function (stats, users, questions) {
 var NAV = [
   { group: 'Practice' },
   { id: 'problems', label: 'Problems', icon: 'bi-code-slash', nav: true },
-  { id: 'soft-skills', label: 'Soft Skills', icon: 'bi-people', nav: true },
+  { id: 'soft-skills', label: 'Theory', icon: 'bi-mortarboard-fill', nav: true },
   { id: 'start', label: 'Mock Interview', icon: 'bi-mic-fill', nav: true },
   { id: 'daily', label: 'Daily Challenge', icon: 'bi-calendar-check', nav: true },
   { group: 'Analytics' },
@@ -1477,20 +1507,16 @@ function loadDashboard() {
   });
 }
 
-/* --------------------------------------------------------------------------
-   Soft Skills — readable theory per subject, plus its practice questions.
-   -------------------------------------------------------------------------- */
-
-var softSkillState = { id: null };
+var theoryState = { id: null };
 
 function loadSoftSkills() {
-  api.softSkills().then(function (list) {
-    softSkillState.id = null;
-    setHtml('view-soft-skills', views.softSkills(list || []));
-    var cards = document.querySelectorAll('[data-soft-skill]');
+  api.theory().then(function (list) {
+    theoryState.id = null;
+    setHtml('view-soft-skills', views.theory(list || []));
+    var cards = document.querySelectorAll('[data-theory]');
     for (var i = 0; i < cards.length; i++) {
       cards[i].addEventListener('click', function () {
-        loadSoftSkill(this.dataset.softSkill);
+        loadTheoryArticle(this.dataset.theory);
       });
     }
   }).catch(function (e) {
@@ -1498,23 +1524,28 @@ function loadSoftSkills() {
   });
 }
 
-function loadSoftSkill(id) {
-  softSkillState.id = id;
-  api.softSkill(id).then(function (subject) {
-    setHtml('view-soft-skills', views.softSkill(subject || {}));
+function loadTheoryArticle(id) {
+  theoryState.id = id;
+  api.theoryArticle(id).then(function (article) {
+    setHtml('view-soft-skills', views.theoryArticle(article || {}));
     var back = $('soft-skill-back');
     if (back) {
       back.addEventListener('click', function () { loadSoftSkills(); });
     }
-    // Practice questions for this subject, straight from the question bank.
-    api.problems({ subject: subject.id, limit: 0 }).then(function (list) {
+    // Practice questions for this article, straight from the question bank.
+    // Topic-level articles pull their own topic; subject-level ones pull the
+    // whole subject.
+    var query = article.topic
+      ? { subject: article.subject, topic: article.topic, limit: 0 }
+      : { subject: article.subject, limit: 0 };
+    api.problems(query).then(function (list) {
       var host = $('soft-skill-practice');
       if (!host) return;
-      host.innerHTML = views.softSkillPractice(list || [], subject.id);
-      var rows = host.querySelectorAll('[data-soft-problem]');
+      host.innerHTML = views.theoryPractice(list || [], article.id);
+      var rows = host.querySelectorAll('[data-theory-problem]');
       for (var i = 0; i < rows.length; i++) {
         rows[i].addEventListener('click', function () {
-          loadProblem(this.dataset.softProblem);
+          loadProblem(this.dataset.theoryProblem);
         });
       }
     }).catch(function () {
@@ -1909,7 +1940,7 @@ function cmdkItems() {
   // Navigation
   var navViews = [
     { id: 'problems', label: 'Problems' },
-    { id: 'soft-skills', label: 'Soft Skills' },
+    { id: 'soft-skills', label: 'Theory' },
     { id: 'start', label: 'Start interview' },
     { id: 'daily', label: 'Daily challenge' },
     { id: 'dashboard', label: 'Dashboard' },

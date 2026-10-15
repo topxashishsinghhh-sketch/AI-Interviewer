@@ -1,0 +1,244 @@
+[
+  {
+    "id": "networks",
+    "subject": "networks",
+    "kind": "technical",
+    "category": "Computer Networks",
+    "name": "Computer Networks",
+    "tagline": "Layers, because no single problem is tractable at once",
+    "icon": "bi-hdd-network-fill",
+    "readingTime": 7,
+    "summary": "Networking is organised in layers, each solving one problem and offering a service to the one above. Most confusion in networking interviews comes from mixing concerns that belong to different layers.",
+    "sections": [
+      {
+        "heading": "The layers and their jobs",
+        "body": [
+          "The physical layer moves bits. The data link layer moves frames between directly connected nodes and handles local addressing. The network layer routes packets end to end across many hops. The transport layer delivers data between processes, with reliability if required. The application layer carries the protocol of the actual program.",
+          "TCP/IP collapses the OSI model's session and presentation layers into the application layer, which is why the two models never quite line up."
+        ],
+        "bullets": [
+          "IP: addressing and routing, best effort, no delivery guarantee",
+          "TCP: reliable, ordered, connection-oriented byte stream",
+          "UDP: unreliable, unordered, but cheap and connectionless",
+          "ARP: maps IP addresses to local MAC addresses",
+          "DNS: resolves names to addresses"
+        ]
+      },
+      {
+        "heading": "Reliability is a layer decision",
+        "body": [
+          "TCP adds sequence numbers, acknowledgements, retransmission and flow control, which is why a lost packet is invisible to the application. UDP adds none of that, so loss, duplication and reordering are the application's problem.",
+          "Choosing UDP is usually about latency or multicast, not about simplicity. Video calls, DNS queries and game state tolerate some loss far better than they tolerate the delay of retransmission."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Each layer solves one problem for the layer above",
+      "IP routes but does not guarantee delivery",
+      "TCP is reliable and ordered; UDP is neither but is cheap",
+      "ARP resolves local addresses; DNS resolves names",
+      "The OSI and TCP/IP models differ in the upper layers"
+    ],
+    "examples": [
+      {
+        "title": "Why a video call uses UDP",
+        "body": "Retransmitting a dropped video frame arrives too late to display. Dropping it keeps latency low and the picture slightly degraded, which is the better trade."
+      },
+      {
+        "title": "Why a file download uses TCP",
+        "body": "Every byte must arrive exactly once and in order, so retransmission and reordering are worth their cost. Reliability is the point."
+      }
+    ],
+    "mistakes": [
+      "Expecting IP to guarantee delivery",
+      "Using TCP where per-packet latency dominates",
+      "Confusing MAC addresses with IP addresses",
+      "Attributing flow control to the network layer"
+    ],
+    "practiceTip": "For each protocol you meet, name its layer and the problem it solves. Layer confusion causes most wrong answers."
+  },
+  {
+    "id": "networks_transport",
+    "subject": "networks",
+    "topic": "transport",
+    "kind": "technical",
+    "category": "Computer Networks",
+    "name": "TCP, UDP & Congestion Control",
+    "tagline": "Reliability, and sharing a link without collapsing it",
+    "icon": "bi-arrow-left-right",
+    "readingTime": 8,
+    "summary": "TCP provides a reliable ordered byte stream using sequence numbers, acknowledgements and retransmission, and controls its rate to avoid overwhelming the network. Congestion control is what keeps a shared link from collapsing.",
+    "sections": [
+      {
+        "heading": "How TCP builds reliability",
+        "body": [
+          "Every byte is numbered. The receiver acknowledges what it has received contiguously, and the sender retransmits anything unacknowledged after a timeout, or faster on duplicate acknowledgements. A sliding window lets many segments be in flight, bounded by both the receiver's buffer and the sender's congestion window.",
+          "The three-way handshake establishes initial sequence numbers on both sides, and the four-way teardown closes each direction independently because a connection is bidirectional."
+        ],
+        "bullets": [
+          "Sequence numbers order and de-duplicate bytes",
+          "Cumulative ACKs identify the contiguous prefix received",
+          "Sliding window bounds bytes in flight",
+          "Flow control uses the receiver's advertised window",
+          "Congestion control uses the sender's estimated capacity"
+        ]
+      },
+      {
+        "heading": "Congestion control",
+        "body": [
+          "Slow start grows the congestion window exponentially until a threshold, then switches to congestion avoidance, growing linearly. A loss is treated as a signal of congestion: a timeout cuts the window hard, while duplicate acknowledgements trigger fast retransmit and fast recovery, which is gentler.",
+          "Additive increase, multiplicative decrease is the core idea: probe upward slowly, back off sharply. Modern variants add explicit congestion notification and delay-based estimation."
+        ]
+      },
+      {
+        "heading": "UDP, and when it is right",
+        "body": [
+          "UDP adds only ports and a checksum. There is no connection, no ordering and no retransmission, so an application that needs those builds them selectively. QUIC does exactly this on top of UDP, adding stream multiplexing and encryption.",
+          "The choice is about which failures you can tolerate. A lost measurement in a sensor stream is ignorable; a lost byte in a firmware image is not."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "TCP numbers bytes and retransmits what is not acknowledged",
+      "Flow control protects the receiver; congestion control protects the network",
+      "Slow start then congestion avoidance, with AIMD on loss",
+      "A timeout is treated more harshly than duplicate ACKs",
+      "UDP is cheaper and leaves reliability to the application"
+    ],
+    "examples": [
+      {
+        "title": "Slow start in practice",
+        "body": "A new connection doubles its window each round trip until the first loss or the threshold, then grows linearly. That is why a fresh connection ramps rather than starting at full speed."
+      },
+      {
+        "title": "Why QUIC exists",
+        "body": "TCP's head-of-line blocking stalls all streams when one packet is lost. QUIC runs independent streams over UDP, so one lost packet only delays the stream that needed it."
+      }
+    ],
+    "mistakes": [
+      "Confusing flow control with congestion control",
+      "Assuming UDP guarantees ordering",
+      "Treating a timeout and duplicate ACKs identically",
+      "Building reliability by hand where TCP already provides it"
+    ],
+    "practiceTip": "Draw the slow-start curve for a connection that loses a packet at round trip five. It is the fastest way to internalise AIMD."
+  },
+  {
+    "id": "networks_routing",
+    "subject": "networks",
+    "topic": "routing",
+    "kind": "technical",
+    "category": "Computer Networks",
+    "name": "Routing",
+    "tagline": "Finding a path through a network you do not control",
+    "icon": "bi-signpost-split",
+    "readingTime": 6,
+    "summary": "Routing decides which path packets take across a network of independently administered domains. Interior protocols find paths within one domain; exterior protocols decide between domains.",
+    "sections": [
+      {
+        "heading": "Interior versus exterior",
+        "body": [
+          "Distance-vector protocols such as RIP have each router advertise the distance to every destination it knows, and neighbours trust those numbers. They are simple but converge slowly and can count to infinity. Link-state protocols such as OSPF have every router flood a description of its own links, so each router builds a full map and runs Dijkstra locally.",
+          "Convergence is the property that matters: how quickly all routers agree after a change. Link-state converges faster because each router has the whole picture, at the cost of more memory and message volume."
+        ],
+        "bullets": [
+          "Distance vector: trust neighbours, simple, slow convergence",
+          "Link state: full topology, run Dijkstra, fast convergence",
+          "BGP: policy-based routing between autonomous systems",
+          "Count-to-infinity is a distance-vector failure mode",
+          "Hop count is a poor metric; cost reflects real capacity"
+        ]
+      },
+      {
+        "heading": "BGP is policy, not shortest path",
+        "body": [
+          "Between autonomous systems, the shortest path is rarely the right one. Business relationships, transit costs and regulations dominate, so BGP propagates reachability plus attributes and applies local policy at each hop.",
+          "That is why the internet does not route by latency. It routes by agreements, and an outage can propagate as a withdrawal of reachable prefixes."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Distance vector trusts neighbours; link state floods topology",
+      "Link state converges faster at higher memory and message cost",
+      "Count-to-infinity is specific to distance vector",
+      "BGP routes between domains by policy, not by distance",
+      "Hop count is a weak cost metric"
+    ],
+    "examples": [
+      {
+        "title": "A link failure under OSPF",
+        "body": "The detecting router floods a new link-state advertisement. Every router recomputes shortest paths from the updated map, so all of them agree without waiting for numbers to propagate hop by hop."
+      },
+      {
+        "title": "BGP route withdrawal",
+        "body": "When a network withdraws its prefix, that withdrawal propagates and routers remove the path. Until it converges, some traffic may be black-holed, which is the usual shape of an internet outage."
+      }
+    ],
+    "mistakes": [
+      "Claiming the internet routes by shortest path",
+      "Confusing interior and exterior protocols",
+      "Assuming distance vector converges quickly",
+      "Using hop count as a real cost measure"
+    ],
+    "practiceTip": "Explain one failure mode for each family: count-to-infinity for distance vector, database size for link state."
+  },
+  {
+    "id": "networks_dns",
+    "subject": "networks",
+    "topic": "dns",
+    "kind": "technical",
+    "category": "Computer Networks",
+    "name": "DNS & the Application Layer",
+    "tagline": "Names to addresses, then protocols on top",
+    "icon": "bi-globe",
+    "readingTime": 6,
+    "summary": "DNS translates human-readable names into addresses through a hierarchy of delegated zones. Application protocols, HTTP, TLS, email and DNS itself, then run over the transport layer on top of that resolution.",
+    "sections": [
+      {
+        "heading": "How resolution works",
+        "body": [
+          "A resolver asks a root server, which points to the top-level domain server, which points to the authoritative server for the zone, which returns the record. Each answer is cached with a time to live, which is why propagation is governed by TTLs rather than by any central authority.",
+          "A recursive resolver does the walking on the client's behalf; an iterative resolver returns referrals. The difference matters when debugging, because a recursive resolver's cache hides what the authoritative answer actually is."
+        ],
+        "bullets": [
+          "A record: name to IPv4 address",
+          "AAAA record: name to IPv6 address",
+          "CNAME: alias to another name",
+          "MX: mail exchange for a domain",
+          "TTL: how long an answer may be cached"
+        ]
+      },
+      {
+        "heading": "Application protocols over TCP",
+        "body": [
+          "HTTP is a request-response protocol over TCP, now almost always wrapped in TLS. HTTP/1.1 reuses one connection but still has head-of-line blocking; HTTP/2 multiplexes streams over one connection; HTTP/3 moves to QUIC over UDP to remove that blocking entirely.",
+          "TLS sits between the application and transport, providing confidentiality and authentication, and its handshake cost is why session resumption and 0-RTT matter in practice."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "DNS resolves names through delegated zones with cached answers",
+      "TTL governs how long a change takes to propagate",
+      "Recursive resolvers hide the authoritative answer in their cache",
+      "HTTP versions differ mainly in multiplexing and blocking",
+      "TLS provides confidentiality and authentication above TCP"
+    ],
+    "examples": [
+      {
+        "title": "A change that takes too long",
+        "body": "A DNS record changed but clients still see the old address because resolvers cached the previous answer with a long TTL. Lowering the TTL before the change is the standard fix."
+      },
+      {
+        "title": "HTTP/2 head-of-line blocking",
+        "body": "One lost TCP packet stalls every multiplexed stream because TCP delivers bytes in order. HTTP/3 over QUIC gives each stream independent delivery."
+      }
+    ],
+    "mistakes": [
+      "Assuming DNS changes are instant",
+      "Confusing CNAME with A records at the zone apex",
+      "Treating TLS as a transport protocol",
+      "Expecting HTTP/2 to remove all head-of-line blocking"
+    ],
+    "practiceTip": "Trace a DNS resolution by hand for a name you know, naming the server at each step and what it returns."
+  }
+]

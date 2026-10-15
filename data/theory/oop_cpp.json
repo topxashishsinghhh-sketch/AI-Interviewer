@@ -1,0 +1,237 @@
+[
+  {
+    "id": "oop",
+    "subject": "oop",
+    "kind": "technical",
+    "category": "OOP & C++",
+    "name": "Object-Oriented Programming",
+    "tagline": "Bundle data with the operations that own it",
+    "icon": "bi-boxes",
+    "readingTime": 7,
+    "summary": "Object-oriented programming groups state and the operations valid on that state into a single unit, and restricts how outside code can touch it. The goal is that invariants are enforced in one place instead of being defended everywhere.",
+    "sections": [
+      {
+        "heading": "The four pillars, in plain terms",
+        "body": [
+          "Encapsulation hides internals behind an interface so the invariants can be checked in one place. Abstraction exposes what an object does, not how. Inheritance reuses structure and behaviour along an is-a relationship. Polymorphism lets one interface dispatch to different implementations at runtime.",
+          "The measure of success is not the class count. It is whether a change to a rule requires editing one place or many."
+        ],
+        "bullets": [
+          "Encapsulation: private state, public contract",
+          "Abstraction: what, not how",
+          "Inheritance: is-a, use sparingly",
+          "Polymorphism: virtual dispatch through a base pointer or reference",
+          "Composition: has-a, prefer it over inheritance when unsure"
+        ]
+      },
+      {
+        "heading": "Design principles that actually change code",
+        "body": [
+          "SOLID is the usual list. In practice three of them matter most: a class should have one reason to change, a module should be open for extension but closed for modification, and depend on abstractions rather than concrete classes.",
+          "Composition over inheritance is the pragmatic default. Inheritance is the tightest coupling available, so it should express a genuine subtype relationship, not code reuse."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Encapsulation protects invariants in exactly one place",
+      "Abstraction is the contract; the implementation is free to change",
+      "Prefer composition over inheritance unless it is a true subtype",
+      "Virtual functions give runtime polymorphism through a base reference",
+      "One reason to change is the most useful single heuristic"
+    ],
+    "examples": [
+      {
+        "title": "Replacing inheritance with composition",
+        "body": "A Stack that inherits from Vector exposes push_back and leaks the underlying representation. Holding a Vector privately and exposing only push, pop and top keeps the contract tight."
+      },
+      {
+        "title": "One reason to change",
+        "body": "A class that both computes scores and writes them to a database has two reasons to change: the formula and the storage. Splitting them means a database change never touches scoring logic."
+      }
+    ],
+    "mistakes": [
+      "Using inheritance purely to reuse code",
+      "Public data members that let callers break invariants",
+      "Deep hierarchies that are hard to test in isolation",
+      "Adding getters and setters for every field, which is a struct with extra steps"
+    ],
+    "practiceTip": "For each class you write, name its single reason to change in one sentence. If you cannot, the class is doing two jobs."
+  },
+  {
+    "id": "oop_inheritance",
+    "subject": "oop",
+    "topic": "inheritance",
+    "kind": "technical",
+    "category": "OOP & C++",
+    "name": "Inheritance & Polymorphism",
+    "tagline": "Substitutability is the contract, not the syntax",
+    "icon": "bi-diagram-3",
+    "readingTime": 6,
+    "summary": "Inheritance models is-a relationships; polymorphism makes a base reference or pointer dispatch to the derived implementation. Both are only correct when the derived type can genuinely substitute for the base.",
+    "sections": [
+      {
+        "heading": "What a virtual function costs and buys",
+        "body": [
+          "A non-virtual call is resolved at compile time and can be inlined. A virtual call goes through a vtable pointer, one extra indirection, which blocks inlining and costs a small constant. That is cheap, and it buys the ability to run code that was written before the derived type existed.",
+          "A virtual destructor on a base class is not optional when deleting through a base pointer. Without it, the derived destructor never runs and resources leak."
+        ],
+        "bullets": [
+          "Override means replacing, not overload; the signature must match",
+          "Mark overrides explicitly so a signature mismatch is a compile error",
+          "A virtual destructor on a polymorphic base is mandatory",
+          "Prefer private inheritance for implementation reuse, public for subtypes"
+        ]
+      },
+      {
+        "heading": "Substitutability, not syntax",
+        "body": [
+          "If a derived class strengthens the base's preconditions or weakens its postconditions, callers who worked with the base will break. That is the Liskov substitution violation, and it is the real reason inheritance hierarchies rot.",
+          "The practical test: can every function that accepts the base accept the derived without changing its behaviour? If not, inheritance is the wrong relationship."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Public inheritance means the derived is a substitutable base",
+      "Virtual calls cost one indirection and block inlining",
+      "A polymorphic base needs a virtual destructor",
+      "Strengthening preconditions breaks substitutability",
+      "Prefer composition unless the subtype relationship is real"
+    ],
+    "examples": [
+      {
+        "title": "The square-rectangle trap",
+        "body": "A Square that inherits Rectangle must override setWidth to also set height, which changes the base's behaviour. Every consumer of Rectangle that assumes width and height are independent now behaves differently."
+      },
+      {
+        "title": "Missing virtual destructor",
+        "body": "Deleting a derived object through a base pointer with a non-virtual destructor runs only the base destructor. The leak is deterministic and silent until it is not."
+      }
+    ],
+    "mistakes": [
+      "Forgetting the virtual destructor on a polymorphic base",
+      "Similar signatures that silently overload instead of override",
+      "Using inheritance where composition would decouple the classes",
+      "Deep hierarchies where a flat design would be simpler"
+    ],
+    "practiceTip": "When reaching for inheritance, ask whether a base pointer to the derived really gets used somewhere. If nothing calls through the base, polymorphism is not buying anything."
+  },
+  {
+    "id": "oop_patterns",
+    "subject": "oop",
+    "topic": "design_patterns",
+    "kind": "technical",
+    "category": "OOP & C++",
+    "name": "Design Patterns & SOLID",
+    "tagline": "Named solutions to recurring design pressure",
+    "icon": "bi-puzzle",
+    "readingTime": 7,
+    "summary": "Design patterns are reusable answers to recurring design problems, and SOLID is the set of principles that tell you when you are drifting toward one. The value is the vocabulary: it lets you name the pressure before adding structure.",
+    "sections": [
+      {
+        "heading": "The patterns that pay for themselves",
+        "body": [
+          "Strategy extracts an interchangeable algorithm behind an interface, which is how you avoid switch statements that grow. Factory hides construction so callers depend on the interface rather than the concrete type. Observer decouples a subject from its listeners. Repository separates domain logic from storage. Builder handles construction with many optional parts.",
+          "The warning sign that you need one is usually a change that ripples: adding a variant touches five files, or adding a storage backend forces edits throughout the domain."
+        ],
+        "bullets": [
+          "Strategy: interchangeable behaviour behind one interface",
+          "Factory: construct without naming the concrete type",
+          "Observer: notify without knowing the listeners",
+          "Repository: domain logic independent of storage",
+          "Builder: many optional parts, readable construction",
+          "Singleton: one shared instance, but a global in disguise"
+        ]
+      },
+      {
+        "heading": "SOLID as a checklist",
+        "body": [
+          "One responsibility per class. Open for extension, closed for modification. Subtypes must be substitutable. Clients should depend on narrow interfaces. Depend on abstractions, not concretions.",
+          "These are heuristics, not laws. Applied rigidly they produce interfaces for every class, which is its own failure mode. Apply them at the seams where change actually happens."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Patterns are vocabulary for recurring design pressure",
+      "Strategy removes algorithm selection switches",
+      "Factory and Repository decouple creation and storage",
+      "SOLID is a checklist, not a mandate for every class",
+      "Apply structure at the seams where change happens"
+    ],
+    "examples": [
+      {
+        "title": "Replacing a growing switch",
+        "body": "Each case becomes a Strategy implementing one interface, and the switch becomes a lookup in a factory map. Adding a variant is then a new file, not an edit to an existing one."
+      },
+      {
+        "title": "Repository seam",
+        "body": "Business logic that reads and writes files directly cannot be tested without files. Passing in a repository interface lets tests supply an in-memory implementation."
+      }
+    ],
+    "mistakes": [
+      "Applying a pattern because it is familiar, not because pressure exists",
+      "Building a hierarchy of abstract classes with one implementation each",
+      "Using a singleton where dependency injection would do",
+      "Refactoring toward a pattern before the requirement is real"
+    ],
+    "practiceTip": "Name the pressure first: which change is expensive today? Then pick the pattern that removes that specific cost."
+  },
+  {
+    "id": "cpp_templates",
+    "subject": "cpp_oop",
+    "topic": "templates",
+    "kind": "technical",
+    "category": "OOP & C++",
+    "name": "C++ Templates & STL",
+    "tagline": "Generic code, checked at compile time",
+    "icon": "bi-braces",
+    "readingTime": 6,
+    "summary": "Templates let one function or class work with any type that supports the required operations. The compiler generates a separate instantiation per type, which gives zero runtime cost but larger binaries and long error messages.",
+    "sections": [
+      {
+        "heading": "What templates buy and cost",
+        "body": [
+          "A template is a pattern the compiler stamps out per type, so type errors surface at compile time and there is no virtual dispatch or boxing. The price is code bloat, longer compile times, and errors that point deep into instantiated headers.",
+          "Writing templates means programming against an implicit interface, the operations you actually use, rather than a base class. That is powerful and unenforceable, so keep the required interface small and documented."
+        ],
+        "bullets": [
+          "Templates are checked at compile time, with no runtime overhead",
+          "Concepts or static_assert can document the required operations",
+          "Prefer algorithms over inheritance for generic reuse",
+          "STL: vector, unordered_map, map, set, priority_queue, deque",
+          "Use emplace and reserve where the cost is measurable"
+        ]
+      },
+      {
+        "heading": "The STL container choice",
+        "body": [
+          "vector for almost everything: contiguous, cache friendly, amortised O(1) push_back. unordered_map and unordered_set for hashed lookup. map and set when you need ordered iteration. deque for cheap front insertion. priority_queue for heap behaviour.",
+          "The common mistake is using map where unordered_map would do, paying O(log n) and a heap allocation per node, or using list where vector would be faster despite the asymptotics."
+        ]
+      }
+    ],
+    "keyPoints": [
+      "Templates compile per type: fast, but bigger binaries",
+      "Errors point into instantiations, so keep required interfaces minimal",
+      "vector is the default container",
+      "unordered_map for lookup, map for ordered iteration",
+      "Prefer STL algorithms over hand-written loops"
+    ],
+    "examples": [
+      {
+        "title": "One sort, many containers",
+        "body": "Because standard algorithms work on iterators, the same sort call works on vector, deque and array. The interface is the iterator, not the container."
+      },
+      {
+        "title": "Choosing the map",
+        "body": "A config lookup that is read constantly needs unordered_map. A report that is iterated in key order needs map. The access pattern decides, not the name."
+      }
+    ],
+    "mistakes": [
+      "Using map where unordered_map is faster",
+      "Using list for sequential access, losing cache locality",
+      "Over-templating code with one concrete call site",
+      "Ignoring reserve and emplace in hot paths"
+    ],
+    "practiceTip": "For each container you use, write the access pattern it serves. If you cannot, you probably chose the wrong one."
+  }
+]

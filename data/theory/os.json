@@ -1,0 +1,303 @@
+[
+    {
+        "id":  "os",
+        "subject":  "os",
+        "kind":  "technical",
+        "category":  "Operating Systems",
+        "name":  "Operating Systems",
+        "tagline":  "The referee between programs, memory and devices",
+        "icon":  "bi-cpu",
+        "readingTime":  6,
+        "summary":  "An operating system multiplexes the CPU, memory and devices between competing programs, giving each the illusion of a private machine. Nearly every OS concept follows from one of three resources: time, space, or hardware access.",
+        "sections":  [
+                         {
+                             "heading":  "The three ideas underneath everything",
+                             "body":  [
+                                          "Processes are programs in execution, each with its own address space, so isolation is the default. Threads are the unit of scheduling within a process, sharing that address space, so communication is cheap and data races are possible. Virtual memory gives each process its own address space, backed by physical memory and disk.",
+                                          "Everything else, scheduling, synchronisation, paging, file systems, is a policy decision about how to share one of those three resources fairly and efficiently."
+                                      ],
+                             "bullets":  [
+                                             "Process: isolation, its own memory, expensive to switch",
+                                             "Thread: shared memory, cheap to switch, needs synchronisation",
+                                             "Virtual memory: private address space, paging and swapping",
+                                             "System call: the only legitimate door into the kernel",
+                                             "Interrupt: how devices get the CPU\u0027s attention"
+                                         ]
+                         },
+                         {
+                             "heading":  "Where the cost actually is",
+                             "body":  [
+                                          "A context switch saves and restores registers and changes the address space, and on a process switch the TLB must be flushed, so switching is not free. A page fault costs a disk access. A syscall costs a mode switch.",
+                                          "Being able to name the cost is what separates a hand-wave from an answer. \"A process switch is more expensive than a thread switch because the address space and TLB change\" is the shape of a good reply."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Processes own memory; threads share it",
+                          "Virtual memory gives isolation and allows overcommitment",
+                          "Context switches, page faults and syscalls all have real costs",
+                          "Synchronisation exists because threads share memory",
+                          "Most OS policy is a fairness and throughput trade"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Process versus thread for a downloader",
+                             "body":  "Threads share memory so chunks are shared trivially, but need a mutex around shared state. Processes need IPC to share progress, so the extra isolation is rarely worth it here."
+                         },
+                         {
+                             "title":  "Why a thread switch is cheaper",
+                             "body":  "Both save and restore registers, but a thread switch keeps the same address space, so it avoids changing the page table base and flushing the TLB."
+                         }
+                     ],
+        "mistakes":  [
+                         "Confusing a process with a thread when discussing cost",
+                         "Assuming threads need no synchronisation because they are fast",
+                         "Treating virtual memory as unlimited physical memory",
+                         "Forgetting that the kernel is not preemptible everywhere"
+                     ],
+        "practiceTip":  "For each OS topic below, write the one resource it manages: time, space or device access. The rest of the answer follows."
+    },
+    {
+        "id":  "os_processes",
+        "subject":  "os",
+        "topic":  "processes",
+        "kind":  "technical",
+        "category":  "Operating Systems",
+        "name":  "Processes \u0026 Threads",
+        "tagline":  "Isolation versus sharing, and the states between",
+        "icon":  "bi-people",
+        "readingTime":  6,
+        "summary":  "A process is a program in execution with its own address space; a thread is a schedulable unit inside one. Processes cost more to create and switch but are isolated; threads are cheap but must coordinate explicitly.",
+        "sections":  [
+                         {
+                             "heading":  "Process states and transitions",
+                             "body":  [
+                                          "A process moves between new, ready, running, waiting and terminated. It leaves the CPU either by yielding or being preempted, going to ready, or by needing to wait for I/O, going to waiting. Only the scheduler moves it back to running.",
+                                          "The PCB, or process control block, holds the state needed to resume: registers, memory map, open files and scheduling information. The size of that record is why switching processes costs more than switching threads."
+                                      ],
+                             "bullets":  [
+                                             "fork creates a child with a copy of the parent\u0027s address space",
+                                             "Copy-on-write shares pages until one side writes",
+                                             "exec replaces the address space with a new program",
+                                             "Zombie: a finished child whose exit status was never collected",
+                                             "Orphan: a child whose parent exited, reparented to init"
+                                         ]
+                         },
+                         {
+                             "heading":  "Threads: user versus kernel",
+                             "body":  [
+                                          "User-level threads are managed by a library, so switching avoids the kernel but a blocking system call blocks the whole process. Kernel threads are scheduled by the OS, so one can block without stopping the others, at the cost of a kernel transition per switch.",
+                                          "Most modern runtimes map user threads onto kernel threads, which is why a blocking call no longer stalls an entire process the way it once did."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "A process owns memory; a thread shares it",
+                          "The PCB is what makes a process resumable",
+                          "fork plus copy-on-write avoids copying memory until it is written",
+                          "User threads switch cheaply; kernel threads block independently",
+                          "Zombies are unreaped children, orphans are reparented children"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "A web server with ten clients",
+                             "body":  "Ten threads in one process share the listening socket and in-memory state, needing a mutex only around the connection table. Ten processes would need shared memory or a socket handoff for the same job."
+                         },
+                         {
+                             "title":  "Copy-on-write in fork",
+                             "body":  "fork marks both address spaces copy-on-write, so the child shares the parent\u0027s pages until either writes. A fork that immediately exec pays almost nothing for the copy."
+                         }
+                     ],
+        "mistakes":  [
+                         "Calling a heavy computation a \u0027thread\u0027 without mentioning memory sharing",
+                         "Assuming fork copies all physical memory",
+                         "Using threads for isolation instead of processes",
+                         "Forgetting to reap child processes"
+                     ],
+        "practiceTip":  "Write the process state diagram from memory, including the I/O wait transition that most people forget."
+    },
+    {
+        "id":  "os_scheduling",
+        "subject":  "os",
+        "topic":  "scheduling",
+        "kind":  "technical",
+        "category":  "Operating Systems",
+        "name":  "CPU Scheduling",
+        "tagline":  "Whose turn is it, and what does that optimise",
+        "icon":  "bi-clock",
+        "readingTime":  7,
+        "summary":  "The scheduler decides which ready process runs next. Every algorithm optimises something, throughput, response time or fairness, and every one can be derived from a simple rule applied to arrival and burst times.",
+        "sections":  [
+                         {
+                             "heading":  "The classic algorithms and their costs",
+                             "body":  [
+                                          "FCFS runs in arrival order, is trivially fair in ordering, and suffers the convoy effect where short jobs wait behind long ones. SJF picks the shortest next burst and minimises average waiting time, but starves long jobs and requires knowing the future. Round Robin gives each process a fixed time slice, giving good response time at the cost of more switching.",
+                                          "Priority scheduling runs the highest priority first and can starve low priorities unless ageing is added. Multilevel feedback queue approximates SJF without knowing burst times by demoting jobs that use their whole slice."
+                                      ],
+                             "bullets":  [
+                                             "FCFS: simple, convoy effect",
+                                             "SJF: optimal average wait, starves long jobs",
+                                             "Round Robin: good response, switching overhead",
+                                             "Priority: starvation without ageing",
+                                             "MLFQ: learns from behaviour, no burst estimates needed"
+                                         ]
+                         },
+                         {
+                             "heading":  "Why MLFQ works",
+                             "body":  [
+                                          "Jobs that block frequently for I/O yield the CPU before their slice ends and stay at high priority. CPU-bound jobs use the whole slice and are demoted. Over time interactive work floats up and batch work sinks, which is exactly the SJF preference, learned from observed behaviour.",
+                                          "Ageing prevents starvation: a job that waits too long is boosted. Modern schedulers extend this with latency targets rather than fixed slices."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Every algorithm optimises a different metric",
+                          "SJF minimises average waiting time but starves long jobs",
+                          "Round Robin buys response time with switching overhead",
+                          "Priority scheduling needs ageing to avoid starvation",
+                          "MLFQ approximates SJF by promoting interactive jobs"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Convoy effect under FCFS",
+                             "body":  "One CPU-bound job arrives first while twenty I/O-bound jobs queue behind it, so the I/O devices idle and response time collapses. Shortest-job-first or round robin would interleave them."
+                         },
+                         {
+                             "title":  "Starving under priority",
+                             "body":  "A steady stream of high-priority jobs prevents a low-priority job from ever running. Ageing, raising priority with waiting time, fixes it without changing the ordering rule."
+                         }
+                     ],
+        "mistakes":  [
+                         "Claiming SJF is starvation-free",
+                         "Forgetting switching overhead when comparing quanta",
+                         "Assuming burst times are known in a real scheduler",
+                         "Confusing waiting time with turnaround time"
+                     ],
+        "practiceTip":  "Compute average waiting time by hand for FCFS, SJF and Round Robin on the same three-process trace. The numbers make the trade-offs obvious."
+    },
+    {
+        "id":  "os_synchronization",
+        "subject":  "os",
+        "topic":  "synchronization",
+        "kind":  "technical",
+        "category":  "Operating Systems",
+        "name":  "Synchronisation \u0026 Deadlock",
+        "tagline":  "Making concurrent access correct, then making it not deadlock",
+        "icon":  "bi-shield-lock",
+        "readingTime":  8,
+        "summary":  "When threads share state, mutual exclusion is required for correctness, and that exclusion introduces the possibility of deadlock. The subject is two problems in sequence: exclude correctly, then avoid the failure modes exclusion creates.",
+        "sections":  [
+                         {
+                             "heading":  "Mutual exclusion and its primitives",
+                             "body":  [
+                                          "A correct solution to the critical section problem needs mutual exclusion, progress and bounded waiting. Mutexes provide mutual exclusion with ownership, so only the locking thread may unlock. Semaphores are counters usable for exclusion or signalling, and can be signalled by a different thread than the one that waited.",
+                                          "A monitor combines a mutex with condition variables, so wait and signal happen atomically with respect to the lock. Monitors are what most languages expose, and they remove the classic lost-wakeup bug when used properly."
+                                      ],
+                             "bullets":  [
+                                             "Mutex: ownership, exclusion",
+                                             "Semaphore: counting, signalling across threads",
+                                             "Condition variable: wait and notify under a lock",
+                                             "Atomic: lock-free operations for single values",
+                                             "Read-write lock: many readers or one writer"
+                                         ]
+                         },
+                         {
+                             "heading":  "Deadlock and the four Coffman conditions",
+                             "body":  [
+                                          "Deadlock requires mutual exclusion, hold and wait, no preemption and circular wait to hold simultaneously. Prevention attacks one condition: require all locks up front, allow preemption, or impose a total lock ordering. Avoidance, as in the banker\u0027s algorithm, checks whether a request keeps the system in a safe state before granting it.",
+                                          "The lock hierarchy is the practical fix. If every thread acquires locks in a globally agreed order, circular wait becomes impossible, and no runtime machinery is needed."
+                                      ]
+                         },
+                         {
+                             "heading":  "Liveness beyond deadlock",
+                             "body":  [
+                                          "Starvation is a fairness failure: a thread never gets the resource because others keep winning. Livelock is worse in a way: threads keep reacting to each other and make no progress. Priority inversion, where a high-priority thread waits behind a low one holding its lock, is a classic real-world case fixed by priority inheritance.",
+                                          "Naming these precisely is what distinguishes an answer from a description."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Critical section solutions need exclusion, progress and bounded waiting",
+                          "Mutex has ownership; semaphore counts and signals",
+                          "Deadlock needs all four Coffman conditions at once",
+                          "A global lock ordering removes circular wait cheaply",
+                          "Starvation, livelock and priority inversion are distinct failures"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Lock hierarchy preventing deadlock",
+                             "body":  "Two threads both need locks A and B. Agreeing that A is always taken first makes circular wait impossible, and the code needs no timeout or detection machinery."
+                         },
+                         {
+                             "title":  "Priority inheritance",
+                             "body":  "A medium-priority task runs while a high-priority one blocks on a lock held by a low-priority task. Letting the low task inherit the high priority lets it finish and release the lock, unblocking the high one."
+                         }
+                     ],
+        "mistakes":  [
+                         "Using a mutex where signalling across threads was needed",
+                         "Holding a lock across a blocking call",
+                         "Acquiring locks in inconsistent order across functions",
+                         "Confusing starvation with deadlock"
+                     ],
+        "practiceTip":  "Write the readers-writers problem with writer priority, then explain which thread starves and why. That single exercise covers exclusion, fairness and starvation."
+    },
+    {
+        "id":  "os_memory",
+        "subject":  "os",
+        "topic":  "memory",
+        "kind":  "technical",
+        "category":  "Operating Systems",
+        "name":  "Memory \u0026 Virtual Memory",
+        "tagline":  "Private address spaces, backed by pages",
+        "icon":  "bi-memory",
+        "readingTime":  7,
+        "summary":  "Virtual memory gives every process a private address space mapped onto physical frames and backing store. Paging implements it in fixed-size units, which simplifies allocation at the cost of a translation step on every access.",
+        "sections":  [
+                         {
+                             "heading":  "Translation and the TLB",
+                             "body":  [
+                                          "A virtual address is split into a page number and an offset. The page number indexes the page table to produce a frame number, and the offset is appended. A TLB miss is not automatically a page fault: the translation may simply be uncached, and the page table in memory supplies it.",
+                                          "Because the page table base register changes on every process switch, the TLB must be flushed or tagged, which is a real cost of context switching."
+                                      ],
+                             "bullets":  [
+                                             "A TLB miss means the cached translation is absent",
+                                             "A page fault means the page is not resident",
+                                             "Effective access time blends hit and miss rates",
+                                             "Multi-level tables trade memory for lookup depth",
+                                             "Copy-on-write avoids copying on fork"
+                                         ]
+                         },
+                         {
+                             "heading":  "Replacement and working sets",
+                             "body":  [
+                                          "When a page must be evicted, the OS picks by some policy: FIFO, optimal, LRU or clock. LRU approximates optimal well and is implemented approximately with reference bits. Belady\u0027s anomaly, where more frames cause more faults, can happen with FIFO.",
+                                          "Thrashing occurs when the total working set exceeds physical memory, and the system spends its time servicing faults instead of running programs. The fix is to reduce the degree of multiprogramming, which is what working-set and page-fault-frequency models do."
+                                      ]
+                         }
+                     ],
+        "keyPoints":  [
+                          "Virtual addresses are translated per access; the TLB caches that",
+                          "A TLB miss is not a page fault",
+                          "Effective access time depends on the fault rate",
+                          "LRU approximates optimal replacement; FIFO can show Belady\u0027s anomaly",
+                          "Thrashing is a working-set problem, fixed by reducing concurrency"
+                      ],
+        "examples":  [
+                         {
+                             "title":  "Demand paging",
+                             "body":  "Pages are loaded only on first access, so a large program\u0027s startup touches only the pages it uses. The cost is a fault per newly touched page, which demand paging spreads across execution."
+                         },
+                         {
+                             "title":  "Fork without copying",
+                             "body":  "fork marks the shared pages copy-on-write. The child\u0027s first write to a page triggers a fault that copies just that page, so a fork followed by exec costs almost no copying."
+                         }
+                     ],
+        "mistakes":  [
+                         "Treating a TLB miss as a page fault",
+                         "Claiming more frames always reduce faults",
+                         "Ignoring that the page table walk costs extra memory accesses",
+                         "Forgetting the TLB flush cost on context switch"
+                     ],
+        "practiceTip":  "Compute effective access time for a given page-fault rate, then explain what changes if the fault rate doubles."
+    }
+]
