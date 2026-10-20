@@ -2,6 +2,36 @@
 
 C++17 console + Qt 6 GUI + MongoDB backend for mock interviews. Graded on OOP principles.
 
+## Theoretical Foundations & Evaluation Architecture
+
+### 1. Competency Modeling & Assessment Pipeline
+The AI Interviewer replaces heuristic keyword searches with a multi-layered evaluation engine grounded in computational psychometrics and item response modeling:
+
+* **Adaptive Difficulty Ramp (Item Response Theory)**: Rather than following static questionnaires, the session dynamically selects problem difficulties based on candidate competency estimations $\theta$. Successful demonstrations promote the candidate to higher complexity tiers (Easy -> Medium -> Hard) to pinpoint cognitive boundaries.
+* **STAR Behavioral Decomposition**: Open-ended behavioral answers are analyzed along four structural vectors: **Situation** (context and constraints), **Task** (responsibility), **Action** (individual agency, problem-solving), and **Result** (quantifiable impact and retrospective learning).
+* **Multi-Dimensional Scoring Rubrics**: Evaluation outputs separate technical accuracy, communication conciseness, structural discipline, and edge-case handling on a normalized 10-point scale.
+* **Live Sandbox Verification**: For coding challenges, code execution occurs within an isolated runner, measuring runtime latency, memory overhead, and functional correctness across comprehensive unit test suites.
+
+```mermaid
+flowchart TD
+    A[Candidate Response] --> B[AST / Semantic Parsing]
+    B --> C{Question Domain}
+    C -->|Coding / Algorithmic| D[Sandbox Execution & Edge-case Harness]
+    C -->|Conceptual / System Design| E[Semantic Verification & Concept Graph]
+    C -->|Behavioral / Soft Skills| F[STAR Decomposition Engine]
+    D --> G[Rubric Scoring Matrix]
+    E --> G
+    F --> G
+    G --> H[Adaptive Difficulty Governor]
+    H --> I[Dynamic Follow-up or Next Challenge]
+```
+
+### 2. Design System & Modern Executive UI/UX
+The front-end design system utilizes a high-contrast obsidian and zinc neutral surface hierarchy ("#090a0f" to "#2a3142") accented with an executive cobalt and sky blue palette ("#2563eb" / "#0ea5e9"), replacing low-contrast neon gradients with:
+* **Cognitive Focus Surfaces**: Neutral matte backdrops reduce visual fatigue during high-intensity timed interviews.
+* **WCAG 2.1 AA Compliance**: Contrast ratios of 7:1+ for primary text and 4.5:1+ for metadata.
+* **Adaptive Light / Dark Token Theming**: Controlled through CSS custom properties with zero component-level style divergence.
+
 ## Quick Start
 
 ### Prerequisites

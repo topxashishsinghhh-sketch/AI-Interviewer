@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    AI Interviewer — front-end stylesheet.
 
    Token-first. Light is the default; [data-theme="dark"] on <html> overrides
@@ -9,15 +9,15 @@
    ========================================================================== */
 
 :root {
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --primary-gradient: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #38bdf8 100%);
+  --secondary-gradient: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
   --success-gradient: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
-  --bg:          #08090d;
-  --surface-1:   #10121a;
-  --surface-2:   #171a25;
-  --surface-3:   #1f2434;
-  --surface-4:   #2a3147;
+  --bg:          #090a0f;
+  --surface-1:   #111318;
+  --surface-2:   #171a22;
+  --surface-3:   #1f2430;
+  --surface-4:   #2a3142;
 
   --line:        rgba(255, 255, 255, 0.08);
   --line-strong: rgba(255, 255, 255, 0.15);
@@ -27,15 +27,15 @@
   --muted:       #8892b0;
   --muted-2:     #5e6884;
 
-  --accent:      #6366f1;
-  --accent-hover:#4f46e5;
-  --accent-dim:  rgba(99, 102, 241, 0.14);
-  --accent-glow: 0 0 24px rgba(99, 102, 241, 0.35);
-  --accent-ring: rgba(99, 102, 241, 0.4);
+  --accent:      #2563eb;
+  --accent-hover:#1d4ed8;
+  --accent-dim:  rgba(37, 99, 235, 0.12);
+  --accent-glow: 0 0 20px rgba(37, 99, 235, 0.25);
+  --accent-ring: rgba(37, 99, 235, 0.35);
 
-  --cyan:        #06b6d4;
-  --cyan-dim:    rgba(6, 182, 212, 0.14);
-  --violet:      #a855f7;
+  --cyan:        #0ea5e9;
+  --cyan-dim:    rgba(14, 165, 233, 0.12);
+  --violet:      #3b82f6;
 
   --ok:          #10b981;
   --ok-dim:      rgba(16, 185, 129, 0.14);
@@ -941,7 +941,7 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
   justify-content: center;
   color: #fff;
   font-size: 18px;
-  box-shadow: 0 4px 14px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
 }
 
 .brand-text {
@@ -1165,7 +1165,7 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
 .btn-primary.btn-hero {
   background: var(--primary-gradient);
   border: none;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
   color: white;
 }
 
@@ -1525,7 +1525,7 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
 }
 
 .icon-cyan { background: linear-gradient(135deg, #06b6d4, #0284c7); }
-.icon-violet { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+.icon-violet { background: linear-gradient(135deg, #2563eb, #0ea5e9); }
 .icon-rose { background: linear-gradient(135deg, #f43f5e, #e11d48); }
 .icon-emerald { background: linear-gradient(135deg, #10b981, #059669); }
 .icon-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
@@ -2115,14 +2115,14 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
 .profile-avatar-ring {
   width: 96px; height: 96px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+  background: linear-gradient(135deg, #1e40af, #2563eb, #0ea5e9);
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 6px rgba(99,102,241,.4);
+  box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 6px rgba(37,99,235,.35);
   animation: profilePulse 3s ease-in-out infinite;
 }
 @keyframes profilePulse {
-  0%, 100% { box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 6px rgba(99,102,241,.4); }
-  50%       { box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 10px rgba(168,85,247,.3); }
+  0%, 100% { box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 6px rgba(37,99,235,.35); }
+  50%       { box-shadow: 0 0 0 4px var(--surface-1), 0 0 0 10px rgba(14,165,233,.25); }
 }
 .profile-avatar-circle {
   width: 82px; height: 82px;
@@ -2257,7 +2257,7 @@ progress::-moz-progress-bar { background: var(--accent); border-radius: var(--r-
 .milestone-info { flex: 1; min-width: 0; }
 .milestone-label { font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 5px; }
 .milestone-bar   { height: 5px; border-radius: 6px; background: var(--surface-3); overflow: hidden; margin-bottom: 4px; }
-.milestone-fill  { height: 100%; border-radius: 6px; background: linear-gradient(90deg, #6366f1, #a855f7); transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+.milestone-fill  { height: 100%; border-radius: 6px; background: linear-gradient(90deg, #2563eb, #0ea5e9); transition: width 1.2s cubic-bezier(.4,0,.2,1); }
 .milestone-card.done .milestone-fill { background: linear-gradient(90deg, #10b981, #06b6d4); }
 .milestone-num   { font-size: 10.5px; color: var(--muted); font-weight: 600; }
 
