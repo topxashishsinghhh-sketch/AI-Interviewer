@@ -1,6 +1,6 @@
 # AI Interviewer
 
-C++17 console + Qt 6 GUI + MongoDB backend for mock interviews. Graded on OOP principles.
+Qt 6 GUI + Modern Web Application + MongoDB backend for mock interviews. Graded on OOP principles.
 
 ## Theoretical Foundations & Evaluation Architecture
 
@@ -93,18 +93,6 @@ The browser UI is plain HTML/CSS/JS, so there is no front-end build step and no
 Node dependency. The server binds to `127.0.0.1` by default; pass
 `--host 0.0.0.0` to reach it from another device on the same network.
 
-### Run (console)
-```bash
-./build/debug/ai_interviewer_console
-# Or with flags:
-./build/debug/ai_interviewer_console --explain
-./build/debug/ai_interviewer_console --storage mongo --uri mongodb://localhost:27017 --db ai_interviewer
-./build/debug/ai_interviewer_console --version
-```
-`--uri`/`--db` fall back to the `MONGODB_URI`/`MONGODB_DB` environment variables.
-Because the driver is 64-bit, the MongoDB-enabled console lives in `build-gui`
-(see `docs/MONGODB.md`); the `build` console is JSON-only.
-
 ## Environment Variables
 Copy `.env.example` to `.env` and customize:
 ```
@@ -125,7 +113,7 @@ include/           # Headers (one class per .h)
   interview/       # Interview logic
   feedback/        # Feedback generation
   db/              # Repository interfaces & implementations
-  ui/              # Console UI
+  ui/              # Shared UI models & Leaderboard
   gui/             # Qt 6 Widgets screens
 src/               # Implementations (one class per .cpp)
   gui/             # Qt screens (linked into ai_interviewer_gui)
@@ -148,7 +136,7 @@ for the question-bank schema and current coverage (105 questions across
 
 | Phase | State |
 | --- | --- |
-| 1. Core console (JSON) | Done |
+| 1. Core domain & JSON persistence | Done |
 | 2. MongoDB backend | Done |
 | 3. Admin / daily / streak / leaderboard | Done |
 | 4. Qt 6 GUI | Done |
@@ -193,8 +181,8 @@ Both builds compile with no warnings under `-Wall -Wextra -Wshadow -Wconversion`
 - **Admin role**: separate dashboard with platform statistics, user management
   (award badge / reset streak / delete user) and question-bank coverage stats
 - Fixed password verification and JSON cache refresh so data is visible immediately
-- `ProgressService` centralises streak/stats/badge/leaderboard logic so the console
-  and GUI share exactly one implementation (no business logic in any UI)
+- `ProgressService` centralises streak/stats/badge/leaderboard logic so the Qt GUI
+  and Web app share exactly one implementation (no business logic in any UI)
 
 ## Features (Phase 4 - Qt 6 GUI)
 - Qt 6 Widgets desktop app (`ai_interviewer_gui`) over the same service layer
@@ -267,7 +255,7 @@ The site is now a practice platform rather than a thin wrapper around interviews
 - New subjects: **Operating Systems**, **DBMS**, **Computer Networks** (12 total,
   141 questions)
 
-Everything is served by the same C++ services, so the console, Qt GUI and web
+Everything is served by the same C++ services, so the Qt GUI and web
 site share one implementation of every rule.
 
 ## Features (Phase 9 - Real code execution)
@@ -321,7 +309,7 @@ and the question bank is three times larger:
 - **Template**: Leaderboard<T>, core::Optional<T> (GCC 6.3 compatible)
 - **Repository**: IUserRepository, IQuestionRepository, IAttemptRepository, IInterviewRepository, IFeedbackRepository, IScoreboardRepository, IDailyChallengeRepository
 - **Singleton**: Database (MongoDB client pool)
-- **Facade**: ConsoleUI, AuthService, InterviewService, CourseService, AdminService
+- **Facade**: AuthService, InterviewService, CourseService, AdminService
 - **Dependency Injection**: gui::SessionContext (screens receive services, never construct them)
 - **Observer**: Qt signals/slots between GUI screens (sessionFinished, challengeCompleted)
 - **Mapper**: web::JsonApi (domain <-> API payloads), db::BSONMappers (domain <-> BSON)
@@ -337,7 +325,7 @@ ctest --test-dir build/debug
 ```
 
 ### Full verification (Windows)
-Runs data preparation, the console build, the console smoke test and the Qt
+Runs data preparation, the target build, verification suites and the Qt
 build + QtTest suite, and fails on warnings or any test failure:
 
 ```powershell
@@ -351,15 +339,6 @@ and drives the app end to end against MongoDB (needs the driver at
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\verify_mongo.ps1 -SkipBuild
-```
-
-### Smoke test (Windows, no GTest required)
-End-to-end console flow: register → login → 10-question interview → feedback →
-streak → daily challenge → profile → calendar → leaderboard → admin → logout,
-then verifies JSON persistence.
-```powershell
-cmake --build build --config Release
-powershell -ExecutionPolicy Bypass -File scripts\smoke_test.ps1
 ```
 
 ### Qt GUI tests (Qt 6 + QtTest, headless/offscreen)
