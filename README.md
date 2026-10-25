@@ -2,6 +2,22 @@
 
 Qt 6 GUI + Modern Web Application + MongoDB backend for mock interviews. Graded on OOP principles.
 
+---
+
+## ⚡ Quick Start: Instant Live Run (5 Seconds)
+
+Choose the quickest method for your environment:
+
+| Method | Command / Action | Description |
+| :--- | :--- | :--- |
+| **Option A (Python)** | `python run.py` | Automatically launches local server and pops open your default browser |
+| **Option B (Windows)** | Double-click `start.bat` | 1-click launcher for Windows users |
+| **Option C (VS Code)** | Press `Ctrl + Shift + B` | Triggers the default `"🚀 Live Run Web App"` task |
+| **Option D (NPM)** | `npm start` | Standard developer command |
+| **Option E (C++ Backend)** | `powershell scripts\run_web.ps1` | Builds and serves the native C++ HTTP REST API |
+
+---
+
 ## Theoretical Foundations & Evaluation Architecture
 
 ### 1. Competency Modeling & Assessment Pipeline

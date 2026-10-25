@@ -1,0 +1,21 @@
+{
+  "name": "ai-interviewer",
+  "version": "2.4.0",
+  "description": "Adaptive AI Interviewer & Competency Assessment Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "python run.py",
+    "dev": "python run.py",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "ai",
+    "interview",
+    "assessment",
+    "cpp",
+    "algorithms",
+    "oop"
+  ],
+  "author": "Ashish Singh",
+  "license": "MIT"
+}
