@@ -1,399 +1,219 @@
 # AI Interviewer
 
-Qt 6 GUI + Modern Web Application + MongoDB backend for mock interviews. Graded on OOP principles.
+An intelligent, multi-interface mock interview and technical assessment platform engineered in **C++17** and graded on strict **Object-Oriented Programming (OOP) principles**. The system combines an adaptive interview simulation engine, a LeetCode-style practice catalogue with sandboxed code execution, and interactive analytics across both Web and Desktop frontends.
 
 ---
 
-## ⚡ Quick Start: Instant Live Run (5 Seconds)
+## ⚡ Quick Start: Instant Live Launch
 
-Choose the quickest method for your environment:
+The fastest way to run and explore the application:
 
-| Method | Command / Action | Description |
+| Launch Option | Command / Action | Description |
 | :--- | :--- | :--- |
-| **Option A (Python)** | `python run.py` | Automatically launches local server and pops open your default browser |
-| **Option B (Windows)** | Double-click `start.bat` | 1-click launcher for Windows users |
-| **Option C (VS Code)** | Press `Ctrl + Shift + B` | Triggers the default `"🚀 Live Run Web App"` task |
-| **Option D (NPM)** | `npm start` | Standard developer command |
-| **Option E (C++ Backend)** | `powershell scripts\run_web.ps1` | Builds and serves the native C++ HTTP REST API |
+| **Option A (Python)** | `python run.py` | Starts the local web server and automatically opens your browser |
+| **Option B (Windows)** | Double-click `start.bat` | 1-click batch launcher for Windows environments |
+| **Option C (NPM)** | `npm start` | Standard developer command |
+| **Option D (Native C++ Web)** | `powershell scripts\run_web.ps1` | Compiles and serves the high-performance native C++ HTTP server |
+| **Option E (Qt Desktop GUI)** | Run `build-gui\src\ai_interviewer_gui.exe` | Launches the native Qt 6 desktop application |
+
+> **Offline-First Web Mode**: The web interface includes an offline adapter (`offline.js`) that operates entirely within the browser via `localStorage` and bundled question banks—delivering zero-setup immediate execution without external database dependencies.
 
 ---
 
-## Theoretical Foundations & Evaluation Architecture
+## 📐 Architecture & System Design
 
-### 1. Competency Modeling & Assessment Pipeline
-The AI Interviewer replaces heuristic keyword searches with a multi-layered evaluation engine grounded in computational psychometrics and item response modeling:
-
-* **Adaptive Difficulty Ramp (Item Response Theory)**: Rather than following static questionnaires, the session dynamically selects problem difficulties based on candidate competency estimations $\theta$. Successful demonstrations promote the candidate to higher complexity tiers (Easy -> Medium -> Hard) to pinpoint cognitive boundaries.
-* **STAR Behavioral Decomposition**: Open-ended behavioral answers are analyzed along four structural vectors: **Situation** (context and constraints), **Task** (responsibility), **Action** (individual agency, problem-solving), and **Result** (quantifiable impact and retrospective learning).
-* **Multi-Dimensional Scoring Rubrics**: Evaluation outputs separate technical accuracy, communication conciseness, structural discipline, and edge-case handling on a normalized 10-point scale.
-* **Live Sandbox Verification**: For coding challenges, code execution occurs within an isolated runner, measuring runtime latency, memory overhead, and functional correctness across comprehensive unit test suites.
+The platform strictly adheres to **Clean Architecture** and separation of concerns. Dependencies flow strictly downwards: presentation layers contain no business logic, and services interact with data strictly through repository interfaces.
 
 ```mermaid
 flowchart TD
-    A[Candidate Response] --> B[AST / Semantic Parsing]
-    B --> C{Question Domain}
-    C -->|Coding / Algorithmic| D[Sandbox Execution & Edge-case Harness]
-    C -->|Conceptual / System Design| E[Semantic Verification & Concept Graph]
-    C -->|Behavioral / Soft Skills| F[STAR Decomposition Engine]
-    D --> G[Rubric Scoring Matrix]
-    E --> G
-    F --> G
-    G --> H[Adaptive Difficulty Governor]
-    H --> I[Dynamic Follow-up or Next Challenge]
+    subgraph Presentation ["Presentation Layer"]
+        UI_Web["Modern Web SPA (HTML5/Vanilla JS/CSS)"]
+        UI_Qt["Qt 6 Widgets Desktop GUI (ai_interviewer_gui)"]
+        UI_CLI["Terminal Console (ai_interviewer_console)"]
+    end
+
+    subgraph ServiceLayer ["Service Layer (Facades & DI)"]
+        AuthSvc["AuthService (Hashing, 5-Attempt Lockout)"]
+        InterviewSvc["InterviewService & SessionFactory"]
+        ProblemSvc["ProblemService (Catalogue, Submissions, Stats)"]
+        ProgressSvc["ProgressService (Streaks, Badges, Tiers)"]
+        TheorySvc["TheoryService (DSA Sheet & Curriculum)"]
+        AdminSvc["AdminService (Platform Analytics & User Mgmt)"]
+        CodeExec["CodeExecutor (Sandboxed Run / Submit)"]
+    end
+
+    subgraph DomainLayer ["Domain Layer (Core OOP Models)"]
+        Questions["Question Hierarchy (MCQ, Text, Coding)"]
+        Strategies["Selection Strategies (LinearRamp, Adaptive IRT)"]
+        Feedback["FeedbackEngine (RuleBasedFeedback, STAR)"]
+        Users["User Hierarchy (Student, Admin)"]
+        RepoInterfaces["Repository Interfaces (I*Repository)"]
+    end
+
+    subgraph Persistence ["Persistence Layer (Repository Pattern)"]
+        RepoFactory["RepositoryFactory (Automatic Fallback)"]
+        JsonRepo["JSON Flat-File Backend (Primary / Production-Ready)"]
+        MongoRepo["MongoDB Backend (Architectural Reference Driver)"]
+    end
+
+    Presentation --> ServiceLayer
+    ServiceLayer --> DomainLayer
+    ServiceLayer --> Persistence
+    Persistence --> RepoInterfaces
+    RepoFactory --> JsonRepo
+    RepoFactory -.-> MongoRepo
 ```
 
-### 2. Design System & Modern Executive UI/UX
-The front-end design system utilizes a high-contrast obsidian and zinc neutral surface hierarchy ("#090a0f" to "#2a3142") accented with an executive cobalt and sky blue palette ("#2563eb" / "#0ea5e9"), replacing low-contrast neon gradients with:
-* **Cognitive Focus Surfaces**: Neutral matte backdrops reduce visual fatigue during high-intensity timed interviews.
-* **WCAG 2.1 AA Compliance**: Contrast ratios of 7:1+ for primary text and 4.5:1+ for metadata.
-* **Adaptive Light / Dark Token Theming**: Controlled through CSS custom properties with zero component-level style divergence.
+---
 
-## Quick Start
+## 🎯 Key Capabilities & Features
+
+### 1. Intelligent Mock Interview Engine
+* **Structured 10-Question Sessions**: Balanced progression consisting of **3 Easy** (1 min, 1 pt), **4 Medium** (2 min, 2 pts), and **3 Hard** (4 min, 3 pts) questions.
+* **Item Response Theory (Adaptive Strategy)**: An `AdaptiveStrategy` estimates candidate competency ($\theta$) after each answer, dynamically raising or lowering the difficulty of the next question.
+* **STAR Behavioral Evaluation**: Conceptual and behavioral responses are graded across **Situation**, **Task**, **Action**, and **Result** dimensions.
+* **Actionable Feedback Reports**: Automatically summarizes score breakdowns, strongest/weakest topics, time management metrics, and tailored recommendations.
+
+### 2. Practice Catalogue & Theory Curriculum
+* **310+ Curated Problems**: Covering 12 core academic and interview tracks:
+  * **Core CS**: Data Structures, Algorithms, C++ OOP, Operating Systems, DBMS, Computer Networks.
+  * **Engineering**: Analog Electronics, Signals & Systems.
+  * **Aptitude & Soft Skills**: Quantitative Aptitude, Logical Reasoning, HR/Behavioral, Financial Accounting.
+* **Curated Theory & DSA Sheets**: Interactive study sheets and reference guides built directly into the platform.
+* **Rich Filtering**: Instant search, difficulty tiers (Beginner, Intermediate, Advanced), question format (MCQ, Text, Coding), and bookmarking.
+
+### 3. Sandboxed Native Code Execution
+* **Isolated Execution Engine (`execution::CodeExecutor`)**: Real C++ compilation and test execution rather than synthetic string matching.
+* **Resource Safety via Windows Job Objects**:
+  * Per-case timeout: **2.0 seconds** (`PerJobUserTimeLimit`).
+  * Memory ceiling: **256 MB** (`ProcessMemoryLimit`).
+  * Hard kill switches using `TerminateJobObject` and wall-clock safety timeouts.
+* **Dual Run Modes**:
+  * **Run**: Instant testing against public test cases with expected vs. actual output diffs.
+  * **Submit**: Evaluates against hidden test suites, awarding verdicts (*Accepted*, *Wrong Answer*, *Compile Error*, *Runtime Error*, *TLE*, *MLE*).
+
+### 4. Progress Tracking, Gamification & Leaderboards
+* **Activity Heatmap**: GitHub-style 18-week contribution grid displaying consistent practice history.
+* **Deterministic Daily Challenges**: Generates a synchronized challenge daily per course with bonus points.
+* **Milestone Badges & Tiers**: Earn badges (*Problem Solver*, *Code Crusher*, *Week Warrior*) and advance through achievement tiers (*Newcomer* to *Master*).
+* **Ranked Leaderboards**: Multi-dimensional filtering by scope (Global/College/Branch), time window (All-Time/Weekly/Monthly), and ranking criteria (Score/Solved/Streak) featuring a podium (🥇🥈🥉).
+
+### 5. Administrative Dashboard
+* **Platform Analytics**: Real-time user metrics, total attempts, success rates, and question bank coverage.
+* **User Governance**: Administrative actions to inspect user performance, award credentials, reset streaks, or delete accounts.
+
+---
+
+## 🏛️ OOP Design Patterns Implemented
+
+The project is structured to showcase textbook software design patterns:
+
+| Pattern | Implementation in Codebase |
+| :--- | :--- |
+| **Polymorphism** | `Question::evaluate()` and `Question::display()` overridden across `MCQQuestion`, `TextQuestion`, and `CodingQuestion`. |
+| **Strategy** | `QuestionSelectionStrategy` with interchangeable `LinearRampStrategy` and `AdaptiveStrategy`. |
+| **Factory** | `SessionFactory` for interview modes; `RepositoryFactory` for backend storage selection. |
+| **Builder** | `InterviewSessionBuilder` configuring multi-step interview sessions cleanly. |
+| **Repository** | `IUserRepository`, `IQuestionRepository`, `IAttemptRepository`, `IScoreboardRepository`, etc. |
+| **Singleton** | `Database` connection pool manager for database operations. |
+| **Facade** | Service layer (`AuthService`, `InterviewService`, `CourseService`, `AdminService`, `ProblemService`). |
+| **Dependency Injection** | `gui::SessionContext` injects service singletons into Qt widgets without tight coupling. |
+| **Mapper** | `web::JsonApi` handles wire serialization; `db::BSONMappers` handles BSON conversion. |
+
+---
+
+## 💾 Storage Architecture & Backend Status
+
+The platform supports two persistence approaches via the Repository Pattern:
+
+### 1. JSON Flat-File Engine (Primary / Default)
+* **Status**: **Fully Functional & Production-Ready**.
+* Completely self-contained, auto-creating files (`users.json`, `attempts.json`, `scoreboard.json`, `daily_challenges.json`) in the `./data` directory.
+* Zero configuration or database installation needed.
+
+### 2. MongoDB Driver (Architectural Reference)
+* **Status**: **Reference Implementation / Prototype**.
+* Demonstrates how enterprise NoSQL databases integrate cleanly behind domain repository interfaces (`MongoUserRepository`, `MongoQuestionRepository`, etc.) with BSON serialization.
+* Serves as an architectural blueprint for future scaling. The application automatically falls back to the JSON backend whenever MongoDB is offline or unconfigured (`RepositoryFactory`), ensuring uninterrupted runtime.
+
+---
+
+## 🛠️ Build & Installation
 
 ### Prerequisites
-- CMake 3.20+
-- C++17 compiler (GCC 10+, Clang 12+, MSVC 19.28+)
-- vcpkg
-- OpenSSL (for SHA-256)
+* **C++17 Compiler**: GCC 10+, Clang 12+, or MSVC 2019+
+* **CMake**: Version 3.20+
+* **Optional**: Qt 6 (for Desktop GUI), OpenSSL (for SHA-256 fallback)
 
-### Build (Linux/macOS)
-```bash
-# Install vcpkg packages
-vcpkg install nlohmann-json fmt gtest openssl
+### Building Native Binaries (CLI & Core)
+```powershell
+# Configure using CMake
+cmake -B build -S .
 
-# Configure and build
-cmake --preset=debug
-cmake --build build/debug
+# Build all native targets
+cmake --build build --config Release
 ```
 
-### Build (Windows / MinGW)
+### Running Native Web Server
 ```powershell
-# No vcpkg required: nlohmann_json is vendored in third_party/json.hpp
-cmake -G "MinGW Makefiles" -S . -B build/debug
-cmake --build build/debug
-
-# Optional: enable the MongoDB backend (needs mongocxx/bsoncxx)
-cmake -G "MinGW Makefiles" -S . -B build/debug -DUSE_MONGO=ON -DBUILD_TOOLS=ON
-cmake --build build/debug
-```
-
-### Qt GUI (Windows / MinGW)
-Qt 6 is prebuilt with the MinGW-w64 GCC 13.1 toolchain, so the GUI is configured in
-its own build directory using `cmake/qt-mingw.cmake`:
-
-```powershell
-# Option A: use the helper script (configure + build + QtTest + report paths)
-powershell -ExecutionPolicy Bypass -File scripts\run_gui_tests.ps1
-
-# Option B: presets
-cmake --preset gui
-cmake --build --preset build-gui
-ctest --test-dir build-gui --output-on-failure
-
-# Run the GUI
-build-gui\src\ai_interviewer_gui.exe
-build-gui\src\ai_interviewer_gui.exe --storage mongo --db ai_interviewer
-```
-Adjust `cmake/qt-mingw.cmake` if Qt is installed to a different prefix.
-
-### Run the web app (browser UI + JSON API)
-```powershell
-# Builds ai_interviewer_web if needed, then serves http://127.0.0.1:8080
+# Runs the native C++ HTTP REST API on port 8080
 powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1
-
-# Options
-powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1 -Port 3000
-powershell -ExecutionPolicy Bypass -File scripts\run_web.ps1 -Storage mongo
-```
-The browser UI is plain HTML/CSS/JS, so there is no front-end build step and no
-Node dependency. The server binds to `127.0.0.1` by default; pass
-`--host 0.0.0.0` to reach it from another device on the same network.
-
-## Environment Variables
-Copy `.env.example` to `.env` and customize:
-```
-STORAGE_BACKEND=json          # json | mongo
-MONGODB_URI=mongodb://localhost:27017
-MONGODB_DB=ai_interviewer
-APP_DATA_DIR=./data
 ```
 
-## Project Structure
-```
-include/           # Headers (one class per .h)
-  core/            # Domain models, interfaces
-  auth/            # Authentication service
-  admin/           # Admin service
-  progress/        # Streak / stats / leaderboard service
-  course/          # Course management
-  interview/       # Interview logic
-  feedback/        # Feedback generation
-  db/              # Repository interfaces & implementations
-  ui/              # Shared UI models & Leaderboard
-  gui/             # Qt 6 Widgets screens
-src/               # Implementations (one class per .cpp)
-  gui/             # Qt screens (linked into ai_interviewer_gui)
-  web/             # HTTP server (linked into ai_interviewer_web)
-web/               # Browser front-end (static files, no build step)
-data/questions/    # Question JSON files
-challenges/        # Coding challenge templates
-tests/             # Google Test suite
-tests/gui/         # QtTest suite (headless)
-docs/              # ARCHITECTURE.md, DATA.md
-scripts/           # prepare_data / smoke_test / run_gui_tests / verify_all
-cmake/             # Toolchain files (qt-mingw.cmake)
-```
-
-See `docs/ARCHITECTURE.md` for the layering and data flow, and `docs/DATA.md`
-for the question-bank schema and current coverage (105 questions across
-9 subjects).
-
-## Current status
-
-| Phase | State |
-| --- | --- |
-| 1. Core domain & JSON persistence | Done |
-| 2. MongoDB backend | Done |
-| 3. Admin / daily / streak / leaderboard | Done |
-| 4. Qt 6 GUI | Done |
-| 5. Polish + docs | Done |
-| 6. MongoDB backend verification | Done - driver built from source, live `mongod` end-to-end run |
-| 7. Web UI + HTTP API | Done - browser front-end over the same services, JSON or Mongo |
-| 8. LeetCode-style practice platform | Done - problem catalogue, solve, submissions, stats, calendar, 12 subjects |
-| 9. Real code execution | Done - sandboxed compile + run with test cases, Run/Submit, verdicts |
-| 10. Reference-style UI + expanded bank | Done - difficulty sections, podium leaderboard, 261 questions |
-
-Both builds compile with no warnings under `-Wall -Wextra -Wshadow -Wconversion`.
-
-## Features (Phase 1)
-- Register/Login with salted SHA-256 (bcrypt/argon2 recommended for production)
-- Lockout after 5 failed attempts
-- Courses: CSE, ECE, Commerce, Common (Aptitude, Reasoning, HR)
-- Question types: MCQ, Text (keyword scoring), Coding (compile+run)
-- Interview modes: Practice, Mock (Linear Ramp), Daily (Adaptive)
-- 10 questions: 3 Easy (1min), 4 Medium (2min), 3 Hard (4min)
-- Weighted scoring: 1/2/3
-- Rule-based feedback: scores, strongest/weakest topics, 2-3 tips
-- JSON file storage (auto-creates)
-- Streak tracking, badges, leaderboards (template)
-- `--explain` flag shows OOP pattern per step
-
-## Features (Phase 2 - MongoDB)
-- Full MongoDB backend with swap-in repositories behind the same interfaces
-- `Database` singleton: pooled client, schema validators, indexes
-- MongoDB repositories: User, Question, Attempt, Interview, Feedback, Scoreboard, DailyChallenge
-- `RepositoryFactory` selects backend (`--storage json|mongo`) with automatic JSON fallback
-- BSON mappers for all domain types
-- CLI tools: `seed_db`, `mongo_backup`, `mongo_restore`, `parity_check`
-- `docker-compose up -d` provides MongoDB 7
-
-## Features (Phase 3 - Full UX)
-- Ranked leaderboard with scope/window/ranking filters (global/college/branch x all-time/week/month x score/solved/streak)
-- Streak calendar (calendar month grid) driven by `Student::recordActivity(dateKey)`
-- Deterministic daily challenge (auto-created per course per day, bonus points)
-- Badge milestones (Problem Solver, Code Crusher, Week Warrior, Monthly Master)
-- Topic progression gating via `CourseService::isUnlocked` (3 solved per preceding topic)
-- Session finalization persists user stats and leaderboard entry after every interview
-- **Admin role**: separate dashboard with platform statistics, user management
-  (award badge / reset streak / delete user) and question-bank coverage stats
-- Fixed password verification and JSON cache refresh so data is visible immediately
-- `ProgressService` centralises streak/stats/badge/leaderboard logic so the Qt GUI
-  and Web app share exactly one implementation (no business logic in any UI)
-
-## Features (Phase 4 - Qt 6 GUI)
-- Qt 6 Widgets desktop app (`ai_interviewer_gui`) over the same service layer
-- Sign-in / register dialog (`LoginDialog`) using `AuthService`
-- Navigation sidebar and stacked screens (`MainWindow`): Interview, Daily challenge,
-  Profile & streak, Leaderboard, Admin
-- `InterviewWidget`: course/subject/mode selection, question display, answer/skip,
-  finish-early, and a formatted report with tips and questions to review
-- `StreakCalendar`: custom-painted month grid highlighting the active streak date
-- `LeaderboardWidget`: live filter combos (scope x window x ranking) over a table
-- `DailyChallengeWidget`: loads today's deterministic challenge, applies the bonus
-- `AdminWidget`: platform statistics, user table with badge/streak/delete actions
-- `SessionContext` is the DI container: the screens hold no repositories or services
-- Students land on the Interview screen, admins on the Admin screen
-
-## Features (Phase 6 - MongoDB backend verification)
-
-mongocxx/bsoncxx built from source with the Qt MinGW toolchain and the `USE_MONGO`
-path exercised end to end against a live `mongod`:
-
-- `MONGO_DRIVER_PREFIX` CMake option; `mongo::mongocxx_shared` / `mongo::bsoncxx_shared`
-- `Database::ping()` and initialisation fixed so the singleton actually connects
-- `RepositoryFactory` takes a separate `path` and `dbName` (a file path was being
-  used as the MongoDB database name)
-- `BSONMappers` rewritten against the real mongocxx 3.x API; every repository
-  compiles and runs
-- `Database` creates collections and indexes idempotently with the modern
-  `create_collection(name, options)` overload
-- Both front-ends initialise the singleton before building Mongo repositories
-- CLI tools rebuilt to link the core library: `seed_db`, `mongo_backup`,
-  `mongo_restore`, `parity_check`
-- Scoreboard and daily-challenge repositories follow the selected backend, so
-  data is not split across two stores
-- `scripts\verify_mongo.ps1` verifies seed, a full interview, persistence,
-  read-back and the JSON fallback
-
-See `docs/MONGODB.md` for the build steps, schema, tools, and the five bugs the
-live verification uncovered.
-
-## Features (Phase 7 - Web UI + HTTP API)
-
-The service layer is reusable, so a browser front-end shares all the C++:
-
-- `include/web/`, `src/web/` — HTTP server over the existing services
-  (`auth`, `admin`, `course`, `progress`, `interview`) via cpp-httplib
-- `web/` — front-end: `index.html`, `app.js`, `style.css` (no build step, no Node)
-- One class per concern: `HttpServer` (facade), `SessionStore` (in-memory
-  tokens and in-progress interviews), `JsonApi` (domain <-> wire mapping)
-- Endpoints: register/login/logout, me, courses and subjects, interviews
-  (start / answer / skip / finish), daily challenge, leaderboard, admin stats,
-  admin users, admin questions, health
-- Bearer-token auth; admin endpoints reject non-admins with 403
-- Storage follows the selected backend (JSON or MongoDB); no duplicated logic
-
-## Features (Phase 8 - LeetCode-style practice platform)
-
-The site is now a practice platform rather than a thin wrapper around interviews:
-
-- **Problem catalogue**: browse, filter by subject / difficulty / type / status
-  (solved / attempted / unsolved), text search, sort by difficulty or title, and a
-  bookmarked-only view
-- **Problem pages**: solve any single problem on demand, get an immediate verdict
-  with the question's own explanation, and see your previous attempts
-- **Submissions history**: every judged answer with verdict, difficulty and time
-- **Personal statistics**: solved/total per difficulty, acceptance rate,
-  per-subject progress bars, streaks and badges
-- **Activity calendar**: GitHub-style contribution grid over the last 18 weeks
-- **Recommendations**: unsolved problems, easiest first, on the dashboard
-- **Bookmarks** on any problem
-- New subjects: **Operating Systems**, **DBMS**, **Computer Networks** (12 total,
-  141 questions)
-
-Everything is served by the same C++ services, so the Qt GUI and web
-site share one implementation of every rule.
-
-## Features (Phase 9 - Real code execution)
-
-Coding problems are compiled and run, not text-matched:
-
-- `execution::CodeExecutor` writes the submission to an isolated scratch
-  directory, compiles it, then runs it against every test case
-- **Run** executes against the visible samples and records nothing; **Submit**
-  records the attempt and updates solved totals, streak and badges
-- Verdicts: Accepted, Wrong Answer, Compile Error, Runtime Error, Time Limit
-  Exceeded, Memory Limit Exceeded
-- Limits: 2 s and 256 MB per case, enforced by a Job Object (`ProcessMemoryLimit`,
-  `PerJobUserTimeLimit`) plus a wall-clock `WaitForSingleObject` timeout, with
-  `TerminateJobObject` as the kill switch
-- stdin/stdout via temp files rather than pipes, so a child that fills its
-  stdout cannot deadlock the parent
-- Output comparison strips `\r` and trailing blank space, so CRLF from a Windows
-  binary matches the LF in the question bank
-- `POST /api/problems/{id}/run` returns per-case status, expected vs actual
-  output, exit code and timing; the front-end shows a verdict banner plus a
-  test-results table
-- The problem API also returns `template` (starter code) and `samples` (visible
-  cases), so the editor and Run button work without extra round trips
-
-## Features (Phase 10 - Reference-style UI and expanded bank)
-
-The web interface now follows the layout of a dedicated practice platform,
-and the question bank is three times larger:
-
-- **Problems page** presents difficulty sections (Beginner / Intermediate /
-  Advanced) with a solved-per-section counter, instead of a flat table
-- **Leaderboard** shows a podium for the top three (🥇🥈🥉 with solved/total,
-  completion rate and achievement tier) and a per-row ✅/⬜ completion strip
-- **Achievement tiers** from solved percentage: Newcomer, Beginner,
-  Intermediate, Advanced, Expert, Master
-- **Per-subject progress** uses 🟩/⬜ blocks with a percentage, matching the
-  reference's package-progress style
-- Question bank grown from 141 to **261 questions across 12 subjects**
-  (21-22 per subject, 8 Easy / 7 Medium / 7 Hard), including 26 coding
-  problems with runnable test cases
-
-## OOP Patterns Used
-- **Abstraction**: Question, User, Repository interfaces
-- **Inheritance**: MCQQuestion, TextQuestion, CodingQuestion; Student, Admin
-- **Polymorphism**: evaluate(), display() virtual methods
-- **Strategy**: QuestionSelectionStrategy (LinearRamp, Adaptive), FeedbackGenerator
-- **Factory**: SessionFactory (Practice, Mock, Daily), RepositoryFactory (JSON/Mongo + fallback)
-- **Builder**: InterviewSessionBuilder
-- **Composition**: Course → Subject → Topic
-- **Template**: Leaderboard<T>, core::Optional<T> (GCC 6.3 compatible)
-- **Repository**: IUserRepository, IQuestionRepository, IAttemptRepository, IInterviewRepository, IFeedbackRepository, IScoreboardRepository, IDailyChallengeRepository
-- **Singleton**: Database (MongoDB client pool)
-- **Facade**: AuthService, InterviewService, CourseService, AdminService
-- **Dependency Injection**: gui::SessionContext (screens receive services, never construct them)
-- **Observer**: Qt signals/slots between GUI screens (sessionFinished, challengeCompleted)
-- **Mapper**: web::JsonApi (domain <-> API payloads), db::BSONMappers (domain <-> BSON)
-- **Repository (in-memory)**: web::SessionStore (browser tokens, in-progress interviews)
-- **Service (catalogue)**: problem::ProblemService (filtering, judging, statistics)
-- **Service (sandbox)**: execution::CodeExecutor (isolated compile and run)
-
-## Testing
-```bash
-cmake --preset=debug
-cmake --build build/debug --target test_core
-ctest --test-dir build/debug
-```
-
-### Full verification (Windows)
-Runs data preparation, the target build, verification suites and the Qt
-build + QtTest suite, and fails on warnings or any test failure:
-
+### Running Qt 6 Desktop GUI
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts\verify_all.ps1
-```
-
-### MongoDB backend verification
-Builds the `USE_MONGO` configuration, starts a local `mongod`, seeds the bank
-and drives the app end to end against MongoDB (needs the driver at
-`C:\mongo-install`; see `docs/MONGODB.md`):
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts\verify_mongo.ps1 -SkipBuild
-```
-
-### Qt GUI tests (Qt 6 + QtTest, headless/offscreen)
-Runs the real screens against a throwaway data directory:
-login/register, student vs admin routing, a full 10-question session, leaderboard
-entry, profile/streak, admin tables, and daily-challenge determinism.
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts\run_gui_tests.ps1
-# or
+# Build and run the desktop application
 cmake --preset gui
 cmake --build --preset build-gui
-ctest --test-dir build-gui --output-on-failure
+build-gui\src\ai_interviewer_gui.exe
 ```
 
-### Data files
-`data/questions/*.json` are the authoritative question banks; they are merged into
-`data/questions.json` (the file the repository loads). Regenerate with:
+### Running Automated Test Suite
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts\prepare_data.ps1
-```
-Runtime data lives in JSON and is auto-created: `users.json`, `attempts.json`,
-`scoreboard.json`, `daily_challenges.json`.
-
-### MongoDB tools (needs mongocxx)
-These compile only when `USE_MONGO=ON` and mongocxx/bsoncxx are found. See
-`docs/MONGODB.md` for the build steps and `scripts\verify_mongo.ps1` for the
-automated end-to-end run.
-```powershell
-build-gui\tools\seed_db.exe --uri mongodb://127.0.0.1:27017 --db ai_interviewer --questions data\questions.json
-build-gui\tools\parity_check.exe --uri mongodb://127.0.0.1:27017 --db ai_interviewer --data-dir data
-build-gui\tools\mongo_backup.exe --output .\backups
-build-gui\tools\mongo_restore.exe --backup-dir .\backups\backup_<timestamp>
+# Google Test suite
+ctest --test-dir build --output-on-failure
 ```
 
-## Docker (MongoDB)
-```bash
-docker-compose up -d
-# Then set STORAGE_BACKEND=mongo in .env
+---
+
+## 📂 Repository Directory Structure
+
+```
+AI-Interviewer/
+├── include/                # Modular C++ header interfaces (one class per file)
+│   ├── core/               # Domain entities, value objects, and repository interfaces
+│   ├── auth/               # Authentication and password security
+│   ├── interview/          # Interview orchestration, Builder, and Strategies
+│   ├── problem/            # Problem catalogue and submission evaluation
+│   ├── progress/           # Streaks, badges, leaderboards, and user stats
+│   ├── execution/          # Sandboxed CodeExecutor (Windows Job Objects)
+│   ├── db/                 # JSON and MongoDB repository declarations
+│   ├── web/                # HTTP server, REST endpoints, and JsonApi mappers
+│   └── gui/                # Qt 6 widget and screen declarations
+├── src/                    # C++ source implementations matching include/
+│   ├── core/               # Domain evaluations, IRT strategies, and STAR feedback
+│   ├── db/                 # Repository storage implementations
+│   ├── execution/          # Subprocess compiler and sandbox execution logic
+│   ├── gui/                # Qt 6 screen implementations and custom painters
+│   ├── web/                # Native HTTP server implementation (cpp-httplib)
+│   └── main.cpp            # Terminal CLI entrypoint
+├── web/                    # Modern Obsidian & Zinc Web Application
+│   ├── index.html          # Semantic HTML5 layout
+│   ├── app.js              # Client-side router, view renderers & state management
+│   ├── offline.js          # In-browser offline API adapter (localStorage)
+│   ├── style.css           # High-contrast, WCAG 2.1 AA compliant styling
+│   └── data/               # Bundled questions and theory reference files
+├── data/                   # Authoritative question banks and theory modules
+│   ├── questions/          # Subject-specific JSON banks (310+ questions)
+│   └── theory/             # DSA curriculum and subject theory articles
+├── tests/                  # Google Test (GTest) and QtTest verification suites
+├── scripts/                # Utility scripts for data preparation and testing
+├── run.py / start.bat      # 1-click zero-dependency live browser launchers
+└── CMakeLists.txt          # Multi-target CMake build configuration
 ```
 
-## License
-MIT
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
